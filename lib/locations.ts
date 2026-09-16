@@ -172,7 +172,9 @@ export function buildLocationPlace(
     ];
   }
 
-  const hours = options.openingHours ?? parseOpeningHours(location);
+  // Every front_desk_hours cell still reads [NEEDS], so openingHoursSpecification
+  // stays out of the graph until real hours arrive through the options argument.
+  const hours = options.openingHours ?? [];
   if (hours.length) {
     place.openingHoursSpecification = hours.map((entry) => ({
       "@type": "OpeningHoursSpecification",
@@ -193,15 +195,6 @@ export function buildLocationPlace(
   if (location.google_maps_url) place.hasMap = location.google_maps_url;
 
   return place;
-}
-
-/**
- * Every front_desk_hours cell still reads [NEEDS], so this returns nothing and
- * openingHoursSpecification stays out of the graph. Once the sheet carries
- * real hours, pass them through the options argument in the shape above.
- */
-function parseOpeningHours(location: Location): OpeningHours[] {
-  return isNeeds(location.front_desk_hours) ? [] : [];
 }
 
 export function buildLocationGraph(location: Location): Record<string, unknown> {

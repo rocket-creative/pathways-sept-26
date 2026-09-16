@@ -1,7 +1,13 @@
-import Link from "next/link";
 import { getProviders, type Provider, type ProviderCardFilter } from "@/lib/content";
+import ProviderCard from "./ProviderCard";
+import { toProviderCardData } from "./types";
+import "./directory.css";
 
-/** OWNER: providers and locations agent. Circular headshots, filters, WebP. */
+/**
+ * [PROVIDER CARDS: slug, slug], [PROVIDER CARDS: specialty=anxiety], and
+ * [PROVIDER CARDS: pillar=wellness] all land here. Inactive rows and the admin
+ * team never appear: they have no profile page to link to.
+ */
 export default function ProviderCards({ filter }: { filter: ProviderCardFilter }) {
   const providers = selectProviders(filter);
   if (!providers.length) return null;
@@ -9,13 +15,7 @@ export default function ProviderCards({ filter }: { filter: ProviderCardFilter }
   return (
     <ul className="provider-cards">
       {providers.map((provider) => (
-        <li key={provider.slug} className="provider-card">
-          <Link href={`/providers/${provider.slug}`}>
-            <span className="provider-card__name">{provider.displayName}</span>
-          </Link>
-          <p className="provider-card__title">{provider.title_line}</p>
-          {provider.bullets[0] ? <p>{provider.bullets[0]}</p> : null}
-        </li>
+        <ProviderCard key={provider.slug} provider={toProviderCardData(provider)} />
       ))}
     </ul>
   );
