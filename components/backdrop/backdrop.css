@@ -1,0 +1,168 @@
+/* ------------------------------------------------------------------ */
+/* Fixed labyrinth backdrop and the glass the page sits on             */
+/* ------------------------------------------------------------------ */
+/* Readability is the whole point of the glass, so the numbers here are a
+   contrast budget, not decoration:
+
+   - The veil lifts the photograph's darkest values (the wet bark, roughly 0.22
+     luminance) to about 0.50, so the image still reads as an image.
+   - Panels are 86% white on top of that, so the effective background behind
+     copy never falls below about 0.93 luminance. Ink (#1D2733) on that is
+     ~14:1, far past the 4.5:1 floor, and it holds even where backdrop-filter
+     is unsupported and the blur does nothing.
+
+   The blur is the look; the panel opacity is the accessibility. The veil can
+   move freely to taste, the 86% cannot go much below 80%. */
+
+.page-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("/labyrinth-branch.jpg");
+  background-position: center 38%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* [NEEDS: 2560px wide source] the supplied file is 1024px and softens on a
+     large display. Drop a wider export in at the same path. */
+}
+
+.page-backdrop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(255 255 255 / 0.5) 0%,
+    rgb(255 255 255 / 0.32) 40%,
+    rgb(255 255 255 / 0.46) 100%
+  );
+}
+
+/* Glass ---------------------------------------------------------------- */
+
+.glass {
+  background: rgb(255 255 255 / 0.86);
+  backdrop-filter: blur(18px) saturate(1.08);
+  -webkit-backdrop-filter: blur(18px) saturate(1.08);
+  border: 1px solid rgb(255 255 255 / 0.65);
+  box-shadow:
+    0 1px 2px rgb(29 39 51 / 0.04),
+    0 12px 32px rgb(29 39 51 / 0.06);
+}
+
+/* Page shell ----------------------------------------------------------- */
+
+/* The design system gives html, body and .page solid grounds. On a backdrop
+   page they have to step aside or the photograph is covered by white. */
+html:has(.page-backdrop),
+body:has(.page-backdrop),
+body:has(.page-backdrop) main.page,
+body:has(.page-backdrop) .prose {
+  background: transparent;
+}
+
+/* Each h2 section becomes its own pane, so the labyrinth reads through the
+   gutters between them rather than being hidden by one long sheet. */
+.page-backdrop ~ main .page-section,
+.page-backdrop ~ main .prose > .page-section {
+  margin-inline: auto;
+  margin-block: var(--space-md, 1.25rem);
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 4vw, 3.5rem);
+  border-radius: var(--radius-2xl, 40px);
+  background: rgb(255 255 255 / 0.86);
+  backdrop-filter: blur(18px) saturate(1.08);
+  -webkit-backdrop-filter: blur(18px) saturate(1.08);
+  border: 1px solid rgb(255 255 255 / 0.65);
+  box-shadow:
+    0 1px 2px rgb(29 39 51 / 0.04),
+    0 12px 32px rgb(29 39 51 / 0.06);
+}
+
+.page-backdrop ~ main .prose {
+  width: min(100% - 2rem, 62rem);
+  margin-inline: auto;
+  padding-block: clamp(1rem, 3vw, 2rem) clamp(3rem, 8vw, 6rem);
+}
+
+/* The opening pane carries the h1 and sits a little heavier. */
+.page-backdrop ~ main .page-section--intro {
+  background: rgb(255 255 255 / 0.9);
+}
+
+/* Chrome --------------------------------------------------------------- */
+
+.page-backdrop ~ .site-header,
+body:has(.page-backdrop) .site-header {
+  background: rgb(255 255 255 / 0.78);
+  backdrop-filter: blur(20px) saturate(1.08);
+  -webkit-backdrop-filter: blur(20px) saturate(1.08);
+  border-bottom: 1px solid rgb(255 255 255 / 0.6);
+}
+
+body:has(.page-backdrop) .breadcrumbs {
+  width: min(100% - 2rem, 62rem);
+  margin-inline: auto;
+  margin-block: 1rem 0;
+  padding: 0.55rem 1.1rem;
+  border-radius: var(--radius-pill, 999px);
+  background: rgb(255 255 255 / 0.8);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgb(255 255 255 / 0.6);
+  width: fit-content;
+  margin-inline-start: max(1rem, calc(50% - 31rem));
+}
+
+body:has(.page-backdrop) .site-footer {
+  background: rgb(255 255 255 / 0.86);
+  backdrop-filter: blur(20px) saturate(1.08);
+  -webkit-backdrop-filter: blur(20px) saturate(1.08);
+  border-top: 1px solid rgb(255 255 255 / 0.6);
+}
+
+/* Cards sitting inside a pane need to read against it, not against the
+   photograph, so they go slightly more solid rather than more transparent. */
+body:has(.page-backdrop) :is(.provider-card, .location-card, .faq-item) {
+  background: rgb(255 255 255 / 0.72);
+  border: 1px solid rgb(255 255 255 / 0.7);
+}
+
+/* Fallbacks ------------------------------------------------------------ */
+
+/* Without backdrop-filter the panes would be plain translucent white over a
+   busy photo, so make them near solid instead. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .page-backdrop ~ main .page-section,
+  body:has(.page-backdrop) :is(.site-header, .site-footer, .breadcrumbs) {
+    background: rgb(255 255 255 / 0.96);
+  }
+}
+
+/* Some readers turn transparency off at the OS level. Honour it. */
+@media (prefers-reduced-transparency: reduce) {
+  .page-backdrop {
+    background-image: none;
+    background: var(--surface-soft, #f7f7f7);
+  }
+
+  .page-backdrop::after {
+    display: none;
+  }
+
+  .page-backdrop ~ main .page-section,
+  body:has(.page-backdrop) :is(.site-header, .site-footer, .breadcrumbs) {
+    background: #fff;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Blur is expensive on phones and the panes nearly fill the screen, so the
+     effect is not worth the paint cost. */
+  .page-backdrop ~ main .page-section {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgb(255 255 255 / 0.88);
+  }
+}

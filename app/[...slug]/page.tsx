@@ -16,6 +16,7 @@ import Footer from "@/components/site/Footer";
 import Header from "@/components/site/Header";
 import SkipLink from "@/components/site/SkipLink";
 import PageBody from "@/components/render/PageBody";
+import PageBackdrop from "@/components/backdrop/PageBackdrop";
 
 type RouteParams = { slug: string[] };
 
@@ -68,6 +69,7 @@ export default async function ContentPage({ params }: { params: Promise<RoutePar
 
   return (
     <>
+      <PageBackdrop />
       <SkipLink />
       <Header />
       {/* Breadcrumbs sit below the header but outside main, so the skip link
