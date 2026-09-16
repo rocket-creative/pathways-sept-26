@@ -67,26 +67,8 @@
     margin-block: 1.5rem;
   }
 
-  .button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.85em 1.55em;
-    border-radius: 999px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .form-embed {
-    display: block;
-    width: 100%;
-    max-width: 740px;
-    min-height: 900px;
-    border: 0;
-    border-radius: var(--render-radius);
-    background: var(--render-ground);
-  }
+  /* `.button` and `.form-embed` are owned by app/globals.css so each has a
+     single definition. Only the layout around them lives here. */
 
   .content-image {
     margin-inline: 0;

@@ -27,30 +27,8 @@
   outline-offset: 3px;
 }
 
-/* ------------------------------------------------------------------ */
-/* Shared button                                                       */
-/* ------------------------------------------------------------------ */
-
-.button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
-  padding: 0.78em 1.5em;
-  border: 1px solid #ebebeb;
-  border-radius: 999px;
-  background: #ebebeb;
-  color: var(--ink, #1d2733);
-  font-family: var(--font-display, inherit);
-  font-size: 0.95rem;
-  font-weight: 700;
-  line-height: 1.15;
-  text-align: center;
-}
-
-.button:hover {
-  background: #f7f7f7;
-}
+/* `.button` is owned by the design system in app/globals.css, which defines it
+   against the shared tokens and to a verified contrast ratio. */
 
 /* ------------------------------------------------------------------ */
 /* Skip link                                                           */

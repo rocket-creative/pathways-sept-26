@@ -2,7 +2,9 @@
 """Quality gate for pages/**.md. Run from the build root: python3 tools/check-pages.py"""
 import csv, glob, json, os, re, sys
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# The build package lives under content/ in this repo; keep working standalone.
+ROOT = os.path.join(REPO, "content") if os.path.isdir(os.path.join(REPO, "content", "pages")) else REPO
 BANNED = ["seamless","robust","leverage","streamline","happy to","through line","operationally",
           "delve","tapestry","unlock","unleash","empower","foster","navigate","elevate","harness",
           "transformative","comprehensive","cutting edge","cutting-edge","it's important to note",
