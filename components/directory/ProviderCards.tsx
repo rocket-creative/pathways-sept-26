@@ -1,4 +1,4 @@
-import { getProviders, type Provider, type ProviderCardFilter } from "@/lib/content";
+import { getProviders, slugify, type Provider, type ProviderCardFilter } from "@/lib/content";
 import ProviderCard from "./ProviderCard";
 import { toProviderCardData } from "./types";
 import "./directory.css";
@@ -39,5 +39,13 @@ export function selectProviders(filter: ProviderCardFilter): Provider[] {
       return active.filter((provider) =>
         provider.pillars.some((pillar) => pillar.toLowerCase() === filter.value.toLowerCase()),
       );
+    // Matches on the slug, so "Rockville Centre" and "rockville-centre" agree.
+    // Every locations cell still reads [NEEDS], so this matches nobody today.
+    case "location":
+      return active.filter((provider) =>
+        provider.locations.some((location) => slugify(location) === slugify(filter.value)),
+      );
+    default:
+      return [];
   }
 }

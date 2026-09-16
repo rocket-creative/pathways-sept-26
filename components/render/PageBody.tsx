@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { inlineToText, type Block, type Page } from "@/lib/content";
 import LocationCards from "@/components/directory/LocationCards";
 import ProviderCards from "@/components/directory/ProviderCards";
+import ProviderDirectory from "@/components/directory/ProviderDirectory";
 import Quiz from "@/components/quiz";
 import type { RenderContext } from "./context";
 import Byline, { type BylineBlock } from "./blocks/Byline";
@@ -251,6 +252,7 @@ function Widget({
   return (
     <div className="widget" data-widget={block.name}>
       {renderBlocks(block.blocks, ctx)}
+      {block.name === "providerDirectory" ? <ProviderDirectory /> : null}
     </div>
   );
 }

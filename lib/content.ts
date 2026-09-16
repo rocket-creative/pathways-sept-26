@@ -9,18 +9,22 @@
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import {
+  FORM_EMBEDS,
+  SITE_ORIGIN,
+  SITE_PHONE,
+  SITE_PHONE_HREF,
+  WELCOME_EMAIL,
+  type FormVariant,
+} from "@/lib/site";
 import { parse as parseCsv } from "csv-parse/sync";
 
 export const CONTENT_ROOT = path.join(process.cwd(), "content");
-export const SITE_ORIGIN = "https://pathwayswithinwellness.com";
-export const SITE_PHONE = "(631) 371-3825";
-export const SITE_PHONE_HREF = "tel:+16313713825";
-export const WELCOME_EMAIL = "Welcome@pathwayswithin.com";
 
-export const FORM_EMBEDS = {
-  therapy: "https://link.trustdrivencare.com/widget/form/5KmXtKKPzphbLJSdq4Ym",
-  wellness: "https://link.trustdrivencare.com/widget/form/pZyZ5b0IMxCN6FcJq4pF",
-} as const;
+// Client components must import these from @/lib/site: this module touches the
+// filesystem and cannot be bundled for the browser.
+export { FORM_EMBEDS, SITE_ORIGIN, SITE_PHONE, SITE_PHONE_HREF, WELCOME_EMAIL };
+export type { FormVariant } from "@/lib/site";
 
 export type PageType =
   | "service"
@@ -76,7 +80,7 @@ export type Block =
   | { kind: "list"; ordered: boolean; items: InlineNode[][] }
   | { kind: "quote"; paragraphs: InlineNode[][] }
   | { kind: "cta"; label: string; href: string }
-  | { kind: "form"; variant: keyof typeof FORM_EMBEDS }
+  | { kind: "form"; variant: FormVariant }
   | { kind: "providerCards"; filter: ProviderCardFilter }
   | { kind: "locationCards"; slugs: string[] }
   | { kind: "image"; alt: string; src?: string }
@@ -425,7 +429,7 @@ function parseChunk(text: string): Block {
 
   const form = /^\[FORM:\s*(therapy|wellness)\s*\]$/i.exec(text);
   if (form) {
-    return { kind: "form", variant: form[1].toLowerCase() as keyof typeof FORM_EMBEDS };
+    return { kind: "form", variant: form[1].toLowerCase() as FormVariant };
   }
 
   const providerCards = /^\[PROVIDER CARDS:\s*([^\]]+)\]$/i.exec(text);
@@ -556,7 +560,11 @@ function memo<T>(load: () => T): () => T {
 }
 
 export const getUrlMap = memo<UrlMapRow[]>(() =>
-  readCsv("data/url-map.csv").map((row) => ({
+  readCsv("data/url-map.csv")
+    // "/providers/{slug}" is the template's placeholder row, not a page. The
+    // real provider URLs come from the sheet.
+    .filter((row) => !row.url.includes("{"))
+    .map((row) => ({
     url: row.url,
     page_type: row.page_type as PageType,
     pillar: row.pillar as Pillar,

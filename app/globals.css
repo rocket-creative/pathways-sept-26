@@ -93,8 +93,12 @@
   --fill-quiet-hover: var(--paper-soft);
 
   /* --- Hairlines and lift ------------------------------------------ */
-  --line: rgb(29 39 51 / 0.12);
-  --line-strong: rgb(29 39 51 / 0.24);
+  --line: rgb(29 39 51 / 0.12); /* decorative only */
+  --line-strong: rgb(29 39 51 / 0.24); /* decorative only */
+  /* The edge of an interactive control. WCAG 2.2 wants 3:1 for anything a
+     reader has to find; this is 3.6:1 on white, 3.5:1 on #f7f7f7. Do not
+     use --line or --line-strong to outline a button or a field. */
+  --line-control: rgb(29 39 51 / 0.55);
   --shadow-soft: 0 12px 30px -20px rgb(29 39 51 / 0.35);
   --shadow-lift: 0 22px 46px -26px rgb(29 39 51 / 0.4);
 
@@ -121,9 +125,13 @@
   --space-3xl: clamp(5rem, 9vw, 8rem);
 
   /* --- Measure and rhythm ------------------------------------------ */
-  --measure: 68ch; /* 65 to 75 characters of body copy */
-  --measure-narrow: 52ch;
-  --measure-wide: 88ch; /* cards, figures, form embeds */
+  /* 65 to 75 characters of body copy. The ch unit is the width of a zero,
+     which runs about 1.3x the average letter, so 54ch measures out at
+     roughly 72 characters of real sentences, near 33em of line. Measured,
+     not guessed; re-measure if the brand face lands much wider. */
+  --measure: 52ch;
+  --measure-narrow: 40ch;
+  --measure-wide: 88ch; /* cards, figures, form embeds: not text */
   --gutter: clamp(1.25rem, 5vw, 4rem);
   --section-y: clamp(3rem, 7vw, 6rem);
   --overlap: clamp(2rem, 5vw, 4.5rem);
@@ -976,6 +984,12 @@ html {
 
 /* -------------------------------------------------------------------- */
 /*  5.2 Skip link, header, breadcrumbs, footer                           */
+/*                                                                       */
+/*  The site chrome agent ships its own structural CSS next to those      */
+/*  components. Everything the chrome owns is written here through        */
+/*  :where(), which holds the specificity at a single class, so any rule  */
+/*  in components/site/** overrides this without a fight. Read this as    */
+/*  the base coat: correct on its own, quiet when something sits on top.  */
 /* -------------------------------------------------------------------- */
 
 /* Off screen by transform, never by display or visibility, so it stays in
@@ -1033,21 +1047,21 @@ html {
   color: var(--text);
 }
 
-.site-header__logo img,
-.site-footer__logo img {
+.site-header__logo :where(img),
+.site-footer__logo :where(img) {
   display: block;
   width: auto;
   height: clamp(2rem, 3.4vw, 2.75rem);
 }
 
-.site-header nav {
+.site-header :where(nav) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.15rem 0.35rem;
 }
 
-.site-header nav a {
+.site-header :where(nav a) {
   display: inline-block;
   padding: 0.5rem 0.75rem;
   border-radius: var(--radius-pill);
@@ -1059,19 +1073,19 @@ html {
     color var(--motion-fast) var(--ease-out);
 }
 
-.site-header nav a:hover {
+.site-header :where(nav a):hover {
   background: var(--surface-soft);
   color: var(--link);
 }
 
-.site-header nav a[aria-current="page"] {
+.site-header :where(nav a[aria-current="page"]) {
   background: var(--surface-soft);
   color: var(--link);
   font-weight: 700;
 }
 
 /* The phone number reads as a link without borrowing button weight. */
-.site-header a[href^="tel:"] {
+.site-header :where(a[href^="tel:"]) {
   border-radius: var(--radius-pill);
   padding: 0.5rem 0.4rem;
   font-size: var(--text-sm);
@@ -1085,7 +1099,7 @@ html {
     row-gap: var(--space-2xs);
   }
 
-  .site-header nav {
+  .site-header :where(nav) {
     order: 3;
     width: 100%;
   }
@@ -1100,7 +1114,7 @@ html {
   color: var(--text-soft);
 }
 
-.breadcrumbs ol {
+.breadcrumbs :where(ol) {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1110,15 +1124,16 @@ html {
   list-style: none;
 }
 
-.breadcrumbs li {
+.breadcrumbs :where(li) {
   display: flex;
   align-items: center;
   gap: 0.6rem;
 }
 
 /* Decorative separator: a dot, not a character, so screen readers stay
-   quiet and the trail still reads as a list. */
-.breadcrumbs li + li::before {
+   quiet and the trail still reads as a list. Skipped when the chrome
+   component renders a separator element of its own. */
+.breadcrumbs :where(li + li:not(:has(.breadcrumbs__sep)))::before {
   content: "";
   flex: none;
   width: 4px;
@@ -1127,7 +1142,7 @@ html {
   background: var(--line-strong);
 }
 
-.breadcrumbs a {
+.breadcrumbs :where(a) {
   border-radius: var(--radius-xs);
   color: var(--link);
   text-decoration: underline;
@@ -1135,11 +1150,11 @@ html {
   text-decoration-thickness: 0.06em;
 }
 
-.breadcrumbs a:hover {
+.breadcrumbs :where(a):hover {
   color: var(--link-hover);
 }
 
-.breadcrumbs [aria-current="page"] {
+.breadcrumbs :where([aria-current="page"]) {
   color: var(--text);
   font-weight: 600;
 }
@@ -1153,14 +1168,13 @@ html {
   font-size: var(--text-sm);
 }
 
-.site-footer > * {
+.site-footer > :where(*) {
   width: 100%;
   max-width: calc(var(--measure-wide) + var(--gutter) * 2);
   margin-inline: auto;
 }
 
-.site-footer h2,
-.site-footer h3 {
+.site-footer :where(h2, h3) {
   font-family: var(--font-display);
   font-size: var(--text-h4);
   line-height: var(--leading-heading);
@@ -1168,12 +1182,12 @@ html {
   margin: 0 auto var(--space-2xs);
 }
 
-.site-footer p {
+.site-footer :where(p) {
   margin: 0 auto var(--space-2xs);
   max-width: var(--measure);
 }
 
-.site-footer ul {
+.site-footer :where(ul) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
   gap: var(--space-md);
@@ -1182,13 +1196,13 @@ html {
   list-style: none;
 }
 
-.site-footer address {
+.site-footer :where(address) {
   font-style: normal;
   color: var(--text-soft);
   line-height: var(--leading-snug);
 }
 
-.site-footer a {
+.site-footer :where(a) {
   border-radius: var(--radius-xs);
   color: var(--text);
   text-decoration: underline;
@@ -1197,7 +1211,7 @@ html {
   text-decoration-color: var(--line-strong);
 }
 
-.site-footer a:hover {
+.site-footer :where(a):hover {
   color: var(--link);
   text-decoration-color: currentcolor;
 }
@@ -1356,7 +1370,7 @@ html {
   background: var(--line);
 }
 
-.prose img:not([class]) {
+.prose :where(img:not([class])) {
   max-width: 100%;
   height: auto;
   border-radius: var(--radius-2xl);
@@ -1444,13 +1458,13 @@ html {
 .prose .button--quiet {
   background: var(--fill-quiet);
   color: var(--text);
-  box-shadow: inset 0 0 0 1.5px var(--line-strong);
+  box-shadow: inset 0 0 0 1.5px var(--line-control);
 }
 
 .button--quiet:hover {
   background: var(--fill-quiet-hover);
   color: var(--link);
-  box-shadow: inset 0 0 0 1.5px var(--line-strong);
+  box-shadow: inset 0 0 0 1.5px var(--line-control);
   transform: translateY(-2px);
 }
 
@@ -1458,7 +1472,7 @@ html {
   width: 100%;
 }
 
-.site-header .button {
+.site-header :where(.button) {
   min-height: 2.6rem;
   padding: 0.55em 1.2em;
   box-shadow: none;
@@ -1518,9 +1532,10 @@ html {
 }
 
 /* Circular masks for people. Square aspect plus 50% radius, so a headshot
-   of any size lands as a circle and reserves its own space. */
-.provider-card img,
-.provider-card__photo {
+   of any size lands as a circle and reserves its own space. The initials
+   fallback is the same circle, so a missing headshot shifts nothing. */
+.provider-card
+  :where(img, .provider-card__photo, .provider-card__initials) {
   display: block;
   width: clamp(6.5rem, 12vw, 9rem);
   aspect-ratio: 1;
@@ -1528,6 +1543,15 @@ html {
   border-radius: var(--radius-circle);
   object-fit: cover;
   background: var(--surface-deep);
+}
+
+.provider-card :where(.provider-card__initials) {
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-size: var(--text-h3);
+  font-weight: 700;
+  color: var(--text);
 }
 
 .provider-card a {
@@ -1609,6 +1633,7 @@ html {
   width: 100%;
   max-width: var(--measure-wide);
   height: clamp(40rem, 78vh, 56rem);
+  min-height: 0; /* own the reserved height in one place */
   margin: var(--space-xl) auto;
   border: 0;
   border-radius: var(--radius-2xl);
@@ -1663,6 +1688,7 @@ html {
 .content-image figcaption {
   max-width: var(--measure);
   margin: 0.85rem auto 0;
+  opacity: 1; /* the renderer dims its caption; 0.7 ink fails on #ebebeb */
   font-size: var(--text-sm);
   line-height: var(--leading-snug);
   color: var(--text-soft);
@@ -1672,6 +1698,7 @@ html {
 /* Byline -------------------------------------------------------------- */
 .byline {
   display: block;
+  border: 0; /* the panel is the separation; no rule above it */
   max-width: var(--measure);
   margin: var(--space-2xl) auto 0;
   padding: var(--space-md) clamp(1.1rem, 2.4vw, 1.6rem);
@@ -1689,6 +1716,74 @@ html {
 
 .byline a {
   color: var(--link);
+}
+
+/* Question and answer pairs, embeds, widgets --------------------------- */
+/* Never collapsed, never hidden: every answer is in the DOM and visible. */
+.faq {
+  display: grid;
+  gap: var(--space-sm);
+  max-width: var(--measure);
+  margin: var(--space-lg) auto;
+}
+
+.faq-item {
+  padding: clamp(1.1rem, 2.2vw, 1.6rem) clamp(1.1rem, 2.4vw, 1.75rem);
+  border-radius: var(--radius-xl);
+  background: var(--surface-soft);
+}
+
+.faq-item h3,
+.faq-item h4 {
+  margin-block: 0 0.4em;
+  font-size: var(--text-h4);
+}
+
+.faq-item > :last-child {
+  margin-block-end: 0;
+}
+
+.embed-slot {
+  max-width: var(--measure);
+  margin: var(--space-lg) auto;
+  padding: clamp(1.1rem, 2.4vw, 1.75rem);
+  border-radius: var(--radius-xl);
+  background: var(--surface-soft);
+  color: var(--text-soft);
+  font-size: var(--text-sm);
+}
+
+.embed-slot > :last-child {
+  margin-block-end: 0;
+}
+
+.widget {
+  margin-block: var(--space-xl);
+}
+
+/* Form controls. A base coat: rounded, tokenised, focusable. The directory
+   filters and the quiz both ship their own CSS on top of this. */
+.page
+  :where(
+    select,
+    textarea,
+    input[type="search"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]
+  ) {
+  min-height: 2.9rem;
+  padding: 0.55rem 0.95rem;
+  border: 1.5px solid var(--line-control);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--text-sm);
+}
+
+.page :where(textarea) {
+  border-radius: var(--radius-md);
 }
 
 /* NEEDS markers ------------------------------------------------------- */

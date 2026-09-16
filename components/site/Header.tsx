@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SITE_PHONE, SITE_PHONE_HREF } from "@/lib/content";
+import { SITE_PHONE, SITE_PHONE_HREF } from "@/lib/site";
 import "./site-chrome.css";
 
 /** Primary nav, in the order the design concept fixes it. */

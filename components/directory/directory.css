@@ -1,0 +1,201 @@
+/**
+ * Provider and location cards. White and near white only, everything rounded,
+ * faces masked to circles. Agent E owns the global palette and type scale, so
+ * this file stays local to the directory and leans on the shared class names.
+ */
+
+.provider-cards,
+.location-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.provider-card,
+.location-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 24px rgb(0 0 0 / 4%);
+}
+
+.provider-card {
+  align-items: center;
+  text-align: center;
+}
+
+.provider-card__photo {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  background: #f7f7f7;
+}
+
+.provider-card__initials {
+  display: grid;
+  place-items: center;
+  font-size: 1.75rem;
+  letter-spacing: 0.05em;
+  color: #6b6b6b;
+  background: #ebebeb;
+}
+
+.provider-card__name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.provider-card__credentials {
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+.provider-card__title,
+.provider-card__bullet {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #4a4a4a;
+}
+
+.location-card__name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.location-card__address {
+  margin: 0;
+  font-style: normal;
+  color: #4a4a4a;
+}
+
+.location-card__access {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 0.9375rem;
+  color: #4a4a4a;
+}
+
+.location-card__access-mark {
+  width: 0.75rem;
+  height: 0.75rem;
+  flex: none;
+  border-radius: 50%;
+  background: #ebebeb;
+  box-shadow: inset 0 0 0 2px #9a9a9a;
+}
+
+/* Only a confirmed office gets the filled mark. Unknown offices get none. */
+.location-card__access[data-access="accessible"] .location-card__access-mark {
+  background: #4a4a4a;
+  box-shadow: inset 0 0 0 2px #4a4a4a;
+}
+
+.location-card__access[data-access="not-accessible"] .location-card__access-mark {
+  background: #ffffff;
+  box-shadow: inset 0 0 0 2px #4a4a4a;
+}
+
+.location-map {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  border-radius: 1.5rem;
+  background: #f7f7f7;
+}
+
+/* ------------------------------------------------------------------ */
+/* Directory on /providers                                             */
+/* ------------------------------------------------------------------ */
+
+.provider-directory {
+  margin: 2rem 0;
+}
+
+.provider-directory__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: #f7f7f7;
+}
+
+.provider-directory__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 11rem;
+  flex: 1 1 11rem;
+}
+
+.provider-directory__field label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.provider-directory__field select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+}
+
+.provider-directory__field select:disabled {
+  color: #6b6b6b;
+  background: #ebebeb;
+}
+
+.provider-directory__clear {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ebebeb;
+  border-radius: 999px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.provider-directory__field select:focus-visible,
+.provider-directory__clear:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.provider-directory__status {
+  margin: 1rem 0 0;
+  font-size: 0.9375rem;
+  color: #4a4a4a;
+}
+
+.provider-directory__admin {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: #f7f7f7;
+}
+
+.provider-directory__admin h3 {
+  margin-top: 0;
+}
+
+.provider-directory__admin ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.provider-directory__admin-name {
+  font-weight: 600;
+}

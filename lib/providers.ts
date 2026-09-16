@@ -133,6 +133,25 @@ const CONCERN_PATTERNS: [RegExp, string][] = [
   [/chronic pain|chronic illness/i, "/concerns/chronic-pain-and-illness"],
 ];
 
+/**
+ * The template notes name the modalities that have no page of their own (CBT,
+ * psychodynamic, humanistic, mindfulness, acupressure, electrical stimulation,
+ * deep tissue, trigger point). The massage and cupping variants are not on
+ * that list: they are sections of the massage and cupping pages, so they link
+ * there.
+ */
+const MODALITY_PATTERNS: [RegExp, string][] = [
+  [/massage$/i, "/wellness/massage"],
+  [/cupping/i, "/wellness/cupping"],
+];
+
+function modalityUrl(modality: string): string | undefined {
+  const normalized = modality.trim().toLowerCase();
+  const exact = MODALITY_URLS[normalized];
+  if (exact) return exact;
+  return MODALITY_PATTERNS.find(([pattern]) => pattern.test(normalized))?.[1];
+}
+
 interface ModalityLink {
   label: string;
   url: string;
@@ -144,7 +163,7 @@ export function modalityLinks(provider: Provider): ModalityLink[] {
   const links: ModalityLink[] = [];
 
   for (const modality of provider.modalities) {
-    const url = MODALITY_URLS[modality.trim().toLowerCase()];
+    const url = modalityUrl(modality);
     if (!url || seen.has(url) || !urlExists(url)) continue;
     seen.add(url);
     links.push({ label: modality.trim(), url });

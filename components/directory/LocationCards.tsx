@@ -1,25 +1,84 @@
+import { Fragment } from "react";
 import Link from "next/link";
-import { getLocations } from "@/lib/content";
+import { getLocationCards, type LocationCardData } from "@/lib/locations";
+import "./directory.css";
 
-/** OWNER: providers and locations agent. Accessibility icon, map, hours. */
+/**
+ * [LOCATION CARDS: slug, slug]. Name, address, accessibility, link. The
+ * accessibility state has three values, because the sheet answers true, false,
+ * or [NEEDS]: an office we have not confirmed never shows an accessible mark.
+ */
 export default function LocationCards({ slugs }: { slugs: string[] }) {
-  const all = getLocations();
-  const wanted = slugs.length
-    ? slugs
-        .map((slug) => all.find((location) => location.slug === slug))
-        .filter((location): location is (typeof all)[number] => Boolean(location))
-    : all;
-
-  if (!wanted.length) return null;
+  const cards = getLocationCards(slugs);
+  if (!cards.length) return null;
 
   return (
     <ul className="location-cards">
-      {wanted.map((location) => (
-        <li key={location.slug} className="location-card">
-          <Link href={`/locations/${location.slug}`}>{location.name}</Link>
-          <address>{location.addressLine}</address>
+      {cards.map((card) => (
+        <li key={card.slug} className="location-card">
+          <p className="location-card__name">
+            <Link href={card.url}>{card.name}</Link>
+          </p>
+          <address className="location-card__address">{card.addressLine}</address>
+          <Accessibility card={card} />
         </li>
       ))}
     </ul>
   );
+}
+
+function Accessibility({ card }: { card: LocationCardData }) {
+  if (card.accessibility === "unknown") {
+    return (
+      <p className="location-card__access" data-access="unknown">
+        {card.accessibilityNote ? (
+          <WithNeeds text={card.accessibilityNote} />
+        ) : (
+          <Needs value={card.accessibilityNeeds ?? `accessibility for ${card.name}`} />
+        )}
+      </p>
+    );
+  }
+
+  return (
+    <p className="location-card__access" data-access={card.accessibility}>
+      <span className="location-card__access-mark" aria-hidden="true" />
+      {card.accessibilityLabel}
+    </p>
+  );
+}
+
+/** A rounded stand in until the client supplies the per office map embed. */
+export function LocationMapPlaceholder({ name }: { name: string }) {
+  return (
+    <div className="location-map" aria-hidden="true">
+      <Needs value={`Google Maps embed for ${name}`} />
+    </div>
+  );
+}
+
+/** Sheet sentences can carry their own inline [NEEDS] marker. */
+function WithNeeds({ text }: { text: string }) {
+  const parts = text.split(/(\[NEEDS:?[^\]]*\])/g).filter(Boolean);
+
+  return (
+    <>
+      {parts.map((part, position) => {
+        const marker = /^\[NEEDS:?([^\]]*)\]$/.exec(part);
+        return (
+          <Fragment key={position}>
+            {marker ? <Needs value={marker[1].trim()} /> : part}
+          </Fragment>
+        );
+      })}
+    </>
+  );
+}
+
+/** Same contract as the renderer's marker: visible in dev, inert in production. */
+function Needs({ value }: { value: string }) {
+  if (process.env.NODE_ENV === "production") {
+    return <span data-needs={value} hidden />;
+  }
+  return <mark className="needs">[NEEDS: {value}]</mark>;
 }
