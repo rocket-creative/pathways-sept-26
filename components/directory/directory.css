@@ -30,6 +30,12 @@
   text-align: center;
 }
 
+/* Filtered out by the directory: still in the DOM with its link, not shown.
+   Needed because the flex display above outranks the UA's [hidden] rule. */
+.provider-card[hidden] {
+  display: none;
+}
+
 .provider-card__photo {
   width: 7rem;
   height: 7rem;

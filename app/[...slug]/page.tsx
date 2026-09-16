@@ -79,7 +79,7 @@ export default async function ContentPage({ params }: { params: Promise<RoutePar
         title={page.frontMatter.h1}
         authored={getBreadcrumbTrail(page)}
       />
-      <main id="main" className="page" data-page-type={page.frontMatter.page_type}>
+      <main id="main" className="page page--lanes" data-page-type={page.frontMatter.page_type}>
         <PageBody page={page} />
       </main>
       <Footer />

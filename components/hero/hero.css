@@ -1,0 +1,584 @@
+/* ------------------------------------------------------------------ */
+/* Homepage hero                                                       */
+/*                                                                     */
+/* Two layouts, one markup. The stacked layout below is the resting    */
+/* state and needs no JavaScript: six visible cards under image 1.     */
+/* The pinned layout further down applies only when                    */
+/*   - the viewport is at least 768px wide,                            */
+/*   - the reader has not asked for reduced motion, and                */
+/*   - the boot script in HomeHero.tsx has set                         */
+/*     html[data-hero-mode="pin"].                                     */
+/* Nothing in either layout hides a card: no opacity, visibility,      */
+/* display, clip, or zero height on a stop, ever.                      */
+/* ------------------------------------------------------------------ */
+
+.hero-stage {
+  /* Image 1 fills the viewport height and then some, so the branch runs
+     edge to edge with room to crop above and below. */
+  --hero-img-h: 215vh;
+  --hero-img-w: calc(215vh * 16 / 9);
+  /* Vertical centre of the image sits at 70vh: the branch occupies the
+     lower half of the screen and the sky is left for the h1 and the nav. */
+  --hero-img-top: calc(70vh - 107.5vh);
+  /* The track is exactly the image. The scrub ends where the image ends. */
+  --hero-track-w: var(--hero-img-w);
+  --hero-card-w: clamp(300px, 26vw, 470px);
+  --hero-cta-w: clamp(280px, 22vw, 400px);
+  --hero-gap: 7vh;
+  --hero-ground: 235 235 235;
+  --hero-logo-w: clamp(160px, 21vw, 580px);
+  --hero-glass: rgb(255 255 255 / 0.86);
+  --hero-glass-edge: rgb(255 255 255 / 0.7);
+  --hero-glass-shadow:
+    0 1px 2px rgb(29 39 51 / 0.05),
+    0 14px 36px -18px rgb(29 39 51 / 0.32);
+
+  position: relative;
+}
+
+/* Stacked (default) ---------------------------------------------------- */
+
+.hero-stage__track {
+  display: grid;
+  gap: clamp(1rem, 2.5vw, 1.75rem);
+  width: min(100% - 2 * var(--gutter), 62rem);
+  margin-inline: auto;
+  padding-block: var(--space-md) var(--space-2xl);
+}
+
+.hero-stage__branch {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-2xl);
+}
+
+/* Decorative only; neither does anything until the pinned layout uses it. */
+.hero-stage__frost,
+.hero-stage__lines {
+  display: none;
+}
+
+/* Two surfaces. A card is a rounded white object on the scene; plain copy
+   sits straight on the image with nothing around it. Both carry a small
+   numbered kicker (CSS generated, not page text). */
+.hero-stop__inner {
+  position: relative;
+  padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 3.5vw, 2.25rem);
+}
+
+.hero-stop--card .hero-stop__inner {
+  background: var(--hero-glass);
+  border: 1px solid var(--hero-glass-edge);
+  border-radius: 24px;
+  box-shadow: var(--hero-glass-shadow);
+  -webkit-backdrop-filter: blur(18px) saturate(1.08);
+  backdrop-filter: blur(18px) saturate(1.08);
+}
+
+.hero-stop--plain .hero-stop__inner {
+  padding-inline: 0;
+}
+
+.hero-stop__inner::before {
+  content: attr(data-stop);
+  display: block;
+  margin-block-end: 0.7rem;
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--text-soft, #55606d);
+}
+
+.hero-stop .heading--h2 {
+  margin: 0 0 0.5em;
+  font-size: var(--text-h3);
+  font-weight: 700;
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text);
+}
+
+.hero-stop p {
+  margin: 0;
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  color: var(--text);
+}
+
+.hero-stop .cta {
+  margin: 1rem 0 0.9rem;
+}
+
+/* The stop's one link, as a pill with an arrow (the arrow is CSS content).
+   display: table makes the inline link block level and shrink to fit, so
+   it drops onto its own line under the paragraph without any extra markup. */
+.hero-stop a:not(.button) {
+  display: table;
+  margin-block-start: 0.85rem;
+  padding: 0.5em 1em 0.5em 1.1em;
+  border: 1px solid rgb(29 39 51 / 0.28);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.55);
+  color: var(--text);
+  font-size: 0.92em;
+  font-weight: 700;
+  line-height: 1.1;
+  text-decoration: none;
+  transition:
+    background-color 200ms var(--ease-out),
+    border-color 200ms var(--ease-out);
+}
+
+.hero-stop a:not(.button)::after {
+  content: "→";
+  display: inline-block;
+  margin-inline-start: 0.45em;
+  font-weight: 400;
+  transition: transform 200ms var(--ease-out);
+}
+
+.hero-stop--cta .hero-stop__inner a:not(.button) {
+  margin-inline: auto;
+}
+
+.hero-stop a:not(.button):hover {
+  background: #fff;
+  border-color: var(--text);
+}
+
+.hero-stop a:not(.button):hover::after {
+  transform: translateX(3px);
+}
+
+.hero-stop a:not(.button):focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.hero-stop--cta .hero-stop__inner {
+  text-align: center;
+}
+
+.hero-stop--cta .heading--h2 {
+  font-size: var(--text-h2);
+}
+
+.hero-stop--cta .cta {
+  justify-content: center;
+}
+
+/* Image 2 --------------------------------------------------------------- */
+/* Fixed behind the whole page. Its src is attached by the controller, so   */
+/* it downloads at about 40% of hero progress and is never in <head>.       */
+/* The veil is the same lane gradient as the inner page backdrop            */
+/* (backdrop.css): frosted at the sides where the copy runs, clearer down   */
+/* the middle where the labyrinth sits.                                     */
+
+.hero-handoff {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-handoff__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.hero-handoff::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--lane-veil, rgb(255 255 255 / 0.88));
+}
+
+.hero-handoff[data-show="true"] {
+  opacity: 1;
+  transition: opacity 600ms var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-handoff[data-show="true"] {
+    transition: none;
+  }
+}
+
+/* Pinned ----------------------------------------------------------------- */
+
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  /* The element ScrollTrigger pins: one full viewport, from the very top of
+     the page, so it never travels vertically. overflow: clip cannot be
+     scrolled by anything, focus included; the track only moves by the scrub. */
+  html[data-hero-mode="pin"] .hero-stage__pin {
+    position: relative;
+    height: 100vh;
+    height: 100svh;
+    overflow: clip;
+    background: rgb(var(--hero-ground) / var(--hero-ground-alpha, 1));
+  }
+
+  html[data-hero-mode="pin"] .hero-stage__track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: var(--hero-track-w);
+    max-width: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    will-change: transform;
+  }
+
+  html[data-hero-mode="pin"] .hero-stage__branch {
+    position: absolute;
+    left: 0;
+    top: var(--hero-img-top);
+    width: var(--hero-img-w);
+    max-width: none;
+    height: var(--hero-img-h);
+    border-radius: 0;
+    pointer-events: none;
+    user-select: none;
+    transform-origin: 50% 50%;
+    will-change: filter, opacity, transform;
+  }
+
+  /* Column hairlines across the scene, and the ghosted word behind the first
+     screen. Both ride with the track so they read as part of the picture. */
+  html[data-hero-mode="pin"] .hero-stage__lines {
+    display: block;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgb(29 39 51 / 0.09) 0 1px,
+      transparent 1px 20vw
+    );
+    background-position: 10vw 0;
+  }
+
+  html[data-hero-mode="pin"] .hero-stage__lines::before {
+    content: "Pathways";
+    position: absolute;
+    left: 2vw;
+    bottom: -4vh;
+    font-family: var(--font-display, var(--font-body, system-ui, sans-serif));
+    font-size: 27vw;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    white-space: nowrap;
+    color: rgb(29 39 51 / 0.045);
+  }
+
+  /* The frosted sheet: one screen and a half wide, anchored to the image's
+     right edge, so it slides on with the last screen of the track. A soft
+     left edge, a cool white body and a fine grain read as glass. Its
+     opacity is --hero-frost, set by the controller from the hand off. */
+  html[data-hero-mode="pin"] .hero-stage__frost {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 150vw;
+    pointer-events: none;
+    opacity: var(--hero-frost, 0);
+    background-image:
+      radial-gradient(
+        ellipse 60% 70% at 62% 45%,
+        rgb(255 255 255 / 0.55) 0%,
+        rgb(255 255 255 / 0) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgb(255 255 255 / 0) 0%,
+        rgb(247 249 252 / 0.62) 22%,
+        rgb(247 249 252 / 0.72) 100%
+      ),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.12 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    background-size:
+      100% 100%,
+      100% 100%,
+      160px 160px;
+    will-change: opacity;
+  }
+
+  html[data-hero-mode="pin"] .hero-stop {
+    position: absolute;
+    width: var(--hero-card-w);
+    left: calc(var(--sx) * var(--hero-img-w) - var(--hero-card-w) / 2);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--below {
+    top: calc(var(--hero-img-top) + var(--sy) * var(--hero-img-h) + var(--hero-gap));
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--above {
+    bottom: calc(100% - (var(--hero-img-top) + var(--sy) * var(--hero-img-h)) + var(--hero-gap));
+  }
+
+  html[data-hero-mode="pin"] .hero-stop .heading--h2 {
+    font-size: clamp(1.2rem, 1.35vw, 1.6rem);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop p {
+    font-size: clamp(0.9rem, 0.92vw, 1.05rem);
+    line-height: 1.55;
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--card .hero-stop__inner {
+    padding: clamp(1.1rem, 1.4vw, 1.6rem) clamp(1.2rem, 1.5vw, 1.75rem);
+  }
+
+  /* Plain copy on the image: a little narrower and a touch larger so it
+     reads as a caption in the scene rather than a card with no edges. */
+  html[data-hero-mode="pin"] .hero-stop--plain {
+    width: calc(var(--hero-card-w) * 0.92);
+    left: calc(var(--sx) * var(--hero-img-w) - var(--hero-card-w) * 0.46);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--plain .hero-stop__inner {
+    padding: 0.4rem 0 0;
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--plain .heading--h2 {
+    font-size: clamp(1.35rem, 1.55vw, 1.85rem);
+  }
+
+  /* Anchor dot on the branch, and the leader between it and the card. Both
+     decorative pseudo elements: the stem only ever changes transform. */
+  html[data-hero-mode="pin"] .hero-stop:not(.hero-stop--cta)::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 6px);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--brand);
+    box-shadow:
+      0 0 0 4px rgb(255 255 255 / 0.85),
+      0 0 0 5px rgb(8 112 210 / 0.35);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop:not(.hero-stop--cta)::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 0.5px);
+    width: 1px;
+    height: var(--hero-gap);
+    background: var(--brand);
+    transform: scaleY(0.4);
+    transition: transform 600ms var(--ease-out);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--below::before {
+    top: calc(-1 * var(--hero-gap) - 6px);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--below::after {
+    top: calc(-1 * var(--hero-gap));
+    transform-origin: top center;
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--above::before {
+    bottom: calc(-1 * var(--hero-gap) - 6px);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--above::after {
+    bottom: calc(-1 * var(--hero-gap));
+    transform-origin: bottom center;
+  }
+
+  html[data-hero-mode="pin"] .hero-stop[data-active="true"]::after {
+    transform: scaleY(1);
+  }
+
+  /* Stop 6: a card at the image's right end, above the branch tail, below
+     the fixed logo. It is on screen for the whole of the hand off. */
+  html[data-hero-mode="pin"] .hero-stop--cta {
+    left: calc(var(--hero-img-w) - var(--hero-cta-w) - var(--gutter));
+    top: 42vh;
+    width: var(--hero-cta-w);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--cta .hero-stop__inner {
+    padding: clamp(1.4rem, 2vw, 2rem) clamp(1.25rem, 1.8vw, 1.75rem);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--cta .heading--h2 {
+    font-size: clamp(1.4rem, 1.7vw, 2rem);
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--cta p {
+    font-size: clamp(0.9rem, 0.95vw, 1.05rem);
+  }
+
+  /* The h1 block. Stays in the DOM above the stage and outside the pinned
+     wrapper; visually it sits over the stage's top left, on the sky, and
+     scrolls off while the track holds still (see heroRuntime.ts). */
+  html[data-hero-mode="pin"] .page--home {
+    position: relative;
+  }
+
+  html[data-hero-mode="pin"] .home-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: min(40rem, 46vw);
+    pointer-events: none;
+  }
+
+  html[data-hero-mode="pin"] .home-intro a,
+  html[data-hero-mode="pin"] .home-intro button {
+    pointer-events: auto;
+  }
+
+  html[data-hero-mode="pin"] .home-intro .prose {
+    width: auto;
+    max-width: none;
+    padding: clamp(6.5rem, 15vh, 9rem) 0 0 var(--gutter);
+  }
+
+  html[data-hero-mode="pin"] .home-intro .prose > .page-section {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  html[data-hero-mode="pin"] .home-intro h1 {
+    margin: 0 0 0.45em;
+    max-width: none;
+    font-size: clamp(2rem, 2.9vw, 3.3rem);
+    line-height: 1.08;
+    letter-spacing: var(--tracking-tight);
+  }
+
+  html[data-hero-mode="pin"] .home-intro p {
+    margin: 0 0 0.75em;
+    max-width: none;
+    font-size: var(--text-base);
+    line-height: 1.5;
+  }
+
+  html[data-hero-mode="pin"] .home-intro .cta {
+    display: inline-flex;
+    margin: 0.35rem 1rem 0 0;
+    vertical-align: middle;
+  }
+
+  html[data-hero-mode="pin"] .home-intro .cta + p {
+    display: inline-block;
+    margin: 0.35rem 0 0;
+    vertical-align: middle;
+  }
+
+  /* Site chrome over the stage: no background, out of the flow so the stage
+     starts at the top of the page, with the logo big and fixed top right. */
+  html[data-hero-mode="pin"] .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  html[data-hero-mode="pin"] .site-header__inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "panel";
+    max-width: none;
+    padding-right: calc(var(--hero-logo-w, clamp(160px, 21vw, 580px)) + 2.5vw);
+  }
+
+  html[data-hero-mode="pin"] .site-header__logo {
+    position: fixed;
+    top: clamp(6px, 1vh, 16px);
+    right: clamp(8px, 1.4vw, 32px);
+    z-index: 60;
+    margin: 0;
+  }
+
+  html[data-hero-mode="pin"] .site-header__logo img {
+    width: var(--hero-logo-w, clamp(160px, 21vw, 580px));
+    height: auto;
+  }
+
+  html[data-hero-mode="pin"] .site-header__nav a:hover {
+    background: rgb(255 255 255 / 0.7);
+  }
+
+  html[data-hero-mode="pin"] .site-header__nav a[aria-current="page"] {
+    background: rgb(255 255 255 / 0.85);
+  }
+}
+
+/* --hero-logo-w is defined on .hero-stage; the header sits outside it. */
+html[data-hero-mode="pin"] {
+  --hero-logo-w: clamp(160px, 21vw, 580px);
+}
+
+/* ------------------------------------------------------------------ */
+/* Homepage shell around the hero                                      */
+/* ------------------------------------------------------------------ */
+
+/* Transparent so image 2 shows through once the hero hands off. The
+   design system paints html, body and .page solid; step them aside. */
+html:has(.page--home),
+body:has(.page--home) {
+  background: var(--bg, #ebebeb);
+}
+
+body:has(.page--home),
+.page--home,
+.page--home .prose {
+  background: transparent;
+}
+
+.home-intro {
+  position: relative;
+  z-index: 2;
+}
+
+.home-intro .prose {
+  padding-block-end: var(--space-md);
+}
+
+/* Everything after the hero uses the lane layout from backdrop.css, the
+   same as the inner pages: copy in the frosted side lanes, the labyrinth
+   clear down the middle, no boxes. */
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .hero-stop--card .hero-stop__inner {
+    background: rgb(255 255 255 / 0.96);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .hero-handoff {
+    display: none;
+  }
+
+  .hero-stop--card .hero-stop__inner {
+    background: #fff;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}

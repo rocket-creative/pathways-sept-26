@@ -26,23 +26,37 @@ Pathways Within is a mental health and wellness practice with five offices acros
 
 Or call (631) 371-3825.
 
+[HERO: pinned horizontal scroll, 5 stops + CTA. Build rules in section 3 of 00-cursor-master-prompt.md and the SEO notes at the end of this file. Each stop below is one card: the H2 is the card heading, the paragraph is the card body, the link is the card's one action. The H1 above is stop 0 and stays in normal flow before pinning begins.]
+
 ## Healing is not a straight line
 
-The labyrinth in our logo is not a maze. There are no wrong turns and no dead ends. The path winds, pauses, circles inward, and opens back out, but it keeps moving. That is how care works here. You start where you are, move at your pace, and choose the support that fits now, knowing it may change.
+The labyrinth in our logo is not a maze. There are no wrong turns and no dead ends. The path winds, pauses, circles inward, and opens back out, but it keeps moving. You start where you are and choose the support that fits now, knowing it may change. [How care works](/how-it-works)
 
-## Three pillars, one plan
+## Wisdom: therapy
 
-[IMAGE: Three rounded cards for Wisdom, Wellness, and Medication Management arranged along a curved path]
+Licensed therapists for individuals, couples, children, teens, and families across Nassau and Suffolk County. Trauma work including EMDR, IFS, and somatic therapy. Group therapy, hypnotherapy, support for veterans and first responders, and bariatric surgery evaluations. [Explore therapy](/therapy)
 
-**Wisdom: therapy.** Licensed therapists for individuals, couples, children, teens, and families. Trauma work including EMDR, IFS, and somatic therapy. Group therapy, hypnotherapy, support for veterans and first responders, and bariatric surgery evaluations. [Explore therapy](/therapy).
+## Medication management
 
-**Medication Management.** A psychiatric nurse practitioner who takes the time to understand what is going on before anything is prescribed. Ages 10 and up. Works alongside your therapist when you have one. [Explore medication management](/medication-management).
+A psychiatric nurse practitioner who takes the time to understand what is going on before anything is prescribed. Ages 10 and up, in person or by telehealth. Works alongside your therapist when you have one, so medication and therapy pull in the same direction. [Explore medication management](/medication-management)
 
-**Wellness: the body.** Licensed massage therapists, a licensed acupuncturist, cupping, and energy work. Available on their own or as part of a plan that includes therapy. NYSHIP accepted for eligible medical massage. [Explore wellness](/wellness).
+## Wellness: the body
 
-## How the 360 intake works
+New York State licensed massage therapists, a licensed acupuncturist, cupping, and energy work. Book on their own or add them to a plan that includes therapy, because stress and grief live in the body too. NYSHIP accepted for eligible medical massage. [Explore wellness](/wellness)
 
-You do not need to know which service you need. You tell the Welcome Team what you are experiencing. They schedule a 360 intake, a conversation that looks at your mind, your body, and your daily life together. From that, the team builds a plan and matches you with available providers. The Welcome Team stays your point of contact throughout. [See every step](/how-it-works).
+## One conversation starts everything
+
+You do not need to know which service you need. You tell the Welcome Team what you are experiencing. They schedule a 360 intake, a conversation that looks at your mind, your body, and your daily life together, then build one plan and match you with available providers. [See every step](/how-it-works)
+
+[HERO CTA: stop 6, full width]
+
+## Ready when you are
+
+[CTA] Start your 360 intake -> /contact
+
+Or call (631) 371-3825. Five Long Island offices and telehealth in four states.
+
+[/HERO]
 
 ## What people come to us for
 
@@ -75,6 +89,16 @@ Tell the Welcome Team what is going on. They will handle the rest.
 [CTA] Start your 360 intake -> /contact
 
 Call or text (631) 371-3825. If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+
+[SEO AND BUILD NOTES FOR THE HERO, for Cursor]
+1. All six stops are real HTML in the DOM at load, in this reading order, as <section> elements with <h2> and <p>. Nothing is injected on scroll. Googlebot renders the page once with a tall viewport and does not scroll, so anything that only exists after a scroll event does not exist to Google.
+2. Move cards with transform only (GSAP ScrollTrigger pin + x translate). Never opacity:0, visibility:hidden, or display:none as the resting state. Cards may start slightly offset and settle in, but must be fully visible without JavaScript and after the page load animation finishes. Add a `.no-js` fallback that lays the cards out vertically.
+3. The page blur after stop 6 applies to a background layer only (the branch/world render), never to text. Text under the blur is still readable and still selectable.
+4. No scroll hijacking: do not change scroll position on load, do not strip or rewrite the URL hash, do not wire wheel events to horizontal movement. Pinning via ScrollTrigger keeps native scroll, which is what Google's "read more" deep link rule requires. Each H2 keeps its id so /#wisdom-therapy lands on that card.
+5. `prefers-reduced-motion: reduce` disables the pin and shows the six stops as a vertical stack with the same markup. Mobile under 768px does the same; horizontal pinning is desktop only.
+6. Keyboard: the six links are in tab order left to right; focusing a card scrolls it into view. Screen readers read the section as six headings in a row, which is the vertical fallback anyway.
+7. LCP: the first paint is the H1 and the branch render. Preload the branch image, serve AVIF/WebP, set width and height. Load GSAP deferred; the hero must be readable before GSAP arrives.
+8. The H1 stays in normal document flow above the pinned section so it is the first heading Google sees, not a card.
 
 **Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 

@@ -1,10 +1,16 @@
 "use client";
 
-import { useId, useMemo, useState } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
+import {
+  isEmptySelection,
+  matchesSelection,
+  searchFromSelection,
+  selectionFromSearch,
+  type FacetKey,
+  type Selection,
+} from "@/lib/provider-filter";
 import ProviderCard from "./ProviderCard";
 import type { ProviderCardData } from "./types";
-
-type FacetKey = "pillars" | "specialties" | "modalities" | "ageGroups" | "locations" | "formats";
 
 /** Labels come from the filter list in content/pages/providers.md. */
 const FACETS: { key: FacetKey; label: string; needs?: string }[] = [
@@ -16,17 +22,17 @@ const FACETS: { key: FacetKey; label: string; needs?: string }[] = [
   { key: "formats", label: "Format" },
 ];
 
-type Selection = Record<FacetKey, string>;
-
-const EMPTY: Selection = {
-  pillars: "",
-  specialties: "",
-  modalities: "",
-  ageGroups: "",
-  locations: "",
-  formats: "",
-};
-
+/**
+ * Client side filters over a server rendered list.
+ *
+ * Every card is in the HTML at load and stays in the DOM while filtering:
+ * cards that do not match are marked `hidden`, never removed, so each
+ * /providers/{slug} link exists for crawlers whatever the query string says.
+ *
+ * Filter state lives in the query string (?pillar=wellness&specialty=anxiety)
+ * and is restored on load. The page's canonical stays /providers with no
+ * query, so filter combinations are not indexable duplicates.
+ */
 export default function ProviderDirectoryClient({
   providers,
   admin,
@@ -34,8 +40,40 @@ export default function ProviderDirectoryClient({
   providers: ProviderCardData[];
   admin: ProviderCardData[];
 }) {
-  const [selection, setSelection] = useState<Selection>(EMPTY);
+  const [selection, setSelection] = useState<Selection>({});
+  const [ready, setReady] = useState(false);
   const fieldId = useId();
+
+  // Restore from the URL once, after hydration, so server and client agree
+  // on the first render (everything visible).
+  useEffect(() => {
+    setSelection(selectionFromSearch(window.location.search));
+    setReady(true);
+
+    const onPopState = () => setSelection(selectionFromSearch(window.location.search));
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, []);
+
+  const update = (facet: FacetKey, value: string) => {
+    setSelection((current) => {
+      const next: Selection = { ...current };
+      if (value) next[facet] = value.split(",").map((part) => part.trim()).filter(Boolean);
+      else delete next[facet];
+      const url = `${window.location.pathname}${searchFromSelection(next)}${window.location.hash}`;
+      window.history.replaceState(window.history.state, "", url);
+      return next;
+    });
+  };
+
+  const clear = () => {
+    setSelection({});
+    window.history.replaceState(
+      window.history.state,
+      "",
+      `${window.location.pathname}${window.location.hash}`,
+    );
+  };
 
   const options = useMemo(() => {
     const collected = {} as Record<FacetKey, string[]>;
@@ -52,21 +90,14 @@ export default function ProviderDirectoryClient({
   }, [providers]);
 
   const visible = useMemo(
-    () =>
-      providers.filter((provider) =>
-        FACETS.every(({ key }) => {
-          const wanted = selection[key];
-          if (!wanted) return true;
-          return provider[key].some((value) => value.toLowerCase() === wanted.toLowerCase());
-        }),
-      ),
+    () => new Set(providers.filter((provider) => matchesSelection(provider, selection)).map((p) => p.slug)),
     [providers, selection],
   );
 
-  const filtered = FACETS.some(({ key }) => selection[key]);
+  const filtered = !isEmptySelection(selection);
 
   return (
-    <section className="provider-directory">
+    <section className="provider-directory" data-directory-ready={ready ? "true" : "false"}>
       <form
         className="provider-directory__filters"
         aria-label="Filter providers"
@@ -75,19 +106,30 @@ export default function ProviderDirectoryClient({
         {FACETS.map((facet) => {
           const id = `${fieldId}-${facet.key}`;
           const values = options[facet.key];
+          const wanted = selection[facet.key] ?? [];
+          const current = wanted.join(",");
+          // A value that arrived by URL (or several ORed together) may not be
+          // one of the sheet's exact values; keep the control honest about it.
+          const custom =
+            current && !values.some((value) => value.toLowerCase() === current.toLowerCase())
+              ? current
+              : null;
+          const selectValue = custom
+            ? custom
+            : (values.find((value) => value.toLowerCase() === current.toLowerCase()) ?? "");
+
           return (
             <div className="provider-directory__field" key={facet.key}>
               <label htmlFor={id}>{facet.label}</label>
               <select
                 id={id}
                 name={facet.key}
-                value={selection[facet.key]}
+                value={selectValue}
                 disabled={values.length === 0}
-                onChange={(event) =>
-                  setSelection((current) => ({ ...current, [facet.key]: event.target.value }))
-                }
+                onChange={(event) => update(facet.key, event.target.value)}
               >
                 <option value="">All</option>
+                {custom ? <option value={custom}>{wanted.join(", ")}</option> : null}
                 {values.map((value) => (
                   <option key={value} value={value}>
                     {value}
@@ -100,23 +142,19 @@ export default function ProviderDirectoryClient({
         })}
 
         {filtered ? (
-          <button
-            type="button"
-            className="provider-directory__clear"
-            onClick={() => setSelection(EMPTY)}
-          >
+          <button type="button" className="provider-directory__clear" onClick={clear}>
             Clear filters
           </button>
         ) : null}
       </form>
 
       <p className="provider-directory__status" role="status" aria-live="polite">
-        Showing {visible.length} of {providers.length} providers
+        Showing {visible.size} of {providers.length} providers
       </p>
 
       <ul className="provider-cards">
-        {visible.map((provider) => (
-          <ProviderCard key={provider.slug} provider={provider} />
+        {providers.map((provider) => (
+          <ProviderCard key={provider.slug} provider={provider} hidden={!visible.has(provider.slug)} />
         ))}
       </ul>
 

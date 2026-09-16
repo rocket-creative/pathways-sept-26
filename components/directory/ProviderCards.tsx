@@ -1,16 +1,28 @@
-import { getProviders, slugify, type Provider, type ProviderCardFilter } from "@/lib/content";
+import { getProviders, type Provider, type ProviderCardFilter } from "@/lib/content";
+import { matchesFacet, type FacetKey } from "@/lib/provider-filter";
 import ProviderCard from "./ProviderCard";
 import { toProviderCardData } from "./types";
 import "./directory.css";
 
 /**
- * [PROVIDER CARDS: slug, slug], [PROVIDER CARDS: specialty=anxiety], and
- * [PROVIDER CARDS: pillar=wellness] all land here. Inactive rows and the admin
- * team never appear: they have no profile page to link to.
+ * [PROVIDER CARDS: slug, slug], [PROVIDER CARDS: specialty=anxiety],
+ * [PROVIDER CARDS: pillar=wellness], and [PROVIDER CARDS: location=smithtown]
+ * all land here. Inactive rows and the admin team never appear: they have no
+ * profile page to link to.
+ *
+ * Keyed filters run through lib/provider-filter.ts, the same function the
+ * /providers directory uses in the browser, so a concern page and the
+ * directory always agree.
+ *
+ * A marker that matches nobody renders a [NEEDS] note in development and
+ * nothing in production, never an empty list under a heading.
  */
 export default function ProviderCards({ filter }: { filter: ProviderCardFilter }) {
   const providers = selectProviders(filter);
-  if (!providers.length) return null;
+
+  if (!providers.length) {
+    return <Needs value={`no active provider matches [PROVIDER CARDS: ${describe(filter)}]`} />;
+  }
 
   return (
     <ul className="provider-cards">
@@ -21,31 +33,33 @@ export default function ProviderCards({ filter }: { filter: ProviderCardFilter }
   );
 }
 
+const FACET_FOR: Record<Exclude<ProviderCardFilter["by"], "slugs">, FacetKey> = {
+  specialty: "specialties",
+  pillar: "pillars",
+  location: "locations",
+};
+
 export function selectProviders(filter: ProviderCardFilter): Provider[] {
   const active = getProviders().filter((provider) => provider.active && !provider.isAdmin);
 
-  switch (filter.by) {
-    case "slugs":
-      return filter.slugs
-        .map((slug) => active.find((provider) => provider.slug === slug))
-        .filter((provider): provider is Provider => Boolean(provider));
-    case "specialty":
-      return active.filter((provider) =>
-        provider.specialties.some((specialty) =>
-          specialty.toLowerCase().includes(filter.value.toLowerCase()),
-        ),
-      );
-    case "pillar":
-      return active.filter((provider) =>
-        provider.pillars.some((pillar) => pillar.toLowerCase() === filter.value.toLowerCase()),
-      );
-    // Matches on the slug, so "Rockville Centre" and "rockville-centre" agree.
-    // Every locations cell still reads [NEEDS], so this matches nobody today.
-    case "location":
-      return active.filter((provider) =>
-        provider.locations.some((location) => slugify(location) === slugify(filter.value)),
-      );
-    default:
-      return [];
+  if (filter.by === "slugs") {
+    return filter.slugs
+      .map((slug) => active.find((provider) => provider.slug === slug))
+      .filter((provider): provider is Provider => Boolean(provider));
   }
+
+  const facet = FACET_FOR[filter.by];
+  return active.filter((provider) => matchesFacet(toProviderCardData(provider), facet, [filter.value]));
+}
+
+function describe(filter: ProviderCardFilter): string {
+  return filter.by === "slugs" ? filter.slugs.join(", ") : `${filter.by}=${filter.value}`;
+}
+
+/** Same contract as the renderer's marker: visible in dev, inert in production. */
+function Needs({ value }: { value: string }) {
+  if (process.env.NODE_ENV === "production") {
+    return <span className="needs" data-needs={value} hidden />;
+  }
+  return <mark className="needs" data-needs={value}>[NEEDS: {value}]</mark>;
 }

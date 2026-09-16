@@ -96,7 +96,7 @@ export type Block =
       instructions: string[];
     };
 
-export type WidgetName = "quiz" | "providerDirectory" | "resourceLibrary" | "blogIndex";
+export type WidgetName = "quiz" | "providerDirectory" | "resourceLibrary" | "blogIndex" | "hero";
 
 export type ProviderCardFilter =
   | { by: "slugs"; slugs: string[] }
@@ -362,7 +362,19 @@ export function parseBlocks(body: string): { blocks: Block[]; jsonLd: unknown | 
 }
 
 const REGION_MARKER_RE =
-  /^\[(?:\/?QUIZ|PROVIDER DIRECTORY|RESOURCE LIBRARY|BLOG INDEX)\]$/gim;
+  /^\[(?:\/?QUIZ|PROVIDER DIRECTORY|RESOURCE LIBRARY|BLOG INDEX|HERO(?::[^\]\n]*)?|HERO CTA:[^\]\n]*|\/HERO)\]$/gim;
+
+/** `[HERO: …]` opens the homepage hero region; `[/HERO]` closes it. */
+const HERO_OPEN_RE = /^\[HERO(?::[^\]]*)?\]$/i;
+const HERO_CLOSE_RE = /^\[\/HERO\]$/i;
+/** `[HERO CTA: …]` marks the stop that follows as the closing, full width one. */
+const HERO_CTA_RE = /^\[HERO CTA:[^\]]*\]$/i;
+
+/**
+ * A chunk addressed to the build agent, e.g. "[SEO AND BUILD NOTES FOR THE
+ * HERO, for Cursor]" followed by numbered rules. Never copy; never rendered.
+ */
+const BUILD_NOTES_RE = /^\[[^\]\n]*\bfor Cursor\]/i;
 
 /** Markers that stand alone and mount a component in place of copy. */
 const STANDALONE_WIDGETS: Record<string, WidgetName> = {
@@ -386,6 +398,27 @@ function parseChunks(chunks: string[]): Block[] {
     const widget = STANDALONE_WIDGETS[chunk.toUpperCase()];
     if (widget) {
       blocks.push({ kind: "widget", name: widget, blocks: [], instructions: [] });
+      continue;
+    }
+
+    if (BUILD_NOTES_RE.test(chunk)) continue;
+
+    if (HERO_OPEN_RE.test(chunk)) {
+      const close = chunks.findIndex(
+        (candidate, position) => position > index && HERO_CLOSE_RE.test(candidate),
+      );
+      const end = close === -1 ? chunks.length : close;
+      const inner = chunks.slice(index + 1, end);
+      const isMarker = (line: string) => HERO_CTA_RE.test(line) || INSTRUCTION_RE.test(line);
+
+      blocks.push({
+        kind: "widget",
+        name: "hero",
+        blocks: parseChunks(inner.filter((line) => !isMarker(line))),
+        instructions: [chunk, ...inner.filter(isMarker)],
+      });
+
+      index = end;
       continue;
     }
 

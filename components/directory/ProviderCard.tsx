@@ -6,9 +6,16 @@ import type { ProviderCardData } from "./types";
  * bullet, link to the profile. Shared by the sheet driven card lists and the
  * client side directory, so it holds no data loading of its own.
  */
-export default function ProviderCard({ provider }: { provider: ProviderCardData }) {
+export default function ProviderCard({
+  provider,
+  hidden = false,
+}: {
+  provider: ProviderCardData;
+  /** Filtered out by the directory. The card stays in the DOM, link intact. */
+  hidden?: boolean;
+}) {
   return (
-    <li className="provider-card">
+    <li className="provider-card" data-slug={provider.slug} hidden={hidden || undefined}>
       <Headshot provider={provider} />
       <p className="provider-card__name">
         {provider.url ? (

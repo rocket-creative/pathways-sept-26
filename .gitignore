@@ -7,6 +7,10 @@
 next-env.d.ts
 *.tsbuildinfo
 
+# playwright
+/test-results/
+/playwright-report/
+
 # misc
 .DS_Store
 *.log

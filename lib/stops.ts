@@ -43,7 +43,9 @@ export const BRANCH = {
     "/branch-14000.webp 14000w",
     "/branch-16368.webp 16368w",
   ].join(", "),
-  sizes: "(max-width: 899px) calc(52vh * 16 / 9), calc(215vh * 16 / 9)",
+  // Under 768px (and under reduced motion) the hero stacks and the image runs
+  // the content width; pinned, it is 2.15 viewport heights tall.
+  sizes: "(max-width: 767px) 100vw, calc(215vh * 16 / 9)",
   width: 2000,
   height: 1125,
 } as const;

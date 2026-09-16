@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { fontClassNames } from "@/lib/fonts";
-import { BRANCH } from "@/lib/stops";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,16 +19,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={fontClassNames}>
-      <head>
-        <link
-          rel="preload"
-          as="image"
-          href={BRANCH.src}
-          imageSrcSet={BRANCH.srcSet}
-          imageSizes={BRANCH.sizes}
-          fetchPriority="high"
-        />
-      </head>
+      {/* Image 1 (the branch) is preloaded by components/hero/HomeHero on the
+          homepage only; every other page has no use for it. */}
       <body>{children}</body>
     </html>
   );

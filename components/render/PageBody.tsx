@@ -249,6 +249,8 @@ function Widget({
     );
   }
 
+  // The homepage lifts the hero region out of the article itself (app/page.tsx)
+  // and hands it to components/hero. Rendered here, it is plain copy in order.
   return (
     <div className="widget" data-widget={block.name}>
       {renderBlocks(block.blocks, ctx)}
