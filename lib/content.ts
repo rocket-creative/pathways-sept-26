@@ -74,19 +74,31 @@ export type Block =
   | { kind: "heading"; level: 1 | 2 | 3 | 4; id: string; text: string; inline: InlineNode[] }
   | { kind: "paragraph"; inline: InlineNode[] }
   | { kind: "list"; ordered: boolean; items: InlineNode[][] }
-  | { kind: "quote"; inline: InlineNode[] }
+  | { kind: "quote"; paragraphs: InlineNode[][] }
   | { kind: "cta"; label: string; href: string }
   | { kind: "form"; variant: keyof typeof FORM_EMBEDS }
   | { kind: "providerCards"; filter: ProviderCardFilter }
   | { kind: "locationCards"; slugs: string[] }
   | { kind: "image"; alt: string; src?: string }
   | { kind: "needs"; value: string }
-  | { kind: "byline"; inline: InlineNode[] };
+  | { kind: "byline"; inline: InlineNode[] }
+  | { kind: "embed"; label: string; note: InlineNode[] }
+  | {
+      kind: "widget";
+      name: WidgetName;
+      /** Copy the widget renders, build instructions already removed. */
+      blocks: Block[];
+      /** "Routing rules for Cursor" style lines: never rendered as copy. */
+      instructions: string[];
+    };
+
+export type WidgetName = "quiz" | "providerDirectory" | "resourceLibrary" | "blogIndex";
 
 export type ProviderCardFilter =
   | { by: "slugs"; slugs: string[] }
   | { by: "specialty"; value: string }
-  | { by: "pillar"; value: string };
+  | { by: "pillar"; value: string }
+  | { by: "location"; value: string };
 
 export interface Page {
   frontMatter: FrontMatter;
@@ -333,111 +345,182 @@ export function parseBlocks(body: string): { blocks: Block[]; jsonLd: unknown | 
     }
   }
 
-  const blocks: Block[] = [];
-  const chunks = markdown.split(/\n{2,}/);
+  // Region markers are written flush against the copy they wrap, so isolate
+  // them into their own chunks before splitting on blank lines.
+  const isolated = markdown.replace(REGION_MARKER_RE, "\n\n$&\n\n");
 
-  for (const chunk of chunks) {
-    const text = chunk.trim();
-    if (!text) continue;
+  const chunks = isolated
+    .split(/\n{2,}/)
+    .map((chunk) => chunk.trim())
+    .filter(Boolean);
 
-    const heading = /^(#{1,4})\s+(.*)$/.exec(text);
-    if (heading) {
-      const level = heading[1].length as 1 | 2 | 3 | 4;
-      const inline = parseInline(heading[2].trim());
-      const plain = inlineToText(inline);
-      blocks.push({ kind: "heading", level, id: slugify(plain), text: plain, inline });
-      continue;
-    }
-
-    const cta = /^\[CTA\]\s*(.+?)\s*->\s*(\S+)$/.exec(text);
-    if (cta) {
-      blocks.push({ kind: "cta", label: cta[1], href: cta[2] });
-      continue;
-    }
-
-    const form = /^\[FORM:\s*(therapy|wellness)\s*\]$/i.exec(text);
-    if (form) {
-      blocks.push({ kind: "form", variant: form[1].toLowerCase() as keyof typeof FORM_EMBEDS });
-      continue;
-    }
-
-    const providerCards = /^\[PROVIDER CARDS:\s*([^\]]+)\]$/i.exec(text);
-    if (providerCards) {
-      blocks.push({ kind: "providerCards", filter: parseProviderFilter(providerCards[1]) });
-      continue;
-    }
-
-    const locationCards = /^\[LOCATION CARDS:\s*([^\]]+)\]$/i.exec(text);
-    if (locationCards) {
-      blocks.push({
-        kind: "locationCards",
-        slugs: locationCards[1]
-          .split(",")
-          .map((slug) => slug.trim())
-          .filter((slug) => slug && !isNeeds(slug)),
-      });
-      continue;
-    }
-
-    const image = /^\[IMAGE:\s*([\s\S]+)\]$/i.exec(text);
-    if (image) {
-      const value = image[1].trim();
-      const withUrl = /^(https?:\/\/\S+)\s+([\s\S]+)$/.exec(value);
-      blocks.push(
-        withUrl
-          ? { kind: "image", src: withUrl[1], alt: withUrl[2].trim() }
-          : { kind: "image", alt: value },
-      );
-      continue;
-    }
-
-    const standaloneNeeds = /^\[NEEDS:?([^\]]*)\]$/.exec(text);
-    if (standaloneNeeds) {
-      blocks.push({ kind: "needs", value: standaloneNeeds[1].trim() });
-      continue;
-    }
-
-    const lines = text.split("\n").map((line) => line.trim());
-
-    if (lines.every((line) => /^[-*]\s+/.test(line))) {
-      blocks.push({
-        kind: "list",
-        ordered: false,
-        items: lines.map((line) => parseInline(line.replace(/^[-*]\s+/, ""))),
-      });
-      continue;
-    }
-
-    if (lines.every((line) => /^\d+[.)]\s+/.test(line))) {
-      blocks.push({
-        kind: "list",
-        ordered: true,
-        items: lines.map((line) => parseInline(line.replace(/^\d+[.)]\s+/, ""))),
-      });
-      continue;
-    }
-
-    if (lines.every((line) => line.startsWith(">"))) {
-      blocks.push({
-        kind: "quote",
-        inline: parseInline(lines.map((line) => line.replace(/^>\s?/, "")).join(" ")),
-      });
-      continue;
-    }
-
-    const inline = parseInline(lines.join(" "));
-    blocks.push({ kind: BYLINE_RE.test(text) ? "byline" : "paragraph", inline });
-  }
-
-  return { blocks, jsonLd };
+  return { blocks: parseChunks(chunks), jsonLd };
 }
 
-function parseProviderFilter(raw: string): ProviderCardFilter {
-  const specialty = /^specialty\s*=\s*(.+)$/i.exec(raw.trim());
-  if (specialty) return { by: "specialty", value: specialty[1].trim() };
+const REGION_MARKER_RE =
+  /^\[(?:\/?QUIZ|PROVIDER DIRECTORY|RESOURCE LIBRARY|BLOG INDEX)\]$/gim;
 
-  const pillar = /^pillar\s*=\s*(.+)$/i.exec(raw.trim());
-  if (pillar) return { by: "pillar", value: pillar[1].trim() };
+/** Markers that stand alone and mount a component in place of copy. */
+const STANDALONE_WIDGETS: Record<string, WidgetName> = {
+  "[PROVIDER DIRECTORY]": "providerDirectory",
+  "[RESOURCE LIBRARY]": "resourceLibrary",
+  "[BLOG INDEX]": "blogIndex",
+};
+
+/**
+ * Lines addressed to the build rather than the reader. They live inside widget
+ * regions in the source copy and must never reach the page.
+ */
+const INSTRUCTION_RE = /^(routing rules|build notes?|notes? for cursor)\b/i;
+
+function parseChunks(chunks: string[]): Block[] {
+  const blocks: Block[] = [];
+
+  for (let index = 0; index < chunks.length; index += 1) {
+    const chunk = chunks[index];
+
+    const widget = STANDALONE_WIDGETS[chunk.toUpperCase()];
+    if (widget) {
+      blocks.push({ kind: "widget", name: widget, blocks: [], instructions: [] });
+      continue;
+    }
+
+    if (/^\[QUIZ\]$/i.test(chunk)) {
+      const close = chunks.findIndex(
+        (candidate, position) => position > index && /^\[\/QUIZ\]$/i.test(candidate),
+      );
+      const end = close === -1 ? chunks.length : close;
+      const inner = chunks.slice(index + 1, end);
+
+      blocks.push({
+        kind: "widget",
+        name: "quiz",
+        blocks: parseChunks(inner.filter((line) => !INSTRUCTION_RE.test(line))),
+        instructions: inner.filter((line) => INSTRUCTION_RE.test(line)),
+      });
+
+      index = end;
+      continue;
+    }
+
+    blocks.push(parseChunk(chunk));
+  }
+
+  return blocks;
+}
+
+function parseChunk(text: string): Block {
+  const heading = /^(#{1,4})\s+(.*)$/.exec(text);
+  if (heading) {
+    const level = heading[1].length as 1 | 2 | 3 | 4;
+    const inline = parseInline(heading[2].trim());
+    const plain = inlineToText(inline);
+    return { kind: "heading", level, id: slugify(plain), text: plain, inline };
+  }
+
+  const cta = /^\[CTA\]\s*(.+?)\s*->\s*(\S+)$/.exec(text);
+  if (cta) {
+    return { kind: "cta", label: cta[1], href: cta[2] };
+  }
+
+  const form = /^\[FORM:\s*(therapy|wellness)\s*\]$/i.exec(text);
+  if (form) {
+    return { kind: "form", variant: form[1].toLowerCase() as keyof typeof FORM_EMBEDS };
+  }
+
+  const providerCards = /^\[PROVIDER CARDS:\s*([^\]]+)\]$/i.exec(text);
+  if (providerCards) {
+    return { kind: "providerCards", filter: parseProviderFilter(providerCards[1]) };
+  }
+
+  const locationCards = /^\[LOCATION CARDS:\s*([^\]]+)\]$/i.exec(text);
+  if (locationCards) {
+    return {
+      kind: "locationCards",
+      slugs: locationCards[1]
+        .split(",")
+        .map((slug) => slug.trim())
+        .filter((slug) => slug && !isNeeds(slug)),
+    };
+  }
+
+  const embed = /^\[EMBED:\s*([^\]]+)\]\s*([\s\S]*)$/i.exec(text);
+  if (embed) {
+    return { kind: "embed", label: embed[1].trim(), note: parseInline(embed[2].trim()) };
+  }
+
+  const image = /^\[IMAGE:\s*([\s\S]+)\]$/i.exec(text);
+  if (image) {
+    const value = image[1].trim();
+    const withUrl = /^(https?:\/\/\S+)\s+([\s\S]+)$/.exec(value);
+    return withUrl
+      ? { kind: "image", src: withUrl[1], alt: withUrl[2].trim() }
+      : { kind: "image", alt: value };
+  }
+
+  const standaloneNeeds = /^\[NEEDS:?([^\]]*)\]$/.exec(text);
+  if (standaloneNeeds) {
+    return { kind: "needs", value: standaloneNeeds[1].trim() };
+  }
+
+  const lines = text.split("\n").map((line) => line.trim());
+
+  if (lines.every((line) => /^[-*]\s+/.test(line))) {
+    return {
+      kind: "list",
+      ordered: false,
+      items: lines.map((line) => parseInline(line.replace(/^[-*]\s+/, ""))),
+    };
+  }
+
+  if (lines.every((line) => /^\d+[.)]\s+/.test(line))) {
+    return {
+      kind: "list",
+      ordered: true,
+      items: lines.map((line) => parseInline(line.replace(/^\d+[.)]\s+/, ""))),
+    };
+  }
+
+  if (lines.every((line) => line.startsWith(">"))) {
+    // A bare "> " line is a paragraph break inside the quote, not a blank line
+    // in the document, so the split has to happen here.
+    const paragraphs: string[][] = [[]];
+    for (const line of lines) {
+      const stripped = line.replace(/^>\s?/, "").trim();
+      if (stripped) paragraphs[paragraphs.length - 1].push(stripped);
+      else if (paragraphs[paragraphs.length - 1].length) paragraphs.push([]);
+    }
+
+    return {
+      kind: "quote",
+      paragraphs: paragraphs
+        .filter((paragraph) => paragraph.length)
+        .map((paragraph) => parseInline(paragraph.join(" "))),
+    };
+  }
+
+  const inline = parseInline(lines.join(" "));
+  return { kind: BYLINE_RE.test(text) ? "byline" : "paragraph", inline };
+}
+
+const PROVIDER_FILTER_KEYS = ["specialty", "pillar", "location"] as const;
+
+function parseProviderFilter(raw: string): ProviderCardFilter {
+  const keyed = /^([a-z_]+)\s*=\s*(.+)$/i.exec(raw.trim());
+  if (keyed) {
+    const key = keyed[1].toLowerCase();
+    // A typo here would otherwise fall through to the slug branch, match no one,
+    // and render an empty section with no warning.
+    if (!PROVIDER_FILTER_KEYS.includes(key as (typeof PROVIDER_FILTER_KEYS)[number])) {
+      throw new Error(
+        `Unknown PROVIDER CARDS filter "${key}". Expected one of: ${PROVIDER_FILTER_KEYS.join(", ")}.`,
+      );
+    }
+    return {
+      by: key as (typeof PROVIDER_FILTER_KEYS)[number],
+      value: keyed[2].trim(),
+    };
+  }
 
   return {
     by: "slugs",
@@ -446,6 +529,13 @@ function parseProviderFilter(raw: string): ProviderCardFilter {
       .map((slug) => slug.trim())
       .filter((slug) => slug && !isNeeds(slug)),
   };
+}
+
+/** Normalizes a front matter date to "YYYY-MM-DD", whatever YAML handed us. */
+function toIsoDate(value: unknown): string | undefined {
+  if (value instanceof Date) return value.toISOString().slice(0, 10);
+  if (typeof value === "string" && value.trim()) return value.trim().slice(0, 10);
+  return undefined;
 }
 
 function collectNeeds(source: string): string[] {
@@ -581,6 +671,9 @@ function loadPageFile(file: string, url: string): Page {
       url: (data.url as string) ?? url,
       index: data.index !== false,
       nav: (data.nav as FrontMatter["nav"]) ?? "none",
+      // YAML parses an unquoted 2026-09-16 into a Date, so normalize it here
+      // rather than making every consumer handle both shapes.
+      last_reviewed: toIsoDate(data.last_reviewed),
     } as FrontMatter,
     blocks,
     jsonLd,

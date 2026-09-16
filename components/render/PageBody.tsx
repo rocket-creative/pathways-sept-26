@@ -1,150 +1,237 @@
-import { Fragment } from "react";
-import Link from "next/link";
-import { FORM_EMBEDS, type Block, type InlineNode, type Page } from "@/lib/content";
+import type { ReactNode } from "react";
+import type { Block, Page } from "@/lib/content";
 import LocationCards from "@/components/directory/LocationCards";
 import ProviderCards from "@/components/directory/ProviderCards";
+import type { RenderContext } from "./context";
+import Byline, { type BylineBlock } from "./blocks/Byline";
+import ContentImage from "./blocks/ContentImage";
+import CtaRow, { type CtaBlock } from "./blocks/Cta";
+import FormEmbed from "./blocks/FormEmbed";
+import Heading, { type HeadingBlock } from "./blocks/Heading";
+import List from "./blocks/List";
+import Needs from "./blocks/Needs";
+import { Paragraph, Quote } from "./blocks/Prose";
+import "./render.css";
 
 /**
  * Renders the parsed block model. Copy is never altered here: the parser in
  * lib/content.ts decides what a block is, this decides what it looks like.
  *
+ * Everything below the article is server rendered and fully visible on load.
+ * No accordion, no tab, no disclosure: the FAQ answers are in the DOM.
+ *
  * OWNER: renderer agent.
  */
 export default function PageBody({ page }: { page: Page }) {
+  const ctx: RenderContext = {
+    source: `${page.frontMatter.url} (${page.sourceFile})`,
+    url: page.frontMatter.url,
+    eagerForms: page.frontMatter.url === "/contact",
+    firstForm: page.blocks.find((block) => block.kind === "form") ?? null,
+  };
+
+  const { sections, bylines } = groupSections(page.blocks);
+
   return (
     <article className="prose">
-      {page.blocks.map((block, position) => (
-        <RenderBlock key={position} block={block} />
+      {sections.map((section, position) =>
+        section.heading ? (
+          <section
+            key={position}
+            className="page-section"
+            aria-labelledby={section.heading.id}
+            data-section={section.heading.id}
+          >
+            <Heading block={section.heading} ctx={ctx} />
+            {renderSectionBody(section.heading, section.blocks, ctx)}
+          </section>
+        ) : (
+          <section key={position} className="page-section page-section--intro">
+            {renderBlocks(section.blocks, ctx)}
+          </section>
+        ),
+      )}
+
+      {bylines.map((block, position) => (
+        <Byline
+          key={position}
+          block={block}
+          lastReviewed={page.frontMatter.last_reviewed}
+          ctx={ctx}
+        />
       ))}
     </article>
   );
 }
 
-function RenderBlock({ block }: { block: Block }) {
-  switch (block.kind) {
-    case "heading": {
-      const Tag = `h${block.level}` as "h1" | "h2" | "h3" | "h4";
-      return (
-        <Tag id={block.level > 1 ? block.id : undefined}>
-          <Inline nodes={block.inline} />
-        </Tag>
-      );
+/* ------------------------------------------------------------------ */
+/* Sectioning                                                          */
+/* ------------------------------------------------------------------ */
+
+interface Section {
+  /** null for the opening blocks that come before the first h2. */
+  heading: HeadingBlock | null;
+  blocks: Block[];
+}
+
+/**
+ * Every h2 opens a section that runs to the next h2, so the design system has
+ * real edge to edge sections to work with. The byline is lifted out of the
+ * flow and rendered once, after the last section.
+ */
+function groupSections(blocks: Block[]): { sections: Section[]; bylines: BylineBlock[] } {
+  const sections: Section[] = [];
+  const bylines: BylineBlock[] = [];
+  let current: Section = { heading: null, blocks: [] };
+
+  for (const block of blocks) {
+    if (block.kind === "byline") {
+      bylines.push(block);
+      continue;
     }
-    case "paragraph":
-      return (
-        <p>
-          <Inline nodes={block.inline} />
-        </p>
-      );
-    case "list": {
-      const Tag = block.ordered ? "ol" : "ul";
-      return (
-        <Tag>
-          {block.items.map((item, position) => (
-            <li key={position}>
-              <Inline nodes={item} />
-            </li>
+
+    if (block.kind === "heading" && block.level === 2) {
+      if (current.heading || current.blocks.length) sections.push(current);
+      current = { heading: block, blocks: [] };
+      continue;
+    }
+
+    current.blocks.push(block);
+  }
+
+  if (current.heading || current.blocks.length) sections.push(current);
+  return { sections, bylines };
+}
+
+function isQuestionSection(heading: HeadingBlock): boolean {
+  return heading.id === "common-questions" || heading.id === "questions";
+}
+
+function renderSectionBody(heading: HeadingBlock, blocks: Block[], ctx: RenderContext): ReactNode {
+  return isQuestionSection(heading) ? renderQuestions(blocks, ctx) : renderBlocks(blocks, ctx);
+}
+
+/**
+ * Under "Common questions" each h3 and the blocks below it are grouped so they
+ * can be styled as a unit. The question and its answer stay in the document,
+ * visible, in heading order.
+ */
+function renderQuestions(blocks: Block[], ctx: RenderContext): ReactNode {
+  const lead: Block[] = [];
+  const items: { question: HeadingBlock; answer: Block[] }[] = [];
+
+  for (const block of blocks) {
+    if (block.kind === "heading" && block.level >= 3) {
+      items.push({ question: block, answer: [] });
+      continue;
+    }
+
+    if (items.length) items[items.length - 1].answer.push(block);
+    else lead.push(block);
+  }
+
+  return (
+    <>
+      {renderBlocks(lead, ctx)}
+      {items.length ? (
+        <div className="faq">
+          {items.map((item, position) => (
+            <div key={position} className="faq-item">
+              <Heading block={item.question} ctx={ctx} />
+              {renderBlocks(item.answer, ctx)}
+            </div>
           ))}
-        </Tag>
-      );
+        </div>
+      ) : null}
+    </>
+  );
+}
+
+/* ------------------------------------------------------------------ */
+/* Blocks                                                              */
+/* ------------------------------------------------------------------ */
+
+function renderBlocks(blocks: Block[], ctx: RenderContext): ReactNode[] {
+  const out: ReactNode[] = [];
+  let index = 0;
+
+  while (index < blocks.length) {
+    const block = blocks[index];
+
+    if (block.kind === "cta") {
+      const run: CtaBlock[] = [];
+      let cursor = index;
+      while (cursor < blocks.length) {
+        const next = blocks[cursor];
+        if (next.kind !== "cta") break;
+        run.push(next);
+        cursor += 1;
+      }
+      out.push(<CtaRow key={index} ctas={run} ctx={ctx} />);
+      index = cursor;
+      continue;
     }
+
+    out.push(<RenderBlock key={index} block={block} ctx={ctx} />);
+    index += 1;
+  }
+
+  return out;
+}
+
+function RenderBlock({ block, ctx }: { block: Block; ctx: RenderContext }) {
+  switch (block.kind) {
+    case "heading":
+      return <Heading block={block} ctx={ctx} />;
+    case "paragraph":
+      return <Paragraph block={block} ctx={ctx} />;
+    case "list":
+      return <List block={block} ctx={ctx} />;
     case "quote":
-      return (
-        <blockquote>
-          <Inline nodes={block.inline} />
-        </blockquote>
-      );
+      return <Quote block={block} ctx={ctx} />;
     case "cta":
-      return (
-        <p className="cta">
-          <Link href={block.href} className="button">
-            {block.label}
-          </Link>
-        </p>
-      );
+      return <CtaRow ctas={[block]} ctx={ctx} />;
     case "form":
-      return (
-        <iframe
-          className="form-embed"
-          src={FORM_EMBEDS[block.variant]}
-          title={`${block.variant === "therapy" ? "Therapy" : "Wellness"} intake form`}
-          loading="lazy"
-        />
-      );
+      return <FormEmbed variant={block.variant} eager={ctx.eagerForms && block === ctx.firstForm} />;
     case "providerCards":
       return <ProviderCards filter={block.filter} />;
     case "locationCards":
       return <LocationCards slugs={block.slugs} />;
     case "image":
-      return (
-        <figure className="content-image">
-          {block.src ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={block.src} alt={block.alt} loading="lazy" />
-          ) : (
-            <div className="content-image__placeholder" role="img" aria-label={block.alt} />
-          )}
-          <figcaption>{block.alt}</figcaption>
-        </figure>
-      );
+      return <ContentImage block={block} />;
     case "needs":
       return <Needs value={block.value} />;
     case "byline":
+      return <Byline block={block} lastReviewed={undefined} ctx={ctx} />;
+    case "embed":
       return (
-        <p className="byline">
-          <Inline nodes={block.inline} />
-        </p>
+        <div className="embed-slot" data-embed={block.label}>
+          <Paragraph block={{ kind: "paragraph", inline: block.note }} ctx={ctx} />
+        </div>
       );
+    case "widget":
+      return <Widget block={block} ctx={ctx} />;
   }
 }
 
-/** Gaps the client still owes: visible in dev, inert in production. */
-function Needs({ value }: { value: string }) {
-  if (process.env.NODE_ENV === "production") {
-    return <span data-needs={value} hidden />;
-  }
-  return <mark className="needs">[NEEDS: {value}]</mark>;
-}
-
-function Inline({ nodes }: { nodes: InlineNode[] }) {
+/**
+ * A widget marker mounts a component where copy would otherwise go. The copy
+ * inside the marker is the no JavaScript fallback and always renders, so the
+ * interactive version layers on top rather than replacing the document.
+ *
+ * The quiz and the provider directory are owned by other agents and get wired
+ * in at integration; until then the fallback copy is the whole experience.
+ */
+function Widget({
+  block,
+  ctx,
+}: {
+  block: Extract<Block, { kind: "widget" }>;
+  ctx: RenderContext;
+}) {
   return (
-    <>
-      {nodes.map((node, position) => (
-        <Fragment key={position}>{renderInline(node)}</Fragment>
-      ))}
-    </>
+    <div className="widget" data-widget={block.name}>
+      {renderBlocks(block.blocks, ctx)}
+    </div>
   );
-}
-
-function renderInline(node: InlineNode) {
-  switch (node.kind) {
-    case "text":
-      return node.value;
-    case "strong":
-      return (
-        <strong>
-          <Inline nodes={node.children} />
-        </strong>
-      );
-    case "em":
-      return (
-        <em>
-          <Inline nodes={node.children} />
-        </em>
-      );
-    case "code":
-      return <code>{node.value}</code>;
-    case "needs":
-      return <Needs value={node.value} />;
-    case "link":
-      return node.external ? (
-        <a href={node.href} rel="noopener">
-          <Inline nodes={node.children} />
-        </a>
-      ) : (
-        <Link href={node.href}>
-          <Inline nodes={node.children} />
-        </Link>
-      );
-  }
 }

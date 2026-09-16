@@ -1,0 +1,136 @@
+/**
+ * Structural defaults for the content renderer.
+ *
+ * Everything lives in a named cascade layer, so any unlayered rule in
+ * app/globals.css wins without needing to fight specificity. Design system
+ * agent: target .prose, .page-section, .faq, .faq-item, .button, .cta,
+ * .form-embed, .content-image, .byline, .needs.
+ */
+@layer pathways-render {
+  .prose {
+    --render-ground: #ffffff;
+    --render-ground-soft: #f7f7f7;
+    --render-edge: #ebebeb;
+    --render-radius: 26px;
+
+    display: flow-root;
+  }
+
+  .page-section {
+    padding-block: clamp(1.75rem, 4vw, 3.25rem);
+  }
+
+  .prose p,
+  .prose ul,
+  .prose ol {
+    margin-block: 0 1em;
+  }
+
+  .prose li {
+    margin-block: 0.35em;
+  }
+
+  .prose .heading--h2 {
+    margin-block: 0 0.6em;
+    scroll-margin-top: 6rem;
+  }
+
+  .prose .heading--h3 {
+    margin-block: 0 0.5em;
+    scroll-margin-top: 6rem;
+  }
+
+  .prose blockquote {
+    margin-inline: 0;
+    padding: clamp(1.1rem, 2.4vw, 1.9rem);
+    border-radius: var(--render-radius);
+    background: var(--render-ground-soft);
+  }
+
+  .prose blockquote p:last-child {
+    margin-block-end: 0;
+  }
+
+  /* Question and answer pairs. Always in the DOM, never collapsed. */
+  .faq-item {
+    padding-block: clamp(0.85rem, 1.8vw, 1.35rem);
+  }
+
+  .faq-item p:last-child {
+    margin-block-end: 0;
+  }
+
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-block: 1.5rem;
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85em 1.55em;
+    border-radius: 999px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .form-embed {
+    display: block;
+    width: 100%;
+    max-width: 740px;
+    min-height: 900px;
+    border: 0;
+    border-radius: var(--render-radius);
+    background: var(--render-ground);
+  }
+
+  .content-image {
+    margin-inline: 0;
+    margin-block: clamp(1.25rem, 3vw, 2.25rem);
+  }
+
+  .content-image__img,
+  .content-image__placeholder {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--render-radius);
+  }
+
+  .content-image__placeholder {
+    background: var(--render-edge);
+  }
+
+  .content-image__caption {
+    margin-block-start: 0.6rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+
+  .byline {
+    margin-block-start: clamp(2rem, 4vw, 3rem);
+    padding-block-start: 1.25rem;
+    border-top: 1px solid var(--render-edge);
+    font-size: 0.9rem;
+  }
+
+  .byline__line {
+    margin: 0;
+  }
+
+  /* Development only: production renders an empty hidden element. */
+  .needs {
+    border-radius: 6px;
+    background: #ffe9a8;
+    padding: 0.1em 0.35em;
+    font-size: 0.9em;
+  }
+
+  .needs[hidden] {
+    display: none;
+  }
+}
