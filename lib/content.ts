@@ -698,6 +698,35 @@ export function getAllUrls(): string[] {
   return [...new Set([...fromMap, ...providerUrls])];
 }
 
+export interface Crumb {
+  name: string;
+  /** Root relative, or undefined for the current page. */
+  url?: string;
+}
+
+/**
+ * The visible breadcrumbs come from the page's own BreadcrumbList so the trail
+ * a reader sees and the one a crawler reads can never disagree. The authored
+ * trail also carries short labels ("Anxiety", not "Anxiety Therapy on Long
+ * Island") and routes /insurance/aetna up to /insurance-and-fees, which has no
+ * URL segment of its own.
+ */
+export function getBreadcrumbTrail(page: Page): Crumb[] {
+  const graph = (page.jsonLd as { "@graph"?: Record<string, unknown>[] } | null)?.["@graph"] ?? [];
+  const list = graph.find((node) => node["@type"] === "BreadcrumbList");
+  const items = (list?.itemListElement ?? []) as { name?: string; item?: string; position?: number }[];
+
+  if (!items.length) return [];
+
+  return [...items]
+    .sort((a, b) => (a.position ?? 0) - (b.position ?? 0))
+    .map((item, index, all) => ({
+      name: item.name ?? "",
+      url: index === all.length - 1 ? undefined : item.item?.replace(SITE_ORIGIN, "") || "/",
+    }))
+    .filter((crumb) => crumb.name);
+}
+
 /** Turns "/therapy/emdr" into ["therapy", "emdr"] for route params. */
 export function urlToSegments(url: string): string[] {
   return url.split("/").filter(Boolean);

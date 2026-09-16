@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
-import type { Block, Page } from "@/lib/content";
+import { inlineToText, type Block, type Page } from "@/lib/content";
 import LocationCards from "@/components/directory/LocationCards";
 import ProviderCards from "@/components/directory/ProviderCards";
+import Quiz from "@/components/quiz";
 import type { RenderContext } from "./context";
 import Byline, { type BylineBlock } from "./blocks/Byline";
 import ContentImage from "./blocks/ContentImage";
@@ -214,13 +215,16 @@ function RenderBlock({ block, ctx }: { block: Block; ctx: RenderContext }) {
   }
 }
 
+/** A quiz question line in the source copy, e.g. "Q3. Have you done...". */
+const QUIZ_QUESTION_RE = /^Q\d+\.\s/;
+
 /**
- * A widget marker mounts a component where copy would otherwise go. The copy
- * inside the marker is the no JavaScript fallback and always renders, so the
- * interactive version layers on top rather than replacing the document.
+ * A widget marker mounts a component where copy would otherwise go. Copy inside
+ * the marker that the component does not itself render still renders here, so
+ * the page never loses a sentence the writer put in.
  *
- * The quiz and the provider directory are owned by other agents and get wired
- * in at integration; until then the fallback copy is the whole experience.
+ * The provider directory, resource library, and blog index are still fallback
+ * copy only; they get wired in as their components land.
  */
 function Widget({
   block,
@@ -229,6 +233,21 @@ function Widget({
   block: Extract<Block, { kind: "widget" }>;
   ctx: RenderContext;
 }) {
+  if (block.name === "quiz") {
+    // Quiz renders the five questions itself, including a no JavaScript
+    // fallback, so only the lead in copy comes from the block.
+    const lead = block.blocks.filter(
+      (inner) => !(inner.kind === "paragraph" && QUIZ_QUESTION_RE.test(inlineToText(inner.inline))),
+    );
+
+    return (
+      <div className="widget" data-widget="quiz">
+        {renderBlocks(lead, ctx)}
+        <Quiz />
+      </div>
+    );
+  }
+
   return (
     <div className="widget" data-widget={block.name}>
       {renderBlocks(block.blocks, ctx)}

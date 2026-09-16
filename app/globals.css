@@ -1,14 +1,163 @@
 @import "tailwindcss";
 
+/* ==================================================================== */
+/*  Pathways Within — one stylesheet, five sections                     */
+/*                                                                      */
+/*   1. Brand drop in .... the client's palette and fonts land here      */
+/*   2. Tokens .......... everything downstream reads these              */
+/*   3. Base ............ html, body, focus, shared element defaults     */
+/*   4. Homepage prototype  .stage .track .branch .hero .glass .nav …    */
+/*                      FROZEN. Owned by the homepage. Do not restyle.   */
+/*   5. Content site .... layout, typography, components, motion         */
+/*                                                                      */
+/*  Sections 4 and 5 do not share a single selector. Content pages are   */
+/*  styled through classes (.page, .prose, .site-header …); the          */
+/*  prototype keeps the element level rules it has always had.           */
+/* ==================================================================== */
+
+/* ==================================================================== */
+/*  1. BRAND DROP IN                                                    */
+/*                                                                      */
+/*  [NEEDS: hex values from brand guide]                                */
+/*  [NEEDS: real brand fonts]                                           */
+/*                                                                      */
+/*  This is the only block the brand guide touches. Every colour and     */
+/*  face below is a stand in. Overwrite the eight values here and the    */
+/*  whole site follows; nothing downstream hard codes a hex.             */
+/*                                                                      */
+/*  Two rules the replacements must keep:                                */
+/*   · the three grounds stay white or near white (no dark, no blue      */
+/*     panels) because the approved concept is an all white site;        */
+/*   · --ink and --ink-soft must clear 4.5:1 against all three grounds.  */
+/*     --ink-soft #55606d is the lightest grey that does (4.5:1 needs    */
+/*     #616c79 or darker on #ebebeb). Do not go lighter for text.        */
+/* ==================================================================== */
+
 :root {
-  --bg: #ebebeb;
+  /* Grounds. White, near white, near white. */
+  --paper: #ffffff;
+  --paper-soft: #f7f7f7;
+  --paper-deep: #ebebeb;
+
+  /* Text. */
   --ink: #1d2733;
   --ink-soft: #55606d;
+
+  /* Accent. Used for links, focus rings and the prototype's line work.
+     Never as a panel fill on a content page. */
   --brand: #0870d2;
   --brand-deep: #0a4fa8;
+
+  /* Prototype ground and card radius. Unchanged from the prototype. */
+  --bg: #ebebeb;
   --glass-radius: 26px;
-  --font-display: "Quicksand", ui-rounded, system-ui, sans-serif;
-  --font-body: "Nunito", system-ui, sans-serif;
+}
+
+/* FONT SWAP POINT.
+   The faces themselves are chosen in lib/fonts.ts with next/font, which
+   self hosts them, sets font-display: swap and ships a size-adjusted
+   fallback so swapping in the real face causes no reflow. That file wins:
+   next/font sets --font-display and --font-body on <html>, unlayered, so
+   the declarations below only apply if next/font is ever removed. Keeping
+   them layered is deliberate — an unlayered copy here would silently
+   shadow the self hosted faces with names the browser cannot resolve. */
+@layer base {
+  :root {
+    --font-display: "Quicksand", ui-rounded, system-ui, sans-serif;
+    --font-body: "Nunito", system-ui, sans-serif;
+  }
+}
+
+/* ==================================================================== */
+/*  2. TOKENS                                                           */
+/*  Other agents: use these names, not raw values.                      */
+/* ==================================================================== */
+
+:root {
+  /* --- Surfaces ---------------------------------------------------- */
+  --surface: var(--paper); /* page ground */
+  --surface-soft: var(--paper-soft); /* cards, footer, quiet sections */
+  --surface-deep: var(--paper-deep); /* image wells, placeholders */
+
+  /* --- Text -------------------------------------------------------- */
+  --text: var(--ink); /* body and headings, 15.1:1 on white */
+  --text-soft: var(--ink-soft); /* captions, meta, 6.4:1 on white */
+  --text-inverse: #ffffff; /* only on --fill-strong */
+  --link: var(--brand-deep); /* 7.8:1 on white, 6.5:1 on #ebebeb */
+  --link-hover: var(--ink);
+
+  /* --- Fills (buttons; small shapes, never full width panels) ------- */
+  --fill-strong: var(--ink);
+  --fill-strong-hover: #0f1720;
+  --fill-quiet: var(--paper);
+  --fill-quiet-hover: var(--paper-soft);
+
+  /* --- Hairlines and lift ------------------------------------------ */
+  --line: rgb(29 39 51 / 0.12);
+  --line-strong: rgb(29 39 51 / 0.24);
+  --shadow-soft: 0 12px 30px -20px rgb(29 39 51 / 0.35);
+  --shadow-lift: 0 22px 46px -26px rgb(29 39 51 / 0.4);
+
+  /* --- Radius. Everything is round; the labyrinth has no corners. --- */
+  --radius-xs: 10px;
+  --radius-sm: 14px;
+  --radius-md: 20px;
+  --radius-lg: 26px; /* == --glass-radius */
+  --radius-xl: 34px;
+  --radius-2xl: 46px;
+  --radius-3xl: 64px; /* section corners */
+  --radius-pill: 999px;
+  --radius-circle: 50%; /* people and rooms, with aspect-ratio: 1 */
+
+  /* --- Space ------------------------------------------------------- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: clamp(2.5rem, 4vw, 3.5rem);
+  --space-2xl: clamp(3.5rem, 6vw, 5.5rem);
+  --space-3xl: clamp(5rem, 9vw, 8rem);
+
+  /* --- Measure and rhythm ------------------------------------------ */
+  --measure: 68ch; /* 65 to 75 characters of body copy */
+  --measure-narrow: 52ch;
+  --measure-wide: 88ch; /* cards, figures, form embeds */
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --section-y: clamp(3rem, 7vw, 6rem);
+  --overlap: clamp(2rem, 5vw, 4.5rem);
+  --header-h: 4.75rem;
+
+  /* --- Type scale. Fluid, 320px to 1440px. ------------------------- */
+  --text-2xs: clamp(0.72rem, 0.1vw + 0.7rem, 0.78rem);
+  --text-xs: clamp(0.8rem, 0.13vw + 0.77rem, 0.88rem);
+  --text-sm: clamp(0.9rem, 0.18vw + 0.86rem, 1rem);
+  --text-base: clamp(1.0625rem, 0.25vw + 1rem, 1.1875rem);
+  --text-lead: clamp(1.18rem, 0.6vw + 1.05rem, 1.45rem);
+  --text-h4: clamp(1.15rem, 0.45vw + 1.05rem, 1.35rem);
+  --text-h3: clamp(1.35rem, 0.8vw + 1.16rem, 1.75rem);
+  --text-h2: clamp(1.75rem, 1.7vw + 1.36rem, 2.6rem);
+  --text-h1: clamp(2.25rem, 3.2vw + 1.5rem, 3.85rem);
+
+  --leading-tight: 1.08;
+  --leading-heading: 1.16;
+  --leading-snug: 1.35;
+  --leading-body: 1.65;
+  --tracking-tight: -0.015em;
+  --tracking-wide: 0.14em;
+
+  /* --- Motion. Read by components/motion/** as well as CSS. -------- */
+  --motion-fast: 180ms;
+  --motion-base: 420ms;
+  --motion-slow: 760ms;
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-soft: cubic-bezier(0.33, 1, 0.68, 1);
+
+  /* --- Focus ------------------------------------------------------- */
+  --focus-ring: var(--brand-deep);
+  --focus-ring-width: 3px;
+  --focus-ring-offset: 3px;
 }
 
 @theme inline {
@@ -16,9 +165,21 @@
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-brand: var(--brand);
+  --color-surface: var(--surface);
+  --color-surface-soft: var(--surface-soft);
+  --color-surface-deep: var(--surface-deep);
+  --color-text: var(--text);
+  --color-text-soft: var(--text-soft);
+  --color-line: var(--line);
+  --radius-card: var(--radius-xl);
+  --radius-pill: var(--radius-pill);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
 }
+
+/* ==================================================================== */
+/*  3. BASE                                                             */
+/* ==================================================================== */
 
 html {
   background: var(--bg);
@@ -51,6 +212,33 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Deep links (## headings carry slug ids) land below the sticky header. */
+html {
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+}
+
+/* One focus style for the whole site. The browser default sits badly on
+   the rounded shapes below, so this is an offset ring that follows the
+   element's own border-radius. 7.8:1 against white. */
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring);
+  outline-offset: var(--focus-ring-offset);
+}
+
+::selection {
+  background: rgb(10 79 168 / 0.16);
+  color: var(--ink);
+}
+
+/* ==================================================================== */
+/*  4. HOMEPAGE PROTOTYPE — FROZEN                                      */
+/*                                                                      */
+/*  Everything from here to "5. CONTENT SITE" belongs to                */
+/*  components/stage/**. It is the visual reference for the site and it */
+/*  is byte for byte what it was before the design system landed. Add   */
+/*  content site rules in section 5, never here.                        */
+/* ==================================================================== */
 
 /* ------------------------------------------------------------------ */
 /* Stage                                                               */
@@ -648,4 +836,961 @@ a {
 .placeholder a {
   font-weight: 700;
   color: var(--brand);
+}
+
+/* ==================================================================== */
+/*  5. CONTENT SITE                                                     */
+/*                                                                      */
+/*  Everything below styles the pages rendered by app/[...slug]/page.tsx */
+/*  Class hooks are the shared names from BUILD-PLAN.md. Markup is in    */
+/*  flux, so these rules lean on semantic elements inside .prose rather  */
+/*  than on structure, and component rules are ordered after the prose   */
+/*  rules so a card never inherits an essay's paragraph.                 */
+/* ==================================================================== */
+
+/* -------------------------------------------------------------------- */
+/*  5.1 Page shell and section flow                                      */
+/*                                                                       */
+/*  Sections are full bleed. Nothing is boxed and nothing has a hard      */
+/*  border: separation comes from a change of ground (white to #f7f7f7)   */
+/*  and from big radii. Copy is held by an inner measure, not by a box.   */
+/* -------------------------------------------------------------------- */
+
+.page {
+  display: block;
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  padding-block-end: var(--space-3xl);
+}
+
+/* A full bleed band. Give it a ground only when it needs to read as a
+   different surface; on white on white the radius does the work. */
+.section {
+  position: relative;
+  padding-block: var(--section-y);
+  background: var(--surface);
+}
+
+.section--soft {
+  background: var(--surface-soft);
+}
+
+.section--deep {
+  background: var(--surface-deep);
+}
+
+.section--round {
+  border-radius: var(--radius-3xl);
+}
+
+.section--round-top {
+  border-start-start-radius: var(--radius-3xl);
+  border-start-end-radius: var(--radius-3xl);
+}
+
+/* Overlap: this section rides up over the one before it. Pair with
+   .section--tuck on the section above so nothing collides. */
+.section--overlap {
+  z-index: 1;
+  margin-block-start: calc(-1 * var(--overlap));
+  border-start-start-radius: var(--radius-3xl);
+  border-start-end-radius: var(--radius-3xl);
+}
+
+.section--tuck {
+  padding-block-end: calc(var(--section-y) + var(--overlap));
+}
+
+/* The measure. Not a container: no background, no border, just a width. */
+.inner {
+  width: 100%;
+  max-width: calc(var(--measure-wide) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.inner--measure {
+  max-width: calc(var(--measure) + var(--gutter) * 2);
+}
+
+.inner--narrow {
+  max-width: calc(var(--measure-narrow) + var(--gutter) * 2);
+}
+
+.measure {
+  max-width: var(--measure);
+  margin-inline: auto;
+}
+
+/* An element that escapes its measure and runs the full viewport. */
+.bleed-full {
+  width: 100vw;
+  max-width: 100vw;
+  margin-inline: calc(50% - 50vw);
+}
+
+/* An element that runs past the bottom edge of its section into the next
+   one. --run tunes the overhang. */
+.run-over {
+  position: relative;
+  z-index: 2;
+  margin-block-end: calc(-1 * var(--run, var(--overlap)));
+}
+
+.stack > * + * {
+  margin-block-start: var(--stack-gap, var(--space-md));
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--cluster-gap, var(--space-sm));
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--card-min, 17rem), 100%), 1fr)
+  );
+  gap: clamp(1rem, 2.4vw, 2rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* -------------------------------------------------------------------- */
+/*  5.2 Skip link, header, breadcrumbs, footer                           */
+/* -------------------------------------------------------------------- */
+
+/* Off screen by transform, never by display or visibility, so it stays in
+   the tab order and in the accessibility tree. */
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  padding: 0.8rem 1.4rem;
+  border-radius: var(--radius-pill);
+  background: var(--fill-strong);
+  color: var(--text-inverse);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  box-shadow: var(--shadow-lift);
+  transform: translateY(calc(-100% - 1.5rem));
+  transition: transform var(--motion-fast) var(--ease-out);
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs) var(--space-md);
+  min-height: var(--header-h);
+  padding: 0.7rem var(--gutter);
+  background: rgb(255 255 255 / 0.9);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  backdrop-filter: blur(18px) saturate(150%);
+  border-end-start-radius: var(--radius-xl);
+  border-end-end-radius: var(--radius-xl);
+  color: var(--text);
+}
+
+.site-header__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-inline-end: auto;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  font-size: var(--text-h4);
+  font-weight: 700;
+  letter-spacing: var(--tracking-tight);
+  color: var(--text);
+}
+
+.site-header__logo img,
+.site-footer__logo img {
+  display: block;
+  width: auto;
+  height: clamp(2rem, 3.4vw, 2.75rem);
+}
+
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.15rem 0.35rem;
+}
+
+.site-header nav a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text);
+  transition:
+    background var(--motion-fast) var(--ease-out),
+    color var(--motion-fast) var(--ease-out);
+}
+
+.site-header nav a:hover {
+  background: var(--surface-soft);
+  color: var(--link);
+}
+
+.site-header nav a[aria-current="page"] {
+  background: var(--surface-soft);
+  color: var(--link);
+  font-weight: 700;
+}
+
+/* The phone number reads as a link without borrowing button weight. */
+.site-header a[href^="tel:"] {
+  border-radius: var(--radius-pill);
+  padding: 0.5rem 0.4rem;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--link);
+}
+
+@media (max-width: 899.98px) {
+  .site-header {
+    position: static;
+    row-gap: var(--space-2xs);
+  }
+
+  .site-header nav {
+    order: 3;
+    width: 100%;
+  }
+}
+
+.breadcrumbs {
+  width: 100%;
+  max-width: calc(var(--measure-wide) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding: var(--space-md) var(--gutter) 0;
+  font-size: var(--text-sm);
+  color: var(--text-soft);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+/* Decorative separator: a dot, not a character, so screen readers stay
+   quiet and the trail still reads as a list. */
+.breadcrumbs li + li::before {
+  content: "";
+  flex: none;
+  width: 4px;
+  height: 4px;
+  border-radius: var(--radius-circle);
+  background: var(--line-strong);
+}
+
+.breadcrumbs a {
+  border-radius: var(--radius-xs);
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.06em;
+}
+
+.breadcrumbs a:hover {
+  color: var(--link-hover);
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.site-footer {
+  padding: var(--space-2xl) var(--gutter) var(--space-xl);
+  background: var(--surface-soft);
+  color: var(--text);
+  border-start-start-radius: var(--radius-3xl);
+  border-start-end-radius: var(--radius-3xl);
+  font-size: var(--text-sm);
+}
+
+.site-footer > * {
+  width: 100%;
+  max-width: calc(var(--measure-wide) + var(--gutter) * 2);
+  margin-inline: auto;
+}
+
+.site-footer h2,
+.site-footer h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-h4);
+  line-height: var(--leading-heading);
+  letter-spacing: 0;
+  margin: 0 auto var(--space-2xs);
+}
+
+.site-footer p {
+  margin: 0 auto var(--space-2xs);
+  max-width: var(--measure);
+}
+
+.site-footer ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  gap: var(--space-md);
+  margin: var(--space-lg) auto;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer address {
+  font-style: normal;
+  color: var(--text-soft);
+  line-height: var(--leading-snug);
+}
+
+.site-footer a {
+  border-radius: var(--radius-xs);
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.06em;
+  text-decoration-color: var(--line-strong);
+}
+
+.site-footer a:hover {
+  color: var(--link);
+  text-decoration-color: currentcolor;
+}
+
+/* -------------------------------------------------------------------- */
+/*  5.3 Prose                                                            */
+/*                                                                       */
+/*  The renderer drops blocks straight into <article class="prose">, so   */
+/*  these are element rules, not structure rules. Anything that carries   */
+/*  a class of its own (.cta, .provider-cards, .content-image …) is       */
+/*  styled in 5.4 and wins by coming later.                              */
+/* -------------------------------------------------------------------- */
+
+.prose {
+  width: 100%;
+  max-width: calc(var(--measure-wide) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding: var(--space-xl) var(--gutter) 0;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  color: var(--text);
+  text-wrap: pretty;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  max-width: var(--measure);
+  margin-inline: auto;
+  font-family: var(--font-display);
+  color: var(--text);
+  text-wrap: balance;
+  scroll-margin-top: calc(var(--header-h) + 1.5rem);
+}
+
+.prose h1 {
+  margin-block: 0 0.5em;
+  font-size: var(--text-h1);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+.prose h2 {
+  margin-block: var(--space-2xl) 0.45em;
+  font-size: var(--text-h2);
+  font-weight: 700;
+  line-height: var(--leading-heading);
+  letter-spacing: var(--tracking-tight);
+}
+
+.prose h3 {
+  margin-block: var(--space-xl) 0.5em;
+  font-size: var(--text-h3);
+  font-weight: 600;
+  line-height: var(--leading-heading);
+  letter-spacing: 0;
+}
+
+.prose h4 {
+  margin-block: var(--space-lg) 0.5em;
+  font-size: var(--text-h4);
+  font-weight: 600;
+  line-height: var(--leading-snug);
+  letter-spacing: 0;
+}
+
+.prose > :first-child {
+  margin-block-start: 0;
+}
+
+.prose p {
+  max-width: var(--measure);
+  margin-block: 0 1.15em;
+  margin-inline: auto;
+}
+
+/* The opening paragraph of a page carries the promise. Slightly larger,
+   same colour: contrast never drops for emphasis. */
+.prose h1 + p {
+  font-size: var(--text-lead);
+  line-height: var(--leading-snug);
+  margin-block-end: 1.1em;
+}
+
+.prose ul:not([class]),
+.prose ol:not([class]) {
+  max-width: var(--measure);
+  margin-block: 0 1.4em;
+  margin-inline: auto;
+  padding-inline-start: 1.35em;
+}
+
+.prose li {
+  margin-block-end: 0.5em;
+}
+
+.prose li::marker {
+  color: var(--text-soft);
+}
+
+.prose blockquote {
+  max-width: var(--measure);
+  margin: var(--space-lg) auto;
+  padding: var(--space-md) clamp(1.25rem, 3vw, 2rem);
+  border-radius: var(--radius-xl);
+  background: var(--surface-soft);
+  font-size: var(--text-lead);
+  line-height: var(--leading-snug);
+}
+
+.prose blockquote p:last-child {
+  margin-block-end: 0;
+}
+
+.prose section {
+  display: block;
+}
+
+.prose section + section {
+  margin-block-start: var(--space-xl);
+}
+
+.prose a {
+  border-radius: 3px;
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.07em;
+  transition: color var(--motion-fast) var(--ease-out);
+}
+
+.prose a:hover {
+  color: var(--link-hover);
+  text-decoration-thickness: 0.12em;
+}
+
+.prose strong {
+  font-weight: 700;
+}
+
+.prose code {
+  padding: 0.1em 0.35em;
+  border-radius: var(--radius-xs);
+  background: var(--surface-soft);
+  font-size: 0.92em;
+}
+
+.prose hr {
+  max-width: var(--measure);
+  margin: var(--space-xl) auto;
+  border: 0;
+  height: 1px;
+  background: var(--line);
+}
+
+.prose img:not([class]) {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-2xl);
+}
+
+.prose time {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Small shared text roles other agents can reach for. */
+.eyebrow {
+  display: block;
+  margin-block-end: 0.6em;
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-soft);
+}
+
+.lede {
+  max-width: var(--measure);
+  margin-inline: auto;
+  font-size: var(--text-lead);
+  line-height: var(--leading-snug);
+}
+
+.meta {
+  font-size: var(--text-sm);
+  color: var(--text-soft);
+}
+
+/* -------------------------------------------------------------------- */
+/*  5.4 Components                                                       */
+/* -------------------------------------------------------------------- */
+
+/* Buttons ------------------------------------------------------------ */
+/* [NEEDS: hex values from brand guide] — the fill is ink until the brand
+   colour arrives. Whatever replaces it must clear 4.5:1 against
+   --text-inverse; --brand-deep (7.8:1 with white) already does, --brand
+   (4.9:1 with white) is borderline at small sizes. */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55em;
+  min-height: 3rem;
+  padding: 0.8em 1.6em;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--fill-strong);
+  color: var(--text-inverse);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  transition:
+    background var(--motion-fast) var(--ease-out),
+    box-shadow var(--motion-fast) var(--ease-out),
+    transform var(--motion-fast) var(--ease-out);
+}
+
+.button:hover {
+  background: var(--fill-strong-hover);
+  box-shadow: var(--shadow-lift);
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.prose .button {
+  color: var(--text-inverse);
+  text-decoration: none;
+}
+
+/* Quiet button: white pill on white ground, held by a hairline ring. */
+.button--quiet,
+.prose .button--quiet {
+  background: var(--fill-quiet);
+  color: var(--text);
+  box-shadow: inset 0 0 0 1.5px var(--line-strong);
+}
+
+.button--quiet:hover {
+  background: var(--fill-quiet-hover);
+  color: var(--link);
+  box-shadow: inset 0 0 0 1.5px var(--line-strong);
+  transform: translateY(-2px);
+}
+
+.button--wide {
+  width: 100%;
+}
+
+.site-header .button {
+  min-height: 2.6rem;
+  padding: 0.55em 1.2em;
+  box-shadow: none;
+}
+
+/* The renderer wraps a [CTA] marker in <p class="cta">. */
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  max-width: var(--measure);
+  margin: var(--space-lg) auto;
+}
+
+/* Provider cards ----------------------------------------------------- */
+.provider-cards,
+.location-cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--card-min, 17rem), 100%), 1fr)
+  );
+  gap: clamp(1rem, 2.4vw, 2rem);
+  width: 100%;
+  max-width: var(--measure-wide);
+  margin: var(--space-xl) auto;
+  padding: 0;
+  list-style: none;
+}
+
+.provider-card,
+.location-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin: 0;
+  padding: clamp(1.25rem, 2.2vw, 1.75rem);
+  border-radius: var(--radius-xl);
+  background: var(--surface-soft);
+  color: var(--text);
+  transition:
+    transform var(--motion-base) var(--ease-out),
+    box-shadow var(--motion-base) var(--ease-out);
+}
+
+.provider-card:hover,
+.location-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+}
+
+.provider-card {
+  align-items: center;
+  text-align: center;
+}
+
+/* Circular masks for people. Square aspect plus 50% radius, so a headshot
+   of any size lands as a circle and reserves its own space. */
+.provider-card img,
+.provider-card__photo {
+  display: block;
+  width: clamp(6.5rem, 12vw, 9rem);
+  aspect-ratio: 1;
+  margin-block-end: 0.35rem;
+  border-radius: var(--radius-circle);
+  object-fit: cover;
+  background: var(--surface-deep);
+}
+
+.provider-card a {
+  border-radius: var(--radius-xs);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.provider-card a:hover {
+  color: var(--link);
+}
+
+.provider-card__name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-h4);
+  font-weight: 700;
+  line-height: var(--leading-snug);
+}
+
+.provider-card__title,
+.provider-card p {
+  margin: 0;
+  max-width: none;
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  color: var(--text-soft);
+}
+
+.provider-card__title {
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Location cards ------------------------------------------------------ */
+.location-card a {
+  border-radius: var(--radius-xs);
+  font-family: var(--font-display);
+  font-size: var(--text-h4);
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.location-card a:hover {
+  color: var(--link);
+}
+
+.location-card address,
+.location-card p {
+  margin: 0;
+  max-width: none;
+  font-style: normal;
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  color: var(--text-soft);
+}
+
+.location-card__accessibility {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-block-start: 0.35rem;
+  font-size: var(--text-sm);
+  color: var(--text);
+}
+
+.location-card__accessibility svg {
+  flex: none;
+  width: 1.15em;
+  height: 1.15em;
+}
+
+/* Form embed ---------------------------------------------------------- */
+/* Height is reserved up front: an iframe that grows after load is the
+   easiest way to fail CLS. */
+.form-embed {
+  display: block;
+  width: 100%;
+  max-width: var(--measure-wide);
+  height: clamp(40rem, 78vh, 56rem);
+  margin: var(--space-xl) auto;
+  border: 0;
+  border-radius: var(--radius-2xl);
+  background: var(--surface-soft);
+}
+
+/* Content images ------------------------------------------------------ */
+.content-image {
+  width: 100%;
+  max-width: var(--measure-wide);
+  margin: var(--space-xl) auto;
+}
+
+.content-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-2xl);
+  background: var(--surface-deep);
+}
+
+/* A person or a room: circle. */
+.content-image--round img,
+.content-image--portrait img {
+  max-width: min(22rem, 70vw);
+  margin-inline: auto;
+  aspect-ratio: 1;
+  border-radius: var(--radius-circle);
+  object-fit: cover;
+}
+
+.content-image__placeholder {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-2xl);
+  background:
+    radial-gradient(
+      120% 120% at 20% 0%,
+      var(--surface) 0%,
+      var(--surface-soft) 45%,
+      var(--surface-deep) 100%
+    );
+}
+
+.content-image--round .content-image__placeholder,
+.content-image--portrait .content-image__placeholder {
+  aspect-ratio: 1;
+  max-width: min(22rem, 70vw);
+  margin-inline: auto;
+  border-radius: var(--radius-circle);
+}
+
+.content-image figcaption {
+  max-width: var(--measure);
+  margin: 0.85rem auto 0;
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  color: var(--text-soft);
+  text-align: center;
+}
+
+/* Byline -------------------------------------------------------------- */
+.byline {
+  display: block;
+  max-width: var(--measure);
+  margin: var(--space-2xl) auto 0;
+  padding: var(--space-md) clamp(1.1rem, 2.4vw, 1.6rem);
+  border-radius: var(--radius-lg);
+  background: var(--surface-soft);
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  color: var(--text-soft);
+}
+
+.byline strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.byline a {
+  color: var(--link);
+}
+
+/* NEEDS markers ------------------------------------------------------- */
+/* Visible in dev, inert in production. Loud enough to notice, quiet
+   enough not to look like brand colour. */
+.needs {
+  padding: 0.05em 0.45em;
+  border-radius: var(--radius-xs);
+  background: var(--surface-soft);
+  box-shadow: inset 0 0 0 2px var(--link);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 0.92em;
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------------- */
+/*  5.5 Motion                                                           */
+/*                                                                       */
+/*  Resting state is the readable state. components/motion/** only ever   */
+/*  moves an element away from rest after GSAP has loaded, and only for   */
+/*  elements that are off screen at that moment, so nothing can be left   */
+/*  invisible by a failed chunk, a disabled script or a slow network.     */
+/*  Transform and opacity only: no reflow, no layout shift.               */
+/* -------------------------------------------------------------------- */
+
+.motion-settle {
+  display: block;
+}
+
+/* Thin leader line drawing to a callout. Drawn by default; the dash is
+   only applied by JS at the moment it animates. */
+.leader {
+  position: relative;
+  display: flex;
+  gap: var(--space-sm);
+  max-width: var(--measure);
+  margin: var(--space-lg) auto;
+}
+
+.leader--vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leader__line {
+  display: block;
+  flex: none;
+  overflow: visible;
+  color: var(--link);
+}
+
+.leader--vertical > .leader__line {
+  width: 2px;
+  height: clamp(2rem, 5vh, 3.5rem);
+  margin-inline-start: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.leader--horizontal > .leader__line {
+  width: clamp(1.5rem, 5vw, 3.5rem);
+  height: 2px;
+  margin-block-start: 0.85em;
+}
+
+.leader__path {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.leader__dot {
+  fill: currentcolor;
+}
+
+.leader__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* -------------------------------------------------------------------- */
+/*  5.6 Reduced motion                                                   */
+/*                                                                       */
+/*  The motion components bail out before they touch the DOM when this    */
+/*  is set. This block covers the CSS transitions as well, so the whole   */
+/*  site is still.                                                       */
+/* -------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .button:hover,
+  .provider-card:hover,
+  .location-card:hover {
+    transform: none;
+  }
 }

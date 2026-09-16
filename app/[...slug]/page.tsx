@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import {
   SITE_ORIGIN,
   getAllUrls,
+  getBreadcrumbTrail,
   getPageByUrl,
   segmentsToUrl,
   urlToSegments,
@@ -69,8 +70,14 @@ export default async function ContentPage({ params }: { params: Promise<RoutePar
     <>
       <SkipLink />
       <Header />
+      {/* Breadcrumbs sit below the header but outside main, so the skip link
+          drops the reader at the page content rather than at navigation. */}
+      <Breadcrumbs
+        url={page.frontMatter.url}
+        title={page.frontMatter.h1}
+        authored={getBreadcrumbTrail(page)}
+      />
       <main id="main" className="page" data-page-type={page.frontMatter.page_type}>
-        <Breadcrumbs url={page.frontMatter.url} title={page.frontMatter.h1} />
         <PageBody page={page} />
       </main>
       <Footer />

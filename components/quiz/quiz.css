@@ -1,0 +1,256 @@
+/* ------------------------------------------------------------------ *
+ * Care router quiz.
+ *
+ * OWNER: quiz agent (Agent F). Imported by components/quiz/Quiz.tsx.
+ * Every selector is namespaced under .quiz so nothing here can reach the
+ * rest of the site. app/globals.css belongs to the design agent, and the
+ * CTA deliberately carries the shared .button class with no styling from
+ * this file so the design pass owns its look.
+ *
+ * Palette: white and near white only (#FFFFFF, #F7F7F7, #EBEBEB).
+ * Text is --ink (#1d2733) on white, about 13:1. The muted progress line
+ * uses --ink-soft (#55606d) on #F7F7F7, about 6:1. Links use --brand-deep
+ * (#0a4fa8) on white, about 8:1. All comfortably past 4.5:1.
+ * ------------------------------------------------------------------ */
+
+.quiz {
+  --quiz-ink: var(--ink, #1d2733);
+  --quiz-ink-soft: var(--ink-soft, #55606d);
+  --quiz-link: var(--brand-deep, #0a4fa8);
+  --quiz-surface: #ffffff;
+  --quiz-surface-soft: #f7f7f7;
+  --quiz-edge: #ebebeb;
+  --quiz-radius: var(--glass-radius, 26px);
+
+  margin: 2rem 0;
+  color: var(--quiz-ink);
+}
+
+/* The hidden attribute has to win over any display rule below. */
+.quiz [hidden] {
+  display: none !important;
+}
+
+/* ---------------------------------------------------------------- */
+/* Progress                                                         */
+/* ---------------------------------------------------------------- */
+
+.quiz__progress {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--quiz-ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------------------------------------------------------------- */
+/* Questions                                                        */
+/* ---------------------------------------------------------------- */
+
+.quiz__form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.quiz__question {
+  margin: 0;
+  padding: clamp(1.1rem, 2vw, 1.75rem);
+  border: 1px solid var(--quiz-edge);
+  border-radius: var(--quiz-radius);
+  background: var(--quiz-surface);
+}
+
+/* Fades the panel change once enhanced. Reduced motion turns it off. */
+.quiz[data-enhanced="true"] .quiz__question {
+  animation: quiz-settle 0.28s ease-out both;
+}
+
+@keyframes quiz-settle {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.quiz__question:focus-visible,
+.quiz__result:focus-visible {
+  outline: 3px solid var(--quiz-ink);
+  outline-offset: 3px;
+}
+
+.quiz__legend {
+  padding: 0;
+  font-family: var(--font-display, inherit);
+  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--quiz-ink);
+}
+
+.quiz__options {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.quiz__option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--quiz-edge);
+  border-radius: 999px;
+  background: var(--quiz-surface-soft);
+}
+
+/* Native radios, sized up for touch. No custom control, no click-div. */
+.quiz__radio {
+  flex: 0 0 auto;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.1rem 0 0;
+  accent-color: var(--quiz-ink);
+}
+
+.quiz__radio:focus-visible {
+  outline: 3px solid var(--quiz-ink);
+  outline-offset: 2px;
+}
+
+.quiz__label {
+  flex: 1 1 auto;
+  cursor: pointer;
+  line-height: 1.45;
+}
+
+/* Selection is shown by border weight and tint, never by colour alone: the
+   radio itself stays the primary indicator. */
+.quiz__option:has(.quiz__radio:checked) {
+  border-color: var(--quiz-ink-soft);
+  background: var(--quiz-surface);
+}
+
+/* ---------------------------------------------------------------- */
+/* Controls                                                         */
+/* ---------------------------------------------------------------- */
+
+.quiz__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.quiz__nav {
+  padding: 0.7em 1.4em;
+  border: 1px solid var(--quiz-edge);
+  border-radius: 999px;
+  background: var(--quiz-surface);
+  color: var(--quiz-ink);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.quiz__nav--primary {
+  border-color: var(--quiz-ink-soft);
+  background: var(--quiz-surface-soft);
+}
+
+.quiz__nav:hover {
+  background: var(--quiz-edge);
+}
+
+.quiz__nav:focus-visible {
+  outline: 3px solid var(--quiz-ink);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Result and no JavaScript fallback                                */
+/* ---------------------------------------------------------------- */
+
+.quiz__result,
+.quiz__fallback {
+  margin-top: 1.25rem;
+  padding: clamp(1.1rem, 2vw, 1.75rem);
+  border: 1px solid var(--quiz-edge);
+  border-radius: var(--quiz-radius);
+  background: var(--quiz-surface);
+}
+
+.quiz[data-enhanced="true"] .quiz__result {
+  animation: quiz-settle 0.28s ease-out both;
+}
+
+.quiz__result-title {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.25rem, 1.8vw, 1.7rem);
+}
+
+.quiz__links,
+.quiz__paths {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.quiz__links a,
+.quiz__paths a,
+.quiz__follow-up a,
+.quiz__crisis a,
+.quiz__phone a {
+  color: var(--quiz-link);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.quiz__links a:focus-visible,
+.quiz__paths a:focus-visible,
+.quiz__follow-up a:focus-visible,
+.quiz__crisis a:focus-visible,
+.quiz__phone a:focus-visible {
+  outline: 3px solid var(--quiz-ink);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Q5(c). Set apart by weight and an edge, not by a dark or coloured panel. */
+.quiz__crisis {
+  margin: 0 0 1rem;
+  padding: 0.9rem 1.1rem;
+  border: 2px solid var(--quiz-ink-soft);
+  border-radius: var(--quiz-radius);
+  background: var(--quiz-surface-soft);
+  font-weight: 700;
+}
+
+.quiz__follow-up,
+.quiz__phone {
+  margin: 0 0 0.75rem;
+}
+
+.quiz__cta {
+  margin: 0 0 0.5rem;
+}
+
+.quiz__restart {
+  margin: 0.75rem 0 0;
+}
+
+/* ---------------------------------------------------------------- */
+/* Reduced motion                                                   */
+/* ---------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .quiz[data-enhanced="true"] .quiz__question,
+  .quiz[data-enhanced="true"] .quiz__result {
+    animation: none;
+  }
+}

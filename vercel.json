@@ -1,0 +1,364 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://pathwayswithinwellness.com/",
+      "statusCode": 301,
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?pathwayswithin\\.me"
+        }
+      ]
+    },
+    {
+      "source": "/home",
+      "destination": "https://pathwayswithinwellness.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/360-degree-wellness",
+      "destination": "https://pathwayswithinwellness.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us",
+      "destination": "https://pathwayswithinwellness.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/child-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/child-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/clinicians",
+      "destination": "https://pathwayswithinwellness.com/providers",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact",
+      "destination": "https://pathwayswithinwellness.com/contact",
+      "statusCode": 301,
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?pathwayswithin\\.me"
+        }
+      ]
+    },
+    {
+      "source": "/contact-wellness",
+      "destination": "https://pathwayswithinwellness.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/get-started",
+      "destination": "https://pathwayswithinwellness.com/how-it-works",
+      "statusCode": 301
+    },
+    {
+      "source": "/couples-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/couples-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/emdr-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/emdr",
+      "statusCode": 301
+    },
+    {
+      "source": "/family-therapy-on-long-island",
+      "destination": "https://pathwayswithinwellness.com/therapy/family-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/faq",
+      "destination": "https://pathwayswithinwellness.com/faq",
+      "statusCode": 301,
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?pathwayswithin\\.me"
+        }
+      ]
+    },
+    {
+      "source": "/grief-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/grief-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/group-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/group-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/hypnotherapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/hypnotherapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/types-of-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/ifs-therapy-on-long-island",
+      "destination": "https://pathwayswithinwellness.com/therapy/ifs",
+      "statusCode": 301
+    },
+    {
+      "source": "/individual-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/individual-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/services",
+      "destination": "https://pathwayswithinwellness.com/therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/ketamine-assisted-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/ketamine-assisted-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/locations",
+      "destination": "https://pathwayswithinwellness.com/locations",
+      "statusCode": 301,
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?pathwayswithin\\.me"
+        }
+      ]
+    },
+    {
+      "source": "/medication-management",
+      "destination": "https://pathwayswithinwellness.com/medication-management",
+      "statusCode": 301,
+      "has": [
+        {
+          "type": "host",
+          "value": "(www\\.)?pathwayswithin\\.me"
+        }
+      ]
+    },
+    {
+      "source": "/news",
+      "destination": "https://pathwayswithinwellness.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/a-new-way-podcast",
+      "destination": "https://pathwayswithinwellness.com/blog/a-new-way-podcast",
+      "statusCode": 301
+    },
+    {
+      "source": "/news/telehealth",
+      "destination": "https://pathwayswithinwellness.com/telehealth",
+      "statusCode": 301
+    },
+    {
+      "source": "/parent-child-interaction-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/pcit",
+      "statusCode": 301
+    },
+    {
+      "source": "/performance-wellness-coaching",
+      "destination": "https://pathwayswithinwellness.com/coaching",
+      "statusCode": 301
+    },
+    {
+      "source": "/somatic-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/somatic-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/teen-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/teen-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/trauma-therapy",
+      "destination": "https://pathwayswithinwellness.com/therapy/trauma-therapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/veterans-first-responders",
+      "destination": "https://pathwayswithinwellness.com/therapy/veterans-first-responders",
+      "statusCode": 301
+    },
+    {
+      "source": "/weight-loss-surgery-support",
+      "destination": "https://pathwayswithinwellness.com/therapy/bariatric-surgery-support",
+      "statusCode": 301
+    },
+    {
+      "source": "/new-home-page",
+      "destination": "https://pathwayswithinwellness.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/pathways-to",
+      "destination": "https://pathwayswithinwellness.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/acupuncture",
+      "destination": "https://pathwayswithinwellness.com/wellness/acupuncture",
+      "statusCode": 301
+    },
+    {
+      "source": "/body-sculpting",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/body-treatments",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/face-treatments",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/hair",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/cavitation",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/emsculpt",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/hydrafacials",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/keralase-hair-restoration",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/laser-hair-removal",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/laser-lipo",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/payment-plans",
+      "destination": "https://pathwayswithinwellness.com/insurance-and-fees",
+      "statusCode": 301
+    },
+    {
+      "source": "/prp",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    },
+    {
+      "source": "/christine-cervo",
+      "destination": "https://pathwayswithinwellness.com/providers/christine-cervo",
+      "statusCode": 301
+    },
+    {
+      "source": "/danielle-ingenito",
+      "destination": "https://pathwayswithinwellness.com/providers/danielle-ingenito",
+      "statusCode": 301
+    },
+    {
+      "source": "/leonard-ma",
+      "destination": "https://pathwayswithinwellness.com/providers/leonard-ma",
+      "statusCode": 301
+    },
+    {
+      "source": "/tia-baumohl",
+      "destination": "https://pathwayswithinwellness.com/providers/tia-baumohl",
+      "statusCode": 301
+    },
+    {
+      "source": "/cryotherapy-1",
+      "destination": "https://pathwayswithinwellness.com/wellness/cryotherapy",
+      "statusCode": 301
+    },
+    {
+      "source": "/cupping-therapy",
+      "destination": "https://pathwayswithinwellness.com/wellness/cupping",
+      "statusCode": 301
+    },
+    {
+      "source": "/energy-work",
+      "destination": "https://pathwayswithinwellness.com/wellness/energy-work",
+      "statusCode": 301
+    },
+    {
+      "source": "/integrative-energy-therapy",
+      "destination": "https://pathwayswithinwellness.com/wellness/energy-work/iet",
+      "statusCode": 301
+    },
+    {
+      "source": "/reiki",
+      "destination": "https://pathwayswithinwellness.com/wellness/energy-work/reiki",
+      "statusCode": 301
+    },
+    {
+      "source": "/location",
+      "destination": "https://pathwayswithinwellness.com/locations",
+      "statusCode": 301
+    },
+    {
+      "source": "/massages",
+      "destination": "https://pathwayswithinwellness.com/wellness/massage",
+      "statusCode": 301
+    },
+    {
+      "source": "/Wellness",
+      "destination": "https://pathwayswithinwellness.com/wellness",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ]
+}
