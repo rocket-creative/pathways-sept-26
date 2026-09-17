@@ -9,6 +9,7 @@ import {
   urlToSegments,
   type Page,
 } from "@/lib/content";
+import { ogImageFor, resolveHeadshot } from "@/lib/images";
 import { getProviderPage } from "@/lib/providers";
 import { buildPageGraph } from "@/lib/schema";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
@@ -42,7 +43,14 @@ export async function generateMetadata({
 
   const { title, meta, url, index, hero_image } = page.frontMatter;
   const canonical = `${SITE_ORIGIN}${url}`;
-  const ogImage = hero_image && /^https?:\/\//.test(hero_image) ? hero_image : undefined;
+  // The registry's hero photograph first; a provider's local headshot next;
+  // then whatever absolute url the front matter still carries from the old site.
+  const providerSlug = /^\/providers\/([a-z0-9-]+)$/.exec(url)?.[1];
+  const headshot = providerSlug ? resolveHeadshot(providerSlug) : undefined;
+  const ogImage =
+    ogImageFor(url, SITE_ORIGIN) ??
+    (headshot ? `${SITE_ORIGIN}${headshot.src}` : undefined) ??
+    (hero_image && /^https?:\/\//.test(hero_image) ? hero_image.split(" ")[0] : undefined);
 
   return {
     title,

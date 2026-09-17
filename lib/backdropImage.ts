@@ -4,11 +4,12 @@
  * (components/backdrop/PageBackdrop.tsx).
  *
  * Tiers are cut from the 16384 x 9216 master (`giant-path-bg.png` in the
- * repo root, git-ignored at 189 MB) with no upscaling anywhere. The image is
- * shown whole (`object-fit: contain`), so it renders at most the viewport
- * width and `sizes` is 100vw; the browser picks the tier that covers the
- * viewport at its device pixel ratio (a 5K display at 2x takes the 7680).
- * The JPEG is the fallback for browsers without WebP.
+ * repo root, git-ignored at 189 MB) with no upscaling anywhere. The image
+ * covers the viewport (`object-fit: cover`), so on a wide screen it renders
+ * at the viewport width and on a tall one at the height scaled by the 16:9
+ * aspect; `sizes` is the larger of the two so the browser picks the tier
+ * that covers the viewport at its device pixel ratio (a 5K display at 2x
+ * takes the 7680). The JPEG is the fallback for browsers without WebP.
  *
  * Regenerate with sharp (see the widths below) if the master changes.
  */
@@ -23,7 +24,7 @@ export const LABYRINTH = {
     "/labyrinth-7680.webp 7680w",
   ].join(", "),
   fallback: "/labyrinth.jpg",
-  sizes: "100vw",
+  sizes: "max(100vw, 177.78vh)",
   width: 16384,
   height: 9216,
 } as const;

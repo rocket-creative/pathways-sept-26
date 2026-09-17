@@ -1,5 +1,7 @@
 import { getProviders, type Provider, type ProviderCardFilter } from "@/lib/content";
 import { matchesFacet, type FacetKey } from "@/lib/provider-filter";
+import { pickFillPhoto } from "./fillPhoto";
+import GridFill from "./GridFill";
 import ProviderCard from "./ProviderCard";
 import { toProviderCardData } from "./types";
 import "./directory.css";
@@ -24,11 +26,17 @@ export default function ProviderCards({ filter }: { filter: ProviderCardFilter }
     return <Needs value={`no active provider matches [PROVIDER CARDS: ${describe(filter)}]`} />;
   }
 
+  // The grid runs three across on desktop and two on a tablet; a photograph
+  // takes whatever the last row leaves empty. Seeded by the marker so each
+  // page keeps its own picture across renders.
+  const fill = pickFillPhoto("providers", describe(filter));
+
   return (
     <ul className="provider-cards">
       {providers.map((provider) => (
         <ProviderCard key={provider.slug} provider={toProviderCardData(provider)} />
       ))}
+      <GridFill photo={fill} count={providers.length} />
     </ul>
   );
 }

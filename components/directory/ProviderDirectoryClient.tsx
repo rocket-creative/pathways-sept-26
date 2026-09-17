@@ -9,6 +9,7 @@ import {
   type FacetKey,
   type Selection,
 } from "@/lib/provider-filter";
+import GridFill, { type FillPhoto } from "./GridFill";
 import ProviderCard from "./ProviderCard";
 import type { ProviderCardData } from "./types";
 
@@ -36,9 +37,12 @@ const FACETS: { key: FacetKey; label: string; needs?: string }[] = [
 export default function ProviderDirectoryClient({
   providers,
   admin,
+  fill,
 }: {
   providers: ProviderCardData[];
   admin: ProviderCardData[];
+  /** Photograph for the tile that fills the grid's last row; chosen on the server. */
+  fill?: FillPhoto;
 }) {
   const [selection, setSelection] = useState<Selection>({});
   const [ready, setReady] = useState(false);
@@ -96,10 +100,15 @@ export default function ProviderDirectoryClient({
 
   const filtered = !isEmptySelection(selection);
 
+  // A facet with nothing to choose from is disabled; its [NEEDS] note goes
+  // under the whole row rather than inside the field, so the six fields stay
+  // the same height and line up.
+  const notes = FACETS.filter((facet) => options[facet.key].length === 0 && facet.needs);
+
   return (
     <section className="provider-directory" data-directory-ready={ready ? "true" : "false"}>
       <form
-        className="provider-directory__filters"
+        className={`provider-directory__filters${filtered ? " provider-directory__filters--active" : ""}`}
         aria-label="Filter providers"
         onSubmit={(event) => event.preventDefault()}
       >
@@ -136,7 +145,6 @@ export default function ProviderDirectoryClient({
                   </option>
                 ))}
               </select>
-              {values.length === 0 && facet.needs ? <Needs value={facet.needs} /> : null}
             </div>
           );
         })}
@@ -145,6 +153,14 @@ export default function ProviderDirectoryClient({
           <button type="button" className="provider-directory__clear" onClick={clear}>
             Clear filters
           </button>
+        ) : null}
+
+        {notes.length ? (
+          <p className="provider-directory__notes">
+            {notes.map((facet) => (
+              <Needs key={facet.key} value={facet.needs!} />
+            ))}
+          </p>
         ) : null}
       </form>
 
@@ -156,6 +172,8 @@ export default function ProviderDirectoryClient({
         {providers.map((provider) => (
           <ProviderCard key={provider.slug} provider={provider} hidden={!visible.has(provider.slug)} />
         ))}
+        {/* Hidden cards leave the grid, so the tile sizes itself to what is showing. */}
+        <GridFill photo={fill} count={visible.size} />
       </ul>
 
       {admin.length ? (

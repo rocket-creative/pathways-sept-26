@@ -125,28 +125,46 @@ export default function HomeHero({
         </div>
 
         {/*
-          Image 2. Fixed behind the page at full strength, no veil or overlay
-          (see hero.css). The src is attached by the controller at about 40%
-          of hero progress, or
-          when the third stop scrolls into view in the stacked layouts, so it is
-          never a candidate for LCP and never competes with image 1.
+          Image 2. Fixed behind the page at full strength, no overlay on the
+          picture itself (see hero.css). The src is attached by the controller
+          at about 40% of hero progress, or when the third stop scrolls into
+          view in the stacked layouts, so it is never a candidate for LCP and
+          never competes with image 1.
+
+          The second copy is the veil under the fixed nav, the same one the
+          inner pages have (backdrop.css .page-backdrop--veil): fixed to the
+          same box, layered above the page and below the bar, masked to a
+          short band, so copy fades into image 2 before it slides under the
+          pills. Same tiers, so it costs no extra download; the controller
+          fades both copies together.
         */}
-        <div className="hero-handoff" data-hero-image-2 aria-hidden="true">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className="hero-handoff__img"
-            alt=""
-            data-src={HANDOFF_IMAGE.src}
-            data-srcset={HANDOFF_IMAGE.srcSet}
-            sizes={HANDOFF_IMAGE.sizes}
-            width={HANDOFF_IMAGE.width}
-            height={HANDOFF_IMAGE.height}
-            decoding="async"
-            fetchPriority="low"
-          />
-        </div>
+        <HandoffImage />
+        <HandoffImage veil />
       </HeroStage>
     </>
+  );
+}
+
+function HandoffImage({ veil = false }: { veil?: boolean }) {
+  return (
+    <div
+      className={veil ? "hero-handoff hero-handoff--veil" : "hero-handoff"}
+      data-hero-image-2
+      aria-hidden="true"
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        className="hero-handoff__img"
+        alt=""
+        data-src={HANDOFF_IMAGE.src}
+        data-srcset={HANDOFF_IMAGE.srcSet}
+        sizes={HANDOFF_IMAGE.sizes}
+        width={HANDOFF_IMAGE.width}
+        height={HANDOFF_IMAGE.height}
+        decoding="async"
+        fetchPriority="low"
+      />
+    </div>
   );
 }
 

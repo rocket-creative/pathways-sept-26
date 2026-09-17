@@ -1459,8 +1459,26 @@ html {
 }
 
 .prose .button {
+  /* `.prose a` gives links a 3px radius for their focus ring; a button in
+     copy is still a pill. */
+  border-radius: var(--radius-pill);
   color: var(--text-inverse);
   text-decoration: none;
+}
+
+/* `.prose a:hover` (a pseudo class higher in specificity than `.prose .button`)
+   would otherwise recolour the label to ink on the dark blue fill and the
+   text would vanish on hover. The label stays white on the strong fill and
+   dark blue on the quiet one. */
+.prose .button:hover,
+.prose .button:focus-visible {
+  color: var(--text-inverse);
+  text-decoration: none;
+}
+
+.prose .button--quiet:hover,
+.prose .button--quiet:focus-visible {
+  color: var(--brand-deep);
 }
 
 /* Quiet button: white pill, outline in the logo dark blue. */

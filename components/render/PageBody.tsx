@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { inlineToText, type Block, type Page } from "@/lib/content";
+import { getPagePhotos, resolvePhoto, type ResolvedPhoto } from "@/lib/images";
 import LocationCards from "@/components/directory/LocationCards";
 import ProviderCards from "@/components/directory/ProviderCards";
 import ProviderDirectory from "@/components/directory/ProviderDirectory";
@@ -14,11 +15,19 @@ import Heading, { type HeadingBlock } from "./blocks/Heading";
 import List from "./blocks/List";
 import Needs from "./blocks/Needs";
 import { Paragraph, Quote } from "./blocks/Prose";
+import SectionFigure from "./blocks/SectionFigure";
 import "./render.css";
+import "./photos.css";
 
 /**
  * Renders the parsed block model. Copy is never altered here: the parser in
  * lib/content.ts decides what a block is, this decides what it looks like.
+ *
+ * Photographs come from lib/images, keyed by page url and section id, so the
+ * copy files never change to gain or lose a picture. Two placements: a figure
+ * beside a section's copy, and a local asset behind an `[IMAGE: alt]` marker.
+ * A page's `hero` entry in the registry is not rendered; it only supplies the
+ * og:image (lib/images ogImageFor).
  *
  * Everything below the article is server rendered and fully visible on load.
  * No accordion, no tab, no disclosure: the FAQ answers are in the DOM.
@@ -26,19 +35,51 @@ import "./render.css";
  * OWNER: renderer agent.
  */
 export default function PageBody({ page }: { page: Page }) {
+  const photos = getPagePhotos(page.frontMatter.url);
+
   const ctx: RenderContext = {
     source: `${page.frontMatter.url} (${page.sourceFile})`,
     url: page.frontMatter.url,
     eagerForms: page.frontMatter.url === "/contact",
     firstForm: page.blocks.find((block) => block.kind === "form") ?? null,
+    inlinePhotos: matchInlinePhotos(page.blocks, photos?.inline),
   };
 
   const { sections, bylines } = groupSections(page.blocks);
 
   return (
     <article className="prose">
-      {sections.map((section, position) =>
-        section.heading ? (
+      {sections.map((section, position) => {
+        if (!section.heading) {
+          return (
+            <section key={position} className="page-section page-section--intro" data-hero-lockup="">
+              <PageHero>{renderBlocks(section.blocks, ctx)}</PageHero>
+            </section>
+          );
+        }
+
+        const figure = photos?.sections?.[section.heading.id];
+        const resolved = resolvePhoto(figure);
+
+        if (figure && resolved) {
+          return (
+            <section
+              key={position}
+              className="page-section page-section--figure"
+              aria-labelledby={section.heading.id}
+              data-section={section.heading.id}
+              data-side={figure.side ?? "end"}
+            >
+              <div className="section-figure__copy">
+                <Heading block={section.heading} ctx={ctx} />
+                {renderSectionBody(section.heading, section.blocks, ctx)}
+              </div>
+              <SectionFigure photo={resolved} shape={figure.shape} aspect={figure.aspect} />
+            </section>
+          );
+        }
+
+        return (
           <section
             key={position}
             className="page-section"
@@ -48,12 +89,8 @@ export default function PageBody({ page }: { page: Page }) {
             <Heading block={section.heading} ctx={ctx} />
             {renderSectionBody(section.heading, section.blocks, ctx)}
           </section>
-        ) : (
-          <section key={position} className="page-section page-section--intro" data-hero-lockup="">
-            <PageHero>{renderBlocks(section.blocks, ctx)}</PageHero>
-          </section>
-        ),
-      )}
+        );
+      })}
 
       {bylines.map((block, position) => (
         <Byline
@@ -104,6 +141,34 @@ function groupSections(blocks: Block[]): { sections: Section[]; bylines: BylineB
 
   if (current.heading || current.blocks.length) sections.push(current);
   return { sections, bylines };
+}
+
+/**
+ * Pairs the registry's inline photographs with the `[IMAGE: alt]` blocks that
+ * carry no src, in document order (widget regions included). Extra entries
+ * on either side are ignored: a missing photo falls back to the placeholder.
+ */
+function matchInlinePhotos(
+  blocks: Block[],
+  inline: NonNullable<ReturnType<typeof getPagePhotos>>["inline"],
+): Map<Block, ResolvedPhoto> | undefined {
+  if (!inline?.length) return undefined;
+
+  const targets: Block[] = [];
+  const walk = (list: Block[]) => {
+    for (const block of list) {
+      if (block.kind === "image" && !block.src) targets.push(block);
+      if (block.kind === "widget") walk(block.blocks);
+    }
+  };
+  walk(blocks);
+
+  const map = new Map<Block, ResolvedPhoto>();
+  targets.forEach((block, index) => {
+    const resolved = resolvePhoto(inline[index]);
+    if (resolved) map.set(block, resolved);
+  });
+  return map;
 }
 
 function isQuestionSection(heading: HeadingBlock): boolean {
@@ -201,7 +266,7 @@ function RenderBlock({ block, ctx }: { block: Block; ctx: RenderContext }) {
     case "locationCards":
       return <LocationCards slugs={block.slugs} />;
     case "image":
-      return <ContentImage block={block} />;
+      return <ContentImage block={block} ctx={ctx} />;
     case "needs":
       return <Needs value={block.value} />;
     case "byline":

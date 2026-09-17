@@ -1,0 +1,193 @@
+/**
+ * Photographs in the content renderer. Two placements, one visual system:
+ * every picture sits in the same glass edged, rounded frame as the cards
+ * around it, so a photo reads as a window in the bento rather than a sticker
+ * on top of it.
+ *
+ *   .page-section--figure  a section with copy on one side, a picture on the other
+ *   .content-image--portrait  a provider's circular portrait in the lockup
+ *
+ * Unlayered on purpose: these rules extend the bento in backdrop.css and must
+ * win over the generic .content-image defaults in render.css.
+ */
+
+/* Frame ----------------------------------------------------------------- */
+
+.section-figure__media {
+  /* A figure nested inside a card takes the card radius so the corners nest
+     cleanly. */
+  --photo-radius: var(--glass-radius, 24px);
+
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--photo-radius);
+  background: var(--surface-deep, #ebebeb);
+  isolation: isolate;
+}
+
+/* The glass edge, drawn above the picture so it reads on dark corners too. */
+.section-figure__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid var(--glass-edge, rgb(255 255 255 / 0.62));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55);
+  pointer-events: none;
+}
+
+/* The frame owns the size (aspect-ratio above, clamped below) and the picture
+   fills it. Absolute rather than height: 100%, which does not resolve against
+   an aspect-ratio box in every engine. */
+.section-figure__media .section-figure__img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0; /* the frame clips; globals.css rounds .content-image img */
+  transition: transform var(--motion-slow, 760ms) var(--ease-soft, ease-out);
+}
+
+/* Section with a figure ------------------------------------------------- */
+
+.page-section.page-section--figure {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.75rem);
+  align-items: start;
+}
+
+.section-figure__copy {
+  min-width: 0;
+}
+
+/* The copy column is the measure: left aligned against the card edge like
+   every other card (backdrop.css does this for direct children only). */
+.section-figure__copy :is(p, ul, ol, h2, h3, h4, blockquote, .faq, .embed-slot, .cta, .heading--h2, .heading--h3) {
+  margin-inline: 0;
+}
+
+.section-figure__copy > :first-child,
+.section-figure__copy > .heading--h2 {
+  margin-block-start: 0;
+}
+
+.section-figure__copy > :last-child {
+  margin-block-end: 0;
+}
+
+/* The frame tops out level with the h2: it carries .content-image for the
+   bento's :has() test, so it has to shed that class's block margin here
+   (written at card specificity to beat the card rhythm in backdrop.css). */
+main.page--lanes > .prose > .page-section--figure > .section-figure__media {
+  margin: 0;
+}
+
+/* Under 900px the picture follows the copy and keeps a landscape crop so it
+   does not push the next card a full screen away. */
+.section-figure__media {
+  --photo-radius: var(--radius-xl, 34px);
+
+  align-self: stretch;
+  aspect-ratio: 3 / 2;
+}
+
+.section-figure__media--circle {
+  --photo-radius: 50%;
+
+  aspect-ratio: 1;
+  width: min(100%, 22rem);
+  justify-self: center;
+}
+
+.section-figure__media--circle::after {
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55), inset 0 0 0 6px rgb(255 255 255 / 0.28);
+}
+
+@media (min-width: 900px) {
+  .page-section.page-section--figure {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    column-gap: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  .page-section.page-section--figure[data-side="start"] {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+
+  .page-section--figure[data-side="start"] .section-figure__media {
+    order: -1;
+  }
+
+  /* Portrait crop beside a column of copy; stays in view as the copy scrolls,
+     so a long section is never text beside an empty well. */
+  .section-figure__media {
+    position: sticky;
+    top: calc(var(--header-h, 4.75rem) + 1.5rem);
+    aspect-ratio: 4 / 5;
+    max-height: calc(100vh - var(--header-h, 4.75rem) - 3rem);
+    align-self: start;
+  }
+
+  .section-figure__media[data-aspect="landscape"] {
+    aspect-ratio: 4 / 3;
+  }
+
+  .section-figure__media[data-aspect="square"] {
+    aspect-ratio: 1;
+  }
+
+  .section-figure__media--circle {
+    aspect-ratio: 1;
+    width: min(100%, 26rem);
+    justify-self: center;
+  }
+}
+
+/* Question sections keep their stacked answers in the copy column. */
+.page-section--figure .faq {
+  margin-block-start: 0;
+}
+
+/* Provider portrait ----------------------------------------------------- */
+
+.prose .content-image--portrait {
+  width: 11rem;
+  max-width: none;
+  margin: 0 0 1.25rem;
+}
+
+.content-image--portrait .content-image__img--portrait {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow:
+    0 0 0 1px var(--glass-edge, rgb(255 255 255 / 0.62)),
+    0 0 0 6px rgb(255 255 255 / 0.35),
+    0 18px 40px -24px rgb(29 39 51 / 0.35);
+}
+
+@media (min-width: 900px) {
+  .prose .content-image--portrait {
+    width: 14rem;
+  }
+}
+
+/* Reduced motion / transparency ---------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .section-figure__media .section-figure__img {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .section-figure__media::after {
+    border-color: #e3e6ea;
+    box-shadow: none;
+  }
+}

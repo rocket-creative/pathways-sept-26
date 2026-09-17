@@ -163,8 +163,12 @@
   font-size: var(--text-h2);
 }
 
+/* .cta (globals.css) is a measure-wide flex row; once card 6 widens to the
+   bento container it has to be centred as a box too, or the button sits in
+   the centre of the measure, left of the centred heading and copy. */
 .hero-stop--cta .cta {
   justify-content: center;
+  margin-inline: auto;
 }
 
 /* Image 2 --------------------------------------------------------------- */
@@ -209,6 +213,37 @@
 @media (prefers-reduced-motion: reduce) {
   .hero-handoff[data-show="true"] {
     transition: none;
+  }
+}
+
+/* The veil under the nav: the inner pages' .page-backdrop--veil
+   (backdrop.css), for the homepage. A second copy of image 2, fixed to the
+   same box so the two line up to the pixel, above the page and below the
+   bar (z 40), masked to a band that is solid through the bar and dissolves
+   over the next 3rem. Copy scrolling up into the band fades into image 2
+   before it reaches the pills. The controller gives it image 2's opacity, so
+   it is invisible through the pan and arrives with the hand off. Under 900px
+   the bar is sticky and in flow, so there is nothing to fade under. */
+.hero-handoff--veil {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .hero-handoff--veil {
+    display: block;
+    z-index: 30;
+    mask-image: linear-gradient(
+      to bottom,
+      #000 0,
+      #000 var(--header-h, 4.75rem),
+      transparent calc(var(--header-h, 4.75rem) + 3rem)
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      #000 0,
+      #000 var(--header-h, 4.75rem),
+      transparent calc(var(--header-h, 4.75rem) + 3rem)
+    );
   }
 }
 
@@ -455,6 +490,14 @@
   html[data-hero-mode="pin"] .home-intro a,
   html[data-hero-mode="pin"] .home-intro button {
     pointer-events: auto;
+  }
+
+  /* From 900px the fixed bar sits over the lockup, and under 1300px it is
+     two rows tall (site-chrome.css sets --header-h to match). */
+  @media (min-width: 900px) {
+    html[data-hero-mode="pin"] .home-intro {
+      padding-top: calc(var(--header-h, 4.75rem) + 0.5rem);
+    }
   }
 
   html[data-hero-mode="pin"] .home-intro .prose {

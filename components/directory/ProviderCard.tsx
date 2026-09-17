@@ -52,6 +52,23 @@ function headshotSrcSet(url: string): string | undefined {
 }
 
 function Headshot({ provider }: { provider: ProviderCardData }) {
+  if (provider.headshot) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        className="provider-card__photo"
+        src={provider.headshot.src}
+        srcSet={provider.headshot.srcSet}
+        sizes="(min-width: 48rem) 10rem, 7rem"
+        alt={`Portrait of ${provider.displayName}`}
+        width={HEADSHOT_SIZE}
+        height={HEADSHOT_SIZE}
+        loading="lazy"
+        decoding="async"
+      />
+    );
+  }
+
   if (!provider.headshotUrl) {
     return (
       <span className="provider-card__photo provider-card__initials" aria-hidden="true">

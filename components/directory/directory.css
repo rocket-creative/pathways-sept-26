@@ -1,112 +1,137 @@
 /**
- * Provider and location cards. White and near white only, everything rounded,
- * faces masked to circles. Agent E owns the global palette and type scale, so
- * this file stays local to the directory and leans on the shared class names.
+ * Provider and location cards, and the /providers directory.
+ *
+ * The cards' colour, type and glass surface come from app/globals.css (5.4)
+ * and components/backdrop/backdrop.css. This file owns the grid geometry:
+ * the section is a full row card in the bento, so the grid fills that card
+ * edge to edge with an explicit column count (3 / 2 / 1) and a photograph
+ * tile (GridFill) takes whatever the last row leaves empty.
+ *
+ * Every rule is prefixed with .prose, which outranks the single class rules
+ * in globals.css whatever order the stylesheets land in.
  */
 
-.provider-cards,
-.location-cards {
+/* Grid -------------------------------------------------------------------- */
+
+.prose .provider-cards,
+.prose .location-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1rem, 1.8vw, 1.5rem);
+  width: 100%;
+  max-width: none;
+  margin: 1.25rem 0 0;
   padding: 0;
   list-style: none;
 }
 
-.provider-card,
-.location-card {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.5rem;
-  border-radius: 1.5rem;
-  background: #ffffff;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 24px rgb(0 0 0 / 4%);
+@media (min-width: 600px) {
+  .prose .provider-cards,
+  .prose .location-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
-.provider-card {
-  align-items: center;
-  text-align: center;
+@media (min-width: 1000px) {
+  .prose .provider-cards,
+  .prose .location-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 /* Filtered out by the directory: still in the DOM with its link, not shown.
-   Needed because the flex display above outranks the UA's [hidden] rule. */
-.provider-card[hidden] {
+   Needed because the flex display outranks the UA's [hidden] rule. */
+.prose .provider-card[hidden] {
   display: none;
 }
 
-.provider-card__photo {
+/* Provider card ----------------------------------------------------------- */
+
+/* One rhythm down the card: photo, name, title, bullet, each the same step
+   apart. min-width: 0 so a long credential wraps instead of widening a cell. */
+.prose .provider-card,
+.prose .location-card {
+  margin: 0;
+  min-width: 0;
+}
+
+.prose .provider-card {
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+}
+
+.prose .provider-card > * {
+  max-width: 100%;
+}
+
+.prose .provider-card__photo {
+  flex: none;
   width: 7rem;
   height: 7rem;
+  aspect-ratio: 1;
+  margin: 0 0 0.5rem;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
-  background: #f7f7f7;
 }
 
-.provider-card__initials {
+.prose .provider-card__initials {
   display: grid;
   place-items: center;
-  font-size: 1.75rem;
   letter-spacing: 0.05em;
-  color: #6b6b6b;
-  background: #ebebeb;
 }
 
-.provider-card__name {
+.prose .provider-card__name {
   margin: 0;
-  font-weight: 600;
+  text-wrap: balance;
 }
 
-.provider-card__credentials {
+.prose .provider-card__credentials {
   font-weight: 400;
-  color: #4a4a4a;
+  color: var(--text-soft, #4a4a4a);
 }
 
-.provider-card__title,
-.provider-card__bullet {
+.prose .provider-card__title,
+.prose .provider-card__bullet {
   margin: 0;
-  font-size: 0.9375rem;
-  color: #4a4a4a;
+  text-wrap: pretty;
 }
 
-.location-card__name {
+/* Location card ----------------------------------------------------------- */
+
+.prose .location-card__name,
+.prose .location-card__address {
   margin: 0;
-  font-weight: 600;
 }
 
-.location-card__address {
-  margin: 0;
-  font-style: normal;
-  color: #4a4a4a;
+/* The access line is ordinary running text, so an inline [NEEDS] marker
+   follows the sentence and wraps with it. The round mark is an inline block
+   sitting on the first line. */
+.prose .location-card__access {
+  display: block;
+  margin: 0.15rem 0 0;
+  line-height: 1.5;
 }
 
-.location-card__access {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0;
-  font-size: 0.9375rem;
-  color: #4a4a4a;
-}
-
-.location-card__access-mark {
+.prose .location-card__access-mark {
+  display: inline-block;
   width: 0.75rem;
   height: 0.75rem;
-  flex: none;
+  margin-inline-end: 0.5rem;
+  vertical-align: -0.05em;
   border-radius: 50%;
   background: #ebebeb;
   box-shadow: inset 0 0 0 2px #9a9a9a;
 }
 
 /* Only a confirmed office gets the filled mark. Unknown offices get none. */
-.location-card__access[data-access="accessible"] .location-card__access-mark {
+.prose .location-card__access[data-access="accessible"] .location-card__access-mark {
   background: #4a4a4a;
   box-shadow: inset 0 0 0 2px #4a4a4a;
 }
 
-.location-card__access[data-access="not-accessible"] .location-card__access-mark {
+.prose .location-card__access[data-access="not-accessible"] .location-card__access-mark {
   background: #ffffff;
   box-shadow: inset 0 0 0 2px #4a4a4a;
 }
@@ -115,88 +140,206 @@
   aspect-ratio: 16 / 9;
   display: grid;
   place-items: center;
-  border-radius: 1.5rem;
-  background: #f7f7f7;
+  border-radius: var(--radius-xl, 1.5rem);
+  background: var(--surface-soft, #f7f7f7);
 }
 
-/* ------------------------------------------------------------------ */
-/* Directory on /providers                                             */
-/* ------------------------------------------------------------------ */
+/* Fill tile --------------------------------------------------------------- */
+
+/* A photograph in the same rounded, glass edged frame as the cards around it
+   (see components/render/photos.css for the frame it echoes). The tile
+   stretches to the row it shares, spanning the cells the cards left empty:
+   GridFill sets --fill-span-3 / --fill-span-2 and the matching data
+   attributes, and each breakpoint below reads its own pair. Hidden by default
+   so the single column layout never shows it. */
+.prose .card-grid__fill {
+  display: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 12rem;
+  overflow: hidden;
+  border-radius: var(--radius-xl, 34px);
+  background: var(--surface-deep, #ebebeb);
+  isolation: isolate;
+  pointer-events: none;
+}
+
+.prose .card-grid__fill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid var(--glass-edge, rgb(255 255 255 / 0.62));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55);
+  pointer-events: none;
+}
+
+.prose .card-grid__fill-img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+@media (min-width: 600px) and (max-width: 999.98px) {
+  .prose .card-grid__fill:not([data-fill-2="0"]) {
+    display: block;
+    grid-column: span var(--fill-span-2, 1);
+  }
+}
+
+@media (min-width: 1000px) {
+  .prose .card-grid__fill:not([data-fill-3="0"]) {
+    display: block;
+    grid-column: span var(--fill-span-3, 1);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .prose .card-grid__fill::after {
+    border-color: #e3e6ea;
+    box-shadow: none;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* Directory on /providers                                                   */
+/* ------------------------------------------------------------------------- */
 
 .provider-directory {
-  margin: 2rem 0;
+  margin: 1.25rem 0 0;
 }
 
-.provider-directory__filters {
-  display: flex;
-  flex-wrap: wrap;
+/* Six fields in one row on desktop, three and three on a tablet, two across
+   on a phone. Every field is label + select and nothing else, so the row has
+   one height and the controls sit on one line. */
+.prose .provider-directory__filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  align-items: flex-end;
-  padding: 1.5rem;
-  border-radius: 1.5rem;
-  background: #f7f7f7;
+  align-items: start;
+  margin: 0;
+  padding: 1.25rem;
+  border-radius: var(--radius-lg, 1.5rem);
+  background: rgb(255 255 255 / 0.55);
+  border: 1px solid rgb(255 255 255 / 0.9);
 }
 
-.provider-directory__field {
+@media (min-width: 600px) {
+  .prose .provider-directory__filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .prose .provider-directory__filters {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  /* With a selection the Clear button takes a slim seventh column, its
+     bottom level with the selects. */
+  .prose .provider-directory__filters--active {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) auto;
+  }
+}
+
+.prose .provider-directory__field {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
-  min-width: 11rem;
-  flex: 1 1 11rem;
+  gap: 0.3rem;
+  min-width: 0;
 }
 
-.provider-directory__field label {
+.prose .provider-directory__field label {
   font-size: 0.875rem;
   font-weight: 600;
+  line-height: 1.3;
 }
 
-.provider-directory__field select {
+.prose .provider-directory__field select {
+  width: 100%;
+  min-width: 0;
   padding: 0.5rem 0.75rem;
-  border: 1px solid #ebebeb;
+  border: 1px solid rgb(29 39 51 / 0.12);
   border-radius: 0.75rem;
   background: #ffffff;
   color: inherit;
   font: inherit;
+  line-height: 1.4;
 }
 
-.provider-directory__field select:disabled {
-  color: #6b6b6b;
-  background: #ebebeb;
+.prose .provider-directory__field select:disabled {
+  color: var(--text-soft, #6b6b6b);
+  background: var(--surface-soft, #ebebeb);
 }
 
-.provider-directory__clear {
+.prose .provider-directory__clear {
+  align-self: end;
+  justify-self: start;
   padding: 0.5rem 1rem;
-  border: 1px solid #ebebeb;
+  border: 1px solid rgb(29 39 51 / 0.12);
   border-radius: 999px;
   background: #ffffff;
   color: inherit;
   font: inherit;
+  line-height: 1.4;
   cursor: pointer;
+  white-space: nowrap;
 }
 
-.provider-directory__field select:focus-visible,
-.provider-directory__clear:focus-visible {
+@media (max-width: 999.98px) {
+  .prose .provider-directory__clear {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Development notes for facets that have nothing to filter yet. A row of
+   their own under the fields, so no field is taller than its neighbours. */
+.prose .provider-directory__notes {
+  grid-column: 1 / -1;
+  margin: 0;
+  max-width: none;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.prose .provider-directory__notes .needs {
+  margin-inline-end: 0.5rem;
+}
+
+.prose .provider-directory__field select:focus-visible,
+.prose .provider-directory__clear:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
 
-.provider-directory__status {
+.prose .provider-directory__status {
   margin: 1rem 0 0;
-  font-size: 0.9375rem;
-  color: #4a4a4a;
+  max-width: none;
+  font-size: var(--text-sm, 0.9375rem);
+  color: var(--text-soft, #4a4a4a);
 }
 
-.provider-directory__admin {
+.prose .provider-directory__admin {
+  margin: 1.5rem 0 0;
   padding: 1.5rem;
-  border-radius: 1.5rem;
-  background: #f7f7f7;
+  border-radius: var(--radius-lg, 1.5rem);
+  background: rgb(255 255 255 / 0.55);
+  border: 1px solid rgb(255 255 255 / 0.9);
 }
 
-.provider-directory__admin h3 {
-  margin-top: 0;
+.prose .provider-directory__admin h3 {
+  margin: 0 0 0.5rem;
 }
 
-.provider-directory__admin ul {
+.prose .provider-directory__admin ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -204,4 +347,12 @@
 
 .provider-directory__admin-name {
   font-weight: 600;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .prose .provider-directory__filters,
+  .prose .provider-directory__admin {
+    background: var(--surface-soft, #f7f7f7);
+    border-color: #e3e6ea;
+  }
 }

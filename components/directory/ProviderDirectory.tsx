@@ -1,4 +1,5 @@
 import { getProviders } from "@/lib/content";
+import { pickFillPhoto } from "./fillPhoto";
 import ProviderDirectoryClient from "./ProviderDirectoryClient";
 import { toProviderCardData } from "./types";
 import "./directory.css";
@@ -15,8 +16,11 @@ export default function ProviderDirectory() {
   const active = getProviders().filter((provider) => provider.active);
   const profiles = active.filter((provider) => !provider.isAdmin).map(toProviderCardData);
   const admin = active.filter((provider) => provider.isAdmin).map(toProviderCardData);
+  // Resolved here, where the photo registry is, and handed down as plain data:
+  // the client works out how many cells it spans from the filtered count.
+  const fill = pickFillPhoto("providers", "directory");
 
-  return <ProviderDirectoryClient providers={profiles} admin={admin} />;
+  return <ProviderDirectoryClient providers={profiles} admin={admin} fill={fill} />;
 }
 
 export { ProviderDirectory };

@@ -55,8 +55,10 @@ interface Parts {
   pin: HTMLElement;
   track: HTMLElement;
   image1: HTMLImageElement;
-  handoff: HTMLElement;
-  image2: HTMLImageElement;
+  /** Image 2 behind the page, and its veil under the fixed nav (hero.css).
+      Both carry [data-hero-image-2] and are always painted together. */
+  handoff: HTMLElement[];
+  image2: HTMLImageElement[];
   stops: HTMLElement[];
   /** The h1 lockup inside the pin. Optional: the stacked layout has none. */
   intro: HTMLElement | null;
@@ -66,20 +68,26 @@ function collect(root: HTMLElement): Parts | null {
   const pin = root.querySelector<HTMLElement>("[data-hero-pin]");
   const track = root.querySelector<HTMLElement>(".hero-stage__track");
   const image1 = root.querySelector<HTMLImageElement>("[data-hero-image-1]");
-  const handoff = root.querySelector<HTMLElement>("[data-hero-image-2]");
-  const image2 = handoff?.querySelector<HTMLImageElement>("img") ?? null;
+  const handoff = [...root.querySelectorAll<HTMLElement>("[data-hero-image-2]")];
+  const image2 = handoff
+    .map((el) => el.querySelector<HTMLImageElement>("img"))
+    .filter((img): img is HTMLImageElement => img !== null);
   const stops = [...root.querySelectorAll<HTMLElement>("section.hero-stop")];
   const intro = root.querySelector<HTMLElement>(".home-intro");
-  if (!pin || !track || !image1 || !handoff || !image2 || !stops.length) return null;
+  if (!pin || !track || !image1 || !handoff.length || image2.length !== handoff.length || !stops.length) {
+    return null;
+  }
   return { root, pin, track, image1, handoff, image2, stops, intro };
 }
 
 /** Attaches image 2's src and srcset once. Idempotent. */
-function preloadHandoff(image2: HTMLImageElement): void {
-  if (image2.getAttribute("src")) return;
-  const { src, srcset } = image2.dataset;
-  if (srcset) image2.setAttribute("srcset", srcset);
-  if (src) image2.setAttribute("src", src);
+function preloadHandoff(images: HTMLImageElement[]): void {
+  for (const image of images) {
+    if (image.getAttribute("src")) continue;
+    const { src, srcset } = image.dataset;
+    if (srcset) image.setAttribute("srcset", srcset);
+    if (src) image.setAttribute("src", src);
+  }
 }
 
 function stopForHash(stops: HTMLElement[]): HTMLElement | null {
@@ -138,7 +146,7 @@ function mountStacked({ root, stops, handoff, image2 }: Parts, html: HTMLElement
         if (entry.target === preloadStop) preloadHandoff(image2);
         if (entry.target === showStop) {
           preloadHandoff(image2);
-          handoff.dataset.show = "true";
+          for (const el of handoff) el.dataset.show = "true";
         }
       }
     });
@@ -150,7 +158,7 @@ function mountStacked({ root, stops, handoff, image2 }: Parts, html: HTMLElement
 
   return () => {
     observer?.disconnect();
-    delete handoff.dataset.show;
+    for (const el of handoff) delete el.dataset.show;
     html.removeAttribute("data-hero-live");
   };
 }
@@ -251,7 +259,7 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
       const eased = t * t * (3 - 2 * t); // smoothstep
       const out = (1 - eased).toFixed(3);
       image1.style.opacity = out;
-      handoff.style.opacity = eased.toFixed(3);
+      for (const el of handoff) el.style.opacity = eased.toFixed(3);
       for (const el of leaving) el.style.opacity = out;
       /* The card keeps its left edge as it widens, so its centre drifts
          right; aim the translation at where the centre is at this width. */
@@ -271,7 +279,7 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
       pin.dataset.heroPhase = t >= 1 ? "out" : "handoff";
     } else {
       image1.style.opacity = "";
-      handoff.style.opacity = "";
+      for (const el of handoff) el.style.opacity = "";
       for (const el of leaving) el.style.opacity = "";
       gsap.set(cta, { x: 0, y: 0 });
       cta.style.width = "";
@@ -416,7 +424,7 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     track.removeEventListener("focusin", onFocusIn);
     image1.removeEventListener("load", onImageLoad);
     image1.style.opacity = "";
-    handoff.style.opacity = "";
+    for (const el of handoff) el.style.opacity = "";
     for (const el of leaving) el.style.opacity = "";
     gsap.set(cta, { clearProps: "transform,width" });
     if (after) after.style.opacity = "";

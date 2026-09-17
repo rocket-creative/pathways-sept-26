@@ -70,11 +70,11 @@
     linear-gradient(180deg, rgb(255 255 255 / 0.9) 0%, rgb(255 255 255 / 0.82) 100%);
 }
 
-/* The photograph, whole. PageBackdrop.tsx puts a real <img> with a srcset
-   here (tiers in lib/backdropImage.ts) so each screen gets the sharpest cut
-   it can use. It is never cropped: object-fit: contain shows all of it, and
-   the letterbox either side (or above and below on a tall screen) is the
-   photograph's own sky grey, so the edges do not read. */
+/* The photograph fills the viewport. PageBackdrop.tsx puts a real <img> with
+   a srcset here (tiers in lib/backdropImage.ts) so each screen gets the
+   sharpest cut it can use. object-fit: cover crops whichever axis has to give
+   so there is never a letterbox; the labyrinth stays centred. The gradient
+   behind it is the photograph's own sky grey, only seen while it loads. */
 .page-backdrop {
   position: fixed;
   inset: 0;
@@ -95,8 +95,40 @@
 }
 
 .page-backdrop__img {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
+}
+
+/* The fade under the nav. The bar is fixed and transparent from 900px, so
+   copy would otherwise scroll straight under it and sit behind the pills.
+   This is a second copy of the same photograph, fixed to the same box as
+   the first so the two line up to the pixel, layered above the page and
+   below the bar, and masked to a band: solid through the bar, dissolving
+   over the next 3rem. Anything scrolling up into the band appears to fade
+   into the background before it reaches the nav. Pointer events pass
+   through, so the pills and the copy stay clickable. */
+.page-backdrop--veil {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .page-backdrop--veil {
+    display: block;
+    z-index: 30;
+    pointer-events: none;
+    mask-image: linear-gradient(
+      to bottom,
+      #000 0,
+      #000 var(--header-h, 4.75rem),
+      transparent calc(var(--header-h, 4.75rem) + 3rem)
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      #000 0,
+      #000 var(--header-h, 4.75rem),
+      transparent calc(var(--header-h, 4.75rem) + 3rem)
+    );
+  }
 }
 
 /* Glass ---------------------------------------------------------------- */
@@ -150,9 +182,10 @@ main.page--lanes > .prose > * {
 
 /* The card ---------------------------------------------------------------- */
 
+/* On an inner page the whole hero lockup, mark included, is one card. */
 main.page--lanes > .prose > .page-section,
 main.page--lanes > .prose > .byline,
-body:has(.page-backdrop) .page-hero__copy {
+body:has(.page-backdrop) .page-hero {
   position: relative;
   box-sizing: border-box;
   width: auto;
@@ -172,6 +205,12 @@ body:has(.page-backdrop) .page-hero__copy > :last-child {
   margin-block-end: 0;
 }
 
+/* The mark sits inside the card with the copy, so it keeps a little room
+   from the card edge and the copy column. */
+body:has(.page-backdrop) .page-hero__logo {
+  padding: 0.25rem;
+}
+
 main.page--lanes > .prose > .page-section .heading--h2,
 main.page--lanes > .prose > .page-section > h2 {
   margin-block-start: 0;
@@ -179,9 +218,74 @@ main.page--lanes > .prose > .page-section > h2 {
 }
 
 /* Copy sits against the card's left edge, not centred in it: the design
-   system centres a measure inside a wide article, but a card is the measure. */
-main.page--lanes > .prose > .page-section:not(.page-section--intro) > :is(p, ul, ol, h3, h4, blockquote, .faq, .embed-slot, .cta) {
+   system centres a measure inside a wide article, but a card is the measure.
+   Descendants too, so a lead paragraph inside a widget (the quiz) or a
+   figure's copy column lines up with the heading above it. */
+main.page--lanes > .prose > .page-section:not(.page-section--intro) :is(p, ul, ol, h3, h4, blockquote, .faq, .embed-slot, .cta) {
   margin-inline: 0;
+}
+
+/* Rhythm inside a card ------------------------------------------------- */
+/* The design system spaces blocks for an essay that runs down a page. A
+   card is a short column, so the big gaps come down: a CTA sits just under
+   the copy it follows, a sub heading does not float away from its h2, and a
+   wide widget starts close under the heading that introduces it. */
+
+/* Sub headings and quotes. The block before a sub heading gives up its
+   bottom margin so the gap is the heading's alone, and so a grid card
+   (margins do not collapse there) matches a block card. */
+main.page--lanes > .prose > .page-section :is(h3, .heading--h3) {
+  margin-block-start: 1.5rem;
+}
+
+main.page--lanes > .prose > .page-section :is(h4, .heading--h4) {
+  margin-block-start: 1.25rem;
+}
+
+main.page--lanes > .prose > .page-section :is(p, ul, ol, blockquote):has(+ :is(h3, h4, .heading--h3, .heading--h4)) {
+  margin-block-end: 0;
+}
+
+main.page--lanes > .prose > .page-section blockquote {
+  margin-block: 1.25rem;
+}
+
+/* Wide content and Q&A stacks: ~1.25rem, not the essay's --space-xl.
+   Straight after the h2 the heading's own margin is the gap (and on a grid
+   card the stack tops out level with the heading). */
+main.page--lanes > .prose > .page-section :is(.faq, .embed-slot, .widget, .form-embed, .content-image) {
+  margin-block: 1.25rem;
+}
+
+main.page--lanes > .prose > .page-section :is(h2, .heading--h2) + :is(.faq, .embed-slot, .widget, .form-embed, .content-image, blockquote) {
+  margin-block-start: 0;
+}
+
+/* The button row: 1.15rem under the copy it follows (the paragraph gives
+   up its own bottom margin so a grid card, where margins do not collapse,
+   gets the same gap as a block card), 0.9rem above the "Or call" line that
+   follows it, and nothing at all against the card edge. */
+main.page--lanes > .prose > .page-section .cta {
+  margin-block: 1.15rem 0.9rem;
+}
+
+main.page--lanes > .prose > .page-section :is(p, ul, ol):has(+ .cta) {
+  margin-block-end: 0;
+}
+
+/* Straight after the h2: in a half card the h2's own bottom margin is the
+   gap; in a full row card the button tops out level with the heading. */
+main.page--lanes > .prose > .page-section :is(h2, .heading--h2) + .cta,
+main.page--lanes > .prose > .page-section .cta:first-child {
+  margin-block-start: 0;
+}
+
+/* Whatever closes a card, or a copy column inside one, sits on the padding. */
+main.page--lanes > .prose > .page-section > :last-child,
+main.page--lanes > .prose > .page-section > .section-figure__copy > :last-child,
+main.page--lanes > .prose > .page-section > .widget > :last-child,
+main.page--lanes > .prose > .page-section > .embed-slot > :last-child {
+  margin-block-end: 0;
 }
 
 /* Wide content gets a little more room to breathe. */
@@ -197,9 +301,16 @@ main.page--lanes > .prose > .page-section:has(
   padding: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-/* The byline is a strip, not a card of copy. */
+/* The byline is a strip, not a card of copy: one small line, flush with the
+   cards' inner padding, not a centred measure. */
 main.page--lanes > .prose > .byline {
   padding: 0.9rem var(--bento-pad);
+}
+
+main.page--lanes > .prose > .byline > .byline__line {
+  max-width: none;
+  margin: 0;
+  text-wrap: pretty;
 }
 
 /* The intro is the logo + copy lockup: the card goes on the copy column
@@ -238,7 +349,8 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       .widget[data-widget="quiz"], .content-image, table
     )) {
     --bento-inner: block;
-    --bento-h3-top: var(--space-xl, 2.5rem);
+    --bento-h3-top: 1.5rem;
+    --bento-h2-gap: 0.45em;
 
     grid-column: span var(--bento-half);
   }
@@ -253,6 +365,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
     ) {
     --bento-inner: grid;
     --bento-h3-top: 0px;
+    --bento-h2-gap: 0px;
 
     grid-column: 1 / -1;
   }
@@ -278,7 +391,8 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       ))
     ) {
     --bento-inner: block;
-    --bento-h3-top: var(--space-xl, 2.5rem);
+    --bento-h3-top: 1.5rem;
+    --bento-h2-gap: 0.45em;
 
     grid-column: span var(--bento-half);
   }
@@ -300,6 +414,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
     ) {
     --bento-inner: grid;
     --bento-h3-top: 0px;
+    --bento-h2-gap: 0px;
 
     grid-column: 1 / -1;
   }
@@ -327,6 +442,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
     ) {
     --bento-inner: grid;
     --bento-h3-top: 0px;
+    --bento-h2-gap: 0px;
 
     grid-column: 1 / -1;
   }
@@ -368,15 +484,19 @@ main.page--lanes > .prose > .page-section.page-section--intro {
     )) > :is(.heading--h2, h2):first-child {
     grid-column: 1;
     grid-row: 1;
+    /* On a grid card nothing follows the h2 in its column, and its bottom
+       margin would only pad out row 1 and push the copy column's second
+       block down. 0 there; the usual gap on a half (block) card. */
+    margin-block-end: var(--bento-h2-gap, 0.45em);
   }
 
   /* A sub heading that opens the copy column tops out level with the h2
-     (--bento-h3-top is 0 on a full row card, the usual h3 space on a half). */
+     (--bento-h3-top is 0 on a full row card, the card h3 space, 1.5rem, on a half). */
   main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
       .provider-directory, .provider-cards, .location-cards, .form-embed,
       .widget[data-widget="quiz"], .content-image, table
     )) > :is(h3, h4, .heading--h3, .heading--h4):nth-child(2) {
-    margin-block-start: var(--bento-h3-top, var(--space-xl, 2.5rem));
+    margin-block-start: var(--bento-h3-top, 1.5rem);
   }
 }
 
@@ -401,8 +521,14 @@ body:has(.page-backdrop) .breadcrumbs {
    the first thing in the flow, steps down past it and takes the hero lockup
    and the rest of the page with it. Under 900px the bar is sticky, in flow. */
 @media (min-width: 900px) {
+  /* Sticky for the whole page: it rides just under the bar as the copy
+     scrolls up and fades out beneath it. Its containing block is <body>, so
+     it holds until the footer. Above the veil (z 30), below the bar (z 40). */
   body:has(.page-backdrop) .breadcrumbs {
-    margin-block-start: calc(var(--header-h, 4.75rem) + 1rem);
+    position: sticky;
+    top: calc(var(--header-h, 4.75rem) + 0.75rem);
+    z-index: 35;
+    margin-block-start: calc(var(--header-h, 4.75rem) + 0.75rem);
   }
 }
 
@@ -450,13 +576,16 @@ main.page--lanes :is(.provider-card, .location-card, .faq-item) {
   }
 
   .page-backdrop {
-    background-image: none;
     background: var(--surface-soft, #f7f7f7);
+  }
+
+  .page-backdrop picture {
+    display: none;
   }
 
   main.page--lanes > .prose > .page-section,
   main.page--lanes > .prose > .byline,
-  body:has(.page-backdrop) .page-hero__copy,
+  body:has(.page-backdrop) .page-hero,
   body:has(.page-backdrop) :is(.site-footer, .breadcrumbs),
   body:has(.page--home) .site-footer {
     background: #fff;

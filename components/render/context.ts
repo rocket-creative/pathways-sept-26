@@ -1,4 +1,5 @@
 import { getAllUrls, type Block } from "@/lib/content";
+import type { ResolvedPhoto } from "@/lib/images";
 
 /**
  * Everything a block component needs to know about the page it belongs to.
@@ -13,6 +14,12 @@ export interface RenderContext {
   eagerForms: boolean;
   /** The one form that may load eagerly; every later embed stays lazy. */
   firstForm: Block | null;
+  /**
+   * Local photographs for `[IMAGE: alt]` markers that carry no src, matched
+   * to the block objects in document order by PageBody. Absent on pages the
+   * registry does not decorate.
+   */
+  inlinePhotos?: Map<Block, ResolvedPhoto>;
 }
 
 let urlSet: Set<string> | undefined;

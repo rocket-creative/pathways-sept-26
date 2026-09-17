@@ -66,9 +66,15 @@
   color: var(--ink, #1d2733);
 }
 
+/* The line before the button (the crisis note) hands over to it a little
+   sooner than paragraph to paragraph. */
+.page-hero__copy p:has(+ .cta) {
+  margin-block-end: 0.9rem;
+}
+
 .page-hero__copy .cta {
   display: inline-flex;
-  margin: 0.35rem 1.1rem 0 0;
+  margin: 0.25rem 1.1rem 0 0;
   max-width: none;
   vertical-align: middle;
 }
@@ -84,6 +90,22 @@
   vertical-align: middle;
 }
 
+/* Stacked (under 900px) on an inner page: the mark sits above the copy at a
+   modest size and on the same left edge, so the lockup reads as one column
+   rather than a centred badge over ragged left text. The homepage lockup is
+   laid out by components/hero and is not touched here. */
+@media (max-width: 899.98px) {
+  .page-section--intro .page-hero {
+    row-gap: clamp(1rem, 4vw, 1.5rem);
+  }
+
+  .page-section--intro .page-hero__logo {
+    justify-self: start;
+    width: min(100%, 11rem);
+    max-width: 11rem;
+  }
+}
+
 @media (min-width: 900px) {
   .page-hero {
     grid-template-columns: auto minmax(0, 1fr);
@@ -95,5 +117,14 @@
     justify-self: start;
     width: min(100%, 25rem);
     max-width: 25rem;
+  }
+
+  /* On a tablet width inner page the card is about 58rem wide, so the mark
+     steps down a size and leaves the copy a readable column. */
+  @media (max-width: 1199.98px) {
+    .page-section--intro .page-hero__logo {
+      width: min(100%, 20rem);
+      max-width: 20rem;
+    }
   }
 }
