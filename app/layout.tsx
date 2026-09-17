@@ -17,8 +17,11 @@ export const viewport: Viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  // suppressHydrationWarning: components/hero/HomeHero's inline PIN_BOOT
+  // script sets data-hero-mode on <html> before React hydrates (prevents
+  // CLS), so the server/client attribute set intentionally differs.
   return (
-    <html lang="en" className={fontClassNames}>
+    <html lang="en" className={fontClassNames} suppressHydrationWarning>
       {/* Image 1 (the branch) is preloaded by components/hero/HomeHero on the
           homepage only; every other page has no use for it. */}
       <body>{children}</body>

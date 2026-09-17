@@ -1,65 +1,106 @@
 /* ------------------------------------------------------------------ */
-/* Fixed labyrinth backdrop and the lanes the copy runs in             */
+/* Fixed labyrinth backdrop, the glass surface, and the bento grid     */
 /* ------------------------------------------------------------------ */
-/* The photograph has the labyrinth dead centre. The copy keeps out of it:
-   sections alternate between a left lane and a right lane, with no box or
-   glass pane around them, and the veil over the photograph does the
-   readability work instead.
+/* The photograph has the labyrinth dead centre and is shown at full
+   strength, the same as image 2 on the homepage (components/hero). Every
+   block of copy sits in its own glass card, the same surface the homepage
+   hero stops use (hero.css reads the --glass-* tokens below).
 
-   The veil is a horizontal gradient, and it is a contrast budget:
+   The cards tile a bento grid: one centred container, --bento-w wide, six
+   columns on desktop, two between 900px and 1200px, one under 900px. Every
+   card starts on the grid and ends on the grid, with one --bento-gap between
+   neighbours: no staggering, no negative margins, nothing pinned to the
+   viewport edge, and cards in a row stretch to the same height.
 
-   - In the two side lanes it is 90% white. The photograph's darkest values
-     (wet bark, about 0.22 luminance) come up to 0.92, so ink (#1D2733) on
-     the lanes measures about 13:1, far past 4.5:1, with no panel needed.
-   - Down the middle it drops to 38% so the labyrinth reads through. No copy
-     is ever placed there on a desktop viewport.
-   - Under 900px there is one column, so the veil is a flat 88% instead.
+   Spans, by content type:
+   - The intro lockup (logo + h1) and any section carrying something wider
+     than a paragraph (provider directory, card grids, forms, the quiz,
+     images, tables) take the full row.
+   - Ordinary text sections take half a row; every third text section takes
+     the full row, so the page reads as pairs and a feature, pairs and a
+     feature. A full width text card lays out as heading left, copy right.
+   - A half card that would be left alone in its row (a wide card or the
+     end of the page comes next) widens to the full row instead, and a pair
+     that a wide card splits re-pairs with the card after it, so no cell is
+     ever left empty and the dense flow never has a hole to fill out of
+     source order.
+   - Bylines take the full row as a compact strip.
 
-   The homepage does not use this veil: image 2 (components/hero) is shown
-   at full strength behind the page. */
+   Contrast: the fill is 90% to 82% white, top to bottom. Over the photo's
+   darkest value (wet bark, luminance about 0.22, sRGB about 129) the card
+   comes up to a luminance of at least 0.81, so body ink #1D2733 (L 0.019)
+   measures about 12.4:1 and the heading blue #0042A8 (L 0.067) about 7.3:1,
+   before the blur and brightness lift, which only help. The glass is in
+   the rim light, the frosted edge and the gradient, not in transparency of
+   the text area (NN/G, Apple HIG Materials, Axess Lab: see the report). */
 
 :root {
-  --lane-veil: rgb(255 255 255 / 0.88);
-  --lane-w: min(28rem, 31vw);
+  /* Grid */
+  --bento-w: 76rem;
+  --bento-gap: clamp(1.25rem, 1.6vw, 1.5rem);
+  --bento-pad: clamp(1.5rem, 2.4vw, 2.25rem);
+  --bento-half: 1;
+  /* hero.css reads this for the pull up under card 6. */
+  --lane-gap-y: var(--bento-gap);
+
+  /* Glass surface. Shared with hero.css: change it here, once. */
+  --glass-radius: 24px;
+  --glass-blur: blur(22px) saturate(1.4) brightness(1.05);
+  --glass-edge: rgb(255 255 255 / 0.62);
+  /* Rim light along the top, a hair of shade along the bottom. */
+  --glass-highlight:
+    inset 0 1px 0 rgb(255 255 255 / 0.9),
+    inset 0 -1px 0 rgb(29 39 51 / 0.05);
+  /* Contact shadow, then two soft ambient falloffs. */
+  --glass-shadow:
+    0 1px 2px rgb(29 39 51 / 0.06),
+    0 10px 24px -12px rgb(29 39 51 / 0.2),
+    0 30px 60px -30px rgb(29 39 51 / 0.32);
+  /* Three layers: fine grain to break the flatness of the blur, a specular
+     bloom in the top left corner, and the white body, brighter at the top. */
+  --glass-fill:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.25  0 0 0 0 0.3  0 0 0 0 0.35  0 0 0 0.05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")
+      0 0 / 160px 160px repeat,
+    radial-gradient(
+        120% 80% at 8% -12%,
+        rgb(255 255 255 / 0.75) 0%,
+        rgb(255 255 255 / 0) 60%
+      )
+      no-repeat,
+    linear-gradient(180deg, rgb(255 255 255 / 0.9) 0%, rgb(255 255 255 / 0.82) 100%);
 }
 
-@media (min-width: 900px) {
-  :root {
-    --lane-veil: linear-gradient(
-      90deg,
-      rgb(255 255 255 / 0.9) 0%,
-      rgb(255 255 255 / 0.9) 34%,
-      rgb(255 255 255 / 0.38) 44%,
-      rgb(255 255 255 / 0.38) 56%,
-      rgb(255 255 255 / 0.9) 66%,
-      rgb(255 255 255 / 0.9) 100%
-    );
-  }
-}
-
+/* The photograph, whole. PageBackdrop.tsx puts a real <img> with a srcset
+   here (tiers in lib/backdropImage.ts) so each screen gets the sharpest cut
+   it can use. It is never cropped: object-fit: contain shows all of it, and
+   the letterbox either side (or above and below on a tall screen) is the
+   photograph's own sky grey, so the edges do not read. */
 .page-backdrop {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("/labyrinth-branch.jpg");
-  background-position: center 38%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* [NEEDS: 2560px wide source] the supplied file is 1024px and softens on a
-     large display. Drop a wider export in at the same path. */
+  /* The sky along the photograph's top and bottom edges: about rgb(191)
+     at the left running to rgb(208) at the right. */
+  background: linear-gradient(90deg, #bfc0c1 0%, #d0d1d2 100%);
 }
 
-.page-backdrop::after {
-  content: "";
+.page-backdrop picture,
+.page-backdrop__img {
+  display: block;
   position: absolute;
   inset: 0;
-  background: var(--lane-veil);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.page-backdrop__img {
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Glass ---------------------------------------------------------------- */
-/* Kept for the few things that do need a pane: wide widgets, the footer,
-   the breadcrumb pill. Copy itself never sits in one, and nor does the
-   header. */
+/* The footer and the breadcrumb pill. The header takes no pane. */
 
 .glass {
   background: rgb(255 255 255 / 0.86);
@@ -82,20 +123,90 @@ body:has(.page-backdrop) .prose {
   background: transparent;
 }
 
-/* Lanes ----------------------------------------------------------------- */
+/* Bento grid ------------------------------------------------------------ */
+/* `main > .prose` is the article the renderer emits (components/render); on
+   the homepage the intro lockup lives in .home-intro .prose, which is not a
+   direct child of main and is laid out by hero.css. */
 
-main.page--lanes .prose {
+main.page--lanes > .prose {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-flow: dense;
+  align-items: stretch;
+  gap: var(--bento-gap);
   width: 100%;
-  max-width: none;
-  margin: 0;
+  max-width: calc(var(--bento-w) + 2 * var(--gutter));
+  margin: 0 auto;
   padding: clamp(1rem, 3vw, 2rem) var(--gutter) clamp(3rem, 8vw, 6rem);
 }
 
-/* No box: the section is just its copy, on the veiled photograph. */
-main.page--lanes .prose > .page-section {
-  width: min(100%, 40rem);
+/* Every child is a grid item: no margins (the gap is the rhythm), full row
+   until the breakpoints below say otherwise. */
+main.page--lanes > .prose > * {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin: 0;
+}
+
+/* The card ---------------------------------------------------------------- */
+
+main.page--lanes > .prose > .page-section,
+main.page--lanes > .prose > .byline,
+body:has(.page-backdrop) .page-hero__copy {
+  position: relative;
+  box-sizing: border-box;
+  width: auto;
+  max-width: none;
+  padding: var(--bento-pad);
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--glass-radius);
+  background: var(--glass-fill);
+  box-shadow: var(--glass-highlight), var(--glass-shadow);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+main.page--lanes > .prose > .page-section > :last-child,
+main.page--lanes > .prose > .byline > :last-child,
+body:has(.page-backdrop) .page-hero__copy > :last-child {
+  margin-block-end: 0;
+}
+
+main.page--lanes > .prose > .page-section .heading--h2,
+main.page--lanes > .prose > .page-section > h2 {
+  margin-block-start: 0;
   margin-inline: 0;
-  margin-block: 0 clamp(1.5rem, 3vw, 2.5rem);
+}
+
+/* Copy sits against the card's left edge, not centred in it: the design
+   system centres a measure inside a wide article, but a card is the measure. */
+main.page--lanes > .prose > .page-section:not(.page-section--intro) > :is(p, ul, ol, h3, h4, blockquote, .faq, .embed-slot, .cta) {
+  margin-inline: 0;
+}
+
+/* Wide content gets a little more room to breathe. */
+main.page--lanes > .prose > .page-section:has(
+    .provider-directory,
+    .provider-cards,
+    .location-cards,
+    .form-embed,
+    .widget[data-widget="quiz"],
+    .content-image,
+    table
+  ) {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+/* The byline is a strip, not a card of copy. */
+main.page--lanes > .prose > .byline {
+  padding: 0.9rem var(--bento-pad);
+}
+
+/* The intro is the logo + copy lockup: the card goes on the copy column
+   (below), not around the section. Two classes so this stays ahead of the
+   card rule above (minifiers drop an equally specific duplicate). */
+main.page--lanes > .prose > .page-section.page-section--intro {
+  grid-column: 1 / -1;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -103,74 +214,169 @@ main.page--lanes .prose > .page-section {
   box-shadow: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
+  margin-block-end: clamp(0.25rem, 1vw, 0.75rem);
 }
 
-/* Two classes so this stays ahead of the 900px lane width on
-   `.page-section` (minifiers drop an equally specific duplicate). */
-main.page--lanes .prose > .page-section.page-section--intro {
-  width: 100%;
-  max-width: none;
-  margin-inline: 0;
-  margin-block-end: clamp(2rem, 5vw, 4rem);
-}
+/* Two columns from 900px, six from 1200px. Text sections take half a row
+   (--bento-half columns); everything else keeps the full row it already has.
+   Each span rule also sets --bento-inner, which from 1200px switches a full
+   row text card to the heading-left, copy-right layout further down.
 
-main.page--lanes .prose > .page-section .heading--h2 {
-  margin-block-start: 0;
-}
-
-main.page--lanes .prose > .byline {
-  width: min(100%, 40rem);
-}
-
+   TEXT below means .page-section:not(.page-section--intro):not(:has(<wide>)),
+   BREAK means the intro or a section that :has(<wide>). CSS has no way to
+   name a selector, so both are written out each time. `:has()` cannot nest,
+   so "the next sibling is wide" is written as one relative selector,
+   `:has(+ .page-section :is(<wide>))`, never `:has(+ .page-section:has())`. */
 @media (min-width: 900px) {
-  main.page--lanes .prose > .page-section {
-    width: var(--lane-w);
-    margin-block-end: clamp(2rem, 4vw, 3.5rem);
+  main.page--lanes > .prose {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* Odd sections take the left lane, even ones the right. */
-  main.page--lanes .prose > .page-section:nth-child(odd) {
-    margin-inline: 0 auto;
+  /* 1. A text section takes half a row. */
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
+      .provider-directory, .provider-cards, .location-cards, .form-embed,
+      .widget[data-widget="quiz"], .content-image, table
+    )) {
+    --bento-inner: block;
+    --bento-h3-top: var(--space-xl, 2.5rem);
+
+    grid-column: span var(--bento-half);
   }
 
-  main.page--lanes .prose > .page-section:nth-child(even) {
-    margin-inline: auto 0;
-  }
-
-  main.page--lanes .prose > .page-section.page-section--intro {
-    width: 100%;
-    max-width: none;
-    margin-inline: 0;
-  }
-
-  main.page--lanes .prose > .byline {
-    margin-inline: 0 auto;
-  }
-
-  /* Sections carrying something wider than a paragraph (the provider
-     directory, forms, the quiz, card grids, images, tables) cannot live in a
-     lane. They run the width of the page over the labyrinth and so get one
-     translucent pane to keep their contents legible. */
-  main.page--lanes .prose > .page-section:has(
-      .provider-directory,
-      .provider-cards,
-      .location-cards,
-      .form-embed,
-      .widget[data-widget="quiz"],
-      .content-image,
-      table
+  /* 2. Every third text section (counted over the whole page) takes the
+        full row: pairs and a feature. */
+  main.page--lanes > .prose > .page-section:nth-child(
+      3n of .page-section:not(.page-section--intro):not(:has(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      ))
     ) {
-    width: min(100%, 62rem);
-    margin-inline: auto;
-    padding: clamp(1.5rem, 4vw, 3rem) clamp(1.25rem, 4vw, 3.5rem);
-    border-radius: var(--radius-2xl, 40px);
-    background: rgb(255 255 255 / 0.78);
-    backdrop-filter: blur(18px) saturate(1.08);
-    -webkit-backdrop-filter: blur(18px) saturate(1.08);
-    border: 1px solid rgb(255 255 255 / 0.65);
-    box-shadow:
-      0 1px 2px rgb(29 39 51 / 0.04),
-      0 12px 32px rgb(29 39 51 / 0.06);
+    --bento-inner: grid;
+    --bento-h3-top: 0px;
+
+    grid-column: 1 / -1;
+  }
+
+  /* 3. A wide card has split a pair: the second of the pair (3n+2) sits
+        right after the BREAK. It pairs with the feature card (3n) after it
+        instead, which drops to half a row. Rows stay full, order stays put. */
+  main.page--lanes > .prose > :is(
+      .page-section--intro,
+      .page-section:has(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      )
+    ) + .page-section:nth-child(
+      3n + 2 of .page-section:not(.page-section--intro):not(:has(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      ))
+    ) + .page-section:nth-child(
+      3n of .page-section:not(.page-section--intro):not(:has(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      ))
+    ) {
+    --bento-inner: block;
+    --bento-h3-top: var(--space-xl, 2.5rem);
+
+    grid-column: span var(--bento-half);
+  }
+
+  /* 4. The first of a pair (3n+1) with nothing to pair with: a wide card,
+        the byline or the end of the page comes next. Full row. */
+  main.page--lanes > .prose > .page-section:nth-child(
+      3n + 1 of .page-section:not(.page-section--intro):not(:has(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      ))
+    ):is(
+      :last-child,
+      :has(+ .byline),
+      :has(+ .page-section :is(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      ))
+    ) {
+    --bento-inner: grid;
+    --bento-h3-top: 0px;
+
+    grid-column: 1 / -1;
+  }
+
+  /* 5. The second of a split pair (3n+2 after a BREAK) with nothing after
+        it either. Full row. */
+  main.page--lanes > .prose > :is(
+      .page-section--intro,
+      .page-section:has(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      )
+    ) + .page-section:nth-child(
+      3n + 2 of .page-section:not(.page-section--intro):not(:has(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      ))
+    ):is(
+      :last-child,
+      :has(+ .byline),
+      :has(+ .page-section :is(
+        .provider-directory, .provider-cards, .location-cards, .form-embed,
+        .widget[data-widget="quiz"], .content-image, table
+      ))
+    ) {
+    --bento-inner: grid;
+    --bento-h3-top: 0px;
+
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --bento-half: 3;
+  }
+
+  main.page--lanes > .prose {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  /* A text card on a full row: heading in the left five twelfths, copy in
+     the right seven, so a short paragraph in a wide card does not leave the
+     right hand side empty. --bento-inner comes from the span rules above;
+     half row cards stay block. The child placements are inert on a block. */
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
+      .provider-directory, .provider-cards, .location-cards, .form-embed,
+      .widget[data-widget="quiz"], .content-image, table
+    )) {
+    display: var(--bento-inner, block);
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: clamp(1.5rem, 3vw, 3rem);
+    align-items: start;
+  }
+
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
+      .provider-directory, .provider-cards, .location-cards, .form-embed,
+      .widget[data-widget="quiz"], .content-image, table
+    )) > * {
+    grid-column: 2;
+  }
+
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
+      .provider-directory, .provider-cards, .location-cards, .form-embed,
+      .widget[data-widget="quiz"], .content-image, table
+    )) > :is(.heading--h2, h2):first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* A sub heading that opens the copy column tops out level with the h2
+     (--bento-h3-top is 0 on a full row card, the usual h3 space on a half). */
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
+      .provider-directory, .provider-cards, .location-cards, .form-embed,
+      .widget[data-widget="quiz"], .content-image, table
+    )) > :is(h3, h4, .heading--h3, .heading--h4):nth-child(2) {
+    margin-block-start: var(--bento-h3-top, var(--space-xl, 2.5rem));
   }
 }
 
@@ -208,11 +414,15 @@ body:has(.page--home) .site-footer {
   border-top: 1px solid rgb(255 255 255 / 0.6);
 }
 
-/* Cards sitting on the veiled photograph read against a light pane of their
-   own rather than the bare image. */
+/* Cards inside a section card: the same glass, one step more transparent,
+   since the pane behind them is already near white. */
 main.page--lanes :is(.provider-card, .location-card, .faq-item) {
-  background: rgb(255 255 255 / 0.72);
-  border: 1px solid rgb(255 255 255 / 0.7);
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.72), rgb(255 255 255 / 0.52));
+  border: 1px solid rgb(255 255 255 / 0.9);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.95),
+    0 1px 2px rgb(29 39 51 / 0.04),
+    0 10px 24px -14px rgb(29 39 51 / 0.18);
 }
 
 /* Fallbacks ------------------------------------------------------------ */
@@ -220,6 +430,11 @@ main.page--lanes :is(.provider-card, .location-card, .faq-item) {
 /* Without backdrop-filter the panes would be plain translucent white over a
    busy photo, so make them near solid instead. */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root {
+    --glass-fill: rgb(255 255 255 / 0.96);
+    --glass-blur: none;
+  }
+
   body:has(.page-backdrop) :is(.site-footer, .breadcrumbs),
   body:has(.page--home) .site-footer {
     background: rgb(255 255 255 / 0.96);
@@ -229,7 +444,9 @@ main.page--lanes :is(.provider-card, .location-card, .faq-item) {
 /* Some readers turn transparency off at the OS level. Honour it. */
 @media (prefers-reduced-transparency: reduce) {
   :root {
-    --lane-veil: var(--surface-soft, #f7f7f7);
+    --glass-fill: #fff;
+    --glass-blur: none;
+    --glass-edge: #e3e6ea;
   }
 
   .page-backdrop {
@@ -237,14 +454,18 @@ main.page--lanes :is(.provider-card, .location-card, .faq-item) {
     background: var(--surface-soft, #f7f7f7);
   }
 
-  .page-backdrop::after {
-    display: none;
-  }
-
+  main.page--lanes > .prose > .page-section,
+  main.page--lanes > .prose > .byline,
+  body:has(.page-backdrop) .page-hero__copy,
   body:has(.page-backdrop) :is(.site-footer, .breadcrumbs),
   body:has(.page--home) .site-footer {
     background: #fff;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
+  }
+
+  main.page--lanes :is(.provider-card, .location-card, .faq-item) {
+    background: var(--surface-soft, #f7f7f7);
+    border-color: #e3e6ea;
   }
 }

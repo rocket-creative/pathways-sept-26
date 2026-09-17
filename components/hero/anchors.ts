@@ -31,9 +31,8 @@ export function anchorFor(index: number, total: number): Anchor {
 /** Image 1, the branch render. Same tiers as lib/stops.ts so the head preload matches. */
 export { BRANCH } from "@/lib/stops";
 
-/** Image 2, the labyrinth close up the rest of the site sits on. Never preloaded in <head>. */
-export const HANDOFF_IMAGE = {
-  src: "/labyrinth-branch.jpg",
-  width: 1024,
-  height: 576,
-} as const;
+/**
+ * Image 2, the labyrinth close up the rest of the site sits on. Never
+ * preloaded in <head>. Same tiers as the inner-page backdrop.
+ */
+export { LABYRINTH as HANDOFF_IMAGE } from "@/lib/backdropImage";

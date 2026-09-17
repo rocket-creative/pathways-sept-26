@@ -137,6 +137,8 @@ export default function HomeHero({
             className="hero-handoff__img"
             alt=""
             data-src={HANDOFF_IMAGE.src}
+            data-srcset={HANDOFF_IMAGE.srcSet}
+            sizes={HANDOFF_IMAGE.sizes}
             width={HANDOFF_IMAGE.width}
             height={HANDOFF_IMAGE.height}
             decoding="async"

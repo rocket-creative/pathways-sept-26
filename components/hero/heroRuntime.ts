@@ -11,10 +11,17 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
  *    or touch listener, no scroll container, no preventDefault.
  *  - Cards move by transform only. Nothing is ever faded, hidden, or clipped
  *    as a resting state; the settle in is a y offset that lands at 0.
- *  - The pan finishes and holds before image 2 fades in. Image 1 only ever
- *    changes opacity; no blur, scale, or frost. Image 2 sits fixed behind the
- *    page; its src is attached at 40% progress so it never competes with the
- *    first paint.
+ *  - The pan finishes and holds, then the hand off: image 1, cards 1 to 5
+ *    and the h1 lockup fade out while card 6 slides to the centre of the
+ *    viewport, widening to the width of the page's wide cards (the 62rem
+ *    stream in backdrop.css) so it lands on the same grid as the copy that
+ *    follows, and image 2 fades in behind it. The widening is the one
+ *    non-transform animation: card 6 is absolutely positioned inside the
+ *    pinned stage, so the reflow stays inside the card. When the pin
+ *    releases, card 6 is the first card on the page and the copy below is
+ *    pulled up to start under it. No blur or frost on either image. Image 2
+ *    sits fixed behind the page; its src is attached at 40% progress so it
+ *    never competes with the first paint.
  *  - The URL hash is never written. Arriving with #<stop-id> scrolls native
  *    scroll to that card's pin progress instead of letting the pin swallow it.
  *  - Under 768px or prefers-reduced-motion the pin is never created; the CSS
@@ -29,8 +36,10 @@ const REDUCE = "(prefers-reduced-motion: reduce)";
 const SCROLL_FACTOR = 1.1;
 /** Extra pin distance, in viewports, after the pan finishes and before image 2. */
 const END_HOLD_VH = 0.55;
-/** Pin distance, in viewports, for the image 1 → image 2 fade. */
-const HANDOFF_VH = 0.45;
+/** Pin distance, in viewports, for the hand off: fade out, card 6 to centre, image 2 in. */
+const HANDOFF_VH = 0.6;
+/** Card 6 widens to this as it takes the stage: backdrop.css --bento-w. */
+const STREAM_REM = 76;
 /** Progress at which image 2 starts downloading. */
 const PRELOAD_AT = 0.4;
 /** A card is "active" while its centre sits inside this band of the viewport. */
@@ -49,6 +58,8 @@ interface Parts {
   handoff: HTMLElement;
   image2: HTMLImageElement;
   stops: HTMLElement[];
+  /** The h1 lockup inside the pin. Optional: the stacked layout has none. */
+  intro: HTMLElement | null;
 }
 
 function collect(root: HTMLElement): Parts | null {
@@ -58,14 +69,16 @@ function collect(root: HTMLElement): Parts | null {
   const handoff = root.querySelector<HTMLElement>("[data-hero-image-2]");
   const image2 = handoff?.querySelector<HTMLImageElement>("img") ?? null;
   const stops = [...root.querySelectorAll<HTMLElement>("section.hero-stop")];
+  const intro = root.querySelector<HTMLElement>(".home-intro");
   if (!pin || !track || !image1 || !handoff || !image2 || !stops.length) return null;
-  return { root, pin, track, image1, handoff, image2, stops };
+  return { root, pin, track, image1, handoff, image2, stops, intro };
 }
 
-/** Attaches image 2's src once. Idempotent. */
+/** Attaches image 2's src and srcset once. Idempotent. */
 function preloadHandoff(image2: HTMLImageElement): void {
   if (image2.getAttribute("src")) return;
-  const src = image2.dataset.src;
+  const { src, srcset } = image2.dataset;
+  if (srcset) image2.setAttribute("srcset", srcset);
   if (src) image2.setAttribute("src", src);
 }
 
@@ -147,7 +160,7 @@ function mountStacked({ root, stops, handoff, image2 }: Parts, html: HTMLElement
 /* ------------------------------------------------------------------ */
 
 function mountPinned(parts: Parts, html: HTMLElement): () => void {
-  const { root, pin, track, image1, handoff, image2, stops } = parts;
+  const { root, pin, track, image1, handoff, image2, stops, intro } = parts;
 
   html.setAttribute("data-hero-mode", "pin");
   html.setAttribute("data-hero-live", "1");
@@ -155,6 +168,15 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
 
   const active = stops.map(() => false);
   const inners = stops.map((stop) => stop.querySelector<HTMLElement>(".hero-stop__inner") ?? stop);
+
+  /* Card 6 takes the stage in the hand off; everything else leaves. */
+  const cta = stops[stops.length - 1];
+  const leaving: HTMLElement[] = [...stops.slice(0, -1), ...(intro ? [intro] : [])];
+  /* The page copy after the hero. hero.css pulls it up to sit under card 6,
+     so it would otherwise show at the foot of the screen mid hand off; it
+     fades in through the second half instead and is simply there on release. */
+  const next = root.nextElementSibling;
+  const after = next instanceof HTMLElement && next.matches(".prose") ? next : null;
 
   /* The track runs exactly to the image's right edge: no band after it. */
   const distance = () => Math.max(track.offsetWidth - window.innerWidth, 1);
@@ -185,17 +207,76 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     });
   };
 
-  /* Image 2 fades in only after the pan has finished and held. Opacity only;
-     no blur, scale, or frost on either image. */
+  /* Card 6's two sizes: as the pan leaves it, and at the width of the wide
+     cards below (the copy's content width, capped at 62rem), with the height
+     it takes at that width. offsetLeft/Top/Width ignore transforms, so the
+     measurements are stable whatever the scrub is doing. */
+  let ctaLeft = 0;
+  let ctaTop = 0;
+  let ctaW0 = 0;
+  let ctaW1 = 0;
+  let ctaH0 = 0;
+  let ctaH1 = 0;
+  const streamWidth = () => {
+    const rem = parseFloat(getComputedStyle(html).fontSize) || 16;
+    let width = STREAM_REM * rem;
+    if (after) {
+      const cs = getComputedStyle(after);
+      const content = after.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      if (content > 0) width = Math.min(width, content);
+    }
+    return width;
+  };
+  const measureCta = () => {
+    const current = cta.style.width;
+    cta.style.width = "";
+    ctaLeft = cta.offsetLeft;
+    ctaTop = cta.offsetTop;
+    ctaW0 = cta.offsetWidth;
+    ctaH0 = cta.offsetHeight;
+    ctaW1 = Math.max(ctaW0, streamWidth());
+    cta.style.width = `${ctaW1}px`;
+    ctaH1 = cta.offsetHeight;
+    cta.style.width = current;
+    /* hero.css pulls the copy below the hero up to sit under card 6. */
+    html.style.setProperty("--hero-cta-h", `${Math.round(ctaH1)}px`);
+  };
+
+  /* The hand off, after the pan has finished and held. Image 1, cards 1 to 5
+     and the lockup fade out; card 6 widens and slides to the centre; image 2
+     fades in. Opacity, transform and card 6's width: no blur, no frost. */
   let preloaded = false;
   const onHandoff = (t: number) => {
     if (t > 0) {
       const eased = t * t * (3 - 2 * t); // smoothstep
-      image1.style.opacity = (1 - eased).toFixed(3);
+      const out = (1 - eased).toFixed(3);
+      image1.style.opacity = out;
       handoff.style.opacity = eased.toFixed(3);
+      for (const el of leaving) el.style.opacity = out;
+      /* The card keeps its left edge as it widens, so its centre drifts
+         right; aim the translation at where the centre is at this width. */
+      const w = ctaW0 + (ctaW1 - ctaW0) * eased;
+      const h = ctaH0 + (ctaH1 - ctaH0) * eased;
+      const cx = ctaLeft + w / 2 - distPx;
+      const cy = ctaTop + h / 2;
+      /* html.clientWidth excludes the scrollbar, so the card centres on the
+         same line the page's cards do (innerWidth would sit it a few pixels
+         to the right of them). */
+      gsap.set(cta, {
+        width: w,
+        x: (html.clientWidth / 2 - cx) * eased,
+        y: (window.innerHeight / 2 - cy) * eased,
+      });
+      if (after) after.style.opacity = clamp((t - 0.5) / 0.5, 0, 1).toFixed(3);
+      pin.dataset.heroPhase = t >= 1 ? "out" : "handoff";
     } else {
       image1.style.opacity = "";
       handoff.style.opacity = "";
+      for (const el of leaving) el.style.opacity = "";
+      gsap.set(cta, { x: 0, y: 0 });
+      cta.style.width = "";
+      if (after) after.style.opacity = "";
+      delete pin.dataset.heroPhase;
     }
     pin.style.setProperty("--hero-ground-alpha", (1 - t).toFixed(3));
   };
@@ -213,8 +294,10 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     endHoldPx = endHold();
     handoffPx = handoffSpan();
     distPx = distance();
+    measureCta();
     return totalPin();
   };
+  measureCta();
 
   /* One scrubbed value drives everything: the track's x (transform only),
      the card activation, then a hold, then the image 2 fade. */
@@ -334,7 +417,12 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     image1.removeEventListener("load", onImageLoad);
     image1.style.opacity = "";
     handoff.style.opacity = "";
+    for (const el of leaving) el.style.opacity = "";
+    gsap.set(cta, { clearProps: "transform,width" });
+    if (after) after.style.opacity = "";
+    delete pin.dataset.heroPhase;
     pin.style.removeProperty("--hero-ground-alpha");
+    html.style.removeProperty("--hero-cta-h");
     stops.forEach((stop) => delete stop.dataset.active);
     html.removeAttribute("data-hero-mode");
     html.removeAttribute("data-hero-live");
