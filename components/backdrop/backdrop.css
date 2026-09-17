@@ -15,7 +15,8 @@
      is ever placed there on a desktop viewport.
    - Under 900px there is one column, so the veil is a flat 88% instead.
 
-   The same veil is used by the homepage for image 2 (components/hero). */
+   The homepage does not use this veil: image 2 (components/hero) is shown
+   at full strength behind the page. */
 
 :root {
   --lane-veil: rgb(255 255 255 / 0.88);
@@ -56,8 +57,9 @@
 }
 
 /* Glass ---------------------------------------------------------------- */
-/* Kept for the few things that do need a pane: wide widgets, the header,
-   the footer, the breadcrumb pill. Copy itself never sits in one. */
+/* Kept for the few things that do need a pane: wide widgets, the footer,
+   the breadcrumb pill. Copy itself never sits in one, and nor does the
+   header. */
 
 .glass {
   background: rgb(255 255 255 / 0.86);
@@ -103,6 +105,15 @@ main.page--lanes .prose > .page-section {
   -webkit-backdrop-filter: none;
 }
 
+/* Two classes so this stays ahead of the 900px lane width on
+   `.page-section` (minifiers drop an equally specific duplicate). */
+main.page--lanes .prose > .page-section.page-section--intro {
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  margin-block-end: clamp(2rem, 5vw, 4rem);
+}
+
 main.page--lanes .prose > .page-section .heading--h2 {
   margin-block-start: 0;
 }
@@ -124,6 +135,12 @@ main.page--lanes .prose > .byline {
 
   main.page--lanes .prose > .page-section:nth-child(even) {
     margin-inline: auto 0;
+  }
+
+  main.page--lanes .prose > .page-section.page-section--intro {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
   }
 
   main.page--lanes .prose > .byline {
@@ -159,13 +176,8 @@ main.page--lanes .prose > .byline {
 
 /* Chrome --------------------------------------------------------------- */
 
-.page-backdrop ~ .site-header,
-body:has(.page-backdrop) .site-header {
-  background: rgb(255 255 255 / 0.78);
-  backdrop-filter: blur(20px) saturate(1.08);
-  -webkit-backdrop-filter: blur(20px) saturate(1.08);
-  border-bottom: 1px solid rgb(255 255 255 / 0.6);
-}
+/* The header takes no pane on a backdrop page: it is the same transparent
+   bar as on the homepage (components/site/site-chrome.css). */
 
 body:has(.page-backdrop) .breadcrumbs {
   width: fit-content;
@@ -177,6 +189,15 @@ body:has(.page-backdrop) .breadcrumbs {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgb(255 255 255 / 0.6);
+}
+
+/* From 900px the header is fixed (site-chrome.css), so the breadcrumb pill,
+   the first thing in the flow, steps down past it and takes the hero lockup
+   and the rest of the page with it. Under 900px the bar is sticky, in flow. */
+@media (min-width: 900px) {
+  body:has(.page-backdrop) .breadcrumbs {
+    margin-block-start: calc(var(--header-h, 4.75rem) + 1rem);
+  }
 }
 
 body:has(.page-backdrop) .site-footer,
@@ -199,7 +220,7 @@ main.page--lanes :is(.provider-card, .location-card, .faq-item) {
 /* Without backdrop-filter the panes would be plain translucent white over a
    busy photo, so make them near solid instead. */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  body:has(.page-backdrop) :is(.site-header, .site-footer, .breadcrumbs),
+  body:has(.page-backdrop) :is(.site-footer, .breadcrumbs),
   body:has(.page--home) .site-footer {
     background: rgb(255 255 255 / 0.96);
   }
@@ -220,7 +241,7 @@ main.page--lanes :is(.provider-card, .location-card, .faq-item) {
     display: none;
   }
 
-  body:has(.page-backdrop) :is(.site-header, .site-footer, .breadcrumbs),
+  body:has(.page-backdrop) :is(.site-footer, .breadcrumbs),
   body:has(.page--home) .site-footer {
     background: #fff;
     backdrop-filter: none;

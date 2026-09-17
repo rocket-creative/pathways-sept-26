@@ -1,4 +1,4 @@
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import type { Block } from "@/lib/content";
 import type { RenderContext } from "@/components/render/context";
 import Heading, { type HeadingBlock } from "@/components/render/blocks/Heading";
@@ -19,7 +19,8 @@ import "./hero.css";
  * 768px, under prefers-reduced-motion, or without JavaScript, the same markup
  * is a vertical stack with image 1 static and unblurred.
  *
- * The h1 is not part of this component: it stays in normal flow above it.
+ * The h1 is passed in as children and sits inside the pin, outside the
+ * track, so it stays on screen for the side-scroll instead of moving up.
  */
 export type HeroBlock = Extract<Block, { kind: "widget" }>;
 
@@ -49,7 +50,15 @@ function groupStops(blocks: Block[]): Stop[] {
  */
 const PIN_BOOT = `(function(){try{var m=window.matchMedia;if(!m)return;if(m('(min-width: 768px)').matches&&!m('(prefers-reduced-motion: reduce)').matches){var h=document.documentElement;h.setAttribute('data-hero-mode','pin');setTimeout(function(){if(!h.hasAttribute('data-hero-live'))h.removeAttribute('data-hero-mode')},6000)}}catch(e){}})();`;
 
-export default function HomeHero({ block, ctx }: { block: HeroBlock; ctx: RenderContext }) {
+export default function HomeHero({
+  block,
+  ctx,
+  children,
+}: {
+  block: HeroBlock;
+  ctx: RenderContext;
+  children?: ReactNode;
+}) {
   const stops = groupStops(block.blocks);
 
   return (
@@ -72,8 +81,9 @@ export default function HomeHero({ block, ctx }: { block: HeroBlock; ctx: Render
       <script dangerouslySetInnerHTML={{ __html: PIN_BOOT }} />
       <HeroStage>
         <div className="hero-stage__pin" data-hero-pin>
+          {children}
           <div className="hero-stage__track">
-            {/* Image 1. The only element the blur filter ever touches; it has no text descendants. */}
+            {/* Image 1. Opacity only during the handoff; no text descendants. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="hero-stage__branch"
@@ -87,20 +97,6 @@ export default function HomeHero({ block, ctx }: { block: HeroBlock; ctx: Render
               decoding="async"
             />
 
-            {/*
-              Thin column hairlines and a ghosted word across the scene, both
-              decorative. Painted over image 1 (which is opaque) and under the
-              stops. The word is CSS generated content, not page text.
-            */}
-            <div className="hero-stage__lines" aria-hidden="true" />
-
-            {/*
-              The frosted sheet the hand off sweeps across the last screen of
-              the track. Painted after image 1 and before every card, so it
-              sits between them; decorative, no text inside.
-            */}
-            <div className="hero-stage__frost" aria-hidden="true" />
-
             {stops.map((stop, index) => {
               const isLast = index === stops.length - 1;
               const anchor = anchorFor(index, stops.length);
@@ -108,12 +104,7 @@ export default function HomeHero({ block, ctx }: { block: HeroBlock; ctx: Render
                 ? undefined
                 : ({ "--sx": anchor.sx, "--sy": anchor.sy } as CSSProperties);
               const placement = isLast ? "hero-stop--cta" : `hero-stop--${anchor.place}`;
-              // Mix copy set straight on the image with cards, so the stage
-              // reads as a scene with a few objects on it rather than a row of
-              // boxes. Plain copy only ever sits on the sky above the branch,
-              // where the image is light enough to carry ink; stops that hang
-              // below it, and the CTA, are cards.
-              const surface = !isLast && anchor.place === "above" ? "hero-stop--plain" : "hero-stop--card";
+              const surface = "hero-stop--card";
 
               return (
                 <section
@@ -134,8 +125,9 @@ export default function HomeHero({ block, ctx }: { block: HeroBlock; ctx: Render
         </div>
 
         {/*
-          Image 2. Fixed behind the page under a white veil (see hero.css). The
-          src is attached by the controller at about 40% of hero progress, or
+          Image 2. Fixed behind the page at full strength, no veil or overlay
+          (see hero.css). The src is attached by the controller at about 40%
+          of hero progress, or
           when the third stop scrolls into view in the stacked layouts, so it is
           never a candidate for LCP and never competes with image 1.
         */}

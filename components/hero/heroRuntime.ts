@@ -11,9 +11,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
  *    or touch listener, no scroll container, no preventDefault.
  *  - Cards move by transform only. Nothing is ever faded, hidden, or clipped
  *    as a resting state; the settle in is a y offset that lands at 0.
- *  - The blur is a CSS filter on image 1 (the branch <img>) alone, driven by
- *    the last 15% of progress. Image 2 sits fixed behind the page; its src is
- *    attached at 40% progress so it never competes with the first paint.
+ *  - The pan finishes and holds before image 2 fades in. Image 1 only ever
+ *    changes opacity; no blur, scale, or frost. Image 2 sits fixed behind the
+ *    page; its src is attached at 40% progress so it never competes with the
+ *    first paint.
  *  - The URL hash is never written. Arriving with #<stop-id> scrolls native
  *    scroll to that card's pin progress instead of letting the pin swallow it.
  *  - Under 768px or prefers-reduced-motion the pin is never created; the CSS
@@ -26,13 +27,12 @@ const REDUCE = "(prefers-reduced-motion: reduce)";
 
 /** Scroll distance relative to the track overflow: a little slower than 1:1. */
 const SCROLL_FACTOR = 1.1;
+/** Extra pin distance, in viewports, after the pan finishes and before image 2. */
+const END_HOLD_VH = 0.55;
+/** Pin distance, in viewports, for the image 1 → image 2 fade. */
+const HANDOFF_VH = 0.45;
 /** Progress at which image 2 starts downloading. */
 const PRELOAD_AT = 0.4;
-/** Progress at which image 1 begins to blur and image 2 fades in. */
-const HANDOFF_AT = 0.85;
-const MAX_BLUR_PX = 16;
-/** Image 1 grows slightly as it dissolves, like glass being pulled away. */
-const HANDOFF_SCALE = 1.06;
 /** A card is "active" while its centre sits inside this band of the viewport. */
 const ACTIVE_MIN = 0.08;
 const ACTIVE_MAX = 0.92;
@@ -155,19 +155,15 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
 
   const active = stops.map(() => false);
   const inners = stops.map((stop) => stop.querySelector<HTMLElement>(".hero-stop__inner") ?? stop);
-  const frost = track.querySelector<HTMLElement>(".hero-stage__frost");
-  const intro = document.querySelector<HTMLElement>(".home-intro");
 
   /* The track runs exactly to the image's right edge: no band after it. */
   const distance = () => Math.max(track.offsetWidth - window.innerWidth, 1);
-  /* The stage is pinned from scroll 0. The h1 block sits over it in normal
-     flow, so the track holds still while that copy scrolls off the top, then
-     starts moving. The hold is the height of that block. */
-  const hold = () => {
-    if (!intro) return Math.round(window.innerHeight * 0.4);
-    return Math.round(intro.offsetTop + intro.offsetHeight);
-  };
+  /* Intro lives inside the pin, so it stays on screen for the side-scroll.
+     The pan starts immediately; there is no opening hold. */
+  const hold = () => 0;
   const travel = () => Math.round(distance() * SCROLL_FACTOR);
+  const endHold = () => Math.round(window.innerHeight * END_HOLD_VH);
+  const handoffSpan = () => Math.round(window.innerHeight * HANDOFF_VH);
 
   /* Which cards are on stage. Activation is a small y settle, never a fade. */
   const checkStops = () => {
@@ -189,32 +185,17 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     });
   };
 
-  /* The hand off, from the last 15% of the track's travel: image 1 blurs,
-     swells a touch and dissolves; a frosted sheet sweeps across between the
-     image and the cards; image 2 comes up behind the whole page. Only image 1
-     is ever filtered, and no text sits under the filter or the frost. */
+  /* Image 2 fades in only after the pan has finished and held. Opacity only;
+     no blur, scale, or frost on either image. */
   let preloaded = false;
-  const onProgress = (progress: number) => {
-    if (!preloaded && progress >= PRELOAD_AT) {
-      preloaded = true;
-      preloadHandoff(image2);
-    }
-    const t = clamp((progress - HANDOFF_AT) / (1 - HANDOFF_AT), 0, 1);
+  const onHandoff = (t: number) => {
     if (t > 0) {
       const eased = t * t * (3 - 2 * t); // smoothstep
-      image1.style.filter = `blur(${(eased * MAX_BLUR_PX).toFixed(2)}px)`;
       image1.style.opacity = (1 - eased).toFixed(3);
-      image1.style.transform = `scale(${(1 + (HANDOFF_SCALE - 1) * eased).toFixed(4)})`;
       handoff.style.opacity = eased.toFixed(3);
-      // The frost peaks mid dissolve and is gone by the end, so the released
-      // page sits on image 2 alone with no brightness step at the seam.
-      frost?.style.setProperty("--hero-frost", Math.sin(t * Math.PI).toFixed(3));
     } else {
-      image1.style.filter = "";
       image1.style.opacity = "";
-      image1.style.transform = "";
       handoff.style.opacity = "";
-      frost?.style.removeProperty("--hero-frost");
     }
     pin.style.setProperty("--hero-ground-alpha", (1 - t).toFixed(3));
   };
@@ -222,26 +203,49 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
   /* Measurements, taken on every ScrollTrigger refresh rather than per frame. */
   let holdPx = hold();
   let travelPx = travel();
+  let endHoldPx = endHold();
+  let handoffPx = handoffSpan();
   let distPx = distance();
+  const totalPin = () => holdPx + travelPx + endHoldPx + handoffPx;
   const measure = () => {
     holdPx = hold();
     travelPx = travel();
+    endHoldPx = endHold();
+    handoffPx = handoffSpan();
     distPx = distance();
-    return holdPx + travelPx;
+    return totalPin();
   };
 
-  /* Scroll fraction -> track travel fraction, once the hold is spent. */
-  const trackProgress = (scrollProgress: number) =>
-    clamp((scrollProgress * (holdPx + travelPx) - holdPx) / travelPx, 0, 1);
-
   /* One scrubbed value drives everything: the track's x (transform only),
-     the card activation, and the hand off. */
+     the card activation, then a hold, then the image 2 fade. */
   const state = { p: 0 };
   const apply = () => {
-    const tp = trackProgress(state.p);
+    const px = state.p * totalPin();
+    const afterHold = px - holdPx;
+    let tp = 0;
+    let ht = 0;
+    if (afterHold <= 0) {
+      tp = 0;
+      ht = 0;
+    } else if (afterHold < travelPx) {
+      tp = afterHold / travelPx;
+      ht = 0;
+    } else if (afterHold < travelPx + endHoldPx) {
+      tp = 1;
+      ht = 0;
+    } else {
+      tp = 1;
+      ht = clamp((afterHold - travelPx - endHoldPx) / Math.max(handoffPx, 1), 0, 1);
+    }
+
+    if (!preloaded && tp >= PRELOAD_AT) {
+      preloaded = true;
+      preloadHandoff(image2);
+    }
+
     gsap.set(track, { x: -distPx * tp });
     checkStops();
-    onProgress(tp);
+    onHandoff(ht);
   };
 
   const tween = gsap.to(state, {
@@ -328,11 +332,8 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     window.removeEventListener("load", onLoad);
     track.removeEventListener("focusin", onFocusIn);
     image1.removeEventListener("load", onImageLoad);
-    image1.style.filter = "";
     image1.style.opacity = "";
-    image1.style.transform = "";
     handoff.style.opacity = "";
-    frost?.style.removeProperty("--hero-frost");
     pin.style.removeProperty("--hero-ground-alpha");
     stops.forEach((stop) => delete stop.dataset.active);
     html.removeAttribute("data-hero-mode");

@@ -4,6 +4,7 @@ import LocationCards from "@/components/directory/LocationCards";
 import ProviderCards from "@/components/directory/ProviderCards";
 import ProviderDirectory from "@/components/directory/ProviderDirectory";
 import Quiz from "@/components/quiz";
+import PageHero from "@/components/site/PageHero";
 import type { RenderContext } from "./context";
 import Byline, { type BylineBlock } from "./blocks/Byline";
 import ContentImage from "./blocks/ContentImage";
@@ -48,8 +49,8 @@ export default function PageBody({ page }: { page: Page }) {
             {renderSectionBody(section.heading, section.blocks, ctx)}
           </section>
         ) : (
-          <section key={position} className="page-section page-section--intro">
-            {renderBlocks(section.blocks, ctx)}
+          <section key={position} className="page-section page-section--intro" data-hero-lockup="">
+            <PageHero>{renderBlocks(section.blocks, ctx)}</PageHero>
           </section>
         ),
       )}

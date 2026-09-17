@@ -1,0 +1,99 @@
+/* Logo left, page title and lead copy right. Shared by the homepage intro
+   and every inner-page opening section. */
+
+.page-hero {
+  display: grid;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+/* The mark is the home link on every hero. */
+.page-hero__logo {
+  display: block;
+  justify-self: center;
+  width: min(100%, 22rem);
+  max-width: 22rem;
+  line-height: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform var(--motion-fast, 180ms) var(--ease-out, ease-out);
+}
+
+.page-hero__logo:hover {
+  transform: scale(1.02);
+}
+
+.page-hero__logo:focus-visible {
+  outline: var(--focus-ring-width, 3px) solid var(--focus-ring, #0042a8);
+  outline-offset: var(--focus-ring-offset, 3px);
+}
+
+.page-hero__logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-hero__copy {
+  min-width: 0;
+}
+
+.page-hero__copy h1,
+.page-hero__copy p,
+.page-hero__copy .cta {
+  margin-inline: 0;
+}
+
+.page-hero__copy > :first-child {
+  margin-block-start: 0;
+}
+
+.page-hero__copy h1 {
+  margin: 0 0 0.7em;
+  max-width: 22ch;
+  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: var(--tracking-tight, -0.015em);
+  color: var(--brand-deep, #0042a8);
+}
+
+.page-hero__copy p {
+  margin: 0 0 1.15em;
+  max-width: 42rem;
+  font-size: var(--text-base, 1.0625rem);
+  line-height: 1.55;
+  color: var(--ink, #1d2733);
+}
+
+.page-hero__copy .cta {
+  display: inline-flex;
+  margin: 0.35rem 1.1rem 0 0;
+  max-width: none;
+  vertical-align: middle;
+}
+
+.page-hero__copy .button {
+  background: var(--brand-deep, #0042a8);
+  color: #fff;
+}
+
+.page-hero__copy .cta + p {
+  display: inline-block;
+  margin: 0.35rem 0 0;
+  vertical-align: middle;
+}
+
+@media (min-width: 900px) {
+  .page-hero {
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: clamp(0.75rem, 1.6vw, 1.35rem);
+    row-gap: 0;
+  }
+
+  .page-hero__logo {
+    justify-self: start;
+    width: min(100%, 25rem);
+    max-width: 25rem;
+  }
+}

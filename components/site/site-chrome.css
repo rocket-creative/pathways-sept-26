@@ -61,14 +61,22 @@
 /* Header                                                              */
 /* ------------------------------------------------------------------ */
 
+/* One transparent bar over the page, the same on every route as on the
+   pinned homepage hero (components/hero/hero.css). No pane, no edge, no
+   shadow: the pills carry their own white on hover and on the current page.
+   The globals.css sizing (min-height, padding, radius, blur) is reset here. */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 40;
-  background: var(--chrome-white);
-  border-bottom-left-radius: 26px;
-  border-bottom-right-radius: 26px;
-  box-shadow: 0 1px 0 var(--chrome-edge);
+  min-height: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .site-header__inner {
@@ -174,11 +182,11 @@
 }
 
 .site-header__nav a:hover {
-  background: var(--chrome-near);
+  background: rgb(255 255 255 / 0.7);
 }
 
 .site-header__nav a[aria-current="page"] {
-  background: var(--chrome-edge);
+  background: rgb(255 255 255 / 0.85);
 }
 
 .site-header__actions {
@@ -209,6 +217,15 @@
     padding-bottom: 0.75rem;
   }
 
+  /* The bar is transparent when closed. Once the menu drops down it needs a
+     ground of its own to read against whatever is scrolled under it. */
+  .site-header__inner[data-open="true"] {
+    background: var(--chrome-white);
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    box-shadow: 0 1px 0 var(--chrome-edge);
+  }
+
   .site-header__inner[data-open="true"] .site-header__panel {
     display: flex;
   }
@@ -223,6 +240,15 @@
     padding: 0.7rem 0.9rem;
     border-radius: 16px;
     font-size: 1rem;
+  }
+
+  /* White pills vanish on the white panel; use the grey pair here. */
+  .site-header__nav a:hover {
+    background: var(--chrome-near);
+  }
+
+  .site-header__nav a[aria-current="page"] {
+    background: var(--chrome-edge);
   }
 
   .site-header__actions {
@@ -241,19 +267,38 @@
 }
 
 @media (min-width: 900px) {
+  /* Out of the flow, edge to edge. The mark is not in the bar: on every
+     page the logo in the hero lockup (components/site/PageHero.tsx) is the
+     home link. */
+  .site-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+
   .site-header__inner {
-    grid-template-areas: "panel logo";
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "panel";
     align-items: center;
+    max-width: none;
     padding-block: 0.8rem;
+    padding-right: var(--gutter);
   }
 
   .site-header__logo {
-    grid-area: logo;
-    justify-self: end;
+    display: none;
   }
 
   .site-header__toggle {
     display: none;
+  }
+
+  /* The fixed bar covers the top of whatever follows it. Inner pages step
+     their breadcrumb pill down in components/backdrop/backdrop.css; the
+     pinned homepage hero places its own lockup in hero.css. The stacked
+     homepage (reduced motion, or before the pin boots) is handled here. */
+  html:not([data-hero-mode="pin"]) main.page--home {
+    padding-block-start: var(--header-h, 4.75rem);
   }
 }
 
@@ -448,6 +493,13 @@
   max-width: 62rem;
   margin: 0 auto;
   padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2.25rem);
+}
+
+/* No breadcrumb pill here, so the page itself steps down past the fixed bar. */
+@media (min-width: 900px) {
+  .not-found {
+    padding-block-start: calc(var(--header-h, 4.75rem) + 1.5rem);
+  }
 }
 
 .not-found h1 {

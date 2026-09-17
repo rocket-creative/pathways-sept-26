@@ -67,10 +67,17 @@ export default function Home() {
       <SkipLink />
       <Header />
       <main id="main" className="page page--home page--lanes" data-page-type={page.frontMatter.page_type}>
-        <div className="home-intro">
-          <PageBody page={{ ...page, blocks: before }} />
-        </div>
-        {hero ? <HomeHero block={hero} ctx={ctx} /> : null}
+        {hero ? (
+          <HomeHero block={hero} ctx={ctx}>
+            <div className="home-intro">
+              <PageBody page={{ ...page, blocks: before }} />
+            </div>
+          </HomeHero>
+        ) : (
+          <div className="home-intro">
+            <PageBody page={{ ...page, blocks: before }} />
+          </div>
+        )}
         {after.length ? <PageBody page={{ ...page, blocks: after }} /> : null}
       </main>
       <Footer />
