@@ -602,15 +602,17 @@
     background: rgb(255 255 255 / 0.85);
   }
 
-  /* Short viewports: 13" laptops (1440x900 and 1470x956 leave roughly
-     780-830px for the page once the browser chrome is taken out) and
-     smaller windows. Image 1 is sized in vh, so here the branch is only
-     ~1700px tall and the anchors climb into the sky where the lockup sits,
-     while the lockup keeps its full size. Two moves: drop the image 4vh so
-     every card lands lower, and compact the lockup (smaller mark, three
-     line h1, smaller copy, tighter margins) so it ends well above card 1.
-     Cards keep their type sizes; they are already at the clamp minimums. */
-  @media (max-height: 860px) {
+  /* Laptop viewports: 13" and 14" screens (1440x900, 1470x956, 1512x982)
+     leave roughly 780-900px for the page once the browser toolbar is taken
+     out. Image 1 is sized in vh, so here the branch is under ~2000px tall
+     and the anchors climb into the sky where the lockup sits, while the
+     lockup keeps its full size. Two moves: drop the image 4vh so every card
+     lands lower, and compact the lockup (smaller mark, three line h1,
+     smaller copy, tighter margins) so it ends well above card 1. Cards keep
+     their type sizes; they are already at the clamp minimums. The 960px
+     edge sits above every common laptop toolbar arrangement; the full-size
+     lockup is for external displays. */
+  @media (max-height: 960px) {
     html[data-hero-mode="pin"] .hero-stage {
       --hero-img-top: calc(74vh - 107.5vh);
       --hero-gap: 6vh;
