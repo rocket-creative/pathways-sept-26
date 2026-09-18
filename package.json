@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "npx serve out",
     "images": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build-images.mts",
+    "hero-crops": "node --experimental-strip-types --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/build-hero-crops.mts",
     "lint": "next lint"
   },
   "dependencies": {

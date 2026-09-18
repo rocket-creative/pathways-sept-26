@@ -76,6 +76,29 @@
   padding-inline: 0;
 }
 
+/* Stacked cards carry a close up of where they land on the branch (cut by
+   scripts/build-hero-crops.mts from image 1). It sits above the glass as
+   the card's top half: same radius on its top corners, and the glass gives
+   up its own so the two read as one object. Capped in height so a wide
+   reduced-motion stack does not become a wall of photographs. */
+.hero-stop__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 46vh;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--glass-radius, 24px) var(--glass-radius, 24px) 0 0;
+  background: rgb(var(--hero-ground, 235 235 235));
+}
+
+.hero-stop--photo .hero-stop__inner {
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 .hero-stop__inner::before {
   content: attr(data-stop);
   display: block;
@@ -326,6 +349,18 @@
     z-index: 2;
     width: var(--hero-card-w);
     left: calc(var(--sx) * var(--hero-img-w) - var(--hero-card-w) / 2);
+  }
+
+  /* Pinned, the card sits on the real spot; the close up is not needed and
+     must not download (display: none on a lazy image fetches nothing). */
+  html[data-hero-mode="pin"] .hero-stop__photo {
+    display: none;
+  }
+
+  html[data-hero-mode="pin"] .hero-stop--photo .hero-stop__inner {
+    border-top: 1px solid var(--glass-edge, rgb(255 255 255 / 0.7));
+    border-top-left-radius: var(--glass-radius, 24px);
+    border-top-right-radius: var(--glass-radius, 24px);
   }
 
   html[data-hero-mode="pin"] .hero-stop--below {

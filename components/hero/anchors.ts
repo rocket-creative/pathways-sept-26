@@ -28,6 +28,48 @@ export function anchorFor(index: number, total: number): Anchor {
   return { sx: 0.85 + step * (index - ANCHORS.length + 1), sy: 0.41, place: "below" };
 }
 
+/**
+ * The close up each stacked card carries (under 768px and under reduced
+ * motion): the piece of image 1 the card lands on when the hero is pinned.
+ * scripts/build-hero-crops.mts cuts them from the largest branch tier with
+ * this geometry, so moving an anchor moves its crop on the next run.
+ *
+ *   window   crop width as a fraction of the image width
+ *   aspect   crop width / height
+ *   anchorY  where the anchor sits in the crop, as a fraction of its height
+ *            (under half, so the branch below the subject fills the frame)
+ */
+export const STOP_PHOTO = {
+  window: 0.18,
+  aspect: 3 / 2,
+  anchorY: 0.42,
+  widths: [480, 800, 1200],
+  dir: "/images/hero",
+} as const;
+
+export interface StopPhoto {
+  src: string;
+  srcSet: string;
+  sizes: string;
+  width: number;
+  height: number;
+}
+
+/** Paths for stop `index` (0 based); the files come from `npm run hero-crops`. */
+export function stopPhoto(index: number): StopPhoto {
+  const stem = `${STOP_PHOTO.dir}/stop-${index + 1}`;
+  const largest = STOP_PHOTO.widths[STOP_PHOTO.widths.length - 1];
+  return {
+    src: `${stem}-${STOP_PHOTO.widths[1]}.webp`,
+    srcSet: STOP_PHOTO.widths.map((w) => `${stem}-${w}.webp ${w}w`).join(", "),
+    // The stacked card runs the content width: the viewport under 768px,
+    // the 62rem track above it (reduced motion).
+    sizes: "(max-width: 767px) calc(100vw - 2.5rem), min(100vw - 2.5rem, 62rem)",
+    width: largest,
+    height: Math.round(largest / STOP_PHOTO.aspect),
+  };
+}
+
 /** Image 1, the branch render. Same tiers as lib/stops.ts so the head preload matches. */
 export { BRANCH } from "@/lib/stops";
 

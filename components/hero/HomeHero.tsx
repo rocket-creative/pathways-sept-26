@@ -5,7 +5,7 @@ import Heading, { type HeadingBlock } from "@/components/render/blocks/Heading";
 import CtaRow, { type CtaBlock } from "@/components/render/blocks/Cta";
 import { Paragraph } from "@/components/render/blocks/Prose";
 import HeroStage from "./HeroStage";
-import { BRANCH, HANDOFF_IMAGE, anchorFor } from "./anchors";
+import { BRANCH, HANDOFF_IMAGE, anchorFor, stopPhoto } from "./anchors";
 import "@/components/backdrop/backdrop.css";
 import "./hero.css";
 
@@ -115,15 +115,37 @@ export default function HomeHero({
                 : ({ "--sx": anchor.sx, "--sy": anchor.sy } as CSSProperties);
               const placement = isLast ? "hero-stop--cta" : `hero-stop--${anchor.place}`;
               const surface = "hero-stop--card";
+              /*
+                The close up of where this card lands on the branch, for the
+                stacked layouts (hero.css hides it when the hero is pinned,
+                where the card sits on the real thing). Decorative: the
+                heading carries the meaning. Lazy, so the phone downloads
+                the branch banner first.
+              */
+              const photo = isLast ? null : stopPhoto(index);
 
               return (
                 <section
                   key={stop.heading.id}
-                  className={`hero-stop ${placement} ${surface}`}
+                  className={`hero-stop ${placement} ${surface}${photo ? " hero-stop--photo" : ""}`}
                   data-stop={index + 1}
                   aria-labelledby={stop.heading.id}
                   style={style}
                 >
+                  {photo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      className="hero-stop__photo"
+                      src={photo.src}
+                      srcSet={photo.srcSet}
+                      sizes={photo.sizes}
+                      width={photo.width}
+                      height={photo.height}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ) : null}
                   <div className="hero-stop__inner" data-stop={String(index + 1).padStart(2, "0")}>
                     <Heading block={stop.heading} ctx={ctx} />
                     {renderStopBody(stop.blocks, ctx)}
