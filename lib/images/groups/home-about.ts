@@ -142,6 +142,15 @@ export const HOME_ABOUT: ImageGroup = {
           side: "start",
           focal: "center",
         },
+        // Three paragraphs and a list on a full row card: the team beside it.
+        "leadership-and-the-practice-s-values": {
+          asset: "ha-team-tall-windows",
+          alt: "The Pathways Within team gathered in a room with tall windows",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "end",
+          focal: "50% 60%",
+        },
       },
     },
   },

@@ -584,6 +584,17 @@ main.page--lanes > .prose > .page-section .faq {
     column-gap: var(--bento-gap);
     align-items: start;
   }
+
+  /* An odd count leaves the last cell empty; the last tile takes the row. */
+  main.page--lanes > .prose > .page-section .faq > .faq-item:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
+  /* Beside a figure the stack has only the copy column: one up, or the
+     tiles come out narrower than a phone. */
+  main.page--lanes > .prose > .page-section--figure .faq {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 /* Cards inside a section card: the same glass, one step more transparent,

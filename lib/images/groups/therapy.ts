@@ -85,6 +85,16 @@ export const THERAPY: ImageGroup = {
         focal: "center",
       },
       sections: {
+        // Four paragraphs on a full row card: the session photograph beside
+        // them, on the left so it alternates with the figure below.
+        "what-individual-therapy-is": {
+          asset: "th-session-two-chairs",
+          alt: "Two women talking in armchairs across a small table in a bright, white room",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "start",
+          focal: "center",
+        },
         "who-it-helps": {
           asset: "th-woman-plant-chair",
           alt: "A woman resting in a wooden chair with her eyes closed, surrounded by houseplants",
@@ -102,6 +112,16 @@ export const THERAPY: ImageGroup = {
         focal: "center",
       },
       sections: {
+        // The longest card on the page (Gottman and somatic sub sections):
+        // the railing photograph rides beside it.
+        "what-couples-therapy-is": {
+          asset: "th-couple-boardwalk",
+          alt: "Two partners holding hands at a seaside railing, barefoot, seen from behind",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "start",
+          focal: "center",
+        },
         "who-it-helps": {
           asset: "th-couple-pier",
           alt: "Two men smiling together on a pier, one with an arm around the other",
@@ -132,6 +152,15 @@ export const THERAPY: ImageGroup = {
           shape: "circle",
           side: "end",
           focal: "55% 60%",
+        },
+        // Two paragraphs and a sub section on a full row card.
+        "how-care-works-here": {
+          asset: "th-children-rain-boots",
+          alt: "Four children in colorful rain boots and coats standing in a row on a muddy path",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "start",
+          focal: "center",
         },
       },
     },

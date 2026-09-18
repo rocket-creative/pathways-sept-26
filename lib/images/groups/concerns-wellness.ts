@@ -129,6 +129,16 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "60% 55%",
       },
       sections: {
+        // The signs list is a tall full row card on this page; the hero
+        // photograph rides beside it, on the left.
+        "signs-it-may-be-time-to-talk-to-someone": {
+          asset: "cw-cairn-shoreline",
+          alt: "A tower of balanced stones on a pebble beach with the sea behind",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "start",
+          focal: "60% 55%",
+        },
         "how-we-treat-bipolar-disorder-at-pathways-within": {
           asset: "cw-medication-hands",
           alt: "A nurse holding a weekly pill organizer and placing tablets into a client's open palm",
@@ -159,6 +169,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "50% 55%",
       },
       sections: {
+        "signs-it-may-be-time-to-talk-to-someone": {
+          asset: "cw-ledge-from-behind",
+          alt: "A woman seen from behind, sitting on a stone ledge with her bag beside her",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "start",
+          focal: "50% 55%",
+        },
         "how-we-treat-stress-and-burnout-at-pathways-within": {
           asset: "cw-stone-stack-bokeh",
           alt: "Smooth stones stacked in a tower against sparkling water",
@@ -190,6 +208,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "25% 50%",
       },
       sections: {
+        "signs-it-may-be-time-to-talk-to-someone": {
+          asset: "cw-sea-rocks-alone",
+          alt: "A woman standing alone on rocks at the edge of the sea",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "start",
+          focal: "25% 50%",
+        },
         "how-we-treat-grief-and-loss-at-pathways-within": {
           asset: "cw-autumn-couple-walk",
           alt: "An older couple walking away under autumn trees, one arm around the other",
@@ -255,6 +281,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "50% 45%",
       },
       sections: {
+        "signs-it-may-be-time-to-talk-to-someone": {
+          asset: "cw-riverside-walk",
+          alt: "Two people walking hand in hand along a riverside path beneath a bridge",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "start",
+          focal: "50% 45%",
+        },
         "how-we-treat-lgbtqia-clients-at-pathways-within": {
           asset: "cw-pier-couple",
           alt: "Two men smiling together on a wooden pier by a bridge",
@@ -356,6 +390,18 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         asset: "cw-water-drop",
         alt: "A single drop landing on still water and sending out rings",
         focal: "center",
+      },
+      sections: {
+        // Three paragraphs on a full row card (the approaches stack before it
+        // takes a row of its own): the hero photograph rides beside them.
+        "how-care-works-here": {
+          asset: "cw-water-drop",
+          alt: "",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "end",
+          focal: "center",
+        },
       },
     },
     // /wellness/cupping: no honest photograph of cupping in the export, so no

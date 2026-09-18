@@ -9,13 +9,16 @@ import "./directory.css";
  * [LOCATION CARDS: slug, slug]. Name, address, accessibility, link. The
  * accessibility state has three values, because the sheet answers true, false,
  * or [NEEDS]: an office we have not confirmed never shows an accessible mark.
+ *
+ * `fill` is off when the renderer lays a lone card out beside its copy
+ * (PageBody, .page-section--cards-one): the copy fills the row, not a tile.
  */
-export default function LocationCards({ slugs }: { slugs: string[] }) {
+export default function LocationCards({ slugs, fill = true }: { slugs: string[]; fill?: boolean }) {
   const cards = getLocationCards(slugs);
   if (!cards.length) return null;
 
   // A shoreline photograph fills the end of the last row (see GridFill).
-  const fill = pickFillPhoto("locations", slugs.join(","));
+  const photo = fill ? pickFillPhoto("locations", slugs.join(",")) : undefined;
 
   return (
     <ul className="location-cards">
@@ -28,7 +31,7 @@ export default function LocationCards({ slugs }: { slugs: string[] }) {
           <Accessibility card={card} />
         </li>
       ))}
-      <GridFill photo={fill} count={cards.length} />
+      <GridFill photo={photo} count={cards.length} />
     </ul>
   );
 }

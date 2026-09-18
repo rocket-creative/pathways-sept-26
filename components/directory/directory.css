@@ -39,6 +39,93 @@
   }
 }
 
+/* Copy in a card grid section --------------------------------------------- */
+/* The grid runs edge to edge in a full row card, so copy sharing the section
+   cannot sit at the essay measure on the left and leave the right side of
+   the card empty (PageBody, CardSection).
+
+   One card with copy (.page-section--cards-one): the heading and the card
+   go down the left, the copy takes the right, the same 5 / 7 split as a
+   full row text card in backdrop.css. Rows are the heading and a 1fr rest,
+   and the copy spans both, so each column runs at its own height and the
+   card tucks straight under its heading. */
+@media (min-width: 900px) {
+  .prose .page-section--cards-one {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    column-gap: clamp(1.5rem, 3vw, 3rem);
+    align-items: start;
+  }
+
+  .prose .page-section--cards-one > :is(h2, .heading--h2) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .prose .page-section--cards-one > .card-grid__copy {
+    grid-column: 2;
+    grid-row: 1 / -1;
+  }
+
+  .prose .page-section--cards-one > .provider-cards,
+  .prose .page-section--cards-one > .location-cards {
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-columns: minmax(0, 1fr);
+    margin-block-start: 0;
+  }
+}
+
+/* Stacked under 900px the lone card follows the copy; it keeps a card's
+   width rather than stretching to the column. */
+@media (max-width: 899.98px) {
+  .prose .page-section--cards-one > .provider-cards,
+  .prose .page-section--cards-one > .location-cards {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 24rem;
+  }
+}
+
+.prose .card-grid__copy > :first-child {
+  margin-block-start: 0;
+}
+
+.prose .card-grid__copy > :last-child,
+.prose .card-grid__after > :last-child {
+  margin-block-end: 0;
+}
+
+/* Copy after a wider grid: a clear step down from the cards, then the
+   blocks run full width, two up from 900px so a run of short bios reads as
+   a set rather than a thin column. One block alone keeps the whole width. */
+.prose .card-grid__after {
+  margin-block-start: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.prose .card-grid__after > * {
+  max-width: none;
+}
+
+@media (min-width: 900px) {
+  .prose .card-grid__after {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(1.5rem, 3vw, 3rem);
+    row-gap: 1rem;
+    align-items: start;
+  }
+
+  .prose .card-grid__after > * {
+    margin-block: 0;
+  }
+
+  .prose .card-grid__after > :only-child {
+    grid-column: 1 / -1;
+    max-width: var(--measure-wide, 88ch);
+  }
+}
+
 /* Filtered out by the directory: still in the DOM with its link, not shown.
    Needed because the flex display outranks the UA's [hidden] rule. */
 .prose .provider-card[hidden] {

@@ -80,6 +80,16 @@ export const PRACTICE: ImageGroup = {
     "/locations/rockville-centre": {
       hero: { asset: "pr-hand-on-water", alt: "", focal: "center" },
       sections: {
+        // The services list is the tallest card on the office page; the
+        // stacked stones (the practice hero) ride beside it, on the left.
+        "services-at-this-office": {
+          asset: "pr-stacked-stones",
+          alt: "",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "start",
+          focal: "center",
+        },
         "getting-here": {
           asset: "pr-hand-on-water",
           alt: "",

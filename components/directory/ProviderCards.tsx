@@ -18,8 +18,11 @@ import "./directory.css";
  *
  * A marker that matches nobody renders a [NEEDS] note in development and
  * nothing in production, never an empty list under a heading.
+ *
+ * `fill` is off when the renderer lays a lone card out beside its copy
+ * (PageBody, .page-section--cards-one): the copy fills the row, not a tile.
  */
-export default function ProviderCards({ filter }: { filter: ProviderCardFilter }) {
+export default function ProviderCards({ filter, fill = true }: { filter: ProviderCardFilter; fill?: boolean }) {
   const providers = selectProviders(filter);
 
   if (!providers.length) {
@@ -29,14 +32,14 @@ export default function ProviderCards({ filter }: { filter: ProviderCardFilter }
   // The grid runs three across on desktop and two on a tablet; a photograph
   // takes whatever the last row leaves empty. Seeded by the marker so each
   // page keeps its own picture across renders.
-  const fill = pickFillPhoto("providers", describe(filter));
+  const photo = fill ? pickFillPhoto("providers", describe(filter)) : undefined;
 
   return (
     <ul className="provider-cards">
       {providers.map((provider) => (
         <ProviderCard key={provider.slug} provider={toProviderCardData(provider)} />
       ))}
-      <GridFill photo={fill} count={providers.length} />
+      <GridFill photo={photo} count={providers.length} />
     </ul>
   );
 }

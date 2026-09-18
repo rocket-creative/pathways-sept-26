@@ -1,8 +1,9 @@
 import type { ReactNode } from "react";
 import { inlineToText, type Block, type Page } from "@/lib/content";
 import { getPagePhotos, resolvePhoto, type ResolvedPhoto } from "@/lib/images";
+import { getLocationCards } from "@/lib/locations";
 import LocationCards from "@/components/directory/LocationCards";
-import ProviderCards from "@/components/directory/ProviderCards";
+import ProviderCards, { selectProviders } from "@/components/directory/ProviderCards";
 import ProviderDirectory from "@/components/directory/ProviderDirectory";
 import Quiz from "@/components/quiz";
 import PageHero from "@/components/site/PageHero";
@@ -77,6 +78,13 @@ export default function PageBody({ page }: { page: Page }) {
               <SectionFigure photo={resolved} shape={figure.shape} aspect={figure.aspect} />
             </section>
           );
+        }
+
+        // A marker that matches nobody renders a note, not a grid, so the
+        // section is an ordinary text card and lays out as one.
+        const cards = splitAtCardGrid(section.blocks);
+        if (cards && cards.count > 0) {
+          return <CardSection key={position} heading={section.heading} cards={cards} ctx={ctx} />;
         }
 
         return (
@@ -171,17 +179,128 @@ function matchInlinePhotos(
   return map;
 }
 
+/* ------------------------------------------------------------------ */
+/* Card grid sections                                                  */
+/* ------------------------------------------------------------------ */
+
+type CardGridBlock = Extract<Block, { kind: "providerCards" | "locationCards" }>;
+
+interface CardGridSplit {
+  grid: CardGridBlock;
+  /** Cards the marker resolves to; the layout depends on the count. */
+  count: number;
+  /** Copy before the marker, after it, and whether any of it is visible. */
+  lead: Block[];
+  trailing: Block[];
+  hasCopy: boolean;
+}
+
+/**
+ * A section built around a [PROVIDER CARDS] or [LOCATION CARDS] marker. The
+ * grid fills the card's full width, so copy in the same section needs its own
+ * plan (CardSection): a lone card sits beside its copy; copy that follows a
+ * wider grid runs in columns under it. [NEEDS] notes are not copy: they are
+ * hidden in production and must not leave a column empty there.
+ */
+function splitAtCardGrid(blocks: Block[]): CardGridSplit | null {
+  const index = blocks.findIndex((block) => block.kind === "providerCards" || block.kind === "locationCards");
+  if (index === -1) return null;
+
+  const grid = blocks[index] as CardGridBlock;
+  const count = grid.kind === "providerCards" ? selectProviders(grid.filter).length : getLocationCards(grid.slugs).length;
+  const lead = blocks.slice(0, index);
+  const trailing = blocks.slice(index + 1);
+  const hasCopy = [...lead, ...trailing].some((block) => block.kind !== "needs");
+
+  return { grid, count, lead, trailing, hasCopy };
+}
+
+function CardGrid({ block, fill }: { block: CardGridBlock; fill: boolean }) {
+  return block.kind === "providerCards" ? (
+    <ProviderCards filter={block.filter} fill={fill} />
+  ) : (
+    <LocationCards slugs={block.slugs} fill={fill} />
+  );
+}
+
+function CardSection({
+  heading,
+  cards,
+  ctx,
+}: {
+  heading: HeadingBlock;
+  cards: CardGridSplit;
+  ctx: RenderContext;
+}) {
+  const { grid, count, lead, trailing, hasCopy } = cards;
+
+  // One card with copy: heading and card down the left, copy on the right
+  // (directory.css lays the columns out from 900px). The copy is read before
+  // the card, which is the order it makes sense in: who, then the link.
+  if (count === 1 && hasCopy) {
+    return (
+      <section
+        className="page-section page-section--cards page-section--cards-one"
+        aria-labelledby={heading.id}
+        data-section={heading.id}
+      >
+        <Heading block={heading} ctx={ctx} />
+        <div className="card-grid__copy">
+          {renderBlocks(lead, ctx)}
+          {renderBlocks(trailing, ctx)}
+        </div>
+        <CardGrid block={grid} fill={false} />
+      </section>
+    );
+  }
+
+  // Otherwise the grid keeps the row (a photograph tile closes its last row)
+  // and visible copy after it gets a wrapper that runs it in columns. The
+  // [NEEDS] notes stay outside the wrapper: in development they are visible
+  // marks and would take a column of their own.
+  const notes = trailing.filter((block) => block.kind === "needs");
+  const copy = trailing.filter((block) => block.kind !== "needs");
+
+  return (
+    <section
+      className="page-section page-section--cards"
+      aria-labelledby={heading.id}
+      data-section={heading.id}
+    >
+      <Heading block={heading} ctx={ctx} />
+      {renderBlocks(lead, ctx)}
+      <CardGrid block={grid} fill />
+      {renderBlocks(notes, ctx)}
+      {copy.length ? <div className="card-grid__after">{renderBlocks(copy, ctx)}</div> : null}
+    </section>
+  );
+}
+
 function isQuestionSection(heading: HeadingBlock): boolean {
   return heading.id === "common-questions" || heading.id === "questions";
 }
 
+/**
+ * A section that is really a list of named items (a menu of massage
+ * services, five acupuncture approaches, the /faq page's topic groups): three
+ * or more h3s. Rendered as the same tiled stack as the Q&A, two up on a full
+ * row card, instead of one long column of sub headings beside an empty
+ * heading column.
+ */
+function isStackSection(heading: HeadingBlock, blocks: Block[]): boolean {
+  if (isQuestionSection(heading)) return true;
+  const subheadings = blocks.filter((block) => block.kind === "heading" && block.level === 3).length;
+  return subheadings >= 3;
+}
+
 function renderSectionBody(heading: HeadingBlock, blocks: Block[], ctx: RenderContext): ReactNode {
-  return isQuestionSection(heading) ? renderQuestions(blocks, ctx) : renderBlocks(blocks, ctx);
+  return isStackSection(heading, blocks) ? renderQuestions(blocks, ctx) : renderBlocks(blocks, ctx);
 }
 
 /**
- * Under "Common questions" each h3 and the blocks below it are grouped so they
- * can be styled as a unit. The question and its answer stay in the document,
+ * Under "Common questions" (and any other stack of three or more h3s, see
+ * isStackSection) each h3 and the blocks below it are grouped so they can be
+ * styled as a unit. The question and its answer stay in the document,
  * visible, in heading order.
  */
 function renderQuestions(blocks: Block[], ctx: RenderContext): ReactNode {
