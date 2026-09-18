@@ -1,74 +1,64 @@
 {
-  "builtAt": "2026-09-17T17:09:23.724Z",
+  "builtAt": "2026-09-18T16:35:25.189Z",
   "photos": {
-    "cw-autumn-embrace": {
-      "id": "cw-autumn-embrace",
+    "cw-autumn-couple-walk": {
+      "id": "cw-autumn-couple-walk",
+      "width": 1200,
+      "height": 1200,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/cw-autumn-couple-walk-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/cw-autumn-couple-walk-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-autumn-couple-walk-1200.webp"
+        }
+      ]
+    },
+    "cw-cairn-shoreline": {
+      "id": "cw-cairn-shoreline",
       "width": 2000,
-      "height": 2000,
+      "height": 1646,
       "crop": "full",
       "tiers": [
         {
           "width": 640,
-          "height": 640,
-          "src": "/images/photos/th-older-couple-autumn-640.webp"
+          "height": 527,
+          "src": "/images/photos/cw-cairn-shoreline-640.webp"
         },
         {
           "width": 960,
-          "height": 960,
-          "src": "/images/photos/th-older-couple-autumn-960.webp"
+          "height": 790,
+          "src": "/images/photos/cw-cairn-shoreline-960.webp"
         },
         {
           "width": 1280,
-          "height": 1280,
-          "src": "/images/photos/th-older-couple-autumn-1280.webp"
+          "height": 1054,
+          "src": "/images/photos/cw-cairn-shoreline-1280.webp"
         },
         {
           "width": 1600,
-          "height": 1600,
-          "src": "/images/photos/th-older-couple-autumn-1600.webp"
+          "height": 1317,
+          "src": "/images/photos/cw-cairn-shoreline-1600.webp"
         },
         {
           "width": 2000,
-          "height": 2000,
-          "src": "/images/photos/th-older-couple-autumn-2000.webp"
+          "height": 1646,
+          "src": "/images/photos/cw-cairn-shoreline-2000.webp"
         }
       ]
     },
-    "cw-beach-breath": {
-      "id": "cw-beach-breath",
-      "width": 2000,
-      "height": 1334,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 427,
-          "src": "/images/photos/th-woman-windy-beach-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 640,
-          "src": "/images/photos/th-woman-windy-beach-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 854,
-          "src": "/images/photos/th-woman-windy-beach-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1067,
-          "src": "/images/photos/th-woman-windy-beach-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1334,
-          "src": "/images/photos/th-woman-windy-beach-2000.webp"
-        }
-      ]
-    },
-    "cw-chair-plants": {
-      "id": "cw-chair-plants",
+    "cw-chair-among-plants": {
+      "id": "cw-chair-among-plants",
       "width": 2000,
       "height": 1334,
       "crop": "full",
@@ -100,107 +90,74 @@
         }
       ]
     },
-    "cw-city-window": {
-      "id": "cw-city-window",
-      "width": 2000,
-      "height": 1601,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 512,
-          "src": "/images/photos/cw-city-window-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 768,
-          "src": "/images/photos/cw-city-window-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 1024,
-          "src": "/images/photos/cw-city-window-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1280,
-          "src": "/images/photos/cw-city-window-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1601,
-          "src": "/images/photos/cw-city-window-2000.webp"
-        }
-      ]
-    },
-    "cw-clasped-hands-session": {
-      "id": "cw-clasped-hands-session",
-      "width": 2000,
-      "height": 1334,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 427,
-          "src": "/images/photos/th-session-hands-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 640,
-          "src": "/images/photos/th-session-hands-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 854,
-          "src": "/images/photos/th-session-hands-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1067,
-          "src": "/images/photos/th-session-hands-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1334,
-          "src": "/images/photos/th-session-hands-2000.webp"
-        }
-      ]
-    },
     "cw-coaching-conversation": {
       "id": "cw-coaching-conversation",
       "width": 2000,
-      "height": 3000,
+      "height": 1334,
       "crop": "full",
       "tiers": [
         {
           "width": 640,
-          "height": 478,
-          "src": "/images/photos/cw-coaching-conversation-640.webp"
+          "height": 427,
+          "src": "/images/photos/th-session-therapist-talking-640.webp"
         },
         {
           "width": 960,
-          "height": 717,
-          "src": "/images/photos/cw-coaching-conversation-960.webp"
+          "height": 640,
+          "src": "/images/photos/th-session-therapist-talking-960.webp"
         },
         {
           "width": 1280,
-          "height": 1920,
-          "src": "/images/photos/cw-coaching-conversation-1280.webp"
+          "height": 854,
+          "src": "/images/photos/th-session-therapist-talking-1280.webp"
         },
         {
           "width": 1600,
-          "height": 2400,
-          "src": "/images/photos/cw-coaching-conversation-1600.webp"
+          "height": 1067,
+          "src": "/images/photos/th-session-therapist-talking-1600.webp"
         },
         {
           "width": 2000,
-          "height": 3000,
-          "src": "/images/photos/cw-coaching-conversation-2000.webp"
+          "height": 1334,
+          "src": "/images/photos/th-session-therapist-talking-2000.webp"
         }
       ]
     },
-    "cw-couple-marsh": {
-      "id": "cw-couple-marsh",
+    "cw-coastal-stone-circles": {
+      "id": "cw-coastal-stone-circles",
+      "width": 2000,
+      "height": 1335,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-coastal-stone-circles-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 641,
+          "src": "/images/photos/cw-coastal-stone-circles-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 855,
+          "src": "/images/photos/cw-coastal-stone-circles-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1068,
+          "src": "/images/photos/cw-coastal-stone-circles-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1335,
+          "src": "/images/photos/cw-coastal-stone-circles-2000.webp"
+        }
+      ]
+    },
+    "cw-couple-reeds": {
+      "id": "cw-couple-reeds",
       "width": 2000,
       "height": 1334,
       "crop": "full",
@@ -208,126 +165,27 @@
         {
           "width": 640,
           "height": 427,
-          "src": "/images/photos/cw-couple-marsh-640.webp"
+          "src": "/images/photos/cw-couple-reeds-640.webp"
         },
         {
           "width": 960,
           "height": 640,
-          "src": "/images/photos/cw-couple-marsh-960.webp"
+          "src": "/images/photos/cw-couple-reeds-960.webp"
         },
         {
           "width": 1280,
           "height": 854,
-          "src": "/images/photos/cw-couple-marsh-1280.webp"
+          "src": "/images/photos/cw-couple-reeds-1280.webp"
         },
         {
           "width": 1600,
           "height": 1067,
-          "src": "/images/photos/cw-couple-marsh-1600.webp"
+          "src": "/images/photos/cw-couple-reeds-1600.webp"
         },
         {
           "width": 2000,
           "height": 1334,
-          "src": "/images/photos/cw-couple-marsh-2000.webp"
-        }
-      ]
-    },
-    "cw-couple-railing": {
-      "id": "cw-couple-railing",
-      "width": 2000,
-      "height": 1206,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 386,
-          "src": "/images/photos/cw-couple-railing-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 579,
-          "src": "/images/photos/cw-couple-railing-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 772,
-          "src": "/images/photos/cw-couple-railing-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 964,
-          "src": "/images/photos/cw-couple-railing-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1206,
-          "src": "/images/photos/cw-couple-railing-2000.webp"
-        }
-      ]
-    },
-    "cw-couple-riverside": {
-      "id": "cw-couple-riverside",
-      "width": 2000,
-      "height": 1601,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 512,
-          "src": "/images/photos/cw-couple-riverside-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 768,
-          "src": "/images/photos/cw-couple-riverside-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 1024,
-          "src": "/images/photos/cw-couple-riverside-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1280,
-          "src": "/images/photos/cw-couple-riverside-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1601,
-          "src": "/images/photos/cw-couple-riverside-2000.webp"
-        }
-      ]
-    },
-    "cw-dusk-lake": {
-      "id": "cw-dusk-lake",
-      "width": 2000,
-      "height": 1333,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 426,
-          "src": "/images/photos/cw-dusk-lake-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 640,
-          "src": "/images/photos/cw-dusk-lake-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 853,
-          "src": "/images/photos/cw-dusk-lake-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1066,
-          "src": "/images/photos/cw-dusk-lake-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1333,
-          "src": "/images/photos/cw-dusk-lake-2000.webp"
+          "src": "/images/photos/cw-couple-reeds-2000.webp"
         }
       ]
     },
@@ -364,8 +222,8 @@
         }
       ]
     },
-    "cw-family-shoreline": {
-      "id": "cw-family-shoreline",
+    "cw-father-son-car": {
+      "id": "cw-father-son-car",
       "width": 1200,
       "height": 1200,
       "crop": "attention",
@@ -373,78 +231,55 @@
         {
           "width": 480,
           "height": 480,
-          "src": "/images/photos/cw-family-shoreline-480.webp"
+          "src": "/images/photos/cw-father-son-car-480.webp"
         },
         {
           "width": 800,
           "height": 800,
-          "src": "/images/photos/cw-family-shoreline-800.webp"
+          "src": "/images/photos/cw-father-son-car-800.webp"
         },
         {
           "width": 1200,
           "height": 1200,
-          "src": "/images/photos/cw-family-shoreline-1200.webp"
+          "src": "/images/photos/cw-father-son-car-1200.webp"
         },
         {
           "width": 1200,
           "height": 1200,
-          "src": "/images/photos/cw-family-shoreline-1200.webp"
+          "src": "/images/photos/cw-father-son-car-1200.webp"
         }
       ]
     },
-    "cw-father-teen-car": {
-      "id": "cw-father-teen-car",
+    "cw-floor-play": {
+      "id": "cw-floor-play",
       "width": 2000,
-      "height": 1334,
+      "height": 1264,
       "crop": "full",
       "tiers": [
         {
           "width": 640,
-          "height": 427,
-          "src": "/images/photos/th-parent-teen-car-640.webp"
+          "height": 404,
+          "src": "/images/photos/th-parent-toddler-toys-640.webp"
         },
         {
           "width": 960,
-          "height": 640,
-          "src": "/images/photos/th-parent-teen-car-960.webp"
+          "height": 607,
+          "src": "/images/photos/th-parent-toddler-toys-960.webp"
         },
         {
           "width": 1280,
-          "height": 854,
-          "src": "/images/photos/th-parent-teen-car-1280.webp"
+          "height": 809,
+          "src": "/images/photos/th-parent-toddler-toys-1280.webp"
         },
         {
           "width": 1600,
-          "height": 1067,
-          "src": "/images/photos/th-parent-teen-car-1600.webp"
+          "height": 1011,
+          "src": "/images/photos/th-parent-toddler-toys-1600.webp"
         },
         {
           "width": 2000,
-          "height": 1334,
-          "src": "/images/photos/th-parent-teen-car-2000.webp"
-        }
-      ]
-    },
-    "cw-field-chair": {
-      "id": "cw-field-chair",
-      "width": 1200,
-      "height": 1200,
-      "crop": "attention",
-      "tiers": [
-        {
-          "width": 480,
-          "height": 480,
-          "src": "/images/photos/cw-field-chair-480.webp"
-        },
-        {
-          "width": 800,
-          "height": 800,
-          "src": "/images/photos/cw-field-chair-800.webp"
-        },
-        {
-          "width": 1200,
-          "height": 1200,
-          "src": "/images/photos/cw-field-chair-1200.webp"
+          "height": 1264,
+          "src": "/images/photos/th-parent-toddler-toys-2000.webp"
         }
       ]
     },
@@ -476,8 +311,8 @@
         }
       ]
     },
-    "cw-hand-water": {
-      "id": "cw-hand-water",
+    "cw-hand-still-water": {
+      "id": "cw-hand-still-water",
       "width": 2000,
       "height": 1334,
       "crop": "full",
@@ -509,36 +344,36 @@
         }
       ]
     },
-    "cw-home-video-call": {
-      "id": "cw-home-video-call",
-      "width": 1600,
-      "height": 1303,
-      "crop": "full",
+    "cw-kitchen-morning": {
+      "id": "cw-kitchen-morning",
+      "width": 1200,
+      "height": 1200,
+      "crop": "attention",
       "tiers": [
         {
-          "width": 640,
-          "height": 521,
-          "src": "/images/photos/cw-home-video-call-640.webp"
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/cw-kitchen-morning-480.webp"
         },
         {
-          "width": 960,
-          "height": 782,
-          "src": "/images/photos/cw-home-video-call-960.webp"
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/cw-kitchen-morning-800.webp"
         },
         {
-          "width": 1280,
-          "height": 1043,
-          "src": "/images/photos/cw-home-video-call-1280.webp"
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-kitchen-morning-1200.webp"
         },
         {
-          "width": 1600,
-          "height": 1303,
-          "src": "/images/photos/cw-home-video-call-1600.webp"
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-kitchen-morning-1200.webp"
         }
       ]
     },
-    "cw-labyrinth-shore": {
-      "id": "cw-labyrinth-shore",
+    "cw-labyrinth-beach": {
+      "id": "cw-labyrinth-beach",
       "width": 2000,
       "height": 1333,
       "crop": "full",
@@ -546,27 +381,60 @@
         {
           "width": 640,
           "height": 426,
-          "src": "/images/photos/cw-labyrinth-shore-640.webp"
+          "src": "/images/photos/cw-labyrinth-beach-640.webp"
         },
         {
           "width": 960,
           "height": 640,
-          "src": "/images/photos/cw-labyrinth-shore-960.webp"
+          "src": "/images/photos/cw-labyrinth-beach-960.webp"
         },
         {
           "width": 1280,
           "height": 853,
-          "src": "/images/photos/cw-labyrinth-shore-1280.webp"
+          "src": "/images/photos/cw-labyrinth-beach-1280.webp"
         },
         {
           "width": 1600,
           "height": 1066,
-          "src": "/images/photos/cw-labyrinth-shore-1600.webp"
+          "src": "/images/photos/cw-labyrinth-beach-1600.webp"
         },
         {
           "width": 2000,
           "height": 1333,
-          "src": "/images/photos/cw-labyrinth-shore-2000.webp"
+          "src": "/images/photos/cw-labyrinth-beach-2000.webp"
+        }
+      ]
+    },
+    "cw-lake-dusk": {
+      "id": "cw-lake-dusk",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 426,
+          "src": "/images/photos/cw-lake-dusk-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-lake-dusk-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-lake-dusk-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1066,
+          "src": "/images/photos/cw-lake-dusk-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-lake-dusk-2000.webp"
         }
       ]
     },
@@ -603,64 +471,8 @@
         }
       ]
     },
-    "cw-morning-meditation": {
-      "id": "cw-morning-meditation",
-      "width": 1200,
-      "height": 1200,
-      "crop": "attention",
-      "tiers": [
-        {
-          "width": 480,
-          "height": 480,
-          "src": "/images/photos/cw-morning-meditation-480.webp"
-        },
-        {
-          "width": 800,
-          "height": 800,
-          "src": "/images/photos/cw-morning-meditation-800.webp"
-        },
-        {
-          "width": 1200,
-          "height": 1200,
-          "src": "/images/photos/cw-morning-meditation-1200.webp"
-        }
-      ]
-    },
-    "cw-path-to-sea": {
-      "id": "cw-path-to-sea",
-      "width": 2000,
-      "height": 3556,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 1138,
-          "src": "/images/photos/ha-path-to-the-sea-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 1707,
-          "src": "/images/photos/ha-path-to-the-sea-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 2276,
-          "src": "/images/photos/ha-path-to-the-sea-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 2844,
-          "src": "/images/photos/ha-path-to-the-sea-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 3556,
-          "src": "/images/photos/ha-path-to-the-sea-2000.webp"
-        }
-      ]
-    },
-    "cw-pill-organizer": {
-      "id": "cw-pill-organizer",
+    "cw-ledge-from-behind": {
+      "id": "cw-ledge-from-behind",
       "width": 2000,
       "height": 1334,
       "crop": "full",
@@ -668,27 +480,144 @@
         {
           "width": 640,
           "height": 427,
-          "src": "/images/photos/cw-pill-organizer-640.webp"
+          "src": "/images/photos/cw-ledge-from-behind-640.webp"
         },
         {
           "width": 960,
-          "height": 641,
-          "src": "/images/photos/cw-pill-organizer-960.webp"
+          "height": 640,
+          "src": "/images/photos/cw-ledge-from-behind-960.webp"
         },
         {
           "width": 1280,
           "height": 854,
-          "src": "/images/photos/cw-pill-organizer-1280.webp"
+          "src": "/images/photos/cw-ledge-from-behind-1280.webp"
         },
         {
           "width": 1600,
-          "height": 1068,
-          "src": "/images/photos/cw-pill-organizer-1600.webp"
+          "height": 1067,
+          "src": "/images/photos/cw-ledge-from-behind-1600.webp"
         },
         {
           "width": 2000,
           "height": 1334,
-          "src": "/images/photos/cw-pill-organizer-2000.webp"
+          "src": "/images/photos/cw-ledge-from-behind-2000.webp"
+        }
+      ]
+    },
+    "cw-man-ledge-smile": {
+      "id": "cw-man-ledge-smile",
+      "width": 1200,
+      "height": 1200,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/cw-man-ledge-smile-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/cw-man-ledge-smile-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-man-ledge-smile-1200.webp"
+        }
+      ]
+    },
+    "cw-medication-hands": {
+      "id": "cw-medication-hands",
+      "width": 2000,
+      "height": 1334,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-medication-hands-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 641,
+          "src": "/images/photos/cw-medication-hands-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 854,
+          "src": "/images/photos/cw-medication-hands-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1068,
+          "src": "/images/photos/cw-medication-hands-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1334,
+          "src": "/images/photos/cw-medication-hands-2000.webp"
+        }
+      ]
+    },
+    "cw-pier-couple": {
+      "id": "cw-pier-couple",
+      "width": 1200,
+      "height": 1200,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/cw-pier-couple-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/cw-pier-couple-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-pier-couple-1200.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-pier-couple-1200.webp"
+        }
+      ]
+    },
+    "cw-plant-on-table": {
+      "id": "cw-plant-on-table",
+      "width": 2000,
+      "height": 1334,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-quiet-room-plant-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-quiet-room-plant-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 854,
+          "src": "/images/photos/th-quiet-room-plant-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-quiet-room-plant-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1334,
+          "src": "/images/photos/th-quiet-room-plant-2000.webp"
         }
       ]
     },
@@ -758,6 +687,39 @@
         }
       ]
     },
+    "cw-riverside-walk": {
+      "id": "cw-riverside-walk",
+      "width": 2000,
+      "height": 1601,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 512,
+          "src": "/images/photos/cw-riverside-walk-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 768,
+          "src": "/images/photos/cw-riverside-walk-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 1024,
+          "src": "/images/photos/cw-riverside-walk-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1280,
+          "src": "/images/photos/cw-riverside-walk-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1601,
+          "src": "/images/photos/cw-riverside-walk-2000.webp"
+        }
+      ]
+    },
     "cw-sea-foam-stones": {
       "id": "cw-sea-foam-stones",
       "width": 2000,
@@ -791,8 +753,41 @@
         }
       ]
     },
-    "cw-self-embrace": {
-      "id": "cw-self-embrace",
+    "cw-sea-rocks-alone": {
+      "id": "cw-sea-rocks-alone",
+      "width": 2000,
+      "height": 1334,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-sea-rocks-alone-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-sea-rocks-alone-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 854,
+          "src": "/images/photos/cw-sea-rocks-alone-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-sea-rocks-alone-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1334,
+          "src": "/images/photos/cw-sea-rocks-alone-2000.webp"
+        }
+      ]
+    },
+    "cw-self-embrace-yellow": {
+      "id": "cw-self-embrace-yellow",
       "width": 1200,
       "height": 1200,
       "crop": "attention",
@@ -800,55 +795,50 @@
         {
           "width": 480,
           "height": 480,
-          "src": "/images/photos/cw-self-embrace-480.webp"
+          "src": "/images/photos/cw-self-embrace-yellow-480.webp"
         },
         {
           "width": 800,
           "height": 800,
-          "src": "/images/photos/cw-self-embrace-800.webp"
+          "src": "/images/photos/cw-self-embrace-yellow-800.webp"
         },
         {
           "width": 1200,
           "height": 1200,
-          "src": "/images/photos/cw-self-embrace-1200.webp"
+          "src": "/images/photos/cw-self-embrace-yellow-1200.webp"
         }
       ]
     },
-    "cw-shore-rocks": {
-      "id": "cw-shore-rocks",
-      "width": 2000,
-      "height": 1334,
-      "crop": "full",
+    "cw-session-clipboard": {
+      "id": "cw-session-clipboard",
+      "width": 1200,
+      "height": 1200,
+      "crop": "attention",
       "tiers": [
         {
-          "width": 640,
-          "height": 427,
-          "src": "/images/photos/cw-shore-rocks-640.webp"
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/cw-session-clipboard-480.webp"
         },
         {
-          "width": 960,
-          "height": 640,
-          "src": "/images/photos/cw-shore-rocks-960.webp"
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/cw-session-clipboard-800.webp"
         },
         {
-          "width": 1280,
-          "height": 854,
-          "src": "/images/photos/cw-shore-rocks-1280.webp"
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-session-clipboard-1200.webp"
         },
         {
-          "width": 1600,
-          "height": 1067,
-          "src": "/images/photos/cw-shore-rocks-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1334,
-          "src": "/images/photos/cw-shore-rocks-2000.webp"
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-session-clipboard-1200.webp"
         }
       ]
     },
-    "cw-stacked-stones": {
-      "id": "cw-stacked-stones",
+    "cw-stone-stack-bokeh": {
+      "id": "cw-stone-stack-bokeh",
       "width": 2000,
       "height": 2000,
       "crop": "full",
@@ -856,98 +846,55 @@
         {
           "width": 640,
           "height": 640,
-          "src": "/images/photos/cw-stacked-stones-640.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-640.webp"
         },
         {
           "width": 960,
           "height": 960,
-          "src": "/images/photos/cw-stacked-stones-960.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-960.webp"
         },
         {
           "width": 1280,
           "height": 1280,
-          "src": "/images/photos/cw-stacked-stones-1280.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-1280.webp"
         },
         {
           "width": 1600,
           "height": 1600,
-          "src": "/images/photos/cw-stacked-stones-1600.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-1600.webp"
         },
         {
           "width": 2000,
           "height": 2000,
-          "src": "/images/photos/cw-stacked-stones-2000.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-2000.webp"
         }
       ]
     },
-    "cw-stones-sea": {
-      "id": "cw-stones-sea",
-      "width": 2000,
-      "height": 1646,
-      "crop": "full",
+    "cw-sunlit-meditation": {
+      "id": "cw-sunlit-meditation",
+      "width": 1200,
+      "height": 1200,
+      "crop": "attention",
       "tiers": [
         {
-          "width": 640,
-          "height": 527,
-          "src": "/images/photos/cw-stones-sea-640.webp"
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/cw-sunlit-meditation-480.webp"
         },
         {
-          "width": 960,
-          "height": 790,
-          "src": "/images/photos/cw-stones-sea-960.webp"
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/cw-sunlit-meditation-800.webp"
         },
         {
-          "width": 1280,
-          "height": 1054,
-          "src": "/images/photos/cw-stones-sea-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1317,
-          "src": "/images/photos/cw-stones-sea-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1646,
-          "src": "/images/photos/cw-stones-sea-2000.webp"
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/cw-sunlit-meditation-1200.webp"
         }
       ]
     },
-    "cw-sunlit-succulent": {
-      "id": "cw-sunlit-succulent",
-      "width": 2000,
-      "height": 1334,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 427,
-          "src": "/images/photos/th-quiet-room-plant-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 640,
-          "src": "/images/photos/th-quiet-room-plant-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 854,
-          "src": "/images/photos/th-quiet-room-plant-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1067,
-          "src": "/images/photos/th-quiet-room-plant-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1334,
-          "src": "/images/photos/th-quiet-room-plant-2000.webp"
-        }
-      ]
-    },
-    "cw-sunset-exhale": {
-      "id": "cw-sunset-exhale",
+    "cw-sunrise-stretch": {
+      "id": "cw-sunrise-stretch",
       "width": 2000,
       "height": 1334,
       "crop": "full",
@@ -979,8 +926,8 @@
         }
       ]
     },
-    "cw-table-clipboard": {
-      "id": "cw-table-clipboard",
+    "cw-table-notes": {
+      "id": "cw-table-notes",
       "width": 2000,
       "height": 1334,
       "crop": "full",
@@ -988,60 +935,32 @@
         {
           "width": 640,
           "height": 427,
-          "src": "/images/photos/cw-table-clipboard-640.webp"
+          "src": "/images/photos/cw-table-notes-640.webp"
         },
         {
           "width": 960,
           "height": 640,
-          "src": "/images/photos/cw-table-clipboard-960.webp"
+          "src": "/images/photos/cw-table-notes-960.webp"
         },
         {
           "width": 1280,
           "height": 854,
-          "src": "/images/photos/cw-table-clipboard-1280.webp"
+          "src": "/images/photos/cw-table-notes-1280.webp"
         },
         {
           "width": 1600,
           "height": 1067,
-          "src": "/images/photos/cw-table-clipboard-1600.webp"
+          "src": "/images/photos/cw-table-notes-1600.webp"
         },
         {
           "width": 2000,
           "height": 1334,
-          "src": "/images/photos/cw-table-clipboard-2000.webp"
+          "src": "/images/photos/cw-table-notes-2000.webp"
         }
       ]
     },
-    "cw-therapist-explaining": {
-      "id": "cw-therapist-explaining",
-      "width": 1200,
-      "height": 1200,
-      "crop": "attention",
-      "tiers": [
-        {
-          "width": 480,
-          "height": 480,
-          "src": "/images/photos/cw-therapist-explaining-480.webp"
-        },
-        {
-          "width": 800,
-          "height": 800,
-          "src": "/images/photos/cw-therapist-explaining-800.webp"
-        },
-        {
-          "width": 1200,
-          "height": 1200,
-          "src": "/images/photos/cw-therapist-explaining-1200.webp"
-        },
-        {
-          "width": 1200,
-          "height": 1200,
-          "src": "/images/photos/cw-therapist-explaining-1200.webp"
-        }
-      ]
-    },
-    "cw-toddler-blocks": {
-      "id": "cw-toddler-blocks",
+    "cw-teens-pebble-shore": {
+      "id": "cw-teens-pebble-shore",
       "width": 2000,
       "height": 1334,
       "crop": "full",
@@ -1049,32 +968,32 @@
         {
           "width": 640,
           "height": 427,
-          "src": "/images/photos/th-toddler-blocks-floor-640.webp"
+          "src": "/images/photos/th-teens-pebble-beach-640.webp"
         },
         {
           "width": 960,
           "height": 640,
-          "src": "/images/photos/th-toddler-blocks-floor-960.webp"
+          "src": "/images/photos/th-teens-pebble-beach-960.webp"
         },
         {
           "width": 1280,
           "height": 854,
-          "src": "/images/photos/th-toddler-blocks-floor-1280.webp"
+          "src": "/images/photos/th-teens-pebble-beach-1280.webp"
         },
         {
           "width": 1600,
           "height": 1067,
-          "src": "/images/photos/th-toddler-blocks-floor-1600.webp"
+          "src": "/images/photos/th-teens-pebble-beach-1600.webp"
         },
         {
           "width": 2000,
           "height": 1334,
-          "src": "/images/photos/th-toddler-blocks-floor-2000.webp"
+          "src": "/images/photos/th-teens-pebble-beach-2000.webp"
         }
       ]
     },
-    "cw-two-men-pier": {
-      "id": "cw-two-men-pier",
+    "cw-veteran-cap": {
+      "id": "cw-veteran-cap",
       "width": 1200,
       "height": 1200,
       "crop": "attention",
@@ -1082,55 +1001,22 @@
         {
           "width": 480,
           "height": 480,
-          "src": "/images/photos/cw-two-men-pier-480.webp"
+          "src": "/images/photos/cw-veteran-cap-480.webp"
         },
         {
           "width": 800,
           "height": 800,
-          "src": "/images/photos/cw-two-men-pier-800.webp"
+          "src": "/images/photos/cw-veteran-cap-800.webp"
         },
         {
           "width": 1200,
           "height": 1200,
-          "src": "/images/photos/cw-two-men-pier-1200.webp"
+          "src": "/images/photos/cw-veteran-cap-1200.webp"
         },
         {
           "width": 1200,
           "height": 1200,
-          "src": "/images/photos/cw-two-men-pier-1200.webp"
-        }
-      ]
-    },
-    "cw-two-women-talking": {
-      "id": "cw-two-women-talking",
-      "width": 2000,
-      "height": 1500,
-      "crop": "full",
-      "tiers": [
-        {
-          "width": 640,
-          "height": 480,
-          "src": "/images/photos/th-session-two-chairs-640.webp"
-        },
-        {
-          "width": 960,
-          "height": 720,
-          "src": "/images/photos/th-session-two-chairs-960.webp"
-        },
-        {
-          "width": 1280,
-          "height": 960,
-          "src": "/images/photos/th-session-two-chairs-1280.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1200,
-          "src": "/images/photos/th-session-two-chairs-1600.webp"
-        },
-        {
-          "width": 2000,
-          "height": 1500,
-          "src": "/images/photos/th-session-two-chairs-2000.webp"
+          "src": "/images/photos/cw-veteran-cap-1200.webp"
         }
       ]
     },
@@ -1204,7 +1090,7 @@
       "id": "cw-welcome-counter",
       "width": 1124,
       "height": 1124,
-      "crop": "center",
+      "crop": "attention",
       "tiers": [
         {
           "width": 480,
@@ -1223,8 +1109,41 @@
         }
       ]
     },
-    "cw-window-reflection": {
-      "id": "cw-window-reflection",
+    "cw-whitewashed-path": {
+      "id": "cw-whitewashed-path",
+      "width": 2000,
+      "height": 3556,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 1138,
+          "src": "/images/photos/ha-path-to-the-sea-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1707,
+          "src": "/images/photos/ha-path-to-the-sea-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 2276,
+          "src": "/images/photos/ha-path-to-the-sea-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2844,
+          "src": "/images/photos/ha-path-to-the-sea-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 3556,
+          "src": "/images/photos/ha-path-to-the-sea-2000.webp"
+        }
+      ]
+    },
+    "cw-window-light-glasses": {
+      "id": "cw-window-light-glasses",
       "width": 2000,
       "height": 1334,
       "crop": "full",
@@ -1253,6 +1172,39 @@
           "width": 2000,
           "height": 1334,
           "src": "/images/photos/th-man-window-reflection-2000.webp"
+        }
+      ]
+    },
+    "cw-windy-beach-coat": {
+      "id": "cw-windy-beach-coat",
+      "width": 2000,
+      "height": 1334,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-woman-windy-beach-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-woman-windy-beach-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 854,
+          "src": "/images/photos/th-woman-windy-beach-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-woman-windy-beach-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1334,
+          "src": "/images/photos/th-woman-windy-beach-2000.webp"
         }
       ]
     },
@@ -1479,27 +1431,27 @@
         {
           "width": 640,
           "height": 426,
-          "src": "/images/photos/cw-labyrinth-shore-640.webp"
+          "src": "/images/photos/cw-labyrinth-beach-640.webp"
         },
         {
           "width": 960,
           "height": 640,
-          "src": "/images/photos/cw-labyrinth-shore-960.webp"
+          "src": "/images/photos/cw-labyrinth-beach-960.webp"
         },
         {
           "width": 1280,
           "height": 853,
-          "src": "/images/photos/cw-labyrinth-shore-1280.webp"
+          "src": "/images/photos/cw-labyrinth-beach-1280.webp"
         },
         {
           "width": 1600,
           "height": 1066,
-          "src": "/images/photos/cw-labyrinth-shore-1600.webp"
+          "src": "/images/photos/cw-labyrinth-beach-1600.webp"
         },
         {
           "width": 2000,
           "height": 1333,
-          "src": "/images/photos/cw-labyrinth-shore-2000.webp"
+          "src": "/images/photos/cw-labyrinth-beach-2000.webp"
         }
       ]
     },
@@ -1512,27 +1464,27 @@
         {
           "width": 640,
           "height": 527,
-          "src": "/images/photos/cw-stones-sea-640.webp"
+          "src": "/images/photos/cw-cairn-shoreline-640.webp"
         },
         {
           "width": 960,
           "height": 790,
-          "src": "/images/photos/cw-stones-sea-960.webp"
+          "src": "/images/photos/cw-cairn-shoreline-960.webp"
         },
         {
           "width": 1280,
           "height": 1054,
-          "src": "/images/photos/cw-stones-sea-1280.webp"
+          "src": "/images/photos/cw-cairn-shoreline-1280.webp"
         },
         {
           "width": 1600,
           "height": 1317,
-          "src": "/images/photos/cw-stones-sea-1600.webp"
+          "src": "/images/photos/cw-cairn-shoreline-1600.webp"
         },
         {
           "width": 2000,
           "height": 1646,
-          "src": "/images/photos/cw-stones-sea-2000.webp"
+          "src": "/images/photos/cw-cairn-shoreline-2000.webp"
         }
       ]
     },
@@ -1545,27 +1497,27 @@
         {
           "width": 640,
           "height": 427,
-          "src": "/images/photos/pr-coastal-headland-640.webp"
+          "src": "/images/photos/cw-coastal-stone-circles-640.webp"
         },
         {
           "width": 960,
           "height": 641,
-          "src": "/images/photos/pr-coastal-headland-960.webp"
+          "src": "/images/photos/cw-coastal-stone-circles-960.webp"
         },
         {
           "width": 1280,
           "height": 855,
-          "src": "/images/photos/pr-coastal-headland-1280.webp"
+          "src": "/images/photos/cw-coastal-stone-circles-1280.webp"
         },
         {
           "width": 1600,
           "height": 1068,
-          "src": "/images/photos/pr-coastal-headland-1600.webp"
+          "src": "/images/photos/cw-coastal-stone-circles-1600.webp"
         },
         {
           "width": 2000,
           "height": 1335,
-          "src": "/images/photos/pr-coastal-headland-2000.webp"
+          "src": "/images/photos/cw-coastal-stone-circles-2000.webp"
         }
       ]
     },
@@ -1639,22 +1591,22 @@
         {
           "width": 640,
           "height": 521,
-          "src": "/images/photos/cw-home-video-call-640.webp"
+          "src": "/images/photos/pr-laptop-at-home-640.webp"
         },
         {
           "width": 960,
           "height": 782,
-          "src": "/images/photos/cw-home-video-call-960.webp"
+          "src": "/images/photos/pr-laptop-at-home-960.webp"
         },
         {
           "width": 1280,
           "height": 1043,
-          "src": "/images/photos/cw-home-video-call-1280.webp"
+          "src": "/images/photos/pr-laptop-at-home-1280.webp"
         },
         {
           "width": 1600,
           "height": 1303,
-          "src": "/images/photos/cw-home-video-call-1600.webp"
+          "src": "/images/photos/pr-laptop-at-home-1600.webp"
         }
       ]
     },
@@ -1700,27 +1652,27 @@
         {
           "width": 640,
           "height": 640,
-          "src": "/images/photos/cw-stacked-stones-640.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-640.webp"
         },
         {
           "width": 960,
           "height": 960,
-          "src": "/images/photos/cw-stacked-stones-960.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-960.webp"
         },
         {
           "width": 1280,
           "height": 1280,
-          "src": "/images/photos/cw-stacked-stones-1280.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-1280.webp"
         },
         {
           "width": 1600,
           "height": 1600,
-          "src": "/images/photos/cw-stacked-stones-1600.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-1600.webp"
         },
         {
           "width": 2000,
           "height": 2000,
-          "src": "/images/photos/cw-stacked-stones-2000.webp"
+          "src": "/images/photos/cw-stone-stack-bokeh-2000.webp"
         }
       ]
     },
@@ -1761,27 +1713,27 @@
         {
           "width": 640,
           "height": 427,
-          "src": "/images/photos/cw-table-clipboard-640.webp"
+          "src": "/images/photos/cw-table-notes-640.webp"
         },
         {
           "width": 960,
           "height": 640,
-          "src": "/images/photos/cw-table-clipboard-960.webp"
+          "src": "/images/photos/cw-table-notes-960.webp"
         },
         {
           "width": 1280,
           "height": 854,
-          "src": "/images/photos/cw-table-clipboard-1280.webp"
+          "src": "/images/photos/cw-table-notes-1280.webp"
         },
         {
           "width": 1600,
           "height": 1067,
-          "src": "/images/photos/cw-table-clipboard-1600.webp"
+          "src": "/images/photos/cw-table-notes-1600.webp"
         },
         {
           "width": 2000,
           "height": 1334,
-          "src": "/images/photos/cw-table-clipboard-2000.webp"
+          "src": "/images/photos/cw-table-notes-2000.webp"
         }
       ]
     },
@@ -2105,6 +2057,39 @@
         }
       ]
     },
+    "th-flag-city-sky": {
+      "id": "th-flag-city-sky",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-flag-city-sky-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-flag-city-sky-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-flag-city-sky-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1066,
+          "src": "/images/photos/th-flag-city-sky-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-flag-city-sky-2000.webp"
+        }
+      ]
+    },
     "th-group-loft": {
       "id": "th-group-loft",
       "width": 2000,
@@ -2290,6 +2275,29 @@
           "width": 2000,
           "height": 1334,
           "src": "/images/photos/th-man-window-reflection-2000.webp"
+        }
+      ]
+    },
+    "th-mother-hugging-child": {
+      "id": "th-mother-hugging-child",
+      "width": 1250,
+      "height": 1875,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 960,
+          "src": "/images/photos/th-mother-hugging-child-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1440,
+          "src": "/images/photos/th-mother-hugging-child-960.webp"
+        },
+        {
+          "width": 1250,
+          "height": 1875,
+          "src": "/images/photos/th-mother-hugging-child-1250.webp"
         }
       ]
     },

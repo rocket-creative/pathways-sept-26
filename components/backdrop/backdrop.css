@@ -555,6 +555,22 @@ body:has(.page--home) .site-footer {
   border-top: 1px solid rgb(255 255 255 / 0.6);
 }
 
+/* Trust pages (privacy, terms, notice, accessibility) carry no photographs,
+   so a short section paired with a long one has no figure to fill it. Every
+   section there takes the full row, heading left and copy right from 1200px,
+   which is also the easier way to read legal text. Specificity matches the
+   half row rule above (the repeated class stands in for its :has() argument),
+   and this comes later, so it wins. */
+@media (min-width: 900px) {
+  main.page--lanes[data-page-type="trust"] > .prose > .page-section.page-section:not(.page-section--intro) {
+    --bento-inner: grid;
+    --bento-h3-top: 0px;
+    --bento-h2-gap: 0px;
+
+    grid-column: 1 / -1;
+  }
+}
+
 /* The Q&A stack on its full row card: two columns of items from 900px, so
    the card is half as tall and the answers keep a readable line. Lead copy
    before the stack and the items themselves keep the card's left edge. */

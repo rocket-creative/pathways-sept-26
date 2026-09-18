@@ -9,7 +9,8 @@ import type { ImageGroup } from "@/lib/images/types";
  * Editorial notes
  * - "/" keeps its own pinned hero; only the lower sections take a figure.
  * - The two provider pages (/providers/rachel-lessard, /providers/tiffany-roberts)
- *   resolve their [IMAGE: Portrait …] marker from HEADSHOTS and get nothing here.
+ *   resolve their [IMAGE: Portrait …] marker from HEADSHOTS. Rachel's page also
+ *   takes two section figures below (scenes, not a second portrait).
  * - The news* folders hold Instagram templates and a logo only; the podcast
  *   page's "Long Island therapist Rachel Lessard" webp is the same template
  *   PNG under another name, so Rachel's real portrait is used instead.
@@ -34,6 +35,9 @@ export const HOME_ABOUT: ImageGroup = {
     { id: "ha-welcome-desk", file: "360-degree-wellness/IMG_0074.jpg" },
     // Gypsy, one of the two therapy dogs (596x868; small, but the real dog).
     { id: "ha-gypsy-therapy-dog", file: "clinicians/Gypsy+Therapy+Dog+on+Long+Island.jpg", square: "top" },
+    // /providers/rachel-lessard also uses th-session-hands (therapy.ts) and
+    // pr-beach-labyrinth (practice.ts); ids resolve across groups, so the
+    // same source is not cut into tiers twice.
   ],
   pages: {
     "/": {
@@ -101,6 +105,44 @@ export const HOME_ABOUT: ImageGroup = {
 
     "/careers": {
       hero: { asset: "ha-team-tall-windows", alt: "", focal: "50% 60%" },
+      sections: {
+        // Takes the long card out of its pair so the two short ones
+        // ("How hiring works", "Questions") pair with each other.
+        "why-people-stay": {
+          asset: "ha-team-bright-room",
+          alt: "Four colleagues talking in a bright room with yellow armchairs",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "end",
+          focal: "center",
+        },
+      },
+    },
+
+    // Rachel's headshot already sits in the page lockup, so the section
+    // figures are scenes, not her portrait. The long quote takes a figure
+    // (which leaves "What Rachel does clinically" a full row on its own) and
+    // the labyrinth section gets the real beach labyrinth, so "Leadership"
+    // is never paired against a shorter card.
+    "/providers/rachel-lessard": {
+      sections: {
+        "in-rachel-s-words": {
+          asset: "th-session-hands",
+          alt: "A therapist listening to a client who sits with clasped hands on a couch",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "end",
+          focal: "68% 50%",
+        },
+        "the-labyrinth": {
+          asset: "pr-beach-labyrinth",
+          alt: "A stone labyrinth laid out on a headland above the sea, with one person walking it",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "start",
+          focal: "center",
+        },
+      },
     },
   },
 };

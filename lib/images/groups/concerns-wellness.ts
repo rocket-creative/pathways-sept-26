@@ -13,7 +13,13 @@ import type { ImageGroup } from "@/lib/images/types";
  *   recur as heroes across those two sections (chair-among-plants, hand in
  *   still water) because the calm-body pool is small; that is allowed.
  * - The wellness services have no honest photographs in the export, so they
- *   carry nature / light / body-at-rest imagery. Cupping is left photo-free.
+ *   carry nature / light / body-at-rest imagery. Cupping has no hero, only a
+ *   decorative figure on its first-session card.
+ * - Concern pages put the section figure on the long "How we treat ..." card
+ *   (or another long card), never on the short "Signs" list, so the Signs
+ *   card runs full row instead of stretching beside a taller partner.
+ * - A page's hero is og:image only and is not rendered, so a hero asset may
+ *   also serve as a section figure on the same page without repeating.
  *
  * OWNER: concerns and wellness curation agent.
  */
@@ -64,6 +70,8 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     { id: "cw-table-notes", file: "hypnotherapy/pexels-alex-green-5699475.jpg" },
     { id: "cw-prescriber-conversation", file: "medication-management/sitting-and-talking-man-and-woman-are-indoors-in-2026-03-25-04-46-20-utc.JPG" },
     { id: "cw-coaching-conversation", file: "weight-loss-surgery-support/pexels-shvets-production-7176288.jpg" },
+    { id: "cw-medication-hands", file: "medication-management/senior-receives-medication-advice-from-healthcare-2026-03-25-08-56-06-utc.jpg" },
+    { id: "cw-man-ledge-smile", file: "individual-therapy/unsplash-image-9sEcEcYHgQ0.jpg", square: "attention" },
   ],
   pages: {
     /* ---------------------------------------------------------------- */
@@ -74,6 +82,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         asset: "cw-labyrinth-beach",
         alt: "A labyrinth of stones laid out on a beach headland, one person walking its path",
         focal: "50% 70%",
+      },
+      sections: {
+        "mood-and-anxiety": {
+          asset: "cw-windy-beach-coat",
+          alt: "",
+          shape: "circle",
+          side: "end",
+        },
       },
     },
     "/concerns/anxiety": {
@@ -113,6 +129,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "60% 55%",
       },
       sections: {
+        "how-we-treat-bipolar-disorder-at-pathways-within": {
+          asset: "cw-medication-hands",
+          alt: "A nurse holding a weekly pill organizer and placing tablets into a client's open palm",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "end",
+          focal: "50% 40%",
+        },
         "what-your-first-weeks-look-like": {
           asset: "cw-kitchen-morning",
           alt: "A woman in a yellow shirt arranging flowers at a kitchen table",
@@ -216,6 +240,12 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           shape: "circle",
           side: "end",
         },
+        "what-your-first-weeks-look-like": {
+          asset: "cw-man-ledge-smile",
+          alt: "A man in a suit jacket sitting on a low stone wall outdoors, smiling",
+          shape: "circle",
+          side: "end",
+        },
       },
     },
     "/concerns/lgbtqia-affirming-therapy": {
@@ -254,6 +284,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         asset: "cw-sunrise-stretch",
         alt: "A man seen from behind with his hands behind his head, facing the sunrise",
         focal: "center",
+      },
+      sections: {
+        "how-we-treat-substance-use-at-pathways-within": {
+          asset: "cw-sunrise-stretch",
+          alt: "A man seen from behind with his hands behind his head, facing the sunrise",
+          shape: "circle",
+          side: "end",
+        },
       },
     },
     "/concerns/chronic-pain-and-illness": {
@@ -298,6 +336,12 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "50% 35%",
       },
       sections: {
+        "who-it-helps": {
+          asset: "cw-warm-sunlight",
+          alt: "A woman with her eyes closed, shoulders relaxed, in a band of warm sunlight",
+          shape: "circle",
+          side: "end",
+        },
         "what-to-expect-in-your-first-session-at-pathways-within": {
           asset: "cw-stone-stack-bokeh",
           alt: "Smooth stones stacked in a tower against sparkling water",
@@ -314,7 +358,21 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "center",
       },
     },
-    // /wellness/cupping: no honest photograph in the export; left photo-free.
+    // /wellness/cupping: no honest photograph of cupping in the export, so no
+    // hero. The first-session card carries a quiet decorative figure only so
+    // that "How care works here" is not left half empty beside it.
+    "/wellness/cupping": {
+      sections: {
+        "what-to-expect-in-your-first-session-at-pathways-within": {
+          asset: "cw-plant-on-table",
+          alt: "",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "end",
+          focal: "center",
+        },
+      },
+    },
     "/wellness/energy-work": {
       hero: {
         asset: "cw-face-to-sun",
@@ -322,6 +380,12 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "center",
       },
       sections: {
+        "the-three-modalities-we-offer": {
+          asset: "cw-face-to-sun",
+          alt: "A woman with her face turned up toward the sun, eyes closed",
+          shape: "circle",
+          side: "end",
+        },
         "what-to-expect-in-your-first-session-at-pathways-within": {
           asset: "cw-sunlit-meditation",
           alt: "A woman sitting cross-legged in a sunlit bedroom with her eyes closed",
@@ -335,6 +399,16 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         asset: "cw-chair-among-plants",
         alt: "A woman resting in a wooden chair among houseplants, eyes closed",
         focal: "60% 50%",
+      },
+      sections: {
+        "what-to-expect-in-your-first-session-at-pathways-within": {
+          asset: "cw-sea-rocks-alone",
+          alt: "A woman standing alone on rocks at the edge of the sea",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "end",
+          focal: "25% 50%",
+        },
       },
     },
     "/wellness/energy-work/iet": {
@@ -356,6 +430,16 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         asset: "cw-plant-on-table",
         alt: "",
         focal: "center",
+      },
+      sections: {
+        "what-iv-vitamin-therapy-is": {
+          asset: "cw-water-drop",
+          alt: "",
+          shape: "rounded",
+          aspect: "portrait",
+          side: "end",
+          focal: "center",
+        },
       },
     },
 
@@ -383,6 +467,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         asset: "cw-coaching-conversation",
         alt: "A coach with a notebook talking with a client",
         focal: "50% 40%",
+      },
+      sections: {
+        "how-care-works-here": {
+          asset: "cw-coaching-conversation",
+          alt: "A coach with a notebook talking with a client",
+          shape: "circle",
+          side: "end",
+        },
       },
     },
   },

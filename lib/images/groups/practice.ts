@@ -8,8 +8,12 @@ import type { ImageGroup } from "@/lib/images/types";
  * Editorial notes
  * - The export holds no photographs of any office (the client still owes
  *   "photograph after buildout"), so no location page pretends otherwise:
- *   each carries one calm shoreline photograph as its hero and nothing else.
- *   The five offices and the hub all have distinct heroes.
+ *   each carries one calm shoreline photograph and nothing else. The five
+ *   offices and the hub all have distinct photographs. The hero is only the
+ *   og:image, so the same photograph is also placed once on the page as a
+ *   figure: on "Getting here" for the offices whose long services list left
+ *   that directions card mostly empty glass (Port Jefferson's short list
+ *   pairs evenly and needs none), and on "Accessibility" for the hub.
  * - /contact has no hero band: the form is above the fold and loads eagerly.
  * - /resources is a library page whose widget should be the first thing seen,
  *   so it stays photo free.
@@ -60,18 +64,70 @@ export const PRACTICE: ImageGroup = {
         alt: "A person walking a stone labyrinth laid out on a sandy headland above the sea",
         focal: "50% 62%",
       },
+      // "Accessibility" is two paragraphs beside a two line "Hours" card;
+      // with the figure it takes a full row and Hours pairs with Telehealth.
+      sections: {
+        accessibility: {
+          asset: "pr-beach-labyrinth",
+          alt: "A person walking a stone labyrinth laid out on a sandy headland above the sea",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          focal: "50% 62%",
+        },
+      },
     },
     "/locations/rockville-centre": {
       hero: { asset: "pr-hand-on-water", alt: "", focal: "center" },
+      sections: {
+        "getting-here": {
+          asset: "pr-hand-on-water",
+          alt: "",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          focal: "50% 55%",
+        },
+      },
     },
     "/locations/garden-city": {
       hero: { asset: "pr-white-rocks-surf", alt: "", focal: "center" },
+      sections: {
+        "getting-here": {
+          asset: "pr-white-rocks-surf",
+          alt: "",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          focal: "center",
+        },
+      },
     },
     "/locations/massapequa": {
       hero: { asset: "pr-cairn-pebble-beach", alt: "Balanced stones on a pebble beach with the sea behind", focal: "75% 55%" },
+      sections: {
+        "getting-here": {
+          asset: "pr-cairn-pebble-beach",
+          alt: "Balanced stones on a pebble beach with the sea behind",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          focal: "75% 55%",
+        },
+      },
     },
     "/locations/smithtown": {
       hero: { asset: "pr-coastal-headland", alt: "", focal: "50% 45%" },
+      sections: {
+        "getting-here": {
+          asset: "pr-coastal-headland",
+          alt: "",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          focal: "50% 45%",
+        },
+      },
     },
     "/locations/port-jefferson": {
       hero: { asset: "pr-white-path-cove", alt: "", focal: "50% 45%" },
@@ -83,6 +139,20 @@ export const PRACTICE: ImageGroup = {
         asset: "pr-question-pebble",
         alt: "A pebble marked with a question mark among beach stones",
         focal: "63% 55%",
+      },
+      // The last two Q&A groups pair up and "Take the next step" (a button
+      // and a phone number) stretched to the height of "Medication". The
+      // page's question pebble sits beside Medication instead, and the
+      // closing card takes a full row like every other page's.
+      sections: {
+        medication: {
+          asset: "pr-question-pebble",
+          alt: "",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          focal: "63% 55%",
+        },
       },
     },
     "/contact": {
@@ -123,6 +193,10 @@ export const PRACTICE: ImageGroup = {
         alt: "A person at home in an armchair with a laptop, surrounded by houseplants",
         focal: "50% 35%",
       },
+      // No section figure: "What telehealth is" runs 145px short of "Who it
+      // helps" (23%), and a figure there re-pairs the page so that "Where it
+      // is offered" (two lines) lands beside "How care works here" instead,
+      // which measured worse (189px, 48%).
     },
 
     /* Insurance ------------------------------------------------------- */
