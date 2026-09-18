@@ -364,6 +364,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       .widget[data-widget="quiz"], .content-image, .faq, table
     )) {
     --bento-inner: block;
+    --bento-copy: var(--measure);
     --bento-h3-top: 1.5rem;
     --bento-h2-gap: 0.45em;
 
@@ -379,6 +380,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       ))
     ) {
     --bento-inner: grid;
+    --bento-copy: none;
     --bento-h3-top: 0px;
     --bento-h2-gap: 0px;
 
@@ -406,6 +408,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       ))
     ) {
     --bento-inner: block;
+    --bento-copy: var(--measure);
     --bento-h3-top: 1.5rem;
     --bento-h2-gap: 0.45em;
 
@@ -428,6 +431,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       ))
     ) {
     --bento-inner: grid;
+    --bento-copy: none;
     --bento-h3-top: 0px;
     --bento-h2-gap: 0px;
 
@@ -456,6 +460,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       ))
     ) {
     --bento-inner: grid;
+    --bento-copy: none;
     --bento-h3-top: 0px;
     --bento-h2-gap: 0px;
 
@@ -491,6 +496,10 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       .widget[data-widget="quiz"], .content-image, .faq, table
     )) > * {
     grid-column: 2;
+    /* On a grid card the column is the measure (50 to 60 characters at the
+       bento's widths); on a block (half) card the essay measure, which is
+       the half card's width anyway. --bento-copy is set with --bento-inner. */
+    max-width: var(--bento-copy, var(--measure));
   }
 
   main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
@@ -564,6 +573,7 @@ body:has(.page--home) .site-footer {
 @media (min-width: 900px) {
   main.page--lanes[data-page-type="trust"] > .prose > .page-section.page-section:not(.page-section--intro) {
     --bento-inner: grid;
+    --bento-copy: none;
     --bento-h3-top: 0px;
     --bento-h2-gap: 0px;
 
@@ -578,11 +588,18 @@ main.page--lanes > .prose > .page-section .faq {
   max-width: none;
 }
 
+/* Inside a tile the tile is the measure. */
+main.page--lanes > .prose > .page-section .faq-item :is(p, ul, ol) {
+  max-width: none;
+}
+
 @media (min-width: 900px) {
+  /* Tiles stretch to their row, so two answers of different length sit in
+     two tiles of one height rather than a tile above a hole. */
   main.page--lanes > .prose > .page-section .faq {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: var(--bento-gap);
-    align-items: start;
+    align-items: stretch;
   }
 
   /* An odd count leaves the last cell empty; the last tile takes the row. */

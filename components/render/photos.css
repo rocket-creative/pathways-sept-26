@@ -69,6 +69,13 @@
   margin-inline: 0;
 }
 
+/* The column is the measure: the copy runs to the picture's edge (about
+   50 to 60 characters at the bento's widths) rather than stopping at the
+   essay measure and leaving a strip of glass before the frame. */
+.section-figure__copy :is(p, ul, ol, blockquote) {
+  max-width: none;
+}
+
 .section-figure__copy > :first-child,
 .section-figure__copy > .heading--h2 {
   margin-block-start: 0;
@@ -120,28 +127,42 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
     order: -1;
   }
 
-  /* Portrait crop beside a column of copy; stays in view as the copy scrolls,
-     so a long section is never text beside an empty well. */
+  /* The frame runs the full height of the copy beside it (bento: no well
+     under a short picture), and never shorter than its own crop. A grid
+     item that stretches ignores aspect-ratio, so the floor is an in-flow
+     ::before whose padding is a share of the frame's width: 5/4 portrait,
+     3/4 landscape, 1/1 square. The picture is absolute and covers whatever
+     the two produce, so a long section gets a taller crop, not a gap. */
   .section-figure__media {
-    position: sticky;
-    top: calc(var(--header-h, 4.75rem) + 1.5rem);
-    aspect-ratio: 4 / 5;
-    max-height: calc(100vh - var(--header-h, 4.75rem) - 3rem);
-    align-self: start;
+    aspect-ratio: auto;
+    align-self: stretch;
   }
 
-  .section-figure__media[data-aspect="landscape"] {
-    aspect-ratio: 4 / 3;
+  .section-figure__media::before {
+    content: "";
+    display: block;
+    padding-block-start: 125%;
   }
 
-  .section-figure__media[data-aspect="square"] {
-    aspect-ratio: 1;
+  .section-figure__media[data-aspect="landscape"]::before {
+    padding-block-start: 75%;
   }
 
+  .section-figure__media[data-aspect="square"]::before {
+    padding-block-start: 100%;
+  }
+
+  /* A circle cannot stretch: it sits centred on the copy's height, so the
+     room around it is even rather than a hole at the bottom. */
   .section-figure__media--circle {
     aspect-ratio: 1;
     width: min(100%, 26rem);
     justify-self: center;
+    align-self: center;
+  }
+
+  .section-figure__media--circle::before {
+    display: none;
   }
 }
 
