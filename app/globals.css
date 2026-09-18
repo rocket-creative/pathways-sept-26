@@ -167,6 +167,30 @@
   --focus-ring-offset: 3px;
 }
 
+/* Laptop band. 13" and 14" screens are wide enough for the desktop layout
+   but leave only 780-900px of page under the browser toolbar, and the
+   fluid scale above, tuned for 320-1440px widths, reaches its top sizes
+   there. Everything steps down about a tenth so a screen shows a little
+   more; the same band components/hero/hero.css uses for the homepage
+   cards. The two smallest sizes are already at 14px and below and stay
+   put; all values are rem, so browser zoom and text-size settings still
+   scale them (WCAG 1.4.4). Taller viewports (external displays, tablets
+   in portrait) keep the full scale. */
+@media (min-width: 900px) and (max-height: 960px) {
+  :root {
+    --text-sm: clamp(0.875rem, 0.15vw + 0.82rem, 0.94rem);
+    --text-base: clamp(1rem, 0.2vw + 0.94rem, 1.0625rem);
+    --text-lead: clamp(1.1rem, 0.5vw + 0.98rem, 1.3rem);
+    --text-h4: clamp(1.08rem, 0.4vw + 0.98rem, 1.22rem);
+    --text-h3: clamp(1.25rem, 0.65vw + 1.08rem, 1.55rem);
+    --text-h2: clamp(1.6rem, 1.4vw + 1.25rem, 2.3rem);
+    --text-h1: clamp(2rem, 2.6vw + 1.3rem, 3.3rem);
+    --space-xl: clamp(2.25rem, 3.6vw, 3.15rem);
+    --space-2xl: clamp(3.15rem, 5.4vw, 5rem);
+    --section-y: clamp(2.7rem, 6.3vw, 5.4rem);
+  }
+}
+
 @theme inline {
   --color-bg: var(--bg);
   --color-ink: var(--ink);

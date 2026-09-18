@@ -119,6 +119,20 @@
     max-width: 25rem;
   }
 
+  /* Laptop band (globals.css steps the type scale down here): the h1 and
+     the mark, which are sized on their own rather than from the scale,
+     step down with it. Before the tablet rule so that one still wins. */
+  @media (max-height: 960px) {
+    .page-hero__copy h1 {
+      font-size: clamp(1.85rem, 3vw, 3rem);
+    }
+
+    .page-section--intro .page-hero__logo {
+      width: min(100%, 22rem);
+      max-width: 22rem;
+    }
+  }
+
   /* On a tablet width inner page the card is about 58rem wide, so the mark
      steps down a size and leaves the copy a readable column. */
   @media (max-width: 1199.98px) {
