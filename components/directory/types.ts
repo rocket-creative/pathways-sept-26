@@ -12,6 +12,8 @@ export interface ProviderCardData {
   displayName: string;
   credentials: string;
   titleLine: string;
+  /** Sheet role ("Clinician", "Prescriber", "Wellness Provider"); searched, not shown. */
+  role: string;
   /** First bullet from the sheet, the one line the card shows. */
   bullet: string;
   /**
@@ -38,6 +40,7 @@ export function toProviderCardData(provider: Provider): ProviderCardData {
     displayName: provider.displayName,
     credentials: provider.credentials,
     titleLine: provider.title_line,
+    role: provider.role,
     bullet: firstBullet(provider),
     headshot: localHeadshot(provider.slug),
     headshotUrl: provider.headshot_url,

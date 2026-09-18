@@ -174,3 +174,169 @@ test.describe("provider directory", () => {
     expect(profile.status(), "no profile page for an admin row").toBe(404);
   });
 });
+
+/**
+ * Free text search in the directory (lib/provider-filter.ts matchesQuery).
+ * The field is the one <input type="search" name="q"> in the filter form.
+ */
+const SEARCH_INPUT = ".provider-directory input[type='search'][name='q']";
+
+/** The sheet columns the search reads, joined the way lib/provider-filter.ts joins them. */
+const sheetSearchText = (row) =>
+  [
+    row.first_name,
+    row.last_name,
+    row.credentials,
+    row.title_line,
+    row.role,
+    row.specialties,
+    row.modalities,
+    row.age_groups,
+    row.formats,
+    row.locations,
+    row.bullet_1,
+  ]
+    .join(" | ")
+    .toLowerCase();
+
+/** Active profile rows whose searched text contains `word`, sorted by slug. */
+const slugsMentioning = (word) =>
+  rows
+    .filter((row) => isActive(row) && !isAdmin(row))
+    .filter((row) => sheetSearchText(row).includes(word.toLowerCase()))
+    .map((row) => row.slug)
+    .sort();
+
+test.describe("provider directory text search", () => {
+  test("(f) typing a surname shows only that provider's card", async ({ page }) => {
+    // A surname no other searched field (title, role, facets, bullet) repeats.
+    const surname = "Squicciarini";
+    const expected = rows
+      .filter((row) => isActive(row) && !isAdmin(row))
+      .filter((row) => row.last_name === surname)
+      .map((row) => row.slug);
+    expect(expected, "sheet has exactly one row with that surname").toHaveLength(1);
+
+    await page.goto("/providers");
+    await page.waitForSelector(DIRECTORY_READY);
+    expect(await visibleSlugs(page)).toHaveLength(profileSlugs.length);
+
+    await page.fill(SEARCH_INPUT, surname);
+    await expect.poll(() => visibleSlugs(page)).toEqual(expected);
+    await expect(page.locator(".provider-directory__status")).toHaveText(
+      `Showing 1 of ${profileSlugs.length} providers`,
+    );
+
+    // The query is in the URL, as ?q=, and nothing else is set.
+    await expect.poll(() => new URL(page.url()).searchParams.get("q")).toBe(surname);
+    expect([...new URL(page.url()).searchParams.keys()]).toEqual(["q"]);
+
+    // Enter does nothing: no navigation (a real submit would add the six
+    // select names to the URL), still one card.
+    await page.press(SEARCH_INPUT, "Enter");
+    await page.waitForTimeout(300);
+    expect(new URL(page.url()).pathname).toBe("/providers");
+    expect([...new URL(page.url()).searchParams.keys()]).toEqual(["q"]);
+    expect(await visibleSlugs(page)).toEqual(expected);
+
+    // Every other card is still in the DOM with its link, only hidden.
+    const inDom = await page.evaluate(() =>
+      [...document.querySelectorAll(".provider-directory .provider-card")].map((card) =>
+        card.getAttribute("data-slug"),
+      ),
+    );
+    expect(inDom.sort()).toEqual([...profileSlugs].sort());
+  });
+
+  test("(f2) /providers?q=acupuncture restores the query and shows leonard-ma", async ({ page }) => {
+    await page.goto("/providers?q=acupuncture");
+    await page.waitForSelector(DIRECTORY_READY);
+
+    await expect(page.locator(SEARCH_INPUT)).toHaveValue("acupuncture");
+    const slugs = await visibleSlugs(page);
+    expect(slugs).toContain("leonard-ma");
+
+    // Everyone shown really carries the word somewhere the search reads.
+    expect([...slugs].sort()).toEqual(slugsMentioning("acupuncture"));
+    expect(slugs).not.toContain("joe-bush");
+
+    // A query counts as a filter: the Clear button is offered.
+    await expect(page.locator(".provider-directory__clear")).toBeVisible();
+  });
+
+  test("(f3) clearing the query restores every card and the clean URL", async ({ page }) => {
+    await page.goto("/providers?q=acupuncture");
+    await page.waitForSelector(DIRECTORY_READY);
+    expect((await visibleSlugs(page)).length).toBeLessThan(profileSlugs.length);
+
+    // Emptying the field brings everyone back and drops ?q=.
+    await page.fill(SEARCH_INPUT, "");
+    await expect.poll(async () => (await visibleSlugs(page)).length).toBe(profileSlugs.length);
+    await expect.poll(() => new URL(page.url()).search).toBe("");
+    await expect(page.locator(".provider-directory__clear")).toHaveCount(0);
+
+    // The Clear button does the same when a query and a facet are both set.
+    await page.goto("/providers?q=acupuncture&pillar=wellness");
+    await page.waitForSelector(DIRECTORY_READY);
+    await page.click(".provider-directory__clear");
+    await expect.poll(async () => (await visibleSlugs(page)).length).toBe(profileSlugs.length);
+    await expect(page.locator(SEARCH_INPUT)).toHaveValue("");
+    await expect(page.locator(".provider-directory select[name='pillars']")).toHaveValue("");
+    expect(new URL(page.url()).search).toBe("");
+  });
+
+  test("(f4) query and facet AND together, and the alias map applies to typed words", async ({ page }) => {
+    // "addiction" must find the rows tagged "substance use" (SPECIALTY_ALIASES).
+    const substanceUse = rows
+      .filter((row) => isActive(row) && !isAdmin(row))
+      .filter((row) => split(row.specialties).some((s) => /substance use|addiction/i.test(s)))
+      .map((row) => row.slug);
+    expect(substanceUse.length).toBeGreaterThan(0);
+
+    await page.goto("/providers?q=addiction");
+    await page.waitForSelector(DIRECTORY_READY);
+    const slugs = await visibleSlugs(page);
+    for (const slug of substanceUse) expect(slugs, `${slug} shown for q=addiction`).toContain(slug);
+
+    // A query that matches nobody in the chosen pillar shows nobody, and the
+    // status line says so.
+    await page.goto("/providers?q=acupuncture&pillar=wisdom");
+    await page.waitForSelector(DIRECTORY_READY);
+    const wisdom = new Set(
+      rows
+        .filter((row) => isActive(row) && !isAdmin(row))
+        .filter((row) => split(row.pillars).some((p) => p.toLowerCase() === "wisdom"))
+        .map((row) => row.slug),
+    );
+    const none = slugsMentioning("acupuncture").filter((slug) => wisdom.has(slug));
+    expect(none, "no wisdom pillar acupuncturist in the sheet").toHaveLength(0);
+    expect(await visibleSlugs(page)).toEqual([]);
+    await expect(page.locator(".provider-directory__status")).toHaveText(
+      `Showing 0 of ${profileSlugs.length} providers`,
+    );
+  });
+
+  test("(f5) a short surname matches that person, not words that contain it", async ({ page }) => {
+    await page.goto("/providers?q=Ma");
+    await page.waitForSelector(DIRECTORY_READY);
+    expect(await visibleSlugs(page)).toEqual(["leonard-ma"]);
+
+    await page.goto("/providers?q=Bell");
+    await page.waitForSelector(DIRECTORY_READY);
+    expect(await visibleSlugs(page)).toEqual(["chelsea-bell"]);
+  });
+});
+
+test.describe("provider pages link to each other", () => {
+  test("(g) every profile links to every other profile", async ({ request }) => {
+    for (const slug of profileSlugs) {
+      const response = await request.get(`/providers/${slug}`);
+      expect(response.status(), slug).toBe(200);
+      const html = await response.text();
+      for (const other of profileSlugs) {
+        if (other === slug) continue;
+        expect(html, `${slug} should link to ${other}`).toContain(`href="/providers/${other}"`);
+      }
+    }
+  });
+});

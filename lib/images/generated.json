@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-18T17:17:05.808Z",
+  "builtAt": "2026-09-18T17:56:30.330Z",
   "photos": {
     "cw-autumn-couple-walk": {
       "id": "cw-autumn-couple-walk",
@@ -3022,6 +3022,47 @@
         }
       ]
     },
+    "beth-gabellini": {
+      "id": "beth-gabellini",
+      "width": 264,
+      "height": 264,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/beth-gabellini-320.webp"
+        },
+        {
+          "width": 264,
+          "height": 264,
+          "src": "/images/providers/beth-gabellini-264.webp"
+        }
+      ]
+    },
+    "carly-sandstrom": {
+      "id": "carly-sandstrom",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/carly-sandstrom-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/carly-sandstrom-640.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/carly-sandstrom-640.webp"
+        }
+      ]
+    },
     "charity-meyer": {
       "id": "charity-meyer",
       "width": 640,
@@ -3040,6 +3081,114 @@
         }
       ]
     },
+    "chelsea-bell": {
+      "id": "chelsea-bell",
+      "width": 640,
+      "height": 640,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/chelsea-bell-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/chelsea-bell-640.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/chelsea-bell-640.webp"
+        }
+      ]
+    },
+    "christine-cervo": {
+      "id": "christine-cervo",
+      "width": 469,
+      "height": 469,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/christine-cervo-320.webp"
+        },
+        {
+          "width": 469,
+          "height": 469,
+          "src": "/images/providers/christine-cervo-469.webp"
+        }
+      ]
+    },
+    "colm-ashe": {
+      "id": "colm-ashe",
+      "width": 320,
+      "height": 320,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/colm-ashe-320.webp"
+        }
+      ]
+    },
+    "danielle-ingenito": {
+      "id": "danielle-ingenito",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/danielle-ingenito-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/danielle-ingenito-640.webp"
+        }
+      ]
+    },
+    "frank-tropeano": {
+      "id": "frank-tropeano",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/frank-tropeano-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/frank-tropeano-640.webp"
+        }
+      ]
+    },
+    "jen-brooks": {
+      "id": "jen-brooks",
+      "width": 302,
+      "height": 302,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/jen-brooks-320.webp"
+        },
+        {
+          "width": 302,
+          "height": 302,
+          "src": "/images/providers/jen-brooks-302.webp"
+        }
+      ]
+    },
     "joe-bush": {
       "id": "joe-bush",
       "width": 319,
@@ -3047,9 +3196,89 @@
       "crop": "attention",
       "tiers": [
         {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/joe-bush-320.webp"
+        },
+        {
           "width": 319,
           "height": 319,
           "src": "/images/providers/joe-bush-319.webp"
+        }
+      ]
+    },
+    "juliette-squicciarini": {
+      "id": "juliette-squicciarini",
+      "width": 320,
+      "height": 320,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/juliette-squicciarini-320.webp"
+        }
+      ]
+    },
+    "kaitlyn-kelly": {
+      "id": "kaitlyn-kelly",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/kaitlyn-kelly-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/kaitlyn-kelly-640.webp"
+        }
+      ]
+    },
+    "kalovna-edmond": {
+      "id": "kalovna-edmond",
+      "width": 320,
+      "height": 320,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/kalovna-edmond-320.webp"
+        }
+      ]
+    },
+    "karen-hill": {
+      "id": "karen-hill",
+      "width": 320,
+      "height": 320,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/karen-hill-320.webp"
+        }
+      ]
+    },
+    "kathleen-dimartino": {
+      "id": "kathleen-dimartino",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/kathleen-dimartino-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/kathleen-dimartino-640.webp"
         }
       ]
     },
@@ -3060,9 +3289,50 @@
       "crop": "attention",
       "tiers": [
         {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/ksusha-cascio-320.webp"
+        },
+        {
           "width": 308,
           "height": 308,
           "src": "/images/providers/ksusha-cascio-308.webp"
+        }
+      ]
+    },
+    "laura-desilva": {
+      "id": "laura-desilva",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/laura-desilva-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/laura-desilva-640.webp"
+        }
+      ]
+    },
+    "lauren-hollander": {
+      "id": "lauren-hollander",
+      "width": 414,
+      "height": 414,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/lauren-hollander-320.webp"
+        },
+        {
+          "width": 414,
+          "height": 414,
+          "src": "/images/providers/lauren-hollander-414.webp"
         }
       ]
     },
@@ -3076,6 +3346,101 @@
           "width": 320,
           "height": 320,
           "src": "/images/providers/lee-wasser-320.webp"
+        }
+      ]
+    },
+    "leonard-ma": {
+      "id": "leonard-ma",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/leonard-ma-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/leonard-ma-640.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/leonard-ma-640.webp"
+        }
+      ]
+    },
+    "lindsay-laier": {
+      "id": "lindsay-laier",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/lindsay-laier-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/lindsay-laier-640.webp"
+        }
+      ]
+    },
+    "maddy-zambri": {
+      "id": "maddy-zambri",
+      "width": 307,
+      "height": 307,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/maddy-zambri-320.webp"
+        },
+        {
+          "width": 307,
+          "height": 307,
+          "src": "/images/providers/maddy-zambri-307.webp"
+        }
+      ]
+    },
+    "madeline-amzler": {
+      "id": "madeline-amzler",
+      "width": 462,
+      "height": 462,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/madeline-amzler-320.webp"
+        },
+        {
+          "width": 462,
+          "height": 462,
+          "src": "/images/providers/madeline-amzler-462.webp"
+        }
+      ]
+    },
+    "mariah-simone": {
+      "id": "mariah-simone",
+      "width": 578,
+      "height": 578,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/mariah-simone-320.webp"
+        },
+        {
+          "width": 578,
+          "height": 578,
+          "src": "/images/providers/mariah-simone-578.webp"
         }
       ]
     },
@@ -3097,6 +3462,24 @@
         }
       ]
     },
+    "paula-gonthier": {
+      "id": "paula-gonthier",
+      "width": 278,
+      "height": 278,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/paula-gonthier-320.webp"
+        },
+        {
+          "width": 278,
+          "height": 278,
+          "src": "/images/providers/paula-gonthier-278.webp"
+        }
+      ]
+    },
     "rachel-lessard": {
       "id": "rachel-lessard",
       "width": 640,
@@ -3112,6 +3495,42 @@
           "width": 640,
           "height": 640,
           "src": "/images/providers/rachel-lessard-640.webp"
+        }
+      ]
+    },
+    "samantha-juravich": {
+      "id": "samantha-juravich",
+      "width": 296,
+      "height": 296,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/samantha-juravich-320.webp"
+        },
+        {
+          "width": 296,
+          "height": 296,
+          "src": "/images/providers/samantha-juravich-296.webp"
+        }
+      ]
+    },
+    "sofia-marinucci": {
+      "id": "sofia-marinucci",
+      "width": 455,
+      "height": 455,
+      "crop": "attention",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/sofia-marinucci-320.webp"
+        },
+        {
+          "width": 455,
+          "height": 455,
+          "src": "/images/providers/sofia-marinucci-455.webp"
         }
       ]
     },

@@ -43,7 +43,7 @@ const leaked = pages.filter((page) =>
   page.blocks.some(
     (block) =>
       (block.kind === "paragraph" || block.kind === "heading") &&
-      /Routing rules for Cursor|^\[(QUIZ|\/QUIZ|PROVIDER DIRECTORY|RESOURCE LIBRARY|BLOG INDEX)\]/.test(
+      /Routing rules for Cursor|^\[(QUIZ|\/QUIZ|PROVIDER DIRECTORY|PROVIDER SEARCH|RESOURCE LIBRARY|BLOG INDEX)\]/.test(
         block.kind === "heading" ? block.text : JSON.stringify(block.inline),
       ),
   ),

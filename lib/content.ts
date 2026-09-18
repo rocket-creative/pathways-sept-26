@@ -96,7 +96,13 @@ export type Block =
       instructions: string[];
     };
 
-export type WidgetName = "quiz" | "providerDirectory" | "resourceLibrary" | "blogIndex" | "hero";
+export type WidgetName =
+  | "quiz"
+  | "providerDirectory"
+  | "providerSearch"
+  | "resourceLibrary"
+  | "blogIndex"
+  | "hero";
 
 export type ProviderCardFilter =
   | { by: "slugs"; slugs: string[] }
@@ -362,7 +368,7 @@ export function parseBlocks(body: string): { blocks: Block[]; jsonLd: unknown | 
 }
 
 const REGION_MARKER_RE =
-  /^\[(?:\/?QUIZ|PROVIDER DIRECTORY|RESOURCE LIBRARY|BLOG INDEX|HERO(?::[^\]\n]*)?|HERO CTA:[^\]\n]*|\/HERO)\]$/gim;
+  /^\[(?:\/?QUIZ|PROVIDER DIRECTORY|PROVIDER SEARCH|RESOURCE LIBRARY|BLOG INDEX|HERO(?::[^\]\n]*)?|HERO CTA:[^\]\n]*|\/HERO)\]$/gim;
 
 /** `[HERO: …]` opens the homepage hero region; `[/HERO]` closes it. */
 const HERO_OPEN_RE = /^\[HERO(?::[^\]]*)?\]$/i;
@@ -379,6 +385,7 @@ const BUILD_NOTES_RE = /^\[[^\]\n]*\bfor Cursor\]/i;
 /** Markers that stand alone and mount a component in place of copy. */
 const STANDALONE_WIDGETS: Record<string, WidgetName> = {
   "[PROVIDER DIRECTORY]": "providerDirectory",
+  "[PROVIDER SEARCH]": "providerSearch",
   "[RESOURCE LIBRARY]": "resourceLibrary",
   "[BLOG INDEX]": "blogIndex",
 };

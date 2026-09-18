@@ -70,6 +70,21 @@
   /* `.button` and `.form-embed` are owned by app/globals.css so each has a
      single definition. Only the layout around them lives here. */
 
+  /* [PROVIDER SEARCH] (homepage "Find a provider"). The section is a full row
+     card whose copy sits at the essay measure on the left; the search is the
+     card's primary action, so it takes the card's full width between the
+     intro paragraph and the provider grid. Block margins come from the bento
+     rhythm (backdrop.css, unlayered, 1.25rem); the padding adds a clear step
+     down before the cards so the search and its live results read as one
+     object and the grid as another. The inside of .provider-search belongs
+     to components/directory/directory.css. */
+  .widget[data-widget="providerSearch"] {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+    padding-block-end: clamp(0.25rem, 1vw, 0.75rem);
+  }
+
   .content-image {
     margin-inline: 0;
     margin-block: clamp(1.25rem, 3vw, 2.25rem);

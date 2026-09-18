@@ -5,6 +5,8 @@ import { getLocationCards } from "@/lib/locations";
 import LocationCards from "@/components/directory/LocationCards";
 import ProviderCards, { selectProviders } from "@/components/directory/ProviderCards";
 import ProviderDirectory from "@/components/directory/ProviderDirectory";
+import ProviderPeers from "@/components/directory/ProviderPeers";
+import ProviderSearch from "@/components/directory/ProviderSearch";
 import Quiz from "@/components/quiz";
 import PageHero from "@/components/site/PageHero";
 import type { RenderContext } from "./context";
@@ -99,6 +101,10 @@ export default function PageBody({ page }: { page: Page }) {
           </section>
         );
       })}
+
+      {page.frontMatter.page_type === "provider" ? (
+        <ProviderPeers slug={page.frontMatter.url.replace(/^\/providers\//, "")} />
+      ) : null}
 
       {bylines.map((block, position) => (
         <Byline
@@ -234,6 +240,14 @@ function CardSection({
 }) {
   const { grid, count, lead, trailing, hasCopy } = cards;
 
+  // A [PROVIDER SEARCH] marker in the section (the homepage "Find a provider"
+  // card): a styling hook so render.css can make the search the section's
+  // primary action. The widget itself renders in order with the rest of the
+  // lead copy below; it is never lifted out or dropped.
+  const hasSearch = [...lead, ...trailing].some(
+    (block) => block.kind === "widget" && block.name === "providerSearch",
+  );
+
   // One card with copy: heading and card down the left, copy on the right
   // (directory.css lays the columns out from 900px). The copy is read before
   // the card, which is the order it makes sense in: who, then the link.
@@ -243,6 +257,7 @@ function CardSection({
         className="page-section page-section--cards page-section--cards-one"
         aria-labelledby={heading.id}
         data-section={heading.id}
+        data-has-search={hasSearch ? "" : undefined}
       >
         <Heading block={heading} ctx={ctx} />
         <div className="card-grid__copy">
@@ -266,6 +281,7 @@ function CardSection({
       className="page-section page-section--cards"
       aria-labelledby={heading.id}
       data-section={heading.id}
+      data-has-search={hasSearch ? "" : undefined}
     >
       <Heading block={heading} ctx={ctx} />
       {renderBlocks(lead, ctx)}
@@ -409,8 +425,9 @@ const QUIZ_QUESTION_RE = /^Q\d+\.\s/;
  * the marker that the component does not itself render still renders here, so
  * the page never loses a sentence the writer put in.
  *
- * The provider directory, resource library, and blog index are still fallback
- * copy only; they get wired in as their components land.
+ * The provider directory and provider search mount their components; the
+ * resource library and blog index are still fallback copy only and get wired
+ * in as their components land.
  */
 function Widget({
   block,
@@ -440,6 +457,7 @@ function Widget({
     <div className="widget" data-widget={block.name}>
       {renderBlocks(block.blocks, ctx)}
       {block.name === "providerDirectory" ? <ProviderDirectory /> : null}
+      {block.name === "providerSearch" ? <ProviderSearch /> : null}
     </div>
   );
 }

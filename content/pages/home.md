@@ -66,6 +66,8 @@ Or call (631) 371-3825. Five Long Island offices and telehealth in four states.
 
 Search our clinicians and wellness practitioners by concern, modality, age group, office, and format. One provider can appear under more than one pillar, because that is how people actually get better. [Browse providers](/providers).
 
+[PROVIDER SEARCH]
+
 [PROVIDER CARDS: rachel-lessard, tiffany-roberts, leonard-ma, christine-cervo]
 
 ## Five offices and telehealth

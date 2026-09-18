@@ -88,6 +88,11 @@ async function cutTiers(
     targets.push(Math.min(limit, widths[widths.length - 1]));
   }
 
+  // Always emit the smallest asked width, even when the source is narrower.
+  // The card markup requests that file by name (srcSet "{stem}-{w}.webp"), so
+  // omitting it 404s. Upscaling a small headshot a little beats a missing photo.
+  if (square && !targets.includes(widths[0])) targets.unshift(widths[0]);
+
   const tiers: GeneratedTier[] = [];
   for (const width of targets) {
     const out = path.join(outDir, `${stem}-${width}.webp`);

@@ -376,6 +376,32 @@
   background: var(--surface-soft, #ebebeb);
 }
 
+/* Free text search: its own full width row above the six selects, whatever
+   the column count. A pill, 44px tall for touch, same border and white as
+   the selects so the row reads as one set of controls. */
+.prose .provider-directory__field--search {
+  grid-column: 1 / -1;
+}
+
+.prose .provider-directory__search {
+  width: 100%;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid rgb(29 39 51 / 0.12);
+  border-radius: 999px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  line-height: 1.4;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.prose .provider-directory__search::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
 .prose .provider-directory__clear {
   align-self: end;
   justify-self: start;
@@ -411,6 +437,7 @@
 }
 
 .prose .provider-directory__field select:focus-visible,
+.prose .provider-directory__search:focus-visible,
 .prose .provider-directory__clear:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
@@ -448,6 +475,198 @@
 @media (prefers-reduced-transparency: reduce) {
   .prose .provider-directory__filters,
   .prose .provider-directory__admin {
+    background: var(--surface-soft, #f7f7f7);
+    border-color: #e3e6ea;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+/* Standalone search (ProviderSearch, homepage "Find a provider")            */
+/* ------------------------------------------------------------------------- */
+/* Not prefixed with .prose: the homepage mounts this outside the article.
+   Same white rounded card as the directory's filter row, one large pill
+   input with the site's pill button beside it, and a compact two up list of
+   the cards it matches. No motion anywhere, so nothing to gate behind
+   prefers-reduced-motion beyond the card hover lift globals.css already
+   handles. */
+
+.provider-search {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-radius: var(--radius-xl, 34px);
+  background: rgb(255 255 255 / 0.72);
+  border: 1px solid rgb(255 255 255 / 0.9);
+  color: var(--text, #1d2733);
+}
+
+.provider-search__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.provider-search__label {
+  font-size: var(--text-base, 1.0625rem);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Input and button on one line wherever they fit, the button dropping under
+   the input on a narrow phone. */
+.provider-search__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.provider-search__input {
+  flex: 1 1 14rem;
+  min-width: 0;
+  min-height: 3rem;
+  padding: 0.65rem 1.25rem;
+  border: 1px solid rgb(29 39 51 / 0.16);
+  border-radius: 999px;
+  background: #ffffff;
+  color: inherit;
+  font: inherit;
+  font-size: var(--text-base, 1.0625rem);
+  line-height: 1.4;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.provider-search__input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.provider-search__input:focus-visible {
+  outline: var(--focus-ring-width, 3px) solid var(--focus-ring, currentColor);
+  outline-offset: var(--focus-ring-offset, 2px);
+}
+
+.provider-search__submit {
+  flex: none;
+  min-height: 3rem;
+}
+
+@media (max-width: 379.98px) {
+  .provider-search__submit {
+    flex: 1 1 100%;
+  }
+}
+
+/* The status line doubles as the way into the whole directory. */
+.provider-search__status {
+  margin: 0.75rem 0 0;
+  max-width: none;
+  font-size: var(--text-sm, 0.9375rem);
+  line-height: 1.5;
+  color: var(--text-soft, #4a4a4a);
+}
+
+.provider-search__all {
+  color: var(--link, #1d2733);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  border-radius: var(--radius-xs, 10px);
+}
+
+.provider-search__all:hover {
+  color: var(--text, #1d2733);
+}
+
+/* Results: the shared card, laid out as a compact row (photo left, text
+   right) so eight matches stay short under a hero. Empty until the reader
+   types, so the list has no height of its own. Three classes here outrank
+   both the globals.css card rules and the .prose grid, wherever this mounts. */
+:is(.provider-search, .provider-peers) .provider-cards.provider-cards--search {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:is(.provider-search, .provider-peers) .provider-cards.provider-cards--search:not(:empty) {
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  :is(.provider-search, .provider-peers) .provider-cards.provider-cards--search {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Two columns: the photo, spanning both rows, then name over title. The
+   card's own markup is untouched (ProviderCard), the grid does the layout. */
+:is(.provider-search, .provider-peers) .provider-cards--search .provider-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 0.9rem;
+  row-gap: 0.15rem;
+  align-items: center;
+  min-width: 0;
+  margin: 0;
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  border-radius: var(--radius-lg, 26px);
+  background: var(--surface-soft, #f7f7f7);
+  text-align: left;
+}
+
+/* The circle mask stays; only its size and margin change. */
+:is(.provider-search, .provider-peers) .provider-cards--search .provider-card__photo {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 3.5rem;
+  height: 3.5rem;
+  aspect-ratio: 1;
+  margin: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+:is(.provider-search, .provider-peers) .provider-cards--search .provider-card__initials {
+  font-size: 1rem;
+}
+
+:is(.provider-search, .provider-peers) .provider-cards--search .provider-card__name,
+:is(.provider-search, .provider-peers) .provider-cards--search .provider-card__title {
+  grid-column: 2;
+  margin: 0;
+  min-width: 0;
+  max-width: none;
+  text-wrap: pretty;
+}
+
+:is(.provider-search, .provider-peers) .provider-cards--search .provider-card__name {
+  grid-row: 1;
+  align-self: end;
+  font-size: var(--text-base, 1.0625rem);
+  line-height: 1.3;
+}
+
+:is(.provider-search, .provider-peers) .provider-cards--search .provider-card__title {
+  grid-row: 2;
+  align-self: start;
+}
+
+/* The one line bullet is the full card's business; the compact row shows
+   photo, name, credentials and title only. */
+:is(.provider-search, .provider-peers) .provider-cards--search .provider-card__bullet {
+  display: none;
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .provider-search {
     background: var(--surface-soft, #f7f7f7);
     border-color: #e3e6ea;
   }

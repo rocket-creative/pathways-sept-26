@@ -30,10 +30,14 @@ const FACETS: { key: FacetKey; label: string; needs?: string }[] = [
  * cards that do not match are marked `hidden`, never removed, so each
  * /providers/{slug} link exists for crawlers whatever the query string says.
  *
- * Filter state lives in the query string (?pillar=wellness&specialty=anxiety)
+ * Filter state lives in the query string (?q=emdr&pillar=wellness&specialty=anxiety)
  * and is restored on load. The page's canonical stays /providers with no
  * query, so filter combinations are not indexable duplicates.
+ *
+ * The free text field ANDs with the six selects (lib/provider-filter.ts,
+ * matchesQuery); the homepage ProviderSearch hands off here as /providers?q=.
  */
+const SEARCH_LABEL = "Search by name, specialty, or approach";
 export default function ProviderDirectoryClient({
   providers,
   admin,
@@ -64,6 +68,19 @@ export default function ProviderDirectoryClient({
       const next: Selection = { ...current };
       if (value) next[facet] = value.split(",").map((part) => part.trim()).filter(Boolean);
       else delete next[facet];
+      const url = `${window.location.pathname}${searchFromSelection(next)}${window.location.hash}`;
+      window.history.replaceState(window.history.state, "", url);
+      return next;
+    });
+  };
+
+  const updateQuery = (value: string) => {
+    setSelection((current) => {
+      const next: Selection = { ...current };
+      // Keep what the reader typed (spaces included) so the caret behaves;
+      // matching and the URL trim it.
+      if (value.trim()) next.q = value;
+      else delete next.q;
       const url = `${window.location.pathname}${searchFromSelection(next)}${window.location.hash}`;
       window.history.replaceState(window.history.state, "", url);
       return next;
@@ -112,6 +129,26 @@ export default function ProviderDirectoryClient({
         aria-label="Filter providers"
         onSubmit={(event) => event.preventDefault()}
       >
+        <div className="provider-directory__field provider-directory__field--search">
+          <label htmlFor={`${fieldId}-q`}>{SEARCH_LABEL}</label>
+          <input
+            id={`${fieldId}-q`}
+            className="provider-directory__search"
+            type="search"
+            name="q"
+            value={selection.q ?? ""}
+            autoComplete="off"
+            spellCheck={false}
+            enterKeyHint="search"
+            onChange={(event) => updateQuery(event.target.value)}
+            // Results are already live; Enter has nothing to submit. The form
+            // swallows submit too, this keeps the key from doing anything else.
+            onKeyDown={(event) => {
+              if (event.key === "Enter") event.preventDefault();
+            }}
+          />
+        </div>
+
         {FACETS.map((facet) => {
           const id = `${fieldId}-${facet.key}`;
           const values = options[facet.key];
