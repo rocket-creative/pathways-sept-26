@@ -616,6 +616,34 @@
     html[data-hero-mode="pin"] .hero-stage {
       --hero-img-top: calc(74vh - 107.5vh);
       --hero-gap: 6vh;
+      --hero-card-w: clamp(300px, 25vw, 470px);
+    }
+
+    /* Cards a step smaller too, so they take less of the short screen. The
+       body copy stays at 14px (0.875rem) with a 1.5 leading, all in rem so
+       browser zoom and text-size settings still scale it; the link pill
+       keeps a ~28px hit area (WCAG 2.2 target minimum is 24px). */
+    html[data-hero-mode="pin"] .hero-stop .heading--h2 {
+      margin-block-end: 0.45em;
+      font-size: clamp(1.1rem, 1.2vw, 1.4rem);
+    }
+
+    html[data-hero-mode="pin"] .hero-stop p {
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+
+    html[data-hero-mode="pin"] .hero-stop--card .hero-stop__inner {
+      padding: clamp(1rem, 1.2vw, 1.4rem) clamp(1.1rem, 1.3vw, 1.5rem);
+    }
+
+    html[data-hero-mode="pin"] .hero-stop__inner::before {
+      margin-block-end: 0.55rem;
+    }
+
+    html[data-hero-mode="pin"] .hero-stop a:not(.button) {
+      margin-block-start: 0.75rem;
+      font-size: 0.875rem;
     }
 
     html[data-hero-mode="pin"] .home-intro {
@@ -648,16 +676,11 @@
   /* Shorter still (a 1280x800 display, or a small window): the below cards
      are ~270px tall and hang from anchors at ~52vh, so there is no room to
      drop the image without pushing their buttons off the bottom. Keep the
-     image close to its resting place and take a little out of the card
-     body instead; the compact lockup above already clears card 1. */
+     image close to its resting place; the compact lockup and smaller cards
+     above already clear card 1. */
   @media (max-height: 720px) {
     html[data-hero-mode="pin"] .hero-stage {
       --hero-img-top: calc(71vh - 107.5vh);
-    }
-
-    html[data-hero-mode="pin"] .hero-stop p {
-      font-size: 0.875rem;
-      line-height: 1.5;
     }
   }
 }
