@@ -508,9 +508,13 @@
   }
 
   /* Anchored to the site's left gutter line (where the mark sits on every
-     inner page), not centred: the cap only stops the copy stretching. */
+     inner page), not centred. Two caps: the 78rem stops the copy stretching
+     on wide screens; the fence stops it short of the first above-the-branch
+     card's left edge (HomeHero.tsx sets --hero-fence-sx from anchors.ts), so
+     the paragraph can never run under that card on short, wide viewports. */
   html[data-hero-mode="pin"] .home-intro .prose > .page-section {
-    width: min(100% - 2 * var(--gutter), 78rem);
+    --hero-fence-x: calc(var(--hero-fence-sx, 0.362) * var(--hero-img-w) - var(--hero-card-w) / 2);
+    width: min(100% - 2 * var(--gutter), 78rem, var(--hero-fence-x) - var(--gutter) - 2rem);
     max-width: none;
     margin: 0 auto 0 var(--gutter);
     padding: 0;
@@ -596,6 +600,63 @@
 
   html[data-hero-mode="pin"] .site-header__nav a[aria-current="page"] {
     background: rgb(255 255 255 / 0.85);
+  }
+
+  /* Short viewports: 13" laptops (1440x900 and 1470x956 leave roughly
+     780-830px for the page once the browser chrome is taken out) and
+     smaller windows. Image 1 is sized in vh, so here the branch is only
+     ~1700px tall and the anchors climb into the sky where the lockup sits,
+     while the lockup keeps its full size. Two moves: drop the image 4vh so
+     every card lands lower, and compact the lockup (smaller mark, three
+     line h1, smaller copy, tighter margins) so it ends well above card 1.
+     Cards keep their type sizes; they are already at the clamp minimums. */
+  @media (max-height: 860px) {
+    html[data-hero-mode="pin"] .hero-stage {
+      --hero-img-top: calc(74vh - 107.5vh);
+      --hero-gap: 6vh;
+    }
+
+    html[data-hero-mode="pin"] .home-intro {
+      padding-top: calc(var(--header-h, 4.75rem) + 0.25rem);
+    }
+
+    html[data-hero-mode="pin"] .home-intro .page-hero__logo {
+      width: min(25rem, 30vh);
+      max-width: min(25rem, 30vh);
+    }
+
+    html[data-hero-mode="pin"] .home-intro h1 {
+      margin-block-end: 0.45em;
+      max-width: 26ch;
+      font-size: clamp(1.7rem, 2.3vw, 2.5rem);
+      line-height: 1.06;
+    }
+
+    html[data-hero-mode="pin"] .home-intro p {
+      margin-block-end: 0.7em;
+      font-size: clamp(0.92rem, 1.05vw, 1rem);
+      line-height: 1.45;
+    }
+
+    html[data-hero-mode="pin"] .home-intro .cta {
+      margin-top: 0.2rem;
+    }
+  }
+
+  /* Shorter still (a 1280x800 display, or a small window): the below cards
+     are ~270px tall and hang from anchors at ~52vh, so there is no room to
+     drop the image without pushing their buttons off the bottom. Keep the
+     image close to its resting place and take a little out of the card
+     body instead; the compact lockup above already clears card 1. */
+  @media (max-height: 720px) {
+    html[data-hero-mode="pin"] .hero-stage {
+      --hero-img-top: calc(71vh - 107.5vh);
+    }
+
+    html[data-hero-mode="pin"] .hero-stop p {
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
   }
 }
 

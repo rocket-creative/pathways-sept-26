@@ -61,6 +61,16 @@ export default function HomeHero({
 }) {
   const stops = groupStops(block.blocks);
 
+  /*
+    The first card that hangs above the branch is the one the h1 lockup can
+    collide with (the below cards sit under the lockup's bottom edge). Its
+    anchor x, as a fraction of image 1, lets hero.css stop the lockup's text
+    column short of that card's left edge at any viewport.
+  */
+  const fence =
+    stops.map((_, index) => anchorFor(index, stops.length)).find((anchor) => anchor.place === "above") ?? null;
+  const pinStyle = fence ? ({ "--hero-fence-sx": fence.sx } as CSSProperties) : undefined;
+
   return (
     <>
       {/*
@@ -80,7 +90,7 @@ export default function HomeHero({
       />
       <script dangerouslySetInnerHTML={{ __html: PIN_BOOT }} />
       <HeroStage>
-        <div className="hero-stage__pin" data-hero-pin>
+        <div className="hero-stage__pin" data-hero-pin style={pinStyle}>
           {children}
           <div className="hero-stage__track">
             {/* Image 1. Opacity only during the handoff; no text descendants. */}
