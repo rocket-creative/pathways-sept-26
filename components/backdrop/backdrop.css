@@ -304,7 +304,7 @@ main.page--lanes > .prose > .page-section:has(
     .location-cards,
     .form-embed,
     .widget[data-widget="quiz"],
-    .content-image,
+    .content-image, .faq,
     table
   ) {
   padding: clamp(1.5rem, 3vw, 2.5rem);
@@ -346,7 +346,13 @@ main.page--lanes > .prose > .page-section.page-section--intro {
    BREAK means the intro or a section that :has(<wide>). CSS has no way to
    name a selector, so both are written out each time. `:has()` cannot nest,
    so "the next sibling is wide" is written as one relative selector,
-   `:has(+ .page-section :is(<wide>))`, never `:has(+ .page-section:has())`. */
+   `:has(+ .page-section :is(<wide>))`, never `:has(+ .page-section:has())`.
+
+   The Q&A stack (.faq) counts as wide: it is the tallest card on almost
+   every service page, and as a half it dragged whichever short card it was
+   paired with out to its own height, leaving a thousand pixels of empty
+   glass. Full row, it lays its items out two up (below) and the short
+   cards pair with each other. */
 @media (min-width: 900px) {
   main.page--lanes > .prose {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -355,7 +361,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
   /* 1. A text section takes half a row. */
   main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
       .provider-directory, .provider-cards, .location-cards, .form-embed,
-      .widget[data-widget="quiz"], .content-image, table
+      .widget[data-widget="quiz"], .content-image, .faq, table
     )) {
     --bento-inner: block;
     --bento-h3-top: 1.5rem;
@@ -369,7 +375,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
   main.page--lanes > .prose > .page-section:nth-child(
       3n of .page-section:not(.page-section--intro):not(:has(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       ))
     ) {
     --bento-inner: grid;
@@ -386,17 +392,17 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       .page-section--intro,
       .page-section:has(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       )
     ) + .page-section:nth-child(
       3n + 2 of .page-section:not(.page-section--intro):not(:has(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       ))
     ) + .page-section:nth-child(
       3n of .page-section:not(.page-section--intro):not(:has(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       ))
     ) {
     --bento-inner: block;
@@ -411,14 +417,14 @@ main.page--lanes > .prose > .page-section.page-section--intro {
   main.page--lanes > .prose > .page-section:nth-child(
       3n + 1 of .page-section:not(.page-section--intro):not(:has(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       ))
     ):is(
       :last-child,
       :has(+ .byline),
       :has(+ .page-section :is(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       ))
     ) {
     --bento-inner: grid;
@@ -434,19 +440,19 @@ main.page--lanes > .prose > .page-section.page-section--intro {
       .page-section--intro,
       .page-section:has(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       )
     ) + .page-section:nth-child(
       3n + 2 of .page-section:not(.page-section--intro):not(:has(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       ))
     ):is(
       :last-child,
       :has(+ .byline),
       :has(+ .page-section :is(
         .provider-directory, .provider-cards, .location-cards, .form-embed,
-        .widget[data-widget="quiz"], .content-image, table
+        .widget[data-widget="quiz"], .content-image, .faq, table
       ))
     ) {
     --bento-inner: grid;
@@ -472,7 +478,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
      half row cards stay block. The child placements are inert on a block. */
   main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
       .provider-directory, .provider-cards, .location-cards, .form-embed,
-      .widget[data-widget="quiz"], .content-image, table
+      .widget[data-widget="quiz"], .content-image, .faq, table
     )) {
     display: var(--bento-inner, block);
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
@@ -482,14 +488,14 @@ main.page--lanes > .prose > .page-section.page-section--intro {
 
   main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
       .provider-directory, .provider-cards, .location-cards, .form-embed,
-      .widget[data-widget="quiz"], .content-image, table
+      .widget[data-widget="quiz"], .content-image, .faq, table
     )) > * {
     grid-column: 2;
   }
 
   main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
       .provider-directory, .provider-cards, .location-cards, .form-embed,
-      .widget[data-widget="quiz"], .content-image, table
+      .widget[data-widget="quiz"], .content-image, .faq, table
     )) > :is(.heading--h2, h2):first-child {
     grid-column: 1;
     grid-row: 1;
@@ -503,7 +509,7 @@ main.page--lanes > .prose > .page-section.page-section--intro {
      (--bento-h3-top is 0 on a full row card, the card h3 space, 1.5rem, on a half). */
   main.page--lanes > .prose > .page-section:not(.page-section--intro):not(:has(
       .provider-directory, .provider-cards, .location-cards, .form-embed,
-      .widget[data-widget="quiz"], .content-image, table
+      .widget[data-widget="quiz"], .content-image, .faq, table
     )) > :is(h3, h4, .heading--h3, .heading--h4):nth-child(2) {
     margin-block-start: var(--bento-h3-top, 1.5rem);
   }
@@ -547,6 +553,21 @@ body:has(.page--home) .site-footer {
   backdrop-filter: blur(20px) saturate(1.08);
   -webkit-backdrop-filter: blur(20px) saturate(1.08);
   border-top: 1px solid rgb(255 255 255 / 0.6);
+}
+
+/* The Q&A stack on its full row card: two columns of items from 900px, so
+   the card is half as tall and the answers keep a readable line. Lead copy
+   before the stack and the items themselves keep the card's left edge. */
+main.page--lanes > .prose > .page-section .faq {
+  max-width: none;
+}
+
+@media (min-width: 900px) {
+  main.page--lanes > .prose > .page-section .faq {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--bento-gap);
+    align-items: start;
+  }
 }
 
 /* Cards inside a section card: the same glass, one step more transparent,
