@@ -1,7 +1,7 @@
 ---
 url: /locations/garden-city
 title: "Pathways Within in Garden City, NY | Pathways Within"
-meta: "Pathways Within Garden City at 647 Franklin Ave offers therapy for adults, couples, teens, and children, plus medication management. Book a 360 intake."
+meta: "Pathways Within Garden City is at 647 Franklin Ave, Lower Level. The office is reached by stairs. The Welcome Team schedules your 360 intake."
 h1: "Pathways Within in Garden City, NY"
 page_type: location
 pillar: none
@@ -20,13 +20,9 @@ hero_image: "[NEEDS: image] Entrance to the Pathways Within Garden City office o
 
 # Pathways Within in Garden City, NY
 
-Pathways Within Garden City is at 647 Franklin Ave, Lower Level, Garden City, NY 11530, in central Nassau County. This office has served as a therapy location for years. It is now becoming a multipurpose office where therapy and wellness share the same space. Licensed therapists see adults, couples, teens, and children here, and massage and acupuncture appointments are being added. [NEEDS: confirm which wellness services are live in Garden City and the start date]
-
-The Garden City office at 520 Franklin Ave is closed. All appointments at this location are at 647 Franklin Ave.
+Pathways Within Garden City is at 647 Franklin Ave, Lower Level, Garden City, NY 11530. The office at 520 Franklin Ave is closed. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
 
 [CTA] Start your 360 intake -> /contact
-
-Services are scheduled by the Welcome Team. Offerings can include pop-up events, so this page does not assign a fixed menu to the office.
 
 
 ## Getting here
@@ -54,7 +50,7 @@ The Garden City office is a short drive from Mineola, Hempstead, Westbury, New H
 
 ### Is the Garden City office wheelchair accessible?
 
-No. The office is on a lower level reached by stairs, with no elevator. If you use a wheelchair or cannot manage stairs, the Welcome Team will book you at Rockville Centre or Smithtown, or set up telehealth with a provider who sees clients by video.
+No. The office is on a lower level reached by stairs, with no elevator. If you use a wheelchair or cannot manage stairs, the Welcome Team will book you at Rockville Centre, Smithtown, or Port Jefferson, or set up New York telehealth.
 
 ### Do you offer telehealth if I cannot get there?
 

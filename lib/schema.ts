@@ -44,6 +44,12 @@ const BANNED_TYPES = new Set([
 const BANNED_KEYS = new Set(["aggregateRating", "review", "reviews", "reviewRating", "ratingValue"]);
 
 /**
+ * Clinical bylines. The client removed written-by and reviewed-by credit for
+ * liability, including this hidden search markup. Dropped on every graph.
+ */
+const DROPPED_KEYS = new Set(["author", "reviewedBy"]);
+
+/**
  * Nodes that say nothing once these properties are pruned, so the whole node
  * goes rather than shipping an empty shell. Everything else survives on its
  * remaining properties.
@@ -147,6 +153,7 @@ function prune(value: unknown): unknown {
   const source = value as Record<string, unknown>;
   const result: Record<string, unknown> = {};
   for (const [key, raw] of Object.entries(source)) {
+    if (DROPPED_KEYS.has(key)) continue;
     const cleaned = prune(raw);
     if (cleaned !== undefined) result[key] = cleaned;
   }

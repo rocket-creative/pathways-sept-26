@@ -1,7 +1,7 @@
 ---
 url: /locations/smithtown
 title: "Pathways Within in Smithtown, NY | Pathways Within"
-meta: "Pathways Within Smithtown at 496 Smithtown Bypass is our Suffolk County hub for therapy, medication management, massage, and acupuncture. Book today."
+meta: "Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203. Elevator to the 2nd floor. The Welcome Team schedules your 360 intake here."
 h1: "Pathways Within in Smithtown, NY"
 page_type: location
 pillar: none
@@ -20,13 +20,9 @@ hero_image: "[NEEDS: image] Reception area at Pathways Within Smithtown on Smith
 
 # Pathways Within in Smithtown, NY
 
-Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787. Therapy, medication management, massage, and acupuncture are offered here. The Welcome Team confirms what is on the schedule.
-
-The office is on Route 347 (Smithtown Bypass), which makes it easy to reach from most of western and central Suffolk County.
+Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787. The office is on Route 347. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
 
 [CTA] Start your 360 intake -> /contact
-
-Services are scheduled by the Welcome Team. Offerings can include pop-up events, so this page does not assign a fixed menu to the office.
 
 
 ## Getting here
@@ -35,7 +31,7 @@ The office is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787. Parking i
 
 Accessibility: Elevator to the 2nd floor. This office is wheelchair accessible.
 
-Smithtown is one of our two accessible offices, along with Rockville Centre. If you use a wheelchair or have trouble with stairs, this is the Suffolk County office we recommend. Tell the Welcome Team when you book so they can confirm access details for Suite 203.
+Smithtown is an accessible office. Rockville Centre and Port Jefferson are accessible as well. If you use a wheelchair or have trouble with stairs, tell the Welcome Team when you book.
 
 
 ## Providers at this office
@@ -66,7 +62,7 @@ Coverage varies by provider, service, and plan. The Welcome Team verifies benefi
 
 ### How do I book an appointment?
 
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan across therapy, medication management, and wellness as needed, and matches you with a provider at Smithtown. Learn more at [how it works](/how-it-works).
+Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan, and matches you with a provider at Smithtown. Learn more at [how it works](/how-it-works).
 
 ## Take the next step
 

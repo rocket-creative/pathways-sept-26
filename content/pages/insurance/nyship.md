@@ -1,8 +1,8 @@
 ---
 url: /insurance/nyship
-title: "NYSHIP Massage and Therapy on Long Island | Pathways Within"
-meta: "NYSHIP members: Pathways Within is in network for eligible medical massage and out of network for therapy. Long Island offices. We verify your benefits."
-h1: "NYSHIP Medical Massage and Therapy Coverage on Long Island"
+title: "NYSHIP Plan Coverage on Long Island | Pathways Within"
+meta: "NYSHIP at Pathways Within depends on the provider, service, and plan. The Welcome Team confirms your benefits after you send the contact form."
+h1: "NYSHIP and Care at Pathways Within on Long Island"
 page_type: insurance
 pillar: none
 target_query: "NYSHIP medical massage Long Island"
@@ -18,58 +18,48 @@ providers: []
 hero_image: "[NEEDS: image] Licensed massage therapist preparing a treatment room at Pathways Within on Long Island"
 ---
 
-# NYSHIP Medical Massage and Therapy Coverage on Long Island
+# NYSHIP and Care at Pathways Within on Long Island
 
-NYSHIP works differently at Pathways Within depending on what you come in for. For eligible medical massage with one of our licensed massage therapists, we are in network with NYSHIP. For therapy, we are out of network with NYSHIP, and we provide a superbill you can submit for possible reimbursement. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake.
+Pathways Within may participate with NYSHIP. Coverage varies by provider, service, and plan. Send the contact form and the Welcome Team confirms your benefits. We do not decide coverage from the plan name alone.
 
 [CTA] Start your 360 intake -> /contact
 
 ## What NYSHIP may cover here
 
-The clearest fit is [medical massage](/wellness/massage). When massage is medically indicated and meets your plan's eligibility rules, NYSHIP may cover it in network at Pathways Within. Our massage therapists, Christine Cervo, LMT, and Danielle Ingenito, LMT, provide medical massage at our Long Island offices. Not every massage session qualifies. Eligibility depends on your plan's terms and on whether the session is medical rather than relaxation based, and the Welcome Team confirms that before you book.
-
-For [individual therapy](/therapy/individual-therapy) and [medication management](/medication-management), Pathways Within is out of network with NYSHIP. You can still be seen. Whether NYSHIP reimburses part of the cost depends on your plan's out of network mental health benefit, which the Welcome Team checks with you. We do not state copays, deductibles, or visit limits on this page. See [insurance and fees](/insurance-and-fees) for the practice wide picture.
+Clients ask about [medical massage](/wellness/massage), [individual therapy](/therapy/individual-therapy), and [medication management](/medication-management). What your plan covers depends on the provider, the service, and the plan. The Welcome Team confirms that after the contact form. See [insurance and fees](/insurance-and-fees) for the practice wide picture.
 
 ## How verification works
 
-Whether you are coming for massage, therapy, or both, the first step is the same.
-
 1. You contact the Welcome Team by form, call, or text.
 2. A Welcome Team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change.
-3. The team builds a care plan across therapy, medication management, and wellness as needed, and matches you with available providers.
-4. The Welcome Team verifies your NYSHIP benefits for each service and explains what is in network, what is out of network, and what that means for you.
+3. The team builds a care plan and matches you with available providers.
+4. The Welcome Team verifies your NYSHIP benefits and explains what applies to you before you are scheduled.
 
 Your Welcome Team contact stays with you after that. The full process is described at [How it works](/how-it-works).
 
-## Out of network and self pay options
+## If a visit is not covered
 
-For therapy and medication management, NYSHIP members pay the session fee directly and receive a superbill. A superbill is an itemized receipt with the codes your plan needs. You submit it to NYSHIP, and any reimbursement comes to you. We accept cash, major credit cards, and HSA and FSA cards. 
-
-For massage sessions that do not meet NYSHIP's eligibility rules, self pay is available at the standard massage rate.
+If your plan does not cover a visit, or you prefer not to use insurance, the Welcome Team explains your options before you are scheduled. We accept cash, major credit cards, and HSA and FSA cards. We do not post rates on this page.
 
 ## Locations and telehealth
 
-Medical massage is offered in person only. [NEEDS: confirm which offices offer massage after the Rockville Centre move] Therapy and medication management are available at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. See the [locations](/locations) page for addresses and accessibility.
+Our Long Island offices are listed on the [locations](/locations) page, with accessibility notes for each one.
 
-Telehealth for therapy and medication management is available to clients in New York when a video visit is available. Superbills are provided for telehealth sessions the same way as for office visits.
+Telehealth is available to clients in New York when a video visit is available. Hands-on care is in person.
 
 ## Common questions
 
-### How do I know if my massage is eligible under NYSHIP?
+### How do I know what NYSHIP covers for me?
 
-Tell the Welcome Team what you are dealing with and, if you have one, share any referral or documentation from your doctor. They confirm eligibility with your plan before your first session.
+Tell the Welcome Team what you are looking for. They confirm your benefits after the contact form, before you are scheduled.
 
-### Why is therapy out of network if massage is in network?
+### Can I be seen here with NYSHIP?
 
-Network agreements are made service by service. Our massage therapists are in network with NYSHIP for eligible medical massage. Our therapy and medication providers are not, at this time.
-
-### Can I still see a therapist here with NYSHIP?
-
-Yes. You pay directly and submit the superbill to NYSHIP. Whether you receive reimbursement depends on your plan's out of network benefits, and the Welcome Team helps you understand what to expect.
+Yes. Send the contact form. The Welcome Team confirms what your plan covers and schedules your 360 intake.
 
 ## Take the next step
 
-Tell the Welcome Team you have NYSHIP and whether you are looking for massage, therapy, or both. They will schedule your 360 intake, match you with a provider, and verify your benefits for each service.
+Tell the Welcome Team you have NYSHIP and what you want to work on. They will schedule your 360 intake and confirm your benefits.
 
 [CTA] Start your 360 intake -> /contact
 
@@ -92,7 +82,7 @@ Or call (631) 371-3825.
       "@type": "WebPage",
       "@id": "https://pathwayswithinwellness.com/insurance/nyship#webpage",
       "url": "https://pathwayswithinwellness.com/insurance/nyship",
-      "name": "NYSHIP Massage and Therapy on Long Island | Pathways Within",
+      "name": "NYSHIP Plan Coverage on Long Island | Pathways Within",
       "isPartOf": {"@id": "https://pathwayswithinwellness.com/#website"},
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},

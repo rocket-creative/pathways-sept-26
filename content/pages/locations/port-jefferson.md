@@ -1,8 +1,8 @@
 ---
 url: /locations/port-jefferson
-title: "Therapy Office in Port Jefferson, NY | Pathways Within"
-meta: "Pathways Within Port Jefferson at 1227 Main Street offers therapy for adults, couples, teens, and children on Suffolk's North Shore. Book a 360 intake."
-h1: "Therapy in Port Jefferson, NY"
+title: "Pathways Within in Port Jefferson, NY | Pathways Within"
+meta: "Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, on the first floor with a ramp. The Welcome Team schedules your 360 intake."
+h1: "Pathways Within in Port Jefferson, NY"
 page_type: location
 pillar: none
 target_query: "therapist Port Jefferson NY"
@@ -18,15 +18,11 @@ providers: []
 hero_image: "[NEEDS: image] Therapy office at Pathways Within Port Jefferson on Main Street"
 ---
 
-# Therapy in Port Jefferson, NY
+# Pathways Within in Port Jefferson, NY
 
-Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the North Shore of Suffolk County. This is a therapy office for adults, couples, teens, and children. Medication management and wellness services are offered at Smithtown and by telehealth when the service allows.
-
-Port Jefferson is one of our Suffolk County offices. It is an accessible office.
+Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the North Shore of Suffolk County. It is open, on the first floor, with a ramp. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
 
 [CTA] Start your 360 intake -> /contact
-
-Services are scheduled by the Welcome Team. Offerings can include pop-up events, so this page does not assign a fixed menu to the office.
 
 
 ## Getting here
@@ -42,7 +38,7 @@ Accessibility: First floor, with a ramp. This office is wheelchair accessible.
 
 [NEEDS: assign providers to offices in the sheet]
 
-Therapists at Port Jefferson are part of the Suffolk team under [Lee Wasser, LMHC-D](/providers/lee-wasser). The Welcome Team matches you with a clinician based on what you are working on, your schedule, and who has openings here.
+The Welcome Team matches you with a provider scheduled at this office. You do not need to choose someone before you reach out.
 
 ## Nearby communities we serve
 
@@ -52,7 +48,7 @@ The Port Jefferson office serves the North Shore of Suffolk County, including Po
 
 ### Is the Port Jefferson office wheelchair accessible?
 
-We are confirming access details for Suite 101. [NEEDS: accessibility for Port Jefferson] If you use a wheelchair or cannot manage stairs, tell the Welcome Team when you book. They will confirm before your visit or schedule you at Smithtown, which is accessible.
+Yes. The office is on the first floor, with a ramp. If you have a specific access need, tell the Welcome Team when you book.
 
 ### Do you offer telehealth if I cannot get there?
 
@@ -64,11 +60,11 @@ Coverage varies by provider, service, and plan. The Welcome Team verifies benefi
 
 ### How do I book an appointment?
 
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. From there, the team builds a care plan and matches you with a therapist at Port Jefferson. Learn more at [how it works](/how-it-works).
+Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake and matches you with a provider at Port Jefferson. Learn more at [how it works](/how-it-works).
 
 ## Take the next step
 
-Tell the Welcome Team what you are looking for and that Port Jefferson is your closest office. They will set up your 360 intake and match you with a therapist on our Suffolk team.
+Tell the Welcome Team what you are looking for and that Port Jefferson is your closest office. They will set up your 360 intake and match you with a provider.
 
 [CTA] Start your 360 intake -> /contact
 
@@ -91,7 +87,7 @@ Or call (631) 371-3825.
       "@type": "WebPage",
       "@id": "https://pathwayswithinwellness.com/locations/port-jefferson#webpage",
       "url": "https://pathwayswithinwellness.com/locations/port-jefferson",
-      "name": "Therapy Office in Port Jefferson, NY | Pathways Within",
+      "name": "Pathways Within in Port Jefferson, NY | Pathways Within",
       "isPartOf": {"@id": "https://pathwayswithinwellness.com/#website"},
       "about": {"@id": "https://pathwayswithinwellness.com/locations/port-jefferson#place"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},

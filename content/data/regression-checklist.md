@@ -14,14 +14,14 @@ Checked September 25, 2026 against the live site, the 9/17 build-edits tab, and 
 | Do not tag offices Wisdom or Wellness | Done. Location titles are "Pathways Within in {Town}." Therapy hub no longer opens as the Wisdom pillar. |
 | Remove working hours | Done. Hours sections and openingHoursSpecification are off the location pages. The sheet no longer asks for hours. |
 | Accessibility | Done. Elevator to the 3rd floor at Rockville Centre, elevator to the 2nd at Smithtown, ramp and first floor at Port Jefferson. Garden City and Massapequa are stairs. |
-| Old insurance menu | Done. No sliding scale, no Magnacare out-of-network claim, no wellness NYSHIP exception on the hub. The Welcome Team quotes fees. Cancellation varies and is not published as a number. |
+| Old insurance menu | Done. No sliding scale. Magnacare and NYSHIP pages do not state in-network or out-of-network status. The Welcome Team confirms benefits from the contact form. Cancellation varies and is not published as a number. |
 | Garden City 520 closed, Massapequa Suite 5 closed | Done. |
 | Official name | Done on the footer and the locations opening: Pathways Within - Wisdom and Wellness Collaborative. |
 | Specialists | Done. Tia Baumohl and Tiffany Roberts are in the specialists section, not the clinician directory. |
-| Bylines | Done. Written by and Clinically reviewed by lines are off the pages. |
+| Bylines | Done. Written by and Clinically reviewed by lines are off the pages. `author` and `reviewedBy` are stripped from every JSON-LD graph. |
 | Hidden services | Done. Ketamine assisted therapy and cryotherapy are index false, same pattern as IV therapy. |
 | Platform | Done. Video visits name Jane. |
-| Design | Done. White page background. Header is brand blue with white text. Footer is deep brand blue with a white logo chip. Subpage photo wash is off. |
+| Design | Driftwood labyrinth behind glass cards. Header is clear with dark text. Footer text is dark. |
 
 Still not in hand:
 

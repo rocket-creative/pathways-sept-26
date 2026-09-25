@@ -56,11 +56,11 @@ Therapy sessions are one hour [NEEDS: confirm 45, 50, or 60 minutes]. Medication
 
 ### Do you have evening appointments?
 
-Yes. With advance scheduling, some clinicians offer appointments into the evening [NEEDS: confirm latest appointment time by location]. Clinician and provider appointment times vary and may fall outside front desk hours.
+Appointment times vary by clinician. Tell the Welcome Team what times work for you and they will look for a provider whose schedule fits.
 
 ### What is your cancellation policy?
 
-[NEEDS: cancellation window and fee. The previous site listed conflicting policies; one must be confirmed.]
+Cancellation policies vary by service. The Welcome Team explains the one that applies when you book. We do not post a window or a fee on this page.
 
 ### Is what I say confidential?
 
@@ -74,7 +74,7 @@ Yes, for therapy and medication management, to clients located in New York when 
 
 ### Is virtual therapy private?
 
-Yes. We use a HIPAA compliant video platform [NEEDS: platform name]. You need a private space and a stable connection.
+Yes. Sessions run on Jane. You need a private space and a stable connection.
 
 ## Insurance and cost
 

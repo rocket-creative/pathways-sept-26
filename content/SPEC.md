@@ -94,7 +94,7 @@ Copy conventions inside the body:
 - `# H1` once. `## H2` sections in the order in section 3. `### H3` for FAQ questions and sub points.
 - `[CTA] Label -> /path` for buttons. `[FORM: therapy]` is the live Contact Us embed. Do not add `[FORM: wellness]`. `[PROVIDER CARDS: slug, slug]` where provider cards render from the sheet. `[LOCATION CARDS: slug, slug]` likewise. `[IMAGE: alt text]` for an image slot.
 - `[NEEDS: what]` for any fact the client has not supplied. Never fill a gap with a guess.
-- Do not print a "Written by" or "Clinically reviewed by" line. Those bylines were removed for liability. Front matter author and reviewer may still feed schema.
+- Do not print a "Written by" or "Clinically reviewed by" line, and do not put `author` or `reviewedBy` in JSON-LD. Those credits were removed for liability. `lib/schema.ts` drops both keys on every page.
 
 ## 3. Section pattern by page type
 
@@ -104,7 +104,7 @@ Copy conventions inside the body:
 
 **Insurance page** (500 to 700 words): H1 "Therapists Who Accept {Insurer} on Long Island"; opening paragraph that says participation varies and the Welcome Team verifies benefits; `## What {Insurer} may cover here`; `## How verification works` (360 intake, no insurance gate); `## Out of network and self pay options`; `## Locations and telehealth`; `## Common questions` (3 to 4); `## Take the next step`. Never state copays, deductibles, or guarantees. Do not claim Magnacare or NYSHIP is out of network. Do not publish a wellness self-pay exception list on the hub.
 
-**Location page** (600 to 800 words): H1 "Pathways Within in {Town}, NY"; opening paragraph with the live address; `## Services at this office` (linked list, honest to what is offered there); `## Getting here` (address, parking, accessibility sentence); no working hours section; `## Providers at this office`; `## Nearby communities we serve` (3 to 6 real neighboring towns, text only, no links, no separate pages); `## Common questions`; `## Take the next step`. Do not tag the office Wisdom or Wellness.
+**Location page** (600 to 800 words): H1 "Pathways Within in {Town}, NY"; opening paragraph with the live address and no service menu; `## Getting here` (address, parking, accessibility sentence); no working hours section and no "front desk hours" sentence; `## Providers at this office`; `## Nearby communities we serve` (3 to 6 real neighboring towns, text only, no links, no separate pages); `## Common questions`; `## Take the next step`. Do not tag the office Wisdom or Wellness. Do not list which services happen in the building. Services can be pop-ups, and the Welcome Team schedules them.
 
 **Provider page**: rendered from the providers sheet by Cursor. Template in /pages/_provider-template.md. Model page: /pages/providers/rachel-lessard.md.
 

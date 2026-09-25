@@ -1,7 +1,7 @@
 ---
 url: /locations/massapequa
-title: "Therapy and Medication in Massapequa, NY | Pathways Within"
-meta: "Pathways Within Massapequa at 4160 Merrick Road offers therapy for adults, couples, teens, and children, plus medication management. Book a 360 intake."
+title: "Pathways Within in Massapequa, NY | Pathways Within"
+meta: "Pathways Within Massapequa is at 4160 Merrick Road, Suite 7. The office is reached by stairs. Suite 5 is closed. The Welcome Team schedules your visit."
 h1: "Pathways Within in Massapequa, NY"
 page_type: location
 pillar: none
@@ -20,11 +20,9 @@ hero_image: "[NEEDS: image] Therapy office at Pathways Within Massapequa on Merr
 
 # Pathways Within in Massapequa, NY
 
-Pathways Within Massapequa is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. Therapy and medication management are offered here. Suite 5 at this address is closed. Wellness services such as massage and acupuncture are offered at Rockville Centre and Smithtown.
+Pathways Within Massapequa is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. Suite 5 at this address is closed. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
 
 [CTA] Start your 360 intake -> /contact
-
-Services are scheduled by the Welcome Team. Offerings can include pop-up events, so this page does not assign a fixed menu to the office.
 
 
 ## Getting here
@@ -52,7 +50,7 @@ The Massapequa office serves the eastern South Shore of Nassau County and the Su
 
 ### Is the Massapequa office wheelchair accessible?
 
-No. The suite is upstairs and reached only by stairs. If you use a wheelchair or cannot manage stairs, the Welcome Team will book you at Rockville Centre or Smithtown, or set up telehealth with a provider who sees clients by video.
+No. The suite is upstairs and reached only by stairs. If you use a wheelchair or cannot manage stairs, the Welcome Team will book you at Rockville Centre, Smithtown, or Port Jefferson, or set up New York telehealth.
 
 ### Do you offer telehealth if I cannot get there?
 
@@ -64,11 +62,11 @@ Coverage varies by provider, service, and plan. The Welcome Team verifies benefi
 
 ### How do I book an appointment?
 
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan across therapy and medication management as needed, and matches you with a provider at Massapequa. Learn more at [how it works](/how-it-works).
+Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan, and matches you with a provider at Massapequa. Learn more at [how it works](/how-it-works).
 
 ## Take the next step
 
-Tell the Welcome Team what you are looking for and that Massapequa is your closest office. They will set up your 360 intake and match you with a therapist or prescriber who fits.
+Tell the Welcome Team what you are looking for and that Massapequa is your closest office. They will set up your 360 intake and match you with a provider who fits.
 
 [CTA] Start your 360 intake -> /contact
 
@@ -91,7 +89,7 @@ Or call (631) 371-3825.
       "@type": "WebPage",
       "@id": "https://pathwayswithinwellness.com/locations/massapequa#webpage",
       "url": "https://pathwayswithinwellness.com/locations/massapequa",
-      "name": "Therapy and Medication in Massapequa, NY | Pathways Within",
+      "name": "Pathways Within in Massapequa, NY | Pathways Within",
       "isPartOf": {"@id": "https://pathwayswithinwellness.com/#website"},
       "about": {"@id": "https://pathwayswithinwellness.com/locations/massapequa#place"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},

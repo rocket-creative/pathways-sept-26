@@ -733,7 +733,7 @@ html[data-hero-mode="pin"] {
    design system paints html, body and .page solid; step them aside. */
 html:has(.page--home),
 body:has(.page--home) {
-  background: var(--bg, #ffffff);
+  background: var(--bg, #ebebeb);
 }
 
 body:has(.page--home),

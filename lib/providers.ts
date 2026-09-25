@@ -26,8 +26,6 @@ import {
 } from "@/lib/content";
 
 const TEMPLATE_FILE = "pages/_provider-template.md";
-const AUTHOR = "Rachel Lessard, LCSW-R";
-const AUTHOR_SLUG = "rachel-lessard";
 const LAST_REVIEWED = "2026-09-16";
 
 const TITLE_MIN = 50;
@@ -468,8 +466,6 @@ function buildFrontMatter(provider: Provider): FrontMatter {
     page_type: "provider",
     pillar: primaryPillar(provider),
     target_query: `${provider.first_name} ${provider.last_name} ${provider.credentials}`.trim(),
-    author: AUTHOR,
-    reviewer: AUTHOR,
     last_reviewed: LAST_REVIEWED,
     index: provider.active,
     nav: "none",
@@ -497,7 +493,6 @@ function put(target: JsonObject, key: string, value: string | undefined): void {
 export function buildProviderGraph(provider: Provider): JsonObject {
   const url = `${SITE_ORIGIN}/providers/${provider.slug}`;
   const personId = `${url}#person`;
-  const authorId = `${SITE_ORIGIN}/providers/${AUTHOR_SLUG}#person`;
   const title = providerTitle(provider);
 
   const person: JsonObject = {
@@ -558,8 +553,6 @@ export function buildProviderGraph(provider: Provider): JsonObject {
         isPartOf: { "@id": `${SITE_ORIGIN}/#website` },
         mainEntity: { "@id": personId },
         about: { "@id": personId },
-        author: { "@id": authorId },
-        reviewedBy: { "@id": authorId },
         lastReviewed: LAST_REVIEWED,
         inLanguage: "en-US",
       },

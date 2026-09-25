@@ -61,7 +61,7 @@ Whether dependents are covered, and for which services, depends on your benefit 
 
 ### Do you have appointments after work?
 
-Clinician appointment times vary and may fall outside front desk hours, including evenings. Tell the Welcome Team what hours work for you and they will look for a provider whose schedule fits.
+Appointment times vary by clinician. Tell the Welcome Team what times work for you and they will look for a provider whose schedule fits.
 
 ### What should I send the Welcome Team?
 
