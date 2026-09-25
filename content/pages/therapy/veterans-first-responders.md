@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "therapy for veterans and first responders Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/emdr, /therapy/trauma-therapy]
@@ -75,17 +75,17 @@ When it helps, the plan can include [medication management](/medication-manageme
 
 ## Where it is offered
 
-This program is available in person at all of our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. If you are not ready to sit across from someone yet, video is a fine place to start, and it keeps your care steady when work takes you elsewhere.
+This program is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. If you are not ready to sit across from someone yet, video is a fine place to start, and it keeps your care steady when work takes you elsewhere.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
 ## Who provides it
 
-[PROVIDER CARDS: rachel-lessard, carly-sandstrom, beth-gabellini, madeline-amzler]
+[PROVIDER CARDS: carly-sandstrom, beth-gabellini, madeline-amzler]
 
 ## Insurance and cost
 
-We accept [VA Community Care](/insurance/va-community-care) referrals along with many commercial plans. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+We accept [VA Community Care](/insurance/va-community-care) referrals along with many commercial plans. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -117,7 +117,6 @@ Tell the Welcome Team where you served or what you do. They will set up your 360
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -140,7 +139,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/veterans-first-responders#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

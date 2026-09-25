@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "OCD therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/teen-therapy, /medication-management]
@@ -47,7 +47,7 @@ Exposure based approaches are the core of that work. With your therapist, you fa
 
 Teens can do this work too, and [teen therapy](/therapy/teen-therapy) has its own page. Parents learn how to stop accommodating rituals at home without turning every evening into a fight.
 
-Tiffany Roberts, PMHNP, offers [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber talks through options, benefits, and side effects and coordinates with your therapist when you give permission.
+Our prescriber offers [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber talks through options, benefits, and side effects and coordinates with your therapist when you give permission.
 
 ## What your first weeks look like
 
@@ -59,17 +59,17 @@ Your first session covers history, what the obsessions and compulsions look like
 
 NIMH notes that OCD is typically treated with medication, psychotherapy, or a combination ([NIMH](https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder-ocd)). Therapy with exposure work is often the first choice. Some people find the anxiety so intense that they cannot start exposures, and medication can lower it enough to begin.
 
-At Pathways Within, your therapist can refer you to our prescriber at any point. If you already take medication for OCD, Tiffany Roberts, PMHNP, can review it. Both providers work from the same care plan so nothing gets lost between them.
+At Pathways Within, your therapist can refer you to our prescriber at any point. If you already take medication for OCD, our prescriber can review it. Both providers work from the same care plan so nothing gets lost between them.
 
 ## Where and how
 
-OCD treatment is offered in person at all of our Long Island offices and by telehealth for clients in New York, New Jersey, North Carolina, and Florida. Telehealth has a real advantage for exposure work, because many triggers live at home and your therapist can coach you through them where they happen.
+OCD treatment is offered in person at all of our Long Island offices and by telehealth for clients in New York when a video visit is available. Telehealth has a real advantage for exposure work, because many triggers live at home and your therapist can coach you through them where they happen.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
 ## Who you might work with
 
-Sofia Marinucci, MHC-LP, lists OCD among her specialties and works with teens, adults, and families. Our prescriber provides medication management. The Welcome Team matches you based on your needs, your schedule, and your location.
+Several clinicians list OCD among their specialties and work with teens, adults, and families. Our prescriber provides medication management. The Welcome Team matches you based on your needs, your schedule, and your location.
 
 [PROVIDER CARDS: specialty=OCD]
 
@@ -91,7 +91,7 @@ No. Therapists who treat OCD know that intrusive thoughts are common and do not 
 
 ### Does OCD treatment work over telehealth?
 
-Yes. Your therapist can guide exposures on video, and doing them in your own space often makes the practice more useful. Telehealth is available in New York, New Jersey, North Carolina, and Florida.
+Yes. Your therapist can guide exposures on video, and doing them in your own space often makes the practice more useful. Telehealth is available in New York when a video visit is available.
 
 ### How long does it take?
 
@@ -99,7 +99,7 @@ It depends on how long OCD has been present and how many triggers are on the lis
 
 ### Does insurance cover OCD treatment?
 
-Most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -109,7 +109,6 @@ Tell the Welcome Team how much of your day the rituals are taking. They will set
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -132,7 +131,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/ocd#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

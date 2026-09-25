@@ -8,7 +8,7 @@ pillar: none
 target_query: "therapist that takes Local 810 Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -43,7 +43,7 @@ Your Welcome Team contact stays with you after that. Read the full process at [H
 
 ## Out of network and self pay options
 
-If the clinician you want is not in network with Local 810, or a service is not covered, the Welcome Team tells you before you are scheduled. Every service at Pathways Within is available on a self pay basis. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+If the clinician you want is not in network with Local 810, or a service is not covered, the Welcome Team tells you before you are scheduled. Every service at Pathways Within is available on a self pay basis. We accept cash, major credit cards, and HSA and FSA cards. 
 
 If you would like to seek out of network reimbursement on your own, ask the Welcome Team about a superbill.
 
@@ -51,7 +51,7 @@ If you would like to seek out of network reimbursement on your own, ask the Welc
 
 Local 810 members are seen at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Addresses and accessibility notes are on the [locations](/locations) page.
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. For members with long or irregular work hours, video sessions can make it easier to keep appointments. The Welcome Team confirms how your plan treats telehealth.
+Telehealth is available to clients in New York when a video visit is available. For members with long or irregular work hours, video sessions can make it easier to keep appointments. The Welcome Team confirms how your plan treats telehealth.
 
 ## Common questions
 
@@ -75,7 +75,6 @@ Tell the Welcome Team you have Local 810 and what you want to change. They will 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -98,7 +97,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

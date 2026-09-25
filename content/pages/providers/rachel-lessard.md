@@ -8,7 +8,7 @@ pillar: none
 target_query: "Rachel Lessard LCSW"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/couples-therapy, /therapy/hypnotherapy, /therapy/trauma-therapy, /therapy/veterans-first-responders, /therapy/bariatric-surgery-support]
@@ -56,7 +56,7 @@ See [couples therapy](/therapy/couples-therapy) and [trauma therapy](/therapy/tr
 
 ## Leadership and the practice's values
 
-Rachel founded Pathways Within as a small private therapy practice. It has grown into a mental health and wellness organization across Nassau and Suffolk County. Her leadership team includes Ksusha Cascio, LCSW, Chief Operating Officer; Joe Bush, LCSW, Clinical Director for Nassau; Lee Wasser, LMHC-D, Clinical Director for Suffolk; and Christine Cervo, LMT, who helps lead the Wellness pillar. Meet the full team on the [providers](/providers) page.
+Rachel founded Pathways Within as a small private therapy practice. It has grown into a mental health and wellness organization across Nassau and Suffolk County. Her leadership team includes Ksusha Cascio, LCSW, Chief Operating Officer; Joe Bush, LCSW, Clinical Director for Nassau; Lee Wasser, LMHC-D, Clinical Director for Suffolk; and Christine Cervo, LMT, who helps lead wellness services. Meet the full team on the [providers](/providers) page.
 
 Four ideas shape how the practice works:
 
@@ -89,7 +89,6 @@ Tell the Welcome Team you would like to work with Rachel Lessard. They will sche
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -113,7 +112,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

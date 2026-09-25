@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "stress therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /coaching, /therapy/somatic-therapy, /wellness/massage, /wellness/acupuncture]
@@ -45,7 +45,7 @@ There is no single stress treatment. Your care plan depends on where stress live
 
 [Individual therapy](/therapy/individual-therapy) is the usual starting point. Your therapist helps you sort what you can change from what you can only carry differently. You practice ways to set limits, quiet the loop of worry, and rest without guilt. Several of our clinicians list stress management as a specialty.
 
-[Coaching](/coaching) with Tia Baumohl, Certified Coach and Energy Medicine Practitioner, suits people who want structure around one specific goal, such as a boundary at work or a career decision. Coaching is not a substitute for therapy when stress has turned into depression or anxiety. The Welcome Team helps you decide which fits.
+[Coaching](/coaching) suits people who want structure around one specific goal, such as a boundary at work or a career decision. Coaching is not a substitute for therapy when stress has turned into depression or anxiety. The Welcome Team helps you decide which fits.
 
 [Somatic therapy](/therapy/somatic-therapy) works with the body directly. Burnout often shows up as a nervous system that never gets the all clear. A somatic therapist teaches you to notice that state and bring it down.
 
@@ -61,13 +61,13 @@ Most people start weekly. Some add a massage or acupuncture visit in the same mo
 
 ## Medication, therapy, or both
 
-Stress itself is not treated with medication. When long term stress has tipped into depression, anxiety, or sleep that will not come, medication may be part of the plan. Tiffany Roberts, PMHNP, our psychiatric nurse practitioner, offers [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber and your therapist coordinate with your permission.
+Stress itself is not treated with medication. When long term stress has tipped into depression, anxiety, or sleep that will not come, medication may be part of the plan. Our psychiatric nurse practitioner offers [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber and your therapist coordinate with your permission.
 
 Many people with burnout never need medication, and no one here pushes you toward it. If you are already taking something from another doctor, tell the Welcome Team so your plan accounts for it.
 
 ## Where and how
 
-Therapy for stress and burnout is offered in person at our offices in Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Massage and acupuncture are in person only, at Rockville Centre, Garden City, and Smithtown.
+Therapy for stress and burnout is offered in person at our offices in Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York when a video visit is available. Massage and acupuncture are in person only, at Rockville Centre, Garden City, and Smithtown.
 
 Evening appointment times are available with some clinicians. [NEEDS: confirm evening availability by location]
 
@@ -105,7 +105,6 @@ You have been running on empty for a while. Tell the Welcome Team what a normal 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -128,7 +127,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/stress-and-burnout#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

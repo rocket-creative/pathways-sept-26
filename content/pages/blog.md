@@ -1,14 +1,14 @@
 ---
 url: /blog
 title: "Blog: Notes on Therapy and Wellness | Pathways Within"
-meta: "Articles, podcast appearances, and practice news from the clinicians at Pathways Within on Long Island. Written by licensed providers and dated."
+meta: "Articles, podcast appearances, and practice news from the clinicians at Pathways Within on Long Island."
 h1: "Notes from Pathways Within"
 page_type: hub
 pillar: none
 target_query: "Pathways Within blog"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/resources]
@@ -43,7 +43,6 @@ New posts are Markdown files in pages/blog following the Article pattern in SPEC
 
 [CTA] Start your 360 intake -> /contact
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {

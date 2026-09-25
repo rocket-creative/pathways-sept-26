@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "grief therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/grief-therapy, /therapy/individual-therapy, /therapy/group-therapy]
@@ -61,11 +61,11 @@ Your first session is mostly listening. Your therapist wants to know who you los
 
 Therapy is the main treatment for grief. Most people do not need medication, and grief itself is not something to medicate away. When loss brings on a depression that lasts for months, or when sleep has broken down so badly that nothing else can improve, medication can help.
 
-At Pathways Within your therapist can refer you to Tiffany Roberts, PMHNP, for an evaluation if that point comes. She reviews your history and talks through options with you. Both providers work from the same care plan.
+At Pathways Within your therapist can refer you to our prescriber for an evaluation if that point comes. She reviews your history and talks through options with you. Both providers work from the same care plan.
 
 ## Where and how
 
-Grief therapy is offered in person at all of our Long Island offices and by telehealth for clients in New York, New Jersey, North Carolina, and Florida. Some clients prefer to grieve at home, on video, with the door closed. Others need to leave the house. Either works.
+Grief therapy is offered in person at all of our Long Island offices and by telehealth for clients in New York when a video visit is available. Some clients prefer to grieve at home, on video, with the door closed. Others need to leave the house. Either works.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -101,7 +101,7 @@ No. The goal is the opposite. Good grief work helps you keep the person with you
 
 ### Does insurance cover grief therapy?
 
-Most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -111,7 +111,6 @@ You do not have to explain your loss well. Tell the Welcome Team who or what you
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -134,7 +133,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/grief-and-loss#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

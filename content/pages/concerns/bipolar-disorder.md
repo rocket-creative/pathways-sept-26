@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "bipolar disorder treatment Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/medication-management, /therapy/individual-therapy, /therapy/family-therapy]
@@ -43,7 +43,7 @@ Bipolar disorder is often mistaken for [depression](/concerns/depression) at fir
 
 Bipolar disorder is usually managed with medication plus therapy, and that is how we approach it here. Medication treats the biology of mood episodes. Therapy helps you recognize early warning signs, protect your sleep, and repair what episodes may have damaged. Your prescriber coordinates with your therapist, with your permission, so the two halves of your plan stay in step.
 
-[Medication management](/medication-management) is central. Tiffany Roberts, PMHNP, MSN, BSN, RN-BC, is our psychiatric nurse practitioner. She works with adolescents ages 10 and up and adults. Your first visit with her is an evaluation. She reviews your history, sleep, past medications, and what has helped or hurt. If medication is appropriate, she explains the options and what to expect, and she follows up regularly to adjust. Your prescriber makes all medication decisions. Your therapist does not.
+[Medication management](/medication-management) is central. Our psychiatric nurse practitioner works with adolescents ages 10 and up and adults. Your first visit with her is an evaluation. She reviews your history, sleep, past medications, and what has helped or hurt. If medication is appropriate, she explains the options and what to expect, and she follows up regularly to adjust. Your prescriber makes all medication decisions. Your therapist does not.
 
 [Individual therapy](/therapy/individual-therapy) gives you a place to learn your own pattern. Your therapist helps you track mood and sleep, spot the first signs of an episode, and build a plan for what to do when you see them. Therapy also treats what often travels with bipolar disorder: anxiety, shame after an episode, and strain at work or school. Several of our clinicians, including our Nassau Clinical Director, list bipolar disorder as a specialty.
 
@@ -67,13 +67,13 @@ If you are already seeing a psychiatrist elsewhere and want therapy here, that w
 
 ## Where and how
 
-Medication management is available in person at Rockville Centre, Garden City, Massapequa, and Smithtown, and by telehealth. Therapy is available at all five offices, including Port Jefferson, and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Telehealth for medication management is subject to state rules; the Welcome Team confirms what applies to you. [NEEDS: confirm telehealth prescribing states for Tiffany Roberts]
+Medication management is available in person at Rockville Centre, Garden City, Massapequa, and Smithtown, and by telehealth. Therapy is available at all five offices, including Port Jefferson, and by telehealth to clients in New York when a video visit is available. Telehealth for medication management is subject to state rules; the Welcome Team confirms what applies to you.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown]
 
 ## Who you might work with
 
-Tiffany Roberts, PMHNP, provides medication management. These therapists list bipolar disorder or mood disorders among their specialties. The Welcome Team matches you based on fit and availability.
+Our prescriber provides medication management. These therapists list bipolar disorder or mood disorders among their specialties. The Welcome Team matches you based on fit and availability.
 
 [PROVIDER CARDS: specialty=bipolar]
 
@@ -93,7 +93,7 @@ You can start there, and some people do while they decide. Your therapist will b
 
 ### Do you treat teens with bipolar disorder?
 
-Yes. Tiffany Roberts sees adolescents ages 10 and up, and several of our therapists specialize in teens. Diagnosis in adolescents is done carefully, since mood swings are also part of normal development. Parents are part of the plan.
+Yes. Our prescriber sees adolescents ages 10 and up, and several of our therapists specialize in teens. Diagnosis in adolescents is done carefully, since mood swings are also part of normal development. Parents are part of the plan.
 
 ### Is treatment covered by insurance?
 
@@ -107,7 +107,6 @@ If your moods have been running your life, tell the Welcome Team. They will set 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -130,7 +129,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/bipolar-disorder#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

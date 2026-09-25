@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "grief therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/individual-therapy, /therapy/family-therapy, /therapy/trauma-therapy]
@@ -72,7 +72,7 @@ Grief affects the body as well as the mind. Your care plan may include [medicati
 
 ## Where it is offered
 
-Grief therapy is available in person at all of our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida.
+Grief therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -84,7 +84,7 @@ Grief therapy is available in person at all of our Long Island offices and by te
 
 ## Insurance and cost
 
-Grief therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Grief therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -120,7 +120,6 @@ Tell the Welcome Team who you lost and what has been hardest since. They will se
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -143,7 +142,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/grief-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

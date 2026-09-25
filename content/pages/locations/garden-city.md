@@ -1,14 +1,14 @@
 ---
 url: /locations/garden-city
-title: "Therapy and Wellness in Garden City, NY | Pathways Within"
+title: "Pathways Within in Garden City, NY | Pathways Within"
 meta: "Pathways Within Garden City at 647 Franklin Ave offers therapy for adults, couples, teens, and children, plus medication management. Book a 360 intake."
-h1: "Therapy and Wellness in Garden City, NY"
+h1: "Pathways Within in Garden City, NY"
 page_type: location
 pillar: none
 target_query: "therapist Garden City NY"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/child-therapy, /therapy/pcit]
@@ -18,41 +18,25 @@ providers: []
 hero_image: "[NEEDS: image] Entrance to the Pathways Within Garden City office on Franklin Avenue"
 ---
 
-# Therapy and Wellness in Garden City, NY
+# Pathways Within in Garden City, NY
 
 Pathways Within Garden City is at 647 Franklin Ave, Lower Level, Garden City, NY 11530, in central Nassau County. This office has served as a therapy location for years. It is now becoming a multipurpose office where therapy and wellness share the same space. Licensed therapists see adults, couples, teens, and children here, and massage and acupuncture appointments are being added. [NEEDS: confirm which wellness services are live in Garden City and the start date]
 
-Our second Garden City office across the street has closed. All appointments now take place at 647 Franklin Ave. [NEEDS: confirm ZIP 11530]
+The Garden City office at 520 Franklin Ave is closed. All appointments at this location are at 647 Franklin Ave.
 
 [CTA] Start your 360 intake -> /contact
 
-## Services at this office
+Services are scheduled by the Welcome Team. Offerings can include pop-up events, so this page does not assign a fixed menu to the office.
 
-Every service below is offered in person at Garden City. Availability depends on which providers are scheduled here, so the Welcome Team confirms your options during your 360 intake.
-
-- [Individual therapy](/therapy/individual-therapy) for adults
-- [Couples therapy](/therapy/couples-therapy)
-- [Child therapy](/therapy/child-therapy), including [Parent Child Interaction Therapy](/therapy/pcit) [NEEDS: confirm PCIT is still offered at Garden City; the old site listed it here]
-- [Teen therapy](/therapy/teen-therapy)
-- [Medication management](/medication-management) with our psychiatric nurse practitioner
-- [Massage therapy](/wellness/massage) [NEEDS: confirm]
-- [Acupuncture](/wellness/acupuncture) [NEEDS: confirm]
-
-Browse the full [therapy](/therapy) and [wellness](/wellness) menus to see everything the practice offers. Services not available in Garden City are usually available at Rockville Centre, a short drive south, or by [telehealth](/telehealth).
 
 ## Getting here
 
-The office is at 647 Franklin Ave, Garden City, NY 11530, on the lower level. [NEEDS: confirm parking; the old site said each location has dedicated parking]
+The office is at 647 Franklin Ave, Lower Level, Garden City, NY 11530. Parking is available and varies, from a lot to on-street parking.
 
-Accessibility: This office is on a lower level reached by stairs and is not wheelchair accessible. Telehealth and our Rockville Centre and Smithtown offices are accessible alternatives.
+Accessibility: Lower level, reached by stairs. This office is not wheelchair accessible. Rockville Centre, Smithtown, and Port Jefferson are accessible alternatives, and New York telehealth is available when a video visit fits.
 
-If stairs are a barrier, tell the Welcome Team when you book. They can schedule you at [Rockville Centre](/locations/rockville-centre) or [Smithtown](/locations/smithtown), or match you with a provider who offers telehealth.
+If stairs are a barrier, tell the Welcome Team when you book. They can schedule you at [Rockville Centre](/locations/rockville-centre), [Smithtown](/locations/smithtown), or [Port Jefferson](/locations/port-jefferson), or match you with New York telehealth when a video visit fits.
 
-## Hours
-
-Front desk hours: [NEEDS: front desk hours per location]
-
-Clinician and provider appointment times vary and may fall outside front desk hours, including evenings.
 
 ## Providers at this office
 
@@ -60,7 +44,7 @@ Clinician and provider appointment times vary and may fall outside front desk ho
 
 [NEEDS: assign providers to offices in the sheet]
 
-Garden City is part of our Nassau County team, led by Joe Bush, LCSW, Clinical Director for Nassau. Therapists here work with children, teens, adults, couples, and families.
+Therapists here work with children, teens, adults, couples, and families. The Welcome Team matches you with someone scheduled at this office.
 
 ## Nearby communities we serve
 
@@ -74,7 +58,7 @@ No. The office is on a lower level reached by stairs, with no elevator. If you u
 
 ### Do you offer telehealth if I cannot get there?
 
-Yes. Most of our therapists and our psychiatric nurse practitioner see clients by video in New York, New Jersey, North Carolina, and Florida. Massage and acupuncture are in person only. Read more at [telehealth](/telehealth).
+Yes. Most of our therapists and our psychiatric nurse practitioner see clients by video in New York when a video visit is available. Massage and acupuncture are in person only. Read more at [telehealth](/telehealth).
 
 ### Which insurance plans do you accept in Garden City?
 
@@ -92,7 +76,6 @@ Tell the Welcome Team what you are looking for and that Garden City is your clos
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -110,12 +93,12 @@ Or call (631) 371-3825.
       "@type": "WebPage",
       "@id": "https://pathwayswithinwellness.com/locations/garden-city#webpage",
       "url": "https://pathwayswithinwellness.com/locations/garden-city",
-      "name": "Therapy and Wellness in Garden City, NY | Pathways Within",
+      "name": "Pathways Within in Garden City, NY | Pathways Within",
       "isPartOf": {"@id": "https://pathwayswithinwellness.com/#website"},
       "about": {"@id": "https://pathwayswithinwellness.com/locations/garden-city#place"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {
@@ -134,7 +117,6 @@ Or call (631) 371-3825.
       "telephone": "+1-631-371-3825",
       "url": "https://pathwayswithinwellness.com/locations/garden-city",
       "geo": {"@type": "GeoCoordinates", "latitude": "[NEEDS: lat to 5 decimals]", "longitude": "[NEEDS: long to 5 decimals]"},
-      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "[NEEDS]", "closes": "[NEEDS]"}],
       "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Wheelchair accessible", "value": false}],
       "hasMap": "[NEEDS: Google Maps URL]"
     }

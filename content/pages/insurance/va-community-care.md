@@ -8,7 +8,7 @@ pillar: none
 target_query: "VA Community Care therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/veterans-first-responders, /therapy/individual-therapy, /medication-management]
@@ -47,7 +47,7 @@ Your Welcome Team contact stays with you from there, including when an authoriza
 
 ## Out of network and self pay options
 
-If you do not have an authorization, or your authorization does not cover a service you want, you can still be seen. Self pay is available for every service at Pathways Within. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+If you do not have an authorization, or your authorization does not cover a service you want, you can still be seen. Self pay is available for every service at Pathways Within. We accept cash, major credit cards, and HSA and FSA cards. 
 
 Veterans also sometimes carry other insurance alongside VA benefits. Tell the Welcome Team about every plan you have and they will verify each one.
 
@@ -55,7 +55,7 @@ Veterans also sometimes carry other insurance alongside VA benefits. Tell the We
 
 Veterans are seen at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Accessibility differs by office, and the [locations](/locations) page lists which offices have stairs.
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. Whether your authorization covers video sessions is something the Welcome Team confirms with you.
+Telehealth is available to clients in New York when a video visit is available. Whether your authorization covers video sessions is something the Welcome Team confirms with you.
 
 ## Common questions
 
@@ -79,7 +79,6 @@ Tell the Welcome Team you are a veteran and whether you have a VA referral yet. 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -102,7 +101,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

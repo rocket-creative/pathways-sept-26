@@ -8,7 +8,7 @@ pillar: none
 target_query: "therapist jobs Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: []
@@ -41,7 +41,6 @@ Apply through WizeHire. The clinical director for your region reviews applicatio
 
 Email [NEEDS: careers bucket email] or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -63,7 +62,7 @@ Email [NEEDS: careers bucket email] or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

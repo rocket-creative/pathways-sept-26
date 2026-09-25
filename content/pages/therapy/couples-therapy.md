@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "couples therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/somatic-therapy, /therapy/family-therapy, /therapy/individual-therapy]
@@ -72,17 +72,17 @@ When it helps, one or both partners may add [individual therapy](/therapy/indivi
 
 ## Where it is offered
 
-Couples therapy is available in person at all of our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Partners can join a telehealth session from the same room or from two locations.
+Couples therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. Partners can join a telehealth session from the same room or from two locations.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
 ## Who provides it
 
-[PROVIDER CARDS: paula-gonthier, kalovna-edmond, frank-tropeano, lindsay-laier, rachel-lessard]
+[PROVIDER CARDS: paula-gonthier, kalovna-edmond, frank-tropeano, lindsay-laier]
 
 ## Insurance and cost
 
-Some plans cover couples therapy and some do not. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Some plans cover couples therapy and some do not. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -104,7 +104,7 @@ We cannot guarantee your relationship will continue the way you hope. We can say
 
 ### Can we do couples therapy over telehealth?
 
-Yes. Many couples find video sessions easier to fit around work and childcare. Your therapist runs the session the same way and can see both of you at once. Telehealth is available in New York, New Jersey, North Carolina, and Florida.
+Yes. Many couples find video sessions easier to fit around work and childcare. Your therapist runs the session the same way and can see both of you at once. Telehealth is available in New York when a video visit is available.
 
 ## Take the next step
 
@@ -114,7 +114,6 @@ Tell the Welcome Team what has been happening between you. They will set up your
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -137,7 +136,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/couples-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

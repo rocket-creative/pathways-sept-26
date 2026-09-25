@@ -9,12 +9,8 @@
  */
 import { SITE_ORIGIN, getLocation, getLocations, isNeeds, type Location } from "@/lib/content";
 
-/** Placed under every hours block, per MASTER-PROMPT section 5. */
-export const APPOINTMENT_HOURS_SENTENCE =
-  "Clinician and provider appointment times vary and may fall outside front desk hours, including evenings.";
-
-/** The marker the location pages already use for missing hours. */
-export const HOURS_NEEDS = "front desk hours per location";
+/** Working hours are not published. Appointment times are set with the Welcome Team. */
+export const APPOINTMENT_HOURS_SENTENCE = "";
 
 /**
  * Three states, because the sheet has true, false, and [NEEDS]. Unknown never
@@ -74,12 +70,11 @@ export function accessibilitySentence(location: Location): string | null {
   return isNeeds(location.accessibility_note) ? null : location.accessibility_note;
 }
 
-export function hoursBlock(location: Location): HoursBlock {
-  const known = !isNeeds(location.front_desk_hours);
+export function hoursBlock(_location: Location): HoursBlock {
   return {
-    frontDeskHours: known ? location.front_desk_hours : null,
-    needs: known ? null : HOURS_NEEDS,
-    sentence: APPOINTMENT_HOURS_SENTENCE,
+    frontDeskHours: null,
+    needs: null,
+    sentence: "",
   };
 }
 
@@ -98,7 +93,7 @@ export function toLocationCard(location: Location): LocationCardData {
     url: locationUrl(location.slug),
     addressLine: location.addressLine,
     accessibility: state,
-    accessibilityLabel: accessibilityLabel(state),
+    accessibilityLabel: note ?? accessibilityLabel(state),
     accessibilityNote: note,
     accessibilityNeeds: state === "unknown" && !note ? `accessibility for ${location.name}` : null,
   };
@@ -210,7 +205,7 @@ export function locationNeeds(): { slug: string; needs: string[] }[] {
     const needs: string[] = [];
     if (isNeeds(location.suite)) needs.push("suite number");
     if (accessibilityState(location) === "unknown") needs.push("wheelchair access");
-    if (isNeeds(location.front_desk_hours)) needs.push(HOURS_NEEDS);
+    // Hours are intentionally unpublished. Do not ask for them again.
     if (isNeeds(location.parking)) needs.push("parking");
     if (!location.latitude || !location.longitude) needs.push("lat and long to 5 decimals");
     if (!location.google_maps_url) needs.push("Google Maps URL and embed");

@@ -1,14 +1,14 @@
 ---
 url: /wellness/acupuncture
 title: "Licensed Acupuncture on Long Island | Pathways Within"
-meta: "Acupuncture with Leonard Ma, L.Ac. at Pathways Within supports pain, tension, headaches, sleep, and recovery. In person at our Long Island offices."
+meta: "Acupuncture at Pathways Within supports pain, tension, headaches, sleep, and recovery. In person at our Long Island offices."
 h1: "Acupuncture on Long Island"
 page_type: service
 pillar: wellness
 target_query: "acupuncture Long Island"
 author: "Leonard Ma, L.Ac."
 reviewer: "Leonard Ma, L.Ac."
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/wellness/massage, /wellness/cupping, /therapy/somatic-therapy]
@@ -142,7 +142,6 @@ Begin with a clinical consultation. Tell the Welcome Team what you are experienc
 
 Or call (631) 371-3825.
 
-**Written by** [Leonard Ma, L.Ac.](/providers/leonard-ma). **Clinically reviewed by** [Leonard Ma, L.Ac.](/providers/leonard-ma). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -165,7 +164,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/wellness/acupuncture#procedure"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/leonard-ma#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/leonard-ma#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

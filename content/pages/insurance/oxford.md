@@ -1,14 +1,14 @@
 ---
 url: /insurance/oxford
 title: "Oxford Therapy Coverage on Long Island | Pathways Within"
-meta: "Have an Oxford plan and need a therapist on Long Island? Pathways Within works with Oxford for therapy and medication management. We verify your benefits."
+meta: "Have an Oxford plan and need a therapist on Long Island? Pathways Within may participate with Oxford for therapy and medication management. We verify your benefits."
 h1: "Therapists Who Accept Oxford on Long Island"
 page_type: insurance
 pillar: none
 target_query: "therapist that takes Oxford Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -43,7 +43,7 @@ That Welcome Team member stays your point of contact. The full process is descri
 
 ## Out of network and self pay options
 
-If your Oxford plan turns out to be out of network for the clinician you want, or for a service, the Welcome Team tells you before anything is billed. Every service at Pathways Within can be paid for directly. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+If your Oxford plan turns out to be out of network for the clinician you want, or for a service, the Welcome Team tells you before anything is billed. Every service at Pathways Within can be paid for directly. We accept cash, major credit cards, and HSA and FSA cards. 
 
 For out of network reimbursement, ask the Welcome Team whether a superbill fits your plan.
 
@@ -51,7 +51,7 @@ For out of network reimbursement, ask the Welcome Team whether a superbill fits 
 
 Oxford clients are seen in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Office details, including accessibility, are on the [locations](/locations) page.
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. The Welcome Team checks how your plan handles video sessions during verification.
+Telehealth is available to clients in New York when a video visit is available. The Welcome Team checks how your plan handles video sessions during verification.
 
 ## Common questions
 
@@ -79,7 +79,6 @@ Tell the Welcome Team you have Oxford and what you want to work on. They will sc
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -102,7 +101,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

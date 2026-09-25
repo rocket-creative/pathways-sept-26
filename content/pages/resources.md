@@ -8,7 +8,7 @@ pillar: none
 target_query: "therapy worksheets and handouts"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy, /medication-management, /wellness]
@@ -50,7 +50,6 @@ If a resource raised a question, bring it to your next session or contact the We
 
 [CTA] Contact the Welcome Team -> /contact
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -72,7 +71,7 @@ If a resource raised a question, bring it to your next session or contact the We
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

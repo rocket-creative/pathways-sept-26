@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "chronic pain therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/hypnotherapy, /therapy/somatic-therapy, /wellness/acupuncture, /wellness/massage, /medication-management]
@@ -45,11 +45,11 @@ Your medical team keeps treating the condition. We treat the toll it takes and, 
 
 [Individual therapy](/therapy/individual-therapy) is the foundation. Kathleen Dimartino, LMSW, specializes in chronic pain and chronic illness. She and other clinicians help you pace activity instead of pushing and crashing, talk to doctors and family more effectively, and grieve what the condition took. You also work on the depression and anxiety that so often ride along with pain.
 
-[Hypnotherapy](/therapy/hypnotherapy) with Rachel Lessard, LCSW-R, uses focused attention and relaxation to change how the brain registers pain signals and to reduce the tension that amplifies them. You stay aware and in control the whole time. [NEEDS: citation for "hypnosis for chronic pain"]
+[Hypnotherapy](/therapy/hypnotherapy) uses focused attention and relaxation to change how the brain registers pain signals and to reduce the tension that amplifies them. You stay aware and in control the whole time. [NEEDS: citation for "hypnosis for chronic pain"]
 
 [Somatic therapy](/therapy/somatic-therapy) teaches you to work with your nervous system directly. Chronic pain keeps the body braced. A somatic therapist helps you notice that bracing and release it, which many clients find lowers the volume on pain and improves sleep.
 
-[Acupuncture](/wellness/acupuncture) with Leonard Ma, L.Ac., addresses musculoskeletal pain, headaches, and sleep, and includes cupping and electrical stimulation when appropriate. [Massage](/wellness/massage), including medical massage, works on the muscle tension that pain conditions create. Both are available at the same practice, and both providers coordinate with your therapist, with your permission. NCCIH summarizes what research shows about [acupuncture](https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety) and [massage therapy](https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know) for pain conditions. NYSHIP is accepted for eligible medical massage.
+[Acupuncture](/wellness/acupuncture) addresses musculoskeletal pain, headaches, and sleep, and includes cupping and electrical stimulation when appropriate. [Massage](/wellness/massage), including medical massage, works on the muscle tension that pain conditions create. Both are available at the same practice, and both providers coordinate with your therapist, with your permission. NCCIH summarizes what research shows about [acupuncture](https://www.nccih.nih.gov/health/acupuncture-effectiveness-and-safety) and [massage therapy](https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know) for pain conditions.
 
 ## What your first weeks look like
 
@@ -59,11 +59,11 @@ The team builds a plan across therapy, body care, and medication management as n
 
 ## Medication, therapy, or both
 
-Pathways Within does not prescribe pain medication. Your pain management is between you and your medical doctors. What we can address is the mood side. Tiffany Roberts, PMHNP, our psychiatric nurse practitioner, provides [medication management](/medication-management) for depression, anxiety, and sleep problems that come with chronic illness. She reviews everything you already take and coordinates with your outside doctors and your therapist here, with your permission. Many clients on this page do well with therapy and body care alone.
+Pathways Within does not prescribe pain medication. Your pain management is between you and your medical doctors. What we can address is the mood side. Our psychiatric nurse practitioner provides [medication management](/medication-management) for depression, anxiety, and sleep problems that come with chronic illness. She reviews everything you already take and coordinates with your outside doctors and your therapist here, with your permission. Many clients on this page do well with therapy and body care alone.
 
 ## Where and how
 
-Therapy and hypnotherapy are offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. On a bad pain day, you can keep a telehealth session from bed. Acupuncture and massage are in person at Rockville Centre, Garden City, and Smithtown. Garden City and Massapequa are reached by stairs and are not wheelchair accessible. Rockville Centre and Smithtown are the accessible options. [NEEDS: confirm Rockville Centre elevator access after the third floor buildout]
+Therapy and hypnotherapy are offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York when a video visit is available. On a bad pain day, you can keep a telehealth session from bed. Acupuncture and massage are in person at Rockville Centre, Garden City, and Smithtown. Garden City and Massapequa are reached by stairs and are not wheelchair accessible. Rockville Centre and Smithtown are the accessible options. [NEEDS: confirm Rockville Centre elevator access after the third floor buildout]
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -85,15 +85,15 @@ No. You can contact the Welcome Team directly. We do ask about your medical team
 
 ### What if I cannot get to an office?
 
-Telehealth is available for therapy and hypnotherapy in New York, New Jersey, North Carolina, and Florida. For body care, which has to be in person, the Welcome Team helps you choose the office that is easiest to reach. Rockville Centre and Smithtown are the accessible offices.
+Telehealth is available for therapy and hypnotherapy in New York when a video visit is available. For body care, which has to be in person, the Welcome Team helps you choose the office that is easiest to reach. Rockville Centre and Smithtown are the accessible offices.
 
 ### Is acupuncture safe if I have a medical condition?
 
-Leonard Ma reviews your medical history before your first visit. Tell him about blood thinners, pacemakers, pregnancy, or any condition you are treating. He coordinates with your doctors when needed. The NCCIH page linked above covers safety.
+Your acupuncturist reviews your medical history before your first visit. Mention blood thinners, pacemakers, pregnancy, or any condition you are treating. They coordinate with your doctors when needed. The NCCIH page linked above covers safety.
 
 ### Does insurance cover this?
 
-Therapy and hypnotherapy are billed as psychotherapy, which most plans with mental health benefits cover. Acupuncture and massage coverage is more limited, though NYSHIP is accepted for eligible medical massage. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+Therapy and hypnotherapy are billed as psychotherapy, which most plans with mental health benefits cover. Acupuncture and massage coverage is more limited, though Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -103,7 +103,6 @@ You have been managing this on your own long enough. Tell the Welcome Team about
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -126,7 +125,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/chronic-pain-and-illness#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

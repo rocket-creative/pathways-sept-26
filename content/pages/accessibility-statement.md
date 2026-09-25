@@ -8,7 +8,7 @@ pillar: none
 target_query: "Pathways Within accessibility"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: []
@@ -46,7 +46,6 @@ Tell the Welcome Team what you need, including large print materials, extra time
 
 Email Welcome@pathwayswithin.com with the page or office and what happened, or call (631) 371-3825. We respond within [NEEDS: response time] business days and fix what we can.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -68,7 +67,7 @@ Email Welcome@pathwayswithin.com with the page or office and what happened, or c
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

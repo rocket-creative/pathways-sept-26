@@ -1,14 +1,14 @@
 ---
 url: /insurance-and-fees
 title: "Insurance and Fees for Care on Long Island | Pathways Within"
-meta: "Pathways Within works with Aetna, Cigna, Optum, UnitedHealthcare, Oxford, Medicare, and 1199SEIU. The Welcome Team verifies benefits after your intake."
+meta: "Insurance at Pathways Within varies by provider, service, and plan. Send the contact form and the Welcome Team confirms your benefits."
 h1: "Insurance and Fees"
 page_type: hub
 pillar: none
 target_query: "therapist that takes insurance Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/therapy, /medication-management, /wellness]
@@ -20,19 +20,17 @@ hero_image: "[NEEDS: image] A Welcome Team member reviewing a benefits summary w
 
 # Insurance and Fees
 
-Pathways Within works with most major insurance plans for therapy and medication management, accepts NYSHIP for eligible medical massage, and holds a limited number of sliding scale spots for people paying out of pocket. Coverage varies by provider, service, and plan. You do not have to sort it out before you call. The Welcome Team verifies your benefits after your 360 intake and tells you what to expect before your first appointment.
+Insurance participation varies by provider, service, and plan. Some mental health, medication management, acupuncture, and other services may be covered. You do not need to know your benefits before you write. Send the contact form, and the Welcome Team explains the options from your card. 
 
 [CTA] Start your 360 intake -> /contact
 
-## Plans we work with
+## Plans people ask about
 
-The plans listed on our intake form are below. Click any plan for what it typically covers here and how verification works.
+These pages explain how verification works. They are not a promise that a plan is in network.
 
 [Aetna](/insurance/aetna) · [Anthem Blue Cross](/insurance/anthem-blue-cross) · [Carelon Behavioral Health](/insurance/carelon) · [Cigna](/insurance/cigna) · [1199SEIU](/insurance/1199seiu) · [Local 810](/insurance/local-810) · [Magnacare](/insurance/magnacare) · [Medicare](/insurance/medicare) · [Northwell Direct](/insurance/northwell-direct) · [Optum](/insurance/optum) · [Oscar](/insurance/oscar) · [Oxford](/insurance/oxford) · [UnitedHealthcare](/insurance/unitedhealthcare) · [UMR](/insurance/umr) · [VA Community Care](/insurance/va-community-care) · [NYSHIP](/insurance/nyship)
 
-Our previous site also listed Meritain, Humana, Student Resource, Allied Benefit, ComPsych, MVP, and Northwell Brighton Health. [NEEDS: confirm which of these are still accepted and add pages for any that are]
-
-Participation can differ by clinician. Some of our providers are in network with a plan and others are not, so the Welcome Team matches you with the plan in mind when that matters to you.
+Participation can differ from one provider to another. The Welcome Team matches you with that in mind.
 
 ## How verification works
 
@@ -45,21 +43,13 @@ Insurance is a question we answer, not a gate you have to pass.
 
 ## Out of network and self pay
 
-If your plan is out of network for a provider, or you prefer not to use insurance, you pay at the time of service and we provide a superbill you can submit to your insurer for possible reimbursement. Magnacare and NYSHIP are out of network for therapy per our current participation [NEEDS: confirm].
+If your plan is out of network for a provider, or you prefer not to use insurance, you pay at the time of service and we provide a superbill you can submit to your insurer for possible reimbursement.
 
-We accept cash, major credit cards, and HSA and FSA funds. [NEEDS: self pay rates for therapy, medication management, coaching, and each wellness service, or a statement that rates are quoted by the Welcome Team]
-
-## Sliding scale
-
-We hold a limited number of sliding scale spots based on financial need and availability. If you are paying out of pocket and cost is a concern, say so when you call. The goal is to make care possible, and the team will tell you plainly what is available.
-
-## Wellness services
-
-Massage, acupuncture, cupping, energy work, and coaching are usually self pay. Two exceptions: NYSHIP for eligible medical massage, and some plans that cover acupuncture. [NYSHIP details](/insurance/nyship). [NEEDS: wellness and coaching price list]
+We accept cash, major credit cards, and HSA and FSA funds. The Welcome Team quotes fees. We do not post rates on the site.
 
 ## Cancellations and no shows
 
-[NEEDS: cancellation window and fee. The previous site stated both 72 hours with a $75 fee and 24 hours; clinical leadership must confirm one policy before this section is published.]
+Cancellation policies can vary by service. The Welcome Team explains the policy that applies when you book. We do not publish a single window or fee here.
 
 ## Good faith estimate
 
@@ -81,7 +71,7 @@ Most plans that cover mental health care cover psychiatric evaluation and medica
 
 ### Does insurance cover massage or acupuncture?
 
-Massage is covered for eligible NYSHIP members as medical massage. Acupuncture coverage depends on the plan; the Welcome Team can check. Energy work and coaching are self pay.
+It depends on the provider, the service, and the plan. Send the contact form and the Welcome Team checks. We do not post a coverage list here.
 
 ### Can I use my HSA or FSA?
 
@@ -93,7 +83,6 @@ Yes, for therapy, medication management, and eligible wellness services. Ask the
 
 Or call (631) 371-3825. Questions about a bill: [NEEDS: billing bucket email].
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -115,7 +104,7 @@ Or call (631) 371-3825. Questions about a bill: [NEEDS: billing bucket email].
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

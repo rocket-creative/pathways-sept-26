@@ -2,13 +2,13 @@
 url: /locations/massapequa
 title: "Therapy and Medication in Massapequa, NY | Pathways Within"
 meta: "Pathways Within Massapequa at 4160 Merrick Road offers therapy for adults, couples, teens, and children, plus medication management. Book a 360 intake."
-h1: "Therapy and Wellness in Massapequa, NY"
+h1: "Pathways Within in Massapequa, NY"
 page_type: location
 pillar: none
 target_query: "therapist Massapequa NY"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/teen-therapy, /medication-management]
@@ -18,39 +18,23 @@ providers: []
 hero_image: "[NEEDS: image] Therapy office at Pathways Within Massapequa on Merrick Road"
 ---
 
-# Therapy and Wellness in Massapequa, NY
+# Pathways Within in Massapequa, NY
 
-Pathways Within Massapequa is at 4160 Merrick Road, [NEEDS: upstairs suite number], Massapequa, NY 11758, on the South Shore of Nassau County. Licensed therapists see adults, couples, teens, and children here, and our psychiatric nurse practitioner offers medication management. This office focuses on therapy and medication management. Wellness services such as massage and acupuncture are offered at our Rockville Centre and Smithtown offices instead.
-
-Our upstairs suite stays open. The lower level suite at this address closed at the end of August 2026, so please use the upstairs entrance. [NEEDS: confirm which of the old Suites 5 and 7 remains, and confirm ZIP 11758]
+Pathways Within Massapequa is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. Therapy and medication management are offered here. Suite 5 at this address is closed. Wellness services such as massage and acupuncture are offered at Rockville Centre and Smithtown.
 
 [CTA] Start your 360 intake -> /contact
 
-## Services at this office
+Services are scheduled by the Welcome Team. Offerings can include pop-up events, so this page does not assign a fixed menu to the office.
 
-Every service below is offered in person at Massapequa. The Welcome Team confirms which providers are scheduled here during your 360 intake.
-
-- [Individual therapy](/therapy/individual-therapy) for adults
-- [Couples therapy](/therapy/couples-therapy)
-- [Child therapy](/therapy/child-therapy)
-- [Teen therapy](/therapy/teen-therapy)
-- [Medication management](/medication-management) for adolescents ages 10 and up and adults
-
-Browse the full [therapy](/therapy) menu to see every approach we offer, including EMDR, IFS, and trauma therapy. For [wellness](/wellness) services, the Welcome Team can book you at Rockville Centre, about 20 minutes west, or pair an in person therapist here with telehealth for other care.
 
 ## Getting here
 
-The office is at 4160 Merrick Road, Massapequa, NY 11758, upstairs. [NEEDS: confirm parking; the old site said each location has dedicated parking]
+The office is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. Parking is available and varies, from a lot to on-street parking.
 
-Accessibility: This office is upstairs by stairs and is not wheelchair accessible. Telehealth and our Rockville Centre and Smithtown offices are accessible alternatives.
+Accessibility: Reached by stairs. This office is not wheelchair accessible. Rockville Centre, Smithtown, and Port Jefferson are accessible alternatives, and New York telehealth is available when a video visit fits.
 
-If stairs are a barrier, tell the Welcome Team when you book. They can schedule you at [Rockville Centre](/locations/rockville-centre) or [Smithtown](/locations/smithtown), or match you with a provider who offers [telehealth](/telehealth).
+If stairs are a barrier, tell the Welcome Team when you book. They can schedule you at [Rockville Centre](/locations/rockville-centre), [Smithtown](/locations/smithtown), or [Port Jefferson](/locations/port-jefferson), or match you with New York telehealth when a video visit fits.
 
-## Hours
-
-Front desk hours: [NEEDS: front desk hours per location]
-
-Clinician and provider appointment times vary and may fall outside front desk hours, including evenings.
 
 ## Providers at this office
 
@@ -58,7 +42,7 @@ Clinician and provider appointment times vary and may fall outside front desk ho
 
 [NEEDS: assign providers to offices in the sheet]
 
-Massapequa is part of our Nassau County team, led by Joe Bush, LCSW, Clinical Director for Nassau. Tiffany Roberts, PMHNP, our psychiatric nurse practitioner, sees clients here for medication management. [NEEDS: confirm Tiffany's in person days at Massapequa]
+The Welcome Team matches you with a provider scheduled at this office. You do not need to choose someone before you reach out.
 
 ## Nearby communities we serve
 
@@ -72,7 +56,7 @@ No. The suite is upstairs and reached only by stairs. If you use a wheelchair or
 
 ### Do you offer telehealth if I cannot get there?
 
-Yes. Most of our therapists and our psychiatric nurse practitioner see clients by video in New York, New Jersey, North Carolina, and Florida. Many clients mix in person visits at Massapequa with video sessions when life gets busy. Read more at [telehealth](/telehealth).
+Yes. Most of our therapists and our psychiatric nurse practitioner see clients by video in New York when a video visit is available. Many clients mix in person visits at Massapequa with video sessions when life gets busy. Read more at [telehealth](/telehealth).
 
 ### Which insurance plans do you accept in Massapequa?
 
@@ -90,7 +74,6 @@ Tell the Welcome Team what you are looking for and that Massapequa is your close
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -113,7 +96,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/locations/massapequa#place"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {
@@ -123,7 +106,7 @@ Or call (631) 371-3825.
       "parentOrganization": {"@id": "https://pathwayswithinwellness.com/#org"},
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "4160 Merrick Road, [NEEDS: upstairs suite number]",
+        "streetAddress": "4160 Merrick Road, Suite 7",
         "addressLocality": "Massapequa",
         "addressRegion": "NY",
         "postalCode": "11758",
@@ -132,7 +115,6 @@ Or call (631) 371-3825.
       "telephone": "+1-631-371-3825",
       "url": "https://pathwayswithinwellness.com/locations/massapequa",
       "geo": {"@type": "GeoCoordinates", "latitude": "[NEEDS: lat to 5 decimals]", "longitude": "[NEEDS: long to 5 decimals]"},
-      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "[NEEDS]", "closes": "[NEEDS]"}],
       "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Wheelchair accessible", "value": false}],
       "hasMap": "[NEEDS: Google Maps URL]"
     }

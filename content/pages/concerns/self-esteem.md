@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "self esteem therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/ifs, /therapy/teen-therapy, /therapy/group-therapy]
@@ -59,11 +59,11 @@ Your first session is about your story and your goals. Expect your therapist to 
 
 ## Medication, therapy, or both
 
-There is no medication for self esteem, and therapy is the treatment. When low self worth comes with depression or an anxiety disorder that makes it hard to function, medication can be part of the plan. Tiffany Roberts, PMHNP, our psychiatric nurse practitioner, provides [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber and your therapist coordinate with your permission. For most clients on this page, therapy alone is enough.
+There is no medication for self esteem, and therapy is the treatment. When low self worth comes with depression or an anxiety disorder that makes it hard to function, medication can be part of the plan. Our psychiatric nurse practitioner provides [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber and your therapist coordinate with your permission. For most clients on this page, therapy alone is enough.
 
 ## Where and how
 
-Self esteem therapy is offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Teens often prefer telehealth after school. Groups meet [NEEDS: group locations and format].
+Self esteem therapy is offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York when a video visit is available. Teens often prefer telehealth after school. Groups meet [NEEDS: group locations and format].
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -93,7 +93,7 @@ Confidence is about a skill: you know you can do a thing. Self esteem is about w
 
 ### Does insurance cover this?
 
-Yes in most cases, because the work is billed as psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Yes in most cases, because the work is billed as psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -103,7 +103,6 @@ You have spent enough time as your own harshest critic. Tell the Welcome Team wh
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -126,7 +125,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/self-esteem#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

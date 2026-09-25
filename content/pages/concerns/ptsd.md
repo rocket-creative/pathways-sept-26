@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "PTSD therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/emdr, /therapy/trauma-therapy, /therapy/ifs, /therapy/somatic-therapy, /therapy/veterans-first-responders, /medication-management]
@@ -45,11 +45,11 @@ There is no single trauma treatment here, because no two histories are the same.
 
 [Trauma therapy](/therapy/trauma-therapy) is the foundation. Your therapist helps you understand how trauma affects the brain and body, builds skills for calming the alarm system, and works through what happened at a pace you control. Several of our clinicians specialize in complex PTSD, sexual assault, domestic violence, and relationship trauma.
 
-[EMDR](/therapy/emdr) helps the brain finish processing memories that got stuck, without requiring you to retell every detail ([EMDR International Association](https://www.emdria.org/about-emdr-therapy/)). [IFS therapy](/therapy/ifs) helps you get to know the parts of you that carry the pain and the parts that protect you from it. [Somatic therapy](/therapy/somatic-therapy), including Somatic Experiencing with Lauren Hollander, LCSW, SEP, works with the body directly, where trauma often lives long after the mind has moved on.
+[EMDR](/therapy/emdr) helps the brain finish processing memories that got stuck, without requiring you to retell every detail ([EMDR International Association](https://www.emdria.org/about-emdr-therapy/)). [IFS therapy](/therapy/ifs) helps you get to know the parts of you that carry the pain and the parts that protect you from it. [Somatic therapy](/therapy/somatic-therapy), including Somatic Experiencing, works with the body directly, where trauma often lives long after the mind has moved on.
 
 Our [veterans and first responders program](/therapy/veterans-first-responders) is built for people whose trauma came from the job. Several clinicians, including our founder, specialize in this work and understand the culture, the repeated exposure, and the reasons it is hard to ask for help.
 
-Tiffany Roberts, PMHNP, offers [medication management](/medication-management) for adults and adolescents ages 10 and up. Your prescriber can address sleep, nightmares, panic, or depression that come with PTSD and coordinates with your therapist when you give permission.
+Our prescriber offers [medication management](/medication-management) for adults and adolescents ages 10 and up. Your prescriber can address sleep, nightmares, panic, or depression that come with PTSD and coordinates with your therapist when you give permission.
 
 ## What your first weeks look like
 
@@ -65,7 +65,7 @@ At Pathways Within you can start with either and add the other. Your therapist c
 
 ## Where and how
 
-Trauma and PTSD treatment is offered in person at all of our Long Island offices and by telehealth for clients in New York, New Jersey, North Carolina, and Florida. EMDR, IFS, and somatic work all adapt well to video.
+Trauma and PTSD treatment is offered in person at all of our Long Island offices and by telehealth for clients in New York when a video visit is available. EMDR, IFS, and somatic work all adapt well to video.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -99,7 +99,7 @@ For a single event, some clients see real change in a few months. For long stand
 
 ### Does insurance cover trauma therapy?
 
-Most plans that cover therapy cover it, and we work with VA Community Care Network. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Most plans that cover therapy cover it, and we work with VA Community Care Network. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -109,7 +109,6 @@ You have carried this long enough. Tell the Welcome Team as much or as little as
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -132,7 +131,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/ptsd#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

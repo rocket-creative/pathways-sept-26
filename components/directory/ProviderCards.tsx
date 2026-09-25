@@ -51,7 +51,12 @@ const FACET_FOR: Record<Exclude<ProviderCardFilter["by"], "slugs">, FacetKey> = 
 };
 
 export function selectProviders(filter: ProviderCardFilter): Provider[] {
-  const active = getProviders().filter((provider) => provider.active && !provider.isAdmin);
+  const active = getProviders().filter(
+    (provider) =>
+      provider.active &&
+      !provider.isAdmin &&
+      (filter.by === "slugs" || (!provider.isFounder && !provider.isSpecialist)),
+  );
 
   if (filter.by === "slugs") {
     return filter.slugs

@@ -10,7 +10,14 @@ import "./directory.css";
  */
 export default function ProviderPeers({ slug }: { slug: string }) {
   const others = getProviders()
-    .filter((provider) => provider.active && !provider.isAdmin && provider.slug !== slug)
+    .filter(
+      (provider) =>
+        provider.active &&
+        !provider.isAdmin &&
+        !provider.isFounder &&
+        !provider.isSpecialist &&
+        provider.slug !== slug,
+    )
     .map(toProviderCardData);
 
   if (!others.length) return null;

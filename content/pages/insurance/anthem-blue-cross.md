@@ -1,14 +1,14 @@
 ---
 url: /insurance/anthem-blue-cross
 title: "Anthem Blue Cross Therapy on Long Island | Pathways Within"
-meta: "Pathways Within works with Anthem Blue Cross for therapy and medication management on Long Island. Nassau and Suffolk offices or telehealth. We verify."
+meta: "Pathways Within may participate with Anthem Blue Cross for therapy and medication management on Long Island. Nassau and Suffolk offices or telehealth. We verify."
 h1: "Therapists Who Accept Anthem Blue Cross on Long Island"
 page_type: insurance
 pillar: none
 target_query: "therapist that takes Anthem Blue Cross Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -43,7 +43,7 @@ Your Welcome Team contact stays with you after that. Read the full process at [H
 
 ## Out of network and self pay options
 
-If your Anthem Blue Cross plan is out of network for the clinician you want, or does not cover a service, the Welcome Team tells you before anything is scheduled. Every service at Pathways Within is available on a self pay basis. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+If your Anthem Blue Cross plan is out of network for the clinician you want, or does not cover a service, the Welcome Team tells you before anything is scheduled. Every service at Pathways Within is available on a self pay basis. We accept cash, major credit cards, and HSA and FSA cards. 
 
 Ask the Welcome Team about a superbill if you would like to file for out of network reimbursement yourself.
 
@@ -51,7 +51,7 @@ Ask the Welcome Team about a superbill if you would like to file for out of netw
 
 Anthem Blue Cross clients are seen at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Addresses and accessibility notes for each office are on the [locations](/locations) page.
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. The Welcome Team confirms whether your plan treats video visits like office visits.
+Telehealth is available to clients in New York when a video visit is available. The Welcome Team confirms whether your plan treats video visits like office visits.
 
 ## Common questions
 
@@ -75,7 +75,6 @@ Tell the Welcome Team you have Anthem Blue Cross and what you want to work on. T
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -98,7 +97,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

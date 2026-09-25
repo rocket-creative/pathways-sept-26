@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "group therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/individual-therapy, /therapy/grief-therapy]
@@ -70,7 +70,7 @@ Many people do both. Group and individual therapy offer different benefits. Your
 
 ## Where it is offered
 
-Groups run at our Long Island offices, and some groups meet by telehealth for clients in New York, New Jersey, North Carolina, and Florida. Which office or format depends on the group.
+Groups run at our Long Island offices, and some groups meet by telehealth for clients in New York when a video visit is available. Which office or format depends on the group.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -86,7 +86,7 @@ Groups are led by licensed therapists on our clinical team. The leader depends o
 
 ## Insurance and cost
 
-Group therapy is often billed differently from individual sessions. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Group therapy is often billed differently from individual sessions. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -118,7 +118,6 @@ Tell the Welcome Team what you have been dealing with and that you are intereste
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -141,7 +140,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/group-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

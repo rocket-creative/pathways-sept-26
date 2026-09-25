@@ -8,7 +8,7 @@ pillar: wellness
 target_query: "cupping therapy Long Island"
 author: "Leonard Ma, L.Ac."
 reviewer: "Leonard Ma, L.Ac."
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/wellness/massage, /wellness/acupuncture]
@@ -94,7 +94,7 @@ Cupping is offered in person at our Long Island offices. It is not available by 
 
 ## Who provides it
 
-Massage based cupping is provided by our New York State Licensed Massage Therapists. Acupuncture based cupping is provided by Leonard Ma, L.Ac., our licensed acupuncturist.
+Massage based cupping is provided by our New York State Licensed Massage Therapists. Acupuncture based cupping is provided by our licensed acupuncturist.
 
 [PROVIDER CARDS: leonard-ma, christine-cervo, danielle-ingenito]
 
@@ -132,7 +132,6 @@ Tell the Welcome Team what you are feeling in your body. They will set up your 3
 
 Or call (631) 371-3825.
 
-**Written by** [Leonard Ma, L.Ac.](/providers/leonard-ma). **Clinically reviewed by** [Leonard Ma, L.Ac.](/providers/leonard-ma). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -155,7 +154,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/wellness/cupping#procedure"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/leonard-ma#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/leonard-ma#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

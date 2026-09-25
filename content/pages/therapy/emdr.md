@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "EMDR therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/trauma-therapy, /therapy/ifs, /therapy/somatic-therapy]
@@ -61,19 +61,19 @@ For trauma, that might mean [somatic therapy](/therapy/somatic-therapy) to settl
 
 ## Where it is offered
 
-EMDR is available in person at all of our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Eye movements and tapping both work well on video.
+EMDR is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. Eye movements and tapping both work well on video.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
 ## Who provides it
 
-[PROVIDER CARDS: carly-sandstrom, madeline-amzler, rachel-lessard]
+[PROVIDER CARDS: carly-sandstrom, madeline-amzler]
 
 [NEEDS: confirm the full list of EMDR trained clinicians; the old site did not name them]
 
 ## Insurance and cost
 
-EMDR is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need. See [insurance and fees](/insurance-and-fees).
+EMDR is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -91,7 +91,7 @@ You stay fully aware throughout. Some people feel stirred up for a day or two af
 
 ### Can EMDR be done over telehealth?
 
-Yes. Your therapist guides eye movements on screen or uses self tapping. Outcomes on video are comparable to in person for most clients, and telehealth is available in New York, New Jersey, North Carolina, and Florida.
+Yes. Your therapist guides eye movements on screen or uses self tapping. Outcomes on video are comparable to in person for most clients, and telehealth is available in New York when a video visit is available.
 
 ### How is EMDR different from trauma therapy?
 
@@ -109,7 +109,6 @@ Tell the Welcome Team what you have been carrying. They will set up your 360 int
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -132,7 +131,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/emdr#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

@@ -8,10 +8,10 @@ pillar: wellness
 target_query: "IV vitamin therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "[NEEDS: RN]"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: false
 nav: none
-related_services: [/wellness/massage, /wellness/cryotherapy, /wellness/acupuncture]
+related_services: [/wellness/massage, /wellness/acupuncture]
 related_concerns: [/concerns/stress-and-burnout, /concerns/chronic-pain-and-illness]
 locations: [rockville-centre, garden-city, smithtown]
 providers: [NEEDS: RN]
@@ -36,7 +36,7 @@ IV vitamin therapy is a wellness service. It is not a treatment for any illness,
 
 ## Who it helps
 
-Clients ask about IV therapy for general hydration and as a wellness routine alongside other services here. Whether it is appropriate for you depends entirely on the screening. Some clients pair an infusion with [massage](/wellness/massage) or [cryotherapy](/wellness/cryotherapy) on the same visit.
+Clients ask about IV therapy for general hydration and as a wellness routine alongside other services here. Whether it is appropriate for you depends entirely on the screening. Some clients pair an infusion with [massage](/wellness/massage) on the same visit.
 
 If you came in because of fatigue tied to [stress and burnout](/concerns/stress-and-burnout) or an ongoing [chronic illness](/concerns/chronic-pain-and-illness), the Welcome Team may suggest starting with therapy or a conversation with your physician rather than an infusion. IV therapy does not address the causes of fatigue.
 
@@ -106,7 +106,6 @@ Tell the Welcome Team you are interested in IV vitamin therapy. They will set up
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [NEEDS: RN]. **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -129,7 +128,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/wellness/iv-vitamin-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "[NEEDS: RN provider @id]"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

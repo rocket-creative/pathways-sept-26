@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "hypnotherapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/individual-therapy, /therapy/somatic-therapy, /therapy/trauma-therapy]
@@ -71,11 +71,11 @@ Hypnotherapy is offered in person at our Long Island offices. [NEEDS: confirm wh
 
 ## Who provides it
 
-[PROVIDER CARDS: rachel-lessard]
+The Welcome Team matches you with a clinician for this service. [Browse providers](/providers).
 
 ## Insurance and cost
 
-When hypnotherapy is part of a psychotherapy session, it is billed as psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+When hypnotherapy is part of a psychotherapy session, it is billed as psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -107,7 +107,6 @@ Tell the Welcome Team what pattern you want to change. They will set up your 360
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -130,7 +129,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/hypnotherapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

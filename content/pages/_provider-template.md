@@ -8,7 +8,7 @@ pillar: {{pillars}}
 target_query: "{{first_name}} {{last_name}} {{credentials}}"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: {{active}}
 nav: none
 related_services: [{{modalities -> service URLs}}]
@@ -72,7 +72,7 @@ Rachel Lessard and Tiffany Roberts have hand written pages at pages/providers/ra
 
 **Formats:** {{formats}}
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. Wellness services such as massage and acupuncture are in person only.
+Telehealth is available to clients in New York when a video visit is available. Wellness services such as massage and acupuncture are in person only.
 
 ## Offices
 
@@ -98,7 +98,6 @@ Tell the Welcome Team you would like to work with {{first_name}} {{last_name}}. 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026. Profile reviewed by Rachel Lessard, LCSW-R.
 
 ```json
 {
@@ -122,7 +121,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/providers/{{slug}}#person"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

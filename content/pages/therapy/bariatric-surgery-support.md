@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "bariatric surgery psychological evaluation Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/individual-therapy, /therapy/group-therapy]
@@ -60,13 +60,13 @@ Because Pathways Within offers care across therapy, medication management, and w
 
 ## Where it is offered
 
-Evaluations and counseling are available in person at our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. [NEEDS: confirm which offices Rachel sees bariatric clients at and whether surgical programs accept telehealth evaluations]
+Evaluations and counseling are available in person at our Long Island offices and by telehealth to clients in New York when a video visit is available. [NEEDS: confirm which offices Rachel sees bariatric clients at and whether surgical programs accept telehealth evaluations]
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
 ## Who provides it
 
-[PROVIDER CARDS: rachel-lessard]
+The Welcome Team matches you with a clinician for this service. [Browse providers](/providers).
 
 ## Insurance and cost
 
@@ -102,7 +102,6 @@ Tell the Welcome Team where you are in the process, whether that is a surgeon's 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -125,7 +124,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/bariatric-surgery-support#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

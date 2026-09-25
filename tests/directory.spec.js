@@ -17,7 +17,10 @@ const rows = parse(fs.readFileSync(SHEET, "utf8"), {
 });
 
 const isAdmin = (row) => /admin|front desk/i.test(row.role ?? "");
+const isFounder = (row) => /^founder$/i.test((row.role ?? "").trim());
+const isSpecialist = (row) => row.slug === "tia-baumohl" || row.slug === "tiffany-roberts";
 const isActive = (row) => row.active === "true";
+const inDirectory = (row) => isActive(row) && !isAdmin(row) && !isFounder(row) && !isSpecialist(row);
 const split = (value) =>
   (value ?? "")
     .split(";")
@@ -25,8 +28,9 @@ const split = (value) =>
     .filter(Boolean);
 
 const profileSlugs = rows.filter((row) => isActive(row) && !isAdmin(row)).map((row) => row.slug);
+const directorySlugs = rows.filter(inDirectory).map((row) => row.slug);
 const lgbtqSlugs = rows
-  .filter((row) => isActive(row) && !isAdmin(row))
+  .filter(inDirectory)
   .filter((row) => split(row.specialties).some((s) => /^LGBTQ(IA)?\+/i.test(s)))
   .map((row) => row.slug);
 
@@ -56,23 +60,24 @@ test.describe("provider directory", () => {
     expect(missing, "slugs with no link in the initial HTML").toEqual([]);
   });
 
-  test("(b) Tia Baumohl appears under ?pillar=wellness and under ?pillar=wisdom, once each", async ({
-    page,
-  }) => {
-    for (const pillar of ["wellness", "wisdom"]) {
+  test("(b) Tia and Tiffany sit in Specialists, not the clinician directory", async ({ page }) => {
+    for (const pillar of ["wellness", "wisdom", "medication"]) {
       await page.goto(`/providers?pillar=${pillar}`);
       await page.waitForSelector(DIRECTORY_READY);
       const slugs = await visibleSlugs(page);
-      expect(slugs, `?pillar=${pillar} shows tia-baumohl`).toContain("tia-baumohl");
-      expect(slugs.filter((slug) => slug === "tia-baumohl"), `one card for tia-baumohl under ${pillar}`).toHaveLength(1);
+      expect(slugs, `?pillar=${pillar} keeps Tia out of clinicians`).not.toContain("tia-baumohl");
+      expect(slugs, `?pillar=${pillar} keeps Tiffany out of clinicians`).not.toContain("tiffany-roberts");
     }
 
-    // The "all" view has her exactly once too.
     await page.goto("/providers");
     await page.waitForSelector(DIRECTORY_READY);
     const all = await visibleSlugs(page);
-    expect(all.filter((slug) => slug === "tia-baumohl")).toHaveLength(1);
+    expect(all).not.toContain("tia-baumohl");
+    expect(all).not.toContain("tiffany-roberts");
     expect(new Set(all).size, "no duplicated cards in the all view").toBe(all.length);
+    await expect(page.getByRole("heading", { name: /Collaborative Specialists/ })).toBeVisible();
+    await expect(page.locator("a[href='/providers/tia-baumohl']").first()).toBeVisible();
+    await expect(page.locator("a[href='/providers/tiffany-roberts']").first()).toBeVisible();
   });
 
   test("(c) ?specialty=LGBTQ returns at least the rows tagged LGBTQ+ and LGBTQIA+", async ({ page }) => {
@@ -85,11 +90,11 @@ test.describe("provider directory", () => {
 
   test("(c2) alias pairs: addiction also returns substance use, ADHD returns adult ADHD", async ({ page }) => {
     const substanceUse = rows
-      .filter((row) => isActive(row) && !isAdmin(row))
+      .filter(inDirectory)
       .filter((row) => split(row.specialties).some((s) => /substance use|addiction/i.test(s)))
       .map((row) => row.slug);
     const adhd = rows
-      .filter((row) => isActive(row) && !isAdmin(row))
+      .filter(inDirectory)
       .filter((row) => split(row.specialties).some((s) => /adhd/i.test(s)))
       .map((row) => row.slug);
 
@@ -110,7 +115,7 @@ test.describe("provider directory", () => {
     const slugs = await visibleSlugs(page);
 
     const expected = rows
-      .filter((row) => isActive(row) && !isAdmin(row))
+      .filter(inDirectory)
       .filter((row) => split(row.pillars).some((p) => p.toLowerCase() === "wisdom"))
       .filter((row) => split(row.specialties).some((s) => /anxiety|depression/i.test(s)))
       .map((row) => row.slug)
@@ -124,7 +129,7 @@ test.describe("provider directory", () => {
         href: card.querySelector("a")?.getAttribute("href") ?? null,
       })),
     );
-    expect(inDom.map((card) => card.slug).sort()).toEqual([...profileSlugs].sort());
+    expect(inDom.map((card) => card.slug).sort()).toEqual([...directorySlugs].sort());
     for (const card of inDom) expect(card.href).toBe(`/providers/${card.slug}`);
   });
 
@@ -202,7 +207,7 @@ const sheetSearchText = (row) =>
 /** Active profile rows whose searched text contains `word`, sorted by slug. */
 const slugsMentioning = (word) =>
   rows
-    .filter((row) => isActive(row) && !isAdmin(row))
+    .filter(inDirectory)
     .filter((row) => sheetSearchText(row).includes(word.toLowerCase()))
     .map((row) => row.slug)
     .sort();
@@ -212,19 +217,19 @@ test.describe("provider directory text search", () => {
     // A surname no other searched field (title, role, facets, bullet) repeats.
     const surname = "Squicciarini";
     const expected = rows
-      .filter((row) => isActive(row) && !isAdmin(row))
+      .filter(inDirectory)
       .filter((row) => row.last_name === surname)
       .map((row) => row.slug);
     expect(expected, "sheet has exactly one row with that surname").toHaveLength(1);
 
     await page.goto("/providers");
     await page.waitForSelector(DIRECTORY_READY);
-    expect(await visibleSlugs(page)).toHaveLength(profileSlugs.length);
+    expect(await visibleSlugs(page)).toHaveLength(directorySlugs.length);
 
     await page.fill(SEARCH_INPUT, surname);
     await expect.poll(() => visibleSlugs(page)).toEqual(expected);
     await expect(page.locator(".provider-directory__status")).toHaveText(
-      `Showing 1 of ${profileSlugs.length} providers`,
+      `Showing 1 of ${directorySlugs.length} providers`,
     );
 
     // The query is in the URL, as ?q=, and nothing else is set.
@@ -245,7 +250,7 @@ test.describe("provider directory text search", () => {
         card.getAttribute("data-slug"),
       ),
     );
-    expect(inDom.sort()).toEqual([...profileSlugs].sort());
+    expect(inDom.sort()).toEqual([...directorySlugs].sort());
   });
 
   test("(f2) /providers?q=acupuncture restores the query and shows leonard-ma", async ({ page }) => {
@@ -267,11 +272,11 @@ test.describe("provider directory text search", () => {
   test("(f3) clearing the query restores every card and the clean URL", async ({ page }) => {
     await page.goto("/providers?q=acupuncture");
     await page.waitForSelector(DIRECTORY_READY);
-    expect((await visibleSlugs(page)).length).toBeLessThan(profileSlugs.length);
+    expect((await visibleSlugs(page)).length).toBeLessThan(directorySlugs.length);
 
     // Emptying the field brings everyone back and drops ?q=.
     await page.fill(SEARCH_INPUT, "");
-    await expect.poll(async () => (await visibleSlugs(page)).length).toBe(profileSlugs.length);
+    await expect.poll(async () => (await visibleSlugs(page)).length).toBe(directorySlugs.length);
     await expect.poll(() => new URL(page.url()).search).toBe("");
     await expect(page.locator(".provider-directory__clear")).toHaveCount(0);
 
@@ -279,7 +284,7 @@ test.describe("provider directory text search", () => {
     await page.goto("/providers?q=acupuncture&pillar=wellness");
     await page.waitForSelector(DIRECTORY_READY);
     await page.click(".provider-directory__clear");
-    await expect.poll(async () => (await visibleSlugs(page)).length).toBe(profileSlugs.length);
+    await expect.poll(async () => (await visibleSlugs(page)).length).toBe(directorySlugs.length);
     await expect(page.locator(SEARCH_INPUT)).toHaveValue("");
     await expect(page.locator(".provider-directory select[name='pillars']")).toHaveValue("");
     expect(new URL(page.url()).search).toBe("");
@@ -288,7 +293,7 @@ test.describe("provider directory text search", () => {
   test("(f4) query and facet AND together, and the alias map applies to typed words", async ({ page }) => {
     // "addiction" must find the rows tagged "substance use" (SPECIALTY_ALIASES).
     const substanceUse = rows
-      .filter((row) => isActive(row) && !isAdmin(row))
+      .filter(inDirectory)
       .filter((row) => split(row.specialties).some((s) => /substance use|addiction/i.test(s)))
       .map((row) => row.slug);
     expect(substanceUse.length).toBeGreaterThan(0);
@@ -304,7 +309,7 @@ test.describe("provider directory text search", () => {
     await page.waitForSelector(DIRECTORY_READY);
     const wisdom = new Set(
       rows
-        .filter((row) => isActive(row) && !isAdmin(row))
+        .filter(inDirectory)
         .filter((row) => split(row.pillars).some((p) => p.toLowerCase() === "wisdom"))
         .map((row) => row.slug),
     );
@@ -312,7 +317,7 @@ test.describe("provider directory text search", () => {
     expect(none, "no wisdom pillar acupuncturist in the sheet").toHaveLength(0);
     expect(await visibleSlugs(page)).toEqual([]);
     await expect(page.locator(".provider-directory__status")).toHaveText(
-      `Showing 0 of ${profileSlugs.length} providers`,
+      `Showing 0 of ${directorySlugs.length} providers`,
     );
   });
 
@@ -328,15 +333,19 @@ test.describe("provider directory text search", () => {
 });
 
 test.describe("provider pages link to each other", () => {
-  test("(g) every profile links to every other profile", async ({ request }) => {
-    for (const slug of profileSlugs) {
+  test("(g) clinician profiles link to each other", async ({ request }) => {
+    for (const slug of directorySlugs) {
       const response = await request.get(`/providers/${slug}`);
       expect(response.status(), slug).toBe(200);
       const html = await response.text();
-      for (const other of profileSlugs) {
+      for (const other of directorySlugs) {
         if (other === slug) continue;
         expect(html, `${slug} should link to ${other}`).toContain(`href="/providers/${other}"`);
       }
+    }
+    for (const slug of ["rachel-lessard", "tia-baumohl", "tiffany-roberts"]) {
+      const response = await request.get(`/providers/${slug}`);
+      expect(response.status(), slug).toBe(200);
     }
   });
 });

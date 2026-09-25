@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "relationship therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/couples-therapy, /therapy/family-therapy, /therapy/individual-therapy, /coaching]
@@ -41,13 +41,13 @@ Every relationship has rough stretches. Therapy helps when the rough stretch has
 
 ## How we treat relationship issues at Pathways Within
 
-[Couples therapy](/therapy/couples-therapy) puts both of you in the room with a therapist who stays neutral. Our founder, Rachel Lessard, LCSW-R, works with couples using the Gottman Method, and several licensed marriage and family therapists on the team specialize in couples work. You learn to notice the cycle you fall into, slow it down, and reach each other underneath it.
+[Couples therapy](/therapy/couples-therapy) puts both of you in the room with a therapist who stays neutral. Couples work here includes the Gottman Method, and several licensed marriage and family therapists on the team specialize in it. You learn to notice the cycle you fall into, slow it down, and reach each other underneath it.
 
 [Family therapy](/therapy/family-therapy) works the same way with parents, kids, siblings, or the whole household. It is a good fit when a teenager is struggling, when co parenting after divorce is not working, or when a blended family is finding its footing.
 
 [Individual therapy](/therapy/individual-therapy) is for the person who wants to work on their own side of the pattern, whether their partner is willing to come or not. That can mean attachment patterns, codependency, anger, boundaries, or figuring out why the same thing keeps happening. Several of our clinicians work with LGBTQIA+ clients and polyamorous relationships.
 
-[Coaching](/coaching) with Tia Baumohl, Certified Coach and Energy Medicine Practitioner, is a different kind of support. It focuses on communication, assertiveness, and attachment patterns in a forward looking, skills based format. Coaching is not therapy, and Tia works with individuals and couples who want that structure.
+[Coaching](/coaching) is a different kind of support. It focuses on communication, assertiveness, and attachment patterns in a forward looking, skills based format. Coaching is not therapy. It is for individuals and couples who want that structure.
 
 ## What your first weeks look like
 
@@ -61,7 +61,7 @@ Relationship issues are treated with therapy, not medication. When anxiety, depr
 
 ## Where and how
 
-Couples, family, and individual therapy are offered in person at all of our Long Island offices and by telehealth for clients in New York, New Jersey, North Carolina, and Florida. Couples on video often join from the same room. Partners in different places can each join separately.
+Couples, family, and individual therapy are offered in person at all of our Long Island offices and by telehealth for clients in New York when a video visit is available. Couples on video often join from the same room. Partners in different places can each join separately.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -95,7 +95,7 @@ Often, yes. Your therapist may start with the parents, then invite the teen in o
 
 ### Does insurance cover couples or family therapy?
 
-Some plans do and some do not. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Some plans do and some do not. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -105,7 +105,6 @@ Tell the Welcome Team what the relationship has been like lately and who wants t
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -128,7 +127,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/relationship-issues#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

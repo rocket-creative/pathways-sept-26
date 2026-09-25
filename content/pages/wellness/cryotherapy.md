@@ -8,9 +8,9 @@ pillar: wellness
 target_query: "cryotherapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
-index: true
-nav: secondary
+last_reviewed: 2026-09-25
+index: false
+nav: none
 related_services: [/wellness/massage, /wellness/acupuncture, /wellness/cupping]
 related_concerns: [/concerns/chronic-pain-and-illness, /concerns/stress-and-burnout]
 locations: [rockville-centre, garden-city, smithtown]
@@ -112,7 +112,6 @@ Tell the Welcome Team you are interested in cryotherapy and what you hope it wil
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -135,7 +134,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/wellness/cryotherapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

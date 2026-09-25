@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "trauma therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/emdr, /therapy/ifs, /therapy/somatic-therapy]
@@ -63,7 +63,7 @@ Trauma rarely stays in one place. Your care plan may add [medication management]
 
 ## Where it is offered
 
-Trauma therapy is available in person at all of our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida.
+Trauma therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -73,7 +73,7 @@ Trauma therapy is available in person at all of our Long Island offices and by t
 
 ## Insurance and cost
 
-Trauma therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Trauma therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -99,7 +99,7 @@ It depends on the type of trauma and the method used. A single event may resolve
 
 ### Can I do trauma therapy by telehealth?
 
-Yes. Talk based methods, EMDR, and most somatic skills work well on video. Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. Some clients prefer to start in person and switch later, and that is fine too.
+Yes. Talk based methods, EMDR, and most somatic skills work well on video. Telehealth is available to clients in New York when a video visit is available. Some clients prefer to start in person and switch later, and that is fine too.
 
 ## Take the next step
 
@@ -109,7 +109,6 @@ Tell the Welcome Team what you have been carrying. They will set up your 360 int
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -132,7 +131,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/trauma-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

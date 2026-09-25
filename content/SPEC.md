@@ -4,7 +4,7 @@ This file is the contract. Every page file in /pages must follow it exactly. Cur
 
 ## 1. Facts sheet (use these, never invent)
 
-Brand: Pathways Within. Legal/organization name on site: Pathways Within. Old sub brands "Wisdom" (therapy) and "Wellness" (body) become the two pillars of one site, with Medication Management as the third pillar. Never call the old sites "sister sites" again. The organization is one practice.
+Brand on official surfaces (footer, about, contact, location openings): Pathways Within - Wisdom and Wellness Collaborative. Body descriptions may say Pathways Within. One collaborative practice. Public copy speaks as the practice. Do not tag offices or the therapy hub as a Wisdom or Wellness service menu. Therapy, medication management, and wellness are services inside the same organization. Never call the old sites "sister sites." Do not single out a clinician by name on a service or concern page. Rachel Lessard is the founder and is not in the clinician directory. Tia Baumohl and Tiffany Roberts are in a specialists section titled "Pathways Within - Wisdom and Wellness Collaborative Specialists," not in the clinician grid.
 
 Production domain: https://pathwayswithinwellness.com
 Phone: (631) 371-3825, tel:+16313713825
@@ -14,35 +14,34 @@ Leadership: Ksusha Cascio, LCSW (Chief Operating Officer); Joe Bush, LCSW (Clini
 Prescriber: Tiffany Roberts, PMHNP, MSN, BSN, RN-BC (psychiatric nurse practitioner; adolescents 10+ and adults)
 Acupuncturist: Leonard Ma, L.Ac.
 Massage: Christine Cervo, LMT; Danielle Ingenito, LMT
-Coach and energy work: Tia Baumohl, Certified Coach and Energy Medicine Practitioner (belongs to both Wisdom and Wellness pillars)
+Coach and energy work: certified coach and energy medicine practitioner on the provider directory. Do not make a service page about one person.
 Careers: https://wizehire.com/cmp/pathways-within
-CRM: forms are Trust Driven Care (GoHighLevel) iframes. Embed URLs: therapy form https://link.trustdrivencare.com/widget/form/5KmXtKKPzphbLJSdq4Ym ; wellness form https://link.trustdrivencare.com/widget/form/pZyZ5b0IMxCN6FcJq4pF . Use as is. Do not rebuild fields.
-Telehealth: New York, New Jersey, North Carolina, Florida.
-Never mention: SimplePractice, Jane, IvyPay, Vagaro, "med spa", "medspa", "aestheticians", "Pathways to Beauty", body sculpting, lasers, facials, hair restoration, memberships (unconfirmed).
+CRM: every inquiry uses the live Contact Us embed, https://link.trustdrivencare.com/widget/form/5KmXtKKPzphbLJSdq4Ym , the form already on https://www.pathwayswithin.me/contact . It has the dropdowns and routes into Trust Driven Care. Do not add a second form. Do not rebuild fields. Do not screen insurance before that form.
+Telehealth: New York only, in person and video. Do not name New Jersey, North Carolina, or Florida. The video platform is Jane.
+Never mention: SimplePractice, IvyPay, Vagaro, "med spa", "medspa", "aestheticians", "Pathways to Beauty", body sculpting, lasers, facials, hair restoration, memberships (unconfirmed).
 
-### Locations (status per the Aug 2026 calls; verify before launch)
+### Locations (live site footer on pathwayswithin.me, checked 2026-09-25, plus the accessibility notes already given)
 | Slug | Name | Address | Status | Accessibility |
 |---|---|---|---|---|
-| rockville-centre | Rockville Centre | 53 N Park Ave, [NEEDS: new suite number, 3rd floor], Rockville Centre, NY 11570 | Moving to the full 3rd floor of the same building, target opening Sept 1, 2026. Infrared sauna, treatment rooms, multipurpose. | Elevator access [NEEDS: confirm] |
-| garden-city | Garden City | 647 Franklin Ave, Lower Level, Garden City, NY 11530 | Stays. Becomes multipurpose (therapy and wellness). The second Garden City office across the street is closed. | Not wheelchair accessible (stairs, no elevator) |
-| massapequa | Massapequa | 4160 Merrick Road, [NEEDS: upstairs suite number], Massapequa, NY 11758 | Upstairs stays. Lower level closing end of Aug 2026. | Not wheelchair accessible (stairs) |
-| smithtown | Smithtown | 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787 | Stays | Accessible (ground floor or elevator) [NEEDS: confirm which] |
-| port-jefferson | Port Jefferson | 1227 Main Street, Suite 101, Port Jefferson, NY 11777 | Listed on the therapy site only. Status not discussed on either call. Build the page, flag it. | [NEEDS] |
+| rockville-centre | Rockville Centre | 53 N Park Ave, Suite 302, Rockville Centre, NY 11570 | Open | Elevator to the 3rd floor. Wheelchair accessible. |
+| garden-city | Garden City | 647 Franklin Ave, Lower Level, Garden City, NY 11530 | Open. The 520 Franklin office is closed. | Stairs to a lower level. Not wheelchair accessible. |
+| massapequa | Massapequa | 4160 Merrick Road, Suite 7, Massapequa, NY 11758 | Suite 7 is open. Suite 5 is closed. | Stairs. Not wheelchair accessible. |
+| smithtown | Smithtown | 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787 | Open | Elevator to the 2nd floor. Wheelchair accessible. |
+| port-jefferson | Port Jefferson | 1227 Main Street, Suite 101, Port Jefferson, NY 11777 | Open | First floor, with a ramp. Wheelchair accessible. |
 
-ZIP codes for Garden City (11530) and Massapequa (11758) are inferred from the street addresses; confirm.
-Hours: [NEEDS: front desk hours per location]. Until supplied, every location page and schema uses the placeholder block in section 6 and the sentence: "Clinician and provider appointment times vary and may fall outside front desk hours, including evenings."
-Parking: old site says each location has dedicated parking. Keep that sentence only where the client confirms.
+Do not publish a working hours section or openingHoursSpecification. Do not assign a fixed service menu to an office. Services can include pop-ups.
+Parking is available and varies, from a lot to on-street parking. Do not say dedicated parking.
+If stairs are a barrier, the Welcome Team schedules Rockville Centre, Smithtown, or Port Jefferson, or New York telehealth.
 
 ### Services by pillar
-Wisdom (therapy): individual, couples, child, teen, family, group, EMDR, trauma, grief, hypnotherapy, IFS, somatic, ketamine assisted therapy, PCIT, veterans and first responders, bariatric surgery support, coaching (Tia; multi level coaching coming, structure to be defined).
-Medication Management: Tiffany Roberts.
-Wellness: massage (medical, sports, Swedish, pregnancy, hot stone, massage based cupping; NYSHIP accepted for eligible medical massage), acupuncture (Leonard; menu being rebuilt), cupping (massage based and acupuncture based), energy work (Reiki, ITA, IET), cryotherapy, IV vitamin therapy (build, hide, noindex; on hold).
+Therapy: individual, couples, child, teen, family, group, EMDR, trauma, grief, hypnotherapy, IFS, somatic, PCIT, veterans and first responders, bariatric surgery support. Coaching is its own service. Do not name the coach on the therapy page.
+Medication Management: psychiatric medication management for adolescents 10 and up and adults, at Nassau offices or by New York telehealth. The 360 intake does not diagnose. It records what the patient wants. Do not name the prescriber on the service page.
+Wellness: massage (medical, sports, Swedish, pregnancy, hot stone, massage based cupping), acupuncture, cupping (with massage or acupuncture), energy work (Reiki, ITA, IET). Ketamine assisted therapy and cryotherapy are hidden (index false) until the practice says to publish them. IV vitamin therapy stays noindex.
 Cut entirely: body sculpting, body treatments, skincare/facials, hair removal and restoration, PRP, laser anything, Lutronic Accufit, payment plans page.
 
-### Insurance (from the intake form and old FAQ)
-On the form: 1199, Aetna, Anthem Blue Cross, Carelon Behavioral Health, Cigna, Local 810, Magnacare, Medicare, Northwell Direct, Optum, Oscar, Oxford, UHC, UMR, VA CCN, Not Insured, Other.
-Old FAQ also listed: Meritain, Humana, NYSHIP (out of network for therapy; in network for eligible medical massage), Student Resource, Allied Benefit, ComPsych, MVP, Northwell Brighton Health. Magnacare marked out of network on the old FAQ.
-Rule for copy: "Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake." Never promise coverage. Sliding scale: "a limited number of sliding scale spots based on need and availability." Payment: cash, major credit cards, HSA and FSA. Cancellation: the old FAQ contradicts itself (72 hours and $75 vs 24 hours). Use: [NEEDS: cancellation policy] and do not state a number.
+### Insurance (current About page, not the old FAQ)
+The current About page says participation varies by provider, service, and plan. Some mental health, medication management, acupuncture, and other services may be covered. The Welcome Team explains options after the contact form. Do not publish the old FAQ plan menu (Meritain, Humana, Student Resource, Allied Benefit, ComPsych, MVP, Northwell Brighton Health, IvyPay, or a fixed cancellation fee) as current fact.
+Rule for copy: "Coverage varies by provider, service, and plan. The Welcome Team confirms benefits. The contact form does not screen insurance first." Never promise coverage. Do not publish sliding scale spots, self-pay rates, or a Magnacare or NYSHIP out-of-network claim. Payment: cash, major credit cards, HSA and FSA. Cancellation policies vary by service. The Welcome Team explains the one that applies. Do not publish a window or a fee.
 
 ### The 360 intake (this replaces "tell us your insurance")
 1. You contact the Welcome Team (form, call, or text).
@@ -93,9 +92,9 @@ hero_image: "[NEEDS: image] alt text goes here"
 
 Copy conventions inside the body:
 - `# H1` once. `## H2` sections in the order in section 3. `### H3` for FAQ questions and sub points.
-- `[CTA] Label -> /path` for buttons. `[FORM: therapy]` or `[FORM: wellness]` where the Trust Driven Care embed goes. `[PROVIDER CARDS: slug, slug]` where provider cards render from the sheet. `[LOCATION CARDS: slug, slug]` likewise. `[IMAGE: alt text]` for an image slot.
+- `[CTA] Label -> /path` for buttons. `[FORM: therapy]` is the live Contact Us embed. Do not add `[FORM: wellness]`. `[PROVIDER CARDS: slug, slug]` where provider cards render from the sheet. `[LOCATION CARDS: slug, slug]` likewise. `[IMAGE: alt text]` for an image slot.
 - `[NEEDS: what]` for any fact the client has not supplied. Never fill a gap with a guess.
-- Author block at the end of the body, before the JSON, exactly: `**Written by** {author}. **Clinically reviewed by** {reviewer}. **Last reviewed** {Month D, YYYY}.` Names link to their provider page.
+- Do not print a "Written by" or "Clinically reviewed by" line. Those bylines were removed for liability. Front matter author and reviewer may still feed schema.
 
 ## 3. Section pattern by page type
 
@@ -103,9 +102,9 @@ Copy conventions inside the body:
 
 **Concern page** (900 to 1,100 words): H1 "{Concern} Therapy on Long Island" or "{Concern} Treatment on Long Island"; opening paragraph; `## Signs it may be time to talk to someone` (plain list, no diagnosis language); `## How we treat {concern} at Pathways Within` (which services and modalities, linked); `## What your first weeks look like`; `## Medication, therapy, or both`; `## Where and how` (locations, telehealth); `## Who you might work with` (provider cards filtered by specialty); `## Common questions`; `## Take the next step`. One verified citation minimum where a matching NIMH page exists.
 
-**Insurance page** (500 to 700 words): H1 "Therapists Who Accept {Insurer} on Long Island"; opening paragraph that says Pathways Within works with {Insurer} for [services] and the Welcome Team verifies benefits; `## What {Insurer} may cover here`; `## How verification works` (360 intake, no insurance gate); `## Out of network and self pay options`; `## Locations and telehealth`; `## Common questions` (3 to 4); `## Take the next step`. Never state copays, deductibles, or guarantees. Magnacare and NYSHIP therapy pages must say out of network for therapy per the old FAQ, and NYSHIP page must say in network for eligible medical massage.
+**Insurance page** (500 to 700 words): H1 "Therapists Who Accept {Insurer} on Long Island"; opening paragraph that says participation varies and the Welcome Team verifies benefits; `## What {Insurer} may cover here`; `## How verification works` (360 intake, no insurance gate); `## Out of network and self pay options`; `## Locations and telehealth`; `## Common questions` (3 to 4); `## Take the next step`. Never state copays, deductibles, or guarantees. Do not claim Magnacare or NYSHIP is out of network. Do not publish a wellness self-pay exception list on the hub.
 
-**Location page** (600 to 800 words): H1 "Therapy and Wellness in {Town}, NY"; opening paragraph with full address; `## Services at this office` (linked list, honest to what is offered there); `## Getting here` (address, parking, transit if known, accessibility sentence); `## Hours`; `## Providers at this office`; `## Nearby communities we serve` (3 to 6 real neighboring towns, text only, no links, no separate pages); `## Common questions`; `## Take the next step`.
+**Location page** (600 to 800 words): H1 "Pathways Within in {Town}, NY"; opening paragraph with the live address; `## Services at this office` (linked list, honest to what is offered there); `## Getting here` (address, parking, accessibility sentence); no working hours section; `## Providers at this office`; `## Nearby communities we serve` (3 to 6 real neighboring towns, text only, no links, no separate pages); `## Common questions`; `## Take the next step`. Do not tag the office Wisdom or Wellness.
 
 **Provider page**: rendered from the providers sheet by Cursor. Template in /pages/_provider-template.md. Model page: /pages/providers/rachel-lessard.md.
 
@@ -144,11 +143,7 @@ Per page (in the page file, at the end, inside a ```json fence):
 - Service page: add `MedicalTherapy` (or `MedicalProcedure` for acupuncture, cupping) as the `about` node with `name`, `description`, `provider` #org, `availableService` not needed.
 - Concern page: `about` is a `MedicalCondition` with `name` and, where an NIMH link exists, `sameAs`.
 - Insurance page: `WebPage` only; `about` is the org; add `"acceptedPaymentMethod"` nothing. Do not mark up insurers as organizations you do not control.
-- Location page: `MedicalClinic` node with `@id` `.../locations/{slug}#place`, `name` "Pathways Within {Town}", `parentOrganization` #org, `address` (PostalAddress), `telephone`, `url`, `geo` ([NEEDS: lat/long to 5 decimals]), `openingHoursSpecification` placeholder:
-  ```json
-  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"[NEEDS]","closes":"[NEEDS]"}]
-  ```
-  plus `amenityFeature` with `LocationFeatureSpecification` `name: "Wheelchair accessible", value: true|false`, and `hasMap` "[NEEDS: Google Maps URL]".
+- Location page: `MedicalClinic` node with `@id` `.../locations/{slug}#place`, `name` "Pathways Within {Town}", `parentOrganization` #org, `address` (PostalAddress), `telephone`, `url`, `geo` ([NEEDS: lat/long to 5 decimals]). Do not include `openingHoursSpecification`. Add `amenityFeature` with `LocationFeatureSpecification` `name: "Wheelchair accessible", value: true|false`, and `hasMap` "[NEEDS: Google Maps URL]".
 - Provider page: `ProfilePage` with `mainEntity` a `Person` `@id` `.../providers/{slug}#person`, `name`, `jobTitle`, `honorificSuffix`, `hasCredential` (EducationalOccupationalCredential per license), `worksFor` #org, `knowsAbout` (specialties), `image`, `url`, `workLocation` (place @ids).
 - Article and resource pages: `Article` with `author`, `datePublished`, `dateModified`, `publisher` #org.
 - No `FAQPage`. No `HowTo`. No `AggregateRating`.

@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "life transitions therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /coaching, /therapy/family-therapy, /therapy/couples-therapy]
@@ -45,7 +45,7 @@ Transitions are not an illness, so the goal is not to fix you. The goal is to he
 
 [Individual therapy](/therapy/individual-therapy) gives you one hour a week that is only about you. Your therapist helps you separate the practical problems from the emotional ones and work on each. Several of our clinicians list life transitions as a specialty.
 
-[Coaching](/coaching) with Tia Baumohl, Certified Coach and Energy Medicine Practitioner, fits when you know what you want and need help getting there, such as a career change or a return to work after having children. Coaching is forward looking and goal based. The Welcome Team helps you decide whether coaching, therapy, or both fits.
+[Coaching](/coaching) fits when you know what you want and need help getting there, such as a career change or a return to work after having children. Coaching is forward looking and goal based. The Welcome Team helps you decide whether coaching, therapy, or both fits.
 
 [Family therapy](/therapy/family-therapy) helps when the change lands on everyone: a divorce with children, a parent moving in, or a young adult leaving home or moving back. Our marriage and family therapists work with the whole household on how roles and rules shift.
 
@@ -61,11 +61,11 @@ Your first session with your therapist covers the story of the change, what you 
 
 ## Medication, therapy, or both
 
-Most people going through a transition do not need medication. Therapy alone is usually the right plan. When a change brings on depression, panic, or weeks of poor sleep, medication can help you do the work of therapy. Tiffany Roberts, PMHNP, our psychiatric nurse practitioner, provides [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber and your therapist coordinate with your permission, and you can stop the conversation at any point.
+Most people going through a transition do not need medication. Therapy alone is usually the right plan. When a change brings on depression, panic, or weeks of poor sleep, medication can help you do the work of therapy. Our psychiatric nurse practitioner provides [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber and your therapist coordinate with your permission, and you can stop the conversation at any point.
 
 ## Where and how
 
-Life transitions therapy is offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Telehealth is useful during a transition, since you can keep the same therapist through a move within those states or a semester away at school.
+Life transitions therapy is offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York when a video visit is available. Telehealth is useful during a transition, since you can keep the same therapist through a move inside New York or a semester away at school.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -105,7 +105,6 @@ Tell the Welcome Team what is changing. They will set up your 360 intake and mat
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -128,7 +127,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/life-transitions#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

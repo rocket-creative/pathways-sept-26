@@ -71,7 +71,8 @@
   z-index: 40;
   min-height: 0;
   padding: 0;
-  background: transparent;
+  background: var(--brand);
+  color: #fff;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -101,7 +102,9 @@
   grid-area: logo;
   display: inline-flex;
   align-items: center;
+  padding: 0.2rem 0.65rem;
   border-radius: 999px;
+  background: #fff;
 }
 
 .site-header__logo img {
@@ -181,7 +184,7 @@
   display: block;
   padding: 0.5rem 0.7rem;
   border-radius: 999px;
-  color: var(--chrome-ink);
+  color: #fff;
   font-size: 0.93rem;
   font-weight: 700;
   line-height: 1.3;
@@ -189,11 +192,11 @@
 }
 
 .site-header__nav a:hover {
-  background: rgb(255 255 255 / 0.7);
+  background: rgb(255 255 255 / 0.22);
 }
 
 .site-header__nav a[aria-current="page"] {
-  background: rgb(255 255 255 / 0.85);
+  background: rgb(255 255 255 / 0.32);
 }
 
 .site-header__actions {
@@ -207,13 +210,24 @@
 .site-header__phone {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--chrome-ink);
+  color: #fff;
   white-space: nowrap;
 }
 
 .site-header__phone:hover {
   text-decoration: underline;
   text-underline-offset: 0.2em;
+}
+
+.site-header .button {
+  background: #fff;
+  color: var(--brand-deep);
+  box-shadow: none;
+}
+
+.site-header .button:hover {
+  background: #fff;
+  color: var(--brand);
 }
 
 @media (max-width: 899.98px) {
@@ -228,17 +242,13 @@
      mark and the menu button. A light frosted ground (the breadcrumb pill's
      glass) keeps both legible; it reads as nothing at the top of the page. */
   .site-header__inner {
-    background: rgb(255 255 255 / 0.72);
-    -webkit-backdrop-filter: blur(16px) saturate(1.08);
-    backdrop-filter: blur(16px) saturate(1.08);
+    background: var(--brand);
   }
 
-  /* Once the menu drops down it needs a solid ground of its own. */
   .site-header__inner[data-open="true"] {
-    background: var(--chrome-white);
+    background: var(--brand);
     border-bottom-left-radius: 26px;
     border-bottom-right-radius: 26px;
-    box-shadow: 0 1px 0 var(--chrome-edge);
   }
 
   .site-header__inner[data-open="true"] .site-header__panel {
@@ -257,13 +267,12 @@
     font-size: 1rem;
   }
 
-  /* White pills vanish on the white panel; use the grey pair here. */
   .site-header__nav a:hover {
-    background: var(--chrome-near);
+    background: rgb(255 255 255 / 0.22);
   }
 
   .site-header__nav a[aria-current="page"] {
-    background: var(--chrome-edge);
+    background: rgb(255 255 255 / 0.32);
   }
 
   .site-header__actions {
@@ -276,7 +285,7 @@
   .site-header__phone {
     padding: 0.6rem 0.9rem;
     border-radius: 16px;
-    background: var(--chrome-near);
+    background: rgb(255 255 255 / 0.16);
     text-align: center;
   }
 }
@@ -319,6 +328,11 @@
      homepage (reduced motion, or before the pin boots) is handled here. */
   html:not([data-hero-mode="pin"]) main.page--home {
     padding-block-start: var(--header-h, 4.75rem);
+  }
+
+  /* Subpages are a white canvas, so the breadcrumb is what clears the bar. */
+  body:not(:has(.page--home)) .breadcrumbs {
+    margin-block-start: calc(var(--header-h, 4.75rem) + 0.75rem);
   }
 }
 
@@ -404,7 +418,8 @@
   padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2.25rem) clamp(1.5rem, 4vw, 2.5rem);
   border-top-left-radius: 34px;
   border-top-right-radius: 34px;
-  background: var(--chrome-near);
+  background: var(--brand-deep);
+  color: #fff;
 }
 
 .site-footer__inner {
@@ -422,7 +437,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--chrome-ink);
+  color: #fff;
 }
 
 .site-footer ul {
@@ -434,7 +449,7 @@
 }
 
 .site-footer a {
-  color: var(--chrome-ink);
+  color: #fff;
   font-size: 0.93rem;
 }
 
@@ -445,7 +460,9 @@
 
 .site-footer__logo {
   display: inline-flex;
+  padding: 0.25rem 0.7rem;
   border-radius: 999px;
+  background: #fff;
 }
 
 .site-footer__logo img {
@@ -458,7 +475,7 @@
   margin: 0.9rem 0 1rem;
   max-width: 24rem;
   font-size: 1.02rem;
-  color: var(--chrome-ink);
+  color: #fff;
 }
 
 .site-footer__contact {
@@ -484,7 +501,7 @@
   font-size: 0.88rem;
   font-style: normal;
   line-height: 1.45;
-  color: var(--chrome-ink-soft);
+  color: rgb(255 255 255 / 0.82);
 }
 
 .site-footer__social ul {
@@ -500,9 +517,9 @@
   gap: 0.5rem 1.5rem;
   align-items: baseline;
   padding-top: clamp(1rem, 3vw, 1.75rem);
-  border-top: 1px solid var(--chrome-edge);
+  border-top: 1px solid rgb(255 255 255 / 0.28);
   font-size: 0.85rem;
-  color: var(--chrome-ink-soft);
+  color: rgb(255 255 255 / 0.88);
 }
 
 .site-footer__bottom p {
@@ -517,11 +534,11 @@
 
 .site-footer__bottom a {
   font-size: 0.85rem;
-  color: var(--chrome-ink-soft);
+  color: #fff;
 }
 
 .site-footer__bottom a:hover {
-  color: var(--chrome-ink);
+  color: #fff;
 }
 
 /* ------------------------------------------------------------------ */

@@ -8,7 +8,7 @@ pillar: none
 target_query: "Pathways Within contact"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/how-it-works]
@@ -25,19 +25,20 @@ Tell us what is going on. A member of the Welcome Team will reach out, answer yo
 **Call or text:** (631) 371-3825
 **Email:** Welcome@pathwayswithin.com
 
+## What happens next
+
+1. You send the form, or you call or text. That is the front door.
+2. An automatic reply confirms we received it and books the next step: your 360 intake.
+3. The 360 intake is the same conversation for everyone. It does not diagnose. It records what you want and gives your providers a baseline.
+4. The Welcome Team matches you and books the first appointment.
+
+[How it works](/how-it-works) has the full walkthrough.
+
 ## Start here
 
-Choose the form that fits. Both go straight to the Welcome Team.
-
-### Therapy, medication management, or not sure
+Use this form for therapy, medication management, wellness, coaching, or if you are not sure yet. It is the same Contact Us form already on the current site, including the dropdowns. Every inquiry goes to the Welcome Team through that process. You do not need to know your insurance before you send it.
 
 [FORM: therapy]
-
-### Massage, acupuncture, cupping, or energy work
-
-[FORM: wellness]
-
-The insurance question on the form helps the team check benefits early. It is not a requirement. "Not insured" and "Other" are both fine.
 
 ## If you are not sure what to say
 
@@ -59,18 +60,8 @@ You do not need the right words. "I have not been sleeping and I do not know why
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
-Telehealth is available for therapy and medication management in New York, New Jersey, North Carolina, and Florida. [Telehealth](/telehealth).
+Telehealth is available for therapy and medication management in New York when a video visit is available. [Telehealth](/telehealth).
 
-## What happens next
-
-1. The Welcome Team reaches out [NEEDS: confirm response time].
-2. You schedule a 360 intake.
-3. The team builds your plan and matches you with a provider.
-4. Your first appointment is booked.
-
-[How it works](/how-it-works) has the full walkthrough.
-
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -92,7 +83,7 @@ Telehealth is available for therapy and medication management in New York, New J
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

@@ -8,10 +8,10 @@ pillar: medication
 target_query: "Tiffany Roberts psychiatric nurse practitioner"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Tiffany Roberts, PMHNP, MSN, BSN, RN-BC"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
-related_services: [/medication-management, /therapy/ketamine-assisted-therapy]
+related_services: [/medication-management]
 related_concerns: [/concerns/anxiety, /concerns/depression, /concerns/adhd, /concerns/bipolar-disorder]
 locations: [rockville-centre, garden-city, massapequa, smithtown, telehealth]
 providers: [tiffany-roberts]
@@ -46,7 +46,7 @@ Tiffany's specialties include [anxiety](/concerns/anxiety), [depression](/concer
 
 **Age groups:** adolescents ages 10 and up, and adults
 
-**Formats:** in person and telehealth. Video visits are available to patients in New York, New Jersey, North Carolina, and Florida. [NEEDS: confirm which states Tiffany is licensed to prescribe in]
+**Formats:** in person and telehealth. Video visits are for eligible services when the patient is in New York. The Welcome Team confirms whether video prescribing applies.
 
 ## Offices
 
@@ -56,7 +56,7 @@ Tiffany's specialties include [anxiety](/concerns/anxiety), [depression](/concer
 
 ## Services
 
-Tiffany provides [medication management](/medication-management) and is the prescriber for our [ketamine assisted therapy](/therapy/ketamine-assisted-therapy) program. She is also the clinical author and reviewer for both of those pages on this site.
+Tiffany provides [medication management](/medication-management).
 
 Many of her patients also see a therapist at Pathways Within. With your permission, Tiffany coordinates with your therapist so medication and therapy work toward the same goals. Read more about the 360 intake and care coordination at [how it works](/how-it-works).
 
@@ -68,7 +68,6 @@ Tell the Welcome Team you would like to work with Tiffany Roberts. They will sch
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Tiffany Roberts, PMHNP, MSN, BSN, RN-BC](/providers/tiffany-roberts). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -92,7 +91,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/providers/tiffany-roberts#person"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/tiffany-roberts#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

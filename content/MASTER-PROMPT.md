@@ -29,7 +29,7 @@ For each row in `url-map.csv`, render the matching file:
 - Body Markdown → semantic HTML. `# ` is the single `<h1>`. `## ` → `<h2>` with an `id` slug so "read more" deep links work. `### ` inside "Common questions" → `<h3>` with the answer in a `<p>` directly below, always visible. No accordions, no tabs, nothing hidden on load.
 - Markers:
   - `[CTA] Label -> /path` → rounded button.
-  - `[FORM: therapy]` → iframe `https://link.trustdrivencare.com/widget/form/5KmXtKKPzphbLJSdq4Ym`; `[FORM: wellness]` → `https://link.trustdrivencare.com/widget/form/pZyZ5b0IMxCN6FcJq4pF`. Use the exact embed snippets the client already uses on Squarespace (copy them from the live sites); do not alter fields.
+  - `[FORM: therapy]` → the live Contact Us iframe `https://link.trustdrivencare.com/widget/form/5KmXtKKPzphbLJSdq4Ym`. That is the only public form. Do not embed a second wellness form. Do not alter fields.
   - `[PROVIDER CARDS: slug, slug]` → cards from `providers-sheet.csv` (circular headshot, name, credentials, title line, first bullet, link to `/providers/{slug}`). `[PROVIDER CARDS: specialty=anxiety]` filters by the specialties column. `[PROVIDER CARDS: pillar=wellness]` likewise.
   - `[LOCATION CARDS: slug, slug]` → cards from `locations-sheet.csv` (name, address, accessibility icon, link).
   - `[IMAGE: alt]` → figure with that alt text; if no asset is mapped, render a neutral rounded placeholder with the alt as a visible caption in dev builds only.
@@ -47,11 +47,11 @@ For each row in `url-map.csv`, render the matching file:
 
 ## 5. Locations (sheet driven)
 - `data/locations-sheet.csv` drives the footer, `/locations`, `/locations/{slug}`, the location cards, the contact page, and the `MedicalClinic` JSON on each location page.
-- Each location page carries the accessibility sentence from the sheet verbatim, the hours block (`[NEEDS]` until supplied), and the standard line: "Clinician and provider appointment times vary and may fall outside front desk hours, including evenings."
+- Each location page carries the accessibility sentence from the sheet verbatim. Do not publish working hours or openingHoursSpecification.
 - Map embed: `[NEEDS: Google Maps embed per office]`; until then a static rounded map image placeholder.
 
 ## 6. Forms, chat, quiz, contact routing
-- Forms: only the two Trust Driven Care embeds. They already route to the CRM. Do not build a native form.
+- Forms: only the live Contact Us embed. It already routes into Trust Driven Care. Do not build a native form and do not add a second form.
 - Chat: the LeadConnector text widget from the old Wisdom site (`Hi there, have a question? Text us here.`) goes site wide `[NEEDS: widget script from client]`. Defer its script until after first interaction or 5 seconds, whichever first, to protect LCP.
 - Quiz (`/how-it-works#quiz`): rebuild the old quiz as a 5 question router. Questions and answers are in `pages/how-it-works.md`. Every result ends at the same CTA: "Start your 360 intake". No result names a cut service.
 - Contact page email buckets: render the `[NEEDS: bucket email]` placeholders; the footer uses `Welcome@pathwayswithin.com` until the list arrives.

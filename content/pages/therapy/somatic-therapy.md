@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "somatic therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/trauma-therapy, /therapy/emdr, /therapy/ifs]
@@ -63,7 +63,7 @@ Somatic therapy pairs naturally with the rest of the practice. Your care plan ma
 
 ## Where it is offered
 
-Somatic therapy is available in person at all of our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. On video, your therapist guides awareness, breath, movement, and self touch. Any therapist assisted touch happens in person only.
+Somatic therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. On video, your therapist guides awareness, breath, movement, and self touch. Any therapist assisted touch happens in person only.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -73,7 +73,7 @@ Somatic therapy is available in person at all of our Long Island offices and by 
 
 ## Insurance and cost
 
-Somatic therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Somatic therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -99,7 +99,7 @@ No. Somatic therapy is psychotherapy led by a licensed therapist, and touch, whe
 
 ### Can somatic therapy be done by telehealth?
 
-Yes. Awareness, breath, movement, and self touch all work well on video, and many clients prefer the privacy of home. Telehealth is available in New York, New Jersey, North Carolina, and Florida.
+Yes. Awareness, breath, movement, and self touch all work well on video, and many clients prefer the privacy of home. Telehealth is available in New York when a video visit is available.
 
 ## Take the next step
 
@@ -109,7 +109,6 @@ Tell the Welcome Team where you feel it in your body. They will set up your 360 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -132,7 +131,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/somatic-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

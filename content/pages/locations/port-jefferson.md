@@ -8,7 +8,7 @@ pillar: none
 target_query: "therapist Port Jefferson NY"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/couples-therapy, /therapy/teen-therapy]
@@ -20,38 +20,21 @@ hero_image: "[NEEDS: image] Therapy office at Pathways Within Port Jefferson on 
 
 # Therapy in Port Jefferson, NY
 
-[NEEDS: confirm this office is open; it was not discussed on the August calls]
+Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the North Shore of Suffolk County. This is a therapy office for adults, couples, teens, and children. Medication management and wellness services are offered at Smithtown and by telehealth when the service allows.
 
-Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the North Shore of Suffolk County. This is a therapy office. Licensed therapists see adults, couples, teens, and children here for individual, couples, child, and teen therapy. Medication management and wellness services are offered at our Smithtown office, about 20 minutes west, and by telehealth where the service allows.
-
-Port Jefferson is part of our Suffolk County team, led by Lee Wasser, LMHC-D, Clinical Director for Suffolk.
+Port Jefferson is one of our Suffolk County offices. It is an accessible office.
 
 [CTA] Start your 360 intake -> /contact
 
-## Services at this office
+Services are scheduled by the Welcome Team. Offerings can include pop-up events, so this page does not assign a fixed menu to the office.
 
-Every service below is offered in person at Port Jefferson. The Welcome Team confirms which providers are scheduled here during your 360 intake.
-
-- [Individual therapy](/therapy/individual-therapy) for adults
-- [Couples therapy](/therapy/couples-therapy)
-- [Child therapy](/therapy/child-therapy)
-- [Teen therapy](/therapy/teen-therapy)
-
-Browse the full [therapy](/therapy) menu to see every approach we offer, including EMDR, IFS, somatic therapy, and trauma therapy. For [medication management](/medication-management) or [wellness](/wellness) services such as massage and acupuncture, the Welcome Team can book you at Smithtown or set up [telehealth](/telehealth).
 
 ## Getting here
 
-The office is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the main road through the village. [NEEDS: confirm parking; the old site said each location has dedicated parking]
+The office is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777. Parking is available and varies, from a lot to on-street parking.
 
-Accessibility: [NEEDS]
+Accessibility: First floor, with a ramp. This office is wheelchair accessible.
 
-[NEEDS: confirm whether Suite 101 is on the ground floor and wheelchair accessible] Until we confirm, please tell the Welcome Team about any access needs when you book. They can schedule you at [Smithtown](/locations/smithtown), our accessible Suffolk County office, or match you with a provider who offers telehealth.
-
-## Hours
-
-Front desk hours: [NEEDS: front desk hours per location]
-
-Clinician and provider appointment times vary and may fall outside front desk hours, including evenings.
 
 ## Providers at this office
 
@@ -73,7 +56,7 @@ We are confirming access details for Suite 101. [NEEDS: accessibility for Port J
 
 ### Do you offer telehealth if I cannot get there?
 
-Yes. Most of our therapists see clients by video in New York, New Jersey, North Carolina, and Florida. Many clients on the North Shore mix in person visits with video sessions. Read more at [telehealth](/telehealth).
+Yes. Most of our therapists see clients by video in New York when a video visit is available. Many clients on the North Shore mix in person visits with video sessions. Read more at [telehealth](/telehealth).
 
 ### Which insurance plans do you accept in Port Jefferson?
 
@@ -91,7 +74,6 @@ Tell the Welcome Team what you are looking for and that Port Jefferson is your c
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -114,7 +96,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/locations/port-jefferson#place"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {
@@ -133,8 +115,7 @@ Or call (631) 371-3825.
       "telephone": "+1-631-371-3825",
       "url": "https://pathwayswithinwellness.com/locations/port-jefferson",
       "geo": {"@type": "GeoCoordinates", "latitude": "[NEEDS: lat to 5 decimals]", "longitude": "[NEEDS: long to 5 decimals]"},
-      "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "[NEEDS]", "closes": "[NEEDS]"}],
-      "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Wheelchair accessible", "value": "[NEEDS: true or false once accessibility is confirmed]"}],
+      "amenityFeature": [{"@type": "LocationFeatureSpecification", "name": "Wheelchair accessible", "value": true}],
       "hasMap": "[NEEDS: Google Maps URL]"
     }
   ]

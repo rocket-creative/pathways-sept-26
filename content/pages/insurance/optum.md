@@ -8,7 +8,7 @@ pillar: none
 target_query: "therapist that takes Optum Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -43,7 +43,7 @@ The Welcome Team remains your point of contact after that. See the full picture 
 
 ## Out of network and self pay options
 
-If your plan is out of network for the clinician you want, or for a specific service, you can still be seen. Self pay is available for everything we offer. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+If your plan is out of network for the clinician you want, or for a specific service, you can still be seen. Self pay is available for everything we offer. We accept cash, major credit cards, and HSA and FSA cards. 
 
 Ask the Welcome Team about a superbill if you plan to submit for out of network reimbursement on your own.
 
@@ -51,7 +51,7 @@ Ask the Welcome Team about a superbill if you plan to submit for out of network 
 
 Clients with Optum benefits are seen in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Details for each office are on the [locations](/locations) page.
 
-Telehealth is available in New York, New Jersey, North Carolina, and Florida. The Welcome Team confirms how your plan treats video sessions when they verify the rest of your benefits.
+Telehealth is available in New York when a video visit is available. The Welcome Team confirms how your plan treats video sessions when they verify the rest of your benefits.
 
 ## Common questions
 
@@ -75,7 +75,6 @@ Send the Welcome Team a note, mention Optum, and tell them what you want to chan
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -98,7 +97,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

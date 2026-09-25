@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "child therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/pcit, /therapy/family-therapy, /therapy/teen-therapy]
@@ -74,7 +74,7 @@ At the same time, you are part of the work. Parents are encouraged to take part,
 
 ## Where it is offered
 
-Child therapy is available in person at all of our Long Island offices. Telehealth is available in New York, New Jersey, North Carolina, and Florida, and works best for older children and for parent sessions. Your therapist will tell you which format fits your child.
+Child therapy is available in person at all of our Long Island offices. Telehealth is available in New York when a video visit is available, and works best for older children and for parent sessions. Your therapist will tell you which format fits your child.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -86,7 +86,7 @@ Child therapy is available in person at all of our Long Island offices. Teleheal
 
 ## Insurance and cost
 
-Child therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Child therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -118,7 +118,6 @@ Tell the Welcome Team what you have been seeing in your child. They will set up 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -141,7 +140,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/child-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "anxiety therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/emdr, /therapy/ifs, /medication-management]
@@ -46,7 +46,7 @@ When anxiety has roots in an event or a period of your life, [EMDR](/therapy/emd
 
 Our psychiatric nurse practitioner offers [medication management](/medication-management) for adults and adolescents ages 10 and up. Medication is never required. Your prescriber talks through options, benefits, and side effects with you and stays in contact with your therapist when you give permission.
 
-Some clients add [acupuncture](/wellness/acupuncture) with our licensed acupuncturist as a coordinated option. Leonard Ma, L.Ac., offers the NADA protocol, an ear acupuncture approach used alongside mental health care. Acupuncture is not a substitute for therapy, and your care team coordinates it with your plan.
+Some clients add [acupuncture](/wellness/acupuncture) with our licensed acupuncturist as a coordinated option. That can include the NADA protocol, an ear acupuncture approach used alongside mental health care. Acupuncture is not a substitute for therapy, and your care team coordinates it with your plan.
 
 ## What your first weeks look like
 
@@ -58,11 +58,11 @@ Your first session covers your history, what anxiety looks like for you, and wha
 
 NIMH notes that anxiety disorders are generally treated with psychotherapy, medication, or both ([NIMH](https://www.nimh.nih.gov/health/topics/anxiety-disorders)). Therapy alone is the right starting point for many people. Others feel too flooded to use therapy skills until the body settles, and medication can help with that.
 
-At Pathways Within, you do not have to choose in advance. Your therapist can refer you to Tiffany Roberts, PMHNP, for an evaluation at any point. If you already take medication, she can review it. Both providers work from the same care plan, so you are not explaining yourself twice.
+At Pathways Within, you do not have to choose in advance. Your therapist can refer you to our prescriber for an evaluation at any point. If you already take medication, she can review it. Both providers work from the same care plan, so you are not explaining yourself twice.
 
 ## Where and how
 
-Anxiety therapy is offered in person at all of our Long Island offices and by telehealth for clients in New York, New Jersey, North Carolina, and Florida. Telehealth works well for anxiety, and some clients find it easier to start from home.
+Anxiety therapy is offered in person at all of our Long Island offices and by telehealth for clients in New York when a video visit is available. Telehealth works well for anxiety, and some clients find it easier to start from home.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -92,7 +92,7 @@ It depends on how long the anxiety has been present and what is driving it. Some
 
 ### Does insurance cover anxiety therapy?
 
-Most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ### What if I am too anxious to make the call?
 
@@ -106,7 +106,6 @@ Tell the Welcome Team what the worry has been like. They will set up your 360 in
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -129,7 +128,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/anxiety#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

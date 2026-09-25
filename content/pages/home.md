@@ -8,7 +8,7 @@ pillar: none
 target_query: "therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/therapy, /wellness, /medication-management]
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: hero render] The Pathways Within labyrinth path winding thr
 
 # Therapy, Medication Management, and Wellness on Long Island
 
-Pathways Within is a mental health and wellness practice with five offices across Nassau and Suffolk County and telehealth in four states. Therapy, psychiatric medication management, massage, acupuncture, and energy work live under one roof, so your care plan can be built around the whole of you. Start with one conversation.
+Pathways Within is a mental health and wellness practice with five offices across Nassau and Suffolk County and telehealth for eligible services. Therapy, psychiatric medication management, massage, acupuncture, and energy work live under one roof, so your care plan can be built around the whole of you. Start with one conversation.
 
 [CTA] Start your 360 intake -> /contact
 
@@ -32,7 +32,7 @@ Or call (631) 371-3825.
 
 The labyrinth in our logo is not a maze. There are no wrong turns and no dead ends. The path winds, pauses, circles inward, and opens back out, but it keeps moving. You start where you are and choose the support that fits now, knowing it may change. [How care works](/how-it-works)
 
-## Wisdom: therapy
+## Therapy
 
 Licensed therapists for individuals, couples, children, teens, and families across Nassau and Suffolk County. Trauma work including EMDR, IFS, and somatic therapy. Group therapy, hypnotherapy, support for veterans and first responders, and bariatric surgery evaluations. [Explore therapy](/therapy)
 
@@ -40,7 +40,7 @@ Licensed therapists for individuals, couples, children, teens, and families acro
 
 A psychiatric nurse practitioner who takes the time to understand what is going on before anything is prescribed. Ages 10 and up, in person or by telehealth. Works alongside your therapist when you have one, so medication and therapy pull in the same direction. [Explore medication management](/medication-management)
 
-## Wellness: the body
+## Wellness
 
 New York State licensed massage therapists, a licensed acupuncturist, cupping, and energy work. Book on their own or add them to a plan that includes therapy, because stress and grief live in the body too. NYSHIP accepted for eligible medical massage. [Explore wellness](/wellness)
 
@@ -54,7 +54,7 @@ You do not need to know which service you need. You tell the Welcome Team what y
 
 [CTA] Start your 360 intake -> /contact
 
-Or call (631) 371-3825. Five Long Island offices and telehealth in four states.
+Or call (631) 371-3825. Five Long Island offices and telehealth for eligible services.
 
 [/HERO]
 
@@ -64,21 +64,20 @@ Or call (631) 371-3825. Five Long Island offices and telehealth in four states.
 
 ## Find a provider
 
-Search our clinicians and wellness practitioners by concern, modality, age group, office, and format. One provider can appear under more than one pillar, because that is how people actually get better. [Browse providers](/providers).
+Search the team by concern, modality, age group, office, and format. You do not have to pick someone before you reach out. The Welcome Team matches you during your intake. [Browse providers](/providers).
 
 [PROVIDER SEARCH]
 
-[PROVIDER CARDS: rachel-lessard, tiffany-roberts, leonard-ma, christine-cervo]
-
 ## Five offices and telehealth
 
-Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, plus telehealth for clients in New York, New Jersey, North Carolina, and Florida. Two offices are fully accessible; two are reached by stairs. Details on each [location page](/locations).
+Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, plus telehealth for eligible services when you are in New York. Rockville Centre, Smithtown, and Port Jefferson are accessible. Garden City and Massapequa are reached by stairs. Details on each [location page](/locations).
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
 ## Insurance
 
-We work with most major plans, including Aetna, Cigna, Optum, UnitedHealthcare, Oxford, Oscar, 1199SEIU, Medicare, and Northwell Direct. Coverage varies by provider, service, and plan, and the Welcome Team verifies benefits after your intake. A limited number of sliding scale spots are available. [Insurance and fees](/insurance-and-fees).
+We work with most major plans, including Aetna, Cigna, Optum, UnitedHealthcare, Oxford, Oscar, 1199SEIU, Medicare, and Northwell Direct. Coverage varies by provider, service, and plan, and the Welcome Team verifies benefits after your intake. 
+ [Insurance and fees](/insurance-and-fees).
 
 ## From the founder
 
@@ -102,7 +101,6 @@ Call or text (631) 371-3825. If you are in crisis or thinking about harming your
 7. LCP: the first paint is the H1 and the branch render. Preload the branch image, serve AVIF/WebP, set width and height. Load GSAP deferred; the hero must be readable before GSAP arrives.
 8. The H1 stays in normal document flow above the pinned section so it is the first heading Google sees, not a card.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -117,7 +115,7 @@ Call or text (631) 371-3825. If you are in crisis or thinking about harming your
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

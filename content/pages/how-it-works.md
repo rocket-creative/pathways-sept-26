@@ -8,7 +8,7 @@ pillar: none
 target_query: "how to start therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/therapy, /wellness, /medication-management]
@@ -66,7 +66,7 @@ Routing rules for Cursor: Q5(c) shows the crisis panel first (call or text 988, 
 
 ## What it costs
 
-Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after the intake and tells you what to expect before your first appointment. We accept cash, major credit cards, and HSA and FSA funds, and hold a limited number of sliding scale spots based on need. Full details at [insurance and fees](/insurance-and-fees).
+Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after the intake and tells you what to expect before your first appointment. We accept cash, major credit cards, and HSA and FSA funds. Fees are quoted by the Welcome Team and are not posted here. Full details at [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -92,7 +92,6 @@ Call or text (631) 371-3825, or email the Welcome Team at Welcome@pathwayswithin
 
 Call or text (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -114,7 +113,7 @@ Call or text (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

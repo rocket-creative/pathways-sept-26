@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/medication-management, /wellness]
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] A therapy office at Pathways Within with two rounded
 
 # Therapy on Long Island
 
-The Wisdom pillar of Pathways Within is our therapy practice: more than 25 licensed clinicians across Nassau and Suffolk County, in person and by telehealth. We see individuals, couples, children, teens, and families, and we specialize in trauma work. Every client starts with a 360 intake so the plan fits the person, not the other way around.
+Therapy at Pathways Within is more than 25 licensed clinicians across Nassau and Suffolk County, in person and by telehealth. We see individuals, couples, children, teens, and families, and we specialize in trauma work. Every client starts with a 360 intake so the plan fits the person, not the other way around.
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
@@ -49,7 +49,7 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 
 ## Beyond therapy
 
-- [Coaching](/coaching): performance and wellness coaching with Tia Baumohl, on its own or after therapy.
+- [Coaching](/coaching): performance and wellness coaching, on its own or with therapy.
 - [Medication management](/medication-management): a psychiatric nurse practitioner who works alongside your therapist.
 - [Wellness](/wellness): massage, acupuncture, cupping, and energy work for the physical side of stress.
 
@@ -63,13 +63,13 @@ You contact the Welcome Team. They schedule a 360 intake, a conversation that co
 
 ## Our clinicians
 
-Leadership includes Rachel Lessard, LCSW-R (Founder), Ksusha Cascio, LCSW (Chief Operating Officer), Joe Bush, LCSW (Clinical Director, Nassau), and Lee Wasser, LMHC-D (Clinical Director, Suffolk). Every clinician is licensed or practicing under supervision toward licensure in New York State, and each one lists their specialties so you can search by what you need. [Browse providers](/providers).
+Clinicians are licensed or practicing under supervision toward licensure in New York State. Coaching and prescribing sit in a separate specialists section, because those credentials are not therapy licenses. [Browse providers](/providers).
 
 [PROVIDER CARDS: pillar=wisdom]
 
 ## Where
 
-In person at [Rockville Centre](/locations/rockville-centre), [Garden City](/locations/garden-city), [Massapequa](/locations/massapequa), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson). By [telehealth](/telehealth) in New York, New Jersey, North Carolina, and Florida.
+In person at [Rockville Centre](/locations/rockville-centre), [Garden City](/locations/garden-city), [Massapequa](/locations/massapequa), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson). By [telehealth](/telehealth) in New York when a video visit is available.
 
 ## Insurance
 
@@ -81,7 +81,6 @@ We work with most major plans. Coverage varies by provider, service, and plan, a
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -103,7 +102,7 @@ Or call (631) 371-3825.
       "about": {"@type": "MedicalTherapy", "name": "Psychotherapy", "provider": {"@id": "https://pathwayswithinwellness.com/#org"}},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

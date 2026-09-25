@@ -8,7 +8,7 @@ pillar: none
 target_query: "therapists Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/therapy, /medication-management, /wellness]
@@ -20,9 +20,7 @@ hero_image: "[NEEDS: image] Members of the Pathways Within clinical and wellness
 
 # Our Therapists and Providers
 
-This directory lists every clinician and practitioner at Pathways Within: licensed therapists, our psychiatric nurse practitioner, licensed massage therapists, our licensed acupuncturist, and our certified coach and energy medicine practitioner. Every provider is credentialed in New York, and each profile shows what they specialize in, who they work with, and where they see clients.
-
-You do not have to choose a provider on your own. Every new client starts with a 360 intake, and the Welcome Team matches you with the right person based on what you need and who has openings. Browse here to get a feel for the team, then read [how it works](/how-it-works).
+This directory lists the licensed clinicians at Pathways Within - Wisdom and Wellness Collaborative. Each profile shows specialties, who they work with, and where they see clients. Coaching and prescribing are in the specialists section below. They are not listed as clinicians.
 
 [CTA] Start your 360 intake -> /contact
 
@@ -37,9 +35,13 @@ Use the filters to narrow the list. You can filter by:
 - **Location:** Rockville Centre, Garden City, Massapequa, Smithtown, or Port Jefferson
 - **Format:** in person or telehealth
 
-One provider can appear under more than one pillar. Tia Baumohl, for example, leads coaching under therapy and offers Reiki and IET under wellness. Rachel Lessard appears under all three because she oversees the whole practice.
+Rachel Lessard is the founder. Her page is separate from this clinician directory.
 
 [PROVIDER DIRECTORY]
+
+## Pathways Within - Wisdom and Wellness Collaborative Specialists
+
+[PROVIDER CARDS: tia-baumohl, tiffany-roberts]
 
 ## Leadership
 
@@ -67,7 +69,6 @@ Tell the Welcome Team what you are working on. They will set up your 360 intake 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -89,7 +90,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

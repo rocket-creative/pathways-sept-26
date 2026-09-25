@@ -8,7 +8,7 @@ pillar: none
 target_query: "Pathways Within FAQ"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/how-it-works, /insurance-and-fees]
@@ -70,7 +70,7 @@ Yes. We follow HIPAA and professional ethics rules. There are legal limits, for 
 
 ### Do you offer virtual visits?
 
-Yes, for therapy and medication management, to clients located in New York, New Jersey, North Carolina, and Florida at the time of the session. You can meet by video every time or mix video and in person. [Telehealth](/telehealth).
+Yes, for therapy and medication management, to clients located in New York when a video visit is available at the time of the session. You can meet by video every time or mix video and in person. [Telehealth](/telehealth).
 
 ### Is virtual therapy private?
 
@@ -82,9 +82,9 @@ Yes. We use a HIPAA compliant video platform [NEEDS: platform name]. You need a 
 
 Yes, most major plans for therapy and medication management, and NYSHIP for eligible medical massage. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your intake. [Insurance and fees](/insurance-and-fees).
 
-### Do you offer a sliding scale?
+### Do you post your fees?
 
-A limited number of sliding scale spots based on need and availability. Ask when you call.
+No. The Welcome Team quotes fees when you book. We do not post rates on the site.
 
 ### How can I pay?
 
@@ -134,7 +134,6 @@ No, though many people combine the two. When you have a therapist here, the pres
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -156,7 +155,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

@@ -8,7 +8,7 @@ pillar: none
 target_query: "therapist that takes Medicare Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -45,7 +45,7 @@ The Welcome Team stays your point of contact after that. Read the full process a
 
 ## Out of network and self pay options
 
-If the clinician you want is not enrolled with Medicare, or a service is not covered, the Welcome Team tells you before you are scheduled. Self pay is available for every service at Pathways Within. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+If the clinician you want is not enrolled with Medicare, or a service is not covered, the Welcome Team tells you before you are scheduled. Self pay is available for every service at Pathways Within. We accept cash, major credit cards, and HSA and FSA cards. 
 
 Medicare has its own rules about billing clients directly, and the Welcome Team explains what those rules mean for you before any self pay arrangement begins.
 
@@ -53,7 +53,7 @@ Medicare has its own rules about billing clients directly, and the Welcome Team 
 
 Medicare clients are seen in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Accessibility differs by office, and the [locations](/locations) page says which offices have stairs and which do not.
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. How Medicare treats video visits for mental health is something the Welcome Team confirms during verification rather than something we state here.
+Telehealth is available to clients in New York when a video visit is available. How Medicare treats video visits for mental health is something the Welcome Team confirms during verification rather than something we state here.
 
 ## Common questions
 
@@ -77,7 +77,6 @@ Tell the Welcome Team you have Medicare and what you would like help with. They 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -100,7 +99,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

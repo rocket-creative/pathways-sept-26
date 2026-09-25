@@ -14,7 +14,9 @@ import "./directory.css";
  */
 export default function ProviderDirectory() {
   const active = getProviders().filter((provider) => provider.active);
-  const profiles = active.filter((provider) => !provider.isAdmin).map(toProviderCardData);
+  const profiles = active
+    .filter((provider) => !provider.isAdmin && !provider.isFounder && !provider.isSpecialist)
+    .map(toProviderCardData);
   const admin = active.filter((provider) => provider.isAdmin).map(toProviderCardData);
   // Resolved here, where the photo registry is, and handed down as plain data:
   // the client works out how many cells it spans from the filtered count.

@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "LGBTQ therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/couples-therapy, /therapy/family-therapy, /therapy/teen-therapy]
@@ -59,13 +59,13 @@ The team matches you with a therapist who lists affirming care as a specialty an
 
 ## Medication, therapy, or both
 
-Most clients on this page need therapy only. When depression, anxiety, or sleep problems make daily life hard, medication can help alongside therapy. Tiffany Roberts, PMHNP, our psychiatric nurse practitioner, provides [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber and your therapist coordinate with your permission.
+Most clients on this page need therapy only. When depression, anxiety, or sleep problems make daily life hard, medication can help alongside therapy. Our psychiatric nurse practitioner provides [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber and your therapist coordinate with your permission.
 
 Hormone therapy is not a service Pathways Within offers. [NEEDS: confirm whether clinicians provide assessment letters for gender affirming medical care and, if so, which clinicians]
 
 ## Where and how
 
-Affirming therapy is offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Telehealth is a good option if privacy at home is easier than an office visit, or the reverse.
+Affirming therapy is offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York when a video visit is available. Telehealth is a good option if privacy at home is easier than an office visit, or the reverse.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -95,7 +95,7 @@ Only if they want to or are struggling. Coming out is not a problem to treat. If
 
 ### Does insurance cover affirming therapy?
 
-Yes, in the same way it covers any psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Yes, in the same way it covers any psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -105,7 +105,6 @@ Tell the Welcome Team what you are looking for, including anything you want your
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -128,7 +127,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/lgbtqia-affirming-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

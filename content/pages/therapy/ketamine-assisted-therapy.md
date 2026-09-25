@@ -8,9 +8,9 @@ pillar: wisdom
 target_query: "ketamine assisted therapy Long Island"
 author: "Tiffany Roberts, PMHNP, MSN, BSN, RN-BC"
 reviewer: "Tiffany Roberts, PMHNP, MSN, BSN, RN-BC"
-last_reviewed: 2026-09-16
-index: true
-nav: secondary
+last_reviewed: 2026-09-25
+index: false
+nav: none
 related_services: [/medication-management, /therapy/trauma-therapy]
 related_concerns: [/concerns/depression, /concerns/ptsd]
 locations: "[NEEDS: which offices host ketamine assisted therapy sessions]"
@@ -49,7 +49,7 @@ It is not right for everyone. A history of psychosis, uncontrolled high blood pr
 
 ## What to expect in your first session at Pathways Within
 
-Your first appointment is a screening, not a dosing session. Tiffany Roberts, PMHNP, MSN, BSN, RN-BC, reviews your diagnosis, past treatments, current medications, and medical history. She checks your blood pressure and asks about your support at home. You get honest answers about whether this treatment makes sense for you.
+Your first appointment is a screening, not a dosing session. Our psychiatric nurse practitioner reviews your diagnosis, past treatments, current medications, and medical history. She checks your blood pressure and asks about your support at home. You get honest answers about whether this treatment makes sense for you.
 
 If you move forward, you meet with your therapist first to prepare. You talk through what you want to work on and how you will handle a difficult moment during a session. Then you attend a medicine session in a quiet room at one of our offices. Your prescriber or a trained clinician monitors you throughout, including blood pressure checks, and you stay until the effects have cleared. You do not drive yourself home that day.
 
@@ -111,7 +111,6 @@ If depression or PTSD has stayed put through other treatment, ask the Welcome Te
 
 Or call (631) 371-3825.
 
-**Written by** [Tiffany Roberts, PMHNP, MSN, BSN, RN-BC](/providers/tiffany-roberts). **Clinically reviewed by** [Tiffany Roberts, PMHNP, MSN, BSN, RN-BC](/providers/tiffany-roberts). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -134,7 +133,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/ketamine-assisted-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/tiffany-roberts#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/tiffany-roberts#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

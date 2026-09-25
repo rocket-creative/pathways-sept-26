@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "IFS therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/trauma-therapy, /therapy/emdr, /therapy/somatic-therapy]
@@ -60,11 +60,11 @@ Over time, this process brings greater clarity, calm, and connection, within you
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. The team then matches you with a therapist trained in IFS or parts work.
 
-IFS combines well with other care. For trauma, your therapist may pair it with [EMDR](/therapy/emdr) or [somatic therapy](/therapy/somatic-therapy). Our coach Tia Baumohl uses IFS informed practice in [coaching](/coaching) and energy work for clients who want parts work outside a clinical frame. [Medication management](/medication-management) is available when anxiety or depression needs more support. Everything is coordinated with your permission. Read the full process at [How it works](/how-it-works).
+IFS combines well with other care. For trauma, your therapist may pair it with [EMDR](/therapy/emdr) or [somatic therapy](/therapy/somatic-therapy). [Coaching](/coaching) and energy work can use an IFS informed approach for clients who want parts work outside a clinical frame. [Medication management](/medication-management) is available when anxiety or depression needs more support. Everything is coordinated with your permission. Read the full process at [How it works](/how-it-works).
 
 ## Where it is offered
 
-IFS therapy is available in person at all of our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Parts work translates well to video.
+IFS therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. Parts work translates well to video.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -74,7 +74,7 @@ IFS therapy is available in person at all of our Long Island offices and by tele
 
 ## Insurance and cost
 
-IFS is billed as psychotherapy, so most plans that cover therapy cover it. Coaching is a separate service with its own fees. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+IFS is billed as psychotherapy, so most plans that cover therapy cover it. Coaching is a separate service with its own fees. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -106,7 +106,6 @@ Tell the Welcome Team what keeps pulling you in different directions. They will 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -129,7 +128,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/ifs#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

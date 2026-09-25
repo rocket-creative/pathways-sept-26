@@ -156,6 +156,10 @@ export interface Provider {
   displayName: string;
   /** True for front desk and admin rows, which get no profile page. */
   isAdmin: boolean;
+  /** Founder stays on a profile page and off the clinician directory. */
+  isFounder: boolean;
+  /** Coach and prescriber sit in the specialists section, not the clinician grid. */
+  isSpecialist: boolean;
 }
 
 export interface Location {
@@ -655,6 +659,8 @@ export const getProviders = memo<Provider[]>(() =>
         ? `${row.first_name} ${row.last_name}, ${credentials}`
         : `${row.first_name} ${row.last_name}`,
       isAdmin: /admin|front desk/i.test(role),
+      isFounder: /^founder$/i.test(role.trim()),
+      isSpecialist: row.slug === "tia-baumohl" || row.slug === "tiffany-roberts",
     };
   }),
 );

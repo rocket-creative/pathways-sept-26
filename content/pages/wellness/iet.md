@@ -8,7 +8,7 @@ pillar: wellness
 target_query: "Integrative Energy Therapy Long Island"
 author: "Tia Baumohl, Certified Coach and Energy Medicine Practitioner"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/wellness/energy-work, /wellness/energy-work/reiki, /therapy/somatic-therapy]
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Client resting fully clothed on a treatment table wh
 
 # Integrative Energy Therapy (IET) on Long Island
 
-Integrative Energy Therapy (IET) is a hands on energy practice that clients use for relaxation and emotional processing. At Pathways Within, Tia Baumohl, Certified Coach and Energy Medicine Practitioner, offers IET at our Long Island offices for adults who feel weighed down by old stress, a hard season, or a change they are still absorbing.
+Integrative Energy Therapy (IET) is a hands on energy practice that clients use for relaxation and emotional processing. At Pathways Within, a certified coach offers IET at our Long Island offices for adults who feel weighed down by old stress, a hard season, or a change they are still absorbing.
 
 Energy work is not a substitute for medical or mental health treatment.
 
@@ -106,7 +106,6 @@ Tell the Welcome Team you would like to try IET. They will set up your 360 intak
 
 Or call (631) 371-3825.
 
-**Written by** [Tia Baumohl, Certified Coach and Energy Medicine Practitioner](/providers/tia-baumohl). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -130,7 +129,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/wellness/energy-work/iet#service"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/tia-baumohl#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

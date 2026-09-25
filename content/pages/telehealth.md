@@ -1,14 +1,14 @@
 ---
 url: /telehealth
 title: "Online Therapy and Telehealth Long Island | Pathways Within"
-meta: "Online therapy and medication management by video for clients in New York, New Jersey, North Carolina, and Florida. Same Long Island providers, from home."
+meta: "Online therapy and medication management by video for clients in New York when a video visit is available. Same Long Island providers, from home."
 h1: "Online Therapy and Medication Management by Telehealth"
 page_type: service
 pillar: wisdom
 target_query: "online therapy New York"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/therapy/individual-therapy, /medication-management]
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] A person on a laptop video call with a Pathways With
 
 # Online Therapy and Medication Management by Telehealth
 
-Telehealth at Pathways Within is therapy and psychiatric medication management by secure video for adults, teens, and families located in New York, New Jersey, North Carolina, or Florida. You meet the same licensed Long Island therapists and prescriber you would see in our offices, from wherever you are. You can use telehealth for every session or mix it with in person visits.
+Telehealth at Pathways Within is therapy and psychiatric medication management by secure video for adults, teens, and families located in New York when a video visit is available. You meet the same licensed Long Island therapists and prescriber you would see in our offices, from wherever you are. You can use telehealth for every session or mix it with in person visits.
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
@@ -28,20 +28,20 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 
 ## What telehealth is
 
-Telehealth is a live video appointment with your therapist or prescriber through a private, HIPAA compliant platform. [NEEDS: telehealth platform name] Before your first visit, the Welcome Team sends you a link and a short setup guide so you can test your camera and audio ahead of time. There is nothing to install beyond what the link asks for.
+Telehealth is a live video appointment with your therapist or prescriber through Jane, a private, HIPAA compliant platform. Before your first visit, the Welcome Team sends you a link and a short setup guide so you can test your camera and audio ahead of time. There is nothing to install beyond what the link asks for.
 
-Almost everything that happens in a therapy office works on video. Talk therapy, [EMDR](/therapy/emdr), [IFS](/therapy/ifs), [couples therapy](/therapy/couples-therapy), [family therapy](/therapy/family-therapy), and [coaching](/coaching) are all offered by telehealth. Medication management with our psychiatric nurse practitioner is available by video as well, within the states where she is licensed. [NEEDS: confirm prescriber telehealth states]
+Almost everything that happens in a therapy office works on video. Talk therapy, [EMDR](/therapy/emdr), [IFS](/therapy/ifs), [couples therapy](/therapy/couples-therapy), [family therapy](/therapy/family-therapy), and [coaching](/coaching) are all offered by telehealth. Medication management is available by video when the service and the license allow it. The Welcome Team confirms that during your intake.
 
 ## Who it helps
 
 Telehealth suits people who:
 
 - Live or work far from our Nassau and Suffolk County offices
-- Travel for work or split time between New York and another state we serve
+- Travel for work or split time between New York and a place where video visits are not available
 - Care for children or a family member and cannot leave the house easily
 - Have limited mobility or a health condition that makes travel hard
 - Are managing [anxiety](/concerns/anxiety) or [depression](/concerns/depression) and find it easier to start from home
-- Want to keep seeing the same therapist after moving within our four states
+- Want to keep seeing the same therapist after moving while you are still in New York
 
 It is a poor fit for a few situations. Someone in acute crisis, someone without a private place to talk, or someone whose provider judges that in person care is safer will be guided toward an office visit or a higher level of care.
 
@@ -50,9 +50,9 @@ It is a poor fit for a few situations. Someone in acute crisis, someone without 
 - A phone, tablet, or computer with a camera and microphone
 - A reliable internet connection
 - A private space where you will not be overheard, with headphones if others are nearby
-- To be physically located in New York, New Jersey, North Carolina, or Florida at the time of your session
+- To be physically located in New York when a video visit is available at the time of your session
 
-That last point is a licensing rule, not a preference. Your provider is licensed by state, and the law looks at where you are sitting when the session starts. If you are traveling outside those four states, tell your provider ahead of time so you can reschedule.
+That last point is a licensing rule, not a preference. Your provider is licensed by state, and the law looks at where you are sitting when the session starts. If you are traveling outside New York, tell your provider ahead of time so you can reschedule.
 
 ## What to expect in your first session at Pathways Within
 
@@ -68,7 +68,7 @@ You are not locked into one format. Many clients start online and add office vis
 
 ## Where it is offered
 
-Telehealth is available to clients located in New York, New Jersey, North Carolina, and Florida. If you would rather meet in person, we have offices across Long Island. See [locations](/locations).
+Telehealth is available to clients located in New York when a video visit is available. If you would rather meet in person, we have offices across Long Island. See [locations](/locations).
 
 ## Who provides it
 
@@ -78,25 +78,25 @@ Most of our therapists offer telehealth, and our psychiatric nurse practitioner 
 
 ## What cannot be done online
 
-Wellness services that involve hands on care, including massage, acupuncture, cupping, cryotherapy, and in person energy work, happen only at our offices. Ketamine assisted therapy medicine sessions require a clinician in the room. Some evaluations, such as those required by a surgical program, may need to be in person. [NEEDS: confirm which evaluations require an office visit]
+Wellness services that involve hands on care, including massage, acupuncture, cupping, and in person energy work, happen only at our offices. Some evaluations, such as those required by a surgical program, may need to be in person. [NEEDS: confirm which evaluations require an office visit]
 
 ## Insurance and cost
 
-Most plans that cover therapy and psychiatric visits cover the same services by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Most plans that cover therapy and psychiatric visits cover the same services by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
 ### Is virtual therapy private?
 
-Yes. Sessions run on a HIPAA compliant platform, and your provider joins from a private space. [NEEDS: telehealth platform name] Your side of the privacy is the room you choose. Headphones, a closed door, and a white noise app outside the door help when you share a home.
+Yes. Sessions run on Jane, and your provider joins from a private space. Your side of the privacy is the room you choose. Headphones, a closed door, and a white noise app outside the door help when you share a home.
 
 ### Can I switch between telehealth and in person visits?
 
 Yes. Whether you meet your therapist every time by video or alternate between telehealth and office visits, we work with you to fit your life. Tell your provider or the Welcome Team what you need, and they adjust your schedule.
 
-### I live in New Jersey. Can I see a Long Island therapist?
+### I am not on Long Island. Can I still be seen?
 
-Yes, as long as your therapist is licensed in New Jersey and you are in New Jersey during the session. The same rule applies to North Carolina and Florida. The Welcome Team matches you with a provider licensed for your state during the 360 intake.
+Video visits are for eligible services when you are in New York. The Welcome Team confirms whether a video visit is an option for you. If it is not, they will help you find an in person office.
 
 ### Does telehealth work for kids and teens?
 
@@ -108,7 +108,7 @@ Your therapist confirms your location and an emergency contact at every first se
 
 ### Can I get medication by telehealth?
 
-Yes, for many medications, when you are located in a state where our prescriber is licensed. Some prescriptions have additional rules for video visits, and your prescriber explains those if they apply. [NEEDS: confirm prescriber telehealth states]
+Yes, for many medications, when you are in New York and a video visit is available. Some prescriptions have additional rules for video visits, and your prescriber explains those if they apply. The Welcome Team confirms this before you book.
 
 ## Take the next step
 
@@ -118,7 +118,6 @@ Tell the Welcome Team which state you are in and what you are looking for. They 
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -140,21 +139,18 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/telehealth#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {
       "@type": "MedicalTherapy",
       "@id": "https://pathwayswithinwellness.com/telehealth#therapy",
       "name": "Telehealth Therapy and Medication Management",
-      "description": "Psychotherapy and psychiatric medication management delivered by secure video to clients located in New York, New Jersey, North Carolina, and Florida.",
+      "description": "Psychotherapy and psychiatric medication management delivered by secure video to clients located in New York when a video visit is available.",
       "provider": {"@id": "https://pathwayswithinwellness.com/#org"},
       "relevantSpecialty": "Psychiatric",
       "areaServed": [
-        {"@type": "State", "name": "New York"},
-        {"@type": "State", "name": "New Jersey"},
-        {"@type": "State", "name": "North Carolina"},
-        {"@type": "State", "name": "Florida"}
+        {"@type": "State", "name": "New York"}
       ]
     }
   ]

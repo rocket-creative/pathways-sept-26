@@ -8,7 +8,7 @@ pillar: wellness
 target_query: "massage therapy Long Island"
 author: "Christine Cervo, LMT"
 reviewer: "Christine Cervo, LMT"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/wellness/acupuncture, /wellness/cupping, /therapy/somatic-therapy]
@@ -155,7 +155,6 @@ You do not need to determine which massage technique is appropriate before sched
 
 Or call (631) 371-3825.
 
-**Written by** [Christine Cervo, LMT](/providers/christine-cervo). **Clinically reviewed by** [Christine Cervo, LMT](/providers/christine-cervo). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -178,7 +177,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/wellness/massage#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/christine-cervo#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/christine-cervo#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

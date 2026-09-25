@@ -8,7 +8,7 @@ pillar: none
 target_query: "Pathways Within HIPAA notice"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: []
@@ -48,7 +48,6 @@ You may file a complaint with our Privacy Officer [NEEDS: name and contact] or w
 
 Effective [NEEDS: date]. We reserve the right to change this notice and to make the new notice effective for all information we maintain.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -70,7 +69,7 @@ Effective [NEEDS: date]. We reserve the right to change this notice and to make 
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

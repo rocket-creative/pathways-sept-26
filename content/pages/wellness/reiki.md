@@ -1,14 +1,14 @@
 ---
 url: /wellness/energy-work/reiki
 title: "Reiki Sessions on Long Island, NY | Pathways Within"
-meta: "Usui Reiki with Tia Baumohl at Pathways Within is a gentle, hands on practice clients use for deep relaxation and calm. In person on Long Island."
+meta: "Usui Reiki at Pathways Within is a gentle, hands on practice clients use for deep relaxation and calm. In person on Long Island."
 h1: "Reiki on Long Island"
 page_type: service
 pillar: wellness
 target_query: "Reiki Long Island"
 author: "Tia Baumohl, Certified Coach and Energy Medicine Practitioner"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/wellness/energy-work, /wellness/energy-work/iet, /coaching]
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Reiki practitioner's hands resting lightly above a c
 
 # Reiki on Long Island
 
-Reiki is a gentle, hands on practice from Japan that clients use for deep relaxation and a sense of inner calm. At Pathways Within, Tia Baumohl, Certified Coach and Energy Medicine Practitioner, offers Usui Reiki at our Long Island offices for anyone seeking peace, a reset, or a quiet complement to talk therapy.
+Reiki is a gentle, hands on practice from Japan that clients use for deep relaxation and a sense of inner calm. At Pathways Within, a certified coach offers Usui Reiki at our Long Island offices for anyone seeking peace, a reset, or a quiet complement to talk therapy.
 
 Energy work is not a substitute for medical or mental health treatment.
 
@@ -120,7 +120,6 @@ Tell the Welcome Team you would like to try Reiki. They will set up your 360 int
 
 Or call (631) 371-3825.
 
-**Written by** [Tia Baumohl, Certified Coach and Energy Medicine Practitioner](/providers/tia-baumohl). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -144,7 +143,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/wellness/energy-work/reiki#service"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/tia-baumohl#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

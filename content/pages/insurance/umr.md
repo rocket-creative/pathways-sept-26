@@ -1,14 +1,14 @@
 ---
 url: /insurance/umr
 title: "Therapists Who Accept UMR on Long Island | Pathways Within"
-meta: "Pathways Within works with UMR plans for therapy and medication management at five Long Island offices and by telehealth. We verify your benefits for you."
+meta: "Pathways Within may participate with UMR plans for therapy and medication management at five Long Island offices and by telehealth. We verify your benefits for you."
 h1: "Therapists Who Accept UMR on Long Island"
 page_type: insurance
 pillar: none
 target_query: "therapist that takes UMR Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -43,7 +43,7 @@ After that, the Welcome Team stays your point of contact for billing and schedul
 
 ## Out of network and self pay options
 
-If your UMR plan is out of network for the clinician you want, or does not cover a service you are seeking, the Welcome Team will tell you before you are scheduled. Self pay is available for every service. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+If your UMR plan is out of network for the clinician you want, or does not cover a service you are seeking, the Welcome Team will tell you before you are scheduled. Self pay is available for every service. We accept cash, major credit cards, and HSA and FSA cards. 
 
 If you would rather seek reimbursement from your plan on your own, ask the Welcome Team about a superbill.
 
@@ -51,7 +51,7 @@ If you would rather seek reimbursement from your plan on your own, ask the Welco
 
 UMR clients are seen at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. The [locations](/locations) page lists addresses and accessibility notes for each office.
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. Whether your plan covers video sessions the same as office visits is part of what the Welcome Team verifies.
+Telehealth is available to clients in New York when a video visit is available. Whether your plan covers video sessions the same as office visits is part of what the Welcome Team verifies.
 
 ## Common questions
 
@@ -75,7 +75,6 @@ Let the Welcome Team know you have UMR and what you want to change. They will sc
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -98,7 +97,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

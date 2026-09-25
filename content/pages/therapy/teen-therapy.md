@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "teen therapy Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/therapy/family-therapy, /therapy/trauma-therapy, /therapy/child-therapy]
@@ -85,7 +85,7 @@ When it helps, that plan can include [trauma therapy](/therapy/trauma-therapy), 
 
 ## Where it is offered
 
-Teen therapy is available in person at all of our Long Island offices and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Many teens like the privacy of a video session from their own room.
+Teen therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. Many teens like the privacy of a video session from their own room.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -95,7 +95,7 @@ Teen therapy is available in person at all of our Long Island offices and by tel
 
 ## Insurance and cost
 
-Teen therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Teen therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -113,7 +113,7 @@ No. Plenty of teens come in for stress, friend trouble, or a rough year without 
 
 ### Can teens do therapy over telehealth?
 
-Yes. Telehealth is available in New York, New Jersey, North Carolina, and Florida. Your teen needs a private space and a stable connection. Some teens open up more on video, and some prefer the office. Either works.
+Yes. Telehealth is available in New York when a video visit is available. Your teen needs a private space and a stable connection. Some teens open up more on video, and some prefer the office. Either works.
 
 ### What if my teen needs medication?
 
@@ -127,7 +127,6 @@ Tell the Welcome Team what your teen has been going through, or teens, tell them
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -150,7 +149,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/therapy/teen-therapy#therapy"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

@@ -1,14 +1,14 @@
 ---
 url: /insurance/magnacare
 title: "Magnacare Therapy Coverage on Long Island | Pathways Within"
-meta: "Pathways Within is out of network for therapy with Magnacare. Superbills, self pay, and sliding scale options are available. Long Island and telehealth."
+meta: "Magnacare at Pathways Within depends on the provider, service, and plan. The Welcome Team confirms your benefits after the contact form."
 h1: "Magnacare and Therapy at Pathways Within on Long Island"
 page_type: insurance
 pillar: none
 target_query: "therapist that takes Magnacare Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -20,9 +20,7 @@ hero_image: "[NEEDS: image] Welcome Team member explaining a superbill to a clie
 
 # Magnacare and Therapy at Pathways Within on Long Island
 
-If you have Magnacare and are searching for a therapist on Long Island, here is the honest answer up front: Pathways Within is out of network for therapy with Magnacare. Magnacare appears on our intake form because we still see Magnacare members, and we provide a superbill you can submit to your plan for possible out of network reimbursement. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake.
-
-[NEEDS: confirm Magnacare status]
+Pathways Within may participate with Magnacare. Coverage varies by provider, service, and plan. Send the contact form and the Welcome Team confirms your benefits. We do not decide coverage from the plan name alone.
 
 [CTA] Start your 360 intake -> /contact
 
@@ -46,14 +44,13 @@ Your Welcome Team contact stays with you after that. The full process is describ
 ## Out of network and self pay options
 
 Here is how out of network care works at Pathways Within. You pay the session fee directly. We accept cash, major credit cards, and HSA and FSA cards. After each session, or on a schedule you agree on with the front desk, we give you a superbill. A superbill is an itemized receipt with the codes your plan needs. You submit it to Magnacare, and any reimbursement comes to you.
-
-A limited number of sliding scale spots are available based on need and availability. If cost is the thing standing between you and getting started, say so during your intake.
+ If cost is the thing standing between you and getting started, say so during your intake.
 
 ## Locations and telehealth
 
 Magnacare members are seen at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Office details and accessibility notes are on the [locations](/locations) page.
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. Superbills are provided for telehealth sessions the same way as for office visits.
+Telehealth is available to clients in New York when a video visit is available. Superbills are provided for telehealth sessions the same way as for office visits.
 
 ## Common questions
 
@@ -77,7 +74,6 @@ Tell the Welcome Team you have Magnacare and what you want to work on. They will
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -100,7 +96,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

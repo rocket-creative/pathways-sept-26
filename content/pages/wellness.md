@@ -8,7 +8,7 @@ pillar: wellness
 target_query: "massage and acupuncture Long Island"
 author: "Christine Cervo, LMT"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/therapy, /medication-management]
@@ -20,21 +20,20 @@ hero_image: "[NEEDS: image] A treatment room at Pathways Within with a massage t
 
 # Wellness Services on Long Island
 
-The Wellness pillar of Pathways Within is care for the body: New York State licensed massage therapists, a licensed acupuncturist, cupping, and energy work. You can book any of it on its own. You can also add it to a plan that includes therapy or medication management, because pain, stress, sleep, and mood affect one another. Pathways Within accepts NYSHIP for eligible medical massage.
+Wellness at Pathways Within is care for the body: New York State licensed massage therapists, a licensed acupuncturist, cupping, and energy work. You can book any of it on its own. You can also add it to a plan that includes therapy or medication management, because pain, stress, sleep, and mood affect one another.
 
 [CTA] Book with the Welcome Team -> /contact
 
 ## What we offer
 
 - [Massage therapy](/wellness/massage): clinical, individualized massage for pain, tension, mobility, and recovery. Medical, sports, Swedish, pregnancy, and hot stone massage, plus massage based cupping.
-- [Acupuncture](/wellness/acupuncture): individualized East Asian medicine care with Leonard Ma, L.Ac., for musculoskeletal pain, headaches, stress related tension, and sleep.
-- [Cupping](/wellness/cupping): massage based or acupuncture based, depending on your goals.
-- [Energy work](/wellness/energy-work): [Reiki](/wellness/energy-work/reiki), Integrated Therapeutic Alignment, and [Integrative Energy Therapy](/wellness/energy-work/iet) with Tia Baumohl.
-- [Cryotherapy](/wellness/cryotherapy): cold exposure for muscle recovery and soreness. [NEEDS: confirm cryotherapy is still offered]
+- [Acupuncture](/wellness/acupuncture): individualized care for musculoskeletal pain, headaches, stress related tension, and sleep.
+- [Cupping](/wellness/cupping): available with massage or acupuncture, depending on your goals.
+- [Energy work](/wellness/energy-work): [Reiki](/wellness/energy-work/reiki), Integrated Therapeutic Alignment, and [Integrative Energy Therapy](/wellness/energy-work/iet).
 
 ## Why wellness lives inside a mental health practice
 
-Pathways Within began in therapy. Rachel Lessard saw that emotional healing does not happen separately from the body. Stress settles into the shoulders. Grief affects sleep. Pain changes mood. The Wellness pillar grew from the belief that these should not be treated as unrelated.
+Pathways Within began in therapy. Rachel Lessard saw that emotional healing does not happen separately from the body. Stress settles into the shoulders. Grief affects sleep. Pain changes mood. Wellness services grew from the belief that these should not be treated as unrelated.
 
 So your massage therapist and your therapist can, with your permission, know about each other. Your acupuncturist can coordinate with your prescriber. Nothing is required. The collaborative setting simply lets care be considered in relation to the whole person.
 
@@ -44,17 +43,17 @@ Every wellness visit begins with an intake. Your provider reviews your symptoms,
 
 ## Who provides it
 
-[PROVIDER CARDS: christine-cervo, danielle-ingenito, leonard-ma, tia-baumohl]
+[PROVIDER CARDS: christine-cervo, danielle-ingenito, leonard-ma]
 
 ## Where
 
-Wellness services are being consolidated into our multipurpose offices as the Rockville Centre third floor opens. [NEEDS: confirm which offices offer massage, acupuncture, and energy work]
+The Welcome Team schedules the office. Services can also run as pop-up events, so this page does not assign wellness to one building.
 
-[LOCATION CARDS: rockville-centre, garden-city, smithtown]
+[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
 ## Insurance and cost
 
-Wellness services are usually self pay, with two exceptions the Welcome Team can explain: NYSHIP for eligible medical massage, and some plans that cover acupuncture. See [NYSHIP coverage](/insurance/nyship) and [insurance and fees](/insurance-and-fees). [NEEDS: wellness price list]
+The Welcome Team confirms whether a plan applies and quotes any fee. We do not post rates here. See [insurance and fees](/insurance-and-fees).
 
 ## Common questions
 
@@ -80,7 +79,6 @@ No. Our providers are licensed healthcare practitioners, and every session start
 
 Or call (631) 371-3825.
 
-**Written by** [Christine Cervo, LMT](/providers/christine-cervo). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -102,7 +100,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/christine-cervo#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

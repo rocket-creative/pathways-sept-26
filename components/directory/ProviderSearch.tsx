@@ -39,7 +39,7 @@ export default function ProviderSearch({
   label?: string;
 }) {
   const providers = getProviders()
-    .filter((provider) => provider.active && !provider.isAdmin)
+    .filter((provider) => provider.active && !provider.isAdmin && !provider.isFounder && !provider.isSpecialist)
     .map(toProviderCardData);
 
   return <ProviderSearchClient providers={providers} limit={limit} label={label} />;

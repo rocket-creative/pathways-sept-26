@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "substance use therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/group-therapy, /medication-management, /therapy/veterans-first-responders]
@@ -47,7 +47,7 @@ Our care is outpatient, which means you live at home, keep your job or school, a
 
 [Group therapy](/therapy/group-therapy) adds people who understand. Groups reduce shame, which is the fuel most substance use runs on, and give you a place to practice honesty every week. [NEEDS: confirm whether a substance use or recovery group is currently running, and its format]
 
-[Medication management](/medication-management) with Tiffany Roberts, PMHNP, our psychiatric nurse practitioner, addresses the anxiety, depression, or sleep problems that often drive use. Your prescriber makes all medication decisions and coordinates with your therapist, with your permission. [NEEDS: confirm whether Tiffany Roberts prescribes medications specifically for alcohol or opioid use disorder]
+[Medication management](/medication-management) addresses the anxiety, depression, or sleep problems that often drive use. Your prescriber makes all medication decisions and coordinates with your therapist, with your permission.
 
 Our [veterans and first responders program](/therapy/veterans-first-responders) is for people whose use is tied to service. Police, fire, EMS, and military clients often drink to sleep or to shut off what they have seen. Therapists in this program understand that culture. Veterans in crisis can dial 988 and press 1 or text 838255 to reach the [Veterans Crisis Line](https://www.veteranscrisisline.net/).
 
@@ -63,7 +63,7 @@ Therapy is the core of outpatient substance use treatment. Medication often help
 
 ## Where and how
 
-Substance use therapy is offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York, New Jersey, North Carolina, and Florida. Medication management is available at Rockville Centre, Garden City, Massapequa, and Smithtown, and by telehealth where state rules allow.
+Substance use therapy is offered in person at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, and by telehealth to clients in New York when a video visit is available. Medication management is available at Rockville Centre, Garden City, Massapequa, and Smithtown, and by telehealth where state rules allow.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -93,7 +93,7 @@ Yes, and you should. Anxiety, depression, and trauma are the most common reasons
 
 ### Does insurance cover substance use therapy?
 
-Most plans with mental health benefits cover outpatient therapy for substance use. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Most plans with mental health benefits cover outpatient therapy for substance use. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -103,7 +103,6 @@ You have already noticed the problem, which is the hardest part. Tell the Welcom
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -126,7 +125,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/substance-use#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

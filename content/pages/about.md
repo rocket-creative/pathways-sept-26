@@ -8,7 +8,7 @@ pillar: none
 target_query: "Pathways Within Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: primary
 related_services: [/therapy, /wellness, /medication-management]
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] The Pathways Within leadership team together in the 
 
 # About Pathways Within
 
-Pathways Within is a collaborative mental health and wellness organization on Long Island. What started as one person's healing story has grown into a practice with licensed therapists, a psychiatric nurse practitioner, massage therapists, an acupuncturist, and energy work practitioners across five offices and telehealth. We bring mental, physical, and emotional well being into the same conversation because that is how people actually live.
+Pathways Within - Wisdom and Wellness Collaborative is a mental health and wellness organization on Long Island. What started as one person's healing story has grown into a practice with licensed therapists, a psychiatric nurse practitioner, massage therapists, an acupuncturist, and energy work practitioners across five offices and telehealth. We bring mental, physical, and emotional well being into the same conversation because that is how people actually live.
 
 ## Who we are and why we are here
 
@@ -64,7 +64,7 @@ That same philosophy shapes the Pathways Within experience. Start where you are.
 
 **Lee Wasser, LMHC-D, Clinical Director, Suffolk.** Lee brings a broad, adaptable clinical perspective to the Suffolk team. He encourages curiosity, inclusivity, and flexibility, helping clinicians expand their skills while keeping treatment centered on the person in front of them.
 
-**Christine Cervo, LMT, Wellness leadership.** Christine brings the hands on perspective. As a licensed massage therapist, she helps keep the Wellness pillar welcoming, connected, and centered on care that feels personal.
+**Christine Cervo, LMT, Wellness leadership.** Christine brings the hands on perspective. As a licensed massage therapist, she helps keep wellness services welcoming, connected, and centered on care that feels personal.
 
 They do not lead in separate lanes. They collaborate across locations, disciplines, and decisions. Different strengths, shared direction.
 
@@ -80,7 +80,6 @@ Tell the Welcome Team what is bringing you in. They will help you find a startin
 
 Or call (631) 371-3825. See [how it works](/how-it-works), browse [providers](/providers), or find an [office](/locations).
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -102,7 +101,7 @@ Or call (631) 371-3825. See [how it works](/how-it-works), browse [providers](/p
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

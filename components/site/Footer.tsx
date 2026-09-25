@@ -110,7 +110,7 @@ export default function Footer() {
         </div>
 
         <div className="site-footer__bottom">
-          <p>&copy; {new Date().getFullYear()} Pathways Within</p>
+          <p>&copy; {new Date().getFullYear()} Pathways Within - Wisdom and Wellness Collaborative</p>
           <nav aria-label="Legal">
             <ul>
               {LEGAL_LINKS.map((link) => (

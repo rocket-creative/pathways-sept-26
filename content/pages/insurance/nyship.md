@@ -8,7 +8,7 @@ pillar: none
 target_query: "NYSHIP medical massage Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/wellness/massage, /therapy/individual-therapy, /medication-management]
@@ -43,7 +43,7 @@ Your Welcome Team contact stays with you after that. The full process is describ
 
 ## Out of network and self pay options
 
-For therapy and medication management, NYSHIP members pay the session fee directly and receive a superbill. A superbill is an itemized receipt with the codes your plan needs. You submit it to NYSHIP, and any reimbursement comes to you. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+For therapy and medication management, NYSHIP members pay the session fee directly and receive a superbill. A superbill is an itemized receipt with the codes your plan needs. You submit it to NYSHIP, and any reimbursement comes to you. We accept cash, major credit cards, and HSA and FSA cards. 
 
 For massage sessions that do not meet NYSHIP's eligibility rules, self pay is available at the standard massage rate.
 
@@ -51,7 +51,7 @@ For massage sessions that do not meet NYSHIP's eligibility rules, self pay is av
 
 Medical massage is offered in person only. [NEEDS: confirm which offices offer massage after the Rockville Centre move] Therapy and medication management are available at Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. See the [locations](/locations) page for addresses and accessibility.
 
-Telehealth for therapy and medication management is available to clients in New York, New Jersey, North Carolina, and Florida. Superbills are provided for telehealth sessions the same way as for office visits.
+Telehealth for therapy and medication management is available to clients in New York when a video visit is available. Superbills are provided for telehealth sessions the same way as for office visits.
 
 ## Common questions
 
@@ -75,7 +75,6 @@ Tell the Welcome Team you have NYSHIP and whether you are looking for massage, t
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -98,7 +97,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

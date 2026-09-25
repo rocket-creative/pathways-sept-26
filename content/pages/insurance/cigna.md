@@ -1,14 +1,14 @@
 ---
 url: /insurance/cigna
 title: "Therapists Who Accept Cigna on Long Island | Pathways Within"
-meta: "Looking for a therapist who takes Cigna on Long Island? Pathways Within works with Cigna for therapy and medication management. We verify benefits for you."
+meta: "Looking for a therapist who takes Cigna on Long Island? Pathways Within may participate with Cigna for therapy and medication management. We verify benefits for you."
 h1: "Therapists Who Accept Cigna on Long Island"
 page_type: insurance
 pillar: none
 target_query: "therapist that takes Cigna Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -43,7 +43,7 @@ Your Welcome Team contact stays with you after that, so billing questions have a
 
 ## Out of network and self pay options
 
-Some Cigna plans will be out of network for a particular clinician, and some services may not be covered at all. If that happens, the Welcome Team will say so plainly and go over your choices. Every service at the practice is available on a self pay basis. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+Some Cigna plans will be out of network for a particular clinician, and some services may not be covered at all. If that happens, the Welcome Team will say so plainly and go over your choices. Every service at the practice is available on a self pay basis. We accept cash, major credit cards, and HSA and FSA cards. 
 
 If you want to seek out of network reimbursement from Cigna, ask the Welcome Team about a superbill during your intake.
 
@@ -51,7 +51,7 @@ If you want to seek out of network reimbursement from Cigna, ask the Welcome Tea
 
 Cigna clients are seen at all five of our Long Island offices: Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Addresses, parking notes, and accessibility details are on the [locations](/locations) page.
 
-Telehealth sessions are offered to clients in New York, New Jersey, North Carolina, and Florida. Some plans cover video visits the same as office visits and some do not, so the Welcome Team checks that as part of verification.
+Telehealth sessions are offered to clients in New York when a video visit is available. Some plans cover video visits the same as office visits and some do not, so the Welcome Team checks that as part of verification.
 
 ## Common questions
 
@@ -75,7 +75,6 @@ Reach out to the Welcome Team, mention Cigna, and tell them what brought you her
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -98,7 +97,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]

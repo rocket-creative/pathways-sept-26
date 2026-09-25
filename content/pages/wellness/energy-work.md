@@ -1,14 +1,14 @@
 ---
 url: /wellness/energy-work
 title: "Energy Work Sessions on Long Island | Pathways Within"
-meta: "Energy work at Pathways Within includes Reiki, Integrated Therapeutic Alignment, and IET with Tia Baumohl, an energy medicine practitioner on Long Island."
+meta: "Energy work at Pathways Within includes Reiki, Integrated Therapeutic Alignment, and Integrative Energy Therapy on Long Island."
 h1: "Energy Work on Long Island"
 page_type: service
 pillar: wellness
 target_query: "energy work Long Island"
 author: "Tia Baumohl, Certified Coach and Energy Medicine Practitioner"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: secondary
 related_services: [/wellness/energy-work/reiki, /wellness/energy-work/iet, /coaching, /therapy/somatic-therapy]
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Practitioner's hands held above a client resting ful
 
 # Energy Work on Long Island
 
-Energy work is a gentle, hands on practice that clients use for deep relaxation, emotional processing, and a sense of balance. At Pathways Within, Tia Baumohl, Certified Coach and Energy Medicine Practitioner, offers three modalities: Reiki, Integrated Therapeutic Alignment (ITA), and Integrative Energy Therapy (IET). Sessions are open to anyone, with or without therapy.
+Energy work is a gentle, hands on practice that clients use for deep relaxation, emotional processing, and a sense of balance. At Pathways Within, a certified coach offers three modalities: Reiki, Integrated Therapeutic Alignment (ITA), and Integrative Energy Therapy (IET). Sessions are open to anyone, with or without therapy.
 
 Energy work is not a substitute for medical or mental health treatment.
 
@@ -122,7 +122,6 @@ Tell the Welcome Team you are interested in energy work. They will set up your 3
 
 Or call (631) 371-3825.
 
-**Written by** [Tia Baumohl, Certified Coach and Energy Medicine Practitioner](/providers/tia-baumohl). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -145,7 +144,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/wellness/energy-work#service"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/tia-baumohl#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

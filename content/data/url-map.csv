@@ -15,7 +15,7 @@ url,page_type,pillar,index,nav,file
 /therapy/hypnotherapy,service,wisdom,true,secondary,pages/therapy/hypnotherapy.md
 /therapy/ifs,service,wisdom,true,secondary,pages/therapy/ifs.md
 /therapy/somatic-therapy,service,wisdom,true,secondary,pages/therapy/somatic-therapy.md
-/therapy/ketamine-assisted-therapy,service,wisdom,true,secondary,pages/therapy/ketamine-assisted-therapy.md
+/therapy/ketamine-assisted-therapy,service,wisdom,false,none,pages/therapy/ketamine-assisted-therapy.md
 /therapy/pcit,service,wisdom,true,secondary,pages/therapy/pcit.md
 /therapy/veterans-first-responders,service,wisdom,true,secondary,pages/therapy/veterans-first-responders.md
 /therapy/bariatric-surgery-support,service,wisdom,true,secondary,pages/therapy/bariatric-surgery-support.md
@@ -28,7 +28,7 @@ url,page_type,pillar,index,nav,file
 /wellness/energy-work,service,wellness,true,secondary,pages/wellness/energy-work.md
 /wellness/energy-work/reiki,service,wellness,true,none,pages/wellness/reiki.md
 /wellness/energy-work/iet,service,wellness,true,none,pages/wellness/iet.md
-/wellness/cryotherapy,service,wellness,true,secondary,pages/wellness/cryotherapy.md
+/wellness/cryotherapy,service,wellness,false,none,pages/wellness/cryotherapy.md
 /wellness/iv-vitamin-therapy,service,wellness,false,none,pages/wellness/iv-vitamin-therapy.md
 /concerns,hub,wisdom,true,primary,pages/concerns.md
 /concerns/anxiety,concern,wisdom,true,none,pages/concerns/anxiety.md

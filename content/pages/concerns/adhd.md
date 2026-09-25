@@ -8,7 +8,7 @@ pillar: wisdom
 target_query: "ADHD therapist Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /therapy/child-therapy, /therapy/pcit, /medication-management]
@@ -41,11 +41,11 @@ Everyone loses focus or acts on impulse sometimes. The National Institute of Men
 
 ## How we treat ADHD at Pathways Within
 
-For adults and teens, [individual therapy](/therapy/individual-therapy) focuses on what gets in the way day to day. Your therapist helps you build systems for time, tasks, and follow through, manage the frustration and low self esteem that often ride along with ADHD, and address anxiety or depression when they show up too. Ksusha Cascio, LCSW, our Chief Operating Officer, specializes in adult ADHD.
+For adults and teens, [individual therapy](/therapy/individual-therapy) focuses on what gets in the way day to day. Your therapist helps you build systems for time, tasks, and follow through, manage the frustration and low self esteem that often ride along with ADHD, and address anxiety or depression when they show up too. Several clinicians, including our Chief Operating Officer, specialize in adult ADHD.
 
 For children, [child therapy](/therapy/child-therapy) uses play and skills work matched to your child's age. Parents are part of every plan. For young children, [Parent Child Interaction Therapy](/therapy/pcit) coaches you in real time as you play with your child, so the tools work at home and not just in the office ([PCIT International](https://www.pcit.org/)).
 
-Tiffany Roberts, PMHNP, offers [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber reviews history, talks through options and side effects, and monitors how things go. Medication is never required, and your prescriber coordinates with your therapist when you give permission.
+Our prescriber offers [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber reviews history, talks through options and side effects, and monitors how things go. Medication is never required, and your prescriber coordinates with your therapist when you give permission.
 
 ## What your first weeks look like
 
@@ -61,7 +61,7 @@ At Pathways Within, you do not have to decide up front. Many adults start with t
 
 ## Where and how
 
-ADHD care is offered in person at all of our Long Island offices and by telehealth for clients in New York, New Jersey, North Carolina, and Florida. Younger children generally do better in person. Teens and adults often do well on video.
+ADHD care is offered in person at all of our Long Island offices and by telehealth for clients in New York when a video visit is available. Younger children generally do better in person. Teens and adults often do well on video.
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
@@ -79,7 +79,7 @@ Our therapists and prescriber assess for ADHD as part of your care. Some situati
 
 ### Can adults be diagnosed for the first time?
 
-Yes. Many adults recognize ADHD in themselves only after a child is diagnosed or after years of feeling behind. An evaluation looks at your history from childhood forward. Ksusha Cascio, LCSW, and several other clinicians work with adults who are figuring this out later in life.
+Yes. Many adults recognize ADHD in themselves only after a child is diagnosed or after years of feeling behind. An evaluation looks at your history from childhood forward. Several clinicians work with adults who are figuring this out later in life.
 
 ### How young does treatment start?
 
@@ -95,7 +95,7 @@ ADHD is generally a lifelong pattern, but how much it interferes can change a gr
 
 ### Does insurance cover ADHD treatment?
 
-Most plans that cover therapy and psychiatric visits cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, and a limited number of sliding scale spots are available based on need and availability. See [insurance and fees](/insurance-and-fees).
+Most plans that cover therapy and psychiatric visits cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 
@@ -105,7 +105,6 @@ Tell the Welcome Team what focus and follow through have been like for you or yo
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -128,7 +127,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/concerns/adhd#condition"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     },
     {

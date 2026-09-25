@@ -1,14 +1,14 @@
 ---
 url: /insurance/aetna
 title: "Therapists Who Accept Aetna on Long Island | Pathways Within"
-meta: "Pathways Within works with Aetna plans for therapy and medication management. Long Island offices and telehealth. The Welcome Team verifies your benefits."
+meta: "Pathways Within may participate with Aetna plans for therapy and medication management. Long Island offices and telehealth. The Welcome Team verifies your benefits."
 h1: "Therapists Who Accept Aetna on Long Island"
 page_type: insurance
 pillar: none
 target_query: "therapist that takes Aetna Long Island"
 author: "Rachel Lessard, LCSW-R"
 reviewer: "Rachel Lessard, LCSW-R"
-last_reviewed: 2026-09-16
+last_reviewed: 2026-09-25
 index: true
 nav: none
 related_services: [/therapy/individual-therapy, /medication-management, /therapy/couples-therapy]
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Welcome Team member reviewing an Aetna insurance car
 
 # Therapists Who Accept Aetna on Long Island
 
-Pathways Within works with Aetna for therapy and medication management at our Long Island offices and by telehealth. Aetna is one of the plans listed on our intake form, and many of our clients use it. Coverage varies by provider, service, and plan, so the Welcome Team verifies your benefits after your 360 intake rather than asking you to figure it out alone.
+Pathways Within may participate with Aetna for therapy and medication management at our Long Island offices and by telehealth. Aetna is one of the plans listed on our intake form, and many of our clients use it. Coverage varies by provider, service, and plan, so the Welcome Team verifies your benefits after your 360 intake rather than asking you to figure it out alone.
 
 [CTA] Start your 360 intake -> /contact
 
@@ -45,7 +45,7 @@ There is no insurance gate at the front door. We match you to care first, then c
 
 ## Out of network and self pay options
 
-If your Aetna plan turns out to be out of network for the clinician you want, or for a service like couples therapy, you still have options. Self pay is available for every service at the practice. We accept cash, major credit cards, and HSA and FSA cards. A limited number of sliding scale spots are available based on need and availability.
+If your Aetna plan turns out to be out of network for the clinician you want, or for a service like couples therapy, you still have options. Self pay is available for every service at the practice. We accept cash, major credit cards, and HSA and FSA cards. 
 
 The Welcome Team can also tell you whether a superbill for out of network reimbursement makes sense for your plan. Ask during your intake and they will walk you through it.
 
@@ -53,7 +53,7 @@ The Welcome Team can also tell you whether a superbill for out of network reimbu
 
 You can use your Aetna coverage in person at any of our Long Island offices: Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. See all [locations](/locations) for addresses and accessibility.
 
-Telehealth is available to clients in New York, New Jersey, North Carolina, and Florida. Whether a telehealth session is covered the same way as an office visit depends on your plan, and the Welcome Team checks that too.
+Telehealth is available to clients in New York when a video visit is available. Whether a telehealth session is covered the same way as an office visit depends on your plan, and the Welcome Team checks that too.
 
 ## Common questions
 
@@ -77,7 +77,6 @@ Tell the Welcome Team you have Aetna and what you are hoping to change. They wil
 
 Or call (631) 371-3825.
 
-**Written by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Clinically reviewed by** [Rachel Lessard, LCSW-R](/providers/rachel-lessard). **Last reviewed** September 16, 2026.
 
 ```json
 {
@@ -100,7 +99,7 @@ Or call (631) 371-3825.
       "about": {"@id": "https://pathwayswithinwellness.com/#org"},
       "author": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
       "reviewedBy": {"@id": "https://pathwayswithinwellness.com/providers/rachel-lessard#person"},
-      "lastReviewed": "2026-09-16",
+      "lastReviewed": "2026-09-25",
       "inLanguage": "en-US"
     }
   ]
