@@ -15,13 +15,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
  *    and the h1 lockup fade out while card 6 slides to the centre of the
  *    viewport, widening to the width of the page's wide cards (the 62rem
  *    stream in backdrop.css) so it lands on the same grid as the copy that
- *    follows, and image 2 fades in behind it. The widening is the one
- *    non-transform animation: card 6 is absolutely positioned inside the
- *    pinned stage, so the reflow stays inside the card. When the pin
- *    releases, card 6 is the first card on the page and the copy below is
- *    pulled up to start under it. No blur or frost on either image. Image 2
- *    sits fixed behind the page; its src is attached at 40% progress so it
- *    never competes with the first paint.
+ *    follows, and image 2 fades in behind it. Card 6 is position:fixed on
+ *    the body for that move, so the pin releasing cannot carry it off.
+ *    When the hand off scroll finishes it is the first card of the page
+ *    copy, docked under the header. Scrolling back puts it on the track.
+ *    No blur or frost on either image. Image 2 sits fixed behind the page;
+ *    its src is attached at 40% progress so it never competes with the first
+ *    paint.
  *  - The URL hash is never written. Arriving with #<stop-id> scrolls native
  *    scroll to that card's pin progress instead of letting the pin swallow it.
  *  - Under 768px or prefers-reduced-motion the pin is never created; the CSS
@@ -36,7 +36,7 @@ const REDUCE = "(prefers-reduced-motion: reduce)";
 const SCROLL_FACTOR = 1.1;
 /** Extra pin distance, in viewports, after the pan finishes and before image 2. */
 const END_HOLD_VH = 0.55;
-/** Pin distance, in viewports, for the hand off: fade out, card 6 to centre, image 2 in. */
+/** Pin distance, in viewports, for the hand off: fade out, card 6 to the top, image 2 in. */
 const HANDOFF_VH = 0.6;
 /** Card 6 widens to this as it takes the stage: backdrop.css --bento-w. */
 const STREAM_REM = 76;
@@ -209,11 +209,13 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
   const endHold = () => Math.round(window.innerHeight * END_HOLD_VH);
   const handoffSpan = () => Math.round(window.innerHeight * HANDOFF_VH);
 
-  /* Which cards are on stage. Activation is a small y settle, never a fade. */
+  /* Which cards are on stage. Activation is a small y settle, never a fade.
+     Card 6 is left out: once it docks, that settle reads as a bounce. */
   const checkStops = () => {
     const x = Number(gsap.getProperty(track, "x")) || 0;
     const vw = window.innerWidth;
     stops.forEach((stop, index) => {
+      if (stop === cta) return;
       const centre = stop.offsetLeft + stop.offsetWidth / 2 + x;
       const on = centre > ACTIVE_MIN * vw && centre < ACTIVE_MAX * vw;
       if (on === active[index]) return;
@@ -250,6 +252,12 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     return width;
   };
   const measureCta = () => {
+    /* Mid hand off the card is on the body or in the page copy. Its track
+       size does not change with scroll, so keep the last measurement. */
+    if (cta.parentElement !== track) {
+      if (ctaH1) html.style.setProperty("--hero-cta-h", `${Math.round(ctaH1)}px`);
+      return;
+    }
     const current = cta.style.width;
     cta.style.width = "";
     ctaLeft = cta.offsetLeft;
@@ -264,50 +272,171 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     html.style.setProperty("--hero-cta-h", `${Math.round(ctaH1)}px`);
   };
 
-  /* The hand off, after the pan has finished and held. Image 1, cards 1 to 5
-     and the lockup fade out; card 6 widens and slides to the centre; image 2
-     fades in. Opacity, transform and card 6's width: no blur, no frost. */
-  let preloaded = false;
-  const onHandoff = (t: number) => {
-    if (t > 0) {
-      const eased = t * t * (3 - 2 * t); // smoothstep
-      const out = (1 - eased).toFixed(3);
-      image1.style.opacity = out;
-      for (const el of handoff) el.style.opacity = eased.toFixed(3);
-      for (const { host, glass } of leavingFade) {
-        glass.style.opacity = out;
-        if (glass !== host) host.style.setProperty("--stop-fade", out);
-      }
-      /* The card keeps its left edge as it widens, so its centre drifts
-         right; aim the translation at where the centre is at this width. */
-      const w = ctaW0 + (ctaW1 - ctaW0) * eased;
-      const h = ctaH0 + (ctaH1 - ctaH0) * eased;
-      const cx = ctaLeft + w / 2 - distPx;
-      const cy = ctaTop + h / 2;
-      /* html.clientWidth excludes the scrollbar, so the card centres on the
-         same line the page's cards do (innerWidth would sit it a few pixels
-         to the right of them). */
-      gsap.set(cta, {
-        width: w,
-        x: (html.clientWidth / 2 - cx) * eased,
-        y: (window.innerHeight / 2 - cy) * eased,
-      });
-      const rise = clamp((t - 0.5) / 0.5, 0, 1).toFixed(3);
-      for (const el of rising) el.style.opacity = rise;
-      pin.dataset.heroPhase = t >= 1 ? "out" : "handoff";
-    } else {
+  /* Where card 6 docks: the top of the vertical page, under the header,
+     on the same left edge and width as the cards below it. */
+  const dockTop = () => {
+    const header = document.querySelector<HTMLElement>(".site-header");
+    const bottom = header ? header.getBoundingClientRect().bottom : 72;
+    return Math.round(bottom + 16);
+  };
+  const dockBox = () => {
+    const sample = after?.querySelector<HTMLElement>(":scope > .page-section");
+    if (sample) {
+      const rect = sample.getBoundingClientRect();
+      return { left: rect.left, width: rect.width };
+    }
+    return { left: dockLeftFallback(), width: ctaW1 || ctaW0 };
+  };
+  const dockLeftFallback = () => {
+    if (!after) return 0;
+    const cs = getComputedStyle(after);
+    return after.getBoundingClientRect().left + parseFloat(cs.paddingLeft);
+  };
+  const rowGap = () => (after ? parseFloat(getComputedStyle(after).rowGap) || 24 : 24);
+
+  const clearFlight = () => {
+    cta.style.position = "";
+    cta.style.left = "";
+    cta.style.top = "";
+    cta.style.right = "";
+    cta.style.bottom = "";
+    cta.style.width = "";
+    cta.style.margin = "";
+    cta.style.zIndex = "";
+    cta.style.transform = "";
+  };
+
+  /* Scroll range of the pin, filled in once the trigger exists. The hand off
+     follows this, not the scrubbed tween, so the card cannot lag behind the
+     pin and get carried off. */
+  const pinScroll = { start: 0, end: 0 };
+  let landed = false;
+
+  /* Hold the page copy just under a viewport y. Adjusts from the current
+     margin so the document height never collapses mid-frame (that clamps
+     the scroll and the card bounces). */
+  const placeProseAt = (viewportTop: number) => {
+    if (!after) return;
+    const current = parseFloat(after.style.marginTop) || 0;
+    const without = after.getBoundingClientRect().top - current;
+    const next = viewportTop - without;
+    if (Math.abs(next - current) < 0.5) return;
+    after.style.marginTop = `${next}px`;
+  };
+
+  /* Grow card 6 on the viewport. It is position:fixed on the body so the
+     pin's overflow and its release cannot scroll it away. */
+  const fly = (p: number) => {
+    clearInner();
+    const eased = p * p * (3 - 2 * p);
+    const trackX = Number(gsap.getProperty(track, "x")) || 0;
+    const fromLeft = ctaLeft + trackX;
+    const fromTop = ctaTop + pin.getBoundingClientRect().top;
+    const dock = dockBox();
+    const left = fromLeft + (dock.left - fromLeft) * eased;
+    const top = fromTop + (dockTop() - fromTop) * eased;
+    const width = ctaW0 + ((dock.width || ctaW1) - ctaW0) * eased;
+    if (cta.parentElement !== document.body) {
+      gsap.set(cta, { clearProps: "transform,x,y,width" });
+      document.body.appendChild(cta);
+    }
+    cta.style.position = "fixed";
+    cta.style.left = `${left}px`;
+    cta.style.top = `${top}px`;
+    cta.style.right = "auto";
+    cta.style.bottom = "auto";
+    cta.style.width = `${width}px`;
+    cta.style.margin = "0";
+    cta.style.zIndex = "5";
+    cta.style.transform = "none";
+    placeProseAt(top + cta.offsetHeight + rowGap());
+  };
+
+  const clearInner = () => {
+    const inner = cta.querySelector<HTMLElement>(".hero-stop__inner");
+    if (inner) gsap.set(inner, { clearProps: "transform" });
+  };
+
+  /* Drop card 6 into the page copy without moving it. It is already on
+     screen at the dock; the margin keeps that exact top, then the page
+     scrolls from there. */
+  const land = () => {
+    if (!after) return;
+    if (landed && cta.parentElement === after) return;
+    if (cta.parentElement !== document.body) fly(1);
+    const frozenTop = cta.getBoundingClientRect().top;
+    clearFlight();
+    clearInner();
+    gsap.set(cta, { clearProps: "transform,x,y,width" });
+    if (cta.parentElement !== after) after.prepend(cta);
+    const current = parseFloat(after.style.marginTop) || 0;
+    const shift = frozenTop - cta.getBoundingClientRect().top;
+    after.style.marginTop = `${current + shift}px`;
+    landed = true;
+  };
+
+  const restore = () => {
+    landed = false;
+    clearFlight();
+    if (after) after.style.marginTop = "";
+    if (cta.parentElement !== track) track.appendChild(cta);
+    gsap.set(cta, { x: 0, y: 0 });
+    cta.style.width = "";
+  };
+
+  const fadeHandoff = (p: number) => {
+    if (p <= 0) {
       image1.style.opacity = "";
       for (const el of handoff) el.style.opacity = "";
       for (const { host, glass } of leavingFade) {
         glass.style.opacity = "";
         host.style.removeProperty("--stop-fade");
       }
-      gsap.set(cta, { x: 0, y: 0 });
-      cta.style.width = "";
       for (const el of rising) el.style.opacity = "";
-      delete pin.dataset.heroPhase;
+      return;
     }
-    pin.style.setProperty("--hero-ground-alpha", (1 - t).toFixed(3));
+    const eased = p * p * (3 - 2 * p);
+    const out = (1 - eased).toFixed(3);
+    image1.style.opacity = out;
+    for (const el of handoff) el.style.opacity = eased.toFixed(3);
+    for (const { host, glass } of leavingFade) {
+      glass.style.opacity = out;
+      if (glass !== host) host.style.setProperty("--stop-fade", out);
+    }
+    const rise = clamp((p - 0.5) / 0.5, 0, 1).toFixed(3);
+    for (const el of rising) el.style.opacity = rise;
+  };
+
+  /* The hand off, after the pan has finished and held. Image 1, cards 1 to 5
+     and the lockup fade out; card 6 widens and moves to the top of the
+     vertical page; image 2 fades in. The card follows real scroll. */
+  let preloaded = false;
+  const onHandoff = (t: number) => {
+    const begin = pinScroll.start + holdPx + travelPx + endHoldPx;
+    const grow =
+      pinScroll.end > pinScroll.start
+        ? clamp((window.scrollY - begin) / Math.max(handoffPx, 1), 0, 1)
+        : t;
+    /* Stay docked through a few pixels of scroll wobble at the boundary.
+       Re-flying there is the bounce. */
+    const docked = grow >= 1 || (landed && grow > 0.97);
+
+    fadeHandoff(docked ? 1 : grow);
+    if (docked) {
+      pin.dataset.heroPhase = "out";
+      html.dataset.heroPhase = "out";
+      land();
+    } else if (grow > 0) {
+      landed = false;
+      pin.dataset.heroPhase = "handoff";
+      html.dataset.heroPhase = "handoff";
+      fly(grow);
+    } else {
+      delete pin.dataset.heroPhase;
+      delete html.dataset.heroPhase;
+      restore();
+    }
+    pin.style.setProperty("--hero-ground-alpha", (1 - (docked ? 1 : grow)).toFixed(3));
   };
 
   /* Measurements, taken on every ScrollTrigger refresh rather than per frame. */
@@ -360,6 +489,10 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     onHandoff(ht);
   };
 
+  const syncPinScroll = (trigger: ScrollTrigger) => {
+    pinScroll.start = trigger.start;
+    pinScroll.end = trigger.end;
+  };
   const tween = gsap.to(state, {
     p: 1,
     ease: "none",
@@ -372,11 +505,21 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
       scrub: 0.8,
       anticipatePin: 1,
       invalidateOnRefresh: true,
-      onRefresh: apply,
+      onRefresh: (self) => {
+        syncPinScroll(self);
+        apply();
+      },
     },
   });
   const trigger = tween.scrollTrigger!;
+  syncPinScroll(trigger);
   apply();
+
+  /* The tween scrubs behind the scroll. The card has to move with the scroll
+     itself, or the pin releases and takes card 6 with it before the tween
+     catches up. */
+  const onScroll = () => onHandoff(state.p > 0 ? clamp((state.p * totalPin() - holdPx - travelPx - endHoldPx) / Math.max(handoffPx, 1), 0, 1) : 0);
+  window.addEventListener("scroll", onScroll, { passive: true });
 
   /* Native scroll to the scroll position where a card is centred on screen. */
   const scrollToStop = (stop: HTMLElement, smooth: boolean) => {
@@ -441,6 +584,7 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
   return () => {
     cancelled = true;
     window.removeEventListener("hashchange", onHashChange);
+    window.removeEventListener("scroll", onScroll);
     window.removeEventListener("load", onLoad);
     track.removeEventListener("focusin", onFocusIn);
     image1.removeEventListener("load", onImageLoad);
@@ -450,9 +594,13 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
       glass.style.opacity = "";
       host.style.removeProperty("--stop-fade");
     }
-    gsap.set(cta, { clearProps: "transform,width" });
+    clearFlight();
+    if (cta.parentElement !== track) track.appendChild(cta);
+    if (after) after.style.marginTop = "";
+    gsap.set(cta, { clearProps: "transform,width,x,y" });
     for (const el of rising) el.style.opacity = "";
     delete pin.dataset.heroPhase;
+    delete html.dataset.heroPhase;
     pin.style.removeProperty("--hero-ground-alpha");
     html.style.removeProperty("--hero-cta-h");
     stops.forEach((stop) => delete stop.dataset.active);

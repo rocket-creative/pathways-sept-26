@@ -754,3 +754,35 @@
     border-color: #e3e6ea;
   }
 }
+
+/* Inside a glass page card the search is not a second card. The section
+   already has the padding, the radius, and the fill. */
+.page-section .provider-search {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.page-section .provider-search__form {
+  gap: 0.45rem;
+}
+
+.page-section .provider-search__label {
+  font-size: var(--text-sm, 0.9375rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.page-section .provider-search__row {
+  gap: 0.6rem;
+}
+
+.page-section .provider-search__status {
+  max-width: none;
+  margin: 0;
+  font-size: var(--text-sm, 0.9375rem);
+}

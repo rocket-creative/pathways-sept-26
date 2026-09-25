@@ -503,10 +503,9 @@
     visibility: hidden;
   }
 
-  /* After the pin releases, card 6 sits centred in the last screen of the
-     stage. Pull the page copy up so the first bento row begins exactly one
-     grid gap under the card (no top padding on the grid here), instead of
-     half a viewport lower. --hero-cta-h is set by the controller. */
+  /* During the hand off, card 6 is still on the stage. Pull the page copy up
+     so its first row begins one grid gap under the grown card. --hero-cta-h
+     is set by the controller. */
   html[data-hero-mode="pin"] .page--home > .hero-stage + .prose {
     position: relative;
     z-index: 3;
@@ -514,11 +513,43 @@
     padding-block-start: 0;
   }
 
+  /* Once the hand off finishes, card 6 is the first child of this grid and
+     the controller sets the pull so the card sits under the header. This is
+     the fallback before that measurement. */
+  html[data-hero-mode="pin"][data-hero-phase="out"] .page--home > .hero-stage + .prose {
+    margin-block-start: calc(-100svh + var(--header-h, 4.75rem) + 1rem);
+  }
+
+  html[data-hero-mode="pin"][data-hero-phase="out"] .page--home > .hero-stage + .prose > .hero-stop--cta {
+    position: relative;
+    inset: auto;
+    left: auto;
+    top: auto;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    transform: none;
+    will-change: auto;
+  }
+
+  /* The pull-up lays this copy over the hero from the first paint. Leave it
+     unseen until the hand off, or the vertical page flashes on top of the
+     side scroll and then vanishes. The phase attribute is set by the
+     controller; until then the boot script has only set the pin mode. */
+  html[data-hero-mode="pin"]:not([data-hero-phase]) .page--home > .hero-stage + .prose {
+    visibility: hidden;
+  }
+
+  html[data-hero-mode="pin"]:not([data-hero-phase="out"]) .page--home > .hero-stage + .prose {
+    pointer-events: none;
+  }
+
   html[data-hero-mode="pin"] .hero-stop--cta .hero-stop__inner {
     padding: clamp(1.4rem, 2vw, 2rem) clamp(1.25rem, 1.8vw, 1.75rem);
   }
 
   html[data-hero-mode="pin"] .hero-stop--cta .heading--h2 {
+    max-width: none;
     font-size: clamp(1.4rem, 1.7vw, 2rem);
   }
 
