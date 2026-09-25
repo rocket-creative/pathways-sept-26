@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image]"
 
 # Website Terms of Use
 
-Effective date: [NEEDS: date]. By using pathwayswithinwellness.com you agree to these terms. [NEEDS: attorney review before publication.]
+Effective date: [NEEDS: date]. By using the Pathways Within - Wisdom and Wellness Collaborative website, pathwayswithinwellness.com, you agree to these terms. [NEEDS: attorney review before publication.]
 
 ## This site is not medical advice
 

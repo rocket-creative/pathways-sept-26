@@ -13,7 +13,7 @@ index: true
 nav: primary
 related_services: [/therapy/individual-therapy, /wellness/energy-work]
 related_concerns: [/concerns/life-transitions, /concerns/stress-and-burnout]
-locations: "[NEEDS: Tia's office locations], telehealth"
+locations: "[NEEDS: coaching office locations], telehealth"
 providers: [tia-baumohl]
 hero_image: "[NEEDS: image] A coach in conversation with a client at a Pathways Within office"
 ---

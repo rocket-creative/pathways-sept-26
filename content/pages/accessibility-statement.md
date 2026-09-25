@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image]"
 
 # Accessibility Statement
 
-Pathways Within wants every person to be able to use this website and to reach our care. This page says what we have done, where we fall short, and how to tell us about a barrier.
+Pathways Within - Wisdom and Wellness Collaborative wants every person to be able to use this website and to reach our care. This page says what we have done, where we fall short, and how to tell us about a barrier.
 
 ## The website
 

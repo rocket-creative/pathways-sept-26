@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] The Welcome Team at the Rockville Centre front desk"
 
 # Contact the Welcome Team
 
-Tell us what is going on. A member of the Welcome Team will reach out, answer your questions, and schedule your 360 intake. You do not need to know which service you want or what your insurance covers before you write. If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+Pathways Within - Wisdom and Wellness Collaborative. Tell us what is going on. A member of the Welcome Team will reach out, answer your questions, and schedule your 360 intake. You do not need to know which service you want or what your insurance covers before you write. If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
 **Call or text:** (631) 371-3825
 **Email:** Welcome@pathwayswithin.com

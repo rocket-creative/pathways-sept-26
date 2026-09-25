@@ -130,4 +130,34 @@
   .needs[hidden] {
     display: none;
   }
+
+  /* Contact: "What happens next" is a pictured sequence, not a plain list. */
+  [data-section="what-happens-next"] .list--ordered {
+    display: grid;
+    gap: 0.85rem;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+
+  [data-section="what-happens-next"] .list--ordered li {
+    display: grid;
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    gap: 0.85rem;
+    align-items: center;
+  }
+
+  [data-section="what-happens-next"] .list--ordered li::before {
+    counter-increment: step;
+    content: counter(step);
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: var(--brand, #007efc);
+    color: #fff;
+    font-weight: 700;
+  }
 }

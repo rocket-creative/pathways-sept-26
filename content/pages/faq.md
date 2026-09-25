@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] The Pathways Within front desk with a welcome sign"
 
 # Frequently Asked Questions
 
-Everything below is visible on the page, grouped by topic, so you can find an answer without clicking through. If your question is not here, call or text (631) 371-3825 or email Welcome@pathwayswithin.com.
+Pathways Within - Wisdom and Wellness Collaborative. Everything below is visible on the page, grouped by topic, so you can find an answer without clicking through. If your question is not here, call or text (631) 371-3825 or email Welcome@pathwayswithin.com.
 
 ## Getting started
 

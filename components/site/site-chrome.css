@@ -71,8 +71,7 @@
   z-index: 40;
   min-height: 0;
   padding: 0;
-  background: var(--brand);
-  color: #fff;
+  background: transparent;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -102,9 +101,7 @@
   grid-area: logo;
   display: inline-flex;
   align-items: center;
-  padding: 0.2rem 0.65rem;
   border-radius: 999px;
-  background: #fff;
 }
 
 .site-header__logo img {
@@ -184,7 +181,7 @@
   display: block;
   padding: 0.5rem 0.7rem;
   border-radius: 999px;
-  color: #fff;
+  color: var(--chrome-ink);
   font-size: 0.93rem;
   font-weight: 700;
   line-height: 1.3;
@@ -192,11 +189,11 @@
 }
 
 .site-header__nav a:hover {
-  background: rgb(255 255 255 / 0.22);
+  background: rgb(255 255 255 / 0.7);
 }
 
 .site-header__nav a[aria-current="page"] {
-  background: rgb(255 255 255 / 0.32);
+  background: rgb(255 255 255 / 0.85);
 }
 
 .site-header__actions {
@@ -210,24 +207,13 @@
 .site-header__phone {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--chrome-ink);
   white-space: nowrap;
 }
 
 .site-header__phone:hover {
   text-decoration: underline;
   text-underline-offset: 0.2em;
-}
-
-.site-header .button {
-  background: #fff;
-  color: var(--brand-deep);
-  box-shadow: none;
-}
-
-.site-header .button:hover {
-  background: #fff;
-  color: var(--brand);
 }
 
 @media (max-width: 899.98px) {
@@ -242,13 +228,16 @@
      mark and the menu button. A light frosted ground (the breadcrumb pill's
      glass) keeps both legible; it reads as nothing at the top of the page. */
   .site-header__inner {
-    background: var(--brand);
+    background: rgb(255 255 255 / 0.72);
+    -webkit-backdrop-filter: blur(16px) saturate(1.08);
+    backdrop-filter: blur(16px) saturate(1.08);
   }
 
   .site-header__inner[data-open="true"] {
-    background: var(--brand);
+    background: var(--chrome-white);
     border-bottom-left-radius: 26px;
     border-bottom-right-radius: 26px;
+    box-shadow: 0 1px 0 var(--chrome-edge);
   }
 
   .site-header__inner[data-open="true"] .site-header__panel {
@@ -268,11 +257,11 @@
   }
 
   .site-header__nav a:hover {
-    background: rgb(255 255 255 / 0.22);
+    background: var(--chrome-near);
   }
 
   .site-header__nav a[aria-current="page"] {
-    background: rgb(255 255 255 / 0.32);
+    background: var(--chrome-edge);
   }
 
   .site-header__actions {
@@ -285,7 +274,7 @@
   .site-header__phone {
     padding: 0.6rem 0.9rem;
     border-radius: 16px;
-    background: rgb(255 255 255 / 0.16);
+    background: var(--chrome-near);
     text-align: center;
   }
 }
@@ -418,8 +407,7 @@
   padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2.25rem) clamp(1.5rem, 4vw, 2.5rem);
   border-top-left-radius: 34px;
   border-top-right-radius: 34px;
-  background: var(--brand-deep);
-  color: #fff;
+  background: var(--chrome-near);
 }
 
 .site-footer__inner {
@@ -437,7 +425,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--chrome-ink);
 }
 
 .site-footer ul {
@@ -449,7 +437,7 @@
 }
 
 .site-footer a {
-  color: #fff;
+  color: var(--chrome-ink);
   font-size: 0.93rem;
 }
 
@@ -460,9 +448,7 @@
 
 .site-footer__logo {
   display: inline-flex;
-  padding: 0.25rem 0.7rem;
   border-radius: 999px;
-  background: #fff;
 }
 
 .site-footer__logo img {
@@ -475,7 +461,7 @@
   margin: 0.9rem 0 1rem;
   max-width: 24rem;
   font-size: 1.02rem;
-  color: #fff;
+  color: var(--chrome-ink);
 }
 
 .site-footer__contact {
@@ -501,7 +487,7 @@
   font-size: 0.88rem;
   font-style: normal;
   line-height: 1.45;
-  color: rgb(255 255 255 / 0.82);
+  color: var(--chrome-ink-soft);
 }
 
 .site-footer__social ul {
@@ -517,13 +503,18 @@
   gap: 0.5rem 1.5rem;
   align-items: baseline;
   padding-top: clamp(1rem, 3vw, 1.75rem);
-  border-top: 1px solid rgb(255 255 255 / 0.28);
+  border-top: 1px solid var(--chrome-edge);
   font-size: 0.85rem;
-  color: rgb(255 255 255 / 0.88);
+  color: var(--chrome-ink-soft);
+}
+
+.site-footer :where(p) {
+  max-width: none;
 }
 
 .site-footer__bottom p {
   margin: 0;
+  flex: 1 1 18rem;
 }
 
 .site-footer__bottom ul {
@@ -534,11 +525,11 @@
 
 .site-footer__bottom a {
   font-size: 0.85rem;
-  color: #fff;
+  color: var(--chrome-ink-soft);
 }
 
 .site-footer__bottom a:hover {
-  color: #fff;
+  color: var(--chrome-ink);
 }
 
 /* ------------------------------------------------------------------ */

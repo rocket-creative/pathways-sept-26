@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image]"
 
 # Website Privacy Policy
 
-Effective date: [NEEDS: date]. This policy covers information collected through pathwayswithinwellness.com. It does not replace the [Notice of Privacy Practices](/notice-of-privacy-practices), which governs protected health information under HIPAA once you become a client.
+Effective date: [NEEDS: date]. This policy covers information collected through the Pathways Within - Wisdom and Wellness Collaborative website, pathwayswithinwellness.com. It does not replace the [Notice of Privacy Practices](/notice-of-privacy-practices), which governs protected health information under HIPAA once you become a client.
 
 [NEEDS: attorney review of this entire page before publication. The sections below are the factual scaffold; final language must come from counsel.]
 

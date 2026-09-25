@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image]"
 
 # Notice of Privacy Practices
 
-This notice describes how medical and mental health information about you may be used and disclosed and how you can get access to this information. Please review it carefully.
+This notice is for Pathways Within - Wisdom and Wellness Collaborative. It describes how medical and mental health information about you may be used and disclosed and how you can get access to this information. Please review it carefully.
 
 [NEEDS: the practice's current HIPAA Notice of Privacy Practices, supplied by the client or counsel, pasted here verbatim. The headings below are the standard structure so the page can be built now; do not publish with placeholders.]
 

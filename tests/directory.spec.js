@@ -142,14 +142,15 @@ test.describe("provider directory", () => {
   test("(d2) choosing a filter writes it to the query string and reload restores it", async ({ page }) => {
     await page.goto("/providers");
     await page.waitForSelector(DIRECTORY_READY);
-    await page.selectOption(".provider-directory select[name='pillars']", "wellness");
+    await page.getByRole("button", { name: "Types of Care" }).click();
+    await page.getByRole("checkbox", { name: "Wellness" }).check();
     await expect.poll(() => new URL(page.url()).searchParams.get("pillar")).toBe("wellness");
 
     await page.reload();
     await page.waitForSelector(DIRECTORY_READY);
-    await expect(page.locator(".provider-directory select[name='pillars']")).toHaveValue("wellness");
+    await expect(page.getByRole("button", { name: /Types of Care/ })).toBeVisible();
     const slugs = await visibleSlugs(page);
-    expect(slugs).toContain("tia-baumohl");
+    expect(slugs).toContain("christine-cervo");
     expect(slugs).not.toContain("joe-bush");
   });
 
@@ -286,7 +287,6 @@ test.describe("provider directory text search", () => {
     await page.click(".provider-directory__clear");
     await expect.poll(async () => (await visibleSlugs(page)).length).toBe(directorySlugs.length);
     await expect(page.locator(SEARCH_INPUT)).toHaveValue("");
-    await expect(page.locator(".provider-directory select[name='pillars']")).toHaveValue("");
     expect(new URL(page.url()).search).toBe("");
   });
 

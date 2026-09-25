@@ -9,19 +9,29 @@ import {
   type FacetKey,
   type Selection,
 } from "@/lib/provider-filter";
-import GridFill, { type FillPhoto } from "./GridFill";
 import ProviderCard from "./ProviderCard";
 import type { ProviderCardData } from "./types";
 
-/** Labels come from the filter list in content/pages/providers.md. */
-const FACETS: { key: FacetKey; label: string; needs?: string }[] = [
-  { key: "pillars", label: "Pillar" },
-  { key: "specialties", label: "Concern" },
-  { key: "modalities", label: "Modality" },
-  { key: "ageGroups", label: "Age group" },
-  { key: "locations", label: "Location", needs: "assign providers to offices in the sheet" },
+/** Same controls as the LifeStance results finder, named for this practice. */
+const PRIMARY: { key: FacetKey; label: string; needs?: string }[] = [
+  { key: "locations", label: "Cities", needs: "assign providers to offices in the sheet" },
+  { key: "pillars", label: "Types of Care" },
+  { key: "specialties", label: "Areas of Focus" },
+];
+
+const ADDITIONAL: { key: FacetKey; label: string }[] = [
+  { key: "modalities", label: "Service" },
+  { key: "ageGroups", label: "Age" },
   { key: "formats", label: "Format" },
 ];
+
+const FACETS: { key: FacetKey; label: string; needs?: string }[] = [...PRIMARY, ...ADDITIONAL];
+
+const PILLAR_LABEL: Record<string, string> = {
+  wisdom: "Therapy",
+  wellness: "Wellness",
+  medication: "Medication",
+};
 
 /**
  * Client side filters over a server rendered list.
@@ -37,25 +47,28 @@ const FACETS: { key: FacetKey; label: string; needs?: string }[] = [
  * The free text field ANDs with the six selects (lib/provider-filter.ts,
  * matchesQuery); the homepage ProviderSearch hands off here as /providers?q=.
  */
-const SEARCH_LABEL = "Search by name, specialty, or approach";
+const SEARCH_LABEL = "Search By Keyword";
 export default function ProviderDirectoryClient({
   providers,
   admin,
-  fill,
 }: {
   providers: ProviderCardData[];
   admin: ProviderCardData[];
-  /** Photograph for the tile that fills the grid's last row; chosen on the server. */
-  fill?: FillPhoto;
+  /** Kept so the server can still pass a fill photo; the finder grid does not use it. */
+  fill?: unknown;
 }) {
   const [selection, setSelection] = useState<Selection>({});
   const [ready, setReady] = useState(false);
   const fieldId = useId();
+  const [openFacet, setOpenFacet] = useState<FacetKey | null>(null);
+  const [moreFilters, setMoreFilters] = useState(false);
 
   // Restore from the URL once, after hydration, so server and client agree
   // on the first render (everything visible).
   useEffect(() => {
-    setSelection(selectionFromSearch(window.location.search));
+    const restored = selectionFromSearch(window.location.search);
+    setSelection(restored);
+    if (ADDITIONAL.some((facet) => (restored[facet.key] ?? []).length > 0)) setMoreFilters(true);
     setReady(true);
 
     const onPopState = () => setSelection(selectionFromSearch(window.location.search));
@@ -63,14 +76,26 @@ export default function ProviderDirectoryClient({
     return () => window.removeEventListener("popstate", onPopState);
   }, []);
 
-  const update = (facet: FacetKey, value: string) => {
+  const write = (next: Selection) => {
+    const url = `${window.location.pathname}${searchFromSelection(next)}${window.location.hash}`;
+    window.history.replaceState(window.history.state, "", url);
+    return next;
+  };
+
+  const toggleValue = (facet: FacetKey, value: string) => {
     setSelection((current) => {
       const next: Selection = { ...current };
-      if (value) next[facet] = value.split(",").map((part) => part.trim()).filter(Boolean);
+      const have = new Set(next[facet] ?? []);
+      if ([...have].some((item) => item.toLowerCase() === value.toLowerCase())) {
+        for (const item of have) {
+          if (item.toLowerCase() === value.toLowerCase()) have.delete(item);
+        }
+      } else {
+        have.add(value);
+      }
+      if (have.size) next[facet] = [...have];
       else delete next[facet];
-      const url = `${window.location.pathname}${searchFromSelection(next)}${window.location.hash}`;
-      window.history.replaceState(window.history.state, "", url);
-      return next;
+      return write(next);
     });
   };
 
@@ -101,7 +126,9 @@ export default function ProviderDirectoryClient({
     for (const facet of FACETS) {
       const values = new Set<string>();
       for (const provider of providers) {
-        for (const value of provider[facet.key]) values.add(value);
+        for (const value of provider[facet.key]) {
+          if (!/needs/i.test(value)) values.add(value);
+        }
       }
       collected[facet.key] = [...values].sort((a, b) =>
         a.localeCompare(b, "en", { sensitivity: "base" }),
@@ -125,71 +152,77 @@ export default function ProviderDirectoryClient({
   return (
     <section className="provider-directory" data-directory-ready={ready ? "true" : "false"}>
       <form
-        className={`provider-directory__filters${filtered ? " provider-directory__filters--active" : ""}`}
+        className="provider-directory__filters"
         aria-label="Filter providers"
         onSubmit={(event) => event.preventDefault()}
       >
         <div className="provider-directory__field provider-directory__field--search">
-          <label htmlFor={`${fieldId}-q`}>{SEARCH_LABEL}</label>
+          <label className="provider-directory__search-label" htmlFor={`${fieldId}-q`}>
+            {SEARCH_LABEL}
+          </label>
           <input
             id={`${fieldId}-q`}
             className="provider-directory__search"
             type="search"
             name="q"
+            placeholder={SEARCH_LABEL}
             value={selection.q ?? ""}
             autoComplete="off"
             spellCheck={false}
             enterKeyHint="search"
             onChange={(event) => updateQuery(event.target.value)}
-            // Results are already live; Enter has nothing to submit. The form
-            // swallows submit too, this keeps the key from doing anything else.
             onKeyDown={(event) => {
               if (event.key === "Enter") event.preventDefault();
             }}
           />
         </div>
 
-        {FACETS.map((facet) => {
-          const id = `${fieldId}-${facet.key}`;
-          const values = options[facet.key];
-          const wanted = selection[facet.key] ?? [];
-          const current = wanted.join(",");
-          // A value that arrived by URL (or several ORed together) may not be
-          // one of the sheet's exact values; keep the control honest about it.
-          const custom =
-            current && !values.some((value) => value.toLowerCase() === current.toLowerCase())
-              ? current
-              : null;
-          const selectValue = custom
-            ? custom
-            : (values.find((value) => value.toLowerCase() === current.toLowerCase()) ?? "");
+        <div className="provider-directory__chips">
+          {PRIMARY.map((facet) => (
+            <FilterChip
+              key={facet.key}
+              facet={facet.key}
+              label={facet.label}
+              values={options[facet.key]}
+              selected={selection[facet.key] ?? []}
+              open={openFacet === facet.key}
+              onToggleOpen={() => setOpenFacet((current) => (current === facet.key ? null : facet.key))}
+              onToggleValue={(value) => toggleValue(facet.key, value)}
+            />
+          ))}
+        </div>
 
-          return (
-            <div className="provider-directory__field" key={facet.key}>
-              <label htmlFor={id}>{facet.label}</label>
-              <select
-                id={id}
-                name={facet.key}
-                value={selectValue}
-                disabled={values.length === 0}
-                onChange={(event) => update(facet.key, event.target.value)}
-              >
-                <option value="">All</option>
-                {custom ? <option value={custom}>{wanted.join(", ")}</option> : null}
-                {values.map((value) => (
-                  <option key={value} value={value}>
-                    {value}
-                  </option>
-                ))}
-              </select>
-            </div>
-          );
-        })}
-
-        {filtered ? (
-          <button type="button" className="provider-directory__clear" onClick={clear}>
-            Clear filters
+        <div className="provider-directory__tools">
+          <button
+            type="button"
+            className="provider-directory__more"
+            aria-expanded={moreFilters}
+            onClick={() => setMoreFilters((open) => !open)}
+          >
+            Display Additional Filters
           </button>
+          {filtered ? (
+            <button type="button" className="provider-directory__clear" onClick={clear}>
+              Clear All
+            </button>
+          ) : null}
+        </div>
+
+        {moreFilters ? (
+          <div className="provider-directory__chips">
+            {ADDITIONAL.map((facet) => (
+              <FilterChip
+                key={facet.key}
+                facet={facet.key}
+                label={facet.label}
+                values={options[facet.key]}
+                selected={selection[facet.key] ?? []}
+                open={openFacet === facet.key}
+                onToggleOpen={() => setOpenFacet((current) => (current === facet.key ? null : facet.key))}
+                onToggleValue={(value) => toggleValue(facet.key, value)}
+              />
+            ))}
+          </div>
         ) : null}
 
         {notes.length ? (
@@ -205,12 +238,15 @@ export default function ProviderDirectoryClient({
         Showing {visible.size} of {providers.length} providers
       </p>
 
-      <ul className="provider-cards">
+      <ul className="provider-cards provider-cards--finder">
         {providers.map((provider) => (
-          <ProviderCard key={provider.slug} provider={provider} hidden={!visible.has(provider.slug)} />
+          <ProviderCard
+            key={provider.slug}
+            provider={provider}
+            hidden={!visible.has(provider.slug)}
+            layout="finder"
+          />
         ))}
-        {/* Hidden cards leave the grid, so the tile sizes itself to what is showing. */}
-        <GridFill photo={fill} count={visible.size} />
       </ul>
 
       {admin.length ? (
@@ -227,6 +263,67 @@ export default function ProviderDirectoryClient({
         </div>
       ) : null}
     </section>
+  );
+}
+
+function optionLabel(facet: FacetKey, value: string): string {
+  if (facet === "pillars") return PILLAR_LABEL[value.toLowerCase()] ?? value;
+  return value.replace(/-/g, " ").replace(/\b[a-z]/g, (letter) => letter.toUpperCase());
+}
+
+function FilterChip({
+  facet,
+  label,
+  values,
+  selected,
+  open,
+  onToggleOpen,
+  onToggleValue,
+}: {
+  facet: FacetKey;
+  label: string;
+  values: string[];
+  selected: string[];
+  open: boolean;
+  onToggleOpen: () => void;
+  onToggleValue: (value: string) => void;
+}) {
+  const picked = selected.length;
+
+  return (
+    <div className={`provider-directory__chip${open ? " provider-directory__chip--open" : ""}`}>
+      <button
+        type="button"
+        className="provider-directory__chip-button"
+        aria-expanded={open}
+        disabled={values.length === 0}
+        onClick={onToggleOpen}
+      >
+        <span>{picked ? `${label} (${picked})` : label}</span>
+        <span aria-hidden="true">{open ? "–" : "+"}</span>
+      </button>
+      {open ? (
+        <ul className="provider-directory__menu">
+          {values.map((value) => {
+            const checked = selected.some((item) => item.toLowerCase() === value.toLowerCase());
+            return (
+              <li key={value}>
+                <label>
+                  <input
+                    type="checkbox"
+                    name={facet}
+                    value={value}
+                    checked={checked}
+                    onChange={() => onToggleValue(value)}
+                  />
+                  {optionLabel(facet, value)}
+                </label>
+              </li>
+            );
+          })}
+        </ul>
+      ) : null}
+    </div>
   );
 }
 

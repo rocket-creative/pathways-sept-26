@@ -6,7 +6,7 @@ import { matchesQuery, queryTokens, searchFromSelection } from "@/lib/provider-f
 import ProviderCard from "./ProviderCard";
 import type { ProviderCardData } from "./types";
 
-const DEFAULT_LABEL = "Search by name, specialty, or approach";
+const DEFAULT_LABEL = "Search By Keyword";
 
 /**
  * The interactive half of ProviderSearch.
@@ -65,6 +65,7 @@ export default function ProviderSearchClient({
             className="provider-search__input"
             type="search"
             name="q"
+            placeholder={label}
             value={query}
             autoComplete="off"
             spellCheck={false}
@@ -89,7 +90,7 @@ export default function ProviderSearchClient({
 
       <ul className="provider-cards provider-cards--search" aria-label="Matching providers">
         {shown.map((provider) => (
-          <ProviderCard key={provider.slug} provider={provider} />
+          <ProviderCard key={provider.slug} provider={provider} layout="finder" />
         ))}
       </ul>
     </div>

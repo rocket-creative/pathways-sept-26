@@ -26,14 +26,7 @@ This directory lists the licensed clinicians at Pathways Within - Wisdom and Wel
 
 ## How to use the filters
 
-Use the filters to narrow the list. You can filter by:
-
-- **Pillar:** [therapy](/therapy), [medication management](/medication-management), or [wellness](/wellness)
-- **Concern:** anxiety, depression, trauma, ADHD, relationships, and more
-- **Modality:** EMDR, IFS, couples therapy, somatic therapy, massage, acupuncture, and others
-- **Age group:** children, teens, young adults, adults, couples, families
-- **Location:** Rockville Centre, Garden City, Massapequa, Smithtown, or Port Jefferson
-- **Format:** in person or telehealth
+Search by keyword, then open a filter. Cities, types of care, and areas of focus are on the first row. Service, age, and format are under additional filters.
 
 Rachel Lessard is the founder. Her page is separate from this clinician directory.
 

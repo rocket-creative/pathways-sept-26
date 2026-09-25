@@ -20,7 +20,7 @@ hero_image: "[NEEDS: hero render] The Pathways Within labyrinth path winding thr
 
 # Therapy, Medication Management, and Wellness on Long Island
 
-Pathways Within is a mental health and wellness practice with five offices across Nassau and Suffolk County and telehealth for eligible services. Therapy, psychiatric medication management, massage, acupuncture, and energy work live under one roof, so your care plan can be built around the whole of you. Start with one conversation.
+Pathways Within - Wisdom and Wellness Collaborative is a mental health and wellness practice with five offices across Nassau and Suffolk County and telehealth in New York. Therapy, psychiatric medication management, massage, acupuncture, and energy work live under one roof, so your care plan can be built around the whole of you. Start with one conversation.
 
 [CTA] Start your 360 intake -> /contact
 
@@ -38,11 +38,11 @@ Licensed therapists for individuals, couples, children, teens, and families acro
 
 ## Medication management
 
-A psychiatric nurse practitioner who takes the time to understand what is going on before anything is prescribed. Ages 10 and up, in person or by telehealth. Works alongside your therapist when you have one, so medication and therapy pull in the same direction. [Explore medication management](/medication-management)
+A psychiatric nurse practitioner who takes the time to understand what is going on before anything is prescribed. Ages 10 and up, in person at our Nassau offices or by telehealth in New York. Works alongside your therapist when you have one, so medication and therapy pull in the same direction. [Explore medication management](/medication-management)
 
 ## Wellness
 
-New York State licensed massage therapists, a licensed acupuncturist, cupping, and energy work. Book on their own or add them to a plan that includes therapy, because stress and grief live in the body too. NYSHIP accepted for eligible medical massage. [Explore wellness](/wellness)
+New York State licensed massage therapists, a licensed acupuncturist, cupping, and energy work. Book on their own or add them to a plan that includes therapy, because stress and grief live in the body too. [Explore wellness](/wellness)
 
 ## One conversation starts everything
 
@@ -54,7 +54,7 @@ You do not need to know which service you need. You tell the Welcome Team what y
 
 [CTA] Start your 360 intake -> /contact
 
-Or call (631) 371-3825. Five Long Island offices and telehealth for eligible services.
+Or call (631) 371-3825. Five Long Island offices and telehealth in New York.
 
 [/HERO]
 
@@ -70,7 +70,7 @@ Search the team by concern, modality, age group, office, and format. You do not 
 
 ## Five offices and telehealth
 
-Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, plus telehealth for eligible services when you are in New York. Rockville Centre, Smithtown, and Port Jefferson are accessible. Garden City and Massapequa are reached by stairs. Details on each [location page](/locations).
+Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson, plus telehealth in New York. Rockville Centre, Smithtown, and Port Jefferson are accessible. Garden City and Massapequa are reached by stairs. Details on each [location page](/locations).
 
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
