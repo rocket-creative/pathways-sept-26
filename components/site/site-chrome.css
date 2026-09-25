@@ -204,6 +204,12 @@
   margin-left: auto;
 }
 
+.site-header__actions .button {
+  min-height: 3.25rem;
+  padding: 0.85em 1.45em;
+  font-size: 1.02rem;
+}
+
 .site-header__phone {
   font-size: 0.95rem;
   font-weight: 700;

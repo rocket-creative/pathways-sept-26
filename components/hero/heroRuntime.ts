@@ -180,11 +180,25 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
   /* Card 6 takes the stage in the hand off; everything else leaves. */
   const cta = stops[stops.length - 1];
   const leaving: HTMLElement[] = [...stops.slice(0, -1), ...(intro ? [intro] : [])];
+  /* Opacity on an ancestor of backdrop-filter makes the blur sample an empty
+     group, so the photograph shows through sharp until the fade hits 1.
+     Fade the glass element itself. The dot and the leader are pseudos on the
+     stop, so they follow --stop-fade. */
+  const leavingFade = leaving.map((el) => {
+    const inner = el.classList.contains("hero-stop")
+      ? el.querySelector<HTMLElement>(".hero-stop__inner")
+      : null;
+    return { host: el, glass: inner ?? el };
+  });
   /* The page copy after the hero. hero.css pulls it up to sit under card 6,
      so it would otherwise show at the foot of the screen mid hand off; it
-     fades in through the second half instead and is simply there on release. */
+     fades in through the second half instead and is simply there on release.
+     Each card is faded on its own, never the prose that wraps them. */
   const next = root.nextElementSibling;
   const after = next instanceof HTMLElement && next.matches(".prose") ? next : null;
+  const rising = after
+    ? [...after.children].filter((node): node is HTMLElement => node instanceof HTMLElement)
+    : [];
 
   /* The track runs exactly to the image's right edge: no band after it. */
   const distance = () => Math.max(track.offsetWidth - window.innerWidth, 1);
@@ -260,7 +274,10 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
       const out = (1 - eased).toFixed(3);
       image1.style.opacity = out;
       for (const el of handoff) el.style.opacity = eased.toFixed(3);
-      for (const el of leaving) el.style.opacity = out;
+      for (const { host, glass } of leavingFade) {
+        glass.style.opacity = out;
+        if (glass !== host) host.style.setProperty("--stop-fade", out);
+      }
       /* The card keeps its left edge as it widens, so its centre drifts
          right; aim the translation at where the centre is at this width. */
       const w = ctaW0 + (ctaW1 - ctaW0) * eased;
@@ -275,15 +292,19 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
         x: (html.clientWidth / 2 - cx) * eased,
         y: (window.innerHeight / 2 - cy) * eased,
       });
-      if (after) after.style.opacity = clamp((t - 0.5) / 0.5, 0, 1).toFixed(3);
+      const rise = clamp((t - 0.5) / 0.5, 0, 1).toFixed(3);
+      for (const el of rising) el.style.opacity = rise;
       pin.dataset.heroPhase = t >= 1 ? "out" : "handoff";
     } else {
       image1.style.opacity = "";
       for (const el of handoff) el.style.opacity = "";
-      for (const el of leaving) el.style.opacity = "";
+      for (const { host, glass } of leavingFade) {
+        glass.style.opacity = "";
+        host.style.removeProperty("--stop-fade");
+      }
       gsap.set(cta, { x: 0, y: 0 });
       cta.style.width = "";
-      if (after) after.style.opacity = "";
+      for (const el of rising) el.style.opacity = "";
       delete pin.dataset.heroPhase;
     }
     pin.style.setProperty("--hero-ground-alpha", (1 - t).toFixed(3));
@@ -425,9 +446,12 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
     image1.removeEventListener("load", onImageLoad);
     image1.style.opacity = "";
     for (const el of handoff) el.style.opacity = "";
-    for (const el of leaving) el.style.opacity = "";
+    for (const { host, glass } of leavingFade) {
+      glass.style.opacity = "";
+      host.style.removeProperty("--stop-fade");
+    }
     gsap.set(cta, { clearProps: "transform,width" });
-    if (after) after.style.opacity = "";
+    for (const el of rising) el.style.opacity = "";
     delete pin.dataset.heroPhase;
     pin.style.removeProperty("--hero-ground-alpha");
     html.style.removeProperty("--hero-cta-h");

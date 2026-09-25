@@ -76,7 +76,10 @@
 .page-backdrop {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  /* 0, not -1. A negative layer is painted under the backdrop-filter, so the
+     photograph shows through the cards sharp and the frost only appears when
+     nothing is animating. */
+  z-index: 0;
   /* The sky along the photograph's top and bottom edges: about rgb(191)
      at the left running to rgb(208) at the right. */
   background: linear-gradient(90deg, #bfc0c1 0%, #d0d1d2 100%);
@@ -149,6 +152,15 @@ body:has(.page-backdrop),
 body:has(.page-backdrop) main.page,
 body:has(.page-backdrop) .prose {
   background: transparent;
+}
+
+/* The photograph sits at z-index 0 so the glass can blur it. The page, the
+   breadcrumb and the footer have to paint above that layer. */
+body:has(.page-backdrop) main.page,
+body:has(.page--home) main.page,
+body:has(.page-backdrop) .breadcrumbs {
+  position: relative;
+  z-index: 1;
 }
 
 /* Bento grid ------------------------------------------------------------ */
@@ -568,6 +580,85 @@ main.page--lanes > .prose > .page-section.page-section--intro {
   }
 }
 
+/* Homepage close. The bento split leaves this card's heading alone on the
+   left and stacks the ask, the button, and the crisis line in a narrow
+   column. Here the ask sits with the heading, the button sits opposite, and
+   the phone line is one full-width bar. --brand-deep keeps white type above
+   4.5:1; the brighter brand blue does not. */
+main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: clamp(1.5rem, 3vw, 2.5rem);
+  row-gap: 0.35rem;
+  align-items: center;
+}
+
+main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > :is(h2, .heading--h2) {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: none;
+  margin-block: 0;
+}
+
+main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > p:not(:last-child) {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 40rem;
+  margin: 0;
+}
+
+main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > .cta {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-content: flex-end;
+  max-width: none;
+  margin: 0;
+}
+
+main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > .cta .button {
+  min-height: 3.65rem;
+  padding: 1em 1.9em;
+  font-size: 1.15rem;
+}
+
+main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > p:last-child {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  max-width: none;
+  /* Full width of the card, held just above the bottom edge so a rim of glass
+     stays visible under it. The fill is slightly open so that glass reads through. */
+  margin: 1rem calc(-1 * var(--bento-pad)) calc(-1 * var(--bento-pad) + 1.45rem);
+  padding: 0.85rem var(--bento-pad);
+  border-radius: 0;
+  background: rgb(0 126 252 / 0.24);
+  color: var(--brand-deep);
+  text-shadow: none;
+  text-align: center;
+  font-size: clamp(0.82rem, 1.05vw, 1rem);
+  font-weight: 600;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > .cta {
+    grid-column: 1;
+    grid-row: 3;
+    justify-content: flex-start;
+    margin-block-start: 0.85rem;
+  }
+
+  main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > p:last-child {
+    grid-row: 4;
+    white-space: normal;
+  }
+}
+
 /* Chrome --------------------------------------------------------------- */
 
 /* The header takes no pane on a backdrop page: it is the same transparent
@@ -602,6 +693,8 @@ body:has(.page-backdrop) .breadcrumbs {
 
 body:has(.page-backdrop) .site-footer,
 body:has(.page--home) .site-footer {
+  position: relative;
+  z-index: 1;
   background: rgb(255 255 255 / 0.86);
   backdrop-filter: blur(20px) saturate(1.08);
   -webkit-backdrop-filter: blur(20px) saturate(1.08);
