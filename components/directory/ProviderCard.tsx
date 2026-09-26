@@ -19,13 +19,13 @@ export default function ProviderCard({
 }) {
   if (layout === "finder") {
     const places = provider.locations.filter((place) => !/needs/i.test(place)).map(placeLabel);
-    const formats = formatLine(provider.formats);
     return (
       <li
         className="provider-card provider-card--finder"
         data-slug={provider.slug}
         hidden={hidden || undefined}
       >
+        <p className="provider-card__banner">{appointmentLine(provider.formats)}</p>
         <Headshot provider={provider} />
         <p className="provider-card__name">
           {provider.url ? <Link href={provider.url}>{provider.name}</Link> : <span>{provider.name}</span>}
@@ -34,7 +34,6 @@ export default function ProviderCard({
           ) : null}
         </p>
         {provider.titleLine ? <p className="provider-card__title">{provider.titleLine}</p> : null}
-        {formats ? <p className="provider-card__format">{formats}</p> : null}
         {places.length ? <p className="provider-card__place">{places.join(" · ")}</p> : null}
         <p className="provider-card__phone">
           <a href="tel:+16313713825">(631) 371-3825</a>
@@ -72,13 +71,13 @@ export default function ProviderCard({
   );
 }
 
-function formatLine(formats: string[]): string {
+function appointmentLine(formats: string[]): string {
   const hasOffice = formats.some((format) => /in person|office/i.test(format));
   const hasVideo = formats.some((format) => /telehealth|video|virtual/i.test(format));
-  if (hasOffice && hasVideo) return "In person and telehealth";
-  if (hasVideo) return "Telehealth";
-  if (hasOffice) return "In person";
-  return "";
+  if (hasOffice && hasVideo) return "In-office and video appointments";
+  if (hasVideo) return "Video appointments";
+  if (hasOffice) return "In-office appointments";
+  return "Appointments";
 }
 
 function placeLabel(value: string): string {
