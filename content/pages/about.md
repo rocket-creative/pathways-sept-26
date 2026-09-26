@@ -78,7 +78,9 @@ Tell the Welcome Team what is bringing you in. They will help you find a startin
 
 [CTA] Start your 360 intake -> /contact
 
-Or call (631) 371-3825. See [how it works](/how-it-works), browse [providers](/providers), or find an [office](/locations).
+Or call (631) 371-3825.
+
+[How it works](/how-it-works) · [Browse providers](/providers) · [Find an office](/locations)
 
 
 ```json

@@ -3,12 +3,14 @@ import type { ImageGroup } from "@/lib/images/types";
 /**
  * /therapy and every /therapy/* service page. Source folders: the per
  * service folders (emdr-therapy/, couples-therapy/, …) plus a few mood
- * photographs borrowed from home/, about-us/ and 360-degree-wellness/.
+ * photographs borrowed from home/, about-us/ and 360-degree-wellness/,
+ * plus approved front-desk interiors (th-ap-*) on the /therapy hub.
  *
  * Every page gets one hero band and, where a fitting photograph exists, one
  * section figure (teen therapy takes two: one for teens, one for parents).
  * Heroes are distinct across all 17 pages; the same source is never the hero
- * on two of them.
+ * on two of them. Real interiors go on "where we work" / intake sections;
+ * clinical-mood stock stays on modality and grief/trauma cards.
  *
  * OWNER: therapy curation agent.
  */
@@ -59,6 +61,11 @@ export const THERAPY: ImageGroup = {
     { id: "th-flag-city-sky", file: "veterans-first-responders/unsplash-image-BdgWxoO-jbc.jpg" },
     { id: "th-hand-water", file: "360-degree-wellness/yoann-boyer-i14h2xyPr18-unsplash.jpg" },
     { id: "th-water-ripple", file: "home/unsplash-image-NBQhCKtg_9Y.jpg" },
+
+    // Approved practice interiors (front desk leftovers; practice owns the
+    // primary desk trio and location folders).
+    { id: "th-ap-waiting-greeting", file: "approved/offices/front-desk/_24M8521-gb-e.jpg" },
+    { id: "th-ap-desk-hallway", file: "approved/offices/front-desk/_24M8647-gb-e-1-.jpg" },
   ],
   pages: {
     "/therapy": {
@@ -74,6 +81,25 @@ export const THERAPY: ImageGroup = {
           shape: "circle",
           side: "end",
           focal: "50% 60%",
+        },
+        // Real front desk: how care starts is about arriving and being welcomed.
+        "how-therapy-starts-here": {
+          asset: "th-ap-waiting-greeting",
+          alt: "A Pathways Within clinician greeting a client with a handshake in the waiting area",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          layout: "feature",
+          focal: "42% 28%",
+        },
+        where: {
+          asset: "th-ap-desk-hallway",
+          alt: "The Pathways Within front desk with orchids, the practice logo, and a hallway into the offices",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          layout: "band",
+          focal: "40% 30%",
         },
       },
     },

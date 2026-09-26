@@ -1,0 +1,649 @@
+{
+  "note": "Curated subset of approved photographer exports for site use",
+  "offices": {
+    "_nassau-root": [
+      {
+        "file": "approved/offices/_nassau-root/_24M6849-gb-e.jpg",
+        "bytes": 3006072,
+        "source": "EXPORT-JPG-Nassau Offices/_24M6849-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/_nassau-root/_24M6869-gb-e.jpg",
+        "bytes": 3192721,
+        "source": "EXPORT-JPG-Nassau Offices/_24M6869-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/_nassau-root/_24M6871-gb-e.jpg",
+        "bytes": 2122700,
+        "source": "EXPORT-JPG-Nassau Offices/_24M6871-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/_nassau-root/_24M6873-gb-e.jpg",
+        "bytes": 1482591,
+        "source": "EXPORT-JPG-Nassau Offices/_24M6873-gb-e.jpg"
+      }
+    ],
+    "rockville-centre": [
+      {
+        "file": "approved/offices/rockville-centre/_24M6835-gb-e.jpg",
+        "bytes": 2519755,
+        "source": "EXPORT-JPG-Nassau Offices/Rockville Centre/_24M6835-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/rockville-centre/_24M6837-gb-e.jpg",
+        "bytes": 3449278,
+        "source": "EXPORT-JPG-Nassau Offices/Rockville Centre/_24M6837-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/rockville-centre/_24M6838-gb-e.jpg",
+        "bytes": 3487936,
+        "source": "EXPORT-JPG-Nassau Offices/Rockville Centre/_24M6838-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/rockville-centre/_24M6840-gb-e.jpg",
+        "bytes": 2185717,
+        "source": "EXPORT-JPG-Nassau Offices/Rockville Centre/_24M6840-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/rockville-centre/_24M6841-gb-e.jpg",
+        "bytes": 3788362,
+        "source": "EXPORT-JPG-Nassau Offices/Rockville Centre/_24M6841-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/rockville-centre/_24M6843-gb-e.jpg",
+        "bytes": 2694020,
+        "source": "EXPORT-JPG-Nassau Offices/Rockville Centre/_24M6843-gb-e.jpg"
+      }
+    ],
+    "massapequa": [
+      {
+        "file": "approved/offices/massapequa/_24M6896-gb-e.jpg",
+        "bytes": 3526406,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wisdom/_24M6896-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massapequa/_24M6902-gb-e.jpg",
+        "bytes": 4876128,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wisdom/_24M6902-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massapequa/_24M6908-gb-e.jpg",
+        "bytes": 2971039,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wisdom/_24M6908-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massapequa/_24M6912-gb-e.jpg",
+        "bytes": 2904675,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wisdom/_24M6912-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massapequa/_24M6922-gb-e.jpg",
+        "bytes": 3779064,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wisdom/_24M6922-gb-e.jpg"
+      }
+    ],
+    "garden-city": [
+      {
+        "file": "approved/offices/garden-city/_24M6878-gb-e.jpg",
+        "bytes": 3345473,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wisdom/_24M6878-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/garden-city/_24M6880-gb-e.jpg",
+        "bytes": 3442374,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wisdom/_24M6880-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/garden-city/_24M6882-gb-e.jpg",
+        "bytes": 4290945,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wisdom/_24M6882-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/garden-city/_24M6883-gb-e.jpg",
+        "bytes": 3092711,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wisdom/_24M6883-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/garden-city/_24M6885-gb-e.jpg",
+        "bytes": 4075272,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wisdom/_24M6885-gb-e.jpg"
+      }
+    ],
+    "massapequa-wellness": [
+      {
+        "file": "approved/offices/massapequa-wellness/_24M6934-gb-e.jpg",
+        "bytes": 3116083,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wellness/_24M6934-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massapequa-wellness/_24M6946-gb-e.jpg",
+        "bytes": 4280450,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wellness/_24M6946-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massapequa-wellness/_24M6958-gb-e.jpg",
+        "bytes": 2808303,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wellness/_24M6958-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massapequa-wellness/_24M6970-gb-e.jpg",
+        "bytes": 2140974,
+        "source": "EXPORT-JPG-Nassau Offices/Massapequa - Wellness/_24M6970-gb-e.jpg"
+      }
+    ],
+    "garden-city-wellness": [
+      {
+        "file": "approved/offices/garden-city-wellness/_24M6853-gb-e.jpg",
+        "bytes": 3325599,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wellness/_24M6853-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/garden-city-wellness/_24M6856-gb-e.jpg",
+        "bytes": 2390206,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wellness/_24M6856-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/garden-city-wellness/_24M6860-gb-e.jpg",
+        "bytes": 3131104,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wellness/_24M6860-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/garden-city-wellness/_24M6863-gb-e.jpg",
+        "bytes": 1798639,
+        "source": "EXPORT-JPG-Nassau Offices/Garden City - Wellness/_24M6863-gb-e.jpg"
+      }
+    ],
+    "_suffolk-root": [
+      {
+        "file": "approved/offices/_suffolk-root/_24M8774-gb-e.jpg",
+        "bytes": 3601508,
+        "source": "EXPORT-JPG-Suffolk Offices/_24M8774-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/_suffolk-root/_24M8776-gb-e.jpg",
+        "bytes": 3548360,
+        "source": "EXPORT-JPG-Suffolk Offices/_24M8776-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/_suffolk-root/_24M8778-gb-e.jpg",
+        "bytes": 4910301,
+        "source": "EXPORT-JPG-Suffolk Offices/_24M8778-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/_suffolk-root/_24M8780-gb-e.jpg",
+        "bytes": 5787868,
+        "source": "EXPORT-JPG-Suffolk Offices/_24M8780-gb-e.jpg"
+      }
+    ],
+    "front-desk": [
+      {
+        "file": "approved/offices/front-desk/_24M8456-gb-e.jpg",
+        "bytes": 2728879,
+        "source": "EXPORT-JPG-Suffolk Offices/Front Desk/_24M8456-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/front-desk/_24M8507-gb-e.jpg",
+        "bytes": 2908409,
+        "source": "EXPORT-JPG-Suffolk Offices/Front Desk/_24M8507-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/front-desk/_24M8514-gb-e.jpg",
+        "bytes": 3853500,
+        "source": "EXPORT-JPG-Suffolk Offices/Front Desk/_24M8514-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/front-desk/_24M8521-gb-e.jpg",
+        "bytes": 3618197,
+        "source": "EXPORT-JPG-Suffolk Offices/Front Desk/_24M8521-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/front-desk/_24M8640-gb-e-1-.jpg",
+        "bytes": 3455530,
+        "source": "EXPORT-JPG-Suffolk Offices/Front Desk/_24M8640-gb-e (1).jpg"
+      },
+      {
+        "file": "approved/offices/front-desk/_24M8647-gb-e-1-.jpg",
+        "bytes": 3548032,
+        "source": "EXPORT-JPG-Suffolk Offices/Front Desk/_24M8647-gb-e (1).jpg"
+      }
+    ],
+    "smithtown-extra": [
+      {
+        "file": "approved/offices/smithtown-extra/_24M8756-gb-e.jpg",
+        "bytes": 2940054,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown-JPG/_24M8756-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown-extra/_24M8762-gb-e.jpg",
+        "bytes": 4019359,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown-JPG/_24M8762-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown-extra/_24M8768-gb-e.jpg",
+        "bytes": 3587084,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown-JPG/_24M8768-gb-e.jpg"
+      }
+    ],
+    "port-jefferson": [
+      {
+        "file": "approved/offices/port-jefferson/_24M8795-gb-e.jpg",
+        "bytes": 3890887,
+        "source": "EXPORT-JPG-Suffolk Offices/Port Jefferson/_24M8795-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/port-jefferson/_24M8804-gb-e.jpg",
+        "bytes": 6285233,
+        "source": "EXPORT-JPG-Suffolk Offices/Port Jefferson/_24M8804-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/port-jefferson/_24M8813-gb-e.jpg",
+        "bytes": 4682792,
+        "source": "EXPORT-JPG-Suffolk Offices/Port Jefferson/_24M8813-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/port-jefferson/_24M8822-gb-e.jpg",
+        "bytes": 3519911,
+        "source": "EXPORT-JPG-Suffolk Offices/Port Jefferson/_24M8822-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/port-jefferson/_24M8831-gb-e.jpg",
+        "bytes": 3760018,
+        "source": "EXPORT-JPG-Suffolk Offices/Port Jefferson/_24M8831-gb-e.jpg"
+      }
+    ],
+    "front-desk-saul": [
+      {
+        "file": "approved/offices/front-desk-saul/_24M8528-gb-e-1-.jpg",
+        "bytes": 3843291,
+        "source": "EXPORT-JPG-Suffolk Offices/Front Desk/Saul/_24M8528-gb-e (1).jpg"
+      },
+      {
+        "file": "approved/offices/front-desk-saul/_24M8664-gb-e.jpg",
+        "bytes": 3481485,
+        "source": "EXPORT-JPG-Suffolk Offices/Front Desk/Saul/_24M8664-gb-e.jpg"
+      }
+    ],
+    "smithtown": [
+      {
+        "file": "approved/offices/smithtown/_24M8687-gb-e.jpg",
+        "bytes": 3098721,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wisdom/_24M8687-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown/_24M8697-gb-e.jpg",
+        "bytes": 1942923,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wisdom/_24M8697-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown/_24M8707-gb-e.jpg",
+        "bytes": 3650413,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wisdom/_24M8707-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown/_24M8717-gb-e.jpg",
+        "bytes": 5895711,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wisdom/_24M8717-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown/_24M8727-gb-e.jpg",
+        "bytes": 4626326,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wisdom/_24M8727-gb-e.jpg"
+      }
+    ],
+    "smithtown-wellness": [
+      {
+        "file": "approved/offices/smithtown-wellness/_24M8744-gb-e.jpg",
+        "bytes": 4260424,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wellness/_24M8744-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown-wellness/_24M8746-gb-e.jpg",
+        "bytes": 3517647,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wellness/_24M8746-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown-wellness/_24M8748-gb-e.jpg",
+        "bytes": 5463045,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wellness/_24M8748-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/smithtown-wellness/_24M8750-gb-e.jpg",
+        "bytes": 3188121,
+        "source": "EXPORT-JPG-Suffolk Offices/Smithtown - Wellness/_24M8750-gb-e.jpg"
+      }
+    ],
+    "massage-acupuncture": [
+      {
+        "file": "approved/offices/massage-acupuncture/_24M8551-gb-e.jpg",
+        "bytes": 3676395,
+        "source": "EXPORT-JPG-Suffolk Offices/Massage and Acupuncture/Christine/_24M8551-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massage-acupuncture/_24M8584-gb-e.jpg",
+        "bytes": 2367170,
+        "source": "EXPORT-JPG-Suffolk Offices/Massage and Acupuncture/Model only/_24M8584-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massage-acupuncture/_24M8613-gb-e-1-.jpg",
+        "bytes": 2564195,
+        "source": "EXPORT-JPG-Suffolk Offices/Massage and Acupuncture/Model only/_24M8613-gb-e (1).jpg"
+      },
+      {
+        "file": "approved/offices/massage-acupuncture/_24M8561-gb-e.jpg",
+        "bytes": 3402623,
+        "source": "EXPORT-JPG-Suffolk Offices/Massage and Acupuncture/Saul/_24M8561-gb-e.jpg"
+      },
+      {
+        "file": "approved/offices/massage-acupuncture/_24M8602-gb-e.jpg",
+        "bytes": 2849098,
+        "source": "EXPORT-JPG-Suffolk Offices/Massage and Acupuncture/Saul/_24M8602-gb-e.jpg"
+      }
+    ]
+  },
+  "headshots": [
+    {
+      "slug": "anna-ostrow",
+      "file": "approved/headshots/anna-ostrow.jpg",
+      "bytes": 3239992,
+      "source": "EXPORT-JPG-Nassau headshots/Anna Ostrow/_2008673-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "beth-gabellini",
+      "file": "approved/headshots/beth-gabellini.jpg",
+      "bytes": 4703728,
+      "source": "EXPORT-JPG-Suffolk headshots/Beth Gabellini/_2001101-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "carly-sandstrom",
+      "file": "approved/headshots/carly-sandstrom.jpg",
+      "bytes": 2151658,
+      "source": "EXPORT-JPG-Suffolk headshots/Carly Sandstrom/_2001027-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "charity-meyer",
+      "file": "approved/headshots/charity-meyer.jpg",
+      "bytes": 4165840,
+      "source": "EXPORT-JPG-Nassau headshots/Charity (Valen) Meyer/_2008851-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "chelsea-bell",
+      "file": "approved/headshots/chelsea-bell.jpg",
+      "bytes": 3110333,
+      "source": "EXPORT-JPG-Suffolk headshots/Chelsea Bell/_2001179-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "christine-cervo",
+      "file": "approved/headshots/christine-cervo.jpg",
+      "bytes": 2866165,
+      "source": "EXPORT-JPG-Nassau headshots/Christine Cervo/_2008232-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "frank-tropeano",
+      "file": "approved/headshots/frank-tropeano.jpg",
+      "bytes": 5700009,
+      "source": "EXPORT-JPG-Nassau headshots/Frank Tropeano/_2008616-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "gloria-saladino",
+      "file": "approved/headshots/gloria-saladino.jpg",
+      "bytes": 2758827,
+      "source": "EXPORT-JPG-Suffolk headshots/Gloria Saladino/_2001304-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "jen-brooks",
+      "file": "approved/headshots/jen-brooks.jpg",
+      "bytes": 2879263,
+      "source": "EXPORT-JPG-Suffolk headshots/Jennifer Brooks/_2001349-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "joe-bush",
+      "file": "approved/headshots/joe-bush.jpg",
+      "bytes": 2667182,
+      "source": "EXPORT-JPG-Suffolk headshots/Joseph Bush/_2000990-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "juliette-squicciarini",
+      "file": "approved/headshots/juliette-squicciarini.jpg",
+      "bytes": 3266165,
+      "source": "EXPORT-JPG-Nassau headshots/Juliette Squicciarini/_2008511-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "kaitlyn-kelly",
+      "file": "approved/headshots/kaitlyn-kelly.jpg",
+      "bytes": 3705392,
+      "source": "EXPORT-JPG-Nassau headshots/Kaitlin Kelly/_2008586-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "kalovna-edmond",
+      "file": "approved/headshots/kalovna-edmond.jpg",
+      "bytes": 5758614,
+      "source": "EXPORT-JPG-Nassau headshots/Kalovna Edmond/_2009053-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "kathleen-dimartino",
+      "file": "approved/headshots/kathleen-dimartino.jpg",
+      "bytes": 3495562,
+      "source": "EXPORT-JPG-Suffolk headshots/Kathleen DeMartino/_2001629-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "ksusha-cascio",
+      "file": "approved/headshots/ksusha-cascio.jpg",
+      "bytes": 4062784,
+      "source": "EXPORT-JPG-Nassau headshots/Ksusha Cascio and Domino/_2008647-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "laura-desilva",
+      "file": "approved/headshots/laura-desilva.jpg",
+      "bytes": 3782207,
+      "source": "EXPORT-JPG-Suffolk headshots/Laura DeSilva/_2001578-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "lauren-hollander",
+      "file": "approved/headshots/lauren-hollander.jpg",
+      "bytes": 6224177,
+      "source": "EXPORT-JPG-Nassau headshots/Lauren Vanchieri-Hollander and Gypsy/_2008496-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "lee-wasser",
+      "file": "approved/headshots/lee-wasser.jpg",
+      "bytes": 5386370,
+      "source": "EXPORT-JPG-Nassau headshots/Lee Wasser/_2008697-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "leonard-ma",
+      "file": "approved/headshots/leonard-ma.jpg",
+      "bytes": 7608517,
+      "source": "EXPORT-JPG-Nassau headshots/Leonard Ma/_2008882-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "lindsay-laier",
+      "file": "approved/headshots/lindsay-laier.jpg",
+      "bytes": 4000975,
+      "source": "EXPORT-JPG-Nassau headshots/Lindsay Laier/_2008317-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "maddy-zambri",
+      "file": "approved/headshots/maddy-zambri.jpg",
+      "bytes": 3839593,
+      "source": "EXPORT-JPG-Nassau headshots/Madeline Zambri/_2008378-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "mariah-simone",
+      "file": "approved/headshots/mariah-simone.jpg",
+      "bytes": 2351572,
+      "source": "EXPORT-JPG-Nassau headshots/Mariah Simone/_2009102-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "nicole-duffy",
+      "file": "approved/headshots/nicole-duffy.jpg",
+      "bytes": 2588636,
+      "source": "EXPORT-JPG-Suffolk headshots/Nicole Duffy/_2001454-p-smith-1.jpg",
+      "county": "suffolk"
+    },
+    {
+      "slug": "paula-gonthier",
+      "file": "approved/headshots/paula-gonthier.jpg",
+      "bytes": 4732097,
+      "source": "EXPORT-JPG-Nassau headshots/Paula Gonthier/_2008754-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "rachel-lessard",
+      "file": "approved/headshots/rachel-lessard.jpg",
+      "bytes": 5379765,
+      "source": "EXPORT-JPG-Nassau headshots/Rachel Lessard - Nassau/_2008824-p-1.jpg",
+      "county": "nassau"
+    },
+    {
+      "slug": "tia-baumohl",
+      "file": "approved/headshots/tia-baumohl.jpg",
+      "bytes": 2847084,
+      "source": "EXPORT-JPG-Nassau headshots/Tia Baumohl/_2008535-p-1.jpg",
+      "county": "nassau"
+    }
+  ],
+  "editorial_headshots": [
+    {
+      "id": "ed-emily-dugan",
+      "file": "approved/headshots/editorial/emily-dugan.jpg",
+      "person": "Emily Dugan",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-aviva-ciment",
+      "file": "approved/headshots/editorial/aviva-ciment.jpg",
+      "person": "Aviva Ciment",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-amanda-baylis",
+      "file": "approved/headshots/editorial/amanda-baylis.jpg",
+      "person": "Amanda Baylis",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-zachary-pardo",
+      "file": "approved/headshots/editorial/zachary-pardo.jpg",
+      "person": "Zachary Pardo",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-alexa-cordeiro",
+      "file": "approved/headshots/editorial/alexa-cordeiro.jpg",
+      "person": "Alexa Cordeiro",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-vernon-jenkins",
+      "file": "approved/headshots/editorial/vernon-jenkins.jpg",
+      "person": "Vernon Jenkins",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-angela-gestone",
+      "file": "approved/headshots/editorial/angela-gestone.jpg",
+      "person": "Angela Gestone",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-michelle-whitmore",
+      "file": "approved/headshots/editorial/michelle-whitmore.jpg",
+      "person": "Michelle Whitmore",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-kristi-l-esperance",
+      "file": "approved/headshots/editorial/kristi-l-esperance.jpg",
+      "person": "Kristi L'Esperance",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-stephanie-procopiou",
+      "file": "approved/headshots/editorial/stephanie-procopiou.jpg",
+      "person": "Stephanie Procopiou",
+      "county": "nassau"
+    },
+    {
+      "id": "ed-madiha-aziz",
+      "file": "approved/headshots/editorial/madiha-aziz.jpg",
+      "person": "Madiha Aziz",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-cara-robtoy",
+      "file": "approved/headshots/editorial/cara-robtoy.jpg",
+      "person": "Cara Robtoy",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-saul-alvarez",
+      "file": "approved/headshots/editorial/saul-alvarez.jpg",
+      "person": "Saul Alvarez",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-briana-nelson",
+      "file": "approved/headshots/editorial/briana-nelson.jpg",
+      "person": "Briana Nelson",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-joy-fullhardt",
+      "file": "approved/headshots/editorial/joy-fullhardt.jpg",
+      "person": "Joy Fullhardt",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-kelly-imperial",
+      "file": "approved/headshots/editorial/kelly-imperial.jpg",
+      "person": "Kelly Imperial",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-munira-fuhrman",
+      "file": "approved/headshots/editorial/munira-fuhrman.jpg",
+      "person": "Munira Fuhrman",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-samantha-tavel",
+      "file": "approved/headshots/editorial/samantha-tavel.jpg",
+      "person": "Samantha Tavel",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-alexandra-cella",
+      "file": "approved/headshots/editorial/alexandra-cella.jpg",
+      "person": "Alexandra Cella",
+      "county": "suffolk"
+    },
+    {
+      "id": "ed-jennifer-thieke",
+      "file": "approved/headshots/editorial/jennifer-thieke.jpg",
+      "person": "Jennifer Thieke",
+      "county": "suffolk"
+    }
+  ]
+}

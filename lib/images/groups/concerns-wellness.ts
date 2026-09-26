@@ -12,9 +12,9 @@ import type { ImageGroup } from "@/lib/images/types";
  * - Heroes are distinct within /concerns/* and within /wellness/*. Two photos
  *   recur as heroes across those two sections (chair-among-plants, hand in
  *   still water) because the calm-body pool is small; that is allowed.
- * - The wellness services have no honest photographs in the export, so they
- *   carry nature / light / body-at-rest imagery. Cupping has no hero, only a
- *   decorative figure on its first-session card.
+ * - The wellness services now use approved treatment-room and front-desk
+ *   photographs (cw-ap-*) for "where we work" and first-session cards.
+ *   Lifestyle stock stays on clinical-mood sections when no real photo fits.
  * - Concern pages put the section figure on the long "How we treat ..." card
  *   (or another long card), never on the short "Signs" list, so the Signs
  *   card runs full row instead of stretching beside a taller partner.
@@ -72,6 +72,15 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     { id: "cw-coaching-conversation", file: "weight-loss-surgery-support/pexels-shvets-production-7176288.jpg" },
     { id: "cw-medication-hands", file: "medication-management/senior-receives-medication-advice-from-healthcare-2026-03-25-08-56-06-utc.jpg" },
     { id: "cw-man-ledge-smile", file: "individual-therapy/unsplash-image-9sEcEcYHgQ0.jpg", square: "attention" },
+
+    // Approved practice interiors (massage / acupuncture rooms + front desk)
+    { id: "cw-ap-massage-session", file: "approved/offices/massage-acupuncture/_24M8551-gb-e.jpg" },
+    { id: "cw-ap-acupuncture-session", file: "approved/offices/massage-acupuncture/_24M8561-gb-e.jpg" },
+    { id: "cw-ap-needle-closeup", file: "approved/offices/massage-acupuncture/_24M8584-gb-e.jpg" },
+    { id: "cw-ap-shoulder-needles", file: "approved/offices/massage-acupuncture/_24M8602-gb-e.jpg" },
+    { id: "cw-ap-treatment-room", file: "approved/offices/massage-acupuncture/_24M8613-gb-e-1-.jpg" },
+    { id: "cw-ap-desk-orchids", file: "approved/offices/front-desk/_24M8640-gb-e-1-.jpg" },
+    { id: "cw-ap-waiting-handshake", file: "approved/offices/front-desk/_24M8514-gb-e.jpg" },
   ],
   pages: {
     /* ---------------------------------------------------------------- */
@@ -356,10 +365,31 @@ export const CONCERNS_WELLNESS: ImageGroup = {
       },
       sections: {
         "why-wellness-lives-inside-a-mental-health-practice": {
-          asset: "cw-welcome-counter",
-          alt: "A wooden reception counter at a Pathways Within office with dried grasses and a hanging Welcome sign",
-          shape: "circle",
+          asset: "cw-ap-desk-orchids",
+          alt: "A client talking with Pathways Within staff at the front desk beneath the practice logo",
+          shape: "rounded",
+          aspect: "landscape",
           side: "end",
+          layout: "feature",
+          focal: "45% 40%",
+        },
+        "what-to-expect": {
+          asset: "cw-ap-massage-session",
+          alt: "A massage therapist working with a client on a treatment table in a beach-themed Pathways Within room",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          layout: "feature",
+          focal: "70% 30%",
+        },
+        where: {
+          asset: "cw-ap-waiting-handshake",
+          alt: "A Pathways Within clinician greeting a client with a handshake in the waiting area",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          layout: "band",
+          focal: "42% 28%",
         },
       },
     },
@@ -377,11 +407,13 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           side: "end",
         },
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "cw-stone-stack-bokeh",
-          alt: "Smooth stones stacked in a tower against sparkling water",
+          asset: "cw-ap-massage-session",
+          alt: "A massage therapist working with a client on a treatment table in a beach-themed Pathways Within room",
           shape: "rounded",
-          aspect: "square",
+          aspect: "landscape",
           side: "end",
+          layout: "feature",
+          focal: "70% 30%",
         },
       },
     },
@@ -392,30 +424,57 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "center",
       },
       sections: {
+        "what-acupuncture-is": {
+          asset: "cw-ap-shoulder-needles",
+          alt: "An acupuncturist's hands placing a needle near a client's shoulder on the treatment table",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          layout: "feature",
+          focal: "50% 45%",
+        },
+        "what-to-expect-in-your-first-session-at-pathways-within": {
+          asset: "cw-ap-acupuncture-session",
+          alt: "An acupuncturist placing needles along a client's upper back in a Pathways Within treatment room",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          layout: "feature",
+          focal: "62% 32%",
+        },
         // Three paragraphs on a full row card (the approaches stack before it
-        // takes a row of its own): the hero photograph rides beside them.
+        // takes a row of its own): real needle work rides beside them.
         "how-care-works-here": {
-          asset: "cw-water-drop",
-          alt: "",
+          asset: "cw-ap-needle-closeup",
+          alt: "Close view of acupuncture needles being placed along a client's upper back and neck",
           shape: "rounded",
           aspect: "portrait",
           side: "end",
-          focal: "center",
+          layout: "feature",
+          focal: "55% 45%",
+        },
+        "where-it-is-offered": {
+          asset: "cw-ap-treatment-room",
+          alt: "Acupuncture in a Pathways Within treatment room with a beach mural on the wall",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          layout: "band",
+          focal: "55% 40%",
         },
       },
     },
-    // /wellness/cupping: no honest photograph of cupping in the export, so no
-    // hero. The first-session card carries a quiet decorative figure only so
-    // that "How care works here" is not left half empty beside it.
+    // Cupping shares the massage treatment table; no honest cupping photo yet.
     "/wellness/cupping": {
       sections: {
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "cw-plant-on-table",
-          alt: "",
+          asset: "cw-ap-massage-session",
+          alt: "A Pathways Within treatment room with a massage table and beach mural, where massage-based cupping is offered",
           shape: "rounded",
-          aspect: "portrait",
+          aspect: "landscape",
           side: "end",
-          focal: "center",
+          layout: "feature",
+          focal: "70% 30%",
         },
       },
     },
@@ -433,10 +492,13 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           side: "end",
         },
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "cw-sunlit-meditation",
-          alt: "A woman sitting cross-legged in a sunlit bedroom with her eyes closed",
-          shape: "circle",
+          asset: "cw-ap-waiting-handshake",
+          alt: "A Pathways Within clinician greeting a client with a handshake in the waiting area",
+          shape: "rounded",
+          aspect: "landscape",
           side: "end",
+          layout: "feature",
+          focal: "42% 28%",
         },
       },
     },
@@ -462,6 +524,17 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         asset: "cw-coastal-stone-circles",
         alt: "Circular stone ruins on a grassy headland above the sea in morning light",
         focal: "center",
+      },
+      sections: {
+        "what-to-expect-in-your-first-session-at-pathways-within": {
+          asset: "cw-ap-desk-orchids",
+          alt: "A client talking with Pathways Within staff at the front desk beneath the practice logo",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "end",
+          layout: "feature",
+          focal: "45% 40%",
+        },
       },
     },
     "/wellness/cryotherapy": {

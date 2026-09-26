@@ -4,8 +4,16 @@
  * around it, so a photo reads as a window in the bento rather than a sticker
  * on top of it.
  *
- *   .page-section--figure  a section with copy on one side, a picture on the other
+ *   .page-section--figure  a section with copy + picture (split / feature / band)
  *   .content-image--portrait  a provider's circular portrait in the lockup
+ *
+ * Layouts (data-layout on the section, mirrored on the primary figure):
+ *   split   (default) copy + figure side by side
+ *   feature larger media column (~60–70% on desktop)
+ *   band    full-bleed horizontal photograph; copy stays above/below, never overlaid
+ *
+ * Extra registry entries after the primary render as additional band figures
+ * inside the same card (data-has-bands).
  *
  * Unlayered on purpose: these rules extend the bento in backdrop.css and must
  * win over the generic .content-image defaults in render.css.
@@ -20,6 +28,10 @@
 
   position: relative;
   margin: 0;
+  /* Beat globals.css .content-image { max-width: 88ch } so bands and split
+     frames fill the bento card (or their grid column), not a text measure. */
+  width: 100%;
+  max-width: none;
   overflow: hidden;
   border-radius: var(--photo-radius);
   background: var(--surface-deep, #ebebeb);
@@ -86,10 +98,12 @@
 }
 
 /* The frame tops out level with the h2: it carries .content-image for the
-   bento's :has() test, so it has to shed that class's block margin here
-   (written at card specificity to beat the card rhythm in backdrop.css). */
+   bento's :has() test, so it has to shed that class's block margin and
+   measure cap here (card specificity beats globals.css .content-image). */
 main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   margin: 0;
+  width: 100%;
+  max-width: none;
 }
 
 /* Under 900px the picture follows the copy and keeps a landscape crop so it
@@ -113,6 +127,31 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55), inset 0 0 0 6px rgb(255 255 255 / 0.28);
 }
 
+/* Band: immersive full-width landscape inside the card (mobile first). */
+.page-section--figure[data-layout="band"] {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.page-section--figure[data-layout="band"] .section-figure__media,
+.page-section--figure > .section-figure__media[data-layout="band"] {
+  width: 100%;
+  justify-self: stretch;
+  aspect-ratio: auto;
+  /* Tall landscape that still fits a phone: ~56vw, floor 14rem. */
+  min-height: max(14rem, 56vw);
+  max-height: 28rem;
+}
+
+.page-section--figure[data-layout="band"] .section-figure__media::before,
+.page-section--figure > .section-figure__media[data-layout="band"]::before {
+  display: none;
+}
+
+/* side=start on a band: primary photo above the copy (no text-on-image overlay). */
+.page-section--figure[data-layout="band"][data-side="start"] > .section-figure__copy + .section-figure__media {
+  order: -1;
+}
+
 @media (min-width: 900px) {
   .page-section.page-section--figure {
     grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
@@ -123,8 +162,48 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
     grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   }
 
-  .page-section--figure[data-side="start"] .section-figure__media {
+  .page-section--figure[data-side="start"] > .section-figure__media:not([data-layout="band"]) {
     order: -1;
+  }
+
+  /* Feature: photo takes the larger share (~7/12 ≈ 58%). */
+  .page-section.page-section--figure[data-layout="feature"] {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+
+  .page-section.page-section--figure[data-layout="feature"][data-side="start"] {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+
+  /* Band: single column, copy then (or after) the full-bleed frame. */
+  .page-section.page-section--figure[data-layout="band"] {
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
+  }
+
+  /* Extra bands after a split/feature primary span the full card width. */
+  .page-section--figure[data-has-bands] {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+
+  .page-section--figure[data-has-bands][data-side="start"] {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+
+  .page-section--figure[data-has-bands][data-layout="feature"] {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+
+  .page-section--figure[data-has-bands][data-layout="feature"][data-side="start"] {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+
+  .page-section--figure[data-has-bands] > .section-figure__media[data-layout="band"] {
+    grid-column: 1 / -1;
+  }
+
+  .page-section--figure[data-has-bands][data-layout="band"] {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   /* The frame runs the full height of the copy beside it (bento: no well
@@ -133,35 +212,42 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
      ::before whose padding is a share of the frame's width: 5/4 portrait,
      3/4 landscape, 1/1 square. The picture is absolute and covers whatever
      the two produce, so a long section gets a taller crop, not a gap. */
-  .section-figure__media {
+  .section-figure__media:not([data-layout="band"]) {
     aspect-ratio: auto;
     align-self: stretch;
   }
 
-  .section-figure__media::before {
+  .section-figure__media:not([data-layout="band"])::before {
     content: "";
     display: block;
     padding-block-start: 125%;
   }
 
-  .section-figure__media[data-aspect="landscape"]::before {
+  .section-figure__media:not([data-layout="band"])[data-aspect="landscape"]::before {
     padding-block-start: 75%;
   }
 
-  .section-figure__media[data-aspect="square"]::before {
+  .section-figure__media:not([data-layout="band"])[data-aspect="square"]::before {
     padding-block-start: 100%;
+  }
+
+  /* Desktop band: immersive height inside the card, glass-edged. */
+  .page-section--figure[data-layout="band"] .section-figure__media,
+  .page-section--figure > .section-figure__media[data-layout="band"] {
+    min-height: min(52vh, 36rem);
+    max-height: none;
   }
 
   /* A circle cannot stretch: it sits centred on the copy's height, so the
      room around it is even rather than a hole at the bottom. */
-  .section-figure__media--circle {
+  .section-figure__media--circle:not([data-layout="band"]) {
     aspect-ratio: 1;
     width: min(100%, 26rem);
     justify-self: center;
     align-self: center;
   }
 
-  .section-figure__media--circle::before {
+  .section-figure__media--circle:not([data-layout="band"])::before {
     display: none;
   }
 }
@@ -210,5 +296,9 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   .section-figure__media::after {
     border-color: #e3e6ea;
     box-shadow: none;
+  }
+
+  .section-figure__media--circle::after {
+    box-shadow: inset 0 0 0 6px #e3e6ea;
   }
 }

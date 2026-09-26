@@ -216,13 +216,13 @@ export default function Quiz({ phone, phoneHref, anchorId = "quiz" }: QuizProps)
           </h3>
 
           {result.links.length ? (
-            <ul className="quiz__links">
+            <div className={`cta cta--quiet quiz__links${result.links.length >= 3 ? " cta--strip" : result.links.length === 2 ? " cta--pair" : ""}`}>
               {result.links.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href}>{link.label}</Link>
-                </li>
+                <Link key={link.href} className="button button--quiet" href={link.href}>
+                  {link.label}
+                </Link>
               ))}
-            </ul>
+            </div>
           ) : null}
 
           {result.followUp ? (

@@ -1,6 +1,237 @@
 {
-  "builtAt": "2026-09-18T17:56:30.330Z",
+  "builtAt": "2026-09-26T17:34:05.313Z",
   "photos": {
+    "cw-ap-acupuncture-session": {
+      "id": "cw-ap-acupuncture-session",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap-acupuncture-session-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap-acupuncture-session-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap-acupuncture-session-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap-acupuncture-session-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap-acupuncture-session-2000.webp"
+        }
+      ]
+    },
+    "cw-ap-desk-orchids": {
+      "id": "cw-ap-desk-orchids",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap-desk-orchids-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap-desk-orchids-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap-desk-orchids-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap-desk-orchids-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap-desk-orchids-2000.webp"
+        }
+      ]
+    },
+    "cw-ap-massage-session": {
+      "id": "cw-ap-massage-session",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap-massage-session-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap-massage-session-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap-massage-session-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap-massage-session-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap-massage-session-2000.webp"
+        }
+      ]
+    },
+    "cw-ap-needle-closeup": {
+      "id": "cw-ap-needle-closeup",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap-needle-closeup-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap-needle-closeup-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap-needle-closeup-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap-needle-closeup-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap-needle-closeup-2000.webp"
+        }
+      ]
+    },
+    "cw-ap-shoulder-needles": {
+      "id": "cw-ap-shoulder-needles",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap-shoulder-needles-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap-shoulder-needles-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap-shoulder-needles-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap-shoulder-needles-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap-shoulder-needles-2000.webp"
+        }
+      ]
+    },
+    "cw-ap-treatment-room": {
+      "id": "cw-ap-treatment-room",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap-treatment-room-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap-treatment-room-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap-treatment-room-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap-treatment-room-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap-treatment-room-2000.webp"
+        }
+      ]
+    },
+    "cw-ap-waiting-handshake": {
+      "id": "cw-ap-waiting-handshake",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-waiting-greeting-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-waiting-greeting-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-waiting-greeting-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-waiting-greeting-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-waiting-greeting-2000.webp"
+        }
+      ]
+    },
     "cw-autumn-couple-walk": {
       "id": "cw-autumn-couple-walk",
       "width": 1200,
@@ -1029,27 +1260,27 @@
         {
           "width": 640,
           "height": 427,
-          "src": "/images/photos/ha-warm-sunlight-rest-640.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-640.webp"
         },
         {
           "width": 960,
           "height": 640,
-          "src": "/images/photos/ha-warm-sunlight-rest-960.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-960.webp"
         },
         {
           "width": 1280,
           "height": 854,
-          "src": "/images/photos/ha-warm-sunlight-rest-1280.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-1280.webp"
         },
         {
           "width": 1600,
           "height": 1067,
-          "src": "/images/photos/ha-warm-sunlight-rest-1600.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-1600.webp"
         },
         {
           "width": 2000,
           "height": 1334,
-          "src": "/images/photos/ha-warm-sunlight-rest-2000.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-2000.webp"
         }
       ]
     },
@@ -1205,6 +1436,494 @@
           "width": 2000,
           "height": 1334,
           "src": "/images/photos/th-woman-windy-beach-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-coffee-bar": {
+      "id": "ha-ap-coffee-bar",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-coffee-bar-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-coffee-bar-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-coffee-bar-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-coffee-bar-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-coffee-bar-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-editorial-amanda": {
+      "id": "ha-ap-editorial-amanda",
+      "width": 1200,
+      "height": 1200,
+      "crop": "top",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/ha-ap-editorial-amanda-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/ha-ap-editorial-amanda-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/ha-ap-editorial-amanda-1200.webp"
+        }
+      ]
+    },
+    "ha-ap-editorial-emily": {
+      "id": "ha-ap-editorial-emily",
+      "width": 1200,
+      "height": 1200,
+      "crop": "top",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/ha-ap-editorial-emily-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/ha-ap-editorial-emily-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/ha-ap-editorial-emily-1200.webp"
+        }
+      ]
+    },
+    "ha-ap-editorial-saul": {
+      "id": "ha-ap-editorial-saul",
+      "width": 1200,
+      "height": 1200,
+      "crop": "top",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/ha-ap-editorial-saul-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/ha-ap-editorial-saul-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/ha-ap-editorial-saul-1200.webp"
+        }
+      ]
+    },
+    "ha-ap-front-desk-team": {
+      "id": "ha-ap-front-desk-team",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-front-desk-team-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-front-desk-team-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-front-desk-team-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-front-desk-team-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-front-desk-team-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-front-desk-welcome": {
+      "id": "ha-ap-front-desk-welcome",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-front-desk-welcome-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-front-desk-welcome-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-front-desk-welcome-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-front-desk-welcome-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-front-desk-welcome-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-group-room-garden-city": {
+      "id": "ha-ap-group-room-garden-city",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-group-room-garden-city-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-group-room-garden-city-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-group-room-garden-city-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-group-room-garden-city-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-group-room-garden-city-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-hallway-rvc": {
+      "id": "ha-ap-hallway-rvc",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-hallway-rvc-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-hallway-rvc-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-hallway-rvc-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-hallway-rvc-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-hallway-rvc-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-massage-room": {
+      "id": "ha-ap-massage-room",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-massage-room-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-massage-room-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-massage-room-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-massage-room-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-massage-room-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-rachel-lessard": {
+      "id": "ha-ap-rachel-lessard",
+      "width": 1200,
+      "height": 1200,
+      "crop": "top",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/ha-ap-rachel-lessard-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/ha-ap-rachel-lessard-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/ha-ap-rachel-lessard-1200.webp"
+        }
+      ]
+    },
+    "ha-ap-therapy-massapequa": {
+      "id": "ha-ap-therapy-massapequa",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-therapy-massapequa-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-therapy-massapequa-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-therapy-massapequa-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-therapy-massapequa-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-therapy-massapequa-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-waiting-garden-city": {
+      "id": "ha-ap-waiting-garden-city",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-waiting-garden-city-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-waiting-garden-city-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-waiting-garden-city-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-waiting-garden-city-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-waiting-garden-city-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-waiting-greeting": {
+      "id": "ha-ap-waiting-greeting",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-waiting-greeting-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-waiting-greeting-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-waiting-greeting-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-waiting-greeting-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-waiting-greeting-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-waiting-port-jefferson": {
+      "id": "ha-ap-waiting-port-jefferson",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-waiting-smithtown": {
+      "id": "ha-ap-waiting-smithtown",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-waiting-smithtown-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-waiting-smithtown-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-waiting-smithtown-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-waiting-smithtown-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-waiting-smithtown-2000.webp"
+        }
+      ]
+    },
+    "ha-ap-wellness-lobby": {
+      "id": "ha-ap-wellness-lobby",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-wellness-lobby-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-wellness-lobby-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-wellness-lobby-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-wellness-lobby-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-wellness-lobby-2000.webp"
         }
       ]
     },
@@ -1419,6 +2138,879 @@
           "width": 960,
           "height": 1280,
           "src": "/images/photos/ha-welcome-desk-960.webp"
+        }
+      ]
+    },
+    "pr-ap-desk-greeting": {
+      "id": "pr-ap-desk-greeting",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-waiting-greeting-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-waiting-greeting-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-waiting-greeting-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-waiting-greeting-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-waiting-greeting-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-desk-logo": {
+      "id": "pr-ap-desk-logo",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-front-desk-welcome-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-front-desk-welcome-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-front-desk-welcome-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-front-desk-welcome-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-front-desk-welcome-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-desk-saul": {
+      "id": "pr-ap-desk-saul",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/pr-ap-desk-saul-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/pr-ap-desk-saul-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/pr-ap-desk-saul-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/pr-ap-desk-saul-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/pr-ap-desk-saul-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-desk-waiting": {
+      "id": "pr-ap-desk-waiting",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/pr-ap-desk-waiting-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/pr-ap-desk-waiting-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/pr-ap-desk-waiting-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/pr-ap-desk-waiting-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/pr-ap-desk-waiting-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-gc-flower-wall": {
+      "id": "pr-ap-gc-flower-wall",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-gc-flower-wall-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-gc-flower-wall-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-gc-flower-wall-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-gc-group-sofas": {
+      "id": "pr-ap-gc-group-sofas",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-group-room-garden-city-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-group-room-garden-city-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-group-room-garden-city-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-group-room-garden-city-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-group-room-garden-city-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-gc-therapy-joy": {
+      "id": "pr-ap-gc-therapy-joy",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-gc-therapy-joy-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-gc-therapy-joy-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-gc-therapy-joy-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-gc-waiting-doors": {
+      "id": "pr-ap-gc-waiting-doors",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/pr-ap-gc-waiting-doors-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/pr-ap-gc-waiting-doors-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/pr-ap-gc-waiting-doors-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/pr-ap-gc-waiting-doors-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/pr-ap-gc-waiting-doors-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-gc-waiting-nook": {
+      "id": "pr-ap-gc-waiting-nook",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-gc-waiting-nook-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-gc-waiting-nook-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-gc-waiting-nook-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-gc-wellness-reception": {
+      "id": "pr-ap-gc-wellness-reception",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-wellness-lobby-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-wellness-lobby-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-wellness-lobby-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-wellness-lobby-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-wellness-lobby-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-mpq-hallway": {
+      "id": "pr-ap-mpq-hallway",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/pr-ap-mpq-hallway-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/pr-ap-mpq-hallway-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/pr-ap-mpq-hallway-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/pr-ap-mpq-hallway-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/pr-ap-mpq-hallway-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-mpq-mandala-chair": {
+      "id": "pr-ap-mpq-mandala-chair",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-mpq-mandala-chair-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-mpq-mandala-chair-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-mpq-mandala-chair-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-mpq-sunflower": {
+      "id": "pr-ap-mpq-sunflower",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-mpq-sunflower-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-mpq-sunflower-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-mpq-sunflower-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-mpq-underwater": {
+      "id": "pr-ap-mpq-underwater",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-mpq-underwater-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-mpq-underwater-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-mpq-underwater-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-mpq-wellness-boutique": {
+      "id": "pr-ap-mpq-wellness-boutique",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/pr-ap-mpq-wellness-boutique-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/pr-ap-mpq-wellness-boutique-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/pr-ap-mpq-wellness-boutique-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/pr-ap-mpq-wellness-boutique-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/pr-ap-mpq-wellness-boutique-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-pj-hallway": {
+      "id": "pr-ap-pj-hallway",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-waiting-port-jefferson-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-pj-hope-seating": {
+      "id": "pr-ap-pj-hope-seating",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-pj-hope-seating-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-pj-hope-seating-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-pj-hope-seating-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-pj-teal-room": {
+      "id": "pr-ap-pj-teal-room",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-pj-teal-room-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-pj-teal-room-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-pj-teal-room-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-pj-wood-clock": {
+      "id": "pr-ap-pj-wood-clock",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/pr-ap-pj-wood-clock-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/pr-ap-pj-wood-clock-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/pr-ap-pj-wood-clock-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/pr-ap-pj-wood-clock-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/pr-ap-pj-wood-clock-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-rvc-coffee-bar": {
+      "id": "pr-ap-rvc-coffee-bar",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-coffee-bar-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-coffee-bar-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-coffee-bar-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-coffee-bar-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-coffee-bar-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-rvc-hallway": {
+      "id": "pr-ap-rvc-hallway",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-hallway-rvc-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-hallway-rvc-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-hallway-rvc-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-hallway-rvc-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-hallway-rvc-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-rvc-navy-room": {
+      "id": "pr-ap-rvc-navy-room",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-rvc-navy-room-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-rvc-navy-room-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-rvc-navy-room-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-rvc-teal-chair": {
+      "id": "pr-ap-rvc-teal-chair",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-rvc-teal-chair-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-rvc-teal-chair-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-rvc-teal-chair-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-rvc-teal-room": {
+      "id": "pr-ap-rvc-teal-room",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-rvc-teal-room-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-rvc-teal-room-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-rvc-teal-room-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-rvc-waiting": {
+      "id": "pr-ap-rvc-waiting",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/pr-ap-rvc-waiting-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/pr-ap-rvc-waiting-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/pr-ap-rvc-waiting-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/pr-ap-rvc-waiting-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/pr-ap-rvc-waiting-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-smt-plants-room": {
+      "id": "pr-ap-smt-plants-room",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/pr-ap-smt-plants-room-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/pr-ap-smt-plants-room-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/pr-ap-smt-plants-room-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/pr-ap-smt-plants-room-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/pr-ap-smt-plants-room-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-smt-therapy-window": {
+      "id": "pr-ap-smt-therapy-window",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-smt-therapy-window-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-smt-therapy-window-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-smt-therapy-window-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-smt-waiting": {
+      "id": "pr-ap-smt-waiting",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-waiting-smithtown-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-waiting-smithtown-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-waiting-smithtown-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-waiting-smithtown-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-waiting-smithtown-2000.webp"
+        }
+      ]
+    },
+    "pr-ap-smt-wellness-table": {
+      "id": "pr-ap-smt-wellness-table",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-smt-wellness-table-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-smt-wellness-table-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-smt-wellness-table-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-smt-wingback": {
+      "id": "pr-ap-smt-wingback",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-smt-wingback-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-smt-wingback-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-smt-wingback-1200.webp"
+        }
+      ]
+    },
+    "pr-ap-suffolk-yellow-pillows": {
+      "id": "pr-ap-suffolk-yellow-pillows",
+      "width": 1200,
+      "height": 1200,
+      "crop": "center",
+      "tiers": [
+        {
+          "width": 480,
+          "height": 480,
+          "src": "/images/photos/pr-ap-suffolk-yellow-pillows-480.webp"
+        },
+        {
+          "width": 800,
+          "height": 800,
+          "src": "/images/photos/pr-ap-suffolk-yellow-pillows-800.webp"
+        },
+        {
+          "width": 1200,
+          "height": 1200,
+          "src": "/images/photos/pr-ap-suffolk-yellow-pillows-1200.webp"
         }
       ]
     },
@@ -1836,6 +3428,138 @@
         }
       ]
     },
+    "th-ap-desk-hallway": {
+      "id": "th-ap-desk-hallway",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-front-desk-team-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-front-desk-team-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-front-desk-team-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-front-desk-team-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-front-desk-team-2000.webp"
+        }
+      ]
+    },
+    "th-ap-desk-welcome": {
+      "id": "th-ap-desk-welcome",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap-front-desk-welcome-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap-front-desk-welcome-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap-front-desk-welcome-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap-front-desk-welcome-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap-front-desk-welcome-2000.webp"
+        }
+      ]
+    },
+    "th-ap-lobby-waiting": {
+      "id": "th-ap-lobby-waiting",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap-lobby-waiting-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap-lobby-waiting-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap-lobby-waiting-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap-lobby-waiting-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap-lobby-waiting-2000.webp"
+        }
+      ]
+    },
+    "th-ap-waiting-greeting": {
+      "id": "th-ap-waiting-greeting",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap-waiting-greeting-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap-waiting-greeting-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap-waiting-greeting-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap-waiting-greeting-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap-waiting-greeting-2000.webp"
+        }
+      ]
+    },
     "th-children-rain-boots": {
       "id": "th-children-rain-boots",
       "width": 2000,
@@ -2132,22 +3856,22 @@
         {
           "width": 640,
           "height": 640,
-          "src": "/images/photos/ha-team-tall-windows-640.webp"
+          "src": "/images/photos/th-group-window-room-640.webp"
         },
         {
           "width": 960,
           "height": 960,
-          "src": "/images/photos/ha-team-tall-windows-960.webp"
+          "src": "/images/photos/th-group-window-room-960.webp"
         },
         {
           "width": 1280,
           "height": 1280,
-          "src": "/images/photos/ha-team-tall-windows-1280.webp"
+          "src": "/images/photos/th-group-window-room-1280.webp"
         },
         {
           "width": 1600,
           "height": 1600,
-          "src": "/images/photos/ha-team-tall-windows-1600.webp"
+          "src": "/images/photos/th-group-window-room-1600.webp"
         }
       ]
     },
@@ -2945,27 +4669,27 @@
         {
           "width": 640,
           "height": 427,
-          "src": "/images/photos/ha-warm-sunlight-rest-640.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-640.webp"
         },
         {
           "width": 960,
           "height": 640,
-          "src": "/images/photos/ha-warm-sunlight-rest-960.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-960.webp"
         },
         {
           "width": 1280,
           "height": 854,
-          "src": "/images/photos/ha-warm-sunlight-rest-1280.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-1280.webp"
         },
         {
           "width": 1600,
           "height": 1067,
-          "src": "/images/photos/ha-warm-sunlight-rest-1600.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-1600.webp"
         },
         {
           "width": 2000,
           "height": 1334,
-          "src": "/images/photos/ha-warm-sunlight-rest-2000.webp"
+          "src": "/images/photos/th-woman-sunlit-wall-2000.webp"
         }
       ]
     },
@@ -3024,9 +4748,9 @@
     },
     "beth-gabellini": {
       "id": "beth-gabellini",
-      "width": 264,
-      "height": 264,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3034,9 +4758,9 @@
           "src": "/images/providers/beth-gabellini-320.webp"
         },
         {
-          "width": 264,
-          "height": 264,
-          "src": "/images/providers/beth-gabellini-264.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/beth-gabellini-640.webp"
         }
       ]
     },
@@ -3044,17 +4768,12 @@
       "id": "carly-sandstrom",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
           "height": 320,
           "src": "/images/providers/carly-sandstrom-320.webp"
-        },
-        {
-          "width": 640,
-          "height": 640,
-          "src": "/images/providers/carly-sandstrom-640.webp"
         },
         {
           "width": 640,
@@ -3085,7 +4804,7 @@
       "id": "chelsea-bell",
       "width": 640,
       "height": 640,
-      "crop": "center",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3096,19 +4815,14 @@
           "width": 640,
           "height": 640,
           "src": "/images/providers/chelsea-bell-640.webp"
-        },
-        {
-          "width": 640,
-          "height": 640,
-          "src": "/images/providers/chelsea-bell-640.webp"
         }
       ]
     },
     "christine-cervo": {
       "id": "christine-cervo",
-      "width": 469,
-      "height": 469,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3116,9 +4830,9 @@
           "src": "/images/providers/christine-cervo-320.webp"
         },
         {
-          "width": 469,
-          "height": 469,
-          "src": "/images/providers/christine-cervo-469.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/christine-cervo-640.webp"
         }
       ]
     },
@@ -3126,7 +4840,7 @@
       "id": "colm-ashe",
       "width": 320,
       "height": 320,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3139,7 +4853,7 @@
       "id": "danielle-ingenito",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3157,7 +4871,7 @@
       "id": "frank-tropeano",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3171,11 +4885,29 @@
         }
       ]
     },
+    "gloria-saladino": {
+      "id": "gloria-saladino",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
+      "tiers": [
+        {
+          "width": 320,
+          "height": 320,
+          "src": "/images/providers/gloria-saladino-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/gloria-saladino-640.webp"
+        }
+      ]
+    },
     "jen-brooks": {
       "id": "jen-brooks",
-      "width": 302,
-      "height": 302,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3183,17 +4915,17 @@
           "src": "/images/providers/jen-brooks-320.webp"
         },
         {
-          "width": 302,
-          "height": 302,
-          "src": "/images/providers/jen-brooks-302.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/jen-brooks-640.webp"
         }
       ]
     },
     "joe-bush": {
       "id": "joe-bush",
-      "width": 319,
-      "height": 319,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3201,22 +4933,27 @@
           "src": "/images/providers/joe-bush-320.webp"
         },
         {
-          "width": 319,
-          "height": 319,
-          "src": "/images/providers/joe-bush-319.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/joe-bush-640.webp"
         }
       ]
     },
     "juliette-squicciarini": {
       "id": "juliette-squicciarini",
-      "width": 320,
-      "height": 320,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
           "height": 320,
           "src": "/images/providers/juliette-squicciarini-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/juliette-squicciarini-640.webp"
         }
       ]
     },
@@ -3224,7 +4961,7 @@
       "id": "kaitlyn-kelly",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3240,14 +4977,19 @@
     },
     "kalovna-edmond": {
       "id": "kalovna-edmond",
-      "width": 320,
-      "height": 320,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
           "height": 320,
           "src": "/images/providers/kalovna-edmond-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/kalovna-edmond-640.webp"
         }
       ]
     },
@@ -3255,7 +4997,7 @@
       "id": "karen-hill",
       "width": 320,
       "height": 320,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3268,7 +5010,7 @@
       "id": "kathleen-dimartino",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3284,9 +5026,9 @@
     },
     "ksusha-cascio": {
       "id": "ksusha-cascio",
-      "width": 308,
-      "height": 308,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3294,9 +5036,9 @@
           "src": "/images/providers/ksusha-cascio-320.webp"
         },
         {
-          "width": 308,
-          "height": 308,
-          "src": "/images/providers/ksusha-cascio-308.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/ksusha-cascio-640.webp"
         }
       ]
     },
@@ -3304,7 +5046,7 @@
       "id": "laura-desilva",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3320,9 +5062,9 @@
     },
     "lauren-hollander": {
       "id": "lauren-hollander",
-      "width": 414,
-      "height": 414,
-      "crop": "center",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3330,22 +5072,27 @@
           "src": "/images/providers/lauren-hollander-320.webp"
         },
         {
-          "width": 414,
-          "height": 414,
-          "src": "/images/providers/lauren-hollander-414.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/lauren-hollander-640.webp"
         }
       ]
     },
     "lee-wasser": {
       "id": "lee-wasser",
-      "width": 320,
-      "height": 320,
+      "width": 640,
+      "height": 640,
       "crop": "top",
       "tiers": [
         {
           "width": 320,
           "height": 320,
           "src": "/images/providers/lee-wasser-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/lee-wasser-640.webp"
         }
       ]
     },
@@ -3353,17 +5100,12 @@
       "id": "leonard-ma",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
           "height": 320,
           "src": "/images/providers/leonard-ma-320.webp"
-        },
-        {
-          "width": 640,
-          "height": 640,
-          "src": "/images/providers/leonard-ma-640.webp"
         },
         {
           "width": 640,
@@ -3376,7 +5118,7 @@
       "id": "lindsay-laier",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3392,9 +5134,9 @@
     },
     "maddy-zambri": {
       "id": "maddy-zambri",
-      "width": 307,
-      "height": 307,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3402,9 +5144,9 @@
           "src": "/images/providers/maddy-zambri-320.webp"
         },
         {
-          "width": 307,
-          "height": 307,
-          "src": "/images/providers/maddy-zambri-307.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/maddy-zambri-640.webp"
         }
       ]
     },
@@ -3412,7 +5154,7 @@
       "id": "madeline-amzler",
       "width": 462,
       "height": 462,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3428,9 +5170,9 @@
     },
     "mariah-simone": {
       "id": "mariah-simone",
-      "width": 578,
-      "height": 578,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3438,16 +5180,16 @@
           "src": "/images/providers/mariah-simone-320.webp"
         },
         {
-          "width": 578,
-          "height": 578,
-          "src": "/images/providers/mariah-simone-578.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/mariah-simone-640.webp"
         }
       ]
     },
     "nicole-duffy": {
       "id": "nicole-duffy",
-      "width": 579,
-      "height": 579,
+      "width": 640,
+      "height": 640,
       "crop": "top",
       "tiers": [
         {
@@ -3456,17 +5198,17 @@
           "src": "/images/providers/nicole-duffy-320.webp"
         },
         {
-          "width": 579,
-          "height": 579,
-          "src": "/images/providers/nicole-duffy-579.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/nicole-duffy-640.webp"
         }
       ]
     },
     "paula-gonthier": {
       "id": "paula-gonthier",
-      "width": 278,
-      "height": 278,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3474,9 +5216,9 @@
           "src": "/images/providers/paula-gonthier-320.webp"
         },
         {
-          "width": 278,
-          "height": 278,
-          "src": "/images/providers/paula-gonthier-278.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/paula-gonthier-640.webp"
         }
       ]
     },
@@ -3502,7 +5244,7 @@
       "id": "samantha-juravich",
       "width": 296,
       "height": 296,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3520,7 +5262,7 @@
       "id": "sofia-marinucci",
       "width": 455,
       "height": 455,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3536,9 +5278,9 @@
     },
     "tia-baumohl": {
       "id": "tia-baumohl",
-      "width": 406,
-      "height": 406,
-      "crop": "attention",
+      "width": 640,
+      "height": 640,
+      "crop": "top",
       "tiers": [
         {
           "width": 320,
@@ -3546,9 +5288,9 @@
           "src": "/images/providers/tia-baumohl-320.webp"
         },
         {
-          "width": 406,
-          "height": 406,
-          "src": "/images/providers/tia-baumohl-406.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/tia-baumohl-640.webp"
         }
       ]
     },
@@ -3556,7 +5298,7 @@
       "id": "tiffany-roberts",
       "width": 640,
       "height": 640,
-      "crop": "attention",
+      "crop": "top",
       "tiers": [
         {
           "width": 320,

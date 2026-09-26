@@ -117,7 +117,7 @@ function Status({
 }) {
   if (!active) {
     return (
-      <Link href="/providers" className="provider-search__all">
+      <Link href="/providers" className="button button--quiet provider-search__all">
         Browse all {total} providers
       </Link>
     );
@@ -129,7 +129,7 @@ function Status({
     return (
       <>
         Showing {shown} of {matched} matches.{" "}
-        <Link href={directoryHref} className="provider-search__all">
+        <Link href={directoryHref} className="button button--quiet provider-search__all">
           See all {matched} matches in the directory
         </Link>
       </>
@@ -138,7 +138,7 @@ function Status({
   return (
     <>
       {matched === 1 ? "1 provider matches" : `${matched} providers match`}.{" "}
-      <Link href={directoryHref} className="provider-search__all">
+      <Link href={directoryHref} className="button button--quiet provider-search__all">
         Open in the directory
       </Link>
     </>

@@ -58,15 +58,21 @@ export default function NotFound() {
         <ul className="not-found__pillars">
           {PILLARS.map((pillar) => (
             <li key={pillar.href}>
-              <Link href={pillar.href}>{pillar.label}</Link>
+              <Link href={pillar.href} className="button button--quiet">
+                {pillar.label}
+              </Link>
             </li>
           ))}
         </ul>
 
         <p className="not-found__help">
           Still stuck? Call the Welcome Team at{" "}
-          <a href={SITE_PHONE_HREF}>{SITE_PHONE}</a> or{" "}
-          <Link href="/contact">start your 360 intake</Link>.
+          <a href={SITE_PHONE_HREF}>{SITE_PHONE}</a>.
+        </p>
+        <p className="cta not-found__cta">
+          <Link href="/contact" className="button">
+            Start your 360 intake
+          </Link>
         </p>
       </main>
       <Footer />

@@ -203,12 +203,22 @@
 .quiz__links,
 .quiz__paths {
   margin: 0 0 1rem;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0.65rem;
+  list-style: none;
+  max-width: none;
+}
+
+.quiz__paths {
   padding-left: 1.2rem;
   display: grid;
   gap: 0.4rem;
+  list-style: disc;
 }
 
-.quiz__links a,
 .quiz__paths a,
 .quiz__follow-up a,
 .quiz__crisis a,
@@ -218,7 +228,17 @@
   text-underline-offset: 0.18em;
 }
 
-.quiz__links a:focus-visible,
+.quiz__links.cta {
+  margin: 0 0 1rem;
+}
+
+.quiz__links .button {
+  flex: 1 1 10rem;
+  min-height: 2.75rem;
+  padding: 0.65em 1.2em;
+  box-shadow: none;
+}
+
 .quiz__paths a:focus-visible,
 .quiz__follow-up a:focus-visible,
 .quiz__crisis a:focus-visible,

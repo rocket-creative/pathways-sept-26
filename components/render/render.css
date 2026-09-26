@@ -26,8 +26,25 @@
     margin-block: 0 1em;
   }
 
+  .prose ul.list,
+  .prose ol.list--ordered {
+    padding-inline-start: 1.35em;
+  }
+
+  .prose ul.list {
+    list-style-type: disc;
+  }
+
+  .prose ol.list--ordered {
+    list-style-type: decimal;
+  }
+
   .prose li {
     margin-block: 0.35em;
+  }
+
+  .prose li::marker {
+    color: var(--text-soft, #4a4a4a);
   }
 
   .prose .heading--h2 {
@@ -63,12 +80,29 @@
   .cta {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.75rem;
+    align-items: stretch;
+    gap: 0.65rem;
     margin-block: 1.5rem;
   }
 
-  /* `.button` and `.form-embed` are owned by app/globals.css so each has a
-     single definition. Only the layout around them lives here. */
+  /* Lone link list items promote to quiet buttons; consecutive ones share a
+     row. When the whole list is links, List renders a .cta directly. */
+  .list__cta {
+    list-style: none;
+    margin-inline-start: 0;
+  }
+
+  .list__cta .cta {
+    margin-block: 0.35rem;
+    max-width: none;
+  }
+
+  .list:has(> .list__cta:only-child) {
+    padding-inline-start: 0;
+  }
+
+  /* Strip/pair modifiers are defined in globals.css so every surface shares
+     the same equal-cell layout. */
 
   /* [PROVIDER SEARCH] (homepage "Find a provider"). The section is a full row
      card whose copy sits at the essay measure on the left; the search is the

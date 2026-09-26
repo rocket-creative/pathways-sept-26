@@ -14,18 +14,18 @@ export default function ProviderCard({
   provider: ProviderCardData;
   /** Filtered out by the directory. The card stays in the DOM, link intact. */
   hidden?: boolean;
-  /** Finder matches the LifeStance results card. Compact is the small team tile. */
+  /** Finder is the directory results card. Compact is the small team tile. */
   layout?: "compact" | "finder";
 }) {
   if (layout === "finder") {
     const places = provider.locations.filter((place) => !/needs/i.test(place)).map(placeLabel);
+    const formats = formatLine(provider.formats);
     return (
       <li
         className="provider-card provider-card--finder"
         data-slug={provider.slug}
         hidden={hidden || undefined}
       >
-        <p className="provider-card__banner">{appointmentLine(provider.formats)}</p>
         <Headshot provider={provider} />
         <p className="provider-card__name">
           {provider.url ? <Link href={provider.url}>{provider.name}</Link> : <span>{provider.name}</span>}
@@ -34,18 +34,21 @@ export default function ProviderCard({
           ) : null}
         </p>
         {provider.titleLine ? <p className="provider-card__title">{provider.titleLine}</p> : null}
-        {provider.url ? (
-          <p className="provider-card__details">
-            <Link href={provider.url}>View Provider Details</Link>
-          </p>
-        ) : null}
+        {formats ? <p className="provider-card__format">{formats}</p> : null}
         {places.length ? <p className="provider-card__place">{places.join(" · ")}</p> : null}
         <p className="provider-card__phone">
           <a href="tel:+16313713825">(631) 371-3825</a>
         </p>
-        <Link href="/contact" className="button provider-card__book">
-          Start your 360 intake
-        </Link>
+        <div className="cta cta--quiet provider-card__actions">
+          {provider.url ? (
+            <Link href={provider.url} className="button button--quiet">
+              View details
+            </Link>
+          ) : null}
+          <Link href="/contact" className="button button--quiet provider-card__book">
+            Start your 360 intake
+          </Link>
+        </div>
       </li>
     );
   }
@@ -69,13 +72,13 @@ export default function ProviderCard({
   );
 }
 
-function appointmentLine(formats: string[]): string {
+function formatLine(formats: string[]): string {
   const hasOffice = formats.some((format) => /in person|office/i.test(format));
   const hasVideo = formats.some((format) => /telehealth|video|virtual/i.test(format));
-  if (hasOffice && hasVideo) return "In-office and video appointments";
-  if (hasVideo) return "Video appointments";
-  if (hasOffice) return "In-office appointments";
-  return "Appointments";
+  if (hasOffice && hasVideo) return "In person and telehealth";
+  if (hasVideo) return "Telehealth";
+  if (hasOffice) return "In person";
+  return "";
 }
 
 function placeLabel(value: string): string {

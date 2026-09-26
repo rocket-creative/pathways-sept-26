@@ -10,7 +10,14 @@ import type {
   Photo,
 } from "./types";
 
-export type { Focal, PagePhotos, Photo, SectionPhoto } from "./types";
+export type {
+  Focal,
+  PagePhotos,
+  Photo,
+  SectionPhoto,
+  SectionPhotoLayout,
+  SectionPhotos,
+} from "./types";
 
 const manifest = generated as GeneratedManifest;
 

@@ -8,18 +8,18 @@ import type { FillPhoto } from "./GridFill";
 
 /** Warm rooms, for a grid of people. */
 const PROVIDER_FILLS: { asset: string; focal: Focal }[] = [
+  { asset: "pr-ap-gc-therapy-joy", focal: "45% 50%" },
+  { asset: "ha-ap-therapy-massapequa", focal: "center" },
   { asset: "th-session-two-chairs", focal: "center" },
   { asset: "th-quiet-room-plant", focal: "40% 55%" },
-  { asset: "cw-chair-among-plants", focal: "55% 45%" },
-  { asset: "cw-warm-sunlight", focal: "50% 30%" },
 ];
 
-/** The shore and the labyrinth, for a grid of offices. */
+/** Real office interiors, for a grid of offices. */
 const LOCATION_FILLS: { asset: string; focal: Focal }[] = [
-  { asset: "pr-beach-labyrinth", focal: "50% 62%" },
-  { asset: "pr-cairn-pebble-beach", focal: "75% 55%" },
-  { asset: "pr-coastal-headland", focal: "50% 60%" },
-  { asset: "cw-sea-foam-stones", focal: "center" },
+  { asset: "pr-ap-desk-logo", focal: "50% 40%" },
+  { asset: "pr-ap-rvc-navy-room", focal: "center" },
+  { asset: "pr-ap-smt-waiting", focal: "50% 45%" },
+  { asset: "pr-ap-gc-group-sofas", focal: "50% 55%" },
 ];
 
 /** Small deterministic hash so the same page always gets the same picture. */

@@ -43,6 +43,9 @@ export interface Photo {
   focal?: Focal;
 }
 
+/** How a section photograph sits relative to its copy. */
+export type SectionPhotoLayout = "split" | "band" | "feature";
+
 export interface SectionPhoto extends Photo {
   /** Circle for a person or a room (design rule); rounded for everything else. */
   shape?: "rounded" | "circle";
@@ -54,13 +57,26 @@ export interface SectionPhoto extends Photo {
   aspect?: "portrait" | "landscape" | "square";
   /** Which side of the copy the photograph takes on wide viewports. */
   side?: "start" | "end";
+  /**
+   * Placement inside the section card. `split` (default) is copy + figure side
+   * by side; `feature` enlarges the media column; `band` is a full-bleed
+   * horizontal photograph with copy above or below (never overlaid).
+   */
+  layout?: SectionPhotoLayout;
 }
+
+/**
+ * One photograph, or several for denser pages. The first entry is the primary
+ * figure (split / feature / band beside or under the copy); further entries
+ * with `layout: "band"` render as extra full-width media after that figure.
+ */
+export type SectionPhotos = SectionPhoto | SectionPhoto[];
 
 export interface PagePhotos {
   /** Editorial band directly under the opening lockup. Also the og:image. */
   hero?: Photo;
   /** Keyed by the section's h2 id (the slug of the heading text). */
-  sections?: Record<string, SectionPhoto>;
+  sections?: Record<string, SectionPhotos>;
   /** Resolves `[IMAGE: alt]` markers that carry no src, in document order. */
   inline?: Photo[];
 }

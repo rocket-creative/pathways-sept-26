@@ -76,6 +76,8 @@
 .page-backdrop {
   position: fixed;
   inset: 0;
+  width: auto;
+  height: auto;
   /* 0, not -1. A negative layer is painted under the backdrop-filter, so the
      photograph shows through the cards sharp and the frost only appears when
      nothing is animating. */
@@ -209,6 +211,77 @@ body:has(.page-backdrop) .page-hero {
   backdrop-filter: var(--glass-blur);
 }
 
+/* Hover / focus: frost clarifies to near-white so copy stays readable over
+   the photograph. An inset wash (not a background swap) interpolates cleanly;
+   only fine pointers get :hover so touch does not leave a stuck white card. */
+@media (hover: hover) and (pointer: fine) {
+  main.page--lanes > .prose > .page-section,
+  main.page--lanes > .prose > .byline,
+  body:has(.page-backdrop) .page-hero,
+  main.page--lanes :is(.provider-card, .location-card, .faq-item) {
+    transition:
+      box-shadow 580ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 580ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):hover,
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):focus-within,
+  main.page--lanes > .prose > .byline:hover,
+  main.page--lanes > .prose > .byline:focus-within,
+  body:has(.page-backdrop) .page-hero:hover,
+  body:has(.page-backdrop) .page-hero:focus-within {
+    transform: translateY(-2px);
+    box-shadow:
+      inset 0 0 0 9999px rgb(255 255 255 / 0.92),
+      inset 0 1px 0 rgb(255 255 255 / 0.75),
+      0 20px 48px -16px rgb(29 39 51 / 0.3),
+      0 6px 16px rgb(0 0 0 / 0.08);
+  }
+
+  main.page--lanes :is(.provider-card, .location-card, .faq-item):hover,
+  main.page--lanes :is(.provider-card, .location-card, .faq-item):focus-within {
+    transform: translateY(-1px);
+    background: rgb(255 255 255 / 0.97);
+    border-color: rgb(255 255 255 / 0.92);
+    box-shadow:
+      inset 0 1px 0 rgb(255 255 255 / 0.9),
+      0 14px 32px -12px rgb(29 39 51 / 0.22),
+      0 4px 10px rgb(0 0 0 / 0.06);
+  }
+
+  /* Soften the specular sheen once the wash is opaque, so it does not chill
+     the white surface. */
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):hover::after,
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):focus-within::after,
+  main.page--lanes > .prose > .byline:hover::after,
+  main.page--lanes > .prose > .byline:focus-within::after,
+  body:has(.page-backdrop) .page-hero:hover::after,
+  body:has(.page-backdrop) .page-hero:focus-within::after {
+    opacity: 0.35;
+    transition: opacity 580ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main.page--lanes > .prose > .page-section,
+  main.page--lanes > .prose > .byline,
+  body:has(.page-backdrop) .page-hero,
+  main.page--lanes :is(.provider-card, .location-card, .faq-item) {
+    transition: none;
+  }
+
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):hover,
+  main.page--lanes > .prose > .page-section:not(.page-section--intro):focus-within,
+  main.page--lanes > .prose > .byline:hover,
+  main.page--lanes > .prose > .byline:focus-within,
+  body:has(.page-backdrop) .page-hero:hover,
+  body:has(.page-backdrop) .page-hero:focus-within,
+  main.page--lanes :is(.provider-card, .location-card, .faq-item):hover,
+  main.page--lanes :is(.provider-card, .location-card, .faq-item):focus-within {
+    transform: none;
+  }
+}
+
 main.page--lanes > .prose > .page-section > *,
 main.page--lanes > .prose > .byline > *,
 body:has(.page-backdrop) .page-hero > * {
@@ -219,6 +292,16 @@ body:has(.page-backdrop) .page-hero > * {
 main.page--lanes > .prose > .page-section :is(p, li, address, dd, dt) {
   color: var(--ink);
   text-shadow: 0 1px 0 rgb(255 255 255 / 0.55);
+}
+
+/* Inline links keep the logo bright blue and drop the glass hairline. */
+main.page--lanes > .prose > .page-section :is(p, li, address, dd, dt) a:not(.button) {
+  color: var(--brand);
+  text-shadow: none;
+}
+
+main.page--lanes > .prose > .page-section :is(p, li, address, dd, dt) a:not(.button):hover {
+  color: var(--brand-deep);
 }
 
 /* Gradient rim, brighter along the top. A flat border reads as paper. */
@@ -262,6 +345,7 @@ body:has(.page-backdrop) .page-hero::after,
   background: linear-gradient(135deg, rgb(255 255 255 / 0.38) 0%, rgb(255 255 255 / 0) 46%);
   pointer-events: none;
   z-index: 0;
+  transition: opacity 580ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 main.page--lanes > .prose > .page-section > :last-child,
@@ -353,8 +437,10 @@ main.page--lanes > .prose > .page-section > .embed-slot > :last-child {
   margin-block-end: 0;
 }
 
-/* Wide content gets a little more room to breathe. */
-main.page--lanes > .prose > .page-section:has(
+/* Wide content gets a little more room to breathe. Skip the intro: its
+   card is the nested .page-hero, and a portrait (.content-image) must not
+   re-pad this shell or the gradient rim paints a sharp white box around it. */
+main.page--lanes > .prose > .page-section:not(.page-section--intro):has(
     .provider-directory,
     .provider-cards,
     .location-cards,
@@ -378,9 +464,9 @@ main.page--lanes > .prose > .byline > .byline__line {
   text-wrap: pretty;
 }
 
-/* The intro is the logo + copy lockup: the card goes on the copy column
-   (below), not around the section. Two classes so this stays ahead of the
-   card rule above (minifiers drop an equally specific duplicate). */
+/* The intro is the logo + copy lockup: the card goes on .page-hero, not
+   around the section. Kill the shared glass rim/sheen too — otherwise a
+   transparent shell still draws a sharp white outline and faded white box. */
 main.page--lanes > .prose > .page-section.page-section--intro {
   grid-column: 1 / -1;
   padding: 0;
@@ -390,7 +476,14 @@ main.page--lanes > .prose > .page-section.page-section--intro {
   box-shadow: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
+  isolation: auto;
   margin-block-end: clamp(0.25rem, 1vw, 0.75rem);
+}
+
+main.page--lanes > .prose > .page-section.page-section--intro::before,
+main.page--lanes > .prose > .page-section.page-section--intro::after {
+  content: none;
+  display: none;
 }
 
 /* Two columns from 900px, six from 1200px. Text sections take half a row

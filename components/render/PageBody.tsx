@@ -1,6 +1,12 @@
 import type { ReactNode } from "react";
 import { inlineToText, type Block, type Page } from "@/lib/content";
-import { getPagePhotos, resolvePhoto, type ResolvedPhoto } from "@/lib/images";
+import {
+  getPagePhotos,
+  resolvePhoto,
+  type ResolvedPhoto,
+  type SectionPhoto,
+  type SectionPhotos,
+} from "@/lib/images";
 import { getLocationCards } from "@/lib/locations";
 import LocationCards from "@/components/directory/LocationCards";
 import ProviderCards, { selectProviders } from "@/components/directory/ProviderCards";
@@ -30,7 +36,9 @@ import "./photos.css";
  * copy files never change to gain or lose a picture. Two placements: a figure
  * beside a section's copy, and a local asset behind an `[IMAGE: alt]` marker.
  * A page's `hero` entry in the registry is not rendered; it only supplies the
- * og:image (lib/images ogImageFor).
+ * og:image (lib/images ogImageFor). A section may register one photo or an
+ * array: the first is primary (split / feature / band); further entries render
+ * as full-width bands after it inside the same card.
  *
  * Everything below the article is server rendered and fully visible on load.
  * No accordion, no tab, no disclosure: the FAQ answers are in the DOM.
@@ -61,23 +69,48 @@ export default function PageBody({ page }: { page: Page }) {
           );
         }
 
-        const figure = photos?.sections?.[section.heading.id];
-        const resolved = resolvePhoto(figure);
+        const figures = normalizeSectionPhotos(photos?.sections?.[section.heading.id]);
+        const primary = figures[0];
+        const resolvedPrimary = resolvePhoto(primary);
 
-        if (figure && resolved) {
+        if (primary && resolvedPrimary) {
+          const layout = primary.layout ?? "split";
+          const extras = figures.slice(1).flatMap((entry, index) => {
+            const resolved = resolvePhoto(entry);
+            if (!resolved) return [];
+            /* Extra entries are full-width bands inside the same section card. */
+            return [
+              <SectionFigure
+                key={`band-${index}`}
+                photo={resolved}
+                shape={entry.shape}
+                aspect={entry.aspect ?? "landscape"}
+                layout={entry.layout ?? "band"}
+              />,
+            ];
+          });
+
           return (
             <section
               key={position}
               className="page-section page-section--figure"
               aria-labelledby={section.heading.id}
               data-section={section.heading.id}
-              data-side={figure.side ?? "end"}
+              data-side={primary.side ?? "end"}
+              data-layout={layout}
+              data-has-bands={extras.length ? "" : undefined}
             >
               <div className="section-figure__copy">
                 <Heading block={section.heading} ctx={ctx} />
                 {renderSectionBody(section.heading, section.blocks, ctx)}
               </div>
-              <SectionFigure photo={resolved} shape={figure.shape} aspect={figure.aspect} />
+              <SectionFigure
+                photo={resolvedPrimary}
+                shape={primary.shape}
+                aspect={primary.aspect}
+                layout={layout}
+              />
+              {extras}
             </section>
           );
         }
@@ -121,6 +154,12 @@ export default function PageBody({ page }: { page: Page }) {
 /* ------------------------------------------------------------------ */
 /* Sectioning                                                          */
 /* ------------------------------------------------------------------ */
+
+/** One photo or an array from the registry → a flat list for rendering. */
+function normalizeSectionPhotos(value: SectionPhotos | undefined): SectionPhoto[] {
+  if (!value) return [];
+  return Array.isArray(value) ? value : [value];
+}
 
 interface Section {
   /** null for the opening blocks that come before the first h2. */
