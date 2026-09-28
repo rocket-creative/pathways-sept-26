@@ -24,7 +24,7 @@ A life transition is any change big enough to rearrange your days: a divorce, a 
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -57,7 +57,7 @@ Young adults leaving for college, or coming home from it, may prefer to start wi
 
 You contact the Welcome Team by form, call, or text. A team member sets up your 360 intake, a conversation about what is changing and what you want to be different. If more than one person in your family is affected, say so. The team can plan for individual and family work at once.
 
-Your first session with your therapist covers the story of the change, what you have already tried, and what a good outcome would look like. By the third session, most clients have a clearer picture of which parts of the transition are decisions, which are losses, and which are just time. The Welcome Team remains your contact for scheduling, and you can read the full process at [how it works](/how-it-works).
+Your first session with your therapist covers the story of the change, what you have already tried, and what a good outcome would look like. By the third session, most clients have a clearer picture of which parts of the transition are decisions, which are losses, and which are just time. The Welcome Team remains your contact for scheduling, and you can read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -101,7 +101,7 @@ Therapy is billed as psychotherapy, and most plans that cover mental health incl
 
 Tell the Welcome Team what is changing. They will set up your 360 intake and match you with a therapist in Nassau County, Suffolk County, or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

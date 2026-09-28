@@ -22,15 +22,15 @@ hero_image: "[NEEDS: hero render] The Pathways Within labyrinth path winding thr
 
 Pathways Within - Wisdom and Wellness Collaborative is a mental health and wellness practice with five offices across Nassau and Suffolk County and telehealth in New York. Therapy, psychiatric medication management, massage, acupuncture, and energy work live under one roof, so your care plan can be built around the whole of you. Start with one conversation.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
-Or call (631) 371-3825.
+[CTA] Or call (631) 371-3825 -> tel:+16313713825
 
 [HERO: pinned horizontal scroll, 5 stops + CTA. Build rules in section 3 of 00-cursor-master-prompt.md and the SEO notes at the end of this file. Each stop below is one card: the H2 is the card heading, the paragraph is the card body, the link is the card's one action. The H1 above is stop 0 and stays in normal flow before pinning begins.]
 
 ## Healing is not a straight line
 
-The labyrinth in our logo is not a maze. There are no wrong turns and no dead ends. The path winds, pauses, circles inward, and opens back out, but it keeps moving. You start where you are and choose the support that fits now, knowing it may change. [How care works](/how-it-works)
+The labyrinth in our logo is not a maze. There are no wrong turns and no dead ends. The path winds, pauses, circles inward, and opens back out, but it keeps moving. You start where you are and choose the support that fits now, knowing it may change. [Contact Us](/contact)
 
 ## Therapy
 
@@ -46,25 +46,29 @@ New York State licensed massage therapists, a licensed acupuncturist, cupping, a
 
 ## One conversation starts everything
 
-You do not need to know which service you need. You tell the Welcome Team what you are experiencing. They schedule a 360 intake, a conversation that looks at your mind, your body, and your daily life together, then build one plan and match you with available providers. [See every step](/how-it-works)
+You do not need to know which service you need. You tell the Welcome Team what you are experiencing. They schedule a 360 intake, a conversation that looks at your mind, your body, and your daily life together, then build one plan and match you with available providers. [Contact Us](/contact)
 
 [HERO CTA: stop 6, full width]
 
 ## Ready when you are
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
-Or call (631) 371-3825. Five Long Island offices and telehealth in New York.
+[CTA] (631) 371-3825 -> tel:+16313713825
+
+Five Long Island offices and telehealth in New York.
 
 [/HERO]
 
 ## What people come to us for
 
+Start with what you are dealing with. The Welcome Team matches you from there.
+
 [Anxiety](/concerns/anxiety) · [Depression](/concerns/depression) · [Trauma and PTSD](/concerns/ptsd) · [ADHD](/concerns/adhd) · [Relationship issues](/concerns/relationship-issues) · [Grief and loss](/concerns/grief-and-loss) · [Stress and burnout](/concerns/stress-and-burnout) · [Life transitions](/concerns/life-transitions) · [Chronic pain and illness](/concerns/chronic-pain-and-illness) · [All concerns](/concerns)
 
 ## Find a provider
 
-Search the team by concern, modality, age group, office, and format. You do not have to pick someone before you reach out. The Welcome Team matches you during your intake. [Browse providers](/providers).
+Search the team by concern, modality, age group, office, and format. You do not have to pick someone before you reach out. The Welcome Team matches you during your intake.
 
 [PROVIDER SEARCH]
 
@@ -83,13 +87,23 @@ We work with most major plans, including Aetna, Cigna, Optum, UnitedHealthcare, 
 
 "Pathways Within is the kind of place I wished existed when I was learning how to find my own path." Rachel Lessard, LCSW-R, founded the practice as a small therapy office and grew it into a collaborative organization across Long Island. [Meet Rachel](/providers/rachel-lessard).
 
+## Not sure where to start?
+
+Answer a few questions. Every path ends at Contact Us.
+
+[QUIZ]
+The quiz below routes you to a starting point. Every path ends at the same place: Contact Us.
+[/QUIZ]
+
 ## Take the next step
 
 Tell the Welcome Team what is going on. They will handle the rest.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
-Call or text (631) 371-3825. If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+[CTA] Or call (631) 371-3825 -> tel:+16313713825
+
+If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
 [SEO AND BUILD NOTES FOR THE HERO, for Cursor]
 1. All six stops are real HTML in the DOM at load, in this reading order, as <section> elements with <h2> and <p>. Nothing is injected on scroll. Googlebot renders the page once with a tall viewport and does not scroll, so anything that only exists after a scroll event does not exist to Google.

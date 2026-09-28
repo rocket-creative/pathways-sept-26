@@ -24,7 +24,7 @@ Grief therapy at Pathways Within is for adults and teens who have lost someone o
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -55,7 +55,7 @@ When grief has slid into depression that will not lift, our psychiatric nurse pr
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are going through and what you need. You do not have to be composed. The team matches you with a therapist and, if it helps, a group.
 
-Your first session is mostly listening. Your therapist wants to know who you lost, what happened, and what the days have been like since. There is no assignment and no timeline. Over the next few weeks you and your therapist find the places where the grief is stuck and start working there. Read the full process at [How it works](/how-it-works).
+Your first session is mostly listening. Your therapist wants to know who you lost, what happened, and what the days have been like since. There is no assignment and no timeline. Over the next few weeks you and your therapist find the places where the grief is stuck and start working there. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -107,7 +107,7 @@ Most plans that cover therapy cover it. Coverage varies by provider, service, an
 
 You do not have to explain your loss well. Tell the Welcome Team who or what you lost and how long it has been. They will set up your 360 intake and match you with a therapist, in person or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

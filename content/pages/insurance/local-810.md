@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Person arriving for an early evening appointment at 
 
 Local 810 members and their families are welcome at Pathways Within. Local 810 is one of the plans on our intake form, and our licensed therapists and psychiatric nurse practitioner see members for therapy and medication management at our Long Island offices and by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, so you know what applies before your first appointment.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Local 810 may cover here
 
@@ -39,7 +39,7 @@ You do not need your benefits booklet in hand to make the first call. The Welcom
 3. The team builds a care plan across therapy, medication management, and wellness as needed, and matches you with providers who work with Local 810.
 4. The Welcome Team verifies your benefits and tells you what to expect before your first appointment.
 
-Your Welcome Team contact stays with you after that. Read the full process at [How it works](/how-it-works).
+Your Welcome Team contact stays with you after that. Read the full process at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ A photo of the front and back of your insurance card is enough to start. If you 
 
 Tell the Welcome Team you have Local 810 and what you want to change. They will schedule your 360 intake, match you with a provider, and verify your benefits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

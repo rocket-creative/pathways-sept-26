@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Glass cups placed along a client's upper back during
 
 Cupping is a hands on technique in which a practitioner places cups on the skin to create gentle negative pressure over muscles and soft tissue. At Pathways Within, licensed massage therapists and our licensed acupuncturist offer cupping for clients dealing with tension, soreness, restricted movement, and recovery needs at our Long Island offices.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What cupping is
 
@@ -82,7 +82,7 @@ Before your session, your practitioner takes time to understand your goals and m
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. The team then matches you with the right provider for cupping, either a licensed massage therapist or our acupuncturist, and schedules your first appointment.
 
-Whether cupping is included in your massage or acupuncture session, your care is always personalized, thoughtful, and guided by your comfort. With your permission, your wellness providers can coordinate with your [therapist](/therapy) or [prescriber](/medication-management) when physical tension is part of a bigger picture. Read the full process at [How it works](/how-it-works), or see everything under our [wellness pillar](/wellness).
+Whether cupping is included in your massage or acupuncture session, your care is always personalized, thoughtful, and guided by your comfort. With your permission, your wellness providers can coordinate with your [therapist](/therapy) or [prescriber](/medication-management) when physical tension is part of a bigger picture. Read the full process at [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
 
 ## Where it is offered
 
@@ -128,7 +128,7 @@ Drink water, move gently, and give your body time to rest. Mild tenderness for a
 
 Tell the Welcome Team what you are feeling in your body. They will set up your 360 intake and match you with a massage therapist or our acupuncturist for cupping at the office closest to you.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

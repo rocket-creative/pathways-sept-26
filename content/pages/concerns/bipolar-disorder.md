@@ -24,7 +24,7 @@ Bipolar disorder is a mood condition marked by periods of unusually high energy 
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -57,7 +57,7 @@ You contact the Welcome Team by form, call, or text. A team member schedules you
 
 Because medication is usually part of the plan, the team schedules you with our prescriber early, often in the same weeks as your first therapy session. Expect the evaluation with your prescriber to be thorough and to include questions about your family history and past episodes. Your therapist, meanwhile, starts with your story and a simple daily log of sleep and mood.
 
-Follow up visits with your prescriber happen more often at first, then spread out as things settle. Therapy is usually weekly. The Welcome Team stays your single point of contact for both. Read the full process at [how it works](/how-it-works).
+Follow up visits with your prescriber happen more often at first, then spread out as things settle. Therapy is usually weekly. The Welcome Team stays your single point of contact for both. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -103,7 +103,7 @@ Both medication management and therapy are usually covered by plans that include
 
 If your moods have been running your life, tell the Welcome Team. They will set up your 360 intake and connect you with our prescriber and a therapist in Nassau County, Suffolk County, or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

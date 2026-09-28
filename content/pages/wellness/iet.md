@@ -24,7 +24,7 @@ Integrative Energy Therapy (IET) is a hands on energy practice that clients use 
 
 Energy work is not a substitute for medical or mental health treatment.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What IET is
 
@@ -56,9 +56,7 @@ You choose how much to talk. Some clients prefer to sink into the experience in 
 
 ## How care works here
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If IET fits, the team schedules you with Tia. If something bigger is going on, they may suggest starting with therapy and adding IET once you have support in place.
-
-Tia belongs to both our therapy and wellness pillars, so care does not have to stay in one lane. With your permission, she can share with your therapist what came up on the table, and your therapist can suggest IET when your body needs a rest from talking. From regularly scheduled sessions to an occasional reset, the rhythm is as individual as the life you have lived. See all three modalities on our [energy work page](/wellness/energy-work), read the full process at [How it works](/how-it-works), or browse the [wellness pillar](/wellness).
+If IET fits, the Welcome Team schedules you with Tia. See all three modalities on our [energy work page](/wellness/energy-work), or [contact us](/contact).
 
 ## Where it is offered
 
@@ -102,7 +100,7 @@ No. Energy work is not a substitute for medical or mental health treatment. Keep
 
 Tell the Welcome Team you would like to try IET. They will set up your 360 intake and schedule your first session with Tia at the office closest to you.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

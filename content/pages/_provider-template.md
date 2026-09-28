@@ -50,7 +50,7 @@ Rachel Lessard and Tiffany Roberts have hand written pages at pages/providers/ra
 
 {{first_name}} works with {{age_groups}} and sees clients {{formats}}. Every new client begins with a 360 intake with the Welcome Team, who then matches you with {{first_name}} or another provider who fits what you need.
 
-[CTA] Book with {{first_name}} -> /contact
+[CTA] Contact Us -> /contact
 
 ## About {{first_name}}
 
@@ -88,13 +88,13 @@ See all [locations](/locations).
 
 - {{modalities -> service URLs, one linked list item per modality with a page}}
 
-Read more about [how care works here](/how-it-works), including the 360 intake and how the Welcome Team coordinates therapy, medication management, and wellness.
+Read more about [how care works here](/contact), including the 360 intake and how the Welcome Team coordinates therapy, medication management, and wellness.
 
 ## Book with {{first_name}}
 
 Tell the Welcome Team you would like to work with {{first_name}} {{last_name}}. They will schedule your 360 intake, confirm availability, and set up your first appointment. If {{first_name}} does not have openings, they will suggest another provider with a similar focus.
 
-[CTA] Book with {{first_name}} -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -24,7 +24,7 @@ Trauma therapy is counseling that targets the lasting effects of overwhelming ex
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What trauma therapy is
 
@@ -59,7 +59,7 @@ Cognitive processing helps you find the stuck points, the thoughts and feelings 
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. The team then matches you with a therapist who specializes in trauma.
 
-Trauma rarely stays in one place. Your care plan may add [medication management](/medication-management) with our psychiatric nurse practitioner for sleep or panic, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the tension the body holds. Nothing is required, and everything is coordinated with your permission. Read the full process at [How it works](/how-it-works).
+Trauma rarely stays in one place. Your care plan may add [medication management](/medication-management) with our psychiatric nurse practitioner for sleep or panic, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the tension the body holds. Nothing is required, and everything is coordinated with your permission. Read the full process at [Contact Us](/contact).
 
 ## Where it is offered
 
@@ -105,7 +105,7 @@ Yes. Talk based methods, EMDR, and most somatic skills work well on video. Teleh
 
 Tell the Welcome Team what you have been carrying. They will set up your 360 intake and match you with a trauma therapist at the office closest to you or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -26,7 +26,7 @@ hero_image: "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50
 
 "I take the time to really understand each person, not just what they are feeling, but what they need. Medication, when used, is always thoughtful and part of a bigger supportive plan."
 
-[CTA] Work with Tiffany -> /contact
+[CTA] Contact Us -> /contact
 
 ## About Tiffany
 
@@ -58,13 +58,13 @@ Tiffany's specialties include [anxiety](/concerns/anxiety), [depression](/concer
 
 Tiffany provides [medication management](/medication-management).
 
-Many of her patients also see a therapist at Pathways Within. With your permission, Tiffany coordinates with your therapist so medication and therapy work toward the same goals. Read more about the 360 intake and care coordination at [how it works](/how-it-works).
+Many of her patients also see a therapist at Pathways Within. With your permission, Tiffany coordinates with your therapist so medication and therapy work toward the same goals. Read more about the 360 intake and care coordination at [Contact Us](/contact).
 
 ## Work with Tiffany
 
 Tell the Welcome Team you would like to work with Tiffany Roberts. They will schedule your 360 intake, verify your benefits, and set up your first appointment. You do not need a referral from a therapist to see her.
 
-[CTA] Work with Tiffany -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

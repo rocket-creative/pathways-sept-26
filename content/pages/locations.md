@@ -22,9 +22,9 @@ hero_image: "[NEEDS: image] Map of Long Island showing the five Pathways Within 
 
 Pathways Within - Wisdom and Wellness Collaborative has five offices across Nassau and Suffolk County, plus telehealth for clients in New York when a video visit is available. The Welcome Team schedules the office. Services can include pop-up events, so this page does not assign a fixed menu to each building.
 
-You do not have to pick an office before you reach out. The Welcome Team asks where you live and work during your 360 intake and matches you with a provider at the office that fits. Many clients mix in person visits with video sessions. Read more at [how it works](/how-it-works).
+You do not have to pick an office before you reach out. The Welcome Team asks where you live and work during your 360 intake and matches you with a provider at the office that fits. Many clients mix in person visits with video sessions. Read more at [Contact Us](/contact).
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Our offices
 
@@ -47,7 +47,7 @@ Most of our therapists and our prescriber see clients by video. Telehealth is av
 
 Tell the Welcome Team where you are and what you are looking for. They will set up your 360 intake and match you with a provider at the office closest to you, or by video.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

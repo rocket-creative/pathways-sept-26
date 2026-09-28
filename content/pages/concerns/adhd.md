@@ -24,7 +24,7 @@ ADHD treatment at Pathways Within is for adults, teens, and children who struggl
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -51,7 +51,7 @@ Our prescriber offers [medication management](/medication-management) for adoles
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you or your child are experiencing and what you want to change. The team builds a plan and matches you with a therapist who works with your age group.
 
-Your first session covers history, school or work, home life, and what a good outcome looks like. For children, the therapist usually meets with parents first. If an evaluation for medication makes sense, the Welcome Team schedules it with our prescriber. Within a few weeks you have a plan, a therapist, and a few practical tools already in use. Read the full process at [How it works](/how-it-works).
+Your first session covers history, school or work, home life, and what a good outcome looks like. For children, the therapist usually meets with parents first. If an evaluation for medication makes sense, the Welcome Team schedules it with our prescriber. Within a few weeks you have a plan, a therapist, and a few practical tools already in use. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -101,7 +101,7 @@ Most plans that cover therapy and psychiatric visits cover it. Coverage varies b
 
 Tell the Welcome Team what focus and follow through have been like for you or your child. They will set up your 360 intake and match you with the right clinician, in person or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

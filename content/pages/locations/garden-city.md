@@ -22,8 +22,7 @@ hero_image: "[NEEDS: image] Entrance to the Pathways Within Garden City office o
 
 Pathways Within Garden City is at 647 Franklin Ave, Lower Level, Garden City, NY 11530. The office at 520 Franklin Ave is closed. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
 
-[CTA] Start your 360 intake -> /contact
-
+[CTA] Contact Us -> /contact
 
 ## Getting here
 
@@ -68,7 +67,7 @@ Contact the Welcome Team by form, call, or text. A team member schedules your 36
 
 Tell the Welcome Team what you are looking for and that Garden City is your closest office. They will set up your 360 intake and match you with a provider who fits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

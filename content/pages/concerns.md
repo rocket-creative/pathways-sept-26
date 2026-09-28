@@ -56,11 +56,11 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 
 ## Not on this list?
 
-That happens often. Our clinicians also list specialties such as anger, school refusal, autism, neurodivergence, men's issues, domestic violence recovery, sexual assault recovery, borderline personality disorder, and midlife changes. Search [providers](/providers) by specialty, or just tell the Welcome Team what is going on. The 360 intake is built for concerns that do not fit a label. [How it works](/how-it-works).
+That happens often. Our clinicians also list specialties such as anger, school refusal, autism, neurodivergence, men's issues, domestic violence recovery, sexual assault recovery, borderline personality disorder, and midlife changes. Search [providers](/providers) by specialty, or just tell the Welcome Team what is going on. The 360 intake is built for concerns that do not fit a label. [Contact Us](/contact).
 
 ## Take the next step
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

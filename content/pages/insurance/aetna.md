@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Welcome Team member reviewing an Aetna insurance car
 
 Pathways Within may participate with Aetna for therapy and medication management at our Long Island offices and by telehealth. Aetna is one of the plans listed on our intake form, and many of our clients use it. Coverage varies by provider, service, and plan, so the Welcome Team verifies your benefits after your 360 intake rather than asking you to figure it out alone.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Aetna may cover here
 
@@ -41,7 +41,7 @@ You do not need to know your benefits to reach out. Here is the order of events.
 3. The team builds a care plan and matches you with available providers who work with Aetna.
 4. The Welcome Team verifies your Aetna benefits and tells you what to expect before your first appointment.
 
-There is no insurance gate at the front door. We match you to care first, then confirm how it is paid for. The whole process is described at [How it works](/how-it-works).
+There is no insurance gate at the front door. We match you to care first, then confirm how it is paid for. The whole process is described at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -73,7 +73,7 @@ Employer plans differ from individual plans, sometimes a lot. Bring your card to
 
 Tell the Welcome Team you have Aetna and what you are hoping to change. They will set up your 360 intake, match you with a provider, and verify your benefits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

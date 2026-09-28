@@ -24,7 +24,7 @@ Teen therapy at Pathways Within is counseling for adolescents who need a private
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What teen therapy is
 
@@ -81,7 +81,7 @@ The first session is about getting comfortable. Your therapist asks what is goin
 
 Every new client starts with a 360 intake with our Welcome Team. For teens, that conversation usually includes a parent and covers what is happening at school, at home, and with friends. The team then matches your teen with an available therapist who works with adolescents and builds a whole person care plan.
 
-When it helps, that plan can include [trauma therapy](/therapy/trauma-therapy), parent sessions, or [medication management](/medication-management) with our psychiatric nurse practitioner, who sees adolescents 10 and older. Nothing is required, and everything is coordinated with your permission. Read the full process at [How it works](/how-it-works), or see all of our [therapy services](/therapy).
+When it helps, that plan can include [trauma therapy](/therapy/trauma-therapy), parent sessions, or [medication management](/medication-management) with our psychiatric nurse practitioner, who sees adolescents 10 and older. Nothing is required, and everything is coordinated with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
 
 ## Where it is offered
 
@@ -123,7 +123,7 @@ Your therapist can refer your teen to our psychiatric nurse practitioner for an 
 
 Tell the Welcome Team what your teen has been going through, or teens, tell them yourself. They will set up your 360 intake and match you with a therapist who works with adolescents, in person or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

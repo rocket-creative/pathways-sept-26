@@ -24,7 +24,7 @@ Depression therapy at Pathways Within is for adults and teens who have felt low,
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -53,7 +53,7 @@ Our psychiatric nurse practitioner offers [medication management](/medication-ma
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. The team builds a plan across therapy, medication management, and wellness as needed and matches you with a therapist who has openings.
 
-Your first session covers your history, how the depression shows up day to day, and what feeling better would look like for you. Your therapist checks on safety, sleep, and support at home. In the following weeks, you set a few small, concrete goals and start working on them together. Read the full process at [How it works](/how-it-works).
+Your first session covers your history, how the depression shows up day to day, and what feeling better would look like for you. Your therapist checks on safety, sleep, and support at home. In the following weeks, you set a few small, concrete goals and start working on them together. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -99,7 +99,7 @@ Most plans that cover therapy cover it. Coverage varies by provider, service, an
 
 You do not have to feel better before you call. Tell the Welcome Team what the last few weeks have been like. They will set up your 360 intake and match you with a therapist who treats depression, in person or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

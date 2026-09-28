@@ -24,7 +24,7 @@ Therapy for veterans and first responders at Pathways Within is trauma focused c
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911. Veterans and their families can also reach the [Veterans Crisis Line](https://www.veteranscrisisline.net/) by dialing 988 and pressing 1, or by texting 838255.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What this program is
 
@@ -71,7 +71,7 @@ Together you agree on a starting point and a pace. Many clients begin with groun
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not only the one thing that made you call. The team then matches you with a therapist who knows this population.
 
-When it helps, the plan can include [medication management](/medication-management) with our psychiatric nurse practitioner for sleep, panic, or mood. It can also include wellness services for the body. Everything is coordinated with your permission. Read more at [How it works](/how-it-works) or return to the [therapy hub](/therapy).
+When it helps, the plan can include [medication management](/medication-management) with our psychiatric nurse practitioner for sleep, panic, or mood. It can also include wellness services for the body. Everything is coordinated with your permission. Read more at [Contact Us](/contact) or return to the [therapy hub](/therapy).
 
 ## Where it is offered
 
@@ -113,7 +113,7 @@ Say so. Substance use is common in this population and it is not a reason to tur
 
 Tell the Welcome Team where you served or what you do. They will set up your 360 intake and match you with a therapist who understands the job, at the office closest to you or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

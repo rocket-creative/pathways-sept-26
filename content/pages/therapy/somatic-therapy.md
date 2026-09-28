@@ -24,7 +24,7 @@ Somatic therapy is a body based approach to trauma and stress for adults whose n
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What somatic therapy is
 
@@ -59,7 +59,7 @@ The goal is insight into your mind and body connection that stays with you for l
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. The team then matches you with a therapist trained in somatic work.
 
-Somatic therapy pairs naturally with the rest of the practice. Your care plan may combine it with [trauma therapy](/therapy/trauma-therapy), [EMDR](/therapy/emdr), or [IFS](/therapy/ifs) to process specific memories. Our Wellness team offers [massage](/wellness/massage) as a coordinated option for the physical tension that somatic work uncovers, and [acupuncture](/wellness/acupuncture) for pain and sleep. Everything is coordinated with your permission. Read the full process at [How it works](/how-it-works).
+Somatic therapy pairs naturally with the rest of the practice. Your care plan may combine it with [trauma therapy](/therapy/trauma-therapy), [EMDR](/therapy/emdr), or [IFS](/therapy/ifs) to process specific memories. Our Wellness team offers [massage](/wellness/massage) as a coordinated option for the physical tension that somatic work uncovers, and [acupuncture](/wellness/acupuncture) for pain and sleep. Everything is coordinated with your permission. Read the full process at [Contact Us](/contact).
 
 ## Where it is offered
 
@@ -105,7 +105,7 @@ Yes. Awareness, breath, movement, and self touch all work well on video, and man
 
 Tell the Welcome Team where you feel it in your body. They will set up your 360 intake and match you with a somatic therapist at the office closest to you or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

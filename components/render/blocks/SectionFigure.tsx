@@ -9,6 +9,8 @@ const SIZES: Record<SectionPhotoLayout, string> = {
   feature: "(min-width: 1200px) 720px, (min-width: 900px) 58vw, 100vw",
   /* Band spans the bento card (~76rem) edge to edge. */
   band: "(min-width: 1200px) 76rem, (min-width: 900px) 92vw, 100vw",
+  /* One cell of a 2×2 collage, half the card on a wide viewport. */
+  collage: "(min-width: 700px) 38rem, 100vw",
 };
 
 /**
@@ -35,11 +37,16 @@ export default function SectionFigure({
   const resolvedLayout = layout ?? "split";
   /* Bands are immersive landscapes; circles keep their mask when used as primary. */
   const resolvedAspect =
-    shape === "circle" ? "square" : resolvedLayout === "band" ? (aspect ?? "landscape") : aspect;
+    shape === "circle" ? "square" : resolvedLayout === "band" || resolvedLayout === "collage" ? (aspect ?? "landscape") : aspect;
+  /* The collage wrapper carries content-image so the bento treats the grid as one figure. */
+  const frameClass =
+    resolvedLayout === "collage"
+      ? `section-figure__media section-figure__media--${shape}`
+      : `content-image section-figure__media section-figure__media--${shape}`;
 
   return (
     <SettleImage
-      className={`content-image section-figure__media section-figure__media--${shape}`}
+      className={frameClass}
       data-photo="section"
       data-layout={resolvedLayout}
       data-aspect={resolvedAspect}

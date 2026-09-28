@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Client filling out an intake form on a tablet at a P
 
 UMR is one of the plans on the Pathways Within intake form, and if it is the name on your card you can be seen here for therapy and medication management. Our licensed clinicians work with UMR clients in person across Long Island and by telehealth. Coverage varies by provider, service, and plan, and the Welcome Team verifies your benefits after your 360 intake.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What UMR may cover here
 
@@ -39,7 +39,7 @@ You will never be asked to sort out your benefits before someone at Pathways Wit
 3. The team builds a care plan across therapy, medication management, and wellness as needed, and matches you with providers who work with UMR.
 4. The Welcome Team verifies your UMR benefits and confirms what applies before your first appointment.
 
-After that, the Welcome Team stays your point of contact for billing and scheduling. The full process is at [How it works](/how-it-works).
+After that, the Welcome Team stays your point of contact for billing and scheduling. The full process is at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ In most cases before your first appointment. If your plan needs prior authorizat
 
 Let the Welcome Team know you have UMR and what you want to change. They will schedule your 360 intake, match you with a provider, and check your coverage.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

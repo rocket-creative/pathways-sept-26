@@ -22,8 +22,7 @@ hero_image: "[NEEDS: image] Waiting area of the Pathways Within Rockville Centre
 
 Pathways Within Rockville Centre is at 53 N Park Ave, Suite 302, Rockville Centre, NY 11570. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
 
-[CTA] Start your 360 intake -> /contact
-
+[CTA] Contact Us -> /contact
 
 ## Getting here
 
@@ -68,7 +67,7 @@ Contact the Welcome Team by form, call, or text. A team member schedules your 36
 
 Tell the Welcome Team what you need and that Rockville Centre is your closest office. They will set up your 360 intake and match you with the right provider.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

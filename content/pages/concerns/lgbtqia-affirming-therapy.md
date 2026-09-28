@@ -24,7 +24,7 @@ Affirming therapy means your therapist starts from one fact: your identity is no
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -55,7 +55,7 @@ Affirming care is not a separate kind of therapy. It is a stance your therapist 
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. You can share your pronouns and the name you use at that point, and the team records them so you do not have to correct anyone later. [NEEDS: confirm intake form has pronoun and chosen name fields]
 
-The team matches you with a therapist who lists affirming care as a specialty and has openings. Your first session covers your story and your goals. If identity is not what you came in for, your therapist follows your lead. If it is, you set the pace. Read the full process at [how it works](/how-it-works).
+The team matches you with a therapist who lists affirming care as a specialty and has openings. Your first session covers your story and your goals. If identity is not what you came in for, your therapist follows your lead. If it is, you set the pace. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -101,7 +101,7 @@ Yes, in the same way it covers any psychotherapy. Coverage varies by provider, s
 
 Tell the Welcome Team what you are looking for, including anything you want your therapist to know before you meet. They will set up your 360 intake and match you with an affirming therapist in Nassau County, Suffolk County, or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

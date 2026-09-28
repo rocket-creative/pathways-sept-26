@@ -224,6 +224,7 @@ export function selectionFromSearch(search: string): Selection {
       .getAll(FACET_PARAMS[facet])
       .flatMap((raw) => raw.split(","))
       .map((value) => value.trim())
+      .map((value) => (facet === "pillars" && value.toLowerCase() === "medication" ? "specialized" : value))
       .filter(Boolean);
     if (values.length) selection[facet] = values;
   }

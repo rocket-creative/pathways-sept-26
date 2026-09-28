@@ -6,7 +6,7 @@ import "./directory.css";
 
 /**
  * The full team directory for /providers. The server renders every active
- * provider, so the list is in the HTML, crawlable, and complete without
+ * provider, including specialized care, so the list is in the HTML, crawlable, and complete without
  * JavaScript; the filters on top of it are client side.
  *
  * Mount this where content/pages/providers.md carries its [PROVIDER DIRECTORY]
@@ -15,7 +15,7 @@ import "./directory.css";
 export default function ProviderDirectory() {
   const active = getProviders().filter((provider) => provider.active);
   const profiles = active
-    .filter((provider) => !provider.isAdmin && !provider.isFounder && !provider.isSpecialist)
+    .filter((provider) => !provider.isAdmin && !provider.isFounder)
     .map(toProviderCardData);
   const admin = active.filter((provider) => provider.isAdmin).map(toProviderCardData);
   // Resolved here, where the photo registry is, and handed down as plain data:

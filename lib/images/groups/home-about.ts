@@ -21,6 +21,18 @@ import type { ImageGroup } from "@/lib/images/types";
 export const HOME_ABOUT: ImageGroup = {
   name: "home-about",
   assets: [
+    // April 2026 campaign and front desk. Collage cells on the homepage.
+    { id: "ha-ap26-camp-pair", file: "april-2026/campaign/camp-1-solo.jpg" },
+    { id: "ha-ap26-camp-tiffany", file: "april-2026/campaign/camp-2-pair.jpg" },
+    { id: "ha-ap26-camp-three", file: "april-2026/campaign/camp-3-group.jpg" },
+    { id: "ha-ap26-camp-five", file: "april-2026/campaign/camp-4-group.jpg" },
+    { id: "ha-ap26-rachel-solo", file: "april-2026/campaign/rachel-solo.jpg" },
+    { id: "ha-ap26-rachel-family", file: "april-2026/rachel/family-portrait.jpg" },
+    { id: "ha-ap26-woman-smile", file: "april-2026/campaign/woman-beige-smile.jpg" },
+    { id: "ha-ap26-desk-talk", file: "april-2026/front-desk/welcome-talk.jpg" },
+    { id: "ha-ap26-desk-smile", file: "april-2026/front-desk/welcome-smile.jpg" },
+    { id: "ha-ap26-desk-handshake", file: "april-2026/front-desk/handshake.jpg" },
+
     // --- Approved photographer exports (ha-ap-*) -----------------------
     // Rachel Lessard approved headshot (4000x6000). Square "top" keeps the face.
     {
@@ -118,29 +130,39 @@ export const HOME_ABOUT: ImageGroup = {
   pages: {
     "/": {
       sections: {
-        // Warm therapy interior — oversized media column, plus a waiting band.
         "what-people-come-to-us-for": [
           {
-            asset: "ha-ap-therapy-massapequa",
-            alt: "A therapy office corner with plum walls, sunflower arrangements, and a mustard yellow chair beside a confidentiality sign",
-            shape: "circle",
-            side: "end",
-            layout: "feature",
+            asset: "ha-ap26-camp-pair",
+            alt: "A practitioner in a blue shirt and a woman in a cream sweater smiling together",
+            layout: "collage",
+            aspect: "landscape",
             focal: "center",
           },
           {
-            asset: "ha-ap-waiting-port-jefferson",
-            alt: "A Port Jefferson office hallway with teal chairs, a tall white floor lamp, and light blue walls",
-            shape: "rounded",
+            asset: "ha-ap26-camp-tiffany",
+            alt: "Tiffany Roberts, PMHNP, standing with a colleague in front of a studio backdrop",
+            layout: "collage",
             aspect: "landscape",
-            layout: "band",
+            focal: "center",
+          },
+          {
+            asset: "ha-ap26-camp-three",
+            alt: "Three people, including a child, posing together during the Pathways Within photo day",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "ha-ap26-camp-five",
+            alt: "A group of Pathways Within practitioners and clients smiling together",
+            layout: "collage",
+            aspect: "landscape",
             focal: "center",
           },
         ],
-        // Circle portrait feel for finding a clinician.
         "find-a-provider": {
-          asset: "ha-ap-editorial-amanda",
-          alt: "Amanda Baylis, smiling in a sunlit office with plants behind her",
+          asset: "ha-ap26-desk-smile",
+          alt: "A Pathways Within staff member smiling with a visitor at the front desk",
           shape: "circle",
           side: "end",
           focal: "center",
@@ -183,11 +205,11 @@ export const HOME_ABOUT: ImageGroup = {
         // Inviting front desk, plus a calm massage-room band to close the page.
         "take-the-next-step": [
           {
-            asset: "ha-ap-front-desk-welcome",
-            alt: "A receptionist smiling at a visitor across the dark wood front desk under the Pathways Within wall sign",
+            asset: "ha-ap26-desk-talk",
+            alt: "Staff and a visitor talking across the Pathways Within front desk",
             shape: "circle",
             side: "end",
-            focal: "38% 32%",
+            focal: "center",
           },
           {
             asset: "ha-ap-massage-room",
@@ -202,22 +224,22 @@ export const HOME_ABOUT: ImageGroup = {
     },
 
     "/about": {
-      hero: { asset: "ha-ap-wellness-lobby", alt: "", focal: "center" },
+      hero: { asset: "ha-ap26-rachel-solo", alt: "Rachel Lessard smiling during the April photo day", focal: "center" },
       sections: {
         "who-we-are-and-why-we-are-here": {
-          asset: "ha-ap-editorial-emily",
-          alt: "Emily Dugan smiling in a plant-filled office, wearing a light blue cardigan",
+          asset: "ha-ap26-rachel-solo",
+          alt: "Rachel Lessard, LCSW-R, smiling in a maroon blouse",
           shape: "circle",
           side: "start",
           focal: "center",
         },
         "how-pathways-found-its-way": {
-          asset: "ha-path-to-the-sea",
-          alt: "A white-washed stone path leading down to the sea at dusk",
+          asset: "ha-ap26-rachel-family",
+          alt: "Rachel Lessard standing with a family during the April photo day",
           shape: "rounded",
           aspect: "portrait",
           side: "end",
-          focal: "bottom",
+          focal: "center",
         },
         "the-labyrinth": {
           asset: "cw-labyrinth-beach",
@@ -242,38 +264,38 @@ export const HOME_ABOUT: ImageGroup = {
           focal: "center",
         },
         "take-the-next-step": {
-          asset: "ha-ap-front-desk-team",
-          alt: "Two Pathways Within staff members greeting a visitor at the front desk",
+          asset: "ha-ap26-desk-handshake",
+          alt: "A visitor shaking hands with a staff member at the Pathways Within front desk",
           shape: "circle",
           side: "end",
-          focal: "42% 28%",
+          focal: "center",
         },
       },
     },
 
     "/providers": {
-      hero: { asset: "ha-ap-group-room-garden-city", alt: "", focal: "center" },
+      hero: { asset: "ha-ap26-camp-five", alt: "A group of Pathways Within practitioners and clients smiling together", focal: "center" },
       sections: {
         "pathways-within-wisdom-and-wellness-collaborative-specialists": {
-          asset: "ha-ap-waiting-port-jefferson",
-          alt: "A Port Jefferson office hallway with teal chairs, a tall white floor lamp, and light blue walls",
+          asset: "ha-ap26-camp-three",
+          alt: "Three people, including a child, posing together during the Pathways Within photo day",
           shape: "circle",
           side: "end",
           focal: "center",
         },
         leadership: {
-          asset: "ha-ap-waiting-greeting",
-          alt: "A clinician in blue scrubs greeting a visitor seated in a turtle-patterned armchair",
+          asset: "ha-ap26-rachel-solo",
+          alt: "Rachel Lessard, LCSW-R, founder of Pathways Within",
           shape: "circle",
           side: "start",
-          focal: "42% 28%",
+          focal: "center",
         },
         "the-welcome-team": {
-          asset: "ha-ap-front-desk-welcome",
-          alt: "A receptionist smiling at a visitor across the dark wood front desk under the Pathways Within wall sign",
+          asset: "ha-ap26-desk-talk",
+          alt: "Staff and a visitor talking across the Pathways Within front desk",
           shape: "circle",
           side: "end",
-          focal: "38% 32%",
+          focal: "center",
         },
         "our-therapy-dogs": {
           asset: "ha-gypsy-therapy-dog",
@@ -338,16 +360,16 @@ export const HOME_ABOUT: ImageGroup = {
     "/providers/rachel-lessard": {
       sections: {
         "in-rachel-s-words": {
-          asset: "th-session-hands",
-          alt: "A therapist listening to a client who sits with clasped hands on a couch",
+          asset: "ha-ap26-rachel-family",
+          alt: "Rachel Lessard standing with a family during the April photo day",
           shape: "rounded",
           aspect: "portrait",
           side: "end",
-          focal: "68% 50%",
+          focal: "center",
         },
         "the-labyrinth": {
-          asset: "cw-labyrinth-beach",
-          alt: "A stone labyrinth laid out on a headland above the sea, with one person walking it",
+          asset: "th-ap26-fam-four",
+          alt: "A family talking with a therapist on a blue sofa in a Pathways Within office",
           shape: "rounded",
           aspect: "landscape",
           side: "start",

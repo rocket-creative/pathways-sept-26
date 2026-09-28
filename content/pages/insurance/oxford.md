@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Exterior of a Pathways Within office on Long Island"
 
 Oxford plans are common across Nassau and Suffolk County, and Oxford is one of the plans listed on the Pathways Within intake form. Our therapists and our psychiatric nurse practitioner see Oxford clients for therapy and medication management in person and by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, so you are not left guessing.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Oxford may cover here
 
@@ -39,7 +39,7 @@ The first conversation is about you, not your card. Verification happens after.
 3. The team builds a care plan and matches you with available providers who work with Oxford.
 4. The Welcome Team verifies your Oxford benefits and tells you what to expect before your first appointment.
 
-That Welcome Team member stays your point of contact. The full process is described at [How it works](/how-it-works).
+That Welcome Team member stays your point of contact. The full process is described at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -75,7 +75,7 @@ Some Oxford plans require a referral or prior authorization for outpatient menta
 
 Tell the Welcome Team you have Oxford and what you want to work on. They will schedule your 360 intake, match you with a provider, and verify your benefits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

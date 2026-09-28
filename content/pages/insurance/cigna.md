@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Front desk at a Pathways Within office on Long Islan
 
 If you carry a Cigna plan and want to see a therapist in Nassau or Suffolk County, you can start here. Cigna is one of the plans on the Pathways Within intake form, and our clinicians see Cigna clients for therapy and medication management in person and by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Cigna may cover here
 
@@ -39,7 +39,7 @@ Nobody at Pathways Within will ask you to confirm your coverage before they will
 3. The team builds a care plan across therapy, medication management, and wellness as needed, and matches you with providers who work with Cigna.
 4. The Welcome Team verifies your Cigna benefits and confirms what applies before your first appointment.
 
-Your Welcome Team contact stays with you after that, so billing questions have a person attached. The full process is at [How it works](/how-it-works).
+Your Welcome Team contact stays with you after that, so billing questions have a person attached. The full process is at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ It depends on the plan. Some plans cover it, some do not, and some cover it only
 
 Reach out to the Welcome Team, mention Cigna, and tell them what brought you here. They will schedule your 360 intake and handle the verification.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -26,6 +26,16 @@ import type { ImageGroup } from "@/lib/images/types";
 export const CONCERNS_WELLNESS: ImageGroup = {
   name: "concerns-wellness",
   assets: [
+    // April 2026 medication, acupuncture (Leo), and a hands-only care-team crop.
+    { id: "cw-ap26-med-single", file: "april-2026/med/single-patient.jpg" },
+    { id: "cw-ap26-med-couples", file: "april-2026/med/couples.jpg" },
+    { id: "cw-ap26-med-teen", file: "april-2026/med/parent-teen.jpg" },
+    { id: "cw-ap26-med-np", file: "april-2026/med/np-and-therapist.jpg" },
+    { id: "cw-ap26-hands", file: "april-2026/med/care-team-hands.jpg" },
+    { id: "cw-ap26-acu-needles", file: "april-2026/acupuncture/needles.jpg" },
+    { id: "cw-ap26-acu-shoulder", file: "april-2026/acupuncture/shoulder.jpg" },
+    { id: "cw-ap26-acu-leo", file: "april-2026/acupuncture/practitioner-smile.jpg" },
+
     // Brand motif and nature
     { id: "cw-labyrinth-beach", file: "360-degree-wellness/ashley-batz-betmVWGYcLY-unsplash+(1).jpg" },
     { id: "cw-hand-still-water", file: "360-degree-wellness/yoann-boyer-i14h2xyPr18-unsplash.jpg" },
@@ -88,14 +98,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     /* ---------------------------------------------------------------- */
     "/concerns": {
       hero: {
-        asset: "cw-labyrinth-beach",
-        alt: "A labyrinth of stones laid out on a beach headland, one person walking its path",
-        focal: "50% 70%",
+        asset: "ha-ap26-camp-five",
+        alt: "A group of Pathways Within practitioners and clients smiling together",
+        focal: "center",
       },
       sections: {
         "mood-and-anxiety": {
-          asset: "cw-windy-beach-coat",
-          alt: "",
+          asset: "th-ap26-green-quiet",
+          alt: "A therapist and client sitting across from each other on blue sofas",
           shape: "circle",
           side: "end",
         },
@@ -103,14 +113,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/anxiety": {
       hero: {
-        asset: "cw-windy-beach-coat",
-        alt: "A woman standing on a windy beach with her eyes closed, holding her coat closed at the collar",
-        focal: "65% 40%",
+        asset: "th-ap26-seated",
+        alt: "A client sitting calmly on a blue sofa across from a therapist",
+        focal: "center",
       },
       sections: {
         "how-we-treat-anxiety-at-pathways-within": {
-          asset: "cw-session-clipboard",
-          alt: "A therapist taking notes across from a client",
+          asset: "th-ap26-conversation",
+          alt: "A therapist and client in conversation on blue sofas",
           shape: "circle",
           side: "end",
         },
@@ -118,14 +128,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/depression": {
       hero: {
-        asset: "cw-window-light-glasses",
-        alt: "A young man in glasses resting his chin on his hand and looking out a window",
+        asset: "th-ap26-green-listen",
+        alt: "A therapist listening while a client talks from a blue sofa",
         focal: "center",
       },
       sections: {
         "how-we-treat-depression-at-pathways-within": {
-          asset: "cw-group-circle",
-          alt: "A small group sitting together in a bright room",
+          asset: "th-ap26-group-floor",
+          alt: "A group sitting in a circle on the floor of a therapy office",
           shape: "circle",
           side: "end",
         },
@@ -149,12 +159,12 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           focal: "60% 55%",
         },
         "how-we-treat-bipolar-disorder-at-pathways-within": {
-          asset: "cw-medication-hands",
-          alt: "A nurse holding a weekly pill organizer and placing tablets into a client's open palm",
+          asset: "cw-ap26-med-single",
+          alt: "Tiffany Roberts, PMHNP, talking with a client beside a laptop",
           shape: "rounded",
           aspect: "portrait",
           side: "end",
-          focal: "50% 40%",
+          focal: "center",
         },
         "what-your-first-weeks-look-like": {
           asset: "cw-kitchen-morning",
@@ -166,16 +176,16 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/ocd": {
       hero: {
-        asset: "cw-table-notes",
-        alt: "Two people at a table during a session, one writing on a clipboard",
+        asset: "th-ap26-green-vest",
+        alt: "A therapist in a green vest talking with a client",
         focal: "center",
       },
     },
     "/concerns/stress-and-burnout": {
       hero: {
-        asset: "cw-ledge-from-behind",
-        alt: "A woman seen from behind, sitting on a stone ledge with her bag beside her",
-        focal: "50% 55%",
+        asset: "th-ap26-fam-end",
+        alt: "A family seated together on a sofa at the close of a session",
+        focal: "center",
       },
       sections: {
         "signs-it-may-be-time-to-talk-to-someone": {
@@ -197,14 +207,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/ptsd": {
       hero: {
-        asset: "cw-lake-dusk",
-        alt: "A person standing at the edge of a still lake at dusk, seen from behind",
+        asset: "th-ap26-fam-behind",
+        alt: "A family on a sofa, seen from behind the therapist sitting with them",
         focal: "center",
       },
       sections: {
         "how-we-treat-trauma-and-ptsd-at-pathways-within": {
-          asset: "cw-veteran-cap",
-          alt: "A veteran in a service cap, seen from behind at a gathering",
+          asset: "cw-ap26-hands",
+          alt: "Hands on a laptop during a care-team conversation, with no faces in frame",
           shape: "circle",
           side: "end",
         },
@@ -212,9 +222,9 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/grief-and-loss": {
       hero: {
-        asset: "cw-sea-rocks-alone",
-        alt: "A woman standing alone on rocks at the edge of the sea",
-        focal: "25% 50%",
+        asset: "th-ap26-older-couple",
+        alt: "An older couple talking with a therapist in a quiet office",
+        focal: "center",
       },
       sections: {
         "signs-it-may-be-time-to-talk-to-someone": {
@@ -235,21 +245,21 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/adhd": {
       hero: {
-        asset: "cw-rain-boots",
-        alt: "Four children in muddy rain boots standing side by side",
-        focal: "50% 55%",
+        asset: "th-ap26-kids-point",
+        alt: "A child talking with a therapist while two other children sit on a sofa",
+        focal: "center",
       },
     },
     "/concerns/relationship-issues": {
       hero: {
-        asset: "cw-couple-reeds",
-        alt: "A couple standing close together by a lake, one leaning her head on the other's shoulder",
+        asset: "th-ap26-couple",
+        alt: "A couple talking with a therapist in a Pathways Within office",
         focal: "center",
       },
       sections: {
         "how-we-treat-relationship-issues-at-pathways-within": {
-          asset: "cw-father-son-car",
-          alt: "A father and his teenage son laughing together beside a car",
+          asset: "th-ap26-two-women",
+          alt: "Two women sitting together on a sofa across from a therapist",
           shape: "circle",
           side: "end",
         },
@@ -257,16 +267,16 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/postpartum-and-perinatal": {
       hero: {
-        asset: "cw-floor-play",
-        alt: "A parent sitting on the floor of a bright living room, playing with a young child",
-        focal: "50% 55%",
+        asset: "th-ap26-fam-child",
+        alt: "A parent with a young child on their lap during a session",
+        focal: "center",
       },
     },
     "/concerns/self-esteem": {
       hero: {
-        asset: "cw-teens-pebble-shore",
-        alt: "Four teenagers sitting side by side on a pebble shore, seen from behind",
-        focal: "50% 45%",
+        asset: "ha-ap26-woman-smile",
+        alt: "A woman in a cream sweater smiling during the Pathways Within photo day",
+        focal: "center",
       },
       sections: {
         "how-we-treat-self-esteem-at-pathways-within": {
@@ -285,22 +295,22 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/lgbtqia-affirming-therapy": {
       hero: {
-        asset: "cw-riverside-walk",
-        alt: "Two people walking hand in hand along a riverside path beneath a bridge",
-        focal: "50% 45%",
+        asset: "th-ap26-two-women",
+        alt: "Two women sitting together on a sofa across from a therapist",
+        focal: "center",
       },
       sections: {
         "signs-it-may-be-time-to-talk-to-someone": {
-          asset: "cw-riverside-walk",
-          alt: "Two people walking hand in hand along a riverside path beneath a bridge",
+          asset: "th-ap26-two-women",
+          alt: "Two women sitting together on a sofa across from a therapist",
           shape: "rounded",
           aspect: "portrait",
           side: "start",
-          focal: "50% 45%",
+          focal: "center",
         },
         "how-we-treat-lgbtqia-clients-at-pathways-within": {
-          asset: "cw-pier-couple",
-          alt: "Two men smiling together on a wooden pier by a bridge",
+          asset: "th-ap26-green-couple",
+          alt: "A therapist meeting with two people on a blue sofa",
           shape: "circle",
           side: "end",
         },
@@ -308,9 +318,9 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/life-transitions": {
       hero: {
-        asset: "cw-ledge-coffee",
-        alt: "A woman sitting on a concrete ledge with a coffee, looking out and smiling",
-        focal: "50% 40%",
+        asset: "ha-ap26-camp-pair",
+        alt: "A practitioner and a client smiling together during the Pathways Within photo day",
+        focal: "center",
       },
       sections: {
         "how-we-treat-life-transitions-at-pathways-within": {
@@ -324,8 +334,8 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/substance-use": {
       hero: {
-        asset: "cw-sunrise-stretch",
-        alt: "A man seen from behind with his hands behind his head, facing the sunrise",
+        asset: "th-ap26-older-man",
+        alt: "A therapist talking with a client in a Pathways Within office",
         focal: "center",
       },
       sections: {
@@ -339,14 +349,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/chronic-pain-and-illness": {
       hero: {
-        asset: "cw-chair-among-plants",
-        alt: "A woman resting in a wooden chair among houseplants, eyes closed",
-        focal: "60% 50%",
+        asset: "cw-ap26-acu-needles",
+        alt: "Leo, acupuncturist, placing a needle at a client's arm",
+        focal: "center",
       },
       sections: {
         "how-we-treat-chronic-pain-and-illness-at-pathways-within": {
-          asset: "cw-hand-still-water",
-          alt: "A hand reaching down to touch the surface of still water",
+          asset: "cw-ap26-acu-shoulder",
+          alt: "Leo working at a client's shoulder during an acupuncture visit",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
@@ -359,8 +369,8 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     /* ---------------------------------------------------------------- */
     "/wellness": {
       hero: {
-        asset: "cw-hand-still-water",
-        alt: "A hand reaching down to touch the surface of still water",
+        asset: "cw-ap26-acu-leo",
+        alt: "Leo, acupuncturist, with a client after a treatment",
         focal: "center",
       },
       sections: {
@@ -419,43 +429,41 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/wellness/acupuncture": {
       hero: {
-        asset: "cw-water-drop",
-        alt: "A single drop landing on still water and sending out rings",
+        asset: "cw-ap26-acu-leo",
+        alt: "Leo, acupuncturist, with a client after a treatment",
         focal: "center",
       },
       sections: {
         "what-acupuncture-is": {
-          asset: "cw-ap-shoulder-needles",
-          alt: "An acupuncturist's hands placing a needle near a client's shoulder on the treatment table",
+          asset: "cw-ap26-acu-needles",
+          alt: "Leo, acupuncturist, placing a needle at a client's arm",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "feature",
-          focal: "50% 45%",
+          focal: "center",
         },
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "cw-ap-acupuncture-session",
-          alt: "An acupuncturist placing needles along a client's upper back in a Pathways Within treatment room",
+          asset: "cw-ap26-acu-shoulder",
+          alt: "Leo working at a client's shoulder during an acupuncture visit",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "feature",
-          focal: "62% 32%",
+          focal: "center",
         },
-        // Three paragraphs on a full row card (the approaches stack before it
-        // takes a row of its own): real needle work rides beside them.
         "how-care-works-here": {
-          asset: "cw-ap-needle-closeup",
-          alt: "Close view of acupuncture needles being placed along a client's upper back and neck",
+          asset: "cw-ap26-acu-leo",
+          alt: "Leo, acupuncturist, smiling with a client in blue scrubs",
           shape: "rounded",
           aspect: "portrait",
           side: "end",
           layout: "feature",
-          focal: "55% 45%",
+          focal: "30% 30%",
         },
         "where-it-is-offered": {
           asset: "cw-ap-treatment-room",
-          alt: "Acupuncture in a Pathways Within treatment room with a beach mural on the wall",
+          alt: "A Pathways Within treatment room with a beach mural, where acupuncture is offered",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
@@ -567,17 +575,49 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     /* ---------------------------------------------------------------- */
     "/medication-management": {
       hero: {
-        asset: "cw-prescriber-conversation",
-        alt: "A prescriber in a white coat talking with a client in a bright office",
-        focal: "50% 45%",
+        asset: "cw-ap26-med-single",
+        alt: "Tiffany Roberts, PMHNP, talking with a client beside a laptop",
+        focal: "center",
       },
       sections: {
-        "how-care-works-here": {
-          asset: "cw-coastal-stone-circles",
-          alt: "Circular stone ruins on a grassy headland above the sea",
+        "what-medication-management-is": [
+          {
+            asset: "cw-ap26-med-single",
+            alt: "Tiffany Roberts, PMHNP, talking with one client in an office with an elephant painting",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "cw-ap26-med-couples",
+            alt: "Tiffany Roberts meeting with a couple, notebook open on the table",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "cw-ap26-med-teen",
+            alt: "Tiffany Roberts talking with a teenager and a parent",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "cw-ap26-med-np",
+            alt: "Tiffany Roberts meeting with a therapist in a blue shirt",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+        ],
+        "what-to-expect-in-your-first-session-at-pathways-within": {
+          asset: "cw-ap26-hands",
+          alt: "Hands on a laptop during a care-team conversation. The former staff member in beige is shown only as hands",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
+          layout: "feature",
+          focal: "center",
         },
       },
     },

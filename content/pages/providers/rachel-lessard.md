@@ -24,7 +24,7 @@ hero_image: "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50
 
 [IMAGE: Portrait of Rachel Lessard, LCSW-R, founder of Pathways Within]
 
-[CTA] Work with Rachel -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Rachel does clinically
 
@@ -83,9 +83,9 @@ Read more about the practice on the [about](/about) page. For the more candid ve
 
 ## Work with Rachel
 
-Tell the Welcome Team you would like to work with Rachel Lessard. They will schedule your 360 intake, confirm her availability, and set up your first appointment. If Rachel is not taking new clients, they will match you with a therapist who shares her focus. See [how it works](/how-it-works).
+Tell the Welcome Team you would like to work with Rachel Lessard. They will schedule your 360 intake, confirm her availability, and set up your first appointment. If Rachel is not taking new clients, they will match you with a therapist who shares her focus. See [Contact Us](/contact).
 
-[CTA] Work with Rachel -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

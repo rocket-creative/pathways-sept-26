@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] A Welcome Team member reviewing a benefits summary w
 
 Insurance participation varies by provider, service, and plan. Some mental health, medication management, acupuncture, and other services may be covered. You do not need to know your benefits before you write. Send the contact form, and the Welcome Team explains the options from your card. 
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Plans people ask about
 
@@ -79,7 +79,7 @@ Yes, for therapy, medication management, and eligible wellness services. Ask the
 
 ## Take the next step
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825. Questions about a bill: [NEEDS: billing bucket email].
 

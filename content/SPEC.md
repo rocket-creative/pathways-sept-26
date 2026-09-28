@@ -4,7 +4,7 @@ This file is the contract. Every page file in /pages must follow it exactly. Cur
 
 ## 1. Facts sheet (use these, never invent)
 
-Brand on official surfaces (footer, about, contact, location openings): Pathways Within - Wisdom and Wellness Collaborative. Body descriptions may say Pathways Within. One collaborative practice. Public copy speaks as the practice. Do not tag offices or the therapy hub as a Wisdom or Wellness service menu. Therapy, medication management, and wellness are services inside the same organization. Never call the old sites "sister sites." Do not single out a clinician by name on a service or concern page. Rachel Lessard is the founder and is not in the clinician directory. Tia Baumohl and Tiffany Roberts are in a specialists section titled "Pathways Within - Wisdom and Wellness Collaborative Specialists," not in the clinician grid.
+Brand on official surfaces (footer, about, contact, location openings): Pathways Within - Wisdom and Wellness Collaborative. Body descriptions may say Pathways Within. One collaborative practice. Public copy speaks as the practice. Do not tag offices or the therapy hub as a Wisdom or Wellness service menu. Therapy, medication management, and wellness are services inside the same organization. Never call the old sites "sister sites." Rachel Lessard is the founder and is not in the clinician directory. Tia Baumohl and Tiffany Roberts are in the main provider directory under Specialized Care, and their bios appear on the therapy hub and the medication management page. Do not add a separate specialists strip. Other service and concern pages still speak as the practice.
 
 Production domain: https://pathwayswithinwellness.com
 Phone: (631) 371-3825, tel:+16313713825
@@ -34,8 +34,8 @@ Parking is available and varies, from a lot to on-street parking. Do not say ded
 If stairs are a barrier, the Welcome Team schedules Rockville Centre, Smithtown, or Port Jefferson, or New York telehealth.
 
 ### Services by pillar
-Therapy: individual, couples, child, teen, family, group, EMDR, trauma, grief, hypnotherapy, IFS, somatic, PCIT, veterans and first responders, bariatric surgery support. Coaching is its own service. Do not name the coach on the therapy page.
-Medication Management: psychiatric medication management for adolescents 10 and up and adults, at Nassau offices or by New York telehealth. The 360 intake does not diagnose. It records what the patient wants. Do not name the prescriber on the service page.
+Therapy: individual, couples, child, teen, family, group, EMDR, trauma, grief, hypnotherapy, IFS, somatic, PCIT, veterans and first responders, bariatric surgery support. Coaching is its own service. Tia Baumohl's bio and credentials appear on the therapy hub. Do not cross-link her coaching with ITA.
+Medication Management: psychiatric medication management for adolescents 10 and up and adults, at Nassau offices or by New York telehealth. Tiffany Roberts's bio and credentials appear on this page. The contact form does not explain the Trust Driven Care reply. That follow-up stays in Trust Driven Care.
 Wellness: massage (medical, sports, Swedish, pregnancy, hot stone, massage based cupping), acupuncture, cupping (with massage or acupuncture), energy work (Reiki, ITA, IET). Ketamine assisted therapy and cryotherapy are hidden (index false) until the practice says to publish them. IV vitamin therapy stays noindex.
 Cut entirely: body sculpting, body treatments, skincare/facials, hair removal and restoration, PRP, laser anything, Lutronic Accufit, payment plans page.
 

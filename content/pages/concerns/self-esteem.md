@@ -24,7 +24,7 @@ Low self esteem is a running inner commentary that says you are not enough, no m
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -55,7 +55,7 @@ Self esteem does not improve because someone tells you to think positively. It i
 
 You or a parent contacts the Welcome Team. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. For teens, the intake includes the parent and the teen, with time for each. The team then matches you with a therapist who has openings and fits your age and needs.
 
-Your first session is about your story and your goals. Expect your therapist to ask when the self doubt started and what it protects you from. By the third or fourth session, you have a few concrete things to practice, such as catching one critical thought a day and writing down what a fair friend would say instead. Progress is gradual. Most clients notice the voice getting quieter before it goes away. The full process is on [how it works](/how-it-works).
+Your first session is about your story and your goals. Expect your therapist to ask when the self doubt started and what it protects you from. By the third or fourth session, you have a few concrete things to practice, such as catching one critical thought a day and writing down what a fair friend would say instead. Progress is gradual. Most clients notice the voice getting quieter before it goes away. The full process is on [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -99,7 +99,7 @@ Yes in most cases, because the work is billed as psychotherapy. Coverage varies 
 
 You have spent enough time as your own harshest critic. Tell the Welcome Team what that voice says, and they will set up your 360 intake and match you or your teen with a therapist in Nassau County, Suffolk County, or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

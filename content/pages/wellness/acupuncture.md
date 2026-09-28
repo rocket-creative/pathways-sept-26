@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Licensed acupuncturist placing a thin needle at a po
 
 Individualized clinical care for pain, tension, and functional support. At Pathways Within, acupuncture care begins with a thorough intake and individualized clinical assessment. Your acupuncturist evaluates your primary concerns alongside relevant factors such as symptom history, movement, stress, sleep, lifestyle, and overall health, then develops a treatment plan based on your clinical presentation.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What acupuncture is
 
@@ -86,7 +86,7 @@ Once the needles are placed, you rest quietly while treatment takes place. At th
 
 Pathways Within integrates mental health and physical care within one organization. Our acupuncture providers practice alongside professionals offering [massage therapy](/wellness/massage), [mental health therapy](/therapy), [medication management](/medication-management), and [performance coaching](/coaching). This clinical environment recognizes that pain, stress, sleep, mood, movement, and daily functioning can influence one another.
 
-Acupuncture may be used as a stand alone service or coordinated with other care when clinically appropriate and with the patient's permission. Every new client starts with a 360 intake with our Welcome Team, who then builds a whole person plan and schedules your first appointment. Read the full process at [How it works](/how-it-works), or see everything under our [wellness pillar](/wellness).
+Acupuncture may be used as a stand alone service or coordinated with other care when clinically appropriate and with the patient's permission. Every new client starts with a 360 intake with our Welcome Team, who then builds a whole person plan and schedules your first appointment. Read the full process at [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
 
 Massage therapy primarily uses hands on techniques to address muscles and soft tissue. Acupuncture uses selected points and techniques based on an individualized East Asian medicine assessment. Depending on the clinical presentation and treatment goals, the two modalities may complement one another. Our Welcome Team can help you identify the appropriate starting point; clinical recommendations are made by the treating provider.
 
@@ -138,7 +138,7 @@ Yes. Depending on your needs, the two modalities may complement one another. The
 
 Begin with a clinical consultation. Tell the Welcome Team what you are experiencing, and they will set up your 360 intake and schedule your first acupuncture visit with Leonard.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -24,7 +24,7 @@ Internal Family Systems (IFS) therapy is an evidence based approach that helps a
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Get started with an IFS therapist -> /contact
+[CTA] Contact Us -> /contact
 
 ## What IFS is
 
@@ -60,7 +60,7 @@ Over time, this process brings greater clarity, calm, and connection, within you
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. The team then matches you with a therapist trained in IFS or parts work.
 
-IFS combines well with other care. For trauma, your therapist may pair it with [EMDR](/therapy/emdr) or [somatic therapy](/therapy/somatic-therapy). [Coaching](/coaching) and energy work can use an IFS informed approach for clients who want parts work outside a clinical frame. [Medication management](/medication-management) is available when anxiety or depression needs more support. Everything is coordinated with your permission. Read the full process at [How it works](/how-it-works).
+IFS combines well with other care. For trauma, your therapist may pair it with [EMDR](/therapy/emdr) or [somatic therapy](/therapy/somatic-therapy). [Medication management](/medication-management) is available when anxiety or depression needs more support. Everything is coordinated with your permission. [Contact Us](/contact).
 
 ## Where it is offered
 
@@ -102,7 +102,7 @@ Many therapies focus on changing thoughts or behaviors. IFS focuses on internal 
 
 Tell the Welcome Team what keeps pulling you in different directions. They will set up your 360 intake and match you with an IFS trained therapist at the office closest to you or by telehealth.
 
-[CTA] Get started with an IFS therapist -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

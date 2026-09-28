@@ -22,8 +22,7 @@ hero_image: "[NEEDS: image] Reception area at Pathways Within Smithtown on Smith
 
 Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787. The office is on Route 347. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
 
-[CTA] Start your 360 intake -> /contact
-
+[CTA] Contact Us -> /contact
 
 ## Getting here
 
@@ -62,13 +61,13 @@ Coverage varies by provider, service, and plan. The Welcome Team verifies benefi
 
 ### How do I book an appointment?
 
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan, and matches you with a provider at Smithtown. Learn more at [how it works](/how-it-works).
+Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan, and matches you with a provider at Smithtown. Learn more at [Contact Us](/contact).
 
 ## Take the next step
 
 Tell the Welcome Team what you are looking for and that Smithtown is your closest office. They will set up your 360 intake and match you with a provider on our Suffolk team.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

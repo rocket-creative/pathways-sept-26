@@ -14,7 +14,7 @@ const PRIMARY_NAV = [
   { label: "Concerns", href: "/concerns" },
   { label: "Providers", href: "/providers" },
   { label: "Locations", href: "/locations" },
-  { label: "How It Works", href: "/how-it-works" },
+  { label: "Contact Us", href: "/contact" },
 ] as const;
 
 const NAV_PANEL_ID = "site-nav";
@@ -83,7 +83,7 @@ export default function Header() {
               {SITE_PHONE}
             </a>
             <Link href="/contact" className="button">
-              Start your 360 intake
+              Contact Us
             </Link>
           </div>
         </div>

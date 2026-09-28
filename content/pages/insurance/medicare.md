@@ -24,7 +24,7 @@ Finding a therapist who takes Medicare on Long Island can take longer than it sh
 
 [NEEDS: confirm which providers are Medicare enrolled]
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Medicare may cover here
 
@@ -41,7 +41,7 @@ You do not have to sort out Medicare rules before you call. The 360 intake comes
 3. The team builds a care plan and matches you with available providers who are enrolled with Medicare.
 4. The Welcome Team verifies your Medicare benefits, including any supplemental or Advantage plan, before your first appointment.
 
-The Welcome Team stays your point of contact after that. Read the full process at [How it works](/how-it-works).
+The Welcome Team stays your point of contact after that. Read the full process at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -73,7 +73,7 @@ The list depends on each clinician's enrollment status, which changes as staff j
 
 Tell the Welcome Team you have Medicare and what you would like help with. They will schedule your 360 intake, match you with an enrolled provider, and verify your coverage.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -17,6 +17,38 @@ import type { ImageGroup } from "@/lib/images/types";
 export const THERAPY: ImageGroup = {
   name: "therapy",
   assets: [
+    // April 2026 shoot. One keeper per scene; collage pages use four distinct frames.
+    { id: "th-ap26-older-man", file: "april-2026/therapy/session-older-man.jpg" },
+    { id: "th-ap26-black-blazer", file: "april-2026/therapy/session-black-blazer.jpg" },
+    { id: "th-ap26-resting", file: "april-2026/therapy/client-resting.jpg" },
+    { id: "th-ap26-green-vest", file: "april-2026/therapy/session-green-vest.jpg" },
+    { id: "th-ap26-green-quiet", file: "april-2026/therapy/session-green-vest-quiet.jpg" },
+    { id: "th-ap26-green-listen", file: "april-2026/therapy/session-green-vest-listen.jpg" },
+    { id: "th-ap26-seated", file: "april-2026/therapy/session-seated-calm.jpg" },
+    { id: "th-ap26-across", file: "april-2026/therapy/session-across-couch.jpg" },
+    { id: "th-ap26-older-quiet", file: "april-2026/therapy/session-older-man-quiet.jpg" },
+    { id: "th-ap26-conversation", file: "april-2026/therapy/session-conversation.jpg" },
+    { id: "th-ap26-two-women", file: "april-2026/couples/two-women.jpg" },
+    { id: "th-ap26-couple", file: "april-2026/couples/couple-and-therapist.jpg" },
+    { id: "th-ap26-green-couple", file: "april-2026/couples/green-vest-couple.jpg" },
+    { id: "th-ap26-glasses", file: "april-2026/couples/therapist-glasses.jpg" },
+    { id: "th-ap26-hands", file: "april-2026/couples/hands-together.jpg" },
+    { id: "th-ap26-older-couple", file: "april-2026/couples/older-couple-quiet.jpg" },
+    { id: "th-ap26-fam-two", file: "april-2026/family/two-adults.jpg" },
+    { id: "th-ap26-fam-child", file: "april-2026/family/child-on-lap.jpg" },
+    { id: "th-ap26-fam-four", file: "april-2026/family/four-people.jpg" },
+    { id: "th-ap26-fam-end", file: "april-2026/family/family-end.jpg" },
+    { id: "th-ap26-fam-behind", file: "april-2026/family/from-behind.jpg" },
+    { id: "th-ap26-kids-three", file: "april-2026/kids/three-girls.jpg" },
+    { id: "th-ap26-kids-point", file: "april-2026/kids/pointing.jpg" },
+    { id: "th-ap26-kids-stand", file: "april-2026/kids/one-standing.jpg" },
+    { id: "th-ap26-kids-toy", file: "april-2026/kids/stuffed-animal.jpg" },
+    { id: "th-ap26-group-couch", file: "april-2026/group/on-couch.jpg" },
+    { id: "th-ap26-group-floor", file: "april-2026/group/floor-circle.jpg" },
+    { id: "th-ap26-group-gesture", file: "april-2026/group/gesturing.jpg" },
+    { id: "th-ap26-group-play", file: "april-2026/group/playing.jpg" },
+    { id: "th-ap26-teen", file: "april-2026/med/parent-teen-arms.jpg" },
+
     // Sessions and rooms
     { id: "th-session-hands", file: "hypnotherapy/pexels-alex-green-5699434.jpg" },
     { id: "th-session-two-chairs", file: "individual-therapy/pexels-cottonbro-4098368.jpg" },
@@ -70,122 +102,176 @@ export const THERAPY: ImageGroup = {
   pages: {
     "/therapy": {
       hero: {
-        asset: "th-session-hands",
-        alt: "A therapist and client sitting across from each other on a couch during a session",
+        asset: "th-ap26-older-man",
+        alt: "A therapist in a blue shirt talking with a client on a blue sofa in a Pathways Within office",
         focal: "center",
       },
       sections: {
-        "therapy-for-who-you-are": {
-          asset: "th-family-beach-backs",
-          alt: "A family of four standing arm in arm at the edge of the ocean, seen from behind",
-          shape: "circle",
-          side: "end",
-          focal: "50% 60%",
-        },
-        // Real front desk: how care starts is about arriving and being welcomed.
+        "therapy-for-who-you-are": [
+          {
+            asset: "th-ap26-older-man",
+            alt: "A therapist in a blue shirt talking with a client on a blue sofa in a Pathways Within office",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-black-blazer",
+            alt: "A therapist talking with a client in a black blazer during an individual session",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-resting",
+            alt: "A client resting on a blue sofa while a therapist sits nearby in a quiet office",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-green-vest",
+            alt: "A therapist in a green vest leaning in to talk with a client on a blue sofa",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+        ],
         "how-therapy-starts-here": {
-          asset: "th-ap-waiting-greeting",
-          alt: "A Pathways Within clinician greeting a client with a handshake in the waiting area",
+          asset: "ha-ap26-desk-smile",
+          alt: "A Pathways Within staff member smiling with a visitor at the front desk",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "feature",
-          focal: "42% 28%",
+          focal: "center",
         },
         where: {
-          asset: "th-ap-desk-hallway",
-          alt: "The Pathways Within front desk with orchids, the practice logo, and a hallway into the offices",
+          asset: "ha-ap26-desk-handshake",
+          alt: "A visitor shaking hands with a staff member across the Pathways Within front desk",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "band",
-          focal: "40% 30%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/individual-therapy": {
       hero: {
-        asset: "th-session-two-chairs",
-        alt: "Two women talking in armchairs across a small table in a bright, white room",
+        asset: "th-ap26-green-quiet",
+        alt: "A therapist and client sitting across from each other on blue sofas",
         focal: "center",
       },
       sections: {
-        // Four paragraphs on a full row card: the session photograph beside
-        // them, on the left so it alternates with the figure below.
         "what-individual-therapy-is": {
-          asset: "th-session-two-chairs",
-          alt: "Two women talking in armchairs across a small table in a bright, white room",
+          asset: "th-ap26-green-quiet",
+          alt: "A therapist and client sitting across from each other on blue sofas",
           shape: "rounded",
           aspect: "portrait",
           side: "start",
           focal: "center",
         },
         "who-it-helps": {
-          asset: "th-woman-plant-chair",
-          alt: "A woman resting in a wooden chair with her eyes closed, surrounded by houseplants",
+          asset: "th-ap26-green-listen",
+          alt: "A therapist listening while a client talks from a blue sofa",
           shape: "circle",
           side: "end",
-          focal: "60% 50%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/couples-therapy": {
       hero: {
-        asset: "th-couple-boardwalk",
-        alt: "Two partners holding hands at a seaside railing, barefoot, seen from behind",
+        asset: "th-ap26-couple",
+        alt: "A couple talking with a therapist in a Pathways Within office",
         focal: "center",
       },
       sections: {
-        // The longest card on the page (Gottman and somatic sub sections):
-        // the railing photograph rides beside it.
-        "what-couples-therapy-is": {
-          asset: "th-couple-boardwalk",
-          alt: "Two partners holding hands at a seaside railing, barefoot, seen from behind",
-          shape: "rounded",
-          aspect: "portrait",
-          side: "start",
-          focal: "center",
-        },
+        "what-couples-therapy-is": [
+          {
+            asset: "th-ap26-couple",
+            alt: "A couple talking with a therapist in a Pathways Within office",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-green-couple",
+            alt: "A therapist in a green vest meeting with a couple on a blue sofa",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-glasses",
+            alt: "A therapist with glasses talking with a couple during a session",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-hands",
+            alt: "Three people leaning in together, hands close, during a couples session",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+        ],
         "who-it-helps": {
-          asset: "th-couple-pier",
-          alt: "Two men smiling together on a pier, one with an arm around the other",
+          asset: "th-ap26-two-women",
+          alt: "Two women sitting together on a blue sofa across from a therapist",
           shape: "circle",
           side: "end",
-          focal: "50% 30%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/child-therapy": {
       hero: {
-        asset: "th-children-rain-boots",
-        alt: "Four children in colorful rain boots and coats standing in a row on a muddy path",
+        asset: "th-ap26-kids-three",
+        alt: "Three children sitting on a blue sofa across from a therapist",
         focal: "center",
       },
       sections: {
-        "what-child-therapy-is": {
-          asset: "th-mother-hugging-child",
-          alt: "A mother with her eyes closed hugging her smiling child against a stone wall",
-          shape: "circle",
-          side: "end",
-          focal: "50% 22%",
-        },
+        "what-child-therapy-is": [
+          {
+            asset: "th-ap26-kids-three",
+            alt: "Three children sitting on a blue sofa across from a therapist",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-kids-point",
+            alt: "A child pointing while talking with a therapist and two other children",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-kids-stand",
+            alt: "Children on a blue sofa, one leaning forward during a session",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-kids-toy",
+            alt: "A child holding a stuffed animal on a blue sofa during a therapy session",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+        ],
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "th-parent-toddler-toys",
-          alt: "A parent and toddler playing with a wooden toy on the floor of a bright room",
+          asset: "th-ap26-fam-child",
+          alt: "A parent with a young child on their lap, talking with a therapist",
           shape: "circle",
           side: "end",
-          focal: "55% 60%",
-        },
-        // Two paragraphs and a sub section on a full row card.
-        "how-care-works-here": {
-          asset: "th-children-rain-boots",
-          alt: "Four children in colorful rain boots and coats standing in a row on a muddy path",
-          shape: "rounded",
-          aspect: "portrait",
-          side: "start",
           focal: "center",
         },
       },
@@ -193,103 +279,156 @@ export const THERAPY: ImageGroup = {
 
     "/therapy/teen-therapy": {
       hero: {
-        asset: "th-teens-pebble-beach",
-        alt: "Four teenagers in flannel shirts sitting side by side on a pebble beach, seen from behind",
+        asset: "th-ap26-teen",
+        alt: "A teenager talking with a parent and a practitioner in a Pathways Within office",
         focal: "center",
       },
       sections: {
         "for-teens": {
-          asset: "th-teen-denim-jacket",
-          alt: "A teenager in glasses, a beanie and a denim jacket laughing in front of a blue wall",
+          asset: "th-ap26-teen",
+          alt: "A teenager talking with a parent and a practitioner in a Pathways Within office",
           shape: "circle",
           side: "start",
-          focal: "50% 45%",
+          focal: "center",
         },
         "for-parents": {
-          asset: "th-parent-teen-car",
-          alt: "A father with his hand on his teenage son's shoulder, both smiling, beside a car with a tree on the roof",
+          asset: "th-ap26-fam-two",
+          alt: "A parent and a young adult sitting with a therapist on a blue sofa",
           shape: "circle",
           side: "end",
-          focal: "35% 45%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/family-therapy": {
       hero: {
-        asset: "th-family-multigen-fire",
-        alt: "A multigenerational family sitting together on a beach around a campfire, smiling",
-        focal: "50% 47%",
+        asset: "th-ap26-fam-four",
+        alt: "A family of four talking with a therapist in a Pathways Within office",
+        focal: "center",
       },
       sections: {
+        "what-family-therapy-is": [
+          {
+            asset: "th-ap26-fam-two",
+            alt: "Two adults sitting with a therapist on a blue sofa",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-fam-child",
+            alt: "A parent with a young child on their lap during a family session",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-fam-four",
+            alt: "A family of four talking with a therapist in a Pathways Within office",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-fam-end",
+            alt: "A family seated together on a blue sofa at the end of a session",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+        ],
         "who-it-helps": {
-          asset: "th-family-blue-door",
-          alt: "A mother hugging her two children in front of a teal wooden door",
+          asset: "th-ap26-fam-behind",
+          alt: "A family on a blue sofa, seen past the therapist sitting with them",
           shape: "circle",
           side: "end",
-          focal: "50% 40%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/group-therapy": {
       hero: {
-        asset: "th-group-loft",
-        alt: "A group of adults seated in a loose circle in a bright room, listening to one another",
+        asset: "th-ap26-group-couch",
+        alt: "A group of children and teens gathered with a therapist in a bright office",
         focal: "center",
       },
       sections: {
-        "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "th-group-window-room",
-          alt: "Four adults talking together on a couch and chairs beneath tall windows",
-          shape: "circle",
-          side: "end",
-          focal: "50% 60%",
-        },
+        "what-group-therapy-is": [
+          {
+            asset: "th-ap26-group-couch",
+            alt: "A group sitting on a blue sofa and the floor with a therapist",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-group-floor",
+            alt: "A group sitting in a circle on the floor of a therapy office",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-group-gesture",
+            alt: "A therapist gesturing while a group sits together on the floor",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+          {
+            asset: "th-ap26-group-play",
+            alt: "A group laughing together on the floor of a therapy office",
+            layout: "collage",
+            aspect: "landscape",
+            focal: "center",
+          },
+        ],
       },
     },
 
     "/therapy/emdr": {
-      hero: { asset: "th-man-sunset", alt: "", focal: "center" },
+      hero: { asset: "th-ap26-seated", alt: "A client sitting calmly on a blue sofa across from a therapist", focal: "center" },
       sections: {
         "what-emdr-is": {
-          asset: "th-water-ripple",
-          alt: "",
+          asset: "th-ap26-seated",
+          alt: "A client sitting calmly on a blue sofa across from a therapist",
           shape: "rounded",
           aspect: "portrait",
           side: "end",
-          focal: "50% 60%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/trauma-therapy": {
       hero: {
-        asset: "th-man-window-reflection",
-        alt: "A young man in glasses resting his chin on his hand, looking out a window that holds his reflection",
-        focal: "50% 40%",
+        asset: "th-ap26-across",
+        alt: "Two people talking quietly across a blue sofa in a therapy office",
+        focal: "center",
       },
       sections: {
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "th-woman-ledge-sunlight",
-          alt: "A woman sitting on a sunlit ledge with a cup of coffee, looking up and smiling",
+          asset: "th-ap26-across",
+          alt: "Two people talking quietly across a blue sofa in a therapy office",
           shape: "circle",
           side: "end",
-          focal: "35% 50%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/grief-therapy": {
       hero: {
-        asset: "th-older-couple-autumn",
-        alt: "An older couple walking with their arms around each other under autumn trees, seen from behind",
-        focal: "50% 30%",
+        asset: "th-ap26-older-couple",
+        alt: "An older couple talking with a therapist in a quiet office",
+        focal: "center",
       },
       sections: {
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "th-comfort-on-couch",
-          alt: "Two people sitting close together on a couch, one holding the other's hand",
+          asset: "th-ap26-older-couple",
+          alt: "An older couple talking with a therapist in a quiet office",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
@@ -300,128 +439,128 @@ export const THERAPY: ImageGroup = {
 
     "/therapy/hypnotherapy": {
       hero: {
-        asset: "th-woman-sunlit-wall",
-        alt: "A woman with her eyes closed, resting against a wall in warm sunlight",
-        focal: "50% 40%",
+        asset: "th-ap26-resting",
+        alt: "A client resting on a blue sofa while a therapist sits nearby",
+        focal: "center",
       },
       sections: {
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "th-session-reclining",
-          alt: "A client reclining on a couch with eyes closed while a therapist sits nearby with a notepad",
+          asset: "th-ap26-resting",
+          alt: "A client resting on a blue sofa while a therapist sits nearby",
           shape: "circle",
           side: "end",
-          focal: "65% 55%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/ifs": {
       hero: {
-        asset: "th-woman-windy-beach",
-        alt: "Woman standing peacefully on a windy beach with eyes closed, representing calm and connection with the Self in IFS therapy",
-        focal: "65% 50%",
+        asset: "th-ap26-conversation",
+        alt: "A therapist and client in conversation on blue sofas",
+        focal: "center",
       },
       sections: {
         "what-ifs-is": {
-          asset: "th-woman-gazing-up",
-          alt: "A young woman with curly hair looking upward with a thoughtful expression",
+          asset: "th-ap26-conversation",
+          alt: "A therapist and client in conversation on blue sofas",
           shape: "circle",
           side: "start",
-          focal: "50% 35%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/somatic-therapy": {
       hero: {
-        asset: "th-hand-water",
-        alt: "A hand reaching down to touch the surface of calm water at dusk",
+        asset: "th-ap26-black-blazer",
+        alt: "A client in a black blazer talking with a therapist in a calm office",
         focal: "center",
       },
       sections: {
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "th-woman-self-hug",
-          alt: "A woman in a yellow top smiling with her arms wrapped around her own shoulders",
+          asset: "th-ap26-black-blazer",
+          alt: "A client in a black blazer talking with a therapist in a calm office",
           shape: "circle",
           side: "end",
-          focal: "50% 35%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/ketamine-assisted-therapy": {
       hero: {
-        asset: "th-quiet-room-plant",
-        alt: "A small potted plant on a wooden table in a quiet room with soft window light",
-        focal: "40% 50%",
+        asset: "th-ap26-older-quiet",
+        alt: "A client sitting quietly with a therapist in a sunlit office",
+        focal: "center",
       },
       sections: {
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "th-person-tall-grass",
-          alt: "A person sitting calmly on a chair in a field of tall grass",
+          asset: "th-ap26-older-quiet",
+          alt: "A client sitting quietly with a therapist in a sunlit office",
           shape: "circle",
           side: "end",
-          focal: "50% 40%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/pcit": {
       hero: {
-        asset: "th-toddler-blocks-floor",
-        alt: "A toddler and a parent playing with wooden blocks on the floor while a small dog watches",
+        asset: "th-ap26-fam-child",
+        alt: "A parent and young child together on a sofa during a session",
         focal: "center",
       },
       sections: {
         "what-pcit-is": {
-          asset: "th-parent-child-piggyback",
-          alt: "A mother carrying her laughing daughter piggyback on a beach",
+          asset: "th-ap26-fam-child",
+          alt: "A parent and young child together on a sofa during a session",
           shape: "circle",
           side: "end",
-          focal: "50% 25%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/veterans-first-responders": {
       hero: {
-        asset: "th-veteran-salute",
-        alt: "A veteran in a white shirt and garrison cap saluting at an outdoor ceremony, seen from behind",
-        focal: "60% 40%",
+        asset: "th-ap26-older-man",
+        alt: "A therapist talking with a client in a Pathways Within office",
+        focal: "center",
       },
       sections: {
         "what-this-program-is": {
-          asset: "th-veteran-boots-pack",
-          alt: "Worn combat boots and a camouflage backpack on the ground beside a person standing in jeans",
+          asset: "th-ap26-older-quiet",
+          alt: "A client and therapist sitting together in a quiet office",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           focal: "center",
         },
         "who-it-helps": {
-          asset: "th-flag-city-sky",
-          alt: "An American flag on a pole against a blue sky between city buildings",
+          asset: "th-ap26-glasses",
+          alt: "A therapist meeting with a client on a blue sofa",
           shape: "rounded",
           aspect: "portrait",
           side: "end",
-          focal: "55% 45%",
+          focal: "center",
         },
       },
     },
 
     "/therapy/bariatric-surgery-support": {
       hero: {
-        asset: "th-session-therapist-talking",
-        alt: "A therapist with a notebook talking with a client in a bright office",
-        focal: "35% 40%",
+        asset: "th-ap26-green-vest",
+        alt: "A therapist talking with a client during a session",
+        focal: "center",
       },
       sections: {
         "what-bariatric-surgery-support-is": {
-          asset: "th-kitchen-flowers",
-          alt: "A woman in a yellow shirt arranging flowers at a table in a bright kitchen",
+          asset: "th-ap26-green-vest",
+          alt: "A therapist talking with a client during a session",
           shape: "circle",
           side: "end",
-          focal: "70% 55%",
+          focal: "center",
         },
       },
     },

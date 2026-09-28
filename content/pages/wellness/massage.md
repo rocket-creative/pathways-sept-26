@@ -24,7 +24,7 @@ Clinical massage therapy for pain, muscular tension, mobility, and recovery. At 
 
 Whether you are managing chronic muscular tension, recurring discomfort, physical strain, limited mobility, or recovery needs, each session begins with a focused intake to identify treatment priorities, relevant precautions, and appropriate techniques.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What massage therapy is
 
@@ -99,7 +99,7 @@ Every new client starts with a 360 intake with our Welcome Team. That conversati
 
 At Pathways Within, massage is available as a stand alone service or as part of a multidisciplinary care plan that may also include [mental health therapy](/therapy), [acupuncture](/wellness/acupuncture), [medication management](/medication-management), and [performance coaching](/coaching). Patients are not required to receive multiple services. The collaborative setting simply allows care to be considered in relation to the whole person.
 
-With your permission and when clinically appropriate, massage therapy may complement care provided by other Pathways Within or outside healthcare professionals. Read the full process at [How it works](/how-it-works), or see everything under our [wellness pillar](/wellness).
+With your permission and when clinically appropriate, massage therapy may complement care provided by other Pathways Within or outside healthcare professionals. Read the full process at [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
 
 ## Where it is offered
 
@@ -151,7 +151,7 @@ Yes. Depending on your needs, the two services may complement one another. Massa
 
 You do not need to determine which massage technique is appropriate before scheduling. Tell our Welcome Team what you are experiencing, and we will help identify the appropriate next step. All patients welcome. NYSHIP accepted for eligible services.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

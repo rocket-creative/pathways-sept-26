@@ -333,6 +333,12 @@ body:has(.page-backdrop) .page-hero::before,
   z-index: 2;
 }
 
+/* Specular sheen on the glass only. Photographs sit above it. */
+main.page--lanes > .prose > .page-section :is(.section-figure__media, .content-image, .card-grid__fill) {
+  position: relative;
+  z-index: 1;
+}
+
 /* Specular sheen. Behind the copy, above the fill. */
 main.page--lanes > .prose > .page-section::after,
 main.page--lanes > .prose > .byline::after,
@@ -673,82 +679,34 @@ main.page--lanes > .prose > .page-section.page-section--intro::after {
   }
 }
 
-/* Homepage close. The bento split leaves this card's heading alone on the
-   left and stacks the ask, the button, and the crisis line in a narrow
-   column. Here the ask sits with the heading, the button sits opposite, and
-   the phone line is one full-width bar. --brand-deep keeps white type above
-   4.5:1; the brighter brand blue does not. */
-main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  column-gap: clamp(1.5rem, 3vw, 2.5rem);
-  row-gap: 0.35rem;
-  align-items: center;
-}
-
-main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > :is(h2, .heading--h2) {
-  grid-column: 1;
-  grid-row: 1;
+/* Closing card actions match the hero pair: two equal blue buttons. */
+main.page--home.page--lanes > .prose > .page-section[data-section="take-the-next-step"] .cta.cta--pair {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 0.65rem;
+  width: 100%;
   max-width: none;
-  margin-block: 0;
 }
 
-main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > p:not(:last-child) {
-  grid-column: 1;
-  grid-row: 2;
-  max-width: 40rem;
-  margin: 0;
-}
-
-main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > .cta {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  align-self: center;
-  justify-content: flex-end;
-  max-width: none;
-  margin: 0;
-}
-
-main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > .cta .button {
-  min-height: 3.65rem;
-  padding: 1em 1.9em;
-  font-size: 1.15rem;
-}
-
-main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > p:last-child {
-  grid-column: 1 / -1;
-  grid-row: 3;
-  max-width: none;
-  /* Full width of the card, held just above the bottom edge so a rim of glass
-     stays visible under it. The fill is slightly open so that glass reads through. */
-  margin: 1rem calc(-1 * var(--bento-pad)) calc(-1 * var(--bento-pad) + 1.45rem);
-  padding: 0.85rem var(--bento-pad);
-  border-radius: 0;
-  background: rgb(0 126 252 / 0.24);
-  color: var(--brand-deep);
-  text-shadow: none;
-  text-align: center;
-  font-size: clamp(0.82rem, 1.05vw, 1rem);
-  font-weight: 600;
-  line-height: 1.35;
+main.page--home.page--lanes > .prose > .page-section[data-section="take-the-next-step"] .cta.cta--pair .button {
+  flex: 1 1 0;
+  width: 0;
+  max-width: 16rem;
+  min-width: 0;
   white-space: nowrap;
+  background: var(--brand-deep);
+  color: #fff;
 }
 
-@media (max-width: 800px) {
-  main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] {
-    grid-template-columns: minmax(0, 1fr);
+@media (max-width: 700px) {
+  main.page--home.page--lanes > .prose > .page-section[data-section="take-the-next-step"] .cta.cta--pair {
+    flex-wrap: wrap;
   }
 
-  main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > .cta {
-    grid-column: 1;
-    grid-row: 3;
-    justify-content: flex-start;
-    margin-block-start: 0.85rem;
-  }
-
-  main.page--home.page--lanes > .prose > .page-section.page-section[data-section="take-the-next-step"] > p:last-child {
-    grid-row: 4;
-    white-space: normal;
+  main.page--home.page--lanes > .prose > .page-section[data-section="take-the-next-step"] .cta.cta--pair .button {
+    flex: 1 1 12rem;
+    width: auto;
+    max-width: none;
   }
 }
 

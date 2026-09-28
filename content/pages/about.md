@@ -76,11 +76,11 @@ Every clinical page on this site names the licensed provider who wrote it and th
 
 Tell the Welcome Team what is bringing you in. They will help you find a starting point that feels manageable and right for you.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 
-[How it works](/how-it-works) · [Browse providers](/providers) · [Find an office](/locations)
+[Contact Us](/contact) · [Browse providers](/providers) · [Find an office](/locations)
 
 
 ```json

@@ -13,7 +13,7 @@ const CARE_LINKS = [
   { label: "Concerns", href: "/concerns" },
   { label: "Providers", href: "/providers" },
   { label: "Locations", href: "/locations" },
-  { label: "How It Works", href: "/how-it-works" },
+  { label: "Contact Us", href: "/contact" },
 ] as const;
 
 const PRACTICE_LINKS = [
@@ -23,7 +23,6 @@ const PRACTICE_LINKS = [
   { label: "Resources", href: "/resources" },
   { label: "Blog", href: "/blog" },
   { label: "Careers", href: "/careers" },
-  { label: "Contact", href: "/contact" },
 ] as const;
 
 const LEGAL_LINKS = [

@@ -24,7 +24,7 @@ Group therapy is a small, private circle of adults who meet with a licensed ther
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What group therapy is
 
@@ -66,7 +66,7 @@ In the first group session, the therapist introduces the format and everyone sha
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If a group fits, the team tells you what is running and when, and connects you with the group therapist. If no group matches right now, they can start you in [individual therapy](/therapy/individual-therapy) and add a group when one opens.
 
-Many people do both. Group and individual therapy offer different benefits. Your care plan can also include [medication management](/medication-management) with our psychiatric nurse practitioner or wellness services, all coordinated with your permission. Read the full process at [How it works](/how-it-works), or see all of our [therapy services](/therapy).
+Many people do both. Group and individual therapy offer different benefits. Your care plan can also include [medication management](/medication-management) with our psychiatric nurse practitioner or wellness services, all coordinated with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
 
 ## Where it is offered
 
@@ -114,7 +114,7 @@ Contact the Welcome Team. Groups change through the year based on need and clini
 
 Tell the Welcome Team what you have been dealing with and that you are interested in a group. They will set up your 360 intake and let you know what is running and when.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

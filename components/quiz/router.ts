@@ -136,9 +136,9 @@ export interface QuizResult {
 
 /**
  * The single call to action every result ends at. Required by the master
- * prompt: "Every result ends at the same CTA: Start your 360 intake."
+ * prompt: "Every result ends at the same CTA: Contact Us."
  */
-export const CTA: ResultLink = { label: "Start your 360 intake", href: "/contact" };
+export const CTA: ResultLink = { label: "Contact Us", href: "/contact" };
 
 /**
  * Q5(c) crisis panel. Source: "Q5(c) shows the crisis panel first (call or

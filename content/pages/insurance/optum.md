@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Therapist and client talking in a sunlit office at P
 
 Many people find the word Optum on the back of their insurance card and are not sure what it means for therapy. At Pathways Within, it means you can be seen. Optum is one of the plans listed on our intake form, and our clinicians work with Optum behavioral health benefits for therapy and medication management across Long Island and by telehealth. Coverage varies by provider, service, and plan, and the Welcome Team verifies your benefits after your 360 intake.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Optum may cover here
 
@@ -39,7 +39,7 @@ You reach out first and the paperwork follows. There is no step where you have t
 3. The team builds a care plan and matches you with available providers who work with Optum.
 4. The Welcome Team verifies your Optum benefits and tells you what to expect before your first appointment.
 
-The Welcome Team remains your point of contact after that. See the full picture at [How it works](/how-it-works).
+The Welcome Team remains your point of contact after that. See the full picture at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ Usually the Welcome Team has an answer before your first appointment. If your pl
 
 Send the Welcome Team a note, mention Optum, and tell them what you want to change. They will schedule your 360 intake and take verification from there.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -59,7 +59,12 @@
     },
     {
       "source": "/get-started",
-      "destination": "https://pathwayswithinwellness.com/how-it-works",
+      "destination": "https://pathwayswithinwellness.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/how-it-works",
+      "destination": "https://pathwayswithinwellness.com/contact",
       "statusCode": 301
     },
     {

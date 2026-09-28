@@ -41,8 +41,7 @@ New posts are Markdown files in pages/blog following the Article pattern in SPEC
 
 ## Take the next step
 
-[CTA] Start your 360 intake -> /contact
-
+[CTA] Contact Us -> /contact
 
 ```json
 {

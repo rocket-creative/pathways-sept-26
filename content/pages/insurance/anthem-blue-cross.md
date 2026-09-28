@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Client and Welcome Team member at the front desk of 
 
 Anthem Blue Cross is listed on the Pathways Within intake form, and our clinicians see Anthem Blue Cross clients for therapy and medication management. You can be seen in person at any of our five Long Island offices or by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake, before your first appointment, so there are no surprises at the front desk.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Anthem Blue Cross may cover here
 
@@ -39,7 +39,7 @@ We match you to care first and confirm payment second. That order matters to us.
 3. The team builds a care plan across therapy, medication management, and wellness as needed, and matches you with providers who work with Anthem Blue Cross.
 4. The Welcome Team verifies your benefits and confirms what applies before your first appointment.
 
-Your Welcome Team contact stays with you after that. Read the full process at [How it works](/how-it-works).
+Your Welcome Team contact stays with you after that. Read the full process at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ The Welcome Team coordinates the request with your provider and tells you where 
 
 Tell the Welcome Team you have Anthem Blue Cross and what you want to work on. They will schedule your 360 intake, match you with a provider, and verify your benefits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

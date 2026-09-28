@@ -44,7 +44,7 @@ export interface Photo {
 }
 
 /** How a section photograph sits relative to its copy. */
-export type SectionPhotoLayout = "split" | "band" | "feature";
+export type SectionPhotoLayout = "split" | "band" | "feature" | "collage";
 
 export interface SectionPhoto extends Photo {
   /** Circle for a person or a room (design rule); rounded for everything else. */
@@ -61,6 +61,8 @@ export interface SectionPhoto extends Photo {
    * Placement inside the section card. `split` (default) is copy + figure side
    * by side; `feature` enlarges the media column; `band` is a full-bleed
    * horizontal photograph with copy above or below (never overlaid).
+   * `collage` lays every photo in the section list into one 2×2 grid under
+   * the copy. Each entry needs `layout: "collage"`.
    */
   layout?: SectionPhotoLayout;
 }

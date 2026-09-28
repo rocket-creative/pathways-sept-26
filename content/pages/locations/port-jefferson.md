@@ -22,8 +22,7 @@ hero_image: "[NEEDS: image] Therapy office at Pathways Within Port Jefferson on 
 
 Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the North Shore of Suffolk County. It is open, on the first floor, with a ramp. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
 
-[CTA] Start your 360 intake -> /contact
-
+[CTA] Contact Us -> /contact
 
 ## Getting here
 
@@ -60,13 +59,13 @@ Coverage varies by provider, service, and plan. The Welcome Team verifies benefi
 
 ### How do I book an appointment?
 
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake and matches you with a provider at Port Jefferson. Learn more at [how it works](/how-it-works).
+Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake and matches you with a provider at Port Jefferson. Learn more at [Contact Us](/contact).
 
 ## Take the next step
 
 Tell the Welcome Team what you are looking for and that Port Jefferson is your closest office. They will set up your 360 intake and match you with a provider.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

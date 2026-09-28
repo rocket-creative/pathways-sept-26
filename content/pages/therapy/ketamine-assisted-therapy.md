@@ -24,7 +24,7 @@ Ketamine assisted psychotherapy combines a prescribed, monitored dose of ketamin
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Ask about screening -> /contact
+[CTA] Contact Us -> /contact
 
 ## What ketamine assisted psychotherapy is
 
@@ -59,7 +59,7 @@ Within a day or two you meet your therapist again for an integration session. Th
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If you ask about ketamine, the team routes you to a screening with our psychiatric nurse practitioner rather than booking a medicine session straight away.
 
-Ketamine assisted psychotherapy always sits inside a wider plan. That plan usually includes ongoing individual therapy, and it may include [medication management](/medication-management) for the medications you already take. With your permission, your therapist and prescriber talk to each other. Read the full process at [How it works](/how-it-works) or return to the [therapy hub](/therapy).
+Ketamine assisted psychotherapy always sits inside a wider plan. That plan usually includes ongoing individual therapy, and it may include [medication management](/medication-management) for the medications you already take. With your permission, your therapist and prescriber talk to each other. Read the full process at [Contact Us](/contact) or return to the [therapy hub](/therapy).
 
 ## Where it is offered
 
@@ -107,7 +107,7 @@ No. Infusion clinics often give the medicine without therapy attached. Here, the
 
 If depression or PTSD has stayed put through other treatment, ask the Welcome Team about a ketamine screening. They will set up your 360 intake and book you with our psychiatric nurse practitioner.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

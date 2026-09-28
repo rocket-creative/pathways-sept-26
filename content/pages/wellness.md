@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] A treatment room at Pathways Within with a massage t
 
 Wellness at Pathways Within is care for the body: New York State licensed massage therapists, a licensed acupuncturist, cupping, and energy work. You can book any of it on its own. You can also add it to a plan that includes therapy or medication management, because pain, stress, sleep, and mood affect one another.
 
-[CTA] Book with the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What we offer
 
@@ -75,7 +75,7 @@ No. Our providers are licensed healthcare practitioners, and every session start
 
 ## Take the next step
 
-[CTA] Book with the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

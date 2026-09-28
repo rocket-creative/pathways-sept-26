@@ -24,7 +24,7 @@ Telehealth at Pathways Within is therapy and psychiatric medication management b
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What telehealth is
 
@@ -64,7 +64,7 @@ Sessions run about 50 minutes. Join from a quiet room a few minutes early, close
 
 Every new client starts with a 360 intake with our Welcome Team, by phone or video. That conversation covers what you are experiencing across mind, body, and daily life. The team matches you with a provider who works by telehealth and, when it helps, adds [medication management](/medication-management) or other services.
 
-You are not locked into one format. Many clients start online and add office visits later, or keep therapy on video and come in person for [massage](/wellness/massage) or [acupuncture](/wellness/acupuncture). Read the full process at [How it works](/how-it-works) or return to the [therapy hub](/therapy).
+You are not locked into one format. Many clients start online and add office visits later, or keep therapy on video and come in person for [massage](/wellness/massage) or [acupuncture](/wellness/acupuncture). Read the full process at [Contact Us](/contact) or return to the [therapy hub](/therapy).
 
 ## Where it is offered
 
@@ -114,7 +114,7 @@ Yes, for many medications, when you are in New York and a video visit is availab
 
 Tell the Welcome Team which state you are in and what you are looking for. They will set up your 360 intake and match you with a provider who works by video.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

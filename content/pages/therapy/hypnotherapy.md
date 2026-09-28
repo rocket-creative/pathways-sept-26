@@ -24,7 +24,7 @@ Hypnotherapy is the intentional use of a gentle, relaxed state of focus to let y
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What hypnotherapy is
 
@@ -61,7 +61,7 @@ From there, the session may include suggestions related to your goal, imagery, o
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. If hypnotherapy fits, the team schedules you with Rachel and builds it into a whole person plan.
 
-For chronic pain, nausea, or sleep, that plan may also include [acupuncture](/wellness/acupuncture) or [massage](/wellness/massage) from our Wellness team, or [medication management](/medication-management) with our psychiatric nurse practitioner. For trauma, hypnotherapy often pairs with [somatic therapy](/therapy/somatic-therapy) or [trauma therapy](/therapy/trauma-therapy). Everything is coordinated with your permission. Read the full process at [How it works](/how-it-works).
+For chronic pain, nausea, or sleep, that plan may also include [acupuncture](/wellness/acupuncture) or [massage](/wellness/massage) from our Wellness team, or [medication management](/medication-management) with our psychiatric nurse practitioner. For trauma, hypnotherapy often pairs with [somatic therapy](/therapy/somatic-therapy) or [trauma therapy](/therapy/trauma-therapy). Everything is coordinated with your permission. Read the full process at [Contact Us](/contact).
 
 ## Where it is offered
 
@@ -103,7 +103,7 @@ No. At Pathways Within, hypnotherapy is one tool inside a treatment plan that ma
 
 Tell the Welcome Team what pattern you want to change. They will set up your 360 intake and let you know whether hypnotherapy with Rachel is a fit.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -14,6 +14,7 @@ import {
   SITE_ORIGIN,
   SITE_PHONE,
   SITE_PHONE_HREF,
+  SITE_PHONE_SMS,
   WELCOME_EMAIL,
   type FormVariant,
 } from "@/lib/site";
@@ -23,7 +24,7 @@ export const CONTENT_ROOT = path.join(process.cwd(), "content");
 
 // Client components must import these from @/lib/site: this module touches the
 // filesystem and cannot be bundled for the browser.
-export { FORM_EMBEDS, SITE_ORIGIN, SITE_PHONE, SITE_PHONE_HREF, WELCOME_EMAIL };
+export { FORM_EMBEDS, SITE_ORIGIN, SITE_PHONE, SITE_PHONE_HREF, SITE_PHONE_SMS, WELCOME_EMAIL };
 export type { FormVariant } from "@/lib/site";
 
 export type PageType =
@@ -250,7 +251,27 @@ function readCsv(relative: string): Record<string, string>[] {
  * Handles the small slice of inline Markdown the copy actually uses: links,
  * bold, italic, inline code, and [NEEDS] markers. Anything else is literal.
  */
-export function parseInline(raw: string): InlineNode[] {
+const PHONE_LINK = `**[${SITE_PHONE}](${SITE_PHONE_SMS})**`;
+
+/** Bold the practice number and open the text thread. Leaves 988 and other numbers alone. */
+function linkPhoneNumbers(raw: string): string {
+  if (!raw.includes(SITE_PHONE)) return raw;
+  let next = raw.replaceAll(`**${SITE_PHONE}**`, PHONE_LINK);
+  const alreadyLinked = new RegExp(`\\[${escapeRegExp(SITE_PHONE)}\\]\\(sms:`, "i");
+  next = next.replaceAll(SITE_PHONE, (match, offset) => {
+    const around = next.slice(Math.max(0, offset - 2), offset + match.length + 24);
+    if (alreadyLinked.test(around) || next[offset - 1] === "[") return match;
+    return PHONE_LINK;
+  });
+  return next;
+}
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+export function parseInline(raw: string, rewritePhones = true): InlineNode[] {
+  const source = rewritePhones ? linkPhoneNumbers(raw) : raw;
   const nodes: InlineNode[] = [];
   let buffer = "";
 
@@ -262,8 +283,8 @@ export function parseInline(raw: string): InlineNode[] {
   };
 
   let i = 0;
-  while (i < raw.length) {
-    const rest = raw.slice(i);
+  while (i < source.length) {
+    const rest = source.slice(i);
 
     const needs = /^\[NEEDS:?([^\]]*)\]/.exec(rest);
     if (needs) {
@@ -280,8 +301,12 @@ export function parseInline(raw: string): InlineNode[] {
       nodes.push({
         kind: "link",
         href,
-        external: /^https?:\/\//.test(href) || href.startsWith("tel:") || href.startsWith("mailto:"),
-        children: parseInline(link[1]),
+        external:
+          /^https?:\/\//.test(href) ||
+          href.startsWith("tel:") ||
+          href.startsWith("mailto:") ||
+          href.startsWith("sms:"),
+        children: parseInline(link[1], false),
       });
       i += link[0].length;
       continue;
@@ -290,7 +315,7 @@ export function parseInline(raw: string): InlineNode[] {
     const strong = /^\*\*([^*]+)\*\*/.exec(rest);
     if (strong) {
       flush();
-      nodes.push({ kind: "strong", children: parseInline(strong[1]) });
+      nodes.push({ kind: "strong", children: parseInline(strong[1], false) });
       i += strong[0].length;
       continue;
     }
@@ -298,7 +323,7 @@ export function parseInline(raw: string): InlineNode[] {
     const em = /^\*([^*]+)\*/.exec(rest);
     if (em) {
       flush();
-      nodes.push({ kind: "em", children: parseInline(em[1]) });
+      nodes.push({ kind: "em", children: parseInline(em[1], false) });
       i += em[0].length;
       continue;
     }
@@ -311,7 +336,7 @@ export function parseInline(raw: string): InlineNode[] {
       continue;
     }
 
-    buffer += raw[i];
+    buffer += source[i];
     i += 1;
   }
 

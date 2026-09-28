@@ -24,7 +24,7 @@ Grief therapy is counseling for adults and teens who have lost someone or someth
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What grief therapy is
 
@@ -68,7 +68,7 @@ Sessions run about 50 minutes. Many clients start weekly and space out as they f
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the loss itself. The team then matches you with a therapist who works with grief.
 
-Grief affects the body as well as the mind. Your care plan may include [medication management](/medication-management) with our psychiatric nurse practitioner if sleep or depression has become hard to manage, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the physical exhaustion grief brings. [Family therapy](/therapy/family-therapy) helps when a household is grieving together but in different ways. Nothing is required. Read the full process at [How it works](/how-it-works).
+Grief affects the body as well as the mind. Your care plan may include [medication management](/medication-management) with our psychiatric nurse practitioner if sleep or depression has become hard to manage, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the physical exhaustion grief brings. [Family therapy](/therapy/family-therapy) helps when a household is grieving together but in different ways. Nothing is required. Read the full process at [Contact Us](/contact).
 
 ## Where it is offered
 
@@ -116,7 +116,7 @@ Yes. Some clients start with individual sessions and add family sessions when th
 
 Tell the Welcome Team who you lost and what has been hardest since. They will set up your 360 intake and match you with a grief therapist at the office closest to you or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

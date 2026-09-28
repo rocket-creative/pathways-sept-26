@@ -11,6 +11,7 @@
  *   split   (default) copy + figure side by side
  *   feature larger media column (~60–70% on desktop)
  *   band    full-bleed horizontal photograph; copy stays above/below, never overlaid
+ *   collage 2×2 grid of distinct frames under the copy (one column when narrow)
  *
  * Extra registry entries after the primary render as additional band figures
  * inside the same card (data-has-bands).
@@ -38,14 +39,14 @@
   isolation: isolate;
 }
 
-/* The glass edge, drawn above the picture so it reads on dark corners too. */
+/* A plain edge. No inset highlight: that read as an emboss on the photograph. */
 .section-figure__media::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  border: 1px solid var(--glass-edge, rgb(255 255 255 / 0.62));
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55);
+  border: 1px solid rgb(255 255 255 / 0.35);
+  box-shadow: none;
   pointer-events: none;
 }
 
@@ -124,7 +125,38 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
 }
 
 .section-figure__media--circle::after {
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55), inset 0 0 0 6px rgb(255 255 255 / 0.28);
+  box-shadow: none;
+}
+
+/* Collage: one column of frames on a phone, two by two once there is room. */
+.page-section--figure[data-layout="collage"] {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.section-collage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.section-collage .section-figure__media {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  min-height: 0;
+  margin: 0;
+}
+
+.section-collage .section-figure__media::before {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .section-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* Band: immersive full-width landscape inside the card (mobile first). */
@@ -250,7 +282,41 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   .section-figure__media--circle:not([data-layout="band"])::before {
     display: none;
   }
+
+  .page-section.page-section--figure[data-layout="collage"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .section-collage .section-figure__media {
+    aspect-ratio: 4 / 3;
+    align-self: stretch;
+  }
+
+  .section-collage .section-figure__media::before {
+    display: none;
+  }
+
 }
+
+/* Concern links stay in the copy column, two equal pills, one line each.
+   The shared strip would otherwise switch to three or four columns and wrap. */
+.page-section--figure[data-section="what-people-come-to-us-for"] .cta--strip {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (min-width: 700px) {
+  .page-section--figure[data-section="what-people-come-to-us-for"] .cta--strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.page-section--figure[data-section="what-people-come-to-us-for"] .cta--strip .button {
+  white-space: nowrap;
+  text-wrap: nowrap;
+  height: auto;
+  min-height: 2.75rem;
+}
+
 
 /* Question sections keep their stacked answers in the copy column. */
 .page-section--figure .faq {
@@ -272,10 +338,7 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow:
-    0 0 0 1px var(--glass-edge, rgb(255 255 255 / 0.62)),
-    0 0 0 6px rgb(255 255 255 / 0.35),
-    0 18px 40px -24px rgb(29 39 51 / 0.35);
+  box-shadow: none;
 }
 
 @media (min-width: 900px) {
@@ -293,12 +356,9 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  .section-figure__media::after {
+  .section-figure__media::after,
+  .section-figure__media--circle::after {
     border-color: #e3e6ea;
     box-shadow: none;
-  }
-
-  .section-figure__media--circle::after {
-    box-shadow: inset 0 0 0 6px #e3e6ea;
   }
 }

@@ -73,6 +73,38 @@ export default function PageBody({ page }: { page: Page }) {
         const primary = figures[0];
         const resolvedPrimary = resolvePhoto(primary);
 
+        if (primary && resolvedPrimary && primary.layout === "collage") {
+          const cells = figures.flatMap((entry, index) => {
+            const resolved = resolvePhoto(entry);
+            if (!resolved) return [];
+            return [
+              <SectionFigure
+                key={`collage-${index}`}
+                photo={resolved}
+                shape="rounded"
+                aspect={entry.aspect ?? "landscape"}
+                layout="collage"
+              />,
+            ];
+          });
+
+          return (
+            <section
+              key={position}
+              className="page-section page-section--figure"
+              aria-labelledby={section.heading.id}
+              data-section={section.heading.id}
+              data-layout="collage"
+            >
+              <div className="section-figure__copy">
+                <Heading block={section.heading} ctx={ctx} />
+                {renderSectionBody(section.heading, section.blocks, ctx)}
+              </div>
+              <div className="section-collage content-image">{cells}</div>
+            </section>
+          );
+        }
+
         if (primary && resolvedPrimary) {
           const layout = primary.layout ?? "split";
           const extras = figures.slice(1).flatMap((entry, index) => {

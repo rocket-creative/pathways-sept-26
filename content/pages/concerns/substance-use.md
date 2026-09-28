@@ -24,7 +24,7 @@ Substance use becomes a problem when it starts to cost you things, such as sleep
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -55,7 +55,7 @@ Our [veterans and first responders program](/therapy/veterans-first-responders) 
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are using, how much, what else is going on, and what you want to change. The team asks about safety and medical history to confirm outpatient care is the right level.
 
-If it is, the team matches you with a therapist who has openings and, where it helps, schedules you with our prescriber. Your first therapy session sets a goal you actually agree with. Your therapist does not require abstinence to start. Sessions are usually weekly, and more often in the first month if you are stopping. Slips are treated as information, not failure. Read the full process at [how it works](/how-it-works).
+If it is, the team matches you with a therapist who has openings and, where it helps, schedules you with our prescriber. Your first therapy session sets a goal you actually agree with. Your therapist does not require abstinence to start. Sessions are usually weekly, and more often in the first month if you are stopping. Slips are treated as information, not failure. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -99,7 +99,7 @@ Most plans with mental health benefits cover outpatient therapy for substance us
 
 You have already noticed the problem, which is the hardest part. Tell the Welcome Team what you have been using and what you want to change. They will set up your 360 intake and match you with a therapist in Nassau County, Suffolk County, or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

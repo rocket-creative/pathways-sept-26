@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Welcome Team member speaking with a client at a Long
 
 Pathways Within may participate with Magnacare. Coverage varies by provider, service, and plan. Send the contact form and the Welcome Team confirms your benefits. We do not decide coverage from the plan name alone.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Magnacare may cover here
 
@@ -35,7 +35,7 @@ The Welcome Team confirms what your Magnacare plan covers after you send the con
 3. The team builds a care plan and matches you with available providers.
 4. The Welcome Team checks your Magnacare benefits and explains what applies to you before you are scheduled.
 
-Your Welcome Team contact stays with you after that. The full process is described at [How it works](/how-it-works).
+Your Welcome Team contact stays with you after that. The full process is described at [Contact Us](/contact).
 
 ## If a visit is not covered
 
@@ -61,7 +61,7 @@ That depends on your plan, the provider, and the service. Send the contact form 
 
 Tell the Welcome Team you have Magnacare and what you want to work on. They will schedule your 360 intake and confirm your benefits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

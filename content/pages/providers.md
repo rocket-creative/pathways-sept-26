@@ -20,21 +20,17 @@ hero_image: "[NEEDS: image] Members of the Pathways Within clinical and wellness
 
 # Our Therapists and Providers
 
-This directory lists the licensed clinicians at Pathways Within - Wisdom and Wellness Collaborative. Each profile shows specialties, who they work with, and where they see clients. Coaching and prescribing are in the specialists section below. They are not listed as clinicians.
+This directory lists the therapists, wellness providers, and specialized care practitioners at Pathways Within - Wisdom and Wellness Collaborative. Filter by Therapy, Wellness, or Specialized Care. Each profile shows who they work with and where they see clients.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## How to use the filters
 
-Search by keyword, then open a filter. Cities, types of care, and areas of focus are on the first row. Service, age, and format are under additional filters.
+Search by name, concern, or office. Therapy, Wellness, and Specialized Care are the three types of care.
 
-Rachel Lessard is the founder. Her page is separate from this clinician directory.
+Rachel Lessard is the founder. Her page is separate from this directory.
 
 [PROVIDER DIRECTORY]
-
-## Pathways Within - Wisdom and Wellness Collaborative Specialists
-
-[PROVIDER CARDS: tia-baumohl, tiffany-roberts]
 
 ## Leadership
 
@@ -58,7 +54,7 @@ Two therapy dogs are part of the team. Domino brings a calm presence and gentle 
 
 Tell the Welcome Team what you are working on. They will set up your 360 intake and match you with a provider from this directory who fits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

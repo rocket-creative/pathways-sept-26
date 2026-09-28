@@ -24,7 +24,7 @@ Individual therapy is one on one counseling with a licensed therapist for adults
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What individual therapy is
 
@@ -62,7 +62,7 @@ Sessions run about 50 minutes. Some people prefer a lot of structure or a specif
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. From there, the team matches you with an available therapist and builds a whole person care plan.
 
-When it helps, that plan can include [medication management](/medication-management) with our psychiatric nurse practitioner, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the tension stress leaves in the body. Nothing is required. Everything is coordinated, with your permission. Read the full process at [How it works](/how-it-works), or see all of our [therapy services](/therapy).
+When it helps, that plan can include [medication management](/medication-management) with our psychiatric nurse practitioner, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the tension stress leaves in the body. Nothing is required. Everything is coordinated, with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
 
 ## Where it is offered
 
@@ -106,7 +106,7 @@ Tell us. A good fit matters more than almost anything else in therapy. The Welco
 
 Tell the Welcome Team what has been on your mind. They will set up your 360 intake and match you with a licensed therapist at the office closest to you or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

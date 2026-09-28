@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Licensed massage therapist preparing a treatment roo
 
 Pathways Within may participate with NYSHIP. Coverage varies by provider, service, and plan. Send the contact form and the Welcome Team confirms your benefits. We do not decide coverage from the plan name alone.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What NYSHIP may cover here
 
@@ -35,7 +35,7 @@ Clients ask about [medical massage](/wellness/massage), [individual therapy](/th
 3. The team builds a care plan and matches you with available providers.
 4. The Welcome Team verifies your NYSHIP benefits and explains what applies to you before you are scheduled.
 
-Your Welcome Team contact stays with you after that. The full process is described at [How it works](/how-it-works).
+Your Welcome Team contact stays with you after that. The full process is described at [Contact Us](/contact).
 
 ## If a visit is not covered
 
@@ -61,7 +61,7 @@ Yes. Send the contact form. The Welcome Team confirms what your plan covers and 
 
 Tell the Welcome Team you have NYSHIP and what you want to work on. They will schedule your 360 intake and confirm your benefits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

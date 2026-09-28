@@ -24,7 +24,7 @@ Child therapy at Pathways Within is counseling for children, most often ages 3 t
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What child therapy is
 
@@ -64,7 +64,7 @@ Then the therapist meets your child on their terms. There is no pressure to talk
 
 Every family starts with a 360 intake with our Welcome Team. That conversation covers what your child is experiencing at home, at school, and with friends, and what the rest of the family is carrying too. The team then matches you with an available child therapist and builds a whole person care plan.
 
-When it helps, that plan can include parent sessions, [family therapy](/therapy/family-therapy), or a referral to [medication management](/medication-management) with our psychiatric nurse practitioner for children 10 and older. Nothing is required. Everything is coordinated, with your permission. Read the full process at [How it works](/how-it-works), or see all of our [therapy services](/therapy).
+When it helps, that plan can include parent sessions, [family therapy](/therapy/family-therapy), or a referral to [medication management](/medication-management) with our psychiatric nurse practitioner for children 10 and older. Nothing is required. Everything is coordinated, with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
 
 ### Privacy and parent engagement
 
@@ -114,7 +114,7 @@ It depends on the child and what brought you in. Some children need a few months
 
 Tell the Welcome Team what you have been seeing in your child. They will set up your 360 intake and match you with a child therapist at the office closest to you.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

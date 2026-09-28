@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Therapy office with two chairs and a window at Pathw
 
 If Northwell Direct is the name on your card, Pathways Within can see you. It is one of the plans listed on our intake form, and our licensed therapists and psychiatric nurse practitioner work with Northwell Direct clients in person across Nassau and Suffolk County and by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake and tells you what applies before your first session.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Northwell Direct may cover here
 
@@ -39,7 +39,7 @@ The first conversation is about what you need, not about your card. Verification
 3. The team builds a care plan across therapy, medication management, and wellness as needed, and matches you with providers who work with Northwell Direct.
 4. The Welcome Team verifies your benefits and confirms what applies before your first appointment.
 
-Your Welcome Team contact stays with you from there. Read the full process at [How it works](/how-it-works).
+Your Welcome Team contact stays with you from there. Read the full process at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ If your plan requires it, the Welcome Team coordinates the request with your pro
 
 Tell the Welcome Team you have Northwell Direct and what you want to change. They will schedule your 360 intake, match you with a provider, and verify your benefits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -24,7 +24,7 @@ Reiki is a gentle, hands on practice from Japan that clients use for deep relaxa
 
 Energy work is not a substitute for medical or mental health treatment.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Reiki is
 
@@ -70,9 +70,7 @@ The best way to learn whether Reiki is for you is to try it once. Most people kn
 
 ## How care works here
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If Reiki fits, the team schedules you with Tia. Some clients come for Reiki alone. Others add it to [individual therapy](/therapy/individual-therapy) or coaching.
-
-Tia belongs to both our therapy and wellness pillars, so nothing about your care has to stay in one lane. With your permission, she can let your therapist know what came up on the table, and your therapist can suggest Reiki when your body needs a rest from talking. See all three modalities on our [energy work page](/wellness/energy-work), read the full process at [How it works](/how-it-works), or browse the [wellness pillar](/wellness).
+If Reiki fits, the Welcome Team schedules you with Tia. Some clients come for Reiki alone. See all three modalities on our [energy work page](/wellness/energy-work), or [contact us](/contact).
 
 ## Where it is offered
 
@@ -116,7 +114,7 @@ Wear comfortable clothing and eat something light beforehand. Arrive a few minut
 
 Tell the Welcome Team you would like to try Reiki. They will set up your 360 intake and schedule your first session with Tia at the office closest to you.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

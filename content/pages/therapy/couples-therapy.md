@@ -24,7 +24,7 @@ Couples therapy is counseling for two partners who want to repair communication 
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What couples therapy is
 
@@ -68,7 +68,7 @@ If something makes you uncomfortable as sessions go on, say so. A good therapist
 
 Every new client starts with a 360 intake with our Welcome Team. For couples, that conversation covers what is happening between you and what each of you is carrying on your own. The team then matches you with an available couples therapist and builds a whole person care plan.
 
-When it helps, one or both partners may add [individual therapy](/therapy/individual-therapy), [medication management](/medication-management) with our psychiatric nurse practitioner, or [massage](/wellness/massage) for the physical stress conflict leaves behind. Nothing is required, and everything is coordinated with your permission. Read the full process at [How it works](/how-it-works), or see all of our [therapy services](/therapy).
+When it helps, one or both partners may add [individual therapy](/therapy/individual-therapy), [medication management](/medication-management) with our psychiatric nurse practitioner, or [massage](/wellness/massage) for the physical stress conflict leaves behind. Nothing is required, and everything is coordinated with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
 
 ## Where it is offered
 
@@ -110,7 +110,7 @@ Yes. Many couples find video sessions easier to fit around work and childcare. Y
 
 Tell the Welcome Team what has been happening between you. They will set up your 360 intake and match you with a couples therapist at the office closest to you or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

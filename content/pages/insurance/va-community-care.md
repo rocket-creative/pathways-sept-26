@@ -26,7 +26,7 @@ Veterans on Long Island can see a Pathways Within therapist through the VA Commu
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What VA Community Care may cover here
 
@@ -43,7 +43,7 @@ If you do not have a referral yet, you can still reach out. The Welcome Team wil
 3. The team builds a care plan and matches you with available providers who work with VA Community Care.
 4. The Welcome Team confirms your VA referral or authorization and tells you what it covers before your first appointment.
 
-Your Welcome Team contact stays with you from there, including when an authorization needs to be renewed. The full process is described at [How it works](/how-it-works).
+Your Welcome Team contact stays with you from there, including when an authorization needs to be renewed. The full process is described at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -75,7 +75,7 @@ Tell the Welcome Team as soon as you know. They help you and your VA contact wor
 
 Tell the Welcome Team you are a veteran and whether you have a VA referral yet. They will schedule your 360 intake, match you with a provider, and confirm your authorization.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

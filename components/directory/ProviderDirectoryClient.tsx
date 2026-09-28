@@ -30,7 +30,8 @@ const FACETS: { key: FacetKey; label: string; needs?: string }[] = [...PRIMARY, 
 const PILLAR_LABEL: Record<string, string> = {
   wisdom: "Therapy",
   wellness: "Wellness",
-  medication: "Medication",
+  specialized: "Specialized Care",
+  medication: "Specialized Care",
 };
 
 /**

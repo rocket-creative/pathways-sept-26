@@ -24,7 +24,7 @@ Therapy for relationship issues at Pathways Within is for couples, families, and
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -53,7 +53,7 @@ Every relationship has rough stretches. Therapy helps when the rough stretch has
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what is happening and what you want to change. If you are coming as a couple or family, the team asks who will attend and matches you with a therapist trained in that work.
 
-In the first session, your therapist hears from everyone and learns the history of the relationship. Some therapists then meet with each person once on their own. By the third or fourth session you have a clear picture of the pattern and a plan for working on it. Read the full process at [How it works](/how-it-works).
+In the first session, your therapist hears from everyone and learns the history of the relationship. Some therapists then meet with each person once on their own. By the third or fourth session you have a clear picture of the pattern and a plan for working on it. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -101,7 +101,7 @@ Some plans do and some do not. Coverage varies by provider, service, and plan. T
 
 Tell the Welcome Team what the relationship has been like lately and who wants to come. They will set up your 360 intake and match you with the right therapist, in person or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

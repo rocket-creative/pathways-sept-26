@@ -24,7 +24,7 @@ Parent Child Interaction Therapy (PCIT) is an evidence based treatment for young
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What PCIT is
 
@@ -68,7 +68,7 @@ A child who feels heard and connected to a caregiver is more likely to reach for
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what is happening with your child, your family, and your own stress, not just the behavior that made you call. The team then matches you with a therapist trained in PCIT.
 
-PCIT often sits inside a larger family plan. Your therapist may recommend [child therapy](/therapy/child-therapy) for the child alone, [family therapy](/therapy/family-therapy) for siblings and co parents, or [individual therapy](/therapy/individual-therapy) or [trauma therapy](/therapy/trauma-therapy) for a parent carrying their own history. Our Wellness team is available for the parent who needs to lower their own stress. Everything is coordinated with your permission. Read the full process at [How it works](/how-it-works).
+PCIT often sits inside a larger family plan. Your therapist may recommend [child therapy](/therapy/child-therapy) for the child alone, [family therapy](/therapy/family-therapy) for siblings and co parents, or [individual therapy](/therapy/individual-therapy) or [trauma therapy](/therapy/trauma-therapy) for a parent carrying their own history. Our Wellness team is available for the parent who needs to lower their own stress. Everything is coordinated with your permission. Read the full process at [Contact Us](/contact).
 
 ## Where it is offered
 
@@ -112,7 +112,7 @@ Any caregiver who spends significant time with the child can take part, and cons
 
 Tell the Welcome Team what is happening at home. They will set up your 360 intake and let you know whether PCIT is a fit for your child and family.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

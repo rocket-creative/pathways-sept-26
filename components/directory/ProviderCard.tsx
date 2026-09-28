@@ -36,7 +36,7 @@ export default function ProviderCard({
         {provider.titleLine ? <p className="provider-card__title">{provider.titleLine}</p> : null}
         {places.length ? <p className="provider-card__place">{places.join(" · ")}</p> : null}
         <p className="provider-card__phone">
-          <a href="tel:+16313713825">(631) 371-3825</a>
+          <strong><a href="sms:+16313713825">(631) 371-3825</a></strong>
         </p>
         <div className="cta cta--quiet provider-card__actions">
           {provider.url ? (
@@ -45,7 +45,7 @@ export default function ProviderCard({
             </Link>
           ) : null}
           <Link href="/contact" className="button button--quiet provider-card__book">
-            Start your 360 intake
+            Contact Us
           </Link>
         </div>
       </li>

@@ -18,9 +18,8 @@ const rows = parse(fs.readFileSync(SHEET, "utf8"), {
 
 const isAdmin = (row) => /admin|front desk/i.test(row.role ?? "");
 const isFounder = (row) => /^founder$/i.test((row.role ?? "").trim());
-const isSpecialist = (row) => row.slug === "tia-baumohl" || row.slug === "tiffany-roberts";
 const isActive = (row) => row.active === "true";
-const inDirectory = (row) => isActive(row) && !isAdmin(row) && !isFounder(row) && !isSpecialist(row);
+const inDirectory = (row) => isActive(row) && !isAdmin(row) && !isFounder(row);
 const split = (value) =>
   (value ?? "")
     .split(";")
@@ -60,24 +59,20 @@ test.describe("provider directory", () => {
     expect(missing, "slugs with no link in the initial HTML").toEqual([]);
   });
 
-  test("(b) Tia and Tiffany sit in Specialists, not the clinician directory", async ({ page }) => {
-    for (const pillar of ["wellness", "wisdom", "medication"]) {
-      await page.goto(`/providers?pillar=${pillar}`);
-      await page.waitForSelector(DIRECTORY_READY);
-      const slugs = await visibleSlugs(page);
-      expect(slugs, `?pillar=${pillar} keeps Tia out of clinicians`).not.toContain("tia-baumohl");
-      expect(slugs, `?pillar=${pillar} keeps Tiffany out of clinicians`).not.toContain("tiffany-roberts");
-    }
+  test("(b) Tia and Tiffany are in the directory under Specialized Care", async ({ page }) => {
+    await page.goto("/providers?pillar=specialized");
+    await page.waitForSelector(DIRECTORY_READY);
+    const specialized = await visibleSlugs(page);
+    expect(specialized).toContain("tia-baumohl");
+    expect(specialized).toContain("tiffany-roberts");
 
     await page.goto("/providers");
     await page.waitForSelector(DIRECTORY_READY);
     const all = await visibleSlugs(page);
-    expect(all).not.toContain("tia-baumohl");
-    expect(all).not.toContain("tiffany-roberts");
+    expect(all).toContain("tia-baumohl");
+    expect(all).toContain("tiffany-roberts");
     expect(new Set(all).size, "no duplicated cards in the all view").toBe(all.length);
-    await expect(page.getByRole("heading", { name: /Collaborative Specialists/ })).toBeVisible();
-    await expect(page.locator("a[href='/providers/tia-baumohl']").first()).toBeVisible();
-    await expect(page.locator("a[href='/providers/tiffany-roberts']").first()).toBeVisible();
+    await expect(page.getByRole("heading", { name: /Collaborative Specialists/ })).toHaveCount(0);
   });
 
   test("(c) ?specialty=LGBTQ returns at least the rows tagged LGBTQ+ and LGBTQIA+", async ({ page }) => {

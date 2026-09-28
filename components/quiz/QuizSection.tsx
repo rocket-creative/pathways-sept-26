@@ -17,7 +17,7 @@
  * Mount it with no props:  <QuizSection />
  */
 
-import { SITE_PHONE, SITE_PHONE_HREF, getUrlSet } from "@/lib/content";
+import { SITE_PHONE, SITE_PHONE_SMS, getUrlSet } from "@/lib/content";
 import Quiz from "./Quiz";
 import { auditBannedTerms, auditResultUrls } from "./router";
 
@@ -39,5 +39,5 @@ export default function QuizSection({ anchorId = "quiz" }: QuizSectionProps) {
     throw new Error(`Quiz copy names cut or banned services: ${bannedTerms.join(", ")}`);
   }
 
-  return <Quiz phone={SITE_PHONE} phoneHref={SITE_PHONE_HREF} anchorId={anchorId} />;
+  return <Quiz phone={SITE_PHONE} phoneHref={SITE_PHONE_SMS} anchorId={anchorId} />;
 }

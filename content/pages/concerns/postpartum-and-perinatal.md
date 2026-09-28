@@ -24,7 +24,7 @@ Postpartum and perinatal support at Pathways Within is for people who are pregna
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -55,7 +55,7 @@ Our prescriber offers [medication management](/medication-management). Your pres
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. Tell them your due date or your baby's age, and they will plan around it. The team matches you with a therapist and, if you want, our prescriber.
 
-Your first session covers your pregnancy or birth story, sleep, support at home, and how you have been feeling. Your therapist checks on safety for you and the baby. Telehealth sessions from home are common in this stage, and a baby on your lap is fine. Read the full process at [How it works](/how-it-works).
+Your first session covers your pregnancy or birth story, sleep, support at home, and how you have been feeling. Your therapist checks on safety for you and the baby. Telehealth sessions from home are common in this stage, and a baby on your lap is fine. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -107,7 +107,7 @@ Most plans that cover therapy cover it. Coverage varies by provider, service, an
 
 You do not have to wait until it is bad. Tell the Welcome Team where you are in pregnancy or how old your baby is and how you have been feeling. They will set up your 360 intake and match you with the right support, in person or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

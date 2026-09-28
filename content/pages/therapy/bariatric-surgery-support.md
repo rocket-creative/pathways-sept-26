@@ -24,7 +24,7 @@ Bariatric surgery support at Pathways Within is a pre surgery psychological eval
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Schedule an evaluation -> /contact
+[CTA] Contact Us -> /contact
 
 ## What bariatric surgery support is
 
@@ -56,7 +56,7 @@ For counseling after surgery, the first session focuses on how recovery is going
 
 Every new client starts with a 360 intake with our Welcome Team. Tell them your surgeon's name and any deadline for the evaluation so the team can schedule you promptly. The team matches you with Rachel for the evaluation and, if you want ongoing support, with a therapist for [individual therapy](/therapy/individual-therapy) afterward.
 
-Because Pathways Within offers care across therapy, medication management, and wellness, your plan can grow as you need it. Some clients add [medication management](/medication-management) for mood or anxiety around surgery. Others add [massage](/wellness/massage) during recovery. Read more at [How it works](/how-it-works) or return to the [therapy hub](/therapy).
+Because Pathways Within offers care across therapy, medication management, and wellness, your plan can grow as you need it. Some clients add [medication management](/medication-management) for mood or anxiety around surgery. Others add [massage](/wellness/massage) during recovery. Read more at [Contact Us](/contact) or return to the [therapy hub](/therapy).
 
 ## Where it is offered
 
@@ -98,7 +98,7 @@ Yes. Regain and the return of old eating patterns are common, and they carry a l
 
 Tell the Welcome Team where you are in the process, whether that is a surgeon's deadline or a recovery that feels harder than expected. They will schedule your 360 intake and get you on Rachel's calendar.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

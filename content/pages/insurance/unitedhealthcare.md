@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Waiting area at a Pathways Within office on Long Isl
 
 UnitedHealthcare is one of the most common plans we see at Pathways Within, and it is listed on our intake form. Our licensed therapists and our psychiatric nurse practitioner work with UnitedHealthcare clients in person at our Nassau and Suffolk County offices and by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake so you know where you stand before your first session.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What UnitedHealthcare may cover here
 
@@ -39,7 +39,7 @@ We do not put insurance in front of care. You talk to the Welcome Team first, an
 3. The team builds a care plan across therapy, medication management, and wellness as needed, and matches you with providers who work with UnitedHealthcare.
 4. The Welcome Team verifies your benefits and confirms what applies before your first appointment.
 
-The same Welcome Team member stays your contact afterward. Read the whole process at [How it works](/how-it-works).
+The same Welcome Team member stays your contact afterward. Read the whole process at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ Some plans do. If yours does, the Welcome Team handles the request with the prov
 
 Tell the Welcome Team you have UnitedHealthcare and what has been on your mind. They will schedule your 360 intake, match you with a provider, and verify your coverage.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

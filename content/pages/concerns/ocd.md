@@ -24,7 +24,7 @@ OCD treatment at Pathways Within is for adults and teens whose unwanted thoughts
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -53,7 +53,7 @@ Our prescriber offers [medication management](/medication-management) for adoles
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. You do not have to describe every thought or ritual in that first conversation. The team matches you with a therapist who works with OCD.
 
-Your first session covers history, what the obsessions and compulsions look like day to day, and how much of your life they are taking. Your therapist explains how the cycle works and how treatment interrupts it. Over the next few weeks you build a list of triggers ranked from easiest to hardest and start at the bottom. Read the full process at [How it works](/how-it-works).
+Your first session covers history, what the obsessions and compulsions look like day to day, and how much of your life they are taking. Your therapist explains how the cycle works and how treatment interrupts it. Over the next few weeks you build a list of triggers ranked from easiest to hardest and start at the bottom. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -105,7 +105,7 @@ Most plans that cover therapy cover it. Coverage varies by provider, service, an
 
 Tell the Welcome Team how much of your day the rituals are taking. They will set up your 360 intake and match you with a therapist who treats OCD, in person or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -46,7 +46,7 @@ export function toProviderCardData(provider: Provider): ProviderCardData {
     headshotUrl: provider.headshot_url,
     initials: initialsFor(provider.first_name, provider.last_name),
     url: provider.isAdmin ? null : `/providers/${provider.slug}`,
-    pillars: provider.pillars,
+    pillars: carePillars(provider),
     specialties: provider.specialties,
     modalities: provider.modalities,
     ageGroups: provider.age_groups,
@@ -61,6 +61,16 @@ export function toProviderCardData(provider: Provider): ProviderCardData {
  * would say it twice, so an exact repeat (case and whitespace aside) is
  * dropped. Anything else is left exactly as written.
  */
+/**
+ * Therapy, Wellness, and Specialized Care. Medication is Specialized Care.
+ * Tia and Tiffany keep their other pillars and also appear under Specialized Care.
+ */
+function carePillars(provider: Provider): string[] {
+  const pillars = provider.pillars.filter((pillar) => pillar.toLowerCase() !== "medication");
+  if (provider.isSpecialist && !pillars.includes("specialized")) pillars.push("specialized");
+  return pillars;
+}
+
 function firstBullet(provider: Provider): string {
   const bullet = provider.bullets[0] ?? "";
   const same = bullet.trim().toLowerCase() === provider.title_line.trim().toLowerCase();

@@ -24,7 +24,7 @@ Energy work is a gentle, hands on practice that clients use for deep relaxation,
 
 Energy work is not a substitute for medical or mental health treatment.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What energy work is
 
@@ -55,7 +55,7 @@ People come to energy work for many reasons. Common ones include:
 - Ongoing stress and the feeling of never fully powering down ([stress and burnout](/concerns/stress-and-burnout))
 - A busy or anxious mind that makes rest hard ([anxiety](/concerns/anxiety))
 - Big changes such as a move, a loss, a new baby, or a career shift ([life transitions](/concerns/life-transitions))
-- Wanting a quiet, body based complement to talk therapy or [coaching](/coaching)
+- Wanting a quiet, body based complement to talk therapy
 - Curiosity about a spiritual or reflective practice that is not tied to any religion
 
 Energy work is not a treatment for any medical or mental health condition. If you are in therapy, taking medication, or under a doctor's care, continue that care. Energy work sits alongside it.
@@ -72,7 +72,7 @@ People often report feeling heat or tingling where Tia is working, seeing colors
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If energy work fits, the team schedules you with Tia and, when it helps, adds support from other parts of the practice.
 
-Tia belongs to both our therapy and wellness pillars, so energy work pairs naturally with [coaching](/coaching), [individual therapy](/therapy/individual-therapy), or [somatic therapy](/therapy/somatic-therapy). Some clients book energy work on its own. Others use it to settle their bodies between therapy sessions. Nothing is required, and everything is coordinated with your permission. Read the full process at [How it works](/how-it-works), or see everything under our [wellness pillar](/wellness).
+Some clients book energy work on its own. Others use it between other appointments. [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
 
 ## Where it is offered
 
@@ -118,7 +118,7 @@ It varies. Some clients book a few sessions close together during a hard stretch
 
 Tell the Welcome Team you are interested in energy work. They will set up your 360 intake and schedule your first session with Tia at the office closest to you.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

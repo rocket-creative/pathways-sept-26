@@ -10,8 +10,8 @@ import type { FillPhoto } from "./GridFill";
 const PROVIDER_FILLS: { asset: string; focal: Focal }[] = [
   { asset: "pr-ap-gc-therapy-joy", focal: "45% 50%" },
   { asset: "ha-ap-therapy-massapequa", focal: "center" },
-  { asset: "th-session-two-chairs", focal: "center" },
-  { asset: "th-quiet-room-plant", focal: "40% 55%" },
+  { asset: "th-ap26-green-quiet", focal: "center" },
+  { asset: "th-ap26-couple", focal: "center" },
 ];
 
 /** Real office interiors, for a grid of offices. */

@@ -24,7 +24,13 @@ Medication management at Pathways Within is psychiatric evaluation, prescribing,
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Schedule a medication consultation -> /contact
+[CTA] Contact Us -> /contact
+
+## Tiffany Roberts
+
+**PMHNP, MSN, BSN, RN-BC.** Tiffany Roberts is the psychiatric nurse practitioner at Pathways Within. She has spent more than 20 years caring for people in hospitals, outpatient care, and correctional and shelter settings. She sees adolescents ages 10 and up and adults, in person at our Nassau offices and by telehealth in New York. Medication, when it is part of care, sits inside a larger plan.
+
+[PROVIDER CARDS: tiffany-roberts]
 
 ## What medication management is
 
@@ -63,7 +69,7 @@ Follow up appointments let your prescriber monitor how you are feeling, make tho
 
 At Pathways Within, we believe healing is relational, whole person, and deeply personal. Medication management often works best when it is part of a larger support system. For many clients, medication and therapy work together. Medication may help reduce the intensity of symptoms, while [therapy](/therapy) offers space to process, heal, build insight, and develop meaningful coping tools.
 
-Every new client starts with a 360 intake with our Welcome Team. It is the same process for everyone. It does not diagnose. It records what you want and gives providers a baseline. If you want a prescriber, the team books one, and a therapist for [individual therapy](/therapy/individual-therapy) when you want that too. With your permission, your prescriber and therapist share notes so your care stays connected. Wellness services such as [acupuncture](/wellness/acupuncture) or [massage](/wellness/massage) can be added for sleep and tension. Read more at [How it works](/how-it-works).
+Every new client starts with a 360 intake with our Welcome Team. It is the same process for everyone. It does not diagnose. It records what you want and gives providers a baseline. If you want a prescriber, the team books one, and a therapist for [individual therapy](/therapy/individual-therapy) when you want that too. With your permission, your prescriber and therapist share notes so your care stays connected. Wellness services such as [acupuncture](/wellness/acupuncture) or [massage](/wellness/massage) can be added for sleep and tension. Read more at [Contact Us](/contact).
 
 Whether medication becomes a short term support during a difficult season or part of a longer term wellness plan, our team is here to walk alongside you with care, professionalism, and an understanding of the whole person.
 
@@ -111,7 +117,7 @@ Yes. Medication management includes adolescents ages 10 and up. A parent or guar
 
 Tell the Welcome Team what you have been feeling and what you hope changes. They will set up your 360 intake and schedule your first appointment, in person or by telehealth.
 
-[CTA] Schedule your medication consultation -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

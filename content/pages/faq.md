@@ -11,7 +11,7 @@ reviewer: "Rachel Lessard, LCSW-R"
 last_reviewed: 2026-09-25
 index: true
 nav: secondary
-related_services: [/how-it-works, /insurance-and-fees]
+related_services: [/contact, /insurance-and-fees]
 related_concerns: []
 locations: []
 providers: []
@@ -26,7 +26,7 @@ Pathways Within - Wisdom and Wellness Collaborative. Everything below is visible
 
 ### How do I start?
 
-Contact the Welcome Team by [form](/contact), call, or text. They schedule a 360 intake, a conversation about what you are experiencing across your mind, body, and daily life. From that, they build a care plan and match you with a provider. [How it works](/how-it-works).
+Contact the Welcome Team by [form](/contact), call, or text. They schedule a 360 intake, a conversation about what you are experiencing across your mind, body, and daily life. From that, they build a care plan and match you with a provider. [Contact Us](/contact).
 
 ### Do I need to know what kind of support I need?
 
@@ -130,7 +130,7 @@ No, though many people combine the two. When you have a therapist here, the pres
 
 ## Take the next step
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

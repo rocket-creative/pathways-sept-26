@@ -24,7 +24,7 @@ Living with pain or illness that does not go away changes everything: sleep, wor
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -55,7 +55,7 @@ Your medical team keeps treating the condition. We treat the toll it takes and, 
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about your condition, your pain, your mood, your sleep, and what you want to change. Bring your doctors' names and current medications.
 
-The team builds a plan across therapy, body care, and medication management as needed, and matches you with providers who have openings. Your first therapy session covers the history of the condition and what a good month would look like. If acupuncture or massage is part of the plan, those visits can start in the same weeks. The Welcome Team stays your single point of contact. Read the full process at [how it works](/how-it-works).
+The team builds a plan across therapy, body care, and medication management as needed, and matches you with providers who have openings. Your first therapy session covers the history of the condition and what a good month would look like. If acupuncture or massage is part of the plan, those visits can start in the same weeks. The Welcome Team stays your single point of contact. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -99,7 +99,7 @@ Therapy and hypnotherapy are billed as psychotherapy, which most plans with ment
 
 You have been managing this on your own long enough. Tell the Welcome Team about your condition and what you want to change. They will set up your 360 intake and build a plan with a therapist and body care providers in Nassau County, Suffolk County, or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

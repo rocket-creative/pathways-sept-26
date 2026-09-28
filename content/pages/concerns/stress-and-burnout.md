@@ -24,7 +24,7 @@ Stress is what happens when the demands on you outrun what you have to give. Bur
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -57,7 +57,7 @@ Your first contact is with the Welcome Team, by form, call, or text. A team memb
 
 From there, the team builds a care plan and matches you with a therapist who has openings. Your first therapy session is mostly listening. Your therapist asks what a good week would look like and what gets in the way. By the second or third session, you have one or two concrete things to try between visits.
 
-Most people start weekly. Some add a massage or acupuncture visit in the same month. The Welcome Team stays your point of contact, so you never have to repeat your story to book something new. Read the full process at [how it works](/how-it-works).
+Most people start weekly. Some add a massage or acupuncture visit in the same month. The Welcome Team stays your point of contact, so you never have to repeat your story to book something new. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -101,7 +101,7 @@ Therapy for stress is billed as psychotherapy, which most plans that cover menta
 
 You have been running on empty for a while. Tell the Welcome Team what a normal week looks like and they will set up your 360 intake and match you with a therapist in Nassau County, Suffolk County, or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

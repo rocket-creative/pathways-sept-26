@@ -339,37 +339,37 @@ export const PRACTICE: ImageGroup = {
     "/contact": {
       // No hero: the form is above the fold. Front-desk figures lower down.
       sections: {
-        "if-you-are-not-sure-what-to-say": {
-          asset: "pr-ap-desk-logo",
-          alt: "Reception desk at a Pathways Within office, with the lit labyrinth logo behind the Welcome Team",
+        "call-or-text": {
+          asset: "ha-ap26-desk-talk",
+          alt: "Staff and a visitor talking across the Pathways Within front desk",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
-          focal: "38% 32%",
+          focal: "center",
         },
         "our-offices": {
-          asset: "pr-ap-desk-greeting",
-          alt: "A staff member greets a seated client in a waiting area at a Pathways Within office",
+          asset: "ha-ap26-desk-smile",
+          alt: "A Pathways Within staff member smiling with a visitor at the front desk",
           shape: "circle",
           side: "start",
-          focal: "42% 28%",
+          focal: "center",
         },
       },
     },
     "/how-it-works": {
       hero: {
-        asset: "pr-ap-desk-saul",
-        alt: "A practitioner speaks with a seated client in a Pathways Within office waiting area near the treatment rooms",
-        focal: "40% 30%",
+        asset: "ha-ap26-desk-handshake",
+        alt: "A visitor shaking hands with a staff member at the Pathways Within front desk",
+        focal: "center",
       },
       sections: {
         "step-2-the-welcome-team-calls-you-back": {
-          asset: "pr-ap-desk-waiting",
-          alt: "Reception desk at a Pathways Within office where the Welcome Team greets arrivals",
+          asset: "ha-ap26-desk-talk",
+          alt: "Staff and a visitor talking across the Pathways Within front desk",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
-          focal: "50% 40%",
+          focal: "center",
         },
         "step-3-your-360-intake": {
           asset: "pr-ap-suffolk-yellow-pillows",

@@ -51,10 +51,10 @@ export const HEADSHOTS: HeadshotSource[] = [
 
   // No approved file yet — keep prior Squarespace screenshots
   { slug: "samantha-juravich", file: "clinicians/Screen+Shot+2022-02-22+at+11.07.14+AM.png", square: "top" },
-  { slug: "madeline-amzler", file: "clinicians/Captura+de+pantalla+2026-08-07+170144.png", square: "top" },
-  { slug: "sofia-marinucci", file: "clinicians/Captura+de+pantalla+2026-08-07+170333.png", square: "top" },
+  { slug: "madeline-amzler", file: "april-2026/headshots/madeline-amzler.jpg", square: "attention" },
+  { slug: "sofia-marinucci", file: "april-2026/headshots/sofia-marinucci.png", square: "attention" },
   { slug: "colm-ashe", file: "clinicians/Captura+de+pantalla+2026-08-07+170455.png", square: "top" },
-  { slug: "karen-hill", file: "clinicians/Captura+de+pantalla+2026-08-07+170627.png", square: "top" },
-  { slug: "tiffany-roberts", file: "clinicians/Tiffany+Roberts_+Nurse+Practitioner_+Med+Management.png", square: "top" },
+  { slug: "karen-hill", file: "april-2026/headshots/karen-hill.png", square: "top" },
+  { slug: "tiffany-roberts", file: "april-2026/headshots/tiffany-roberts.jpg", square: "attention" },
   { slug: "danielle-ingenito", file: "wellness-team/Danielle+Ingenito+LMT.webp", square: "top" },
 ];

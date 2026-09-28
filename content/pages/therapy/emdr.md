@@ -24,7 +24,7 @@ EMDR (Eye Movement Desensitization and Reprocessing) is a structured trauma ther
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What EMDR is
 
@@ -57,7 +57,7 @@ Most people feel tired after a reprocessing session and lighter within a day or 
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. From there, the team matches you with a therapist trained in EMDR and, when it helps, adds support from other parts of the practice.
 
-For trauma, that might mean [somatic therapy](/therapy/somatic-therapy) to settle the body, [medication management](/medication-management) with our psychiatric nurse practitioner for sleep or panic, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the physical tension trauma leaves behind. Nothing is required. Everything is coordinated, with your permission. Read the full process at [How it works](/how-it-works).
+For trauma, that might mean [somatic therapy](/therapy/somatic-therapy) to settle the body, [medication management](/medication-management) with our psychiatric nurse practitioner for sleep or panic, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the physical tension trauma leaves behind. Nothing is required. Everything is coordinated, with your permission. Read the full process at [Contact Us](/contact).
 
 ## Where it is offered
 
@@ -105,7 +105,7 @@ For one memory, one to three reprocessing sessions. For long standing or repeate
 
 Tell the Welcome Team what you have been carrying. They will set up your 360 intake and match you with an EMDR trained therapist at the office closest to you or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

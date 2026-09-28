@@ -24,7 +24,7 @@ Anxiety therapy at Pathways Within is for adults and teens whose worry has start
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -52,7 +52,7 @@ Some clients add [acupuncture](/wellness/acupuncture) with our licensed acupunct
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. You do not need to name a diagnosis or know what kind of therapy you want. The team builds a plan and matches you with a therapist who has openings.
 
-Your first session covers your history, what anxiety looks like for you, and what a good outcome would be. Your therapist may give you one or two practical tools to use right away. By week three or four, most clients have a rhythm: weekly sessions, a few skills between them, and a clear sense of what you are working on. Read the full process at [How it works](/how-it-works).
+Your first session covers your history, what anxiety looks like for you, and what a good outcome would be. Your therapist may give you one or two practical tools to use right away. By week three or four, most clients have a rhythm: weekly sessions, a few skills between them, and a clear sense of what you are working on. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -102,7 +102,7 @@ That is common. You can start with the form instead, and a Welcome Team member w
 
 Tell the Welcome Team what the worry has been like. They will set up your 360 intake and match you with a therapist who treats anxiety, at the office closest to you or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

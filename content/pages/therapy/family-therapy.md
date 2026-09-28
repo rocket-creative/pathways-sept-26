@@ -24,7 +24,7 @@ Family therapy at Pathways Within is counseling for biological, blended, and cho
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Get started with a family therapist -> /contact
+[CTA] Contact Us -> /contact
 
 ## What family therapy is
 
@@ -65,7 +65,7 @@ From there, you set goals together. Sessions may involve everyone, smaller group
 
 Every family starts with a 360 intake with our Welcome Team. That conversation covers what is happening in the family system and what each member is carrying on their own. The team then matches you with an available family therapist and builds a whole person care plan.
 
-When it helps, that plan can include individual sessions for one member, [medication management](/medication-management) with our psychiatric nurse practitioner, or wellness services for the stress that lives in the body. Nothing is required, and everything is coordinated with your permission. Read the full process at [How it works](/how-it-works), or see all of our [therapy services](/therapy).
+When it helps, that plan can include individual sessions for one member, [medication management](/medication-management) with our psychiatric nurse practitioner, or wellness services for the stress that lives in the body. Nothing is required, and everything is coordinated with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
 
 ## Where it is offered
 
@@ -107,7 +107,7 @@ Your therapist is a neutral guide who helps your family understand patterns, ide
 
 Tell the Welcome Team what your family has been facing. They will set up your 360 intake and match you with a family therapist at the office closest to you or by telehealth.
 
-[CTA] Get started with a family therapist -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

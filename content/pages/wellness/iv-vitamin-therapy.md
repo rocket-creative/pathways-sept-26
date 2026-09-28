@@ -24,7 +24,7 @@ IV vitamin therapy delivers fluids and vitamins directly into a vein through a s
 
 [NEEDS: nurse, menu, pricing, screening criteria]
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What IV vitamin therapy is
 
@@ -58,7 +58,7 @@ After the infusion, the nurse removes the catheter, applies a small bandage, and
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If IV therapy fits, the team schedules your screening and first infusion. If your goals point somewhere else, the team says so and offers a better starting point.
 
-With your permission, the nurse can coordinate with your other Pathways Within providers and with your outside physician. Read the full process at [How it works](/how-it-works), or see everything under our [wellness pillar](/wellness).
+With your permission, the nurse can coordinate with your other Pathways Within providers and with your outside physician. Read the full process at [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
 
 ## Where it is offered
 
@@ -102,7 +102,7 @@ No. IV therapy does not replace a balanced diet, water, sleep, or medical care. 
 
 Tell the Welcome Team you are interested in IV vitamin therapy. They will set up your 360 intake, explain the screening, and schedule your first visit with the nurse once the service is available.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

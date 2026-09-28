@@ -275,7 +275,7 @@ export default function Quiz({ phone, phoneHref, anchorId = "quiz" }: QuizProps)
   );
 }
 
-/** The one shared ending: "Start your 360 intake" plus the phone number. */
+/** The one shared ending: "Contact Us" plus the phone number. */
 function CallToAction({ phone, phoneHref }: { phone: string; phoneHref: string }) {
   return (
     <>
@@ -285,7 +285,7 @@ function CallToAction({ phone, phoneHref }: { phone: string; phoneHref: string }
         </Link>
       </p>
       <p className="quiz__phone">
-        Call or text <a href={phoneHref}>{phone}</a>.
+        Call or text <strong><a href={phoneHref}>{phone}</a></strong>.
       </p>
     </>
   );

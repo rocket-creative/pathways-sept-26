@@ -24,7 +24,7 @@ Trauma and PTSD treatment at Pathways Within is for adults who are still living 
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Signs it may be time to talk to someone
 
@@ -55,7 +55,7 @@ Our prescriber offers [medication management](/medication-management) for adults
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. You do not need to describe the trauma in that call. The team matches you with a therapist trained in the approach that fits.
 
-The first sessions are about safety and stability, not the event itself. Your therapist learns your history, what triggers you, and what supports you have. You practice grounding skills you can use right away. Processing the trauma begins only when you both agree you are ready. Read the full process at [How it works](/how-it-works).
+The first sessions are about safety and stability, not the event itself. Your therapist learns your history, what triggers you, and what supports you have. You practice grounding skills you can use right away. Processing the trauma begins only when you both agree you are ready. Read the full process at [Contact Us](/contact).
 
 ## Medication, therapy, or both
 
@@ -105,7 +105,7 @@ Most plans that cover therapy cover it, and we work with VA Community Care Netwo
 
 You have carried this long enough. Tell the Welcome Team as much or as little as you want. They will set up your 360 intake and match you with a trauma trained therapist, in person or by telehealth.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -24,7 +24,7 @@ Performance and Wellness Coaching at Pathways Within is one on one support for p
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Schedule a coaching consultation -> /contact
+[CTA] Contact Us -> /contact
 
 ## What coaching is
 
@@ -65,7 +65,7 @@ Pathways Within is building out more than one level of coaching so you can choos
 
 At Pathways Within, we believe there is no one size fits all approach to wellness. Coaching is one part of our integrated model of care and may be used on its own or alongside [individual therapy](/therapy/individual-therapy), [medication management](/medication-management), [acupuncture](/wellness/acupuncture), and other wellness services.
 
-Every new client starts with a 360 intake with our Welcome Team. The team learns what is bringing you in and helps you decide whether coaching, therapy, or another service is the best place to start. Sometimes the answer is one. Sometimes it is a combination. Read more at [How it works](/how-it-works) or return to the [therapy hub](/therapy).
+Every new client starts with a 360 intake with our Welcome Team. The team learns what is bringing you in and helps you decide whether coaching, therapy, or another service is the best place to start. Sometimes the answer is one. Sometimes it is a combination. Read more at [Contact Us](/contact) or return to the [therapy hub](/therapy).
 
 ## Where it is offered
 
@@ -111,7 +111,7 @@ Coaching is not a productivity program, and there is no guarantee of a result. Y
 
 Tell the Welcome Team what keeps repeating. They will set up your 360 intake and schedule coaching, in person or by telehealth.
 
-[CTA] Schedule your coaching consultation -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

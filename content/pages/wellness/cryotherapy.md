@@ -24,7 +24,7 @@ Cryotherapy is brief, controlled exposure to very cold air, used for muscle reco
 
 [NEEDS: confirm cryotherapy is still offered and at which office; confirm provider]
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 ## What cryotherapy is
 
@@ -64,7 +64,7 @@ For localized cryotherapy, you stay dressed and a staff member directs cold air 
 
 Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If cryotherapy fits, the team schedules your screening and first session and, when it helps, pairs it with other wellness services.
 
-Many clients combine cryotherapy with [massage](/wellness/massage), [acupuncture](/wellness/acupuncture), or [cupping](/wellness/cupping) as part of a recovery routine. With your permission, our wellness providers coordinate with your therapist or prescriber if you also work with our therapy or [medication management](/medication-management) teams. Read the full process at [How it works](/how-it-works), or see everything under our [wellness pillar](/wellness).
+Many clients combine cryotherapy with [massage](/wellness/massage), [acupuncture](/wellness/acupuncture), or [cupping](/wellness/cupping) as part of a recovery routine. With your permission, our wellness providers coordinate with your therapist or prescriber if you also work with our therapy or [medication management](/medication-management) teams. Read the full process at [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
 
 ## Where it is offered
 
@@ -108,7 +108,7 @@ No. Pregnancy, heart conditions, uncontrolled high blood pressure, cold sensitiv
 
 Tell the Welcome Team you are interested in cryotherapy and what you hope it will help with. They will set up your 360 intake, schedule your screening, and book your first session.
 
-[CTA] Contact the Welcome Team -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

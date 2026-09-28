@@ -42,7 +42,7 @@ Rachel founded Pathways Within as a small private therapy practice and grew it i
 
 Want to talk about anything Rachel discussed on the show? Contact the Welcome Team.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Person on a video therapy session from home on Long 
 
 Oscar plans are on the Pathways Within intake form, and our clinicians see Oscar clients for therapy and medication management. If you are new to your plan and not sure how therapy fits into it, this page is for you. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake and tells you what applies before your first appointment.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Oscar may cover here
 
@@ -39,7 +39,7 @@ Care comes first and the benefits check follows. Nobody is turned away at the fi
 3. The team builds a care plan and matches you with available providers who work with Oscar.
 4. The Welcome Team verifies your Oscar benefits and explains what to expect before your first appointment.
 
-Your Welcome Team contact stays with you after that. See [How it works](/how-it-works) for the full picture.
+Your Welcome Team contact stays with you after that. See [Contact Us](/contact) for the full picture.
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ Yes. If your coverage changes, tell the Welcome Team and they will verify the ne
 
 Tell the Welcome Team you have Oscar and what you would like to change. They will schedule your 360 intake, match you with a provider, and verify your benefits.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

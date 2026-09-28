@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-26T17:34:05.313Z",
+  "builtAt": "2026-09-28T21:31:50.837Z",
   "photos": {
     "cw-ap-acupuncture-session": {
       "id": "cw-ap-acupuncture-session",
@@ -229,6 +229,275 @@
           "width": 2000,
           "height": 1333,
           "src": "/images/photos/ha-ap-waiting-greeting-2000.webp"
+        }
+      ]
+    },
+    "cw-ap26-acu-leo": {
+      "id": "cw-ap26-acu-leo",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap26-acu-leo-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap26-acu-leo-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap26-acu-leo-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap26-acu-leo-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap26-acu-leo-2000.webp"
+        }
+      ]
+    },
+    "cw-ap26-acu-needles": {
+      "id": "cw-ap26-acu-needles",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap26-acu-needles-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap26-acu-needles-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap26-acu-needles-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap26-acu-needles-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap26-acu-needles-2000.webp"
+        }
+      ]
+    },
+    "cw-ap26-acu-shoulder": {
+      "id": "cw-ap26-acu-shoulder",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap26-acu-shoulder-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap26-acu-shoulder-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap26-acu-shoulder-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap26-acu-shoulder-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap26-acu-shoulder-2000.webp"
+        }
+      ]
+    },
+    "cw-ap26-hands": {
+      "id": "cw-ap26-hands",
+      "width": 2000,
+      "height": 987,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 316,
+          "src": "/images/photos/cw-ap26-hands-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 474,
+          "src": "/images/photos/cw-ap26-hands-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 631,
+          "src": "/images/photos/cw-ap26-hands-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 789,
+          "src": "/images/photos/cw-ap26-hands-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 987,
+          "src": "/images/photos/cw-ap26-hands-2000.webp"
+        },
+        {
+          "width": 2000,
+          "height": 987,
+          "src": "/images/photos/cw-ap26-hands-2000.webp"
+        }
+      ]
+    },
+    "cw-ap26-med-couples": {
+      "id": "cw-ap26-med-couples",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap26-med-couples-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap26-med-couples-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap26-med-couples-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap26-med-couples-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap26-med-couples-2000.webp"
+        }
+      ]
+    },
+    "cw-ap26-med-np": {
+      "id": "cw-ap26-med-np",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap26-med-np-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap26-med-np-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap26-med-np-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap26-med-np-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap26-med-np-2000.webp"
+        }
+      ]
+    },
+    "cw-ap26-med-single": {
+      "id": "cw-ap26-med-single",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap26-med-single-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap26-med-single-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap26-med-single-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap26-med-single-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap26-med-single-2000.webp"
+        }
+      ]
+    },
+    "cw-ap26-med-teen": {
+      "id": "cw-ap26-med-teen",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/cw-ap26-med-teen-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/cw-ap26-med-teen-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/cw-ap26-med-teen-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/cw-ap26-med-teen-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/cw-ap26-med-teen-2000.webp"
         }
       ]
     },
@@ -1927,6 +2196,336 @@
         }
       ]
     },
+    "ha-ap26-camp-five": {
+      "id": "ha-ap26-camp-five",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-camp-five-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-camp-five-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-camp-five-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-camp-five-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-camp-five-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-camp-pair": {
+      "id": "ha-ap26-camp-pair",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-camp-pair-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-camp-pair-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-camp-pair-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-camp-pair-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-camp-pair-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-camp-three": {
+      "id": "ha-ap26-camp-three",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-camp-three-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-camp-three-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-camp-three-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-camp-three-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-camp-three-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-camp-tiffany": {
+      "id": "ha-ap26-camp-tiffany",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-camp-tiffany-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-camp-tiffany-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-camp-tiffany-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-camp-tiffany-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-camp-tiffany-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-desk-handshake": {
+      "id": "ha-ap26-desk-handshake",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-desk-handshake-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-desk-handshake-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-desk-handshake-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-desk-handshake-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-desk-handshake-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-desk-smile": {
+      "id": "ha-ap26-desk-smile",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-desk-smile-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-desk-smile-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-desk-smile-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-desk-smile-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-desk-smile-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-desk-talk": {
+      "id": "ha-ap26-desk-talk",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-desk-talk-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-desk-talk-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-desk-talk-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-desk-talk-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-desk-talk-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-rachel-family": {
+      "id": "ha-ap26-rachel-family",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-rachel-family-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-rachel-family-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-rachel-family-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-rachel-family-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-rachel-family-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-rachel-solo": {
+      "id": "ha-ap26-rachel-solo",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-rachel-solo-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-rachel-solo-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-rachel-solo-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-rachel-solo-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-rachel-solo-2000.webp"
+        }
+      ]
+    },
+    "ha-ap26-woman-smile": {
+      "id": "ha-ap26-woman-smile",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/ha-ap26-woman-smile-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/ha-ap26-woman-smile-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/ha-ap26-woman-smile-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/ha-ap26-woman-smile-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/ha-ap26-woman-smile-2000.webp"
+        }
+      ]
+    },
     "ha-gypsy-therapy-dog": {
       "id": "ha-gypsy-therapy-dog",
       "width": 480,
@@ -3560,6 +4159,996 @@
         }
       ]
     },
+    "th-ap26-across": {
+      "id": "th-ap26-across",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-across-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-across-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-across-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-across-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-across-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-black-blazer": {
+      "id": "th-ap26-black-blazer",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-black-blazer-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-black-blazer-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-black-blazer-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-black-blazer-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-black-blazer-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-conversation": {
+      "id": "th-ap26-conversation",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-conversation-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-conversation-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-conversation-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-conversation-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-conversation-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-couple": {
+      "id": "th-ap26-couple",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-couple-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-couple-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-couple-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-couple-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-couple-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-fam-behind": {
+      "id": "th-ap26-fam-behind",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-fam-behind-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-fam-behind-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-fam-behind-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-fam-behind-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-fam-behind-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-fam-child": {
+      "id": "th-ap26-fam-child",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-fam-child-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-fam-child-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-fam-child-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-fam-child-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-fam-child-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-fam-end": {
+      "id": "th-ap26-fam-end",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-fam-end-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-fam-end-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-fam-end-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-fam-end-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-fam-end-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-fam-four": {
+      "id": "th-ap26-fam-four",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-fam-four-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-fam-four-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-fam-four-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-fam-four-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-fam-four-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-fam-two": {
+      "id": "th-ap26-fam-two",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-fam-two-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-fam-two-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-fam-two-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-fam-two-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-fam-two-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-glasses": {
+      "id": "th-ap26-glasses",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-glasses-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-glasses-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-glasses-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-glasses-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-glasses-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-green-couple": {
+      "id": "th-ap26-green-couple",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-green-couple-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-green-couple-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-green-couple-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-green-couple-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-green-couple-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-green-listen": {
+      "id": "th-ap26-green-listen",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-green-listen-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-green-listen-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-green-listen-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-green-listen-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-green-listen-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-green-quiet": {
+      "id": "th-ap26-green-quiet",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-green-quiet-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-green-quiet-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-green-quiet-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-green-quiet-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-green-quiet-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-green-vest": {
+      "id": "th-ap26-green-vest",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-green-vest-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-green-vest-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-green-vest-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-green-vest-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-green-vest-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-group-couch": {
+      "id": "th-ap26-group-couch",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-group-couch-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-group-couch-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-group-couch-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-group-couch-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-group-couch-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-group-floor": {
+      "id": "th-ap26-group-floor",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-group-floor-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-group-floor-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-group-floor-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-group-floor-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-group-floor-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-group-gesture": {
+      "id": "th-ap26-group-gesture",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-group-gesture-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-group-gesture-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-group-gesture-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-group-gesture-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-group-gesture-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-group-play": {
+      "id": "th-ap26-group-play",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-group-play-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-group-play-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-group-play-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-group-play-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-group-play-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-hands": {
+      "id": "th-ap26-hands",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-hands-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-hands-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-hands-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-hands-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-hands-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-kids-point": {
+      "id": "th-ap26-kids-point",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-kids-point-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-kids-point-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-kids-point-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-kids-point-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-kids-point-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-kids-stand": {
+      "id": "th-ap26-kids-stand",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-kids-stand-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-kids-stand-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-kids-stand-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-kids-stand-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-kids-stand-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-kids-three": {
+      "id": "th-ap26-kids-three",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-kids-three-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-kids-three-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-kids-three-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-kids-three-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-kids-three-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-kids-toy": {
+      "id": "th-ap26-kids-toy",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-kids-toy-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-kids-toy-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-kids-toy-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-kids-toy-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-kids-toy-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-older-couple": {
+      "id": "th-ap26-older-couple",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-older-couple-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-older-couple-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-older-couple-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-older-couple-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-older-couple-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-older-man": {
+      "id": "th-ap26-older-man",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-older-man-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-older-man-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-older-man-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-older-man-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-older-man-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-older-quiet": {
+      "id": "th-ap26-older-quiet",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-older-quiet-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-older-quiet-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-older-quiet-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-older-quiet-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-older-quiet-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-resting": {
+      "id": "th-ap26-resting",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-resting-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-resting-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-resting-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-resting-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-resting-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-seated": {
+      "id": "th-ap26-seated",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-seated-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-seated-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-seated-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-seated-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-seated-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-teen": {
+      "id": "th-ap26-teen",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-teen-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-teen-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-teen-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-teen-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-teen-2000.webp"
+        }
+      ]
+    },
+    "th-ap26-two-women": {
+      "id": "th-ap26-two-women",
+      "width": 2000,
+      "height": 1333,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 427,
+          "src": "/images/photos/th-ap26-two-women-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 640,
+          "src": "/images/photos/th-ap26-two-women-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 853,
+          "src": "/images/photos/th-ap26-two-women-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1067,
+          "src": "/images/photos/th-ap26-two-women-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 1333,
+          "src": "/images/photos/th-ap26-two-women-2000.webp"
+        }
+      ]
+    },
     "th-children-rain-boots": {
       "id": "th-children-rain-boots",
       "width": 2000,
@@ -4995,14 +6584,19 @@
     },
     "karen-hill": {
       "id": "karen-hill",
-      "width": 320,
-      "height": 320,
+      "width": 640,
+      "height": 640,
       "crop": "top",
       "tiers": [
         {
           "width": 320,
           "height": 320,
           "src": "/images/providers/karen-hill-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/karen-hill-640.webp"
         }
       ]
     },
@@ -5152,9 +6746,9 @@
     },
     "madeline-amzler": {
       "id": "madeline-amzler",
-      "width": 462,
-      "height": 462,
-      "crop": "top",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
       "tiers": [
         {
           "width": 320,
@@ -5162,9 +6756,9 @@
           "src": "/images/providers/madeline-amzler-320.webp"
         },
         {
-          "width": 462,
-          "height": 462,
-          "src": "/images/providers/madeline-amzler-462.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/madeline-amzler-640.webp"
         }
       ]
     },
@@ -5260,9 +6854,9 @@
     },
     "sofia-marinucci": {
       "id": "sofia-marinucci",
-      "width": 455,
-      "height": 455,
-      "crop": "top",
+      "width": 640,
+      "height": 640,
+      "crop": "attention",
       "tiers": [
         {
           "width": 320,
@@ -5270,9 +6864,9 @@
           "src": "/images/providers/sofia-marinucci-320.webp"
         },
         {
-          "width": 455,
-          "height": 455,
-          "src": "/images/providers/sofia-marinucci-455.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/sofia-marinucci-640.webp"
         }
       ]
     },
@@ -5298,7 +6892,7 @@
       "id": "tiffany-roberts",
       "width": 640,
       "height": 640,
-      "crop": "top",
+      "crop": "attention",
       "tiers": [
         {
           "width": 320,

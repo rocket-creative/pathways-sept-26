@@ -24,7 +24,7 @@ Therapy at Pathways Within is more than 25 licensed clinicians across Nassau and
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## Therapy for who you are
 
@@ -59,11 +59,17 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 
 ## How therapy starts here
 
-You contact the Welcome Team. They schedule a 360 intake, a conversation that covers your mind, your body, and your daily life. From that, the team matches you with a therapist whose training fits what you need, at the office you chose or by telehealth. If medication or wellness care would help, it is added to the same plan. [How it works](/how-it-works).
+You contact the Welcome Team. They schedule a 360 intake, a conversation that covers your mind, your body, and your daily life. From that, the team matches you with a therapist whose training fits what you need, at the office you chose or by telehealth. If medication or wellness care would help, it is added to the same plan. [Contact Us](/contact).
+
+## Tia Baumohl
+
+**Certified Coach, Energy Medicine Practitioner.** Tia helps people move through change with more clarity, connection, and confidence. She spent more than a decade supporting mothers and their partners through pregnancy and labor, and for the past five years has added energy medicine and coaching. Her credentials are Certified Coach and Energy Medicine Practitioner.
+
+[PROVIDER CARDS: tia-baumohl]
 
 ## Our clinicians
 
-Clinicians are licensed or practicing under supervision toward licensure in New York State. Coaching and prescribing sit in a separate specialists section, because those credentials are not therapy licenses. [Browse providers](/providers).
+Clinicians are licensed or practicing under supervision toward licensure in New York State. [Browse providers](/providers).
 
 [PROVIDER CARDS: pillar=wisdom]
 
@@ -77,7 +83,7 @@ We work with most major plans. Coverage varies by provider, service, and plan, a
 
 ## Take the next step
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

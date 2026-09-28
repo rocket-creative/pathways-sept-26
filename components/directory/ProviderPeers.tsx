@@ -15,7 +15,6 @@ export default function ProviderPeers({ slug }: { slug: string }) {
         provider.active &&
         !provider.isAdmin &&
         !provider.isFounder &&
-        !provider.isSpecialist &&
         provider.slug !== slug,
     )
     .map(toProviderCardData);

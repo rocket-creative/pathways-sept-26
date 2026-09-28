@@ -22,7 +22,7 @@ hero_image: "[NEEDS: image] Close view of an insurance card being photographed f
 
 Carelon Behavioral Health is one of the plans listed on the Pathways Within intake form. If it is the name attached to your mental health benefits, our therapists and psychiatric nurse practitioner can see you for therapy and medication management in person on Long Island or by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 ## What Carelon Behavioral Health may cover here
 
@@ -39,7 +39,7 @@ You are not asked to prove coverage before someone will talk to you. The 360 int
 3. The team builds a care plan and matches you with available providers who work with Carelon Behavioral Health.
 4. The Welcome Team verifies your benefits and tells you what to expect before your first appointment.
 
-The Welcome Team stays your point of contact after that. The full process is described at [How it works](/how-it-works).
+The Welcome Team stays your point of contact after that. The full process is described at [Contact Us](/contact).
 
 ## Out of network and self pay options
 
@@ -71,7 +71,7 @@ Some plans require it for outpatient mental health and some do not. If yours doe
 
 Tell the Welcome Team your benefits are through Carelon Behavioral Health and what you would like to change. They will schedule your 360 intake, match you with a provider, and verify your coverage.
 
-[CTA] Start your 360 intake -> /contact
+[CTA] Contact Us -> /contact
 
 Or call (631) 371-3825.
 

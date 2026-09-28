@@ -48,8 +48,7 @@ Longer reads from Rachel and the team live on the [blog](/blog), including episo
 
 If a resource raised a question, bring it to your next session or contact the Welcome Team.
 
-[CTA] Contact the Welcome Team -> /contact
-
+[CTA] Contact Us -> /contact
 
 ```json
 {

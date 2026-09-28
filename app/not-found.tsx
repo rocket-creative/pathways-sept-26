@@ -71,7 +71,7 @@ export default function NotFound() {
         </p>
         <p className="cta not-found__cta">
           <Link href="/contact" className="button">
-            Start your 360 intake
+            Contact Us
           </Link>
         </p>
       </main>
