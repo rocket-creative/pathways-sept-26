@@ -11,6 +11,13 @@
  * that covers the viewport at its device pixel ratio (a 5K display at 2x
  * takes the 7680). The JPEG is the fallback for browsers without WebP.
  *
+ * `width` and `height` match the fallback file, which is 16:9 like every
+ * tier. They are not the 16384×9216 master. macOS Chrome will not paint an
+ * img whose width or height attribute is 16384 or larger, the GPU texture
+ * limit (the branch tiers stop at 16368 for the same reason). Image 2 is
+ * the element carrying that attribute, so Chrome on a Mac never showed the
+ * second background, while image 1 at width 2000 still did.
+ *
  * Regenerate with sharp (see the widths below) if the master changes.
  */
 export const LABYRINTH = {
@@ -25,6 +32,6 @@ export const LABYRINTH = {
   ].join(", "),
   fallback: "/labyrinth.jpg",
   sizes: "max(100vw, 177.78vh)",
-  width: 16384,
-  height: 9216,
+  width: 2560,
+  height: 1440,
 } as const;

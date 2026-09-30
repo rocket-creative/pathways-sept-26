@@ -122,9 +122,9 @@ export const HOME_ABOUT: ImageGroup = {
     { id: "ha-path-to-the-sea", file: "about-us/a-beautiful-white-washed-path-leads-to-an-ocean-se-2026-03-17-21-28-27-utc.jpeg" },
     // Hand touching still water at sunrise (2500x1667).
     { id: "ha-hand-on-water", file: "360-degree-wellness/yoann-boyer-i14h2xyPr18-unsplash.jpg" },
-    // Gypsy, one of the two therapy dogs (596x868; small, but the real dog).
-    { id: "ha-gypsy-therapy-dog", file: "clinicians/Gypsy+Therapy+Dog+on+Long+Island.jpg", square: "top" },
-    { id: "ha-ksusha-domino", file: "approved/headshots/ksusha-cascio.jpg" },
+    // Therapy dogs from the clinicians page. Both sources are small portraits.
+    { id: "ha-domino-therapy-dog", file: "clinicians/Domino+Therapy+Dog+on+Long+Island.jpg" },
+    { id: "ha-gypsy-therapy-dog", file: "clinicians/Gypsy+Therapy+Dog+on+Long+Island.jpg" },
     { id: "ha-tia-baumohl", file: "approved/headshots/tia-baumohl.jpg" },
     // /providers/rachel-lessard also uses th-session-hands (therapy.ts) and
     // cw-labyrinth-beach (concerns-wellness.ts); ids resolve across groups.
@@ -134,29 +134,29 @@ export const HOME_ABOUT: ImageGroup = {
       sections: {
         "what-people-come-to-us-for": [
           {
-            asset: "ha-ap26-camp-pair",
-            alt: "A practitioner in a blue shirt and a woman in a cream sweater smiling together",
+            asset: "th-ap26-green-quiet",
+            alt: "A therapist in a green vest listening during a session in a blue room",
             layout: "collage",
             aspect: "landscape",
             focal: "center",
           },
           {
-            asset: "ha-ap26-camp-tiffany",
-            alt: "Tiffany Roberts, PMHNP, standing with a colleague in front of a studio backdrop",
+            asset: "cw-ap26-med-couples",
+            alt: "A practitioner talking with a couple in a Pathways Within office",
             layout: "collage",
             aspect: "landscape",
             focal: "center",
           },
           {
-            asset: "ha-ap26-camp-three",
-            alt: "Three people, including a child, posing together during the Pathways Within photo day",
+            asset: "th-ap26-kids-three",
+            alt: "Three children sitting on a blue sofa across from a therapist",
             layout: "collage",
             aspect: "landscape",
             focal: "center",
           },
           {
-            asset: "ha-ap26-camp-five",
-            alt: "A group of Pathways Within practitioners and clients smiling together",
+            asset: "cw-ap-massage-session",
+            alt: "A massage therapist working with a client beside a beach mural",
             layout: "collage",
             aspect: "landscape",
             focal: "center",
@@ -237,18 +237,18 @@ export const HOME_ABOUT: ImageGroup = {
     },
 
     "/about": {
-      hero: { asset: "ha-ap26-rachel-solo", alt: "Rachel Lessard smiling during the April photo day", focal: "center" },
+      hero: { asset: "ha-ap26-desk-smile", alt: "A Pathways Within staff member smiling with a visitor at the front desk", focal: "center" },
       sections: {
         "who-we-are-and-why-we-are-here": {
-          asset: "ha-ap26-rachel-solo",
-          alt: "Rachel Lessard, LCSW-R, smiling in a maroon blouse",
+          asset: "ha-ap26-desk-handshake",
+          alt: "A visitor shaking hands with a staff member at the Pathways Within front desk",
           shape: "circle",
           side: "start",
           focal: "center",
         },
         "how-pathways-found-its-way": {
-          asset: "ha-ap26-rachel-family",
-          alt: "Rachel Lessard standing with a family during the April photo day",
+          asset: "th-ap26-fam-four",
+          alt: "A family talking with a therapist on a blue sofa in a Pathways Within office",
           shape: "rounded",
           aspect: "portrait",
           side: "end",
@@ -290,15 +290,15 @@ export const HOME_ABOUT: ImageGroup = {
       hero: { asset: "th-ap26-green-vest", alt: "A therapist and client in conversation on blue sofas during a session", focal: "center" },
       sections: {
         "pathways-within-wisdom-and-wellness-collaborative-specialists": {
-          asset: "ha-ap26-camp-three",
-          alt: "Three people, including a child, posing together during the Pathways Within photo day",
+          asset: "th-ap26-fam-child",
+          alt: "A family with a child sitting with a therapist on a blue sofa",
           shape: "circle",
           side: "end",
           focal: "center",
         },
         leadership: {
-          asset: "ha-ap26-rachel-solo",
-          alt: "Rachel Lessard, LCSW-R, founder of Pathways Within",
+          asset: "ha-ap26-desk-smile",
+          alt: "A Pathways Within staff member smiling with a visitor at the front desk",
           shape: "circle",
           side: "start",
           focal: "center",
@@ -312,22 +312,21 @@ export const HOME_ABOUT: ImageGroup = {
           side: "end",
           layout: "feature",
         },
-        "our-therapy-dogs": [
+        "meet-our-therapy-dogs": [
           {
-            asset: "ha-ksusha-domino",
-            alt: "Ksusha Cascio seated with Domino, a therapy dog, beside her",
+            asset: "ha-domino-therapy-dog",
+            alt: "Domino, a long haired tricolor therapy dog, facing the camera",
             shape: "rounded",
             aspect: "portrait",
-            side: "end",
-            layout: "feature",
-            focal: "40% 62%",
+            layout: "columns",
+            focal: "top",
           },
           {
             asset: "ha-gypsy-therapy-dog",
-            alt: "Gypsy, a curly-haired therapy dog, sitting on a rug",
+            alt: "Gypsy Sassafras, a curly therapy dog, sitting on a patterned rug",
             shape: "rounded",
             aspect: "portrait",
-            layout: "band",
+            layout: "columns",
             focal: "top",
           },
         ],
@@ -387,8 +386,8 @@ export const HOME_ABOUT: ImageGroup = {
     "/providers/rachel-lessard": {
       sections: {
         "in-rachel-s-words": {
-          asset: "ha-ap26-rachel-family",
-          alt: "Rachel Lessard standing with a family during the April photo day",
+          asset: "th-ap26-fam-child",
+          alt: "A parent with a young child talking with a therapist on a blue sofa",
           shape: "rounded",
           aspect: "portrait",
           side: "end",

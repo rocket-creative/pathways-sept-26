@@ -281,14 +281,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/self-esteem": {
       hero: {
-        asset: "ha-ap26-woman-smile",
-        alt: "A woman in a cream sweater smiling during the Pathways Within photo day",
+        asset: "th-ap26-conversation",
+        alt: "A therapist and client in conversation on blue sofas",
         focal: "center",
       },
       sections: {
         "how-we-treat-self-esteem-at-pathways-within": {
-          asset: "ha-ap26-woman-smile",
-          alt: "A woman in a cream sweater smiling during the Pathways Within photo day",
+          asset: "th-ap26-seated",
+          alt: "A client sitting with a therapist on a blue sofa",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
@@ -329,8 +329,8 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/life-transitions": {
       hero: {
-        asset: "ha-ap26-camp-pair",
-        alt: "A practitioner and a client smiling together during the Pathways Within photo day",
+        asset: "th-ap26-green-listen",
+        alt: "A therapist listening while a client talks from a blue sofa",
         focal: "center",
       },
       sections: {
@@ -363,14 +363,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/concerns/chronic-pain-and-illness": {
       hero: {
-        asset: "cw-ap26-acu-needles",
-        alt: "Leo, acupuncturist, placing a needle at a client's arm",
+        asset: "cw-ap-massage-session",
+        alt: "A massage therapist working with a client beside a beach mural",
         focal: "center",
       },
       sections: {
         "how-we-treat-chronic-pain-and-illness-at-pathways-within": {
-          asset: "cw-ap26-acu-shoulder",
-          alt: "Leo working at a client's shoulder during an acupuncture visit",
+          asset: "cw-ap26-med-couples",
+          alt: "A practitioner talking with a couple in a Pathways Within office",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
@@ -383,8 +383,8 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     /* ---------------------------------------------------------------- */
     "/wellness": {
       hero: {
-        asset: "cw-ap26-acu-leo",
-        alt: "Leo, acupuncturist, with a client after a treatment",
+        asset: "cw-ap-massage-session",
+        alt: "A massage therapist working with a client beside a beach mural",
         focal: "center",
       },
       sections: {
@@ -408,8 +408,8 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           focal: "70% 30%",
         },
         "who-provides-it": {
-          asset: "cw-ap26-acu-leo",
-          alt: "Leo, acupuncturist, with a client after a treatment",
+          asset: "ha-ap26-desk-smile",
+          alt: "A Pathways Within staff member smiling with a visitor at the front desk",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
@@ -457,14 +457,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
     },
     "/wellness/acupuncture": {
       hero: {
-        asset: "cw-ap26-acu-leo",
-        alt: "Leo, acupuncturist, with a client after a treatment",
+        asset: "cw-ap-massage-session",
+        alt: "A massage therapist working with a client beside a beach mural",
         focal: "center",
       },
       sections: {
         "what-acupuncture-is": {
-          asset: "cw-ap26-acu-needles",
-          alt: "Leo, acupuncturist, placing a needle at a client's arm",
+          asset: "cw-ap26-med-couples",
+          alt: "A practitioner talking with a couple in a Pathways Within office",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
@@ -472,8 +472,8 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           focal: "center",
         },
         "what-to-expect-in-your-first-session-at-pathways-within": {
-          asset: "cw-ap26-acu-shoulder",
-          alt: "Leo working at a client's shoulder during an acupuncture visit",
+          asset: "th-ap26-green-quiet",
+          alt: "A therapist and client sitting across from each other on blue sofas",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
@@ -481,8 +481,8 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           focal: "center",
         },
         "how-care-works-here": {
-          asset: "cw-ap26-acu-leo",
-          alt: "Leo, acupuncturist, smiling with a client in blue scrubs",
+          asset: "ha-ap26-desk-talk",
+          alt: "Welcome Team members talking with a visitor at the Pathways Within front desk",
           shape: "rounded",
           aspect: "portrait",
           side: "end",

@@ -14,6 +14,8 @@ const SIZES: Record<SectionPhotoLayout, string> = {
   overlay: "(min-width: 1200px) 76rem, (min-width: 900px) 92vw, 100vw",
   /* One cell of a 2×2 collage, half the card on a wide viewport. */
   collage: "(min-width: 700px) 38rem, 100vw",
+  /* One column of a two-up profile row; full width once the columns stack. */
+  columns: "(min-width: 700px) 36rem, 100vw",
 };
 
 /**
@@ -43,7 +45,7 @@ export default function SectionFigure({
     shape === "circle" ? "square" : resolvedLayout === "band" || resolvedLayout === "collage" ? (aspect ?? "landscape") : aspect;
   /* The collage wrapper carries content-image so the bento treats the grid as one figure. */
   const frameClass =
-    resolvedLayout === "collage"
+    resolvedLayout === "collage" || resolvedLayout === "columns"
       ? `section-figure__media section-figure__media--${shape}`
       : `content-image section-figure__media section-figure__media--${shape}`;
 

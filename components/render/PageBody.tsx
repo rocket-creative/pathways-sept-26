@@ -129,6 +129,65 @@ export default function PageBody({ page }: { page: Page }) {
           );
         }
 
+        if (primary && resolvedPrimary && primary.layout === "columns" && figures.length > 1) {
+          const firstSubhead = section.blocks.findIndex((block) => block.kind === "heading" && block.level === 3);
+          const intro = firstSubhead === -1 ? section.blocks : section.blocks.slice(0, firstSubhead);
+          const groups: Block[][] = [];
+          if (firstSubhead >= 0) {
+            let current: Block[] = [];
+            for (const block of section.blocks.slice(firstSubhead)) {
+              if (block.kind === "heading" && block.level === 3 && current.length) {
+                groups.push(current);
+                current = [block];
+              } else {
+                current.push(block);
+              }
+            }
+            if (current.length) groups.push(current);
+          }
+
+          return (
+            <section
+              key={position}
+              className="page-section page-section--figure"
+              aria-labelledby={section.heading.id}
+              data-section={section.heading.id}
+              data-layout="columns"
+            >
+              <div className="section-figure__copy">
+                <Heading block={section.heading} ctx={ctx} />
+                {renderBlocks(intro, ctx)}
+              </div>
+              <div className="section-columns content-image">
+                {groups.map((group, index) => {
+                  const entry = figures[index];
+                  const resolved = entry ? resolvePhoto(entry) : undefined;
+                  return (
+                    <div className="section-columns__col" key={group[0]?.kind === "heading" ? group[0].id : index}>
+                      {entry?.missing || (entry && !resolved) ? (
+                        <MissingPhoto
+                          label={entry.missing || entry.alt || "This photograph"}
+                          shape={entry.shape}
+                          aspect={entry.aspect ?? "portrait"}
+                          layout="columns"
+                        />
+                      ) : resolved && entry ? (
+                        <SectionFigure
+                          photo={resolved}
+                          shape={entry.shape}
+                          aspect={entry.aspect ?? "portrait"}
+                          layout="columns"
+                        />
+                      ) : null}
+                      {renderBlocks(group, ctx)}
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          );
+        }
+
         if (primary && resolvedPrimary && primary.layout === "collage") {
           const cells = figures.flatMap((entry, index) => {
             if (entry.missing || !resolvePhoto(entry)) {

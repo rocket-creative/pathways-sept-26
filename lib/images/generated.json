@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-30T18:55:31.143Z",
+  "builtAt": "2026-09-30T21:14:11.169Z",
   "photos": {
     "cw-ap-acupuncture-session": {
       "id": "cw-ap-acupuncture-session",
@@ -2526,16 +2526,29 @@
         }
       ]
     },
-    "ha-gypsy-therapy-dog": {
-      "id": "ha-gypsy-therapy-dog",
-      "width": 480,
-      "height": 480,
-      "crop": "top",
+    "ha-domino-therapy-dog": {
+      "id": "ha-domino-therapy-dog",
+      "width": 516,
+      "height": 692,
+      "crop": "full",
       "tiers": [
         {
-          "width": 480,
-          "height": 480,
-          "src": "/images/photos/ha-gypsy-therapy-dog-480.webp"
+          "width": 516,
+          "height": 692,
+          "src": "/images/photos/ha-domino-therapy-dog-516.webp"
+        }
+      ]
+    },
+    "ha-gypsy-therapy-dog": {
+      "id": "ha-gypsy-therapy-dog",
+      "width": 596,
+      "height": 868,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 596,
+          "height": 868,
+          "src": "/images/photos/ha-gypsy-therapy-dog-596.webp"
         }
       ]
     },

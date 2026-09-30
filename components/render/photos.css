@@ -513,3 +513,51 @@ main.page--lanes > .prose > .page-section--figure[data-layout="cover"] > .sectio
   aspect-ratio: 4 / 3;
   border-radius: var(--photo-radius);
 }
+
+/* Two profiles in one card: stacked on a phone, side by side once there is room.
+   The section itself stays one column so the heading sits above both. */
+.page-section.page-section--figure[data-layout="columns"] {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.section-columns.content-image {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.section-columns__col {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.section-columns__col > * {
+  margin-block-start: 0;
+}
+
+.section-columns__col > :last-child {
+  margin-block-end: 0;
+}
+
+.section-columns .section-figure__media {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  min-height: 0;
+  margin: 0 0 1rem;
+  align-self: stretch;
+}
+
+.section-columns .section-figure__media::before {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .section-columns.content-image {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+  }
+}

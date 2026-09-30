@@ -53,7 +53,7 @@ export interface Photo {
 }
 
 /** How a section photograph sits relative to its copy. */
-export type SectionPhotoLayout = "split" | "band" | "feature" | "collage" | "cover" | "overlay";
+export type SectionPhotoLayout = "split" | "band" | "feature" | "collage" | "columns" | "cover" | "overlay";
 
 export interface SectionPhoto extends Photo {
   /** Circle for a person or a room (design rule); rounded for everything else. */
@@ -74,7 +74,9 @@ export interface SectionPhoto extends Photo {
    * top of it, for a picture with a quiet area there. `overlay` does the same
    * and puts the copy in a glass panel on the quiet side. `collage` lays every
    * photo in the section list into one 2×2 grid under the copy. Each collage
-   * entry needs `layout: "collage"`.
+   * entry needs `layout: "collage"`. `columns` pairs each photo with the h3
+   * group in the same order, two columns from 700px and one below. Each
+   * entry needs `layout: "columns"`.
    */
   layout?: SectionPhotoLayout;
 }
