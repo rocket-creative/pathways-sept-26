@@ -275,7 +275,8 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   }
 }
 
-/* Band: immersive full-width landscape inside the card (mobile first). */
+/* A band stacks under the copy on a phone, at the same landscape crop as
+   every other card photo. */
 .page-section--figure[data-layout="band"] {
   grid-template-columns: minmax(0, 1fr);
 }
@@ -284,10 +285,9 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
 .page-section--figure > .section-figure__media[data-layout="band"] {
   width: 100%;
   justify-self: stretch;
-  aspect-ratio: auto;
-  /* Tall landscape that still fits a phone: ~56vw, floor 14rem. */
-  min-height: max(14rem, 56vw);
-  max-height: 28rem;
+  aspect-ratio: 3 / 2;
+  min-height: 0;
+  max-height: none;
 }
 
 .page-section--figure[data-layout="band"] .section-figure__media::before,
@@ -300,103 +300,71 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   order: -1;
 }
 
+/* The providers closing card is the photo card: copy on the left, a rounded
+   photo on the right that is only as tall as the copy. Circles, features,
+   and bands use that same row. Collage, paired profiles, and full-bleed
+   covers keep their own layouts. */
 @media (min-width: 900px) {
-  .page-section.page-section--figure {
-    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-    column-gap: clamp(2rem, 4vw, 3.5rem);
+  .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    align-items: stretch;
+    column-gap: clamp(1rem, 2vw, 1.5rem);
   }
 
-  .page-section.page-section--figure[data-side="start"] {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > * {
+    grid-column: auto;
+    max-width: none;
   }
 
-  .page-section--figure[data-side="start"] > .section-figure__media:not([data-layout="band"]) {
-    order: -1;
-  }
-
-  /* Feature: photo takes the larger share (~7/12 ≈ 58%). */
-  .page-section.page-section--figure[data-layout="feature"] {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  }
-
-  .page-section.page-section--figure[data-layout="feature"][data-side="start"] {
-    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  }
-
-  /* Band: single column, copy then (or after) the full-bleed frame. */
-  .page-section.page-section--figure[data-layout="band"] {
-    grid-template-columns: minmax(0, 1fr);
-    column-gap: 0;
-  }
-
-  /* Extra bands after a split/feature primary span the full card width. */
-  .page-section--figure[data-has-bands] {
-    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  }
-
-  .page-section--figure[data-has-bands][data-side="start"] {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  }
-
-  .page-section--figure[data-has-bands][data-layout="feature"] {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
-  }
-
-  .page-section--figure[data-has-bands][data-layout="feature"][data-side="start"] {
-    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
-  }
-
-  .page-section--figure[data-has-bands] > .section-figure__media[data-layout="band"] {
-    grid-column: 1 / -1;
-  }
-
-  .page-section--figure[data-has-bands][data-layout="band"] {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  /* The frame runs the full height of the copy beside it (bento: no well
-     under a short picture), and never shorter than its own crop. A grid
-     item that stretches ignores aspect-ratio, so the floor is an in-flow
-     ::before whose padding is a share of the frame's width: 5/4 portrait,
-     3/4 landscape, 1/1 square. The picture is absolute and covers whatever
-     the two produce, so a long section gets a taller crop, not a gap. */
-  .section-figure__media:not([data-layout="band"]) {
-    aspect-ratio: auto;
-    align-self: stretch;
-  }
-
-  .section-figure__media:not([data-layout="band"])::before {
-    content: "";
-    display: block;
-    padding-block-start: 125%;
-  }
-
-  .section-figure__media:not([data-layout="band"])[data-aspect="landscape"]::before {
-    padding-block-start: 75%;
-  }
-
-  .section-figure__media:not([data-layout="band"])[data-aspect="square"]::before {
-    padding-block-start: 100%;
-  }
-
-  /* Desktop band: immersive height inside the card, glass-edged. */
-  .page-section--figure[data-layout="band"] .section-figure__media,
-  .page-section--figure > .section-figure__media[data-layout="band"] {
-    min-height: min(52vh, 36rem);
-    max-height: none;
-  }
-
-  /* A circle cannot stretch: it sits centred on the copy's height, so the
-     room around it is even rather than a hole at the bottom. */
-  .section-figure__media--circle:not([data-layout="band"]) {
-    aspect-ratio: 1;
-    width: min(100%, 26rem);
-    justify-self: center;
+  .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__copy {
     align-self: center;
   }
 
-  .section-figure__media--circle:not([data-layout="band"])::before {
+  .page-section--figure[data-side="start"] > .section-figure__media,
+  .page-section--figure[data-layout="band"][data-side="start"] > .section-figure__copy + .section-figure__media {
+    order: 0;
+  }
+
+  /* A second photograph still runs under the row, as a wide landscape.
+     It is not the side photo, so it keeps its own crop. */
+  .page-section.page-section--figure[data-has-bands] > .section-figure__media[data-layout="band"],
+  .page-section.page-section--figure[data-has-bands] > .section-collage {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 7;
+    align-self: stretch;
+    width: 100%;
+    min-height: 0;
+    max-height: 22rem;
+  }
+
+  /* The frame grows with the copy, and never shorter than the closing
+     card's photo. A one-line section would otherwise crop the picture
+     into a sliver. A band used as the only photo is that same frame. */
+  .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__media:not([data-layout="band"]),
+  .page-section.page-section--figure[data-layout="band"] > .section-figure__copy + .section-figure__media {
+    aspect-ratio: auto;
+    align-self: stretch;
+    width: auto;
+    min-height: 12.5rem;
+    max-height: none;
+    margin: 0;
+    justify-self: stretch;
+  }
+
+  .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__media:not([data-layout="band"])::before,
+  .page-section.page-section--figure[data-layout="band"] > .section-figure__copy + .section-figure__media::before {
     display: none;
+  }
+
+  /* A circle mask would float a disc in the photo column. This card's photo
+     is the rounded rectangle that fills that column. */
+  .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__media--circle {
+    --photo-radius: var(--radius-xl, 34px);
+    aspect-ratio: auto;
+    width: auto;
+    justify-self: stretch;
+    align-self: stretch;
   }
 
   .page-section.page-section--figure[data-layout="collage"] {
@@ -625,39 +593,6 @@ main.page--lanes > .prose > .page-section--figure[data-layout="overlay"] > .sect
   max-width: none;
   margin-inline: 0;
   justify-content: flex-start;
-}
-
-/* Therapy's closing card stays beside Insurance. The greeting fills the
-   right of that half, and the ask sits with it, instead of a full-row
-   photograph or an empty stretch of glass under the button. Specificity
-   has to clear the bento's half-card display and column placement. */
-@media (min-width: 900px) {
-  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] {
-    display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-    align-items: stretch;
-    column-gap: clamp(1rem, 2vw, 1.5rem);
-  }
-
-  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] > * {
-    grid-column: auto;
-    max-width: none;
-  }
-
-  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] > .section-figure__copy {
-    align-self: center;
-  }
-
-  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] > .section-figure__media {
-    align-self: stretch;
-    width: auto;
-    min-height: 0;
-    margin: 0;
-  }
-
-  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] > .section-figure__media::before {
-    display: none;
-  }
 }
 
 /* This front-desk crop is dark and wide. A slight zoom lifts the shadows and

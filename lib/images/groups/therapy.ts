@@ -161,10 +161,9 @@ export const THERAPY: ImageGroup = {
           alt: "A Pathways Within practitioner shaking hands with a client in the waiting room",
           shape: "rounded",
           aspect: "landscape",
-          /* Half card beside Insurance. Copy on the left, the greeting on the right. */
+          /* Same closing card as the rest of the site: copy on the left, photo on the right. */
           side: "end",
           layout: "split",
-          half: true,
           focal: "46% 42%",
         },
         where: [
