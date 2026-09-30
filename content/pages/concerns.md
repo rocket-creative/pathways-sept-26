@@ -20,7 +20,9 @@ hero_image: "[NEEDS: image] A winding path illustration with concern names as st
 
 # What We Treat on Long Island
 
-Most people do not search for a therapy modality. They search for what hurts. This page lists the concerns we treat most often, what we do for each, and who you might work with. Every page below is written and reviewed by a licensed clinician and links to the services, providers, and offices that apply.
+Most people do not search for a therapy modality. They search for what hurts. This page lists the concerns we treat most often. Every page below links to the services and offices that apply. If you would rather start with a person, search the team by specialty.
+
+[CTA] Search providers by specialty -> /providers
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 

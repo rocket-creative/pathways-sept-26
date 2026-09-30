@@ -26,6 +26,10 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 
 [CTA] Contact Us -> /contact
 
+## How therapy starts here
+
+Tell us what is going on. A 360 Intake looks at your mind, your body, and your daily life, then matches you with a therapist whose training fits, at an office near you or by video. [Contact Us](/contact).
+
 ## Therapy for who you are
 
 - [Individual therapy](/therapy/individual-therapy): one on one counseling for adults, the foundation of most care plans.
@@ -37,35 +41,9 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 - [Veterans and first responders](/therapy/veterans-first-responders): clinicians trained for repeated exposure and the culture that comes with the job.
 - [Bariatric surgery support](/therapy/bariatric-surgery-support): pre op psychological evaluations and post op support.
 
-## Therapy for what happened
+People also come to therapy here for [anxiety](/concerns/anxiety), [depression](/concerns/depression), [trauma and PTSD](/concerns/ptsd), [ADHD](/concerns/adhd), [OCD](/concerns/ocd), [bipolar disorder](/concerns/bipolar-disorder), [grief](/concerns/grief-and-loss), [relationship issues](/concerns/relationship-issues), [postpartum and perinatal concerns](/concerns/postpartum-and-perinatal), [stress and burnout](/concerns/stress-and-burnout), [life transitions](/concerns/life-transitions), [self esteem](/concerns/self-esteem), [substance use](/concerns/substance-use), [chronic pain and illness](/concerns/chronic-pain-and-illness), and [LGBTQIA+ affirming care](/concerns/lgbtqia-affirming-therapy). See [all concerns](/concerns).
 
-- [Trauma therapy](/therapy/trauma-therapy): the umbrella for our trauma work.
-- [EMDR](/therapy/emdr): reprocess stuck memories without retelling every detail.
-- [IFS therapy](/therapy/ifs): Internal Family Systems, a parts based approach for trauma and inner conflict.
-- [Somatic therapy](/therapy/somatic-therapy): work with what the body holds.
-- [Grief therapy](/therapy/grief-therapy): support after loss of any kind.
-- [Hypnotherapy](/therapy/hypnotherapy): guided focus as part of a treatment plan.
-- [PCIT](/therapy/pcit): Parent Child Interaction Therapy for young children and their caregivers.
-
-## Beyond therapy
-
-- [Coaching](/coaching): performance and wellness coaching, on its own or with therapy.
-- [Medication management](/medication-management): a psychiatric nurse practitioner who works alongside your therapist.
-- [Wellness](/wellness): massage, acupuncture, cupping, and energy work for the physical side of stress.
-
-## What we treat
-
-[Anxiety](/concerns/anxiety), [depression](/concerns/depression), [trauma and PTSD](/concerns/ptsd), [ADHD](/concerns/adhd), [OCD](/concerns/ocd), [bipolar disorder](/concerns/bipolar-disorder), [grief](/concerns/grief-and-loss), [relationship issues](/concerns/relationship-issues), [postpartum and perinatal concerns](/concerns/postpartum-and-perinatal), [stress and burnout](/concerns/stress-and-burnout), [life transitions](/concerns/life-transitions), [self esteem](/concerns/self-esteem), [substance use](/concerns/substance-use), [chronic pain and illness](/concerns/chronic-pain-and-illness), and [LGBTQIA+ affirming care](/concerns/lgbtqia-affirming-therapy). See [all concerns](/concerns).
-
-## How therapy starts here
-
-You contact the Welcome Team. They schedule a 360 intake, a conversation that covers your mind, your body, and your daily life. From that, the team matches you with a therapist whose training fits what you need, at the office you chose or by telehealth. If medication or wellness care would help, it is added to the same plan. [Contact Us](/contact).
-
-## Tia Baumohl
-
-**Certified Coach, Energy Medicine Practitioner.** Tia helps people move through change with more clarity, connection, and confidence. She spent more than a decade supporting mothers and their partners through pregnancy and labor, and for the past five years has added energy medicine and coaching. Her credentials are Certified Coach and Energy Medicine Practitioner.
-
-[PROVIDER CARDS: tia-baumohl]
+Ways of working include [trauma therapy](/therapy/trauma-therapy), [EMDR](/therapy/emdr), [IFS](/therapy/ifs), [somatic therapy](/therapy/somatic-therapy), [grief therapy](/therapy/grief-therapy), [hypnotherapy](/therapy/hypnotherapy), and [PCIT](/therapy/pcit).
 
 ## Our clinicians
 
@@ -75,11 +53,11 @@ Clinicians are licensed or practicing under supervision toward licensure in New 
 
 ## Where
 
-In person at [Rockville Centre](/locations/rockville-centre), [Garden City](/locations/garden-city), [Massapequa](/locations/massapequa), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson). By [telehealth](/telehealth) in New York when a video visit is available.
+In person at [Rockville Centre](/locations/rockville-centre), [Garden City](/locations/garden-city), [Massapequa](/locations/massapequa), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson). By [telehealth](/telehealth) in New York when a video visit is available. [All offices](/locations).
 
 ## Insurance
 
-We work with most major plans. Coverage varies by provider, service, and plan, and the Welcome Team verifies benefits after your intake. [Insurance and fees](/insurance-and-fees).
+Many of our therapists work with major plans, including Aetna, Cigna, Optum, UnitedHealthcare, Oxford, Oscar, 1199SEIU, Medicare, and Northwell Direct. What is covered depends on your plan and the service. We can help you understand your benefits before care begins. [Insurance and fees](/insurance-and-fees).
 
 ## Take the next step
 

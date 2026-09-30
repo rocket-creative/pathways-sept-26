@@ -124,6 +124,8 @@ export const HOME_ABOUT: ImageGroup = {
     { id: "ha-hand-on-water", file: "360-degree-wellness/yoann-boyer-i14h2xyPr18-unsplash.jpg" },
     // Gypsy, one of the two therapy dogs (596x868; small, but the real dog).
     { id: "ha-gypsy-therapy-dog", file: "clinicians/Gypsy+Therapy+Dog+on+Long+Island.jpg", square: "top" },
+    { id: "ha-ksusha-domino", file: "approved/headshots/ksusha-cascio.jpg" },
+    { id: "ha-tia-baumohl", file: "approved/headshots/tia-baumohl.jpg" },
     // /providers/rachel-lessard also uses th-session-hands (therapy.ts) and
     // cw-labyrinth-beach (concerns-wellness.ts); ids resolve across groups.
   ],
@@ -274,7 +276,7 @@ export const HOME_ABOUT: ImageGroup = {
     },
 
     "/providers": {
-      hero: { asset: "ha-ap26-camp-five", alt: "A group of Pathways Within practitioners and clients smiling together", focal: "center" },
+      hero: { asset: "th-ap26-green-vest", alt: "A therapist and client in conversation on blue sofas during a session", focal: "center" },
       sections: {
         "pathways-within-wisdom-and-wellness-collaborative-specialists": {
           asset: "ha-ap26-camp-three",
@@ -297,13 +299,25 @@ export const HOME_ABOUT: ImageGroup = {
           side: "end",
           focal: "center",
         },
-        "our-therapy-dogs": {
-          asset: "ha-gypsy-therapy-dog",
-          alt: "Gypsy, a curly-haired therapy dog, sitting on a rug",
-          shape: "circle",
-          side: "start",
-          focal: "top",
-        },
+        "our-therapy-dogs": [
+          {
+            asset: "ha-ksusha-domino",
+            alt: "Ksusha Cascio seated with Domino, a therapy dog, beside her",
+            shape: "rounded",
+            aspect: "portrait",
+            side: "end",
+            layout: "feature",
+            focal: "40% 62%",
+          },
+          {
+            asset: "ha-gypsy-therapy-dog",
+            alt: "Gypsy, a curly-haired therapy dog, sitting on a rug",
+            shape: "rounded",
+            aspect: "portrait",
+            layout: "band",
+            focal: "top",
+          },
+        ],
         "take-the-next-step": {
           asset: "ha-ap-massage-room",
           alt: "A calm massage and acupuncture room with a beach mural, sea-turtle chair, and draped treatment table",

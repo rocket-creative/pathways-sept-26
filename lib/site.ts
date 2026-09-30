@@ -9,7 +9,7 @@
 export const SITE_ORIGIN = "https://pathwayswithinwellness.com";
 export const SITE_PHONE = "(631) 371-3825";
 export const SITE_PHONE_HREF = "tel:+16313713825";
-/** Body copy texts this number. The header and footer stay a phone call. */
+/** The published number opens a text thread, including in the header and footer. */
 export const SITE_PHONE_SMS = "sms:+16313713825";
 export const WELCOME_EMAIL = "Welcome@pathwayswithin.com";
 

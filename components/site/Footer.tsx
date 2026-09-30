@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE_PHONE, SITE_PHONE_HREF, WELCOME_EMAIL, getLocations } from "@/lib/content";
+import { SITE_PHONE, SITE_PHONE_SMS, WELCOME_EMAIL, getLocations } from "@/lib/content";
 import Needs from "./Needs";
 import "./site-chrome.css";
 
@@ -9,6 +9,7 @@ const TAGLINE = "Healing is not a straight line.";
 const CARE_LINKS = [
   { label: "Therapy", href: "/therapy" },
   { label: "Wellness", href: "/wellness" },
+  { label: "Coaching", href: "/coaching" },
   { label: "Medication Management", href: "/medication-management" },
   { label: "Concerns", href: "/concerns" },
   { label: "Providers", href: "/providers" },
@@ -48,7 +49,7 @@ export default function Footer() {
           </Link>
           <p className="site-footer__tagline">{TAGLINE}</p>
           <p className="site-footer__contact">
-            <a href={SITE_PHONE_HREF}>{SITE_PHONE}</a>
+            <a href={SITE_PHONE_SMS}><strong>{SITE_PHONE}</strong></a>
             <a href={`mailto:${WELCOME_EMAIL}`}>{WELCOME_EMAIL}</a>
           </p>
         </div>

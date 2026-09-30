@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-28T21:31:50.837Z",
+  "builtAt": "2026-09-30T01:39:44.509Z",
   "photos": {
     "cw-ap-acupuncture-session": {
       "id": "cw-ap-acupuncture-session",
@@ -2572,6 +2572,39 @@
         }
       ]
     },
+    "ha-ksusha-domino": {
+      "id": "ha-ksusha-domino",
+      "width": 2000,
+      "height": 3000,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 960,
+          "src": "/images/photos/ha-ksusha-domino-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1440,
+          "src": "/images/photos/ha-ksusha-domino-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 1920,
+          "src": "/images/photos/ha-ksusha-domino-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2400,
+          "src": "/images/photos/ha-ksusha-domino-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 3000,
+          "src": "/images/photos/ha-ksusha-domino-2000.webp"
+        }
+      ]
+    },
     "ha-path-to-the-sea": {
       "id": "ha-path-to-the-sea",
       "width": 2000,
@@ -2686,6 +2719,39 @@
           "width": 1600,
           "height": 1600,
           "src": "/images/photos/ha-team-tall-windows-1600.webp"
+        }
+      ]
+    },
+    "ha-tia-baumohl": {
+      "id": "ha-tia-baumohl",
+      "width": 2000,
+      "height": 3000,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 960,
+          "src": "/images/photos/ha-tia-baumohl-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1440,
+          "src": "/images/photos/ha-tia-baumohl-960.webp"
+        },
+        {
+          "width": 1280,
+          "height": 1920,
+          "src": "/images/photos/ha-tia-baumohl-1280.webp"
+        },
+        {
+          "width": 1600,
+          "height": 2400,
+          "src": "/images/photos/ha-tia-baumohl-1600.webp"
+        },
+        {
+          "width": 2000,
+          "height": 3000,
+          "src": "/images/photos/ha-tia-baumohl-2000.webp"
         }
       ]
     },

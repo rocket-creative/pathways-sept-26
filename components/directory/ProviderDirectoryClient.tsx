@@ -14,7 +14,7 @@ import type { ProviderCardData } from "./types";
 
 /** Same controls as the LifeStance results finder, named for this practice. */
 const PRIMARY: { key: FacetKey; label: string; needs?: string }[] = [
-  { key: "locations", label: "Cities", needs: "assign providers to offices in the sheet" },
+  { key: "locations", label: "Location", needs: "assign providers to offices in the sheet" },
   { key: "pillars", label: "Types of Care" },
   { key: "specialties", label: "Areas of Focus" },
 ];

@@ -87,15 +87,6 @@ export const PRACTICE: ImageGroup = {
         focal: "38% 32%",
       },
       sections: {
-        "our-offices": {
-          asset: "pr-ap-desk-greeting",
-          alt: "A staff member greets a seated client in a coastal-themed waiting area at a Pathways Within office",
-          shape: "rounded",
-          aspect: "landscape",
-          side: "end",
-          layout: "band",
-          focal: "42% 28%",
-        },
         telehealth: {
           asset: "pr-ap-gc-flower-wall",
           alt: "A dark leather sofa against a white flower wall in a Pathways Within office waiting area",

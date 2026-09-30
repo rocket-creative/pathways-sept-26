@@ -20,23 +20,17 @@ hero_image: "[NEEDS: image] Map of Long Island showing the five Pathways Within 
 
 # Our Long Island Offices
 
-Pathways Within - Wisdom and Wellness Collaborative has five offices across Nassau and Suffolk County, plus telehealth for clients in New York when a video visit is available. The Welcome Team schedules the office. Services can include pop-up events, so this page does not assign a fixed menu to each building.
-
-You do not have to pick an office before you reach out. The Welcome Team asks where you live and work during your 360 intake and matches you with a provider at the office that fits. Many clients mix in person visits with video sessions. Read more at [Contact Us](/contact).
+Pathways Within has five offices across Nassau and Suffolk County, plus video visits in New York for therapy and medication management. You do not have to choose an office before you write to us.
 
 [CTA] Contact Us -> /contact
 
 ## Our offices
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+Each office below is the current one. Older suites in Garden City and Massapequa are closed.
 
-- [Rockville Centre](/locations/rockville-centre): 53 N Park Ave, Suite 302. Elevator to the 3rd floor. Wheelchair accessible.
-- [Garden City](/locations/garden-city): 647 Franklin Ave, Lower Level. Stairs. Not wheelchair accessible. The office across the street is closed.
-- [Massapequa](/locations/massapequa): 4160 Merrick Road, Suite 7. Stairs. Not wheelchair accessible. Suite 5 is closed.
-- [Smithtown](/locations/smithtown): 496 Smithtown Bypass, Suite 203. Elevator to the 2nd floor. Wheelchair accessible.
-- [Port Jefferson](/locations/port-jefferson): 1227 Main Street, Suite 101. First floor, with a ramp. Wheelchair accessible.
+[LOCATION STAGES: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
-If stairs are a barrier, tell the Welcome Team when you book. They will schedule you at Rockville Centre, Smithtown, or Port Jefferson, or match you with New York telehealth when a video visit fits.
+If stairs are a barrier, Rockville Centre, Smithtown, and Port Jefferson are step-free, and video visits are available in New York for therapy and medication management.
 
 
 ## Telehealth

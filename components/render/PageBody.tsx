@@ -9,6 +9,7 @@ import {
 } from "@/lib/images";
 import { getLocationCards } from "@/lib/locations";
 import LocationCards from "@/components/directory/LocationCards";
+import LocationShowcase from "@/components/directory/LocationShowcase";
 import ProviderCards, { selectProviders } from "@/components/directory/ProviderCards";
 import ProviderDirectory from "@/components/directory/ProviderDirectory";
 import ProviderPeers from "@/components/directory/ProviderPeers";
@@ -293,11 +294,9 @@ function splitAtCardGrid(blocks: Block[]): CardGridSplit | null {
 }
 
 function CardGrid({ block, fill }: { block: CardGridBlock; fill: boolean }) {
-  return block.kind === "providerCards" ? (
-    <ProviderCards filter={block.filter} fill={fill} />
-  ) : (
-    <LocationCards slugs={block.slugs} fill={fill} />
-  );
+  if (block.kind === "providerCards") return <ProviderCards filter={block.filter} fill={fill} />;
+  if (block.visual) return <LocationShowcase slugs={block.slugs} />;
+  return <LocationCards slugs={block.slugs} fill={fill} />;
 }
 
 function CardSection({
@@ -470,7 +469,7 @@ function RenderBlock({ block, ctx }: { block: Block; ctx: RenderContext }) {
     case "providerCards":
       return <ProviderCards filter={block.filter} />;
     case "locationCards":
-      return <LocationCards slugs={block.slugs} />;
+      return block.visual ? <LocationShowcase slugs={block.slugs} /> : <LocationCards slugs={block.slugs} />;
     case "image":
       return <ContentImage block={block} ctx={ctx} />;
     case "needs":

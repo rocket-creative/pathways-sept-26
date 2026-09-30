@@ -28,7 +28,15 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 
 ## Tiffany Roberts
 
-**PMHNP, MSN, BSN, RN-BC.** Tiffany Roberts is the psychiatric nurse practitioner at Pathways Within. She has spent more than 20 years caring for people in hospitals, outpatient care, and correctional and shelter settings. She sees adolescents ages 10 and up and adults, in person at our Nassau offices and by telehealth in New York. Medication, when it is part of care, sits inside a larger plan.
+**PMHNP, MSN, BSN, RN-BC.** Psychiatric Mental Health Nurse Practitioner at Pathways Within.
+
+Tiffany has spent more than 20 years caring for people in almost every kind of circumstance, from hospital patients and outpatient care to individuals in the correctional and shelter systems. One thing has stayed with her: you cannot understand someone's mental health by looking only at their symptoms.
+
+As a psychiatric nurse practitioner, Tiffany works with adolescents and adults who want more than a quick prescription and a return visit. Medication can be an important part of treatment, and she also helps people build the changes, skills, and support that make lasting improvement possible.
+
+- More than 20 years of nursing experience across hospital, outpatient, correctional, and psychiatric settings
+- Serves adolescents ages 10 and up, and adults
+- A whole person approach that brings medication together with lifestyle changes and coping skills
 
 [PROVIDER CARDS: tiffany-roberts]
 
@@ -75,7 +83,7 @@ Whether medication becomes a short term support during a difficult season or par
 
 ## Where it is offered
 
-Medication management is available in person at our Nassau offices and by telehealth when you are in New York and a video visit is available. The Welcome Team confirms the office and whether video prescribing applies to you.
+Medication management is in person at [Rockville Centre](/locations/rockville-centre), [Garden City](/locations/garden-city), [Massapequa](/locations/massapequa), and [Smithtown](/locations/smithtown), and by video when you are in New York. [All offices](/locations).
 
 ## Who provides it
 

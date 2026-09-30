@@ -28,27 +28,17 @@ This directory lists the therapists, wellness providers, and specialized care pr
 
 Search by name, concern, or office. Therapy, Wellness, and Specialized Care are the three types of care.
 
-Rachel Lessard is the founder. Her page is separate from this directory.
-
 [PROVIDER DIRECTORY]
-
-## Leadership
-
-- [Rachel Lessard, LCSW-R](/providers/rachel-lessard), Founder and Licensed Clinical Social Worker
-- [Ksusha Cascio, LCSW](/providers/ksusha-cascio), Chief Operating Officer
-- [Joe Bush, LCSW](/providers/joe-bush), Clinical Director, Nassau
-- [Lee Wasser, LMHC-D](/providers/lee-wasser), Clinical Director, Suffolk
-- [Christine Cervo, LMT](/providers/christine-cervo), Wellness leadership
-
-Supervisors Kaitlyn Kelly, LMHC, Laura DeSilva, LMHC, and Samantha Juravich, LCSW support the clinical team and see clients themselves.
 
 ## The Welcome Team
 
-Gloria Saladino, Front Desk Manager, leads the Welcome and admin team. Gloria makes sure every client's experience is welcoming and supportive, from your first call through scheduling and benefits verification. The Welcome Team is your point of contact at every step, so you never have to chase down answers on your own.
+Gloria Saladino, Front Desk Manager, leads the Welcome Team. She is there from your first call through scheduling and questions about benefits. The team is growing, and this is where you will meet them.
+
+[PROVIDER CARDS: gloria-saladino]
 
 ## Our therapy dogs
 
-Two therapy dogs are part of the team. Domino brings a calm presence and gentle eyes to every client he meets, resting quietly during sessions or offering a paw in solidarity. Gypsy Sassafras, born on a dairy farm in upstate New York, pops up during some video sessions and greets in person clients with a belly rub request and a happy dance. Both dogs remind us of the healing power of presence and patience. [NEEDS: confirm which offices and clinicians the dogs work with]
+Domino sits with Ksusha Cascio and stays in the frame: a calm presence during sessions, or a paw when you want one. Gypsy Sassafras sometimes joins a video visit and greets people in the office. Both are part of the team.
 
 ## Take the next step
 

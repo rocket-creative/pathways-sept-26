@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] A coach in conversation with a client at a Pathways 
 
 # Performance and Wellness Coaching on Long Island
 
-Performance and Wellness Coaching at Pathways Within is one on one support for people ready to better understand themselves, move through change, and create lasting growth. Coaching may be used on its own or alongside therapy and other Pathways Within services, in person or by telehealth.
+Performance and Wellness Coaching at Pathways Within is one on one support for people ready to understand themselves, move through change, and create lasting growth. It can stand on its own or sit beside therapy. It is not therapy, and it does not diagnose or treat a mental health condition.
 
 If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
 
@@ -28,58 +28,52 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 
 ## What coaching is
 
-Sometimes you know something needs to shift. Maybe you keep repeating the same conversation, shutting down under pressure, saying yes when you mean no, or getting in your own way just as something good begins to happen.
+Sometimes you know something needs to shift. Maybe you keep repeating the same conversation, shutting down under pressure, saying yes when you mean no, or getting in your own way just as something good begins.
 
-Coaching is a structured, forward looking partnership focused on how you respond to your life today. It is not therapy. Coaching does not diagnose or treat a mental health condition. Therapy may help you process your past and strengthen your emotional well being. Coaching focuses on applying those insights now, whether that is setting boundaries, handling relationships, building confidence, or trying a different way of responding.
-
-The work is warm, honest, and collaborative. Sessions help you notice recurring patterns, understand what may be driving them, and experiment with new ways of responding.
+Coaching is a forward looking partnership about how you respond to your life today. Therapy may help you process the past. Coaching focuses on using what you know now: boundaries, relationships, confidence, or a different way of responding. Sessions are warm, honest, and collaborative.
 
 ## Who it helps
 
-You do not need to have everything figured out before your first appointment. A willingness to grow is a good place to start. Coaching may be a good fit if you want to:
+You do not need to have everything figured out. Coaching may be a good fit if you want to:
 
 - Move through a [life or career transition](/concerns/life-transitions)
 - Improve communication and relationships
 - Understand recurring patterns
 - Build confidence and resilience
-- Strengthen emotional regulation
-- Address avoidance or self sabotage
-- Manage [stress and burnout](/concerns/stress-and-burnout) before they run the show
+- Manage [stress and burnout](/concerns/stress-and-burnout)
 - Feel more grounded and intentional
 
-Clients often report greater self awareness, more confidence, healthier communication, better stress management, stronger relationships, more intentional decision making, and a deeper connection with themselves. Progress is not measured by perfection. It is measured by becoming more aware, intentional, and aligned with the life you want to create.
+Progress is not perfection. It is becoming more aware, and more aligned with the life you want.
 
 ## What to expect in your first session at Pathways Within
 
-Every coaching relationship begins with a conversation. Your first session is a chance to talk about what is bringing you in, where you feel stuck, and what you would like to change. Together you identify meaningful goals and create an approach tailored to your needs.
+Your first session is a conversation about what is bringing you in, where you feel stuck, and what you would like to change. Together you name a few goals.
 
-From there, coaching becomes an active partnership. You may reflect on a recent experience, explore a recurring pattern, notice how stress shows up in your body, practice a different response, or try a new approach between sessions. The work may include clarifying goals and priorities, exploring thoughts and relationship patterns, recognizing physical and emotional responses, practicing new ways of communicating, building tools for everyday situations, and reviewing progress.
+From there, you might look at a recent experience, a pattern that keeps returning, or how stress shows up in your body, and try a different response between sessions. There is no script. You do not need to arrive with the answers.
 
-There is no script and no expectation that you arrive with all the answers. Your coach brings thoughtful questions, honest reflection, practical tools, and genuine curiosity. You bring your experiences, goals, and willingness to explore them.
+## Tia Baumohl
 
-## Coaching levels
+**Certified Coach, Energy Medicine Practitioner.**
 
-Pathways Within is building out more than one level of coaching so you can choose the depth and pace that fits. [NEEDS: coaching tiers and pricing from Rachel]
+Tia's work is rooted in helping people move through change with greater clarity, connection, and confidence. She began her career supporting mothers and their partners through pregnancy and labor, giving her more than a decade of experience guiding people through some of life's most significant moments.
 
-## How care works here
+Over the past five years, she has expanded that work through energy medicine and coaching, supporting individuals and couples as they work through challenging dynamics, strengthen communication, and uncover new possibilities. Her approach is warm, strategic, and whole person.
 
-At Pathways Within, we believe there is no one size fits all approach to wellness. Coaching is one part of our integrated model of care and may be used on its own or alongside [individual therapy](/therapy/individual-therapy), [medication management](/medication-management), [acupuncture](/wellness/acupuncture), and other wellness services.
+- Leads Performance and Wellness Coaching
+- Trained in somatic awareness and IFS-informed practice
+- Energy medicine practitioner (Reiki and Integrative Energy Therapy)
 
-Every new client starts with a 360 intake with our Welcome Team. The team learns what is bringing you in and helps you decide whether coaching, therapy, or another service is the best place to start. Sometimes the answer is one. Sometimes it is a combination. Read more at [Contact Us](/contact) or return to the [therapy hub](/therapy).
-
-## Where it is offered
-
-Coaching is available in person at our Long Island offices and by telehealth when you are in New York and a video visit is available. The Welcome Team confirms the office.
-
-## Who provides it
+Energy work with Tia is on the [wellness](/wellness) page. This page is her coaching practice.
 
 [PROVIDER CARDS: tia-baumohl]
 
-Coaching is provided by a certified coach on the Pathways Within team. The same practice also offers [Reiki and IET](/wellness/energy-work). Meet the team in the [provider directory](/providers).
+## Where it is offered
+
+Coaching is in person at our Long Island offices and by video when you are in New York. [Locations](/locations).
 
 ## Insurance and cost
 
-Coaching is not a medical or mental health service, so insurance does not typically cover it, and it is offered as self pay. [NEEDS: confirm coaching is self pay] The Welcome Team explains fees before your first session. See [insurance and fees](/insurance-and-fees).
+Coaching is not a medical or mental health service, so insurance usually does not cover it. It is self pay. Before your first session, we explain the fee so you can decide with a clear number in front of you. [Insurance and fees](/insurance-and-fees).
 
 ## Common questions
 

@@ -77,6 +77,9 @@ export default async function ContentPage({ params }: { params: Promise<RoutePar
 
   return (
     <>
+      {page.frontMatter.url === "/how-it-works" ? (
+        <meta httpEquiv="refresh" content="0; url=/contact" />
+      ) : null}
       <PageBackdrop />
       <SkipLink />
       <Header />

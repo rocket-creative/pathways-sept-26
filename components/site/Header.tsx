@@ -3,13 +3,14 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SITE_PHONE, SITE_PHONE_HREF } from "@/lib/site";
+import { SITE_PHONE, SITE_PHONE_SMS } from "@/lib/site";
 import "./site-chrome.css";
 
 /** Primary nav, in the order the design concept fixes it. */
 const PRIMARY_NAV = [
   { label: "Therapy", href: "/therapy" },
   { label: "Wellness", href: "/wellness" },
+  { label: "Coaching", href: "/coaching" },
   { label: "Medication Management", href: "/medication-management" },
   { label: "Concerns", href: "/concerns" },
   { label: "Providers", href: "/providers" },
@@ -79,10 +80,10 @@ export default function Header() {
           </nav>
 
           <div className="site-header__actions">
-            <a className="site-header__phone" href={SITE_PHONE_HREF}>
-              {SITE_PHONE}
+            <a className="site-header__phone" href={SITE_PHONE_SMS}>
+              <strong>{SITE_PHONE}</strong>
             </a>
-            <Link href="/contact" className="button">
+            <Link href="/contact#send-a-message" className="button">
               Contact Us
             </Link>
           </div>

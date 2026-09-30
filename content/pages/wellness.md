@@ -43,17 +43,17 @@ Every wellness visit begins with an intake. Your provider reviews your symptoms,
 
 ## Who provides it
 
-[PROVIDER CARDS: christine-cervo, danielle-ingenito, leonard-ma]
+Christine Cervo and Danielle Ingenito are licensed massage therapists. Leonard Ma is a licensed acupuncturist. Tia Baumohl offers energy work, including Reiki and Integrative Energy Therapy. Coaching with Tia lives on its own page. [Coaching](/coaching).
+
+[PROVIDER CARDS: christine-cervo, danielle-ingenito, leonard-ma, tia-baumohl]
 
 ## Where
 
-The Welcome Team schedules the office. Services can also run as pop-up events, so this page does not assign wellness to one building.
-
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+Massage, acupuncture, cupping, and energy work are in person at [Rockville Centre](/locations/rockville-centre), [Garden City](/locations/garden-city), and [Smithtown](/locations/smithtown).
 
 ## Insurance and cost
 
-The Welcome Team confirms whether a plan applies and quotes any fee. We do not post rates here. See [insurance and fees](/insurance-and-fees).
+The Welcome Team can help you understand whether your plan covers a wellness visit, and what you would pay, before care begins. [Insurance and fees](/insurance-and-fees).
 
 ## Common questions
 

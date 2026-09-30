@@ -83,7 +83,7 @@ export type Block =
   | { kind: "cta"; label: string; href: string }
   | { kind: "form"; variant: FormVariant }
   | { kind: "providerCards"; filter: ProviderCardFilter }
-  | { kind: "locationCards"; slugs: string[] }
+  | { kind: "locationCards"; slugs: string[]; visual?: boolean }
   | { kind: "image"; alt: string; src?: string }
   | { kind: "needs"; value: string }
   | { kind: "byline"; inline: InlineNode[] }
@@ -493,7 +493,13 @@ function parseChunk(text: string): Block {
 
   const cta = /^\[CTA\]\s*(.+?)\s*->\s*(\S+)$/.exec(text);
   if (cta) {
-    return { kind: "cta", label: cta[1], href: cta[2] };
+    let href = cta[2];
+    const label = cta[1].trim();
+    if (/^\/contact\/?$/.test(href) && /^contact us$/i.test(label)) {
+      href = "/contact#send-a-message";
+    }
+    if (/^tel:\+16313713825$/i.test(href)) href = SITE_PHONE_SMS;
+    return { kind: "cta", label, href };
   }
 
   const form = /^\[FORM:\s*(therapy|wellness)\s*\]$/i.exec(text);
@@ -506,11 +512,12 @@ function parseChunk(text: string): Block {
     return { kind: "providerCards", filter: parseProviderFilter(providerCards[1]) };
   }
 
-  const locationCards = /^\[LOCATION CARDS:\s*([^\]]+)\]$/i.exec(text);
+  const locationCards = /^\[LOCATION (CARDS|STAGES):\s*([^\]]+)\]$/i.exec(text);
   if (locationCards) {
     return {
       kind: "locationCards",
-      slugs: locationCards[1]
+      visual: locationCards[1].toUpperCase() === "STAGES",
+      slugs: locationCards[2]
         .split(",")
         .map((slug) => slug.trim())
         .filter((slug) => slug && !isNeeds(slug)),
