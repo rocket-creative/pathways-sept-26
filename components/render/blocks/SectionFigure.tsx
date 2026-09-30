@@ -33,19 +33,23 @@ export default function SectionFigure({
   shape = "rounded",
   aspect = "portrait",
   layout = "split",
+  half = false,
 }: {
   photo: ResolvedPhoto;
   shape?: SectionPhoto["shape"];
   aspect?: SectionPhoto["aspect"];
   layout?: SectionPhotoLayout;
+  /** Omit content-image so the bento leaves this card on half a row. */
+  half?: boolean;
 }) {
   const resolvedLayout = layout ?? "split";
   /* Bands are immersive landscapes; circles keep their mask when used as primary. */
   const resolvedAspect =
     shape === "circle" ? "square" : resolvedLayout === "band" || resolvedLayout === "collage" ? (aspect ?? "landscape") : aspect;
-  /* The collage wrapper carries content-image so the bento treats the grid as one figure. */
+  /* The collage wrapper carries content-image so the bento treats the grid as one figure.
+     A half card must not: that class is what promotes a section to the full row. */
   const frameClass =
-    resolvedLayout === "collage" || resolvedLayout === "columns"
+    half || resolvedLayout === "collage" || resolvedLayout === "columns"
       ? `section-figure__media section-figure__media--${shape}`
       : `content-image section-figure__media section-figure__media--${shape}`;
 

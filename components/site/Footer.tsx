@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { SITE_PHONE, SITE_PHONE_SMS, WELCOME_EMAIL, getLocations } from "@/lib/content";
-import Needs from "./Needs";
 import "./site-chrome.css";
 
 /** The client's brand line, taken from content/pages/home.md. Not ours to reword. */
@@ -32,9 +31,6 @@ const LEGAL_LINKS = [
   { label: "Terms of Use", href: "/terms-of-use" },
   { label: "Accessibility Statement", href: "/accessibility-statement" },
 ] as const;
-
-/** The client has not supplied handles yet, so each one stays a tracked gap. */
-const SOCIAL_NEEDS = ["Instagram URL", "Facebook URL", "LinkedIn URL"] as const;
 
 export default function Footer() {
   const locations = getLocations();
@@ -90,20 +86,6 @@ export default function Footer() {
                   {location.name.replace(/^Pathways Within\s+/, "")}
                 </Link>
                 <address>{location.addressLine}</address>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="site-footer__social">
-          {/* In production the markers are inert, so the label would head an empty list. */}
-          {process.env.NODE_ENV === "production" ? null : (
-            <p className="site-footer__label">Follow</p>
-          )}
-          <ul>
-            {SOCIAL_NEEDS.map((value) => (
-              <li key={value}>
-                <Needs value={value} />
               </li>
             ))}
           </ul>

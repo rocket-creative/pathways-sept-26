@@ -15,7 +15,7 @@ related_services: [/therapy/couples-therapy, /therapy/hypnotherapy, /therapy/tra
 related_concerns: [/concerns/anxiety, /concerns/depression, /concerns/ptsd]
 locations: [rockville-centre, telehealth]
 providers: [rachel-lessard]
-hero_image: "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50944/1786108513951-ZQJ9ZNVPO0FNO8NCA4QL/Rachel+Lessard.JPG Rachel Lessard, LCSW-R, founder of Pathways Within"
+hero_image: "https://pathwayswithinwellness.com/images/providers/rachel-lessard-640.webp Rachel Lessard, LCSW-R, founder of Pathways Within"
 ---
 
 # Rachel Lessard, LCSW-R
@@ -110,7 +110,7 @@ Or call (631) 371-3825.
       "honorificSuffix": "LCSW-R",
       "jobTitle": "Founder and Licensed Clinical Social Worker",
       "description": "Rachel Lessard, LCSW-R, is the founder of Pathways Within and a licensed clinical social worker who works with adults and couples on Long Island.",
-      "image": "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50944/1786108513951-ZQJ9ZNVPO0FNO8NCA4QL/Rachel+Lessard.JPG",
+      "image": "https://pathwayswithinwellness.com/images/providers/rachel-lessard-640.webp",
       "url": "https://pathwayswithinwellness.com/providers/rachel-lessard",
       "worksFor": {"@id": "https://pathwayswithinwellness.com/#org"},
       "hasCredential": [{"@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Licensed Clinical Social Worker, New York", "identifier": "[NEEDS: license number if the client wants it shown]"}],

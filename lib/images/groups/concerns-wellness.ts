@@ -388,6 +388,14 @@ export const CONCERNS_WELLNESS: ImageGroup = {
         focal: "center",
       },
       sections: {
+        "what-we-offer": {
+          asset: "cw-ap-acupuncture-session",
+          alt: "A licensed practitioner working with a client on a treatment table in a beach-themed Pathways Within room",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "start",
+          focal: "62% 40%",
+        },
         "why-wellness-lives-inside-a-mental-health-practice": {
           asset: "cw-ap-desk-orchids",
           alt: "A client talking with Pathways Within staff at the front desk beneath the practice logo",

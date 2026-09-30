@@ -21,6 +21,8 @@ export interface ProviderCardData {
    * registry has one for this provider. Wins over headshotUrl.
    */
   headshot?: { src: string; srcSet: string; width: number; height: number };
+  /** Full portrait for the welcome and admin strip. The card headshot stays square. */
+  portrait?: { src: string; srcSet: string; width: number; height: number };
   headshotUrl: string;
   initials: string;
   /** Admin rows have no profile page, so their card carries no link. */

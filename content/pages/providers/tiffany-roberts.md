@@ -15,7 +15,7 @@ related_services: [/medication-management]
 related_concerns: [/concerns/anxiety, /concerns/depression, /concerns/adhd, /concerns/bipolar-disorder]
 locations: [rockville-centre, garden-city, massapequa, smithtown, telehealth]
 providers: [tiffany-roberts]
-hero_image: "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50944/6d023149-3944-406a-be37-36307d2ff6b7/Tiffany+Roberts%2C+Nurse+Practitioner%2C+Med+Management.png Tiffany Roberts, PMHNP, psychiatric nurse practitioner at Pathways Within"
+hero_image: "https://pathwayswithinwellness.com/images/providers/tiffany-roberts-640.webp Tiffany Roberts, PMHNP, psychiatric nurse practitioner at Pathways Within"
 ---
 
 # Tiffany Roberts, PMHNP, MSN, BSN, RN-BC
@@ -103,7 +103,7 @@ Or call (631) 371-3825.
       "honorificSuffix": "PMHNP, MSN, BSN, RN-BC",
       "jobTitle": "Psychiatric Mental Health Nurse Practitioner",
       "description": "Tiffany Roberts, PMHNP, is the psychiatric nurse practitioner at Pathways Within, providing medication management for adolescents ages 10 and up and adults on Long Island.",
-      "image": "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50944/6d023149-3944-406a-be37-36307d2ff6b7/Tiffany+Roberts%2C+Nurse+Practitioner%2C+Med+Management.png",
+      "image": "https://pathwayswithinwellness.com/images/providers/tiffany-roberts-640.webp",
       "url": "https://pathwayswithinwellness.com/providers/tiffany-roberts",
       "worksFor": {"@id": "https://pathwayswithinwellness.com/#org"},
       "hasCredential": [

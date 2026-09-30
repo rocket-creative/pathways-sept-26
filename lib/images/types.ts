@@ -79,6 +79,11 @@ export interface SectionPhoto extends Photo {
    * entry needs `layout: "columns"`.
    */
   layout?: SectionPhotoLayout;
+  /**
+   * Keep the card on half a row beside its neighbour. The photograph fills
+   * that card instead of the content-image class, which would take the full row.
+   */
+  half?: boolean;
 }
 
 /**

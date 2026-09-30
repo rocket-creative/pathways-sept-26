@@ -193,6 +193,8 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   width: 100%;
   max-width: none;
   margin: 0;
+  /* Under a split figure, the grid still spans the card, not one column. */
+  grid-column: 1 / -1;
 }
 
 .section-collage .section-figure__media {
@@ -351,6 +353,68 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
 
 }
 
+/* A card grid that shares a figure spans the card, under the intro and the
+   photograph. In the copy column it was a third of the row, so four people
+   stacked in a sliver and the picture stretched to match them. */
+.page-section--figure[data-has-cards] > :is(.provider-cards, .location-cards, .card-grid__after) {
+  grid-column: 1 / -1;
+  margin-block-start: 0;
+}
+
+.page-section--figure[data-has-cards][data-card-count="1"] > :is(.provider-cards, .location-cards) {
+  max-width: 22rem;
+}
+
+@media (min-width: 700px) {
+  /* Two across until the card is wide enough for a full row. Three across
+     would leave the fourth person alone. */
+  .page-section--figure[data-has-cards] > :is(.provider-cards, .location-cards) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-section--figure[data-has-cards] > :is(.provider-cards, .location-cards) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .page-section--figure[data-has-cards][data-card-count="3"] > :is(.provider-cards, .location-cards) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .page-section--figure[data-has-cards][data-card-count="2"] > :is(.provider-cards, .location-cards) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-section--figure[data-has-cards][data-card-count="1"] > :is(.provider-cards, .location-cards) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+
+  /* The picture matches the intro, not the card stack. Stretching ignored
+     the crop and turned a landscape into a tall strip. */
+  .page-section--figure[data-has-cards] > .section-figure__media:not([data-layout="band"]) {
+    align-self: start;
+    aspect-ratio: 3 / 2;
+    height: auto;
+  }
+
+  .page-section--figure[data-has-cards] > .section-figure__media[data-aspect="portrait"]:not([data-layout="band"]) {
+    aspect-ratio: 4 / 5;
+  }
+
+  .page-section--figure[data-has-cards] > .section-figure__media[data-aspect="square"]:not([data-layout="band"]) {
+    aspect-ratio: 1;
+  }
+
+  .page-section--figure[data-has-cards] > .section-figure__media:not([data-layout="band"])::before {
+    content: none;
+    display: none;
+  }
+}
+
 /* Concern links stay in the copy column, two equal pills, one line each.
    The shared strip would otherwise switch to three or four columns and wrap. */
 .page-section--figure[data-section="what-people-come-to-us-for"] .cta--strip {
@@ -490,6 +554,49 @@ main.page--lanes > .prose > .page-section--figure[data-layout="overlay"] > .sect
 
 main.page--lanes > .prose > .page-section--figure[data-layout="overlay"][data-side="start"] > .section-figure__copy {
   justify-self: end;
+}
+
+/* A closing ask is only a heading, a button, and a phone line. Keep them
+   stacked against the panel's left edge; the shared CTA measure would
+   otherwise center a single button in the glass. */
+main.page--lanes > .prose > .page-section--figure[data-layout="overlay"] > .section-figure__copy .cta {
+  width: auto;
+  max-width: none;
+  margin-inline: 0;
+  justify-content: flex-start;
+}
+
+/* Therapy's closing card stays beside Insurance. The greeting fills the
+   right of that half, and the ask sits with it, instead of a full-row
+   photograph or an empty stretch of glass under the button. Specificity
+   has to clear the bento's half-card display and column placement. */
+@media (min-width: 900px) {
+  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    align-items: stretch;
+    column-gap: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] > * {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] > .section-figure__copy {
+    align-self: center;
+  }
+
+  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] > .section-figure__media {
+    align-self: stretch;
+    width: auto;
+    min-height: 0;
+    margin: 0;
+  }
+
+  main.page--lanes.page--lanes > .prose > .page-section.page-section--figure[data-section="take-the-next-step"] > .section-figure__media::before {
+    display: none;
+  }
 }
 
 /* This front-desk crop is dark and wide. A slight zoom lifts the shadows and

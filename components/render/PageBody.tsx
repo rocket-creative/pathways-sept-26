@@ -40,7 +40,8 @@ import "./photos.css";
  * A page's `hero` entry in the registry is not rendered; it only supplies the
  * og:image (lib/images ogImageFor). A section may register one photo or an
  * array: the first is primary (split / feature / band); further entries render
- * as full-width bands after it inside the same card.
+ * as full-width bands after it inside the same card, or as one collage grid
+ * when those entries use `layout: "collage"`.
  *
  * Everything below the article is server rendered and fully visible on load.
  * No accordion, no tab, no disclosure: the FAQ answers are in the DOM.
@@ -81,6 +82,8 @@ export default function PageBody({ page }: { page: Page }) {
         const figures = normalizeSectionPhotos(photos?.sections?.[section.heading.id]);
         const primary = figures[0];
         if (primary?.missing) {
+          const layout = primary.layout ?? "split";
+          const cards = hoistFigureCards(layout) ? figureCardFooter(section.blocks, ctx) : null;
           return (
             <section
               key={position}
@@ -88,24 +91,31 @@ export default function PageBody({ page }: { page: Page }) {
               aria-labelledby={section.heading.id}
               data-section={section.heading.id}
               data-side={primary.side ?? "end"}
-              data-layout={primary.layout ?? "split"}
+              data-layout={layout}
+              data-has-cards={cards ? "" : undefined}
+              data-card-count={cards ? cards.count : undefined}
             >
               <div className="section-figure__copy">
                 <Heading block={section.heading} ctx={ctx} />
-                {renderSectionBody(section.heading, section.blocks, ctx)}
+                {cards
+                  ? renderBlocks(cards.lead, ctx)
+                  : renderSectionBody(section.heading, section.blocks, ctx)}
               </div>
               <MissingPhoto
                 label={primary.missing}
                 shape={primary.shape}
                 aspect={primary.aspect}
-                layout={primary.layout ?? "split"}
+                layout={layout}
               />
+              {cards?.footer}
             </section>
           );
         }
         const resolvedPrimary = resolvePhoto(primary);
 
         if (primary && !resolvedPrimary) {
+          const layout = primary.layout ?? "split";
+          const cards = hoistFigureCards(layout) ? figureCardFooter(section.blocks, ctx) : null;
           return (
             <section
               key={position}
@@ -113,18 +123,23 @@ export default function PageBody({ page }: { page: Page }) {
               aria-labelledby={section.heading.id}
               data-section={section.heading.id}
               data-side={primary.side ?? "end"}
-              data-layout={primary.layout ?? "split"}
+              data-layout={layout}
+              data-has-cards={cards ? "" : undefined}
+              data-card-count={cards ? cards.count : undefined}
             >
               <div className="section-figure__copy">
                 <Heading block={section.heading} ctx={ctx} />
-                {renderSectionBody(section.heading, section.blocks, ctx)}
+                {cards
+                  ? renderBlocks(cards.lead, ctx)
+                  : renderSectionBody(section.heading, section.blocks, ctx)}
               </div>
               <MissingPhoto
                 label={primary.alt || "This photograph"}
                 shape={primary.shape}
                 aspect={primary.aspect}
-                layout={primary.layout ?? "split"}
+                layout={layout}
               />
+              {cards?.footer}
             </section>
           );
         }
@@ -189,31 +204,6 @@ export default function PageBody({ page }: { page: Page }) {
         }
 
         if (primary && resolvedPrimary && primary.layout === "collage") {
-          const cells = figures.flatMap((entry, index) => {
-            if (entry.missing || !resolvePhoto(entry)) {
-              return [
-                <MissingPhoto
-                  key={`collage-${index}`}
-                  label={entry.missing || entry.alt || "This photograph"}
-                  shape="rounded"
-                  aspect={entry.aspect ?? "landscape"}
-                  layout="collage"
-                />,
-              ];
-            }
-            const resolved = resolvePhoto(entry);
-            if (!resolved) return [];
-            return [
-              <SectionFigure
-                key={`collage-${index}`}
-                photo={resolved}
-                shape="rounded"
-                aspect={entry.aspect ?? "landscape"}
-                layout="collage"
-              />,
-            ];
-          });
-
           return (
             <section
               key={position}
@@ -226,17 +216,22 @@ export default function PageBody({ page }: { page: Page }) {
                 <Heading block={section.heading} ctx={ctx} />
                 {renderSectionBody(section.heading, section.blocks, ctx)}
               </div>
-              <div className="section-collage content-image">{cells}</div>
+              <div className="section-collage content-image">{collageCells(figures)}</div>
             </section>
           );
         }
 
         if (primary && resolvedPrimary) {
           const layout = primary.layout ?? "split";
-          const extras = figures.slice(1).flatMap((entry, index) => {
+          const cards = hoistFigureCards(layout) ? figureCardFooter(section.blocks, ctx) : null;
+          const rest = figures.slice(1);
+          const collageEntries = rest.filter((entry) => entry.layout === "collage");
+          const bandEntries = rest.filter((entry) => entry.layout !== "collage");
+          /* Extra entries are full-width bands inside the same section card,
+             unless they are marked collage, which stay a grid under the split. */
+          const bands = bandEntries.flatMap((entry, index) => {
             const resolved = resolvePhoto(entry);
             if (!resolved) return [];
-            /* Extra entries are full-width bands inside the same section card. */
             return [
               <SectionFigure
                 key={`band-${index}`}
@@ -247,6 +242,11 @@ export default function PageBody({ page }: { page: Page }) {
               />,
             ];
           });
+          const collage = collageEntries.length ? (
+            <div className="section-collage content-image" key="collage">
+              {collageCells(collageEntries)}
+            </div>
+          ) : null;
 
           return (
             <section
@@ -256,19 +256,26 @@ export default function PageBody({ page }: { page: Page }) {
               data-section={section.heading.id}
               data-side={primary.side ?? "end"}
               data-layout={layout}
-              data-has-bands={extras.length ? "" : undefined}
+              data-has-bands={bands.length || collage ? "" : undefined}
+              data-has-cards={cards ? "" : undefined}
+              data-card-count={cards ? cards.count : undefined}
             >
               <div className="section-figure__copy">
                 <Heading block={section.heading} ctx={ctx} />
-                {renderSectionBody(section.heading, section.blocks, ctx)}
+                {cards
+                  ? renderBlocks(cards.lead, ctx)
+                  : renderSectionBody(section.heading, section.blocks, ctx)}
               </div>
               <SectionFigure
                 photo={resolvedPrimary}
                 shape={primary.shape}
                 aspect={primary.aspect}
                 layout={layout}
+                half={primary.half}
               />
-              {extras}
+              {collage}
+              {bands}
+              {cards?.footer}
             </section>
           );
         }
@@ -317,6 +324,34 @@ export default function PageBody({ page }: { page: Page }) {
 function normalizeSectionPhotos(value: SectionPhotos | undefined): SectionPhoto[] {
   if (!value) return [];
   return Array.isArray(value) ? value : [value];
+}
+
+/** Collage cells for a section: rounded landscape frames, or a labeled gap. */
+function collageCells(entries: SectionPhoto[]) {
+  return entries.flatMap((entry, index) => {
+    if (entry.missing || !resolvePhoto(entry)) {
+      return [
+        <MissingPhoto
+          key={`collage-${index}`}
+          label={entry.missing || entry.alt || "This photograph"}
+          shape="rounded"
+          aspect={entry.aspect ?? "landscape"}
+          layout="collage"
+        />,
+      ];
+    }
+    const resolved = resolvePhoto(entry);
+    if (!resolved) return [];
+    return [
+      <SectionFigure
+        key={`collage-${index}`}
+        photo={resolved}
+        shape="rounded"
+        aspect={entry.aspect ?? "landscape"}
+        layout="collage"
+      />,
+    ];
+  });
 }
 
 interface Section {
@@ -422,6 +457,43 @@ function CardGrid({ block, fill }: { block: CardGridBlock; fill: boolean }) {
   if (block.kind === "providerCards") return <ProviderCards filter={block.filter} fill={fill} />;
   if (block.visual) return <LocationShowcase slugs={block.slugs} />;
   return <LocationCards slugs={block.slugs} fill={fill} />;
+}
+
+/**
+ * Overlay and cover photographs are the card. A grid dropped into that frame
+ * would be clipped. Split, feature, and band keep the cards as their own row.
+ */
+function hoistFigureCards(layout: string): boolean {
+  return layout !== "overlay" && layout !== "cover" && layout !== "collage" && layout !== "columns";
+}
+
+/**
+ * A figure section that also holds a card grid. The grid used to render
+ * inside the copy column, which crushed a team into the narrow half and
+ * stretched the photograph down the whole stack. The intro stays with the
+ * picture; the grid spans the card underneath. No fill tile: the section
+ * already has its photograph.
+ */
+function figureCardFooter(
+  blocks: Block[],
+  ctx: RenderContext,
+): { lead: Block[]; count: number; footer: ReactNode } | null {
+  const split = splitAtCardGrid(blocks);
+  if (!split) return null;
+
+  const copy = split.trailing.filter((block) => block.kind !== "needs");
+  if (!split.count && copy.length === 0) return null;
+
+  return {
+    lead: split.lead,
+    count: split.count,
+    footer: (
+      <>
+        {split.count ? <CardGrid block={split.grid} fill={false} /> : null}
+        {copy.length ? <div className="card-grid__after">{renderBlocks(copy, ctx)}</div> : null}
+      </>
+    ),
+  };
 }
 
 function CardSection({

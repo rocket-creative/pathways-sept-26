@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-30T21:14:11.169Z",
+  "builtAt": "2026-09-30T22:33:23.748Z",
   "photos": {
     "cw-ap-acupuncture-session": {
       "id": "cw-ap-acupuncture-session",
@@ -2539,6 +2539,19 @@
         }
       ]
     },
+    "ha-gloria-saladino": {
+      "id": "ha-gloria-saladino",
+      "width": 640,
+      "height": 961,
+      "crop": "full",
+      "tiers": [
+        {
+          "width": 640,
+          "height": 961,
+          "src": "/images/photos/ha-gloria-saladino-640.webp"
+        }
+      ]
+    },
     "ha-gypsy-therapy-dog": {
       "id": "ha-gypsy-therapy-dog",
       "width": 596,
@@ -2738,32 +2751,32 @@
     "ha-tia-baumohl": {
       "id": "ha-tia-baumohl",
       "width": 2000,
-      "height": 3000,
+      "height": 2000,
       "crop": "full",
       "tiers": [
         {
           "width": 640,
-          "height": 960,
+          "height": 640,
           "src": "/images/photos/ha-tia-baumohl-640.webp"
         },
         {
           "width": 960,
-          "height": 1440,
+          "height": 960,
           "src": "/images/photos/ha-tia-baumohl-960.webp"
         },
         {
           "width": 1280,
-          "height": 1920,
+          "height": 1280,
           "src": "/images/photos/ha-tia-baumohl-1280.webp"
         },
         {
           "width": 1600,
-          "height": 2400,
+          "height": 1600,
           "src": "/images/photos/ha-tia-baumohl-1600.webp"
         },
         {
           "width": 2000,
-          "height": 3000,
+          "height": 2000,
           "src": "/images/photos/ha-tia-baumohl-2000.webp"
         }
       ]
@@ -6400,7 +6413,7 @@
       "id": "anna-ostrow",
       "width": 640,
       "height": 640,
-      "crop": "face-0.426-0.266-0.199",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6436,7 +6449,7 @@
       "id": "carly-sandstrom",
       "width": 640,
       "height": 640,
-      "crop": "face-0.478-0.347-0.180",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6490,7 +6503,7 @@
       "id": "christine-cervo",
       "width": 640,
       "height": 640,
-      "crop": "face-0.468-0.349-0.177",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6506,14 +6519,19 @@
     },
     "colm-ashe": {
       "id": "colm-ashe",
-      "width": 320,
-      "height": 320,
-      "crop": "face-0.467-0.436-0.370",
+      "width": 640,
+      "height": 640,
+      "crop": "face-0.500-0.320-0.450",
       "tiers": [
         {
           "width": 320,
           "height": 320,
           "src": "/images/providers/colm-ashe-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/colm-ashe-640.webp"
         }
       ]
     },
@@ -6521,7 +6539,7 @@
       "id": "danielle-ingenito",
       "width": 640,
       "height": 640,
-      "crop": "face-0.500-0.561-0.558",
+      "crop": "face-0.500-0.320-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6557,7 +6575,7 @@
       "id": "gloria-saladino",
       "width": 640,
       "height": 640,
-      "crop": "face-0.556-0.284-0.191",
+      "crop": "face-0.500-0.300-0.220",
       "tiers": [
         {
           "width": 320,
@@ -6575,7 +6593,7 @@
       "id": "jen-brooks",
       "width": 640,
       "height": 640,
-      "crop": "face-0.483-0.300-0.205",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6593,7 +6611,7 @@
       "id": "joe-bush",
       "width": 640,
       "height": 640,
-      "crop": "face-0.521-0.301-0.215",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6611,7 +6629,7 @@
       "id": "juliette-squicciarini",
       "width": 640,
       "height": 640,
-      "crop": "face-0.457-0.328-0.210",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6629,7 +6647,7 @@
       "id": "kaitlyn-kelly",
       "width": 640,
       "height": 640,
-      "crop": "face-0.485-0.261-0.207",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6647,7 +6665,7 @@
       "id": "kalovna-edmond",
       "width": 640,
       "height": 640,
-      "crop": "face-0.525-0.356-0.228",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6706,7 +6724,7 @@
       "id": "ksusha-cascio",
       "width": 640,
       "height": 640,
-      "crop": "face-0.546-0.238-0.125",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6724,7 +6742,7 @@
       "id": "laura-desilva",
       "width": 640,
       "height": 640,
-      "crop": "face-0.477-0.300-0.208",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6760,7 +6778,7 @@
       "id": "lee-wasser",
       "width": 640,
       "height": 640,
-      "crop": "face-0.410-0.230-0.175",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6814,7 +6832,7 @@
       "id": "maddy-zambri",
       "width": 640,
       "height": 640,
-      "crop": "face-0.506-0.303-0.203",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6855,7 +6873,7 @@
       "id": "mariah-simone",
       "width": 640,
       "height": 640,
-      "crop": "face-0.442-0.323-0.175",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6873,7 +6891,7 @@
       "id": "nicole-duffy",
       "width": 640,
       "height": 640,
-      "crop": "face-0.558-0.302-0.225",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6925,9 +6943,9 @@
     },
     "samantha-juravich": {
       "id": "samantha-juravich",
-      "width": 296,
-      "height": 296,
-      "crop": "face-0.555-0.336-0.435",
+      "width": 640,
+      "height": 640,
+      "crop": "face-0.500-0.320-0.450",
       "tiers": [
         {
           "width": 320,
@@ -6935,9 +6953,9 @@
           "src": "/images/providers/samantha-juravich-320.webp"
         },
         {
-          "width": 296,
-          "height": 296,
-          "src": "/images/providers/samantha-juravich-296.webp"
+          "width": 640,
+          "height": 640,
+          "src": "/images/providers/samantha-juravich-640.webp"
         }
       ]
     },
@@ -6968,7 +6986,7 @@
       "id": "tia-baumohl",
       "width": 640,
       "height": 640,
-      "crop": "face-0.492-0.304-0.196",
+      "crop": "face-0.500-0.420-0.450",
       "tiers": [
         {
           "width": 320,

@@ -575,9 +575,27 @@ main.page--lanes .provider-card.provider-card--finder {
 }
 
 .prose .provider-directory__admin ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.provider-directory__admin-person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.provider-directory__admin-photo {
+  width: 6.75rem;
+  height: auto;
+  border-radius: 1.15rem;
+  object-fit: cover;
+  object-position: center top;
+  flex: none;
 }
 
 .provider-directory__admin-name {

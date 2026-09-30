@@ -109,6 +109,14 @@ export const THERAPY: ImageGroup = {
       sections: {
         "therapy-for-who-you-are": [
           {
+            asset: "th-ap26-glasses",
+            alt: "A couple talking together on a blue sofa during a session",
+            shape: "circle",
+            side: "end",
+            layout: "split",
+            focal: "50% 42%",
+          },
+          {
             asset: "th-ap26-green-quiet",
             alt: "A therapist in a green vest listens during a session",
             layout: "collage",
@@ -130,8 +138,8 @@ export const THERAPY: ImageGroup = {
             focal: "center",
           },
           {
-            asset: "th-ap26-glasses",
-            alt: "A couple talking together on a blue sofa during a session",
+            asset: "th-ap26-couple",
+            alt: "A couple talking with a therapist in a Pathways Within office",
             layout: "collage",
             aspect: "landscape",
             focal: "center",
@@ -145,6 +153,17 @@ export const THERAPY: ImageGroup = {
           side: "start",
           layout: "overlay",
           focal: "58% 68%",
+        },
+        "take-the-next-step": {
+          asset: "th-ap-waiting-greeting",
+          alt: "A Pathways Within practitioner shaking hands with a client in the waiting room",
+          shape: "rounded",
+          aspect: "landscape",
+          /* Half card beside Insurance. Copy on the left, the greeting on the right. */
+          side: "end",
+          layout: "split",
+          half: true,
+          focal: "46% 42%",
         },
         where: [
           {

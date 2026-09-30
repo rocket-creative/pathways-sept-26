@@ -145,11 +145,6 @@ export default function ProviderDirectoryClient({
 
   const filtered = !isEmptySelection(selection);
 
-  // A facet with nothing to choose from is disabled; its [NEEDS] note goes
-  // under the whole row rather than inside the field, so the six fields stay
-  // the same height and line up.
-  const notes = FACETS.filter((facet) => options[facet.key].length === 0 && facet.needs);
-
   return (
     <section className="provider-directory" data-directory-ready={ready ? "true" : "false"}>
       <form
@@ -226,13 +221,6 @@ export default function ProviderDirectoryClient({
           </div>
         ) : null}
 
-        {notes.length ? (
-          <p className="provider-directory__notes">
-            {notes.map((facet) => (
-              <Needs key={facet.key} value={facet.needs!} />
-            ))}
-          </p>
-        ) : null}
       </form>
 
       <p className="provider-directory__status" role="status" aria-live="polite">
@@ -254,12 +242,31 @@ export default function ProviderDirectoryClient({
         <div className="provider-directory__admin">
           <h3 id="welcome-and-admin-team">Welcome and admin team</h3>
           <ul>
-            {admin.map((person) => (
-              <li key={person.slug}>
-                <span className="provider-directory__admin-name">{person.displayName}</span>
-                {person.titleLine ? <span>, {person.titleLine}</span> : null}
-              </li>
-            ))}
+            {admin.map((person) => {
+              const photo = person.portrait ?? person.headshot;
+              return (
+                <li key={person.slug} className="provider-directory__admin-person">
+                  {photo ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      className="provider-directory__admin-photo"
+                      src={photo.src}
+                      srcSet={photo.srcSet}
+                      sizes="7rem"
+                      alt=""
+                      width={photo.width}
+                      height={photo.height}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  ) : null}
+                  <span>
+                    <span className="provider-directory__admin-name">{person.displayName}</span>
+                    {person.titleLine ? <span>, {person.titleLine}</span> : null}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       ) : null}
@@ -328,10 +335,3 @@ function FilterChip({
   );
 }
 
-/** Same contract as the renderer's marker: visible in dev, inert in production. */
-function Needs({ value }: { value: string }) {
-  if (process.env.NODE_ENV === "production") {
-    return <span data-needs={value} hidden />;
-  }
-  return <mark className="needs">[NEEDS: {value}]</mark>;
-}

@@ -1,11 +1,8 @@
 /**
- * Gaps the client still owes, in chrome rather than page copy: visible in dev,
- * inert in production. Same convention as the renderer's marker so one grep of
- * `data-needs` in a production build finds every outstanding item.
+ * Gaps in the site chrome. The wording stays in content/data/needs-list.md.
+ * It is not rendered.
  */
 export default function Needs({ value }: { value: string }) {
-  if (process.env.NODE_ENV === "production") {
-    return <span data-needs={value} hidden />;
-  }
-  return <mark className="needs">[NEEDS: {value}]</mark>;
+  void value;
+  return null;
 }

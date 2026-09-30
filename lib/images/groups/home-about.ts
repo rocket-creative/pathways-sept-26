@@ -126,6 +126,7 @@ export const HOME_ABOUT: ImageGroup = {
     { id: "ha-domino-therapy-dog", file: "clinicians/Domino+Therapy+Dog+on+Long+Island.jpg" },
     { id: "ha-gypsy-therapy-dog", file: "clinicians/Gypsy+Therapy+Dog+on+Long+Island.jpg" },
     { id: "ha-tia-baumohl", file: "approved/headshots/tia-baumohl.jpg" },
+    { id: "ha-gloria-saladino", file: "approved/headshots/gloria-saladino.jpg" },
     // /providers/rachel-lessard also uses th-session-hands (therapy.ts) and
     // cw-labyrinth-beach (concerns-wellness.ts); ids resolve across groups.
   ],
@@ -304,13 +305,13 @@ export const HOME_ABOUT: ImageGroup = {
           focal: "center",
         },
         "the-welcome-team": {
-          asset: "missing-photo",
-          alt: "",
-          missing: "Smithtown front-desk photo of Gloria with Joanne",
+          asset: "ha-ap-front-desk-team",
+          alt: "Gloria Saladino at the Smithtown front desk with a colleague and a visitor",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "feature",
+          focal: "center",
         },
         "meet-our-therapy-dogs": [
           {
@@ -333,7 +334,8 @@ export const HOME_ABOUT: ImageGroup = {
         "take-the-next-step": {
           asset: "ha-ap-massage-room",
           alt: "A calm massage and acupuncture room with a beach mural, sea-turtle chair, and draped treatment table",
-          shape: "circle",
+          shape: "rounded",
+          aspect: "landscape",
           side: "end",
           focal: "center",
         },

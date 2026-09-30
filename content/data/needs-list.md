@@ -1,9 +1,9 @@
 # NEEDS list: every gap the client must fill before launch
 
-Generated from [NEEDS: ...] markers across all page files and data sheets. Cursor renders these hidden in production and logs them in BUILD-NOTES.md.
+Generated from [NEEDS: ...] markers across all page files and data sheets. These notes stay in this file and in the page source. They are not shown on the site.
 
 
-Total distinct items: 322
+Total distinct items: 323
 
 
 ## pages/_provider-template.md (2)
@@ -368,10 +368,11 @@ Total distinct items: 322
 - name the analytics tool and whether IP anonymization is on
 - vendor list
 
-## pages/providers.md (2)
+## pages/providers.md (3)
 
 - confirm which offices and clinicians the dogs work with
 - image
+- no active provider matches [PROVIDER CARDS: gloria-saladino]; she stays on the welcome team strip, with no profile page
 
 ## pages/providers/rachel-lessard.md (3)
 

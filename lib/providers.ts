@@ -24,6 +24,7 @@ import {
   type Pillar,
   type Provider,
 } from "@/lib/content";
+import { resolveHeadshot } from "@/lib/images";
 
 const TEMPLATE_FILE = "pages/_provider-template.md";
 const LAST_REVIEWED = "2026-09-16";
@@ -450,10 +451,18 @@ function primaryPillar(provider: Provider): Pillar {
   return PILLARS.includes(pillar) ? pillar : "none";
 }
 
+/** The directory portrait. Other pages and structured data use this same file. */
+function portraitUrl(provider: Provider): string {
+  const local = resolveHeadshot(provider.slug);
+  if (local) return `${SITE_ORIGIN}${local.src}`;
+  return provider.headshot_url;
+}
+
 function heroImage(provider: Provider): string {
   const alt = `${nameWithCredentials(provider, provider.credentials)}, ${provider.title_line} at Pathways Within`;
-  return provider.headshot_url
-    ? `${provider.headshot_url} ${alt}`
+  const src = portraitUrl(provider);
+  return src
+    ? `${src} ${alt}`
     : `[NEEDS: headshot for ${provider.first_name} ${provider.last_name}] ${alt}`;
 }
 
@@ -506,7 +515,7 @@ export function buildProviderGraph(provider: Provider): JsonObject {
   put(person, "honorificSuffix", provider.credentials);
   put(person, "jobTitle", provider.title_line);
   put(person, "description", provider.bio_p1);
-  put(person, "image", provider.headshot_url);
+  put(person, "image", portraitUrl(provider));
   person.url = url;
   person.worksFor = { "@id": `${SITE_ORIGIN}/#org` };
 

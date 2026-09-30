@@ -72,10 +72,8 @@ function describe(filter: ProviderCardFilter): string {
   return filter.by === "slugs" ? filter.slugs.join(", ") : `${filter.by}=${filter.value}`;
 }
 
-/** Same contract as the renderer's marker: visible in dev, inert in production. */
+/** The gap stays in content/data/needs-list.md. Nothing is rendered. */
 function Needs({ value }: { value: string }) {
-  if (process.env.NODE_ENV === "production") {
-    return <span className="needs" data-needs={value} hidden />;
-  }
-  return <mark className="needs" data-needs={value}>[NEEDS: {value}]</mark>;
+  void value;
+  return null;
 }

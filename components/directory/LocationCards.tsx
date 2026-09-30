@@ -84,10 +84,8 @@ function WithNeeds({ text }: { text: string }) {
   );
 }
 
-/** Same contract as the renderer's marker: visible in dev, inert in production. */
+/** The gap stays in content/data/needs-list.md. Nothing is rendered. */
 function Needs({ value }: { value: string }) {
-  if (process.env.NODE_ENV === "production") {
-    return <span data-needs={value} hidden />;
-  }
-  return <mark className="needs">[NEEDS: {value}]</mark>;
+  void value;
+  return null;
 }

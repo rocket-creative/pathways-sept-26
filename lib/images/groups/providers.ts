@@ -55,8 +55,7 @@ export const HEADSHOTS: HeadshotSource[] = [
   { slug: "karen-hill", file: "approved/headshots/karen-hill.jpg", square: "top" },
   { slug: "tiffany-roberts", file: "approved/headshots/tiffany-roberts.jpg", square: "top" },
 
-  // Still waiting on a lifestyle portrait. These keep the earlier photographs.
-  { slug: "samantha-juravich", file: "clinicians/Screen+Shot+2022-02-22+at+11.07.14+AM.png", square: "top" },
-  { slug: "colm-ashe", file: "clinicians/Captura+de+pantalla+2026-08-07+170455.png", square: "top" },
-  { slug: "danielle-ingenito", file: "wellness-team/Danielle+Ingenito+LMT.webp", square: "top" },
+  { slug: "samantha-juravich", file: "approved/headshots/samantha-juravich.jpg", square: "top" },
+  { slug: "danielle-ingenito", file: "approved/headshots/danielle-ingenito.jpg", square: "top" },
+  { slug: "colm-ashe", file: "approved/headshots/colm-ashe.jpg", square: "top" },
 ];
