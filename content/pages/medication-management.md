@@ -30,13 +30,13 @@ If you are in crisis or thinking about harming yourself, call or text 988 (Veter
 
 **PMHNP, MSN, BSN, RN-BC.** Psychiatric Mental Health Nurse Practitioner at Pathways Within.
 
-Tiffany has spent more than 20 years caring for people in almost every kind of circumstance, from hospital patients and outpatient care to individuals in the correctional and shelter systems. One thing has stayed with her: you cannot understand someone's mental health by looking only at their symptoms.
+Tiffany has spent more than 20 years caring for people in almost every kind of circumstance, from hospital patients and people in outpatient care to individuals in the correctional and shelter systems. Along the way, one thing has stayed with her: you cannot understand someone's mental health by looking only at their symptoms. The relationships they are in, the environment where they live, their culture, their habits, and the pressures they carry all matter. That perspective shapes the way Tiffany works with every patient who sits across from her.
 
-As a psychiatric nurse practitioner, Tiffany works with adolescents and adults who want more than a quick prescription and a return visit. Medication can be an important part of treatment, and she also helps people build the changes, skills, and support that make lasting improvement possible.
+As a psychiatric nurse practitioner, Tiffany works with adolescents and adults who want more than a quick prescription and a return visit. She believes medication can be an important part of treatment, while also helping people build the changes, skills, and support that make lasting improvement possible. Coming from a cultural background where mental health was not always openly discussed, she is especially passionate about creating space for people to talk honestly without shame or judgment. Her goal is to help patients manage their symptoms, yes. Even more so, it is to help them feel healthier, more present, and able to truly enjoy their lives again.
 
-- More than 20 years of nursing experience across hospital, outpatient, correctional, and psychiatric settings
-- Serves adolescents ages 10 and up, and adults
-- A whole person approach that brings medication together with lifestyle changes and coping skills
+- Over 20 years of nursing experience across hospital, outpatient, correctional, and psychiatric settings has taught Tiffany that every diagnosis comes with a person, a story, and a life beyond the exam room.
+- Psychiatric nurse practitioner serving adolescents (ages 10 and up) and adults, with a whole person approach that integrates medication management, lifestyle changes, coping skills, and emerging treatment modalities.
+- Born into a legacy of nurses and shaped by crisis, culture, and compassion, Tiffany is changing how mental health is understood, especially in communities where suffering was once endured in silence.
 
 [PROVIDER CARDS: tiffany-roberts]
 

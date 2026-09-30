@@ -507,7 +507,6 @@ html {
 
 .glass:hover {
   transform: translateY(-2px);
-  background: linear-gradient(180deg, rgb(255 255 255 / 0.5) 0%, rgb(255 255 255 / 0.36) 100%);
 }
 
 .glass:active {
@@ -1431,7 +1430,6 @@ html {
   text-decoration: underline;
   text-underline-offset: 0.18em;
   text-decoration-thickness: 0.07em;
-  /* Glass cards paint a white hairline on body copy; links must not inherit it. */
   text-shadow: none;
   transition: color var(--motion-fast) var(--ease-out);
 }

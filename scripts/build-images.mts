@@ -64,6 +64,34 @@ function gravity(square: AssetSource["square"]): string | number {
   return "centre";
 }
 
+type FaceBox = { x: number; y: number; face: number };
+
+const faceFocus = JSON.parse(
+  fs.readFileSync(path.join(ROOT, "lib/images/face-focus.json"), "utf8"),
+) as { headshots: Record<string, FaceBox> };
+
+function faceCropKey(focus: FaceBox): string {
+  return `face-${focus.x.toFixed(3)}-${focus.y.toFixed(3)}-${focus.face.toFixed(3)}`;
+}
+
+/** Square centered on the detected face, tight enough that the face fills the circle. */
+async function faceSquare(source: string, focus: FaceBox): Promise<{ left: number; top: number; width: number; height: number }> {
+  const meta = await sharp(source, { failOn: "none" }).rotate().metadata();
+  const w = meta.width ?? 0;
+  const h = meta.height ?? 0;
+  const maxSide = Math.min(w, h);
+  const faceH = focus.face * h;
+  let side = Math.round(faceH * 2.45);
+  // An already-tight portrait should not zoom in further and clip the head.
+  if (focus.face > 0.4) side = maxSide;
+  else side = Math.max(Math.min(side, maxSide), Math.round(maxSide * 0.55));
+  let left = Math.round(focus.x * w - side / 2);
+  let top = Math.round(focus.y * h - side / 2);
+  left = Math.max(0, Math.min(left, w - side));
+  top = Math.max(0, Math.min(top, h - side));
+  return { left, top, width: side, height: side };
+}
+
 async function cutTiers(
   source: string,
   outDir: string,
@@ -72,6 +100,7 @@ async function cutTiers(
   square: AssetSource["square"] | undefined,
   /** The crop changed since the last run, so existing tiers are wrong even if newer than the source. */
   rebuild = false,
+  focus?: FaceBox,
 ): Promise<GeneratedAsset> {
   const image = sharp(source, { failOn: "none" }).rotate();
   const meta = await image.metadata();
@@ -97,12 +126,13 @@ async function cutTiers(
   for (const width of targets) {
     const out = path.join(outDir, `${stem}-${width}.webp`);
     let height: number;
-    if (square) {
+    if (square || focus) {
       height = width;
       if (stale(out, source, rebuild)) {
-        await sharp(source, { failOn: "none" })
-          .rotate()
-          .resize(width, width, { fit: "cover", position: gravity(square) })
+        const pipeline = sharp(source, { failOn: "none" }).rotate();
+        if (focus) pipeline.extract(await faceSquare(source, focus));
+        await pipeline
+          .resize(width, width, { fit: "cover", position: focus ? "centre" : gravity(square) })
           .webp(WEBP)
           .toFile(out);
       }
@@ -122,7 +152,7 @@ async function cutTiers(
   }
 
   const largest = tiers[tiers.length - 1];
-  return { id: stem, width: largest.width, height: largest.height, crop: square ?? "full", tiers };
+  return { id: stem, width: largest.width, height: largest.height, crop: focus ? faceCropKey(focus) : square ?? "full", tiers };
 }
 
 function pruneStale(dir: string, keepStems: Set<string>): string[] {
@@ -200,13 +230,16 @@ async function main() {
   for (const row of HEADSHOTS) {
     if (headshotSlugs.has(row.slug)) throw new Error(`Duplicate headshot for ${row.slug}`);
     headshotSlugs.add(row.slug);
+    const focus = faceFocus.headshots[row.slug];
+    const cropName = focus ? faceCropKey(focus) : row.square ?? "attention";
     manifest.headshots[row.slug] = await cutTiers(
       sourcePath(row.file),
       HEADSHOT_OUT,
       row.slug,
       HEADSHOT_WIDTHS,
       row.square ?? "attention",
-      (previous.headshots[row.slug]?.crop ?? "attention") !== (row.square ?? "attention"),
+      (previous.headshots[row.slug]?.crop ?? "attention") !== cropName,
+      focus,
     );
     count += 1;
     process.stdout.write(`  ${"headshot".padEnd(18)} ${row.slug}\n`);

@@ -1,3 +1,4 @@
+import faceFocus from "./face-focus.json";
 import generated from "./generated.json";
 import { GROUPS } from "./groups";
 import { HEADSHOTS } from "./groups/providers";
@@ -78,6 +79,14 @@ export function getPagePhotos(url: string): PagePhotos | undefined {
 /* Resolution against the generated tiers                              */
 /* ------------------------------------------------------------------ */
 
+function chosenFocal(photo: Photo): Focal {
+  const detected = (faceFocus.photos as Record<string, Focal | undefined>)[photo.asset];
+  // "center" is the default. A detected face replaces it so a cover crop
+  // keeps the person in the frame. An explicit point such as "40% 55%" stays.
+  if (detected && (!photo.focal || photo.focal === "center")) return detected;
+  return photo.focal ?? "center";
+}
+
 function toResolved(built: GeneratedAsset, alt: string, focal: Focal | undefined): ResolvedPhoto {
   const largest = built.tiers[built.tiers.length - 1];
   return {
@@ -102,7 +111,7 @@ export function resolvePhoto(photo: Photo | undefined): ResolvedPhoto | undefine
   }
   const built = manifest.photos[photo.asset];
   if (!built || !built.tiers.length) return undefined;
-  return toResolved(built, photo.alt, photo.focal);
+  return toResolved(built, photo.alt, chosenFocal(photo));
 }
 
 /**

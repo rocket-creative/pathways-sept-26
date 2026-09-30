@@ -49,12 +49,14 @@ export const HEADSHOTS: HeadshotSource[] = [
   // Admin directory card on /providers (no provider page)
   { slug: "gloria-saladino", file: "approved/headshots/gloria-saladino.jpg", square: "top" },
 
-  // No approved file yet — keep prior Squarespace screenshots
+  // Lifestyle portraits supplied for the cards that were still on older frames.
+  { slug: "madeline-amzler", file: "approved/headshots/madeline-amzler.jpg", square: "top" },
+  { slug: "sofia-marinucci", file: "approved/headshots/sofia-marinucci.jpg", square: "top" },
+  { slug: "karen-hill", file: "approved/headshots/karen-hill.jpg", square: "top" },
+  { slug: "tiffany-roberts", file: "approved/headshots/tiffany-roberts.jpg", square: "top" },
+
+  // Still waiting on a lifestyle portrait. These keep the earlier photographs.
   { slug: "samantha-juravich", file: "clinicians/Screen+Shot+2022-02-22+at+11.07.14+AM.png", square: "top" },
-  { slug: "madeline-amzler", file: "april-2026/headshots/madeline-amzler.jpg", square: "attention" },
-  { slug: "sofia-marinucci", file: "april-2026/headshots/sofia-marinucci.png", square: "attention" },
   { slug: "colm-ashe", file: "clinicians/Captura+de+pantalla+2026-08-07+170455.png", square: "top" },
-  { slug: "karen-hill", file: "april-2026/headshots/karen-hill.png", square: "top" },
-  { slug: "tiffany-roberts", file: "april-2026/headshots/tiffany-roberts.jpg", square: "attention" },
   { slug: "danielle-ingenito", file: "wellness-team/Danielle+Ingenito+LMT.webp", square: "top" },
 ];

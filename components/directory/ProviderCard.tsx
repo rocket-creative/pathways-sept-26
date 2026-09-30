@@ -124,8 +124,12 @@ function Headshot({ provider }: { provider: ProviderCardData }) {
 
   if (!provider.headshotUrl) {
     return (
-      <span className="provider-card__photo provider-card__initials" aria-hidden="true">
-        {provider.initials}
+      <span
+        className="provider-card__photo missing-photo missing-photo--card"
+        role="img"
+        aria-label={`Missing photo. Headshot of ${provider.displayName}`}
+      >
+        <span className="missing-photo__title">Missing photo</span>
       </span>
     );
   }

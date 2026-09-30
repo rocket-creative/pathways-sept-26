@@ -1,6 +1,7 @@
 import type { Block } from "@/lib/content";
 import { resolveHeadshot } from "@/lib/images";
 import type { RenderContext } from "../context";
+import MissingPhoto from "./MissingPhoto";
 import Picture from "./Picture";
 
 /**
@@ -15,8 +16,6 @@ import Picture from "./Picture";
  *
  * The intrinsic size on 3 is a stand in: those markers give no dimensions.
  */
-const PLACEHOLDER_WIDTH = 1200;
-const PLACEHOLDER_HEIGHT = 800;
 
 type ImageBlock = Extract<Block, { kind: "image" }>;
 
@@ -58,8 +57,8 @@ export default function ContentImage({ block, ctx }: { block: ImageBlock; ctx?: 
           className="content-image__img"
           src={block.src}
           alt={block.alt}
-          width={PLACEHOLDER_WIDTH}
-          height={PLACEHOLDER_HEIGHT}
+          width={1200}
+          height={800}
           loading="lazy"
           decoding="async"
         />
@@ -68,16 +67,8 @@ export default function ContentImage({ block, ctx }: { block: ImageBlock; ctx?: 
   }
 
   return (
-    <figure className="content-image content-image--placeholder">
-      <div
-        className="content-image__placeholder"
-        role="img"
-        aria-label={block.alt}
-        style={{ aspectRatio: `${PLACEHOLDER_WIDTH} / ${PLACEHOLDER_HEIGHT}` }}
-      />
-      {process.env.NODE_ENV === "production" ? null : (
-        <figcaption className="content-image__caption">{block.alt}</figcaption>
-      )}
+    <figure className="content-image">
+      <MissingPhoto label={block.alt || "This photograph"} aspect="landscape" />
     </figure>
   );
 }

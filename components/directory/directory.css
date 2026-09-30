@@ -169,7 +169,7 @@
   margin: 0 0 0.5rem;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
 }
 
 .prose .provider-card__initials {
@@ -483,7 +483,7 @@
   transition: background-color 0.18s ease;
 }
 
-/* Beat lanes glass hover (near-white) so finder cards go warm grey. */
+/* Solid white on the glass. Hover warms the card; it does not flash white. */
 main.page--lanes .provider-card.provider-card--finder {
   background: #ffffff;
   border-color: #e3e8ee;
@@ -742,7 +742,7 @@ main.page--lanes .provider-card.provider-card--finder {
   margin: 0;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
 }
 
 :is(.provider-search, .provider-peers) .provider-cards--search .provider-card__initials {

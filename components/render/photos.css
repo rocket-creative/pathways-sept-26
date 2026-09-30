@@ -51,6 +51,22 @@
   line-height: 1.4;
 }
 
+.provider-card__photo.missing-photo--card {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: var(--surface-deep, #ebebeb);
+  color: var(--text, #1c1c1c);
+}
+
+.provider-card__photo.missing-photo--card .missing-photo__title {
+  position: static;
+  max-width: 5.2rem;
+  font-size: 0.68rem;
+  line-height: 1.15;
+}
+
 .missing-photo.section-figure__media--circle {
   --photo-radius: var(--glass-radius, 24px);
   width: 100%;

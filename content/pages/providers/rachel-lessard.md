@@ -30,29 +30,15 @@ hero_image: "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50
 
 Rachel is a Licensed Clinical Social Worker with the R designation, which allows her to practice psychotherapy independently in New York. She works with adults and couples, in person and by telehealth.
 
-- Specializes in [anxiety](/concerns/anxiety) and [depression](/concerns/depression) with a trauma informed lens
-- Works with couples using the Gottman Method and offers [clinical hypnotherapy](/therapy/hypnotherapy)
-- Provides [bariatric surgery evaluations and counseling](/therapy/bariatric-surgery-support) and supports [veterans and first responders](/therapy/veterans-first-responders)
+Rachel's path to becoming a therapist and founding Pathways Within was shaped by her own experiences with loss, resilience, and the power of community. After losing her father as a child, she was supported by a strong village of family, teachers, mentors, and friends. Those experiences helped shape her belief that healing often begins with feeling safe, understood, supported, and most importantly that no one has to navigate difficult experiences alone.
 
-In her own words: "Together we can explore your experiences in order to help you feel safe and secure again. In my office, with or without your loved one, we can develop new styles of communication that can create the relationship you have always wanted."
+In her clinical work, Rachel helps individuals and couples explore their experiences, strengthen communication, and create healthier relationships with themselves and others. She specializes in anxiety, depression, PTSD, couples counseling, hypnotherapy, veterans and first responders, and weight-loss surgery evaluations and counseling. That same belief in whole-person, collaborative care ultimately grew from a private therapy practice into Pathways Within.
+
+- Rachel's own experiences with loss, resilience, and the support of a strong community shaped her belief that healing is rooted in connection and that no one should have to navigate difficult seasons alone.
+- In her work with individuals and couples, she helps clients explore their experiences, feel safer and more grounded, strengthen communication, and build healthier relationships with themselves and others.
+- Rachel specializes in anxiety, depression, PTSD, couples counseling, hypnotherapy, veterans and first responders, and weight-loss surgery evaluations and counseling, bringing a thoughtful, collaborative approach to each client's path forward.
 
 See [couples therapy](/therapy/couples-therapy) and [trauma therapy](/therapy/trauma-therapy) for the approaches she uses most.
-
-## In Rachel's words
-
-> Hi, I'm Rachel, therapist, founder, lifelong listener, and the original "Patient Zero" behind Pathways Within.
->
-> Helping people has always been my thing. Even as a kid, I was the one giving pep talks on the playground, asking one more question, and trying to help everyone make sense of what they were feeling.
->
-> After losing my dad suddenly as a child, I was raised by a village of aunts, uncles, grandparents, teachers, and friends. They taught me the power of chosen family and the importance of showing up. They also taught me that wisdom can come from just about anywhere, sometimes when you least expect it.
->
-> Somewhere along the way, I realized that helping others was also helping me understand and heal parts of myself. What started as instinct became purpose, and eventually, my calling.
->
-> That calling led me to study psychology, human behavior, and the mind body spirit connection. It also led me to build Pathways Within: the kind of place I wished existed when I was learning how to find my own path.
->
-> Therapy is not just what I do. It is woven into who I am.
->
-> I am here for the big, messy, complicated conversations. I am also the person who will remind you to drink water, unclench your jaw, take the win, and stop pretending rest has to be earned.
 
 ## Leadership and the practice's values
 

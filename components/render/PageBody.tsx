@@ -98,8 +98,43 @@ export default function PageBody({ page }: { page: Page }) {
         }
         const resolvedPrimary = resolvePhoto(primary);
 
+        if (primary && !resolvedPrimary) {
+          return (
+            <section
+              key={position}
+              className="page-section page-section--figure"
+              aria-labelledby={section.heading.id}
+              data-section={section.heading.id}
+              data-side={primary.side ?? "end"}
+              data-layout={primary.layout ?? "split"}
+            >
+              <div className="section-figure__copy">
+                <Heading block={section.heading} ctx={ctx} />
+                {renderSectionBody(section.heading, section.blocks, ctx)}
+              </div>
+              <MissingPhoto
+                label={primary.alt || "This photograph"}
+                shape={primary.shape}
+                aspect={primary.aspect}
+                layout={primary.layout ?? "split"}
+              />
+            </section>
+          );
+        }
+
         if (primary && resolvedPrimary && primary.layout === "collage") {
           const cells = figures.flatMap((entry, index) => {
+            if (entry.missing || !resolvePhoto(entry)) {
+              return [
+                <MissingPhoto
+                  key={`collage-${index}`}
+                  label={entry.missing || entry.alt || "This photograph"}
+                  shape="rounded"
+                  aspect={entry.aspect ?? "landscape"}
+                  layout="collage"
+                />,
+              ];
+            }
             const resolved = resolvePhoto(entry);
             if (!resolved) return [];
             return [

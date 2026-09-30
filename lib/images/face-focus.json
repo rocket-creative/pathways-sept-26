@@ -1,0 +1,274 @@
+{
+  "headshots": {
+    "rachel-lessard": {
+      "x": 0.6011,
+      "y": 0.2956,
+      "face": 0.2229,
+      "group": "60% 30%"
+    },
+    "ksusha-cascio": {
+      "x": 0.5457,
+      "y": 0.2376,
+      "face": 0.1248,
+      "group": "55% 24%"
+    },
+    "joe-bush": {
+      "x": 0.5207,
+      "y": 0.3012,
+      "face": 0.2155,
+      "group": "52% 30%"
+    },
+    "lee-wasser": {
+      "x": 0.4105,
+      "y": 0.23,
+      "face": 0.175,
+      "group": "41% 23%"
+    },
+    "kaitlyn-kelly": {
+      "x": 0.4855,
+      "y": 0.2607,
+      "face": 0.207,
+      "group": "49% 26%"
+    },
+    "laura-desilva": {
+      "x": 0.4767,
+      "y": 0.3003,
+      "face": 0.2085,
+      "group": "48% 30%"
+    },
+    "beth-gabellini": {
+      "x": 0.462,
+      "y": 0.2783,
+      "face": 0.2165,
+      "group": "46% 28%"
+    },
+    "carly-sandstrom": {
+      "x": 0.4781,
+      "y": 0.347,
+      "face": 0.1798,
+      "group": "48% 35%"
+    },
+    "jen-brooks": {
+      "x": 0.4826,
+      "y": 0.2999,
+      "face": 0.2048,
+      "group": "48% 30%"
+    },
+    "lauren-hollander": {
+      "x": 0.423,
+      "y": 0.3247,
+      "face": 0.2076,
+      "group": "42% 32%"
+    },
+    "paula-gonthier": {
+      "x": 0.4533,
+      "y": 0.3095,
+      "face": 0.2283,
+      "group": "45% 31%"
+    },
+    "anna-ostrow": {
+      "x": 0.4259,
+      "y": 0.2658,
+      "face": 0.1993,
+      "group": "43% 27%"
+    },
+    "charity-meyer": {
+      "x": 0.5473,
+      "y": 0.4025,
+      "face": 0.2117,
+      "group": "55% 40%"
+    },
+    "chelsea-bell": {
+      "x": 0.4821,
+      "y": 0.3392,
+      "face": 0.2133,
+      "group": "48% 34%"
+    },
+    "frank-tropeano": {
+      "x": 0.4521,
+      "y": 0.3057,
+      "face": 0.2343,
+      "group": "45% 31%"
+    },
+    "juliette-squicciarini": {
+      "x": 0.4574,
+      "y": 0.3276,
+      "face": 0.2104,
+      "group": "46% 33%"
+    },
+    "kathleen-dimartino": {
+      "x": 0.586,
+      "y": 0.3581,
+      "face": 0.237,
+      "group": "59% 36%"
+    },
+    "lindsay-laier": {
+      "x": 0.5119,
+      "y": 0.3368,
+      "face": 0.2065,
+      "group": "51% 34%"
+    },
+    "maddy-zambri": {
+      "x": 0.506,
+      "y": 0.3026,
+      "face": 0.203,
+      "group": "51% 30%"
+    },
+    "mariah-simone": {
+      "x": 0.4421,
+      "y": 0.3228,
+      "face": 0.1748,
+      "group": "44% 32%"
+    },
+    "nicole-duffy": {
+      "x": 0.5579,
+      "y": 0.3017,
+      "face": 0.2251,
+      "group": "56% 30%"
+    },
+    "kalovna-edmond": {
+      "x": 0.5255,
+      "y": 0.3557,
+      "face": 0.2279,
+      "group": "53% 36%"
+    },
+    "tia-baumohl": {
+      "x": 0.4916,
+      "y": 0.3037,
+      "face": 0.1964,
+      "group": "49% 30%"
+    },
+    "christine-cervo": {
+      "x": 0.4684,
+      "y": 0.3486,
+      "face": 0.1772,
+      "group": "47% 35%"
+    },
+    "leonard-ma": {
+      "x": 0.4908,
+      "y": 0.318,
+      "face": 0.2286,
+      "group": "49% 32%"
+    },
+    "gloria-saladino": {
+      "x": 0.5556,
+      "y": 0.2838,
+      "face": 0.1912,
+      "group": "56% 28%"
+    },
+    "samantha-juravich": {
+      "x": 0.555,
+      "y": 0.3359,
+      "face": 0.4348,
+      "group": "55% 34%"
+    },
+    "madeline-amzler": {
+      "x": 0.5137,
+      "y": 0.249,
+      "face": 0.2271
+    },
+    "sofia-marinucci": {
+      "x": 0.478,
+      "y": 0.2524,
+      "face": 0.2811
+    },
+    "colm-ashe": {
+      "x": 0.4668,
+      "y": 0.436,
+      "face": 0.3696,
+      "group": "47% 44%"
+    },
+    "karen-hill": {
+      "x": 0.4914,
+      "y": 0.2582,
+      "face": 0.2848
+    },
+    "tiffany-roberts": {
+      "x": 0.4567,
+      "y": 0.2287,
+      "face": 0.2309
+    },
+    "danielle-ingenito": {
+      "x": 0.5005,
+      "y": 0.5612,
+      "face": 0.5577,
+      "group": "50% 56%"
+    }
+  },
+  "photos": {
+    "cw-ap26-med-teen": "23% 17%",
+    "cw-ap26-acu-needles": "52% 43%",
+    "cw-ap26-acu-shoulder": "54% 36%",
+    "cw-ap26-acu-leo": "52% 37%",
+    "cw-windy-beach-coat": "67% 37%",
+    "cw-window-light-glasses": "21% 48%",
+    "cw-ledge-from-behind": "45% 40%",
+    "cw-ledge-coffee": "41% 23%",
+    "cw-chair-among-plants": "64% 33%",
+    "cw-warm-sunlight": "55% 27%",
+    "cw-sunlit-meditation": "58% 26%",
+    "cw-self-embrace-yellow": "36% 25%",
+    "cw-veteran-cap": "85% 37%",
+    "cw-father-son-car": "31% 43%",
+    "cw-couple-reeds": "48% 48%",
+    "cw-riverside-walk": "62% 47%",
+    "cw-pier-couple": "45% 25%",
+    "cw-floor-play": "50% 45%",
+    "cw-prescriber-conversation": "36% 35%",
+    "cw-coaching-conversation": "36% 20%",
+    "cw-man-ledge-smile": "58% 17%",
+    "cw-ap-desk-orchids": "61% 51%",
+    "ha-ap26-camp-pair": "51% 30%",
+    "ha-ap26-camp-tiffany": "46% 29%",
+    "ha-ap26-camp-three": "47% 40%",
+    "ha-ap26-camp-five": "52% 33%",
+    "ha-ap26-rachel-solo": "54% 27%",
+    "ha-ap26-rachel-family": "53% 19%",
+    "ha-ap26-woman-smile": "48% 35%",
+    "ha-ap26-desk-smile": "71% 45%",
+    "ha-ap26-desk-handshake": "63% 45%",
+    "ha-ap-rachel-lessard": "60% 30%",
+    "ha-ap-editorial-emily": "51% 28%",
+    "ha-ap-editorial-amanda": "49% 30%",
+    "ha-ap-editorial-saul": "47% 30%",
+    "ha-ksusha-domino": "55% 24%",
+    "ha-tia-baumohl": "49% 30%",
+    "th-ap26-older-man": "70% 53%",
+    "th-ap26-black-blazer": "72% 50%",
+    "th-ap26-resting": "80% 26%",
+    "th-ap26-green-vest": "73% 47%",
+    "th-ap26-green-quiet": "84% 45%",
+    "th-ap26-green-listen": "57% 44%",
+    "th-ap26-seated": "76% 34%",
+    "th-ap26-across": "84% 43%",
+    "th-ap26-older-quiet": "81% 40%",
+    "th-ap26-conversation": "80% 29%",
+    "th-ap26-two-women": "76% 45%",
+    "th-ap26-couple": "77% 42%",
+    "th-ap26-green-couple": "81% 50%",
+    "th-ap26-glasses": "42% 40%",
+    "th-ap26-older-couple": "79% 46%",
+    "th-ap26-fam-two": "78% 37%",
+    "th-ap26-group-floor": "27% 52%",
+    "th-ap26-group-gesture": "54% 43%",
+    "th-ap26-group-play": "60% 42%",
+    "th-ap26-teen": "25% 19%",
+    "th-session-two-chairs": "54% 23%",
+    "th-session-therapist-talking": "36% 20%",
+    "th-session-reclining": "7% 29%",
+    "th-woman-plant-chair": "64% 33%",
+    "th-woman-sunlit-wall": "55% 27%",
+    "th-woman-windy-beach": "67% 37%",
+    "th-woman-gazing-up": "63% 40%",
+    "th-woman-self-hug": "36% 25%",
+    "th-woman-ledge-sunlight": "41% 23%",
+    "th-man-window-reflection": "21% 48%",
+    "th-couple-pier": "45% 25%",
+    "th-mother-hugging-child": "44% 40%",
+    "th-parent-toddler-toys": "50% 45%",
+    "th-parent-child-piggyback": "45% 20%",
+    "th-teen-denim-jacket": "59% 43%",
+    "th-parent-teen-car": "31% 43%",
+    "th-veteran-salute": "85% 37%"
+  }
+}
