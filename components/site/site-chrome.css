@@ -198,8 +198,9 @@
 
 .site-header__actions {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   gap: 0.6rem 0.75rem;
   margin-left: auto;
 }
@@ -557,19 +558,22 @@
 
 .not-found h1 {
   margin: 0 0 0.6em;
-  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-size: var(--text-h1, 2rem);
+  line-height: var(--leading-tight, 1.2);
 }
 
 .not-found__lede {
   margin: 0 0 clamp(1.5rem, 4vw, 2.25rem);
   max-width: 44rem;
-  font-size: 1.05rem;
+  font-size: var(--text-base, 1rem);
+  line-height: var(--leading-body, 1.6);
   color: var(--chrome-ink-soft);
 }
 
 .not-found h2 {
   margin: 0 0 0.7em;
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-size: var(--text-h3, 1.25rem);
+  line-height: var(--leading-heading, 1.3);
 }
 
 .not-found__search {

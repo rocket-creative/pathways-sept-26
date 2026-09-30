@@ -11,6 +11,8 @@
  *   split   (default) copy + figure side by side
  *   feature larger media column (~60–70% on desktop)
  *   band    full-bleed horizontal photograph; copy stays above/below, never overlaid
+ *   cover   the photograph is the card; copy sits at the top, over a quiet area
+ *   overlay the photograph is the card; copy sits in a glass panel on one side
  *   collage 2×2 grid of distinct frames under the copy (one column when narrow)
  *
  * Extra registry entries after the primary render as additional band figures
@@ -412,6 +414,96 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
     border-color: #e3e6ea;
     box-shadow: none;
   }
+}
+
+/* Cover: the photograph is the card. Copy sits at the top, in whatever quiet
+   field the crop keeps there (the labyrinth's pale sky). The frame is 16:9,
+   the same shape as that photograph, so the spiral is not cropped away. */
+main.page--lanes > .prose > .page-section--figure[data-layout="cover"] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  align-content: start;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+main.page--lanes > .prose > .page-section--figure[data-layout="cover"]::after {
+  content: none;
+}
+
+main.page--lanes > .prose > .page-section--figure:is([data-layout="cover"], [data-layout="overlay"]) > .section-figure__media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  aspect-ratio: auto;
+  margin: 0;
+  border-radius: inherit;
+}
+
+main.page--lanes > .prose > .page-section--figure:is([data-layout="cover"], [data-layout="overlay"]) > .section-figure__media::before,
+main.page--lanes > .prose > .page-section--figure:is([data-layout="cover"], [data-layout="overlay"]) > .section-figure__media::after {
+  content: none;
+}
+
+/* Overlay: same full-bleed photograph, with the copy in a glass panel at the
+   bottom, on the side that has no face. data-side="end" (the default) keeps
+   the panel on the left. data-side="start" puts it on the right. */
+main.page--lanes > .prose > .page-section--figure[data-layout="overlay"] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: end;
+  align-content: end;
+  /* Shorter than the photograph, so cover crops in on the people. */
+  aspect-ratio: 12 / 5;
+  min-height: 22rem;
+  overflow: hidden;
+  background: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+
+main.page--lanes > .prose > .page-section--figure[data-layout="overlay"]::after {
+  content: none;
+}
+
+main.page--lanes > .prose > .page-section--figure[data-layout="overlay"] > .section-figure__copy {
+  position: relative;
+  z-index: 1;
+  justify-self: start;
+  width: min(100%, 26rem);
+  max-width: none;
+  padding: clamp(1.15rem, 2vw, 1.65rem);
+  border-radius: calc(var(--glass-radius, 24px) - 6px);
+  background: var(--glass-fill);
+  box-shadow: var(--glass-highlight), var(--glass-shadow);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
+}
+
+main.page--lanes > .prose > .page-section--figure[data-layout="overlay"][data-side="start"] > .section-figure__copy {
+  justify-self: end;
+}
+
+/* This front-desk crop is dark and wide. A slight zoom lifts the shadows and
+   keeps the faces to the left of the glass panel. */
+main.page--lanes > .prose > .page-section--figure[data-layout="overlay"][data-section="how-therapy-starts-here"] .section-figure__img {
+  transform: scale(1.12);
+  transform-origin: 55% 60%;
+  filter: brightness(1.22) contrast(0.86);
+}
+
+main.page--lanes > .prose > .page-section--figure[data-layout="cover"] > .section-figure__copy {
+  position: relative;
+  z-index: 1;
+  max-width: 36rem;
 }
 
 /* A missing-photo label has to stay readable, so it never takes the circle mask. */

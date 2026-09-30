@@ -21,6 +21,8 @@ export type Focal =
   | "top right"
   | "bottom left"
   | "bottom right"
+  | "center top"
+  | "center bottom"
   | `${number}% ${number}%`;
 
 export interface AssetSource {
@@ -51,7 +53,7 @@ export interface Photo {
 }
 
 /** How a section photograph sits relative to its copy. */
-export type SectionPhotoLayout = "split" | "band" | "feature" | "collage";
+export type SectionPhotoLayout = "split" | "band" | "feature" | "collage" | "cover" | "overlay";
 
 export interface SectionPhoto extends Photo {
   /** Circle for a person or a room (design rule); rounded for everything else. */
@@ -68,8 +70,11 @@ export interface SectionPhoto extends Photo {
    * Placement inside the section card. `split` (default) is copy + figure side
    * by side; `feature` enlarges the media column; `band` is a full-bleed
    * horizontal photograph with copy above or below (never overlaid).
-   * `collage` lays every photo in the section list into one 2×2 grid under
-   * the copy. Each entry needs `layout: "collage"`.
+   * `cover` makes the photograph the card itself and sets the copy over the
+   * top of it, for a picture with a quiet area there. `overlay` does the same
+   * and puts the copy in a glass panel on the quiet side. `collage` lays every
+   * photo in the section list into one 2×2 grid under the copy. Each collage
+   * entry needs `layout: "collage"`.
    */
   layout?: SectionPhotoLayout;
 }

@@ -109,8 +109,8 @@ export const THERAPY: ImageGroup = {
       sections: {
         "therapy-for-who-you-are": [
           {
-            asset: "th-ap26-green-vest",
-            alt: "Two women in conversation during a therapy session, one smiling",
+            asset: "th-ap26-green-quiet",
+            alt: "A therapist in a green vest listens during a session",
             layout: "collage",
             aspect: "landscape",
             focal: "center",
@@ -142,9 +142,9 @@ export const THERAPY: ImageGroup = {
           alt: "Welcome Team members talking with a visitor at the Pathways Within front desk",
           shape: "rounded",
           aspect: "landscape",
-          side: "end",
-          layout: "feature",
-          focal: "center",
+          side: "start",
+          layout: "overlay",
+          focal: "58% 68%",
         },
         where: [
           {

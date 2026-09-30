@@ -197,6 +197,17 @@ export const HOME_ABOUT: ImageGroup = {
           side: "end",
           focal: "center",
         },
+        /* The page backdrop fills this card. The sky is the light grey field
+           at the top, which is where the copy sits. Not a library crop:
+           resolvePhoto maps site-labyrinth onto public/labyrinth-*.webp. */
+        "your-path-is-your-own": {
+          asset: "site-labyrinth",
+          alt: "A pebble labyrinth set into a driftwood branch, with a figure standing beside the path",
+          shape: "rounded",
+          aspect: "landscape",
+          layout: "cover",
+          focal: "center top",
+        },
         "from-the-founder": {
           asset: "ha-ap-rachel-lessard",
           alt: "Rachel Lessard, LCSW-R, founder of Pathways Within",

@@ -7,8 +7,11 @@ const SIZES: Record<SectionPhotoLayout, string> = {
   split: "(min-width: 1200px) 560px, (min-width: 900px) 42vw, 100vw",
   /* Feature media is the larger column (~7/12 of the card). */
   feature: "(min-width: 1200px) 720px, (min-width: 900px) 58vw, 100vw",
-  /* Band spans the bento card (~76rem) edge to edge. */
+  /* Band spans the bento card (~76rem) edge to edge. Cover does too: the
+     photograph is the card. */
   band: "(min-width: 1200px) 76rem, (min-width: 900px) 92vw, 100vw",
+  cover: "(min-width: 1200px) 76rem, (min-width: 900px) 92vw, 100vw",
+  overlay: "(min-width: 1200px) 76rem, (min-width: 900px) 92vw, 100vw",
   /* One cell of a 2×2 collage, half the card on a wide viewport. */
   collage: "(min-width: 700px) 38rem, 100vw",
 };

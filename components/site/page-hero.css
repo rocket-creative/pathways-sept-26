@@ -38,6 +38,12 @@
   min-width: 0;
 }
 
+/* The crisis notice spans the whole card, under the lockup, not the copy column. */
+.page-hero > p.crisis-line {
+  grid-column: 1 / -1;
+  margin-block: 0.35rem 0;
+}
+
 .page-hero__copy h1,
 .page-hero__copy p,
 .page-hero__copy .cta {
@@ -49,11 +55,11 @@
 }
 
 .page-hero__copy h1 {
-  margin: 0 0 0.7em;
-  max-width: 22ch;
-  font-size: clamp(2rem, 3.4vw, 3.35rem);
+  margin: 0 0 0.55em;
+  max-width: 28ch;
+  font-size: var(--text-h1, 2rem);
   font-weight: 700;
-  line-height: 1.08;
+  line-height: var(--leading-tight, 1.2);
   letter-spacing: var(--tracking-tight, -0.015em);
   color: var(--brand-deep, #0042a8);
 }
@@ -61,8 +67,8 @@
 .page-hero__copy p {
   margin: 0 0 1.15em;
   max-width: 42rem;
-  font-size: var(--text-base, 1.0625rem);
-  line-height: 1.55;
+  font-size: var(--text-base, 1rem);
+  line-height: var(--leading-body, 1.6);
   color: var(--ink, #1d2733);
 }
 
@@ -119,14 +125,9 @@
     max-width: 25rem;
   }
 
-  /* Laptop band (globals.css steps the type scale down here): the h1 and
-     the mark, which are sized on their own rather than from the scale,
-     step down with it. Before the tablet rule so that one still wins. */
+  /* Short laptops: the mark steps down so the copy column keeps room.
+     The title stays on the rem scale. */
   @media (max-height: 960px) {
-    .page-hero__copy h1 {
-      font-size: clamp(1.85rem, 3vw, 3rem);
-    }
-
     .page-section--intro .page-hero__logo {
       width: min(100%, 22rem);
       max-width: 22rem;

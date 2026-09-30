@@ -210,12 +210,14 @@ function mountPinned(parts: Parts, html: HTMLElement): () => void {
   const handoffSpan = () => Math.round(window.innerHeight * HANDOFF_VH);
 
   /* Which cards are on stage. Activation is a small y settle, never a fade.
-     Card 6 is left out: once it docks, that settle reads as a bounce. */
+     Card 6 settles with the others while it is still on the branch. Once the
+     hand off lifts it off the track, the settle is left alone: replaying it
+     as the card docks reads as a bounce. */
   const checkStops = () => {
     const x = Number(gsap.getProperty(track, "x")) || 0;
     const vw = window.innerWidth;
     stops.forEach((stop, index) => {
-      if (stop === cta) return;
+      if (stop === cta && cta.parentElement !== track) return;
       const centre = stop.offsetLeft + stop.offsetWidth / 2 + x;
       const on = centre > ACTIVE_MIN * vw && centre < ACTIVE_MAX * vw;
       if (on === active[index]) return;

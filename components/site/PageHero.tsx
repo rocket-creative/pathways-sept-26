@@ -7,7 +7,7 @@ import "./page-hero.css";
  * h1 and its lead copy on the right. Homepage and inner pages share this
  * markup so the lockup stays one layout.
  */
-export default function PageHero({ children }: { children: ReactNode }) {
+export default function PageHero({ children, notice }: { children: ReactNode; notice?: ReactNode }) {
   return (
     <div className="page-hero">
       <Link href="/" className="page-hero__logo" aria-label="Pathways Within home">
@@ -15,6 +15,7 @@ export default function PageHero({ children }: { children: ReactNode }) {
         <img src="/logo.webp" alt="" width={500} height={500} decoding="async" />
       </Link>
       <div className="page-hero__copy">{children}</div>
+      {notice}
     </div>
   );
 }

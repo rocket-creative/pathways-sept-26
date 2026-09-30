@@ -1,3 +1,4 @@
+import { LABYRINTH } from "@/lib/backdropImage";
 import faceFocus from "./face-focus.json";
 import generated from "./generated.json";
 import { GROUPS } from "./groups";
@@ -106,6 +107,18 @@ function toResolved(built: GeneratedAsset, alt: string, focal: Focal | undefined
  */
 export function resolvePhoto(photo: Photo | undefined): ResolvedPhoto | undefined {
   if (!photo || photo.missing) return undefined;
+  /* The site backdrop (public/labyrinth-*.webp) is not a library crop.
+     One homepage card shows that same photograph inside the glass. */
+  if (photo.asset === "site-labyrinth") {
+    return {
+      src: LABYRINTH.src,
+      srcSet: LABYRINTH.srcSet,
+      width: LABYRINTH.width,
+      height: LABYRINTH.height,
+      alt: photo.alt,
+      focal: photo.focal && photo.focal !== "center" ? photo.focal : "center",
+    };
+  }
   if (!assets().has(photo.asset)) {
     throw new Error(`Photo "${photo.asset}" is not declared in any lib/images/groups file.`);
   }

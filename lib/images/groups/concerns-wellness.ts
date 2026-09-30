@@ -402,8 +402,9 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           alt: "A massage therapist working with a client on a treatment table in a beach-themed Pathways Within room",
           shape: "rounded",
           aspect: "landscape",
+          /* Panel on the left, over the window and chair. Faces are on the right. */
           side: "end",
-          layout: "feature",
+          layout: "overlay",
           focal: "70% 30%",
         },
         "who-provides-it": {
@@ -420,8 +421,9 @@ export const CONCERNS_WELLNESS: ImageGroup = {
           alt: "Wellness treatment room at the Smithtown office, with a massage table and beach mural",
           shape: "rounded",
           aspect: "landscape",
+          /* Empty room. Panel on the left leaves the mural clear. */
           side: "end",
-          layout: "band",
+          layout: "overlay",
           focal: "center",
         },
       },

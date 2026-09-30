@@ -24,7 +24,7 @@ import FormEmbed from "./blocks/FormEmbed";
 import Heading, { type HeadingBlock } from "./blocks/Heading";
 import List from "./blocks/List";
 import Needs from "./blocks/Needs";
-import { Paragraph, Quote } from "./blocks/Prose";
+import { isCrisisLine, Paragraph, Quote } from "./blocks/Prose";
 import MissingPhoto from "./blocks/MissingPhoto";
 import SectionFigure from "./blocks/SectionFigure";
 import "./render.css";
@@ -64,9 +64,16 @@ export default function PageBody({ page }: { page: Page }) {
     <article className="prose">
       {sections.map((section, position) => {
         if (!section.heading) {
+          const noticeAt = section.blocks.findIndex(
+            (block) => block.kind === "paragraph" && isCrisisLine(block.inline),
+          );
+          const notice = noticeAt >= 0 && section.blocks[noticeAt].kind === "paragraph" ? section.blocks[noticeAt] : null;
+          const introBlocks = notice ? section.blocks.filter((_, index) => index !== noticeAt) : section.blocks;
           return (
             <section key={position} className="page-section page-section--intro" data-hero-lockup="">
-              <PageHero>{renderBlocks(section.blocks, ctx)}</PageHero>
+              <PageHero notice={notice ? <Paragraph block={notice} ctx={ctx} /> : null}>
+                {renderBlocks(introBlocks, ctx)}
+              </PageHero>
             </section>
           );
         }

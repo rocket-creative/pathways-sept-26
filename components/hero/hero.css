@@ -220,7 +220,7 @@
    matches after the card stretches onto the next page. "Or call" is left off
    the narrow card and restored once that stretch has landed. */
 .hero-stop--cta .cta.cta--pair {
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 0.65rem;
   width: 100%;
@@ -231,7 +231,8 @@
   width: 0;
   max-width: 16rem;
   min-width: 0;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
   background: var(--brand-deep);
   color: #fff;
 }
@@ -423,12 +424,12 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
   }
 
   html[data-hero-mode="pin"] .hero-stop .heading--h2 {
-    font-size: clamp(1.2rem, 1.35vw, 1.6rem);
+    font-size: var(--text-h4);
   }
 
   html[data-hero-mode="pin"] .hero-stop p {
-    font-size: clamp(0.9rem, 0.92vw, 1.05rem);
-    line-height: 1.55;
+    font-size: var(--text-sm);
+    line-height: var(--leading-snug);
   }
 
   html[data-hero-mode="pin"] .hero-stop--card .hero-stop__inner {
@@ -447,7 +448,7 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
   }
 
   html[data-hero-mode="pin"] .hero-stop--plain .heading--h2 {
-    font-size: clamp(1.35rem, 1.55vw, 1.85rem);
+    font-size: var(--text-h3);
   }
 
   /* Anchor dot on the branch, and the leader between it and the card. Both
@@ -598,11 +599,11 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
 
   html[data-hero-mode="pin"] .hero-stop--cta .heading--h2 {
     max-width: none;
-    font-size: clamp(1.4rem, 1.7vw, 2rem);
+    font-size: var(--text-h3);
   }
 
   html[data-hero-mode="pin"] .hero-stop--cta p {
-    font-size: clamp(0.9rem, 0.95vw, 1.05rem);
+    font-size: var(--text-sm);
   }
 
   /* The h1 lockup. Inside the pin, outside the track: logo left, copy
@@ -675,9 +676,9 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
   html[data-hero-mode="pin"] .home-intro h1 {
     margin: 0 0 0.55em;
     margin-inline: 0;
-    max-width: 18ch;
-    font-size: clamp(2rem, 2.7vw, 3.05rem);
-    line-height: 1.08;
+    max-width: 24ch;
+    font-size: var(--text-h1);
+    line-height: var(--leading-tight);
     letter-spacing: var(--tracking-tight);
     color: var(--brand-deep);
   }
@@ -693,16 +694,17 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
 
   html[data-hero-mode="pin"] .home-intro .cta {
     display: inline-flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin: 0.35rem 1.1rem 0 0;
     max-width: none;
   }
 
   html[data-hero-mode="pin"] .home-intro .cta--pair .button {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     width: auto;
     min-width: 0;
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
   }
 
   html[data-hero-mode="pin"] .home-intro .button {
@@ -763,18 +765,10 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
       --hero-card-w: clamp(300px, 25vw, 470px);
     }
 
-    /* Cards a step smaller too, so they take less of the short screen. The
-       body copy stays at 14px (0.875rem) with a 1.5 leading, all in rem so
-       browser zoom and text-size settings still scale it; the link pill
-       keeps a ~28px hit area (WCAG 2.2 target minimum is 24px). */
+    /* Cards keep the rem scale (it already fits). The link pill stays at
+       least 24px tall (WCAG 2.2 target size). */
     html[data-hero-mode="pin"] .hero-stop .heading--h2 {
       margin-block-end: 0.45em;
-      font-size: clamp(1.1rem, 1.2vw, 1.4rem);
-    }
-
-    html[data-hero-mode="pin"] .hero-stop p {
-      font-size: 0.875rem;
-      line-height: 1.5;
     }
 
     html[data-hero-mode="pin"] .hero-stop--card .hero-stop__inner {
@@ -801,15 +795,11 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
 
     html[data-hero-mode="pin"] .home-intro h1 {
       margin-block-end: 0.45em;
-      max-width: 26ch;
-      font-size: clamp(1.7rem, 2.3vw, 2.5rem);
-      line-height: 1.06;
+      max-width: 28ch;
     }
 
     html[data-hero-mode="pin"] .home-intro p {
       margin-block-end: 0.7em;
-      font-size: clamp(0.92rem, 1.05vw, 1rem);
-      line-height: 1.45;
     }
 
     html[data-hero-mode="pin"] .home-intro .cta {
