@@ -1,7 +1,7 @@
 ---
 url: /locations/garden-city
 title: "Pathways Within in Garden City, NY | Pathways Within"
-meta: "Pathways Within Garden City is at 647 Franklin Ave, Lower Level. The office is reached by stairs. The Welcome Team schedules your 360 intake."
+meta: "Pathways Within Garden City is at 647 Franklin Ave, Lower Level. The office is reached by stairs. The older office at 520 Franklin Ave is closed."
 h1: "Pathways Within in Garden City, NY"
 page_type: location
 pillar: none
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Entrance to the Pathways Within Garden City office o
 
 # Pathways Within in Garden City, NY
 
-Pathways Within Garden City is at 647 Franklin Ave, Lower Level, Garden City, NY 11530. The office at 520 Franklin Ave is closed. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
+Pathways Within Garden City is at 647 Franklin Ave, Lower Level, Garden City, NY 11530. The office is reached by stairs. The older office at 520 Franklin Ave is closed.
 
 [CTA] Contact Us -> /contact
 
@@ -30,7 +30,7 @@ The office is at 647 Franklin Ave, Lower Level, Garden City, NY 11530. Parking i
 
 Accessibility: Lower level, reached by stairs. This office is not wheelchair accessible. Rockville Centre, Smithtown, and Port Jefferson are accessible alternatives, and New York telehealth is available when a video visit fits.
 
-If stairs are a barrier, tell the Welcome Team when you book. They can schedule you at [Rockville Centre](/locations/rockville-centre), [Smithtown](/locations/smithtown), or [Port Jefferson](/locations/port-jefferson), or match you with New York telehealth when a video visit fits.
+If stairs are a barrier, [Rockville Centre](/locations/rockville-centre), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson) are step-free, and video visits are available in New York. [Contact Us](/contact).
 
 
 ## Providers at this office
@@ -39,7 +39,7 @@ If stairs are a barrier, tell the Welcome Team when you book. They can schedule 
 
 [NEEDS: assign providers to offices in the sheet]
 
-Therapists here work with children, teens, adults, couples, and families. The Welcome Team matches you with someone scheduled at this office.
+Therapists here work with children, teens, adults, couples, and families. You do not need to choose someone before you write. [Contact Us](/contact).
 
 ## Nearby communities we serve
 

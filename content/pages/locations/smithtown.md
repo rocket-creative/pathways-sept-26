@@ -1,7 +1,7 @@
 ---
 url: /locations/smithtown
 title: "Pathways Within in Smithtown, NY | Pathways Within"
-meta: "Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203. Elevator to the 2nd floor. The Welcome Team schedules your 360 intake here."
+meta: "Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203. An elevator goes to the 2nd floor."
 h1: "Pathways Within in Smithtown, NY"
 page_type: location
 pillar: none
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Reception area at Pathways Within Smithtown on Smith
 
 # Pathways Within in Smithtown, NY
 
-Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787. The office is on Route 347. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
+Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787, on Route 347. An elevator goes to the 2nd floor.
 
 [CTA] Contact Us -> /contact
 
@@ -30,7 +30,7 @@ The office is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787. Parking i
 
 Accessibility: Elevator to the 2nd floor. This office is wheelchair accessible.
 
-Smithtown is an accessible office. Rockville Centre and Port Jefferson are accessible as well. If you use a wheelchair or have trouble with stairs, tell the Welcome Team when you book.
+Smithtown is an accessible office. [Rockville Centre](/locations/rockville-centre) and [Port Jefferson](/locations/port-jefferson) are step-free as well. [Contact Us](/contact).
 
 
 ## Providers at this office
@@ -39,7 +39,7 @@ Smithtown is an accessible office. Rockville Centre and Port Jefferson are acces
 
 [NEEDS: assign providers to offices in the sheet]
 
-The Welcome Team matches you with a provider scheduled at this office. You do not need to choose someone before you reach out.
+You do not need to choose a provider before you write. [Contact Us](/contact).
 
 ## Nearby communities we serve
 

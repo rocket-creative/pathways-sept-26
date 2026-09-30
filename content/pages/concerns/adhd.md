@@ -51,7 +51,7 @@ Our prescriber offers [medication management](/medication-management) for adoles
 
 You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you or your child are experiencing and what you want to change. The team builds a plan and matches you with a therapist who works with your age group.
 
-Your first session covers history, school or work, home life, and what a good outcome looks like. For children, the therapist usually meets with parents first. If an evaluation for medication makes sense, the Welcome Team schedules it with our prescriber. Within a few weeks you have a plan, a therapist, and a few practical tools already in use. Read the full process at [Contact Us](/contact).
+Your first session covers history, school or work, home life, and what a good outcome looks like. For children, the therapist usually meets with parents first. If medication may help, [medication management](/medication-management) can be part of the plan. Within a few weeks you have a plan, a therapist, and a few practical tools already in use. [Contact Us](/contact).
 
 ## Medication, therapy, or both
 

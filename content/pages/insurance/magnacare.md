@@ -39,7 +39,7 @@ Your Welcome Team contact stays with you after that. The full process is describ
 
 ## If a visit is not covered
 
-If your plan does not cover a visit, or you prefer not to use insurance, the Welcome Team explains your options before you are scheduled. We accept cash, major credit cards, and HSA and FSA cards. We do not post rates on this page.
+If your plan does not cover a visit, or you prefer not to use insurance, the Welcome Team can explain coverage and cost before care begins. We accept cash, major credit cards, and HSA and FSA cards.
 
 ## Locations and telehealth
 

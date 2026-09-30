@@ -293,11 +293,13 @@ export const HOME_ABOUT: ImageGroup = {
           focal: "center",
         },
         "the-welcome-team": {
-          asset: "ha-ap26-desk-talk",
-          alt: "Staff and a visitor talking across the Pathways Within front desk",
-          shape: "circle",
+          asset: "missing-photo",
+          alt: "",
+          missing: "Smithtown front-desk photo of Gloria with Joanne",
+          shape: "rounded",
+          aspect: "landscape",
           side: "end",
-          focal: "center",
+          layout: "feature",
         },
         "our-therapy-dogs": [
           {

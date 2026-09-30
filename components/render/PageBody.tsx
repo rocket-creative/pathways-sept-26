@@ -25,6 +25,7 @@ import Heading, { type HeadingBlock } from "./blocks/Heading";
 import List from "./blocks/List";
 import Needs from "./blocks/Needs";
 import { Paragraph, Quote } from "./blocks/Prose";
+import MissingPhoto from "./blocks/MissingPhoto";
 import SectionFigure from "./blocks/SectionFigure";
 import "./render.css";
 import "./photos.css";
@@ -72,6 +73,29 @@ export default function PageBody({ page }: { page: Page }) {
 
         const figures = normalizeSectionPhotos(photos?.sections?.[section.heading.id]);
         const primary = figures[0];
+        if (primary?.missing) {
+          return (
+            <section
+              key={position}
+              className="page-section page-section--figure"
+              aria-labelledby={section.heading.id}
+              data-section={section.heading.id}
+              data-side={primary.side ?? "end"}
+              data-layout={primary.layout ?? "split"}
+            >
+              <div className="section-figure__copy">
+                <Heading block={section.heading} ctx={ctx} />
+                {renderSectionBody(section.heading, section.blocks, ctx)}
+              </div>
+              <MissingPhoto
+                label={primary.missing}
+                shape={primary.shape}
+                aspect={primary.aspect}
+                layout={primary.layout ?? "split"}
+              />
+            </section>
+          );
+        }
         const resolvedPrimary = resolvePhoto(primary);
 
         if (primary && resolvedPrimary && primary.layout === "collage") {

@@ -60,7 +60,7 @@ Appointment times vary by clinician. Tell the Welcome Team what times work for y
 
 ### What is your cancellation policy?
 
-Cancellation policies vary by service. The Welcome Team explains the one that applies when you book. We do not post a window or a fee on this page.
+Cancellation policies vary by service. The Welcome Team can explain the one that applies before care begins.
 
 ### Is what I say confidential?
 
@@ -82,9 +82,9 @@ Yes. Sessions run on Jane. You need a private space and a stable connection.
 
 Yes, most major plans for therapy and medication management, and NYSHIP for eligible medical massage. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your intake. [Insurance and fees](/insurance-and-fees).
 
-### Do you post your fees?
+### How do I find out what a visit costs?
 
-No. The Welcome Team quotes fees when you book. We do not post rates on the site.
+The Welcome Team can explain coverage and cost before care begins.
 
 ### How can I pay?
 

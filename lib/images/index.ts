@@ -96,7 +96,7 @@ function toResolved(built: GeneratedAsset, alt: string, focal: Focal | undefined
  * Run `npm run images` to build.
  */
 export function resolvePhoto(photo: Photo | undefined): ResolvedPhoto | undefined {
-  if (!photo) return undefined;
+  if (!photo || photo.missing) return undefined;
   if (!assets().has(photo.asset)) {
     throw new Error(`Photo "${photo.asset}" is not declared in any lib/images/groups file.`);
   }

@@ -1,7 +1,7 @@
 ---
 url: /locations/port-jefferson
 title: "Pathways Within in Port Jefferson, NY | Pathways Within"
-meta: "Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, on the first floor with a ramp. The Welcome Team schedules your 360 intake."
+meta: "Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, on the first floor with a ramp."
 h1: "Pathways Within in Port Jefferson, NY"
 page_type: location
 pillar: none
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Therapy office at Pathways Within Port Jefferson on 
 
 # Pathways Within in Port Jefferson, NY
 
-Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the North Shore of Suffolk County. It is open, on the first floor, with a ramp. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
+Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the North Shore of Suffolk County. It is on the first floor, with a ramp.
 
 [CTA] Contact Us -> /contact
 
@@ -37,7 +37,7 @@ Accessibility: First floor, with a ramp. This office is wheelchair accessible.
 
 [NEEDS: assign providers to offices in the sheet]
 
-The Welcome Team matches you with a provider scheduled at this office. You do not need to choose someone before you reach out.
+You do not need to choose a provider before you write. [Contact Us](/contact).
 
 ## Nearby communities we serve
 

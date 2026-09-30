@@ -36,11 +36,18 @@ export interface AssetSource {
 }
 
 export interface Photo {
-  /** AssetSource.id */
+  /**
+   * AssetSource.id. Unused when `missing` is set; pass "missing-photo".
+   */
   asset: string;
   /** Accessible description. Decorative photographs pass "" and are skipped by readers. */
   alt: string;
   focal?: Focal;
+  /**
+   * The photograph the notes asked for is not in the library. The page shows
+   * a labeled box instead of a stock stand-in.
+   */
+  missing?: string;
 }
 
 /** How a section photograph sits relative to its copy. */

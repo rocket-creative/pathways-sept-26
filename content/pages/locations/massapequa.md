@@ -1,7 +1,7 @@
 ---
 url: /locations/massapequa
 title: "Pathways Within in Massapequa, NY | Pathways Within"
-meta: "Pathways Within Massapequa is at 4160 Merrick Road, Suite 7. The office is reached by stairs. Suite 5 is closed. The Welcome Team schedules your visit."
+meta: "Pathways Within Massapequa is at 4160 Merrick Road, Suite 7. The office is reached by stairs. Suite 5 is closed."
 h1: "Pathways Within in Massapequa, NY"
 page_type: location
 pillar: none
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Therapy office at Pathways Within Massapequa on Merr
 
 # Pathways Within in Massapequa, NY
 
-Pathways Within Massapequa is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. Suite 5 at this address is closed. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
+Pathways Within Massapequa is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. The office is reached by stairs. Suite 5 at this address is closed.
 
 [CTA] Contact Us -> /contact
 
@@ -30,7 +30,7 @@ The office is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. Parking is av
 
 Accessibility: Reached by stairs. This office is not wheelchair accessible. Rockville Centre, Smithtown, and Port Jefferson are accessible alternatives, and New York telehealth is available when a video visit fits.
 
-If stairs are a barrier, tell the Welcome Team when you book. They can schedule you at [Rockville Centre](/locations/rockville-centre), [Smithtown](/locations/smithtown), or [Port Jefferson](/locations/port-jefferson), or match you with New York telehealth when a video visit fits.
+If stairs are a barrier, [Rockville Centre](/locations/rockville-centre), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson) are step-free, and video visits are available in New York. [Contact Us](/contact).
 
 
 ## Providers at this office
@@ -39,7 +39,7 @@ If stairs are a barrier, tell the Welcome Team when you book. They can schedule 
 
 [NEEDS: assign providers to offices in the sheet]
 
-The Welcome Team matches you with a provider scheduled at this office. You do not need to choose someone before you reach out.
+You do not need to choose a provider before you write. [Contact Us](/contact).
 
 ## Nearby communities we serve
 

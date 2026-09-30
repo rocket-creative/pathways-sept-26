@@ -70,7 +70,7 @@ People often report feeling heat or tingling where Tia is working, seeing colors
 
 ## How care works here
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If energy work fits, the team schedules you with Tia and, when it helps, adds support from other parts of the practice.
+Every new client starts with a 360 intake. That conversation covers what you are experiencing across mind, body, and daily life. Energy work can stand on its own, or sit alongside other care.
 
 Some clients book energy work on its own. Others use it between other appointments. [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
 

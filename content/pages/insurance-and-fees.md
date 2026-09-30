@@ -45,11 +45,11 @@ Insurance is a question we answer, not a gate you have to pass.
 
 If your plan is out of network for a provider, or you prefer not to use insurance, you pay at the time of service and we provide a superbill you can submit to your insurer for possible reimbursement.
 
-We accept cash, major credit cards, and HSA and FSA funds. The Welcome Team quotes fees. We do not post rates on the site.
+We accept cash, major credit cards, and HSA and FSA funds. The Welcome Team can explain coverage and cost before care begins.
 
 ## Cancellations and no shows
 
-Cancellation policies can vary by service. The Welcome Team explains the policy that applies when you book. We do not publish a single window or fee here.
+Cancellation policies can vary by service. The Welcome Team can explain the one that applies before care begins.
 
 ## Good faith estimate
 
@@ -71,7 +71,7 @@ Most plans that cover mental health care cover psychiatric evaluation and medica
 
 ### Does insurance cover massage or acupuncture?
 
-It depends on the provider, the service, and the plan. Send the contact form and the Welcome Team checks. We do not post a coverage list here.
+It depends on the provider, the service, and the plan. [Contact Us](/contact) and the Welcome Team can explain your coverage before care begins.
 
 ### Can I use my HSA or FSA?
 

@@ -1,7 +1,7 @@
 ---
 url: /locations/rockville-centre
 title: "Pathways Within in Rockville Centre | Pathways Within"
-meta: "Pathways Within Rockville Centre is at 53 N Park Ave, Suite 302. Elevator to the 3rd floor. The Welcome Team schedules your 360 intake here."
+meta: "Pathways Within Rockville Centre is at 53 N Park Ave, Suite 302. An elevator goes to the 3rd floor."
 h1: "Pathways Within in Rockville Centre, NY"
 page_type: location
 pillar: none
@@ -20,7 +20,7 @@ hero_image: "[NEEDS: image] Waiting area of the Pathways Within Rockville Centre
 
 # Pathways Within in Rockville Centre, NY
 
-Pathways Within Rockville Centre is at 53 N Park Ave, Suite 302, Rockville Centre, NY 11570. The Welcome Team schedules this office. Services can include pop-up events, so this page does not assign a fixed menu to the building.
+Pathways Within Rockville Centre is at 53 N Park Ave, Suite 302, Rockville Centre, NY 11570. An elevator goes to the 3rd floor.
 
 [CTA] Contact Us -> /contact
 
@@ -30,7 +30,7 @@ The office is at 53 N Park Ave, Suite 302, Rockville Centre, NY 11570. Parking i
 
 Accessibility: Elevator to the 3rd floor. This office is wheelchair accessible.
 
-If stairs or distance are a concern, tell the Welcome Team when you book. They can match you with New York telehealth or an appointment at [Smithtown](/locations/smithtown) or [Port Jefferson](/locations/port-jefferson).
+If stairs or distance are a concern, video visits are available in New York, and [Smithtown](/locations/smithtown) and [Port Jefferson](/locations/port-jefferson) are step-free. [Contact Us](/contact).
 
 
 ## Providers at this office
@@ -39,7 +39,7 @@ If stairs or distance are a concern, tell the Welcome Team when you book. They c
 
 [NEEDS: assign providers to offices in the sheet]
 
-The Welcome Team matches you with a provider scheduled at this office. You do not need to choose someone before you reach out.
+You do not need to choose a provider before you write. [Contact Us](/contact).
 
 ## Nearby communities we serve
 

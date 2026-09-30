@@ -56,7 +56,7 @@ You choose how much to talk. Some clients prefer to sink into the experience in 
 
 ## How care works here
 
-If IET fits, the Welcome Team schedules you with Tia. See all three modalities on our [energy work page](/wellness/energy-work), or [contact us](/contact).
+IET can stand on its own, or sit alongside other care. See all three modalities on our [energy work page](/wellness/energy-work), or [Contact Us](/contact).
 
 ## Where it is offered
 

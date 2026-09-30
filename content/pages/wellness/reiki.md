@@ -70,7 +70,7 @@ The best way to learn whether Reiki is for you is to try it once. Most people kn
 
 ## How care works here
 
-If Reiki fits, the Welcome Team schedules you with Tia. Some clients come for Reiki alone. See all three modalities on our [energy work page](/wellness/energy-work), or [contact us](/contact).
+Reiki can stand on its own, or sit alongside other care. See all three modalities on our [energy work page](/wellness/energy-work), or [Contact Us](/contact).
 
 ## Where it is offered
 

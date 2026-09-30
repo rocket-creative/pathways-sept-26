@@ -545,14 +545,14 @@ export const THERAPY: ImageGroup = {
 
     "/therapy/veterans-first-responders": {
       hero: {
-        asset: "th-ap26-older-man",
-        alt: "A therapist talking with a client in a Pathways Within office",
+        asset: "th-ap26-green-listen",
+        alt: "A therapist listening while a client talks from a blue sofa",
         focal: "center",
       },
       sections: {
         "what-this-program-is": {
-          asset: "th-ap26-older-quiet",
-          alt: "A client and therapist sitting together in a quiet office",
+          asset: "th-ap26-green-listen",
+          alt: "A therapist listening while a client talks from a blue sofa",
           shape: "rounded",
           aspect: "landscape",
           side: "end",

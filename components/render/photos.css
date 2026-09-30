@@ -22,6 +22,41 @@
 
 /* Frame ----------------------------------------------------------------- */
 
+.missing-photo__label {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.missing-photo__title,
+.missing-photo__need {
+  margin: 0;
+}
+
+.missing-photo__title {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.missing-photo__need {
+  max-width: 22rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.missing-photo.section-figure__media--circle {
+  --photo-radius: var(--glass-radius, 24px);
+  width: 100%;
+  border-radius: var(--photo-radius);
+}
+
 .section-figure__media {
   /* A figure nested inside a card takes the card radius so the corners nest
      cleanly. */
@@ -361,4 +396,12 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
     border-color: #e3e6ea;
     box-shadow: none;
   }
+}
+
+/* A missing-photo label has to stay readable, so it never takes the circle mask. */
+.missing-photo.section-figure__media--circle {
+  --photo-radius: var(--glass-radius, 24px);
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--photo-radius);
 }
