@@ -16,7 +16,7 @@ Describe the room / setting, not the camera. Prefer calm, factual alt:
 “Quiet therapy office with natural light and soft seating in Smithtown.”
 Empty string only when decorative and adjacent copy already names the place.
 
-## Staged office paths (62 files)
+## Staged office paths (56 files)
 
 Paths are relative to `images/pathwayswithin-images/`.
 
@@ -25,14 +25,6 @@ Paths are relative to `images/pathwayswithin-images/`.
 - `approved/offices/_nassau-root/_24M6869-gb-e.jpg`
 - `approved/offices/_nassau-root/_24M6871-gb-e.jpg`
 - `approved/offices/_nassau-root/_24M6873-gb-e.jpg`
-
-### Rockville Centre
-- `approved/offices/rockville-centre/_24M6835-gb-e.jpg`
-- `approved/offices/rockville-centre/_24M6837-gb-e.jpg`
-- `approved/offices/rockville-centre/_24M6838-gb-e.jpg`
-- `approved/offices/rockville-centre/_24M6840-gb-e.jpg`
-- `approved/offices/rockville-centre/_24M6841-gb-e.jpg`
-- `approved/offices/rockville-centre/_24M6843-gb-e.jpg`
 
 ### Garden City — Wisdom
 - `approved/offices/garden-city/_24M6878-gb-e.jpg`

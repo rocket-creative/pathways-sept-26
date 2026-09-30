@@ -1827,14 +1827,19 @@ html {
 }
 
 /* Form embed ---------------------------------------------------------- */
-/* Height is reserved up front: an iframe that grows after load is the
-   easiest way to fail CLS. */
+/* The Trust Driven Care form is about 90rem tall once every field is
+   visible. Reserve that height so the iframe does not grow after load
+   and does not scroll inside the section. The widget paints its first
+   field at the top of a transparent document, so the card's own padding
+   is what keeps First Name off the rounded edge. */
 .form-embed {
   display: block;
+  box-sizing: content-box;
   width: 100%;
   max-width: var(--measure-wide);
-  height: clamp(40rem, 78vh, 56rem);
-  min-height: 0; /* own the reserved height in one place */
+  height: 92rem;
+  min-height: 92rem;
+  padding-top: 2.75rem;
   margin: var(--space-xl) auto;
   border: 0;
   border-radius: var(--radius-2xl);

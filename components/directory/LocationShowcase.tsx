@@ -6,13 +6,10 @@ import "./office-stages.css";
 
 /** Current-office frames already in the approved set. Closed suites are not in this list. */
 const STAGES: Record<string, { services: string; photos: Photo[] }> = {
+  /* Closed office: the card stays, without photographs of the old suite. */
   "rockville-centre": {
     services: "Therapy, medication management, and wellness",
-    photos: [
-      { asset: "pr-ap-rvc-teal-room", alt: "Therapy room at the Rockville Centre office, with teal walls and a grey sofa" },
-      { asset: "pr-ap-rvc-waiting", alt: "Waiting area at the Rockville Centre office" },
-      { asset: "pr-ap-rvc-hallway", alt: "Hallway at the Rockville Centre office leading into a therapy room" },
-    ],
+    photos: [],
   },
   "garden-city": {
     services: "Therapy, medication management, and wellness",

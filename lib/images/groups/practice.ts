@@ -33,14 +33,6 @@ const PLAN_PAGE: ImageGroup["pages"][string] = {
 export const PRACTICE: ImageGroup = {
   name: "practice",
   assets: [
-    /* Rockville Centre ---------------------------------------------- */
-    { id: "pr-ap-rvc-coffee-bar", file: "approved/offices/rockville-centre/_24M6835-gb-e.jpg" },
-    { id: "pr-ap-rvc-waiting", file: "approved/offices/rockville-centre/_24M6837-gb-e.jpg" },
-    { id: "pr-ap-rvc-navy-room", file: "approved/offices/rockville-centre/_24M6838-gb-e.jpg", square: "center" },
-    { id: "pr-ap-rvc-hallway", file: "approved/offices/rockville-centre/_24M6840-gb-e.jpg" },
-    { id: "pr-ap-rvc-teal-room", file: "approved/offices/rockville-centre/_24M6841-gb-e.jpg", square: "center" },
-    { id: "pr-ap-rvc-teal-chair", file: "approved/offices/rockville-centre/_24M6843-gb-e.jpg", square: "center" },
-
     /* Garden City (+ wellness suite) -------------------------------- */
     { id: "pr-ap-gc-waiting-nook", file: "approved/offices/garden-city/_24M6878-gb-e.jpg", square: "center" },
     { id: "pr-ap-gc-waiting-doors", file: "approved/offices/garden-city/_24M6880-gb-e.jpg" },
@@ -93,47 +85,6 @@ export const PRACTICE: ImageGroup = {
           shape: "circle",
           side: "start",
           focal: "50% 55%",
-        },
-      },
-    },
-    "/locations/rockville-centre": {
-      hero: {
-        asset: "pr-ap-rvc-teal-room",
-        alt: "Therapy room at the Rockville Centre Pathways Within office with dusty teal walls, a grey sofa and chair, and a wood-mosaic coffee table",
-        focal: "center",
-      },
-      sections: {
-        "getting-here": {
-          asset: "pr-ap-rvc-hallway",
-          alt: "Hallway at the Rockville Centre Pathways Within office leading to a therapy room with a teal accent wall",
-          shape: "rounded",
-          aspect: "landscape",
-          side: "end",
-          layout: "band",
-          focal: "50% 45%",
-        },
-        "providers-at-this-office": {
-          asset: "pr-ap-rvc-navy-room",
-          alt: "Therapy room at the Rockville Centre Pathways Within office with a navy sofa, chaise, marble coffee table, and patterned rug",
-          shape: "circle",
-          side: "start",
-          focal: "center",
-        },
-        "nearby-communities-we-serve": {
-          asset: "pr-ap-rvc-waiting",
-          alt: "Waiting area at the Rockville Centre Pathways Within office with wingback chairs and a small kitchenette",
-          shape: "rounded",
-          aspect: "portrait",
-          side: "end",
-          focal: "40% 50%",
-        },
-        "common-questions": {
-          asset: "pr-ap-rvc-coffee-bar",
-          alt: "Coffee bar and Pathways Within logo sign at the Rockville Centre office refreshment station",
-          shape: "rounded",
-          aspect: "landscape",
-          side: "start",
-          focal: "50% 45%",
         },
       },
     },
@@ -311,11 +262,11 @@ export const PRACTICE: ImageGroup = {
       },
       sections: {
         offices: {
-          asset: "pr-ap-rvc-teal-chair",
-          alt: "Therapy room interior at a Pathways Within office with a grey armchair, wood-mosaic table, and teal walls",
+          asset: "pr-ap-gc-therapy-joy",
+          alt: "Therapy room at the Garden City office with a blue chaise, grey chairs, and a Today I Choose Joy sign",
           shape: "circle",
           side: "end",
-          focal: "55% 50%",
+          focal: "45% 50%",
         },
         medication: {
           asset: "pr-ap-mpq-mandala-chair",

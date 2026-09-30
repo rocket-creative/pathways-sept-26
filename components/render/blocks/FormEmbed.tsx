@@ -7,8 +7,8 @@ import { FORM_EMBEDS } from "@/lib/content";
  */
 const FORM_META: Record<keyof typeof FORM_EMBEDS, { title: string; width: number; height: number }> =
   {
-    therapy: { title: "Contact the Welcome Team", width: 740, height: 900 },
-    wellness: { title: "Wellness intake form", width: 740, height: 900 },
+    therapy: { title: "Contact the Welcome Team", width: 740, height: 1472 },
+    wellness: { title: "Wellness intake form", width: 740, height: 1472 },
   };
 
 export default function FormEmbed({

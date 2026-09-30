@@ -101,16 +101,6 @@ export const HOME_ABOUT: ImageGroup = {
       id: "ha-ap-wellness-lobby",
       file: "approved/offices/garden-city-wellness/_24M6853-gb-e.jpg",
     },
-    // Rockville Centre: coffee bar under the Pathways Within wall sign.
-    {
-      id: "ha-ap-coffee-bar",
-      file: "approved/offices/rockville-centre/_24M6835-gb-e.jpg",
-    },
-    // Rockville Centre: pale hallway looking into a teal therapy room.
-    {
-      id: "ha-ap-hallway-rvc",
-      file: "approved/offices/rockville-centre/_24M6840-gb-e.jpg",
-    },
     // Port Jefferson: blue hallway with teal chairs and a tall petal lamp.
     {
       id: "ha-ap-waiting-port-jefferson",
@@ -264,8 +254,8 @@ export const HOME_ABOUT: ImageGroup = {
           focal: "center",
         },
         "what-we-believe": {
-          asset: "ha-ap-coffee-bar",
-          alt: "A coffee and tea station under a wooden Pathways Within wall sign in the Rockville Centre office",
+          asset: "pr-ap-gc-flower-wall",
+          alt: "A dark leather sofa against a white flower wall in a Pathways Within office waiting area",
           shape: "circle",
           side: "end",
           focal: "center",
@@ -371,8 +361,8 @@ export const HOME_ABOUT: ImageGroup = {
           focal: "center",
         },
         "how-hiring-works": {
-          asset: "ha-ap-hallway-rvc",
-          alt: "A light blue office hallway with wood floors looking into a teal therapy room",
+          asset: "pr-ap-mpq-hallway",
+          alt: "Hallway at the Massapequa office looking into colorful therapy rooms",
           shape: "circle",
           side: "start",
           focal: "center",

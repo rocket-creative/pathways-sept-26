@@ -204,6 +204,11 @@ export default function PageBody({ page }: { page: Page }) {
         }
 
         if (primary && resolvedPrimary && primary.layout === "collage") {
+          /* A non-collage entry sits beside the copy. The rest stay the grid. */
+          const asideEntry = figures.find((entry) => entry.layout && entry.layout !== "collage");
+          const gridFigures = asideEntry ? figures.filter((entry) => entry !== asideEntry) : figures;
+          const asideResolved = asideEntry ? resolvePhoto(asideEntry) : null;
+
           return (
             <section
               key={position}
@@ -215,8 +220,17 @@ export default function PageBody({ page }: { page: Page }) {
               <div className="section-figure__copy">
                 <Heading block={section.heading} ctx={ctx} />
                 {renderSectionBody(section.heading, section.blocks, ctx)}
+                {asideResolved && asideEntry ? (
+                  <SectionFigure
+                    photo={asideResolved}
+                    shape={asideEntry.shape ?? "rounded"}
+                    aspect={asideEntry.aspect ?? "landscape"}
+                    layout="split"
+                    half
+                  />
+                ) : null}
               </div>
-              <div className="section-collage content-image">{collageCells(figures)}</div>
+              <div className="section-collage content-image">{collageCells(gridFigures)}</div>
             </section>
           );
         }
@@ -515,9 +529,9 @@ function CardSection({
     (block) => block.kind === "widget" && block.name === "providerSearch",
   );
 
-  // One card with copy: heading and card down the left, copy on the right
-  // (directory.css lays the columns out from 900px). The copy is read before
-  // the card, which is the order it makes sense in: who, then the link.
+  // One card with copy: the portrait is the left column and the heading
+  // plus bio sit beside it (directory.css). The copy is read before the
+  // card in the source, which is the order it makes sense in: who, then the link.
   if (count === 1 && hasCopy) {
     return (
       <section

@@ -20,7 +20,7 @@ const SEPARATOR_WORDS_RE = /^(and|or)$/i;
 
 /** Labels that are already written as actions. */
 const ACTION_LABEL_RE =
-  /^(Explore|Browse|Meet|View|See every|See all|Learn more|Get started|Book with|Book |Start your|Start |Schedule|Contact the|Contact |Work with|How care works|How it works|Insurance and fees|All concerns|Open in|Browse all)/i;
+  /^(Explore|Browse|Meet|View|See every|See all|Learn more|Get started|Book with|Book |Start your|Start |Schedule|Contact the|Contact |Work with|How care works|How it works|Insurance and fees|Open in|Browse all)/i;
 
 /** Destination names only promoted when a "See …" lead-in precedes them. */
 const DEST_LABEL_RE =

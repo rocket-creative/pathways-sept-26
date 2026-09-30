@@ -109,14 +109,6 @@ export const THERAPY: ImageGroup = {
       sections: {
         "therapy-for-who-you-are": [
           {
-            asset: "th-ap26-glasses",
-            alt: "A couple talking together on a blue sofa during a session",
-            shape: "circle",
-            side: "end",
-            layout: "split",
-            focal: "50% 42%",
-          },
-          {
             asset: "th-ap26-green-quiet",
             alt: "A therapist in a green vest listens during a session",
             layout: "collage",
@@ -144,6 +136,16 @@ export const THERAPY: ImageGroup = {
             aspect: "landscape",
             focal: "center",
           },
+          {
+            asset: "th-ap26-glasses",
+            alt: "A couple talking together on a blue sofa during a session",
+            shape: "rounded",
+            aspect: "landscape",
+            side: "end",
+            /* Beside the list, in the empty stretch to its right. Not a collage cell. */
+            layout: "split",
+            focal: "50% 42%",
+          },
         ],
         "how-therapy-starts-here": {
           asset: "ha-ap26-desk-talk",
@@ -167,8 +169,8 @@ export const THERAPY: ImageGroup = {
         },
         where: [
           {
-            asset: "pr-ap-rvc-teal-room",
-            alt: "Therapy room at the Rockville Centre office",
+            asset: "pr-ap-mpq-hallway",
+            alt: "Hallway at the Massapequa office looking into colorful therapy rooms",
             layout: "collage",
             aspect: "landscape",
             focal: "center",
