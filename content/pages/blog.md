@@ -18,27 +18,18 @@ providers: []
 hero_image: "[NEEDS: image] Rachel Lessard writing at a desk"
 ---
 
-Rachel Lessard, LCSW
-
-5/28/19
-
-Rachel Lessard, LCSW
-
-5/28/19
-
 A Podcast with Rachel Lessard
 
 Owner & Founder of Pathways Within joins host Aynisa Leonardo
 
 on A New Way Podcast.
 
-Guest User
+Read More
+UPDATE!
 
-5/28/19
+Telehealth available in New Jersey, North Carolina and Florida in addition to New York!
 
-Guest User
-
-5/28/19
+Read More
 
 ```json
 {

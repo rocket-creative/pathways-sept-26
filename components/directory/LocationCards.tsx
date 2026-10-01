@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import { getLocationCards, type LocationCardData } from "@/lib/locations";
-import { pickFillPhoto } from "./fillPhoto";
+import { pickFillPhotos } from "./fillPhoto";
 import GridFill from "./GridFill";
 import "./directory.css";
 
@@ -18,7 +18,7 @@ export default function LocationCards({ slugs, fill = true }: { slugs: string[];
   if (!cards.length) return null;
 
   // A shoreline photograph fills the end of the last row (see GridFill).
-  const photo = fill ? pickFillPhoto("locations", slugs.join(",")) : undefined;
+  const photos = fill ? pickFillPhotos("locations", slugs.join(",")) : undefined;
 
   return (
     <ul className="location-cards">
@@ -31,7 +31,7 @@ export default function LocationCards({ slugs, fill = true }: { slugs: string[];
           <Accessibility card={card} />
         </li>
       ))}
-      <GridFill photo={photo} count={cards.length} />
+      <GridFill photos={photos} count={cards.length} />
     </ul>
   );
 }

@@ -4,12 +4,13 @@
  * (components/backdrop/PageBackdrop.tsx).
  *
  * Tiers are cut from the 16384 x 9216 master (`giant-path-bg.png` in the
- * repo root, git-ignored at 189 MB) with no upscaling anywhere. The image
- * covers the viewport (`object-fit: cover`), so on a wide screen it renders
- * at the viewport width and on a tall one at the height scaled by the 16:9
- * aspect; `sizes` is the larger of the two so the browser picks the tier
- * that covers the viewport at its device pixel ratio (a 5K display at 2x
- * takes the 7680). The JPEG is the fallback for browsers without WebP.
+ * repo root, git-ignored at 189 MB) with no upscaling anywhere. `sizes`
+ * is the rendered width of a 16:9 cover of the viewport, which is how
+ * image 2 is drawn on the homepage handoff and on every inner page: as
+ * far zoomed out as the photograph can go and still fill the screen.
+ * The larger of viewport width and (viewport height × 16/9) is what the
+ * browser picks from (a 5K display at 2x takes the 7680). The JPEG is
+ * the fallback for browsers without WebP.
  *
  * `width` and `height` match the fallback file, which is 16:9 like every
  * tier. They are not the 16384×9216 master. macOS Chrome will not paint an
@@ -31,7 +32,7 @@ export const LABYRINTH = {
     "/labyrinth-7680.webp 7680w",
   ].join(", "),
   fallback: "/labyrinth.jpg",
-  sizes: "max(100vw, 177.78vh)",
+  sizes: "max(100vw, calc(100vh * 16 / 9))",
   width: 2560,
   height: 1440,
 } as const;

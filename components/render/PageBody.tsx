@@ -7,6 +7,7 @@ import {
   type SectionPhoto,
   type SectionPhotos,
 } from "@/lib/images";
+import { personSectionPhoto } from "@/lib/person-photo";
 import { getLocationCards } from "@/lib/locations";
 import LocationCards from "@/components/directory/LocationCards";
 import LocationShowcase from "@/components/directory/LocationShowcase";
@@ -24,9 +25,13 @@ import FormEmbed from "./blocks/FormEmbed";
 import Heading, { type HeadingBlock } from "./blocks/Heading";
 import List from "./blocks/List";
 import Needs from "./blocks/Needs";
+import { promoteParagraphLinks } from "./promoteLinks";
 import { isCrisisLine, Paragraph, Quote } from "./blocks/Prose";
 import MissingPhoto from "./blocks/MissingPhoto";
 import SectionFigure from "./blocks/SectionFigure";
+import CardPhotoBento from "./blocks/CardPhotoBento";
+import EditorialSpread from "./blocks/EditorialSpread";
+import { cardFillFor } from "@/lib/images/card-bento";
 import "./render.css";
 import "./photos.css";
 
@@ -35,13 +40,15 @@ import "./photos.css";
  * lib/content.ts decides what a block is, this decides what it looks like.
  *
  * Photographs come from lib/images, keyed by page url and section id, so the
- * copy files never change to gain or lose a picture. Two placements: a figure
- * beside a section's copy, and a local asset behind an `[IMAGE: alt]` marker.
+ * copy files never change to gain or lose a picture. A figure sits beside a
+ * section's copy, and a local asset sits behind an `[IMAGE: alt]` marker.
  * A page's `hero` entry in the registry is not rendered; it only supplies the
  * og:image (lib/images ogImageFor). A section may register one photo or an
  * array: the first is primary (split / feature / band); further entries render
  * as full-width bands after it inside the same card, or as one collage grid
- * when those entries use `layout: "collage"`.
+ * when those entries use `layout: "collage"`. A long split, feature, or band
+ * section, and a long card with a bento fill, breaks around an editorial
+ * spread instead: the opening stays with the plate, and the rest follows.
  *
  * Everything below the article is server rendered and fully visible on load.
  * No accordion, no tab, no disclosure: the FAQ answers are in the DOM.
@@ -61,6 +68,10 @@ export default function PageBody({ page }: { page: Page }) {
 
   const { sections, bylines } = groupSections(page.blocks);
 
+  /* The first long section on a page gets the full bento. Later ones keep
+     a single plate, so a hub does not repeat the same grid fifteen times. */
+  let editorialSpreads = 0;
+
   return (
     <article className="prose">
       {sections.map((section, position) => {
@@ -79,7 +90,10 @@ export default function PageBody({ page }: { page: Page }) {
           );
         }
 
-        const figures = normalizeSectionPhotos(photos?.sections?.[section.heading.id]);
+        const registered = normalizeSectionPhotos(photos?.sections?.[section.heading.id]);
+        const person = personSectionPhoto(section.heading.text, section.blocks, position);
+        const figures =
+          registered.length > 0 ? registered : person && resolvePhoto(person) ? [person] : [];
         const primary = figures[0];
         if (primary?.missing) {
           const layout = primary.layout ?? "split";
@@ -238,6 +252,47 @@ export default function PageBody({ page }: { page: Page }) {
         if (primary && resolvedPrimary) {
           const layout = primary.layout ?? "split";
           const cards = hoistFigureCards(layout) ? figureCardFooter(section.blocks, ctx) : null;
+
+          /* Long split, feature, and band copy reads as a magazine spread.
+             The spread owns every resolved photo. A card grid stays a figure
+             with its footer, and collage, columns, cover, and overlay keep
+             the figure layout. */
+          if (
+            !cards &&
+            (layout === "split" || layout === "feature" || layout === "band") &&
+            isLongCopy(section.blocks)
+          ) {
+            const resolved: ResolvedPhoto[] = [];
+            for (const entry of figures) {
+              const photo = resolvePhoto(entry);
+              if (photo) resolved.push(photo);
+            }
+            if (resolved.length) {
+              const { lead, rest } = editorialParts(section.heading, section.blocks);
+              const spreadIndex = editorialSpreads;
+              editorialSpreads += 1;
+              const spreadPhotos = spreadIndex === 0 ? resolved : resolved.slice(0, 1);
+              return (
+                <section
+                  key={position}
+                  className="page-section page-section--editorial"
+                  aria-labelledby={section.heading.id}
+                  data-section={section.heading.id}
+                  data-layout={layout}
+                  data-spread={spreadIndex}
+                >
+                  <EditorialSpread
+                    heading={<Heading block={section.heading} ctx={ctx} />}
+                    lead={lead.length ? renderBlocks(lead, ctx) : null}
+                    rest={rest.length ? renderSectionBody(section.heading, rest, ctx) : null}
+                    photos={spreadPhotos}
+                    plate={layout === "band" ? "band" : "side"}
+                  />
+                </section>
+              );
+            }
+          }
+
           const rest = figures.slice(1);
           const collageEntries = rest.filter((entry) => entry.layout === "collage");
           const bandEntries = rest.filter((entry) => entry.layout !== "collage");
@@ -301,18 +356,77 @@ export default function PageBody({ page }: { page: Page }) {
           return <CardSection key={position} heading={section.heading} cards={cards} ctx={ctx} />;
         }
 
+        let fill: ReturnType<typeof cardFillFor>;
+        try {
+          fill =
+            page.frontMatter.page_type === "trust" ||
+            section.blocks.some(
+              (block) => block.kind === "form" || block.kind === "widget" || block.kind === "embed",
+            )
+              ? undefined
+              : cardFillFor(page.frontMatter.url, section.heading.id, section.heading.text);
+        } catch {
+          fill = undefined;
+        }
+
+        /* Same spread when the section has no registry photograph and the
+           card fill is a bento. A short card, a missing fill, or a portrait
+           stays a side bento. */
+        if (fill?.kind === "bento" && fill.photos.length >= 2 && isLongCopy(section.blocks)) {
+          const { lead, rest } = editorialParts(section.heading, section.blocks);
+          const spreadIndex = editorialSpreads;
+          editorialSpreads += 1;
+          const spreadPhotos = spreadIndex === 0 ? fill.photos : fill.photos.slice(0, 1);
+          return (
+            <section
+              key={position}
+              className="page-section page-section--editorial"
+              aria-labelledby={section.heading.id}
+              data-section={section.heading.id}
+              data-spread={spreadIndex}
+            >
+              <EditorialSpread
+                heading={<Heading block={section.heading} ctx={ctx} />}
+                lead={lead.length ? renderBlocks(lead, ctx) : null}
+                rest={rest.length ? renderSectionBody(section.heading, rest, ctx) : null}
+                photos={spreadPhotos}
+                plate="side"
+              />
+            </section>
+          );
+        }
+
         return (
           <section
             key={position}
-            className="page-section"
+            className={fill ? "page-section page-section--bento" : "page-section"}
             aria-labelledby={section.heading.id}
             data-section={section.heading.id}
           >
-            <Heading block={section.heading} ctx={ctx} />
-            {renderSectionBody(section.heading, section.blocks, ctx)}
+            {fill ? (
+              <div className="section-figure__copy">
+                <Heading block={section.heading} ctx={ctx} />
+                {renderSectionBody(section.heading, section.blocks, ctx)}
+              </div>
+            ) : (
+              <>
+                <Heading block={section.heading} ctx={ctx} />
+                {renderSectionBody(section.heading, section.blocks, ctx)}
+              </>
+            )}
+            {fill ? <CardPhotoBento fill={fill} /> : null}
           </section>
         );
       })}
+
+      {page.frontMatter.page_type === "location" &&
+      !page.blocks.some((block) => block.kind === "locationCards") ? (
+        <section className="page-section" aria-label="Photographs of this office">
+          <LocationShowcase
+            slugs={(page.frontMatter.locations ?? []).filter((slug) => slug !== "telehealth")}
+          />
+        </section>
+      ) : null}
 
       {page.frontMatter.page_type === "provider" ? (
         <ProviderPeers />
@@ -588,6 +702,123 @@ function isStackSection(heading: HeadingBlock, blocks: Block[]): boolean {
   if (isQuestionSection(heading)) return true;
   const subheadings = blocks.filter((block) => block.kind === "heading" && block.level === 3).length;
   return subheadings >= 3;
+}
+
+/**
+ * True when the copy is too long to sit as one column beside a photograph.
+ * A form, widget, embed, or card grid keeps its own layout. Crisis lines
+ * do not count. Paragraphs, lists, and quotes are prose units; only
+ * paragraph text adds to the character count.
+ *
+ * Long at 3 prose units, or 650 characters of paragraph text, or 2 prose
+ * units together with 2 h3s. One or two brief paragraphs stay put.
+ */
+function isLongCopy(blocks: Block[]): boolean {
+  if (
+    blocks.some(
+      (block) =>
+        block.kind === "form" ||
+        block.kind === "widget" ||
+        block.kind === "embed" ||
+        block.kind === "providerCards" ||
+        block.kind === "locationCards",
+    )
+  ) {
+    return false;
+  }
+
+  let prose = 0;
+  let characters = 0;
+  let subheadings = 0;
+
+  for (const block of blocks) {
+    if (block.kind === "heading" && block.level === 3) {
+      subheadings += 1;
+      continue;
+    }
+    if (block.kind === "paragraph") {
+      if (isCrisisLine(block.inline)) continue;
+      prose += 1;
+      characters += inlineToText(block.inline).length;
+      continue;
+    }
+    if (block.kind === "list" || block.kind === "quote") prose += 1;
+  }
+
+  return prose >= 3 || characters >= 650 || (prose >= 2 && subheadings >= 2);
+}
+
+/**
+ * Question stacks stay whole under the photographs. Splitting after the
+ * first paragraph would park a question above the bento and its answer below.
+ */
+function editorialParts(heading: HeadingBlock, blocks: Block[]): { lead: Block[]; rest: Block[] } {
+  if (/faq|question/.test(heading.id)) return { lead: [], rest: blocks };
+  return splitEditorial(blocks);
+}
+
+/**
+ * The standfirst above the plate, then every block that follows it.
+ * Walks in order and drops nothing. An opening quote, the first paragraph
+ * that is not a crisis line, and a button that follows that paragraph stay
+ * up with the heading. A crisis line at the top goes with the rest, so it
+ * is not the standfirst. A section that opens on an h3 has no standfirst:
+ * the heading and the plate open, and the stack follows the bento.
+ */
+
+/** A paragraph that renders as pills, not as a sentence. It belongs with the standfirst. */
+function isLinkRow(block: Block | undefined): boolean {
+  return !!block && block.kind === "paragraph" && promoteParagraphLinks(block.inline).kind === "link-row";
+}
+
+/** A one-line cue such as "Let's Get Started", with no sentence of its own. */
+function isShortCue(block: Block | undefined): boolean {
+  if (!block || block.kind !== "paragraph" || isCrisisLine(block.inline)) return false;
+  const text = inlineToText(block.inline).trim();
+  return text.length > 0 && text.length <= 48 && !/[.?!]/.test(text);
+}
+
+function splitEditorial(blocks: Block[]): { lead: Block[]; rest: Block[] } {
+  if (blocks[0]?.kind === "heading" && blocks[0].level === 3) {
+    return { lead: [], rest: blocks };
+  }
+
+  const lead: Block[] = [];
+  const rest: Block[] = [];
+  let index = 0;
+
+  const crisis = (block: Block | undefined) =>
+    !!block && block.kind === "paragraph" && isCrisisLine(block.inline);
+
+  while (crisis(blocks[index])) {
+    rest.push(blocks[index]);
+    index += 1;
+  }
+
+  if (blocks[index]?.kind === "quote") {
+    lead.push(blocks[index]);
+    index += 1;
+    while (crisis(blocks[index])) {
+      rest.push(blocks[index]);
+      index += 1;
+    }
+  }
+
+  if (blocks[index]?.kind === "paragraph") {
+    lead.push(blocks[index]);
+    index += 1;
+    if (blocks[index]?.kind === "cta" || isLinkRow(blocks[index]) || isShortCue(blocks[index])) {
+      lead.push(blocks[index]);
+      index += 1;
+    }
+  }
+
+  while (index < blocks.length) {
+    rest.push(blocks[index]);
+    index += 1;
+  }
+
+  return { lead, rest };
 }
 
 function renderSectionBody(heading: HeadingBlock, blocks: Block[], ctx: RenderContext): ReactNode {

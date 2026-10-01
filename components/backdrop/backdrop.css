@@ -35,6 +35,14 @@
    the text area (NN/G, Apple HIG Materials, Axess Lab: see the report). */
 
 :root {
+  /* The side-scroll photograph's frame (image 1). hero.css reads these;
+     the laptop offsets match the pin. Image 2 (the labyrinth) is a separate
+     crop: object-fit: cover on the viewport, as far zoomed out as it can
+     go without leaving a gap. */
+  --hero-img-h: 215vh;
+  --hero-img-w: calc(215vh * 16 / 9);
+  --hero-img-top: calc(70vh - 107.5vh);
+
   /* Grid */
   --bento-w: 76rem;
   --bento-gap: clamp(1.25rem, 1.6vw, 1.5rem);
@@ -60,7 +68,9 @@
 }
 
 /* Laptop band (globals.css steps the type scale down here): the card
-   padding and grid gap follow so the cards shrink with their copy. */
+   padding and grid gap follow so the cards shrink with their copy.
+   The frame drops 4vh, the same move the pinned hero makes, so the branch
+   stays under the lockup. */
 @media (min-width: 900px) and (max-height: 960px) {
   :root {
     --bento-gap: clamp(1.1rem, 1.4vw, 1.35rem);
@@ -68,11 +78,22 @@
   }
 }
 
-/* The photograph fills the viewport. PageBackdrop.tsx puts a real <img> with
-   a srcset here (tiers in lib/backdropImage.ts) so each screen gets the
-   sharpest cut it can use. object-fit: cover crops whichever axis has to give
-   so there is never a letterbox; the labyrinth stays centred. The gradient
-   behind it is the photograph's own sky grey, only seen while it loads. */
+@media (max-height: 960px) {
+  :root {
+    --hero-img-top: calc(74vh - 107.5vh);
+  }
+}
+
+@media (max-height: 720px) {
+  :root {
+    --hero-img-top: calc(71vh - 107.5vh);
+  }
+}
+
+/* The photograph is fixed. PageBackdrop.tsx puts a real <img> with a srcset
+   here (tiers in lib/backdropImage.ts). It covers the viewport, which is
+   as far zoomed out as the 16:9 frame can go. The gradient behind it is
+   the photograph's own sky grey, only seen while it loads. */
 .page-backdrop {
   position: fixed;
   inset: 0;
@@ -97,6 +118,9 @@
   margin: 0;
 }
 
+/* Cover is the zoom-out limit. A 16:9 frame shorter than the viewport, or
+   narrower than it, would show the sky gradient beside the photograph.
+   The subject sits in the middle, so the crop stays centred. */
 .page-backdrop__img {
   object-fit: cover;
   object-position: center;
@@ -157,12 +181,19 @@ body:has(.page-backdrop) .prose {
 }
 
 /* The photograph sits at z-index 0 so the glass can blur it. The page, the
-   breadcrumb and the footer have to paint above that layer. */
+   breadcrumb and the footer have to paint above that layer. On a backdrop
+   page main stays position: relative but z-index: auto, so it does not
+   trap the fixed mark: that mark (page-hero.css) has to clear the veil
+   at z-index 30. A z-index here would cap it under the fade. */
 body:has(.page-backdrop) main.page,
 body:has(.page--home) main.page,
 body:has(.page-backdrop) .breadcrumbs {
   position: relative;
   z-index: 1;
+}
+
+body:has(.page-backdrop) main.page {
+  z-index: auto;
 }
 
 /* Bento grid ------------------------------------------------------------ */
@@ -192,7 +223,8 @@ main.page--lanes > .prose > * {
 
 /* The card ---------------------------------------------------------------- */
 
-/* On an inner page the whole hero lockup, mark included, is one card. */
+/* On an inner page each block is a card. The opening copy is the first one;
+   the mark sits outside it, where the side-scroll logo sits. */
 main.page--lanes > .prose > .page-section,
 main.page--lanes > .prose > .byline,
 body:has(.page-backdrop) .page-hero {
@@ -696,7 +728,7 @@ main.page--home.page--lanes > .prose > .page-section[data-section="take-the-next
 body:has(.page-backdrop) .breadcrumbs {
   width: fit-content;
   margin-block: 1rem 0;
-  margin-inline-start: var(--gutter);
+  margin-inline: auto;
   padding: 0.55rem 1.1rem;
   border-radius: var(--radius-pill, 999px);
   background: rgb(255 255 255 / 0.8);
@@ -715,8 +747,11 @@ body:has(.page-backdrop) .breadcrumbs {
   body:has(.page-backdrop) .breadcrumbs {
     position: sticky;
     top: calc(var(--header-h, 4.75rem) + 0.75rem);
+    left: 50%;
     z-index: 35;
     margin-block-start: calc(var(--header-h, 4.75rem) + 0.75rem);
+    margin-inline: 0;
+    transform: translateX(-50%);
   }
 }
 

@@ -1,5 +1,6 @@
 import type { Block } from "@/lib/content";
 import { resolveHeadshot } from "@/lib/images";
+import { providerNamedIn } from "@/lib/person-photo";
 import type { RenderContext } from "../context";
 import MissingPhoto from "./MissingPhoto";
 import Picture from "./Picture";
@@ -21,7 +22,13 @@ type ImageBlock = Extract<Block, { kind: "image" }>;
 
 export default function ContentImage({ block, ctx }: { block: ImageBlock; ctx?: RenderContext }) {
   const providerSlug = ctx ? /^\/providers\/([a-z0-9-]+)$/.exec(ctx.url)?.[1] : undefined;
-  const headshot = providerSlug ? resolveHeadshot(providerSlug) : undefined;
+  const named =
+    !providerSlug && /^portrait of\b/i.test(block.alt) ? providerNamedIn(block.alt) : undefined;
+  const headshot = providerSlug
+    ? resolveHeadshot(providerSlug)
+    : named
+      ? resolveHeadshot(named.slug)
+      : undefined;
   if (headshot) {
     return (
       <figure className="content-image content-image--portrait">

@@ -398,14 +398,15 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
     display: none;
   }
 
-  /* A circle mask would float a disc in the photo column. This card's photo
-     is the rounded rectangle that fills that column. */
-  .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__media--circle {
-    --photo-radius: var(--radius-xl, 34px);
-    aspect-ratio: auto;
-    width: auto;
-    justify-self: stretch;
-    align-self: stretch;
+  /* Headshots and therapy dogs stay circles. The column stretch above would
+     turn the disc into an ellipse, so this puts the square frame back. */
+  .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__media--circle:not([data-layout="band"]) {
+    --photo-radius: 50%;
+    aspect-ratio: 1;
+    width: min(100%, 22rem);
+    min-height: 0;
+    justify-self: center;
+    align-self: center;
   }
 
   .page-section.page-section--figure[data-layout="collage"] {
@@ -830,6 +831,15 @@ main.page--lanes > .prose > .page-section--figure[data-layout="cover"] > .sectio
   align-self: stretch;
 }
 
+/* Dogs use the columns layout. The 4:5 crop above would squash the circle. */
+main.page--lanes > .prose .section-columns .section-figure__media--circle {
+  --photo-radius: 50%;
+  aspect-ratio: 1;
+  width: min(100%, 16rem);
+  justify-self: center;
+  align-self: center;
+}
+
 .section-columns .section-figure__media::before {
   display: none;
 }
@@ -838,5 +848,357 @@ main.page--lanes > .prose > .page-section--figure[data-layout="cover"] > .sectio
   .section-columns.content-image {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: start;
+  }
+}
+
+/* Photo bento in the open side of a text card. Not .content-image, so the
+   card stays in the page bento (half or full) and the frames fill the card.
+   Rooms and session scenes are rounded rectangles. A portrait stays a circle. */
+.card-photo-bento {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 1.25rem 0 0;
+  align-content: center;
+  justify-items: stretch;
+}
+
+.card-photo-bento__cell {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  /* Percent-capped so a narrow sidebar tile stays a rectangle, not a disc. */
+  border-radius: clamp(0.65rem, 4%, 1.15rem);
+  background: var(--surface-deep, #ebebeb);
+}
+
+.card-photo-bento__cell--lead {
+  grid-column: 1 / -1;
+  width: 100%;
+  justify-self: stretch;
+}
+
+.card-photo-bento--portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.card-photo-bento--portrait .card-photo-bento__cell--lead {
+  grid-column: auto;
+  grid-row: auto;
+  aspect-ratio: 1;
+  width: min(100%, 16rem);
+  border-radius: 50%;
+}
+
+.card-photo-bento__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 800px) {
+  main.page--lanes > .prose > .page-section.page-section--bento:not(.page-section--intro):not(:has(
+      .provider-directory, .provider-cards, .location-cards, .form-embed,
+      .widget, .content-image, .faq, .office-stages, table
+    )) {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(9.5rem, 0.8fr);
+    column-gap: clamp(1rem, 2vw, 1.75rem);
+    align-items: stretch;
+  }
+
+  main.page--lanes > .prose > .page-section.page-section--bento:not(.page-section--intro):not(:has(
+      .provider-directory, .provider-cards, .location-cards, .form-embed,
+      .widget, .content-image, .faq, .office-stages, table
+    )) > * {
+    grid-column: 1;
+    grid-row: auto;
+    max-width: none;
+  }
+
+  main.page--lanes > .prose > .page-section.page-section--bento:not(.page-section--intro):not(:has(
+      .provider-directory, .provider-cards, .location-cards, .form-embed,
+      .widget, .content-image, .faq, .office-stages, table
+    )) > .card-photo-bento {
+    grid-column: 2;
+    grid-row: 1 / span 8;
+    align-self: center;
+    justify-self: stretch;
+    width: auto;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  main.page--lanes > .prose > .page-section.page-section--bento > .section-figure__copy > :is(.heading--h2, h2) {
+    margin-block-end: 0.45em;
+  }
+}
+
+/* Editorial spread ----------------------------------------------------- */
+/* A magazine break in a glass card. The opening sits with one plate, an
+   asymmetric bento interrupts the copy, and the rest stays at a reading
+   measure. .content-image on the root is what gives the section the full
+   row (backdrop.css :has). The measure cap and the card margin that class
+   carries are shed on the root. */
+
+.editorial-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  min-width: 0;
+}
+
+/* globals.css caps .content-image at --measure-wide and centres it.
+   backdrop.css then adds margin-block to every .content-image in a card.
+   The spread is the card's content, so both have to go. */
+main.page--lanes > .prose > .page-section > .editorial-spread.content-image {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+}
+
+/* Open: lead, then the plate. One column until a side plate steps beside
+   the opening. A band stays this stack at every width. */
+.editorial-spread__open {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1rem, 2vw, 1.75rem);
+  align-items: start;
+  min-width: 0;
+}
+
+.editorial-spread__lead {
+  min-width: 0;
+}
+
+/* Direct children only, so a pull quote's inner paragraphs (render.css,
+   22em) are left alone. The standfirst there sets the first paragraph to
+   36em; this is the reading cap, and it leaves that rule's larger type. */
+main.page--lanes > .prose > .page-section > .editorial-spread .editorial-spread__lead > :is(p, ul, ol):not(.crisis-line) {
+  max-width: 66ch;
+  margin-inline: 0;
+  text-align: left;
+}
+
+.editorial-spread__lead > :is(h1, h2, h3, h4, .heading) {
+  max-width: none;
+  margin-inline: 0;
+  text-align: left;
+}
+
+/* The plate tops out with the heading. A card h3 otherwise keeps 1.5rem
+   of margin-block-start, which drops the frame below the title. */
+main.page--lanes > .prose > .page-section > .editorial-spread .editorial-spread__lead > :first-child {
+  margin-block-start: 0;
+}
+
+main.page--lanes > .prose > .page-section > .editorial-spread .editorial-spread__lead > :last-child {
+  margin-block-end: 0;
+}
+
+/* The shared .section-figure__media crop is 3/2 and stretch. Side starts
+   there (a landscape, so a phone is not a portrait viewport) and becomes
+   a 4/5 plate from 800px. A band is 16/9 and never sticks. */
+.editorial-spread[data-plate="side"] .editorial-spread__plate.section-figure__media {
+  aspect-ratio: 3 / 2;
+  align-self: start;
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+}
+
+.editorial-spread[data-plate="band"] .editorial-spread__plate.section-figure__media {
+  aspect-ratio: 16 / 9;
+  align-self: start;
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  .editorial-spread[data-plate="side"] .editorial-spread__open {
+    grid-template-columns: minmax(0, 1.4fr) minmax(12rem, 0.82fr);
+    gap: clamp(1rem, 2vw, 1.75rem);
+    align-items: start;
+  }
+
+  /* backdrop.css sets position: relative on every .section-figure__media.
+     That wins a shorter selector, and sticky needs to replace it. align-self
+     start keeps the 4/5 box from stretching to the lead, which is what gives
+     the plate room to stick. */
+  main.page--lanes > .prose > .page-section > .editorial-spread[data-plate="side"] .editorial-spread__plate.section-figure__media {
+    aspect-ratio: 4 / 5;
+    align-self: start;
+    position: sticky;
+    top: calc(var(--header-h, 4.75rem) + 1rem);
+    z-index: 1;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+  }
+}
+
+/* The rest of the section, at a reading measure. A question stack stays
+   two-up, so it is not capped. Inner prose sheds the essay measure (52ch)
+   or the lines would stop short of this column and headings would centre. */
+.editorial-spread__rest {
+  max-width: 68ch;
+  min-width: 0;
+  margin-inline: 0;
+}
+
+.editorial-spread__rest:has(.faq) {
+  max-width: none;
+}
+
+/* Direct children only. A pull quote's paragraphs sit inside the
+   blockquote, and a crisis line is excluded, so both keep their own rules. */
+.editorial-spread__rest > :is(p, ul, ol, h1, h2, h3, h4, .heading):not(.crisis-line) {
+  max-width: none;
+  margin-inline: 0;
+  text-align: left;
+}
+
+/* Interrupting bento. Its own grid, one gutter. Not .card-photo-bento:
+   that sidebar stays a side column. Mobile is two tracks: the first cell
+   a full-width landscape, the rest 4/3. */
+.editorial-spread__bento {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.editorial-spread__cell {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border-radius: clamp(0.65rem, 4%, 1.15rem);
+  background: var(--surface-deep, #ebebeb);
+}
+
+.editorial-spread__bento > .editorial-spread__cell:first-child {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+
+/* An odd leftover after the full-width lead would sit alone at half width.
+   Desktop placements below are more specific and must not inherit this. */
+@media (max-width: 799px) {
+  .editorial-spread__bento > .editorial-spread__cell:last-child:nth-child(even) {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Above the card's glass sheen, same as .section-figure__media. The frame
+   clips; globals.css rounds every .content-image img. */
+.editorial-spread__cell .editorial-spread__img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+@media (min-width: 800px) {
+  .editorial-spread__bento[data-count="1"] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .editorial-spread__bento[data-count="1"] > .editorial-spread__cell {
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 2.15 / 1;
+  }
+
+  .editorial-spread__bento[data-count="2"] {
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  }
+
+  .editorial-spread__bento[data-count="2"] > .editorial-spread__cell {
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .editorial-spread__bento[data-count="3"] {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    grid-template-rows: repeat(2, clamp(8.5rem, 16vw, 13rem));
+  }
+
+  .editorial-spread__bento[data-count="3"] > .editorial-spread__cell {
+    aspect-ratio: auto;
+    min-height: 0;
+    align-self: stretch;
+  }
+
+  .editorial-spread__bento[data-count="3"] > .editorial-spread__cell:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .editorial-spread__bento[data-count="3"] > .editorial-spread__cell:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .editorial-spread__bento[data-count="3"] > .editorial-spread__cell:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .editorial-spread__bento[data-count="4"] {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: repeat(2, clamp(7.5rem, 14vw, 11rem));
+  }
+
+  .editorial-spread__bento[data-count="4"] > .editorial-spread__cell {
+    aspect-ratio: auto;
+    min-height: 0;
+    align-self: stretch;
+  }
+
+  .editorial-spread__bento[data-count="4"] > .editorial-spread__cell:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .editorial-spread__bento[data-count="4"] > .editorial-spread__cell:nth-child(2) {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+  }
+
+  .editorial-spread__bento[data-count="4"] > .editorial-spread__cell:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .editorial-spread__bento[data-count="4"] > .editorial-spread__cell:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
   }
 }

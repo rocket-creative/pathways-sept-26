@@ -56,7 +56,7 @@ export interface Photo {
 export type SectionPhotoLayout = "split" | "band" | "feature" | "collage" | "columns" | "cover" | "overlay";
 
 export interface SectionPhoto extends Photo {
-  /** Circle for a person or a room (design rule); rounded for everything else. */
+  /** Circle for a headshot or a therapy dog; rounded for rooms, sessions, and everything else. */
   shape?: "rounded" | "circle";
   /**
    * Crop of a rounded figure on wide viewports. Portrait (4:5) suits a long

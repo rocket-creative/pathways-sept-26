@@ -20,15 +20,7 @@ hero_image: "[NEEDS: image] A person on a laptop video call with a Pathways With
 
 # UPDATE!
 
-May 28
-
-Written By Guest User
-
 Connect with us today to learn more about getting started with a therapist near you! Call us at (631) 371-3825 today!
-
-Guest User
-
-## A Podcast with Rachel Lessard
 
 ```json
 {

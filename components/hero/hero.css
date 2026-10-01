@@ -13,13 +13,10 @@
 /* ------------------------------------------------------------------ */
 
 .hero-stage {
-  /* Image 1 fills the viewport height and then some, so the branch runs
-     edge to edge with room to crop above and below. */
-  --hero-img-h: 215vh;
-  --hero-img-w: calc(215vh * 16 / 9);
-  /* Vertical centre of the image sits at 70vh: the branch occupies the
-     lower half of the screen and the sky is left for the h1 and the nav. */
-  --hero-img-top: calc(70vh - 107.5vh);
+  /* Image 1's frame (--hero-img-h, --hero-img-w, --hero-img-top) lives on
+     :root in backdrop.css. The vertical centre sits at 70vh: the branch
+     occupies the lower half of the screen and the sky is left for the h1
+     and the nav. Image 2 covers the viewport instead (further down). */
   /* The track is exactly the image. The scrub ends where the image ends. */
   --hero-track-w: var(--hero-img-w);
   --hero-card-w: clamp(300px, 26vw, 470px);
@@ -249,9 +246,10 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
 /* Fixed behind the whole page, shown at full strength with no veil or      */
 /* overlay of any kind. Its src is attached by the controller, so it        */
 /* downloads at about 40% of hero progress and is never in <head>. The      */
-/* wrapper fills the viewport (inset: 0). object-fit: cover matches the     */
-/* inner-page backdrop so there is never a letterbox on wide or tall        */
-/* monitors; the labyrinth stays centred. The fade is opacity only.         */
+/* wrapper fills the viewport (inset: 0). object-fit: cover is the same     */
+/* crop as the inner-page backdrop: as far zoomed out as a 16:9 photograph  */
+/* can go and still fill a wide or tall monitor. The labyrinth stays        */
+/* centred. The fade is opacity only.                                        */
 
 .hero-handoff {
   position: fixed;
@@ -651,20 +649,20 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
      the paragraph can never run under that card on short, wide viewports. */
   html[data-hero-mode="pin"] .home-intro .prose > .page-section {
     --hero-fence-x: calc(var(--hero-fence-sx, 0.362) * var(--hero-img-w) - var(--hero-card-w) / 2);
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    column-gap: clamp(0.65rem, 1.4vw, 1.2rem);
     width: min(100% - 2 * var(--gutter), 78rem, var(--hero-fence-x) - var(--gutter) - 2rem);
     max-width: none;
     margin: 0 auto 0 var(--gutter);
     padding: 0;
   }
 
+  /* The mark is a sibling of the card now. contents lets the copy join the
+     section grid beside it, the same lockup as before. */
   html[data-hero-mode="pin"] .home-intro .page-hero {
-    display: grid;
-    grid-template-columns: auto minmax(0, 1fr);
-    align-items: center;
-    column-gap: clamp(0.65rem, 1.4vw, 1.2rem);
-    width: 100%;
-    margin-inline: 0;
-    padding: 0;
+    display: contents;
   }
 
   html[data-hero-mode="pin"] .home-intro .page-hero__logo {
@@ -760,7 +758,6 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
      lockup is for external displays. */
   @media (max-height: 960px) {
     html[data-hero-mode="pin"] .hero-stage {
-      --hero-img-top: calc(74vh - 107.5vh);
       --hero-gap: 6vh;
       --hero-card-w: clamp(300px, 25vw, 470px);
     }
@@ -804,17 +801,6 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
 
     html[data-hero-mode="pin"] .home-intro .cta {
       margin-top: 0.2rem;
-    }
-  }
-
-  /* Shorter still (a 1280x800 display, or a small window): the below cards
-     are ~270px tall and hang from anchors at ~52vh, so there is no room to
-     drop the image without pushing their buttons off the bottom. Keep the
-     image close to its resting place; the compact lockup and smaller cards
-     above already clear card 1. */
-  @media (max-height: 720px) {
-    html[data-hero-mode="pin"] .hero-stage {
-      --hero-img-top: calc(71vh - 107.5vh);
     }
   }
 }

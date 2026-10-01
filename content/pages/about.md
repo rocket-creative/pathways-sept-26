@@ -222,17 +222,21 @@ Rachel brings the whole-person vision. Christine brings the hands-on perspective
 
 #### Rachel Lessard
 
+[IMAGE: Portrait of Rachel Lessard, LCSW-R]
+
 Rachel created Pathways Within Wellness to expand the conversation around healing beyond the therapy room. She guides the larger vision, exploring how mind, body, and spirit can be supported in practical, personal, and sometimes unexpected ways.
 
 For a behind-the-scenes look at Rachel's journey as founder and 'Patient Zero,' follow The Wisdom of Wellness on Substack at @the.wisdom.of.wellness.
 
 Founder and Big-Picture Thinker
 
+#### Christine Cervo
+
+[IMAGE: Portrait of Christine Cervo, LMT]
+
 Christine helps bring the Wellness vision into the day-to-day client and provider experience. As a licensed massage therapist, she brings hands-on expertise, intuition, and a strong understanding of how thoughtful, personalized care should feel.
 
 Wellness Leader and Hands-On Healer
-
-#### Christine Cervo
 
 ## What We Mean by Whole-Person Wellness
 

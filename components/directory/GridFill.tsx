@@ -36,8 +36,17 @@ export function fillSpan(count: number, columns: number): number {
 }
 
 /** The tile itself. Renders nothing when every layout's last row is full. */
-export default function GridFill({ photo, count }: { photo: FillPhoto | undefined; count: number }) {
-  if (!photo) return null;
+export default function GridFill({
+  photo,
+  photos,
+  count,
+}: {
+  photo?: FillPhoto;
+  photos?: FillPhoto[];
+  count: number;
+}) {
+  const frames = (photos && photos.length ? photos : photo ? [photo] : []).slice(0, 4);
+  if (!frames.length) return null;
   const span3 = fillSpan(count, 3);
   const span2 = fillSpan(count, 2);
   if (span3 === 0 && span2 === 0) return null;
@@ -45,20 +54,32 @@ export default function GridFill({ photo, count }: { photo: FillPhoto | undefine
   const style = { "--fill-span-3": span3, "--fill-span-2": span2 } as CSSProperties;
 
   return (
-    <li className="card-grid__fill" aria-hidden="true" data-fill-3={span3} data-fill-2={span2} style={style}>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        className="card-grid__fill-img"
-        src={photo.src}
-        srcSet={photo.srcSet}
-        sizes="(min-width: 1000px) 800px, (min-width: 600px) 50vw, 100vw"
-        alt=""
-        width={photo.width}
-        height={photo.height}
-        loading="lazy"
-        decoding="async"
-        style={{ objectPosition: photo.focal }}
-      />
+    <li
+      className="card-grid__fill card-grid__fill--circles"
+      aria-hidden="true"
+      data-fill-3={span3}
+      data-fill-2={span2}
+      style={style}
+    >
+      <div className="card-grid__fill-bento">
+        {frames.map((frame) => (
+          <span className="card-grid__fill-circle" key={frame.src}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="card-grid__fill-img"
+              src={frame.src}
+              srcSet={frame.srcSet}
+              sizes="(min-width: 1000px) 240px, 40vw"
+              alt=""
+              width={frame.width}
+              height={frame.height}
+              loading="lazy"
+              decoding="async"
+              style={{ objectPosition: frame.focal }}
+            />
+          </span>
+        ))}
+      </div>
     </li>
   );
 }

@@ -6,6 +6,8 @@ export interface OfficePhoto {
   width: number;
   height: number;
   alt: string;
+  /** object-position for the cover crop. */
+  focal?: string;
 }
 
 /** Slow crossfade of one office's current photographs. The first frame stays put if motion is reduced. */
@@ -25,7 +27,11 @@ export default function OfficeCrossfade({ photos }: { photos: OfficePhoto[] }) {
           width={photo.width}
           height={photo.height}
           alt={index === 0 ? photo.alt : ""}
-          style={{ animationDelay: `${(duration / photos.length) * index}s`, animationDuration: `${duration}s` }}
+          style={{
+            animationDelay: `${(duration / photos.length) * index}s`,
+            animationDuration: `${duration}s`,
+            objectPosition: photo.focal,
+          }}
           decoding="async"
         />
       ))}

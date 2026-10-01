@@ -1,5 +1,6 @@
-/* Logo left, page title and lead copy right. Shared by the homepage intro
-   and every inner-page opening section. */
+/* Logo and opening copy. On the homepage they sit side by side. On an inner
+   page the copy is the first glass card, full width and set down the page,
+   and the mark is fixed in the left margin, outside that card. */
 
 .page-hero {
   display: grid;
@@ -141,5 +142,59 @@
       width: min(100%, 20rem);
       max-width: 20rem;
     }
+  }
+
+  /* Homepage without the pin (reduced motion): the mark is a sibling of the
+     card, so the section is the two-column lockup and the card box drops
+     out. */
+  .home-intro .page-section--intro {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    column-gap: clamp(0.75rem, 1.6vw, 1.35rem);
+  }
+
+  .home-intro .page-hero {
+    display: contents;
+  }
+
+  /* Inner pages: the mark sits in the left margin, outside the bento,
+     just under the nav. It is fixed so it stays there as the page scrolls,
+     and its z-index clears the nav veil (backdrop.css, z-index 30). The
+     third cap in --sub-logo is the margin beside the centred bento, so on
+     a wide screen the mark stays outside the content column. The copy card
+     is the full width of that column and starts lower, so the photograph
+     shows above it. */
+  body:has(.page-backdrop) {
+    --sub-logo: min(32rem, 44vh, max(14rem, calc((100vw - var(--bento-w)) / 2 - var(--gutter) - 1.25rem)));
+  }
+
+  @media (max-height: 960px) {
+    body:has(.page-backdrop) {
+      --sub-logo: min(28rem, 40vh, max(12rem, calc((100vw - var(--bento-w)) / 2 - var(--gutter) - 1.25rem)));
+    }
+  }
+
+  /* The shared card rule sets position: relative. Static here keeps that
+     box from becoming the mark's containing block. */
+  body:has(.page-backdrop) main.page--lanes > .prose > .page-section.page-section--intro {
+    position: static;
+  }
+
+  body:has(.page-backdrop) .page-section--intro .page-hero {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    margin-inline-start: 0;
+    margin-block-start: clamp(7rem, 20vh, 13rem);
+  }
+
+  body:has(.page-backdrop) main.page--lanes > .prose > .page-section.page-section--intro > .page-hero__logo {
+    position: fixed;
+    z-index: 36;
+    top: calc(var(--header-h, 4.75rem) + 0.35rem);
+    left: var(--gutter);
+    width: var(--sub-logo);
+    max-width: var(--sub-logo);
+    padding: 0;
   }
 }

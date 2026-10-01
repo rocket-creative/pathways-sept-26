@@ -55,19 +55,15 @@ admin@pathwayswithinwellness.com
 Our Locations:
 
 53 N Park Ave, Suite 302
-
 Rockville Centre, NY 11570
 
 647 Franklin Ave, Lower Level
-
-Garden City, NY 1530
+Garden City, NY 11530
 
 4160 Merrick Road, Suite 7
-
 Massapequa, NY 11758
 
 496 Smithtown Bypass, Suite 203
-
 Smithtown, NY 11787
 
 ```json

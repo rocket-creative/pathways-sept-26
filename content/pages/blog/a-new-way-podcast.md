@@ -20,6 +20,8 @@ hero_image: "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50
 
 # A Podcast with Rachel Lessard
 
+[IMAGE: Portrait of Rachel Lessard, LCSW-R]
+
 May 28
 
 Written By Rachel Lessard, LCSW

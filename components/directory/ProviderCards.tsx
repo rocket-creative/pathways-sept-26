@@ -1,6 +1,6 @@
 import { getProviders, type Provider, type ProviderCardFilter } from "@/lib/content";
 import { matchesFacet, type FacetKey } from "@/lib/provider-filter";
-import { pickFillPhoto } from "./fillPhoto";
+import { pickFillPhotos } from "./fillPhoto";
 import GridFill from "./GridFill";
 import ProviderCard from "./ProviderCard";
 import { toProviderCardData } from "./types";
@@ -32,14 +32,14 @@ export default function ProviderCards({ filter, fill = true }: { filter: Provide
   // The grid runs three across on desktop and two on a tablet; a photograph
   // takes whatever the last row leaves empty. Seeded by the marker so each
   // page keeps its own picture across renders.
-  const photo = fill ? pickFillPhoto("providers", describe(filter)) : undefined;
+  const photos = fill ? pickFillPhotos("providers", describe(filter)) : undefined;
 
   return (
     <ul className="provider-cards">
       {providers.map((provider) => (
         <ProviderCard key={provider.slug} provider={toProviderCardData(provider)} />
       ))}
-      <GridFill photo={photo} count={providers.length} />
+      <GridFill photos={photos} count={providers.length} />
     </ul>
   );
 }

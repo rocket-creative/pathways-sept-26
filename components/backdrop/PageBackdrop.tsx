@@ -5,7 +5,8 @@ import "./backdrop.css";
  * The fixed labyrinth backdrop for every page except the homepage, which has
  * the branch hero instead (and shows this same photograph as image 2 after
  * the hero hands off). The photograph covers the viewport, cropped on
- * whichever axis has to give, with the labyrinth kept centred.
+ * whichever axis has to give, with the labyrinth kept centred. That cover
+ * is as far zoomed out as a 16:9 frame can go without a gap.
  *
  * Two layers of the same picture: the backdrop behind the page, and a veil
  * above it under the fixed nav, masked to a short band so copy fades into

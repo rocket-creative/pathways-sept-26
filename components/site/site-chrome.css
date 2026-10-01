@@ -196,6 +196,55 @@
   background: rgb(255 255 255 / 0.85);
 }
 
+.site-header__drop {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.site-header__drop-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-left: -0.35rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--chrome-ink);
+  cursor: pointer;
+}
+
+.site-header__drop-toggle:hover,
+.site-header__drop[data-open="true"] > .site-header__drop-toggle {
+  background: rgb(255 255 255 / 0.7);
+}
+
+.site-header__chevron {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-0.1rem) rotate(45deg);
+}
+
+.site-header__drop[data-open="true"] .site-header__chevron {
+  transform: translateY(0.1rem) rotate(225deg);
+}
+
+.site-header__nav .site-header__menu {
+  display: none;
+  margin: 0;
+  padding: 0.4rem;
+  list-style: none;
+}
+
+.site-header__nav .site-header__drop[data-open="true"] > .site-header__menu {
+  display: grid;
+}
+
 .site-header__actions {
   display: flex;
   flex-wrap: wrap;
@@ -271,6 +320,26 @@
     background: var(--chrome-edge);
   }
 
+  .site-header__drop {
+    flex-wrap: wrap;
+  }
+
+  .site-header__drop > a {
+    flex: 1;
+  }
+
+  .site-header__menu {
+    flex: 1 0 100%;
+    gap: 0.1rem;
+    padding: 0 0 0.35rem 0.85rem;
+  }
+
+  .site-header__menu a {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+
   .site-header__actions {
     flex-direction: column;
     align-items: stretch;
@@ -316,6 +385,36 @@
 
   .site-header__toggle {
     display: none;
+  }
+
+  .site-header__menu {
+    position: absolute;
+    top: calc(100% + 0.35rem);
+    left: 0;
+    z-index: 40;
+    width: max-content;
+    min-width: 16rem;
+    max-height: min(70vh, 28rem);
+    overflow: auto;
+    padding: 0.45rem;
+    border-radius: 22px;
+    background: var(--chrome-white);
+    box-shadow: 0 12px 40px rgb(20 24 33 / 0.12);
+  }
+
+  .site-header__menu a {
+    border-radius: 14px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .site-header__menu a:hover {
+    background: var(--chrome-near);
+  }
+
+  .site-header__nav .site-header__drop:hover > .site-header__menu {
+    display: grid;
   }
 
   /* The fixed bar covers the top of whatever follows it. Inner pages step
@@ -441,6 +540,13 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--chrome-ink);
+}
+
+.site-footer__label a {
+  color: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-decoration: none;
 }
 
 .site-footer ul {

@@ -9,7 +9,8 @@ import type { ImageGroup } from "@/lib/images/types";
  * - Location and practice-hub photographs come from approved office exports
  *   (pr-ap-* assets under approved/offices/). Each office page aims for
  *   multiple section figures: at least one landscape “band-like” interior and
- *   one circle room shot. Section keys match current markdown h2 ids only
+ *   one rounded room shot. Office rooms, desks, and waiting areas are
+ *   rectangles. Section keys match current markdown h2 ids only
  *   (getting-here, providers-at-this-office, nearby-communities-we-serve,
  *   common-questions, take-the-next-step).
  * - /contact has no hero band: the form is above the fold and loads eagerly.
@@ -69,6 +70,27 @@ export const PRACTICE: ImageGroup = {
 
     /* Extra interiors for hubs / telehealth ------------------------- */
     { id: "pr-ap-suffolk-yellow-pillows", file: "approved/offices/_suffolk-root/_24M8774-gb-e.jpg", square: "center" },
+    { id: "pr-ap-suffolk-window-chairs", file: "approved/offices/_suffolk-root/_24M8776-gb-e.jpg", square: "center" },
+    { id: "pr-ap-suffolk-yellow-sofa", file: "approved/offices/_suffolk-root/_24M8778-gb-e.jpg" },
+    { id: "pr-ap-suffolk-wood-chairs", file: "approved/offices/_suffolk-root/_24M8780-gb-e.jpg", square: "center" },
+
+    /* Approved rooms that were staged but not yet on a page. */
+    { id: "pr-ap-ns-massage-green", file: "approved/offices/_nassau-root/_24M6869-gb-e.jpg", square: "center" },
+    { id: "pr-ap-ns-orchid-hall", file: "approved/offices/_nassau-root/_24M6873-gb-e.jpg" },
+    { id: "pr-ap-gc-session-chair", file: "approved/offices/garden-city/_24M6883-gb-e.jpg", square: "center" },
+    { id: "pr-ap-gc-wellness-navy", file: "approved/offices/garden-city-wellness/_24M6856-gb-e.jpg", square: "center" },
+    { id: "pr-ap-gc-wellness-table", file: "approved/offices/garden-city-wellness/_24M6863-gb-e.jpg", square: "center" },
+    { id: "pr-ap-mpq-child-waiting", file: "approved/offices/massapequa/_24M6922-gb-e.jpg", square: "center" },
+    { id: "pr-ap-mpq-wellness-table", file: "approved/offices/massapequa-wellness/_24M6958-gb-e.jpg" },
+    { id: "pr-ap-mpq-wellness-chairs", file: "approved/offices/massapequa-wellness/_24M6970-gb-e.jpg", square: "center" },
+    { id: "pr-ap-smt-blue-room", file: "approved/offices/smithtown/_24M8697-gb-e.jpg", square: "center" },
+    { id: "pr-ap-smt-labyrinth-sign", file: "approved/offices/smithtown/_24M8727-gb-e.jpg", square: "center" },
+    { id: "pr-ap-smt-beach-table", file: "approved/offices/smithtown-wellness/_24M8746-gb-e.jpg" },
+    { id: "pr-ap-smt-turtle-room", file: "approved/offices/smithtown-wellness/_24M8748-gb-e.jpg", square: "center" },
+    { id: "pr-ap-smt-dreamcatcher", file: "approved/offices/smithtown-extra/_24M8762-gb-e.jpg", square: "center" },
+    { id: "pr-ap-smt-blue-sofa", file: "approved/offices/smithtown-extra/_24M8768-gb-e.jpg", square: "center" },
+    { id: "pr-ap-pj-pink-room", file: "approved/offices/port-jefferson/_24M8831-gb-e.jpg", square: "center" },
+    { id: "pr-ap-desk-saul-greeting", file: "approved/offices/front-desk-saul/_24M8664-gb-e.jpg" },
   ],
   pages: {
     /* Locations ------------------------------------------------------- */
@@ -82,7 +104,8 @@ export const PRACTICE: ImageGroup = {
         telehealth: {
           asset: "pr-ap-gc-flower-wall",
           alt: "A dark leather sofa against a white flower wall in a Pathways Within office waiting area",
-          shape: "circle",
+          shape: "rounded",
+          aspect: "landscape",
           side: "start",
           focal: "50% 55%",
         },
@@ -107,7 +130,8 @@ export const PRACTICE: ImageGroup = {
         "providers-at-this-office": {
           asset: "pr-ap-gc-therapy-joy",
           alt: "Therapy room at the Garden City Pathways Within office with charcoal armchairs, a blue ottoman, and a Today I Choose Joy sign",
-          shape: "circle",
+          shape: "rounded",
+          aspect: "landscape",
           side: "start",
           focal: "45% 50%",
         },
@@ -148,7 +172,8 @@ export const PRACTICE: ImageGroup = {
         "providers-at-this-office": {
           asset: "pr-ap-mpq-underwater",
           alt: "Therapy room at the Massapequa Pathways Within office with an underwater mural, blue walls, and cream and teal chairs",
-          shape: "circle",
+          shape: "rounded",
+          aspect: "landscape",
           side: "start",
           focal: "55% 50%",
         },
@@ -189,7 +214,8 @@ export const PRACTICE: ImageGroup = {
         "providers-at-this-office": {
           asset: "pr-ap-smt-wingback",
           alt: "Therapy room at the Smithtown Pathways Within office with a brown wingback chair, rustic wood side table, and round wall mirror",
-          shape: "circle",
+          shape: "rounded",
+          aspect: "landscape",
           side: "start",
           focal: "45% 50%",
         },
@@ -230,7 +256,8 @@ export const PRACTICE: ImageGroup = {
         "providers-at-this-office": {
           asset: "pr-ap-pj-teal-room",
           alt: "Therapy room at the Port Jefferson Pathways Within office with teal velvet seating, terracotta walls, and a sunflower arrangement",
-          shape: "circle",
+          shape: "rounded",
+          aspect: "landscape",
           side: "start",
           focal: "center",
         },
@@ -264,7 +291,8 @@ export const PRACTICE: ImageGroup = {
         offices: {
           asset: "pr-ap-gc-therapy-joy",
           alt: "Therapy room at the Garden City office with a blue chaise, grey chairs, and a Today I Choose Joy sign",
-          shape: "circle",
+          shape: "rounded",
+          aspect: "landscape",
           side: "end",
           focal: "45% 50%",
         },
@@ -331,7 +359,8 @@ export const PRACTICE: ImageGroup = {
         "step-3-your-360-intake": {
           asset: "pr-ap-suffolk-yellow-pillows",
           alt: "Therapy room at a Pathways Within office with a tan sofa, navy chairs, and soft window light",
-          shape: "circle",
+          shape: "rounded",
+          aspect: "landscape",
           side: "end",
           focal: "50% 55%",
         },

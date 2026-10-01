@@ -62,7 +62,7 @@ The Gottman Method has been incredibly effective in our experience in increasing
 
 We also provide a modified version of Somatic Therapy for couples, which essentially seeks to enhance the mind-body connection.
 
-Learn more about Somatic Therapy
+Learn more about [Somatic Therapy](/therapy/somatic-therapy)
 
 ## FAQs About Couples Therapy on Long Island
 

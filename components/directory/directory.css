@@ -315,6 +315,44 @@
   border-radius: 0;
 }
 
+/* The leftover cells are a bento of rounded photographs, not one stretched photograph. */
+.prose .card-grid__fill--circles {
+  background: transparent;
+  min-height: 0;
+  overflow: visible;
+  border-radius: 0;
+}
+
+.prose .card-grid__fill--circles::after {
+  display: none;
+}
+
+.prose .card-grid__fill-bento {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+  height: 100%;
+  min-height: 11rem;
+  align-content: center;
+}
+
+.prose .card-grid__fill[data-fill-3="2"] .card-grid__fill-bento {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.prose .card-grid__fill-circle {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: clamp(0.65rem, 4%, 1.15rem);
+  background: var(--surface-deep, #ebebeb);
+}
+
+.prose .card-grid__fill-circle .card-grid__fill-img {
+  border-radius: 0;
+}
+
 @media (min-width: 600px) and (max-width: 999.98px) {
   .prose .card-grid__fill:not([data-fill-2="0"]) {
     display: block;

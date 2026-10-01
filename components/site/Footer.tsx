@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE_PHONE, SITE_PHONE_SMS, WELCOME_EMAIL, getLocations } from "@/lib/content";
+import { THERAPY_LINKS } from "./therapy-links";
 import "./site-chrome.css";
 
 /** The client's brand line, taken from content/pages/home.md. Not ours to reword. */
@@ -49,6 +50,19 @@ export default function Footer() {
             <a href={`mailto:${WELCOME_EMAIL}`}>{WELCOME_EMAIL}</a>
           </p>
         </div>
+
+        <nav aria-labelledby="site-footer-therapy">
+          <p className="site-footer__label" id="site-footer-therapy">
+            <Link href="/therapy">Therapy</Link>
+          </p>
+          <ul>
+            {THERAPY_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href}>{link.label}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         <nav aria-labelledby="site-footer-care">
           <p className="site-footer__label" id="site-footer-care">

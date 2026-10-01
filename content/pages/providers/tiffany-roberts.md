@@ -20,6 +20,8 @@ hero_image: "https://pathwayswithinwellness.com/images/providers/tiffany-roberts
 
 # Tiffany Roberts, PMHNP, MSN, BSN, RN-BC
 
+[IMAGE: Portrait of Tiffany Roberts, PMHNP, MSN, BSN, RN-BC]
+
 I take the time to really understand each person - not just what they’re feeling, but what they need. Medication, when used, is always thoughtful and part of a bigger supportive plan.
 
 Specializes in Anxiety, depression, mood disorders, ADHD and other mood disorders.

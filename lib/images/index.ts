@@ -161,6 +161,11 @@ export function resolvePhoto(photo: Photo | undefined): ResolvedPhoto | undefine
       focal: photo.focal && photo.focal !== "center" ? photo.focal : "center",
     };
   }
+  if (photo.asset.startsWith("headshot:")) {
+    const built = manifest.headshots[photo.asset.slice("headshot:".length)];
+    if (!built || !built.tiers.length) return undefined;
+    return toResolved(built, photo.alt, "center");
+  }
   if (!assets().has(photo.asset)) {
     throw new Error(`Photo "${photo.asset}" is not declared in any lib/images/groups file.`);
   }
@@ -185,9 +190,10 @@ export function hasHeadshotSource(slug: string): boolean {
 
 /** Absolute URL of the page's hero photograph for og:image, if it has one. */
 export function ogImageFor(url: string, origin: string): string | undefined {
-  const resolved = resolvePhoto(getPagePhotos(url)?.hero);
-  if (!resolved) return undefined;
+  const hero = getPagePhotos(url)?.hero;
+  const resolved = resolvePhoto(hero);
+  if (!resolved || !hero) return undefined;
   // The 1280 tier is closest to the 1200 wide social card.
-  const tier = manifest.photos[getPagePhotos(url)!.hero!.asset].tiers.find((t) => t.width >= 1200);
+  const tier = manifest.photos[hero.asset]?.tiers.find((t) => t.width >= 1200);
   return `${origin}${tier?.src ?? resolved.src}`;
 }

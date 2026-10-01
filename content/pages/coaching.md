@@ -18,97 +18,157 @@ providers: [tia-baumohl]
 hero_image: "[NEEDS: image] A coach in conversation with a client at a Pathways Within office"
 ---
 
-# Performance and Wellness Coaching on Long Island
+# Performance & Wellness Coaching
 
-Performance and Wellness Coaching at Pathways Within is one on one support for people ready to understand themselves, move through change, and create lasting growth. It can stand on its own or sit beside therapy. It is not therapy, and it does not diagnose or treat a mental health condition.
+## Growth Looks Different for Everyone
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+Sometimes you know something needs to shift.
 
-[CTA] Contact Us -> /contact
+Maybe you keep repeating the same conversation, shutting down under pressure, saying yes when you mean no, or getting in your own way just as something good begins to happen.
 
-## What coaching is
+Performance & Wellness Coaching at Pathways Within offers one-on-one support for people ready to better understand themselves, navigate change, and create lasting growth. Coaching may be used on its own or alongside therapy and other Pathways Within services.
 
-Sometimes you know something needs to shift. Maybe you keep repeating the same conversation, shutting down under pressure, saying yes when you mean no, or getting in your own way just as something good begins.
+## Is Coaching Right for Me?
 
-Coaching is a forward looking partnership about how you respond to your life today. Therapy may help you process the past. Coaching focuses on using what you know now: boundaries, relationships, confidence, or a different way of responding. Sessions are warm, honest, and collaborative.
+You do not need to have everything figured out before your first appointment. A willingness to grow is a good place to start. Coaching may be a good fit if you want to:
 
-## Who it helps
+- Navigate a life or career transition
 
-You do not need to have everything figured out. Coaching may be a good fit if you want to:
-
-- Move through a [life or career transition](/concerns/life-transitions)
 - Improve communication and relationships
+
 - Understand recurring patterns
+
 - Build confidence and resilience
-- Manage [stress and burnout](/concerns/stress-and-burnout)
+
+- Strengthen emotional regulation
+
+- Address avoidance or self-sabotage
+
+- Life transitions
+
 - Feel more grounded and intentional
 
-Progress is not perfection. It is becoming more aware, and more aligned with the life you want.
+## MEET YOUR COACH
 
-## What to expect in your first session at Pathways Within
+### Tia Baumohl
 
-Your first session is a conversation about what is bringing you in, where you feel stuck, and what you would like to change. Together you name a few goals.
+Performance & Wellness Coaching at Pathways Within is led by Tia Baumohl, a certified coach with advanced training in Somatic Awareness, Internal Family Systems-informed practices, and energy work.
 
-From there, you might look at a recent experience, a pattern that keeps returning, or how stress shows up in your body, and try a different response between sessions. There is no script. You do not need to arrive with the answers.
+Tia’s style is warm, honest, and collaborative, with enough humor to make the deeper work feel a little less heavy. She has a way of asking the question that makes you pause and think, “I have never looked at it that way before.”
 
-## Tia Baumohl
+She helps clients notice recurring patterns, understand what may be driving them, and experiment with new ways of responding. There is no pressure to have the perfect answer or to arrive with everything figured out.
 
-**Certified Coach, Energy Medicine Practitioner.**
+Tia will meet you where you are, help you get curious about what is happening beneath the surface, and support you as you move forward with greater clarity and intention.
 
-Tia's work is rooted in helping people move through change with greater clarity, connection, and confidence. She began her career supporting mothers and their partners through pregnancy and labor, giving her more than a decade of experience guiding people through some of life's most significant moments.
+Work with Tia Baumohl
 
-Over the past five years, she has expanded that work through energy medicine and coaching, supporting individuals and couples as they work through challenging dynamics, strengthen communication, and uncover new possibilities. Her approach is warm, strategic, and whole person.
+## How Coaching Works
 
-- Leads Performance and Wellness Coaching
-- Trained in somatic awareness and IFS-informed practice
-- Energy medicine practitioner (Integrative Energy Therapy)
+Every coaching relationship begins with a conversation.
 
-Energy work with Tia is on the [wellness](/wellness) page. This page is her coaching practice.
+Your first session is an opportunity to talk about what is bringing you in, where you feel stuck, and what you would like to change. Together, you and Tia will identify meaningful goals and create an approach tailored to your needs.
 
-[PROVIDER CARDS: tia-baumohl]
+From there, coaching becomes an active partnership. You may reflect on a recent experience, explore a recurring pattern, notice how stress shows up in your body, practice a different response, or try a new approach between sessions.
 
-## Where it is offered
+There is no script and no expectation that you arrive with all the answers. Tia brings thoughtful questions, honest reflection, practical tools, and genuine curiosity. You bring your experiences, goals, and willingness to explore them.
 
-Coaching is in person at our Long Island offices and by video when you are in New York. [Locations](/locations).
+Your work with performance wellness coach Tia may include:
 
-## Insurance and cost
+- Clarifying goals and priorities
 
-Coaching is not a medical or mental health service, so insurance usually does not cover it. It is self pay. Before your first session, we explain the fee so you can decide with a clear number in front of you. [Insurance and fees](/insurance-and-fees).
+- Exploring thoughts, behaviors, and relationship patterns
 
-## Common questions
+- Recognizing physical and emotional responses
+
+- Practicing new ways of communicating
+
+- Building tools for everyday situations
+
+- Reviewing progress and adjusting goals
+
+## How Coaching Fits Into Your Care
+
+At Pathways Within, we believe there is no one-size-fits-all approach to wellness.
+
+Performance & Wellness Coaching is one part of our integrated model of care and may be used on its own or alongside therapy, medication management, acupuncture, and other wellness services.
+
+Our Welcome Team will help determine the best combination of services that supports your goals.
+
+Schedule your performance & wellness coaching consultation today.
+
+## What to Expect
+
+Growth often begins with small moments of awareness that gradually change how you think, respond, and move through everyday life.
+
+Clients may experience:
+
+- Greater self-awareness
+
+- More confidence
+
+- Healthier communication
+
+- Better stress management
+
+- Stronger relationships
+
+- More intentional decision-making
+
+- A deeper connection with themselves
+
+Progress is not measured by perfection. It is measured by becoming more aware, intentional, and aligned with the life you want to create.
+
+## Frequently Asked Questions
+
+Some of our most-asked questions are here but if there’s something else on your mind, we love to chat. Feel free to reach out and let us help!
 
 ### How do I know if coaching is right for me?
 
-If you have ever caught yourself thinking, "Why do I keep ending up here?" or "I know what I should do, so why can't I do it?" coaching might be exactly the space you need. You do not have to show up with a perfectly defined goal. Sometimes the first step is simply getting curious about what has been keeping you stuck.
+If you have ever caught yourself thinking, “Why do I keep ending up here?” or “I know what I should do...so why can’t I do it?” coaching might be exactly the space you need.
 
-### What makes coaching here different?
+You do not have to show up with a perfectly defined goal. Sometimes the first step is simply getting curious about what has been keeping you stuck.
 
-There is no one size fits all plan. Sessions may untangle a pattern you have noticed for years, or mark a small win that turns out to matter more than it looked.
+### What makes coaching with Tia different?
 
-### Can I do coaching while I am in therapy?
+I do not believe in one-size-fits-all coaching. I will probably ask questions you were not expecting — not because there is a right answer, but because slowing down often helps us notice something we have been missing all along.
 
-Yes. Coaching and therapy often work well together. Therapy may help you process your past and strengthen your emotional well being. Coaching focuses on how to apply those insights to your life today. With your permission, your coach and your therapist can coordinate.
+Some days we will spend the session untangling a pattern you have noticed for years. Other days we will celebrate a small win that turns out to be much bigger than you realized.
+
+### Can I work with Tia while seeing a therapist?
+
+Absolutely. In fact, coaching and therapy often work really well together.
+
+Therapy may help you process your past and strengthen your emotional well-being. Coaching focuses on how to apply those insights to your life today — whether that is setting boundaries, navigating relationships, building confidence, or trying a different way of responding.
 
 ### How long does coaching usually last?
 
-It depends. Some clients come with a specific goal and finish in a few months. Others stay longer because new goals show up as they grow. The aim is meaningful change at a pace that fits you.
+It depends. Some clients come with a very specific goal and accomplish what they came for in a few months. Others stay longer because new goals naturally emerge as they grow.
+
+There isn’t a gold star for finishing first. The goal is not to “graduate” from coaching — it is to create meaningful change at a pace that feels right for you.
 
 ### What kinds of goals can I bring?
 
-Pretty much anything that is helping you become a healthier version of yourself. Relationships, communication, confidence, career decisions, boundaries, stress, self sabotage, feeling stuck, and big life transitions all belong here. If it is taking up space in your mind, it is worth bringing into the room.
+Pretty much anything that is helping you become a healthier version of yourself.
 
-### Is this productivity coaching, and is there a guarantee?
+Relationships. Communication. Confidence. Career decisions. Boundaries. Stress. Self-sabotage. Feeling stuck. Big life transitions.
 
-Coaching is not a productivity program, and there is no guarantee of a result. You may get more done because you spend less energy fighting yourself. The work is about understanding why you do what you do, and building the change together.
+If it is taking up space in your mind, it is worth bringing into the room.
 
-## Take the next step
+### How do I know whether I need coaching or therapy?
 
-Tell the Welcome Team what keeps repeating. They will set up your 360 intake and schedule coaching, in person or by telehealth.
+You do not have to figure that out before you call us. That is part of our job.
 
-[CTA] Contact Us -> /contact
+We will learn more about what is bringing you in and help you decide whether coaching, therapy, or another Pathways Within service feels like the best place to start. Sometimes the answer is one. Sometimes it is a combination.
 
-Or call (631) 371-3825.
+### Is this productivity coaching?
 
+Not really. You might become more productive along the way, but that is usually because you are spending less energy fighting yourself.
+
+I am much more interested in helping you understand why you do what you do than giving you another planner or to-do list.
+
+### Is there a guarantee?
+
+I wish there were. What I can promise is that I will show up with curiosity, honesty, and a genuine investment in your growth. The rest is something we build together.
 
 ```json
 {

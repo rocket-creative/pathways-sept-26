@@ -86,6 +86,42 @@ Whether medication becomes a short-term support during a difficult season or par
 
 Your care plan may include starting a medication, continuing something that is already helping, adjusting a dosage, or exploring alternatives. Throughout the process, we monitor progress closely and make changes as needed.
 
+Take the next step in your journey with compassionate medication management rooted in whole-person care, collaboration, and emotional wellness. You deserve support that honors your story and helps you move toward balance, clarity, and connection.
+
+Schedule your Medication Management consultation today.
+
+## What to Expect
+
+Your first appointment is an opportunity to slow down and be heard. Our Psychiatric Nurse Practitioner will review your concerns, medical and mental health history, current medications or supplements, past treatment experiences, and your goals moving forward.
+
+If medication is recommended, your provider will explain the purpose, potential benefits, possible side effects, and what to expect as your body adjusts. You will have space to ask questions and make informed decisions about your care.
+
+Follow-up appointments allow us to monitor how you are feeling, make thoughtful adjustments if needed, and continue supporting your progress over time.
+
+## Frequently Asked Questions
+
+You’ve got questions, and we’ve got answers. Some of our most-asked questions are here but if there’s something else on your mind, we love to chat. Feel free to reach out and let us help!
+
+### Why would I meet with a psychiatric nurse practitioner?
+
+A psychiatric nurse practitioner is trained to assess mental health symptoms, provide diagnosis when appropriate, and prescribe psychiatric medication. Meeting with our nurse practitioner can be helpful if symptoms are impacting your mood, sleep, focus, relationships, or daily functioning, and you would like to explore whether medication may offer support.
+
+### Will I be prescribed medication at my first appointment?
+
+Not always. Your first appointment is focused on understanding your needs, history, symptoms, and goals. If medication seems appropriate, our nurse practitioner will discuss options with you, including potential benefits, risks, and side effects. Any medication plan should feel collaborative, informed, and aligned with your overall care.
+
+### Do I need to be in therapy to receive medication management?
+
+Medication management can be offered on its own, but many people benefit from combining medication with therapy. When you are working with a Pathways Within therapist, our nurse practitioner can collaborate with the team to support a more connected care experience. If you are not currently in therapy, we can help you explore whether therapy may be helpful as part of your overall wellness plan.
+
+### How often will I need appointments?
+
+The frequency of appointments depends on your needs and where you are in the medication process. When starting or adjusting medication, appointments may be more frequent so we can monitor how you are feeling and make changes safely. Once things feel more stable, follow-up appointments may be spaced out.
+
+### What if I’m nervous about taking medication?
+
+That is completely understandable. Many people have questions or concerns about psychiatric medication. We will take time to discuss what you are feeling, answer your questions, and help you make decisions at a pace that feels comfortable. Medication is only one tool, and your voice is an important part of the process.
+
 ```json
 {
   "@context": "https://schema.org",

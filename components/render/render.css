@@ -202,3 +202,57 @@
     font-weight: 700;
   }
 }
+
+/* Magazine spread. Unlayered on purpose: backdrop.css and photos.css load
+   later and are unlayered, so a rule inside the layer above cannot beat
+   them. These selectors carry main.page--lanes > .prose so the standfirst
+   and the pull quote still apply inside the bento. */
+
+/* Standfirst: the lead's first paragraph. One step above body, left
+   aligned, 36em. No drop cap — the line often starts with a link. */
+main.page--lanes > .prose > .page-section .editorial-spread__lead > p:first-of-type {
+  max-width: 36em;
+  margin-inline: 0;
+  font-size: var(--text-lead);
+  line-height: 1.55;
+  text-align: start;
+  color: var(--ink);
+}
+
+/* Copy after the photo stays the body size. A quote nested here is a
+   pull quote, not body copy; the rules below still reach it. */
+main.page--lanes > .prose > .page-section .editorial-spread__rest > :is(p, ul, ol) {
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+}
+
+/* Pull quote. The box may run wider than the essay measure so it reads as
+   a break; the words sit near 22em at the start, with a hairline on that
+   edge. Body copy is roman Nunito (no italic face loaded), so the quote
+   stays roman too. */
+main.page--lanes > .prose > .page-section .editorial-spread blockquote,
+main.page--lanes > .prose > .page-section.page-section--intro blockquote,
+main.page--lanes > .prose > .page-section.page-section:not(.page-section--intro) blockquote {
+  max-width: none;
+  margin-block: 1.35rem;
+  margin-inline: 0;
+  padding: 0;
+  padding-inline-start: 1rem;
+  border: 0;
+  border-radius: 0;
+  border-inline-start: 1px solid var(--line-strong);
+  background: none;
+  font-size: clamp(1.35rem, 1.15rem + 0.9vw, 1.85rem);
+  line-height: var(--leading-snug);
+  font-style: normal;
+  text-align: start;
+  color: var(--ink);
+}
+
+main.page--lanes > .prose > .page-section .editorial-spread blockquote p,
+main.page--lanes > .prose > .page-section.page-section--intro blockquote p,
+main.page--lanes > .prose > .page-section.page-section:not(.page-section--intro) blockquote p {
+  max-width: 22em;
+  margin-inline: 0;
+  text-align: start;
+}

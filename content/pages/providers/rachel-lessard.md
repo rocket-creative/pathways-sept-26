@@ -20,6 +20,8 @@ hero_image: "https://pathwayswithinwellness.com/images/providers/rachel-lessard-
 
 # Rachel Lessard, LCSW-R
 
+[IMAGE: Portrait of Rachel Lessard, LCSW-R]
+
 Together we can explore your experiences in order to help you feel safe and secure again. In my office, with our without your loved one, we can develop new styles of communication that can create the relationship you have always wanted.
 
 Specializes in anxiety, depression, PTSD, couples, hypnotherapy, veterans, first responders, and weight loss surgery evals and counseling.
