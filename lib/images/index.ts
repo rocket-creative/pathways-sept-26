@@ -10,6 +10,7 @@ import type {
   GeneratedManifest,
   PagePhotos,
   Photo,
+  SectionPhoto,
 } from "./types";
 
 export type {
@@ -72,8 +73,49 @@ export function getAllAssetSources(): AssetSource[] {
   return [...assets().values()];
 }
 
+/** Front-desk card used for every Insurance / Insurance and cost section. */
+const INSURANCE_FIGURE: SectionPhoto = {
+  asset: "ha-ap26-desk-talk",
+  alt: "Welcome Team members talking with a visitor at the Pathways Within front desk",
+  shape: "rounded",
+  aspect: "landscape",
+  side: "start",
+  layout: "feature",
+  focal: "40% 45%",
+};
+
+/** Waiting-room handshake used for every Take the next step section. */
+const NEXT_STEP_FIGURE: SectionPhoto = {
+  asset: "th-ap-waiting-greeting",
+  alt: "A Pathways Within practitioner shaking hands with a client in the waiting room",
+  shape: "rounded",
+  aspect: "landscape",
+  side: "end",
+  layout: "split",
+  focal: "46% 42%",
+};
+
+/**
+ * These two cards are the same on every page. Applied here so a page that
+ * never lists them in its group file still gets them, and a page that listed
+ * a different closing photograph matches the rest of the site.
+ */
+const STANDARD_SECTIONS: NonNullable<PagePhotos["sections"]> = {
+  insurance: INSURANCE_FIGURE,
+  "insurance-and-cost": INSURANCE_FIGURE,
+  "take-the-next-step": NEXT_STEP_FIGURE,
+};
+
 export function getPagePhotos(url: string): PagePhotos | undefined {
-  return pages().get(url);
+  const page = pages().get(url);
+  if (!page) return { sections: { ...STANDARD_SECTIONS } };
+  return {
+    ...page,
+    sections: {
+      ...page.sections,
+      ...STANDARD_SECTIONS,
+    },
+  };
 }
 
 /* ------------------------------------------------------------------ */

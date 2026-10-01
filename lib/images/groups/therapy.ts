@@ -156,6 +156,16 @@ export const THERAPY: ImageGroup = {
           layout: "overlay",
           focal: "58% 68%",
         },
+        /* Same card as medication management and wellness. Heading id is "insurance". */
+        insurance: {
+          asset: "ha-ap26-desk-talk",
+          alt: "Welcome Team members talking with a visitor at the Pathways Within front desk",
+          shape: "rounded",
+          aspect: "landscape",
+          side: "start",
+          layout: "feature",
+          focal: "40% 45%",
+        },
         "take-the-next-step": {
           asset: "th-ap-waiting-greeting",
           alt: "A Pathways Within practitioner shaking hands with a client in the waiting room",
