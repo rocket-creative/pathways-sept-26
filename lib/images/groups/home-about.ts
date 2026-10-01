@@ -154,8 +154,8 @@ export const HOME_ABOUT: ImageGroup = {
           },
         ],
         "find-a-provider": {
-          asset: "ha-ap26-desk-smile",
-          alt: "A Pathways Within staff member smiling with a visitor at the front desk",
+          asset: "ha-ap-front-desk-welcome",
+          alt: "Gloria Saladino at the Smithtown front desk with a visitor",
           shape: "circle",
           side: "end",
           focal: "center",
@@ -172,8 +172,8 @@ export const HOME_ABOUT: ImageGroup = {
             focal: "center",
           },
           {
-            asset: "ha-ap-group-room-garden-city",
-            alt: "A therapy group room with navy sofas, emoji pillows, and a blue-and-gold abstract painting",
+            asset: "ha-ap-waiting-port-jefferson",
+            alt: "Waiting hallway at the Port Jefferson Pathways Within office with teal chairs, light blue walls, and a view into a session room",
             shape: "rounded",
             aspect: "landscape",
             layout: "band",
@@ -181,13 +181,13 @@ export const HOME_ABOUT: ImageGroup = {
           },
         ],
         insurance: {
-          asset: "ha-ap26-desk-talk",
-          alt: "Welcome Team members talking with a visitor at the Pathways Within front desk",
+          asset: "ha-ap-front-desk-team",
+          alt: "Gloria Saladino at the Smithtown front desk with a colleague and a visitor",
           shape: "rounded",
           aspect: "landscape",
           side: "start",
           layout: "feature",
-          focal: "40% 45%",
+          focal: "center",
         },
         /* The page backdrop fills this card. The sky is the light grey field
            at the top, which is where the copy sits. Not a library crop:
@@ -208,23 +208,23 @@ export const HOME_ABOUT: ImageGroup = {
           focal: "center",
         },
         "take-the-next-step": {
-          asset: "th-ap-waiting-greeting",
-          alt: "A Pathways Within practitioner shaking hands with a client in the waiting room",
+          asset: "ha-ap-front-desk-welcome",
+          alt: "Gloria Saladino at the Smithtown front desk with a visitor",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "split",
-          focal: "46% 42%",
+          focal: "center",
         },
       },
     },
 
     "/about": {
-      hero: { asset: "ha-ap26-desk-smile", alt: "A Pathways Within staff member smiling with a visitor at the front desk", focal: "center" },
+      hero: { asset: "ha-ap-front-desk-team", alt: "Gloria Saladino at the Smithtown front desk with a colleague and a visitor", focal: "center" },
       sections: {
         "who-we-are-and-why-we-are-here": {
-          asset: "ha-ap26-desk-handshake",
-          alt: "A visitor shaking hands with a staff member at the Pathways Within front desk",
+          asset: "ha-ap-front-desk-welcome",
+          alt: "Gloria Saladino at the Smithtown front desk with a visitor",
           shape: "circle",
           side: "start",
           focal: "center",
@@ -253,20 +253,20 @@ export const HOME_ABOUT: ImageGroup = {
           focal: "center",
         },
         "the-people-helping-lead-the-way": {
-          asset: "ha-ap-editorial-saul",
-          alt: "Saul Alvarez in a white shirt, standing among green plants in the office",
+          asset: "ha-gloria-saladino",
+          alt: "Gloria Saladino, front desk manager at Pathways Within",
           shape: "circle",
           side: "start",
           focal: "center",
         },
         "take-the-next-step": {
-          asset: "th-ap-waiting-greeting",
-          alt: "A Pathways Within practitioner shaking hands with a client in the waiting room",
+          asset: "ha-ap-front-desk-welcome",
+          alt: "Gloria Saladino at the Smithtown front desk with a visitor",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "split",
-          focal: "46% 42%",
+          focal: "center",
         },
       },
     },
@@ -282,8 +282,8 @@ export const HOME_ABOUT: ImageGroup = {
           focal: "center",
         },
         leadership: {
-          asset: "ha-ap26-desk-smile",
-          alt: "A Pathways Within staff member smiling with a visitor at the front desk",
+          asset: "ha-ap-front-desk-welcome",
+          alt: "Gloria Saladino at the Smithtown front desk with a visitor",
           shape: "circle",
           side: "start",
           focal: "center",
@@ -316,13 +316,13 @@ export const HOME_ABOUT: ImageGroup = {
           },
         ],
         "take-the-next-step": {
-          asset: "th-ap-waiting-greeting",
-          alt: "A Pathways Within practitioner shaking hands with a client in the waiting room",
+          asset: "ha-ap-front-desk-welcome",
+          alt: "Gloria Saladino at the Smithtown front desk with a visitor",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "split",
-          focal: "46% 42%",
+          focal: "center",
         },
       },
     },
@@ -344,20 +344,20 @@ export const HOME_ABOUT: ImageGroup = {
     },
 
     "/careers": {
-      hero: { asset: "ha-ap-waiting-greeting", alt: "", focal: "42% 28%" },
+      hero: { asset: "ha-ap-front-desk-welcome", alt: "Gloria Saladino at the Smithtown front desk with a visitor", focal: "center" },
       sections: {
         // Takes the long card out of its pair so the two short ones
         // ("How hiring works", "Questions") pair with each other.
         "why-people-stay": {
-          asset: "ha-ap-editorial-emily",
-          alt: "Emily Dugan smiling in a plant-filled office, wearing a light blue cardigan",
+          asset: "ha-gloria-saladino",
+          alt: "Gloria Saladino, front desk manager at Pathways Within",
           shape: "circle",
           side: "end",
           focal: "center",
         },
         "how-hiring-works": {
-          asset: "pr-ap-mpq-hallway",
-          alt: "Hallway at the Massapequa office looking into colorful therapy rooms",
+          asset: "pr-ap-pj-teal-room",
+          alt: "Therapy room at the Port Jefferson office",
           shape: "circle",
           side: "start",
           focal: "center",
@@ -390,8 +390,8 @@ export const HOME_ABOUT: ImageGroup = {
         },
         // Three paragraphs and a list on a full row card: the team beside it.
         "leadership-and-the-practice-s-values": {
-          asset: "ha-ap-group-room-garden-city",
-          alt: "A therapy group room with navy sofas, emoji pillows, and a blue-and-gold abstract painting",
+          asset: "pr-ap-gc-therapy-joy",
+          alt: "Therapy room at the Garden City Pathways Within office with charcoal armchairs, a blue ottoman, and a Today I Choose Joy sign",
           shape: "circle",
           side: "end",
           focal: "center",

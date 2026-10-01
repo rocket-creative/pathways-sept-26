@@ -295,7 +295,7 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
    (backdrop.css), for the homepage. A second copy of image 2, fixed to the
    same box so the two line up to the pixel, above the page and below the
    bar (z 40), masked to a band that is solid through the bar and dissolves
-   over the next 3rem. Copy scrolling up into the band fades into image 2
+   over the next 8rem. Copy scrolling up into the band fades into image 2
    before it reaches the pills. The controller gives it image 2's opacity, so
    it is invisible through the pan and arrives with the hand off. Under 900px
    the bar is sticky and in flow, so there is nothing to fade under. */
@@ -310,14 +310,14 @@ html[data-hero-mode="pin"][data-hero-phase="out"] .hero-stop--cta .cta--pair a[h
     mask-image: linear-gradient(
       to bottom,
       #000 0,
-      #000 var(--header-h, 4.75rem),
-      transparent calc(var(--header-h, 4.75rem) + 3rem)
+      #000 calc(var(--header-h, 4.75rem) + 0.75rem),
+      transparent calc(var(--header-h, 4.75rem) + 8rem)
     );
     -webkit-mask-image: linear-gradient(
       to bottom,
       #000 0,
-      #000 var(--header-h, 4.75rem),
-      transparent calc(var(--header-h, 4.75rem) + 3rem)
+      #000 calc(var(--header-h, 4.75rem) + 0.75rem),
+      transparent calc(var(--header-h, 4.75rem) + 8rem)
     );
   }
 }

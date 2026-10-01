@@ -19,7 +19,7 @@ const LOCATION_FILLS: { asset: string; focal: Focal }[] = [
   { asset: "pr-ap-desk-logo", focal: "50% 40%" },
   { asset: "pr-ap-smt-plants-room", focal: "center" },
   { asset: "pr-ap-smt-waiting", focal: "50% 45%" },
-  { asset: "pr-ap-gc-group-sofas", focal: "50% 55%" },
+  { asset: "pr-ap-gc-flower-wall", focal: "center" },
 ];
 
 /** Small deterministic hash so the same page always gets the same picture. */

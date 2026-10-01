@@ -20,56 +20,7 @@ hero_image: "[NEEDS: image] Therapy office at Pathways Within Massapequa on Merr
 
 # Pathways Within in Massapequa, NY
 
-Pathways Within Massapequa is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. The office is reached by stairs. Suite 5 at this address is closed.
-
-[CTA] Contact Us -> /contact
-
-## Getting here
-
-The office is at 4160 Merrick Road, Suite 7, Massapequa, NY 11758. Parking is available and varies, from a lot to on-street parking.
-
-Accessibility: Reached by stairs. This office is not wheelchair accessible. Rockville Centre, Smithtown, and Port Jefferson are accessible alternatives, and New York telehealth is available when a video visit fits.
-
-If stairs are a barrier, [Rockville Centre](/locations/rockville-centre), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson) are step-free, and video visits are available in New York. [Contact Us](/contact).
-
-
-## Providers at this office
-
 [PROVIDER CARDS: location=massapequa]
-
-[NEEDS: assign providers to offices in the sheet]
-
-You do not need to choose a provider before you write. [Contact Us](/contact).
-
-## Nearby communities we serve
-
-The Massapequa office serves the eastern South Shore of Nassau County and the Suffolk border, including Massapequa Park, Seaford, Amityville, Wantagh, Bethpage, and Farmingdale. Merrick Road and Sunrise Highway both bring you close to the office.
-
-## Common questions
-
-### Is the Massapequa office wheelchair accessible?
-
-No. The suite is upstairs and reached only by stairs. If you use a wheelchair or cannot manage stairs, the Welcome Team will book you at Rockville Centre, Smithtown, or Port Jefferson, or set up New York telehealth.
-
-### Do you offer telehealth if I cannot get there?
-
-Yes. Most of our therapists and our psychiatric nurse practitioner see clients by video in New York when a video visit is available. Many clients mix in person visits at Massapequa with video sessions when life gets busy. Read more at [telehealth](/telehealth).
-
-### Which insurance plans do you accept in Massapequa?
-
-Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, so you know what to expect before your first visit. See [insurance and fees](/insurance-and-fees) for the full list of plans and self pay options.
-
-### How do I book an appointment?
-
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan, and matches you with a provider at Massapequa. Learn more at [Contact Us](/contact).
-
-## Take the next step
-
-Tell the Welcome Team what you are looking for and that Massapequa is your closest office. They will set up your 360 intake and match you with a provider who fits.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
 
 
 ```json

@@ -347,6 +347,17 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
     max-width: none;
   }
 
+  /* The office or provider list belongs under the heading and the photograph,
+     across the whole card. The rule above would otherwise park it in the
+     copy column and leave the note stranded under the picture. */
+  .page-section.page-section--figure[data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > :is(.provider-cards, .location-cards, .card-grid__after) {
+    grid-column: 1 / -1;
+  }
+
+  .page-section.page-section--figure[data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__copy {
+    align-self: start;
+  }
+
   .page-section.page-section--figure:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__copy {
     align-self: center;
   }
@@ -432,6 +443,22 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
   }
 }
 
+/* Five offices: three across, then two that share the next row. This stays
+   ahead of the four-across rule used for longer lists. */
+@media (min-width: 900px) {
+  .page-section.page-section--figure[data-has-cards][data-card-count="5"] > .location-cards {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .page-section.page-section--figure[data-has-cards][data-card-count="5"] > .location-cards > .location-card:nth-child(-n + 3) {
+    grid-column: span 2;
+  }
+
+  .page-section.page-section--figure[data-has-cards][data-card-count="5"] > .location-cards > .location-card:nth-child(n + 4) {
+    grid-column: span 3;
+  }
+}
+
 @media (min-width: 1200px) {
   .page-section--figure[data-has-cards] > :is(.provider-cards, .location-cards) {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -504,6 +531,92 @@ main.page--lanes > .prose > .page-section--figure > .section-figure__media {
     align-self: start;
     width: 100%;
     margin: 0;
+  }
+}
+
+/* Tia: her bio stays on the left. The portrait and her provider card stack
+   in the right column, so the card sits under the photo instead of in an
+   empty full-width row. */
+@media (min-width: 900px) {
+  .page-section.page-section--figure[data-section="tia-baumohl"][data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) {
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem);
+    align-items: start;
+  }
+
+  .page-section.page-section--figure[data-section="tia-baumohl"][data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__copy {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .page-section.page-section--figure[data-section="tia-baumohl"][data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__media {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 1;
+    align-self: start;
+    justify-self: stretch;
+  }
+
+  .page-section.page-section--figure[data-section="tia-baumohl"][data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .provider-cards {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: start;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+}
+
+/* Our offices: the heading spans the card, then two photographs share the
+   next row. The address cards stay full width underneath. */
+@media (min-width: 900px) {
+  .page-section.page-section--figure[data-section="our-offices"][data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 0.85rem;
+    align-items: start;
+  }
+
+  .page-section.page-section--figure[data-section="our-offices"][data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__copy,
+  .page-section.page-section--figure[data-section="our-offices"][data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > :is(.location-cards, .card-grid__after) {
+    grid-column: 1 / -1;
+  }
+
+  .page-section.page-section--figure[data-section="our-offices"][data-has-cards]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__media {
+    grid-column: auto;
+    grid-row: 2;
+    aspect-ratio: 3 / 2;
+    align-self: stretch;
+    justify-self: stretch;
+    width: 100%;
+    min-height: 0;
+    max-height: none;
+  }
+}
+
+/* Body and health is a short half card. The photograph stays above the
+   copy instead of splitting that narrow card into two columns. */
+@media (min-width: 900px) {
+  .page-section.page-section--figure[data-section="body-and-health"][data-layout="band"]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-section.page-section--figure[data-section="body-and-health"][data-layout="band"]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__media {
+    grid-column: 1;
+    grid-row: 1;
+    order: -1;
+    aspect-ratio: 3 / 2;
+    align-self: stretch;
+    justify-self: stretch;
+    width: 100%;
+    min-height: 0;
+    max-height: none;
+  }
+
+  .page-section.page-section--figure[data-section="body-and-health"][data-layout="band"]:not([data-layout="collage"]):not([data-layout="columns"]):not([data-layout="overlay"]):not([data-layout="cover"]) > .section-figure__copy {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
   }
 }
 

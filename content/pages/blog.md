@@ -18,30 +18,27 @@ providers: []
 hero_image: "[NEEDS: image] Rachel Lessard writing at a desk"
 ---
 
-# Notes from Pathways Within
+Rachel Lessard, LCSW
 
-Articles and conversations from the people who work here. Every post carries a byline from a licensed provider and a publish date, and clinical claims link to primary sources. Rachel's more candid writing lives on her Substack, The Wisdom of Wellness; pieces republished here point back to it as the original.
+5/28/19
 
-[BLOG INDEX]
+Rachel Lessard, LCSW
 
-## Why we publish
+5/28/19
 
-Search engines and people both reward the same thing: a licensed provider explaining something plainly, with a date and a source. That is the bar for every post here. Practice updates go out as they happen and stay dated, so if an office moves or a service launches, this is where it is announced first.
+A Podcast with Rachel Lessard
 
-## What you will find here
+Owner & Founder of Pathways Within joins host Aynisa Leonardo
 
-- Practice news: new offices, new providers, new services, and what changed.
-- Explainers: what a modality is, what a first session is like, what a term means.
-- Rachel's essays: republished from The Wisdom of Wellness with a canonical link to the original [NEEDS: Substack URL].
-- Podcast appearances, starting with [A New Way Podcast with Rachel Lessard](/blog/a-new-way-podcast).
+on A New Way Podcast.
 
-## For the maintainer
+Guest User
 
-New posts are Markdown files in pages/blog following the Article pattern in SPEC.md: byline, publish date, one verified source per clinical claim, and no FAQ or HowTo markup. Republished Substack essays set the canonical to the Substack URL.
+5/28/19
 
-## Take the next step
+Guest User
 
-[CTA] Contact Us -> /contact
+5/28/19
 
 ```json
 {

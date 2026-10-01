@@ -90,9 +90,9 @@ export const PRACTICE: ImageGroup = {
     },
     "/locations/garden-city": {
       hero: {
-        asset: "pr-ap-gc-group-sofas",
-        alt: "Group seating room at the Garden City Pathways Within office with navy sofas, stone-topped tables, and abstract art",
-        focal: "50% 55%",
+        asset: "pr-ap-gc-flower-wall",
+        alt: "A dark leather sofa against a white flower wall in a Pathways Within office waiting area",
+        focal: "center",
       },
       sections: {
         "getting-here": {
@@ -131,19 +131,19 @@ export const PRACTICE: ImageGroup = {
     },
     "/locations/massapequa": {
       hero: {
-        asset: "pr-ap-mpq-hallway",
-        alt: "Hallway at the Massapequa Pathways Within office looking into colorful therapy rooms with open doors",
-        focal: "50% 50%",
+        asset: "pr-ap-mpq-underwater",
+        alt: "Therapy room at the Massapequa Pathways Within office with an underwater mural, blue walls, and cream and teal chairs",
+        focal: "center",
       },
       sections: {
         "getting-here": {
-          asset: "pr-ap-mpq-hallway",
-          alt: "Hallway at the Massapequa Pathways Within office looking into colorful therapy rooms with open doors",
+          asset: "pr-ap-mpq-mandala-chair",
+          alt: "Quiet therapy room corner at a Pathways Within office with a floral armchair and carved wood wall art",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           layout: "band",
-          focal: "50% 50%",
+          focal: "center",
         },
         "providers-at-this-office": {
           asset: "pr-ap-mpq-underwater",
@@ -202,12 +202,12 @@ export const PRACTICE: ImageGroup = {
           focal: "center",
         },
         "common-questions": {
-          asset: "pr-ap-smt-wellness-table",
-          alt: "Wellness treatment room at the Smithtown Pathways Within office with a massage table and tropical beach mural",
+          asset: "pr-ap-gc-wellness-reception",
+          alt: "Reception and waiting area at the Garden City Pathways Within wellness suite with navy velvet chairs and a curved desk",
           shape: "rounded",
           aspect: "portrait",
           side: "start",
-          focal: "55% 45%",
+          focal: "center",
         },
       },
     },
@@ -282,32 +282,47 @@ export const PRACTICE: ImageGroup = {
       // No hero: the form is above the fold. Front-desk figures lower down.
       sections: {
         "call-or-text": {
-          asset: "ha-ap26-desk-talk",
-          alt: "Staff and a visitor talking across the Pathways Within front desk",
+          asset: "ha-ap-front-desk-team",
+          alt: "Gloria Saladino at the Smithtown front desk with a colleague and a visitor",
           shape: "rounded",
           aspect: "landscape",
           side: "end",
           focal: "center",
         },
-        "our-offices": {
-          asset: "ha-ap26-desk-smile",
-          alt: "A Pathways Within staff member smiling with a visitor at the front desk",
-          shape: "circle",
-          side: "start",
-          focal: "center",
-        },
+        /* Two frames across the top of the card: the desk, then a waiting room.
+           The second stays a split figure so it sits beside the first, not as a
+           full-width band under it. */
+        "our-offices": [
+          {
+            asset: "ha-ap-front-desk-welcome",
+            alt: "Gloria Saladino at the Smithtown front desk with a visitor",
+            shape: "rounded",
+            aspect: "landscape",
+            side: "start",
+            layout: "split",
+            focal: "center",
+          },
+          {
+            asset: "ha-ap-waiting-smithtown",
+            alt: "A Pathways Within waiting room with grey chairs, a lattice wood coffee table, and colorful animal paintings on seafoam walls",
+            shape: "rounded",
+            aspect: "landscape",
+            layout: "split",
+            focal: "center",
+          },
+        ],
       },
     },
     "/how-it-works": {
       hero: {
-        asset: "ha-ap26-desk-handshake",
-        alt: "A visitor shaking hands with a staff member at the Pathways Within front desk",
+        asset: "ha-ap-front-desk-team",
+        alt: "Gloria Saladino at the Smithtown front desk with a colleague and a visitor",
         focal: "center",
       },
       sections: {
         "step-2-the-welcome-team-calls-you-back": {
-          asset: "ha-ap26-desk-talk",
-          alt: "Staff and a visitor talking across the Pathways Within front desk",
+          asset: "ha-ap-front-desk-welcome",
+          alt: "Gloria Saladino at the Smithtown front desk with a visitor",
           shape: "rounded",
           aspect: "landscape",
           side: "end",

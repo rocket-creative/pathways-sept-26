@@ -18,143 +18,107 @@ providers: [christine-cervo, danielle-ingenito]
 hero_image: "[NEEDS: image] Licensed massage therapist working on a client's shoulder in a treatment room at Pathways Within on Long Island"
 ---
 
-# Massage Therapy on Long Island
+WELLNESS SPA SERVICES ON LONG ISLAND
 
-Clinical massage therapy for pain, muscular tension, mobility, and recovery. At Pathways Within, our New York State Licensed Massage Therapists provide individualized, clinically informed massage therapy based on your symptoms, health history, physical presentation, and treatment goals. Massage therapy is available to all patients, with NYSHIP accepted for eligible medical massage services.
+# Massage
 
-Whether you are managing chronic muscular tension, recurring discomfort, physical strain, limited mobility, or recovery needs, each session begins with a focused intake to identify treatment priorities, relevant precautions, and appropriate techniques.
+#### Massage is your gateway to relaxation and healing.
 
-[CTA] Contact Us -> /contact
+Our skilled therapists will guide you on a journey of relaxation to promote overall well-being. With a range of massage options tailored to your needs, there’s something for everyone.
 
-## What massage therapy is
+## Relaxation designed just for you
 
-Massage therapy is a licensed healthcare profession in New York State. Our therapists combine clinical training with individualized care. Before treatment, they review your symptoms, relevant health history, areas of pain or restriction, and functional goals.
+At Pathways Within, we pride ourselves on quality relaxation in a spa-like environment. Our massages take this ethos to the next level by ensuring that every client receives a bespoke service tailored to their needs.
 
-Technique, pressure, positioning, and areas of focus are selected according to that assessment rather than a predetermined routine. The National Center for Complementary and Integrative Health describes massage therapy as a practice where a trained therapist manipulates the soft tissues of the body ([NCCIH](https://www.nccih.nih.gov/health/massage-therapy-what-you-need-to-know)).
+Our attention to detail begins from the very first moment and we offer a variety of massage services to ensure that you walk out the door with less stress in your body and more calm in your soul.
 
-Massage therapy may complement medical, rehabilitative, mental health, or integrative care when appropriate. It does not replace medical evaluation or treatment when those services are needed.
+## Benefits of Massage Therapy
 
-## Who it helps
+There are many types of massages offered at our spa, and each has a unique profile of uses and experiences, but all massages are designed to help you feel like the best version of yourself. Massage has a body of benefits with a benefit for every body.
 
-Massage therapy may help support:
+Massage therapy can help you enjoy:
 
-- Chronic muscular tension
-- Neck, shoulder, and back discomfort
-- Soft tissue soreness
-- Repetitive use tension
-- Restricted mobility or flexibility
-- Exercise and athletic recovery
-- Pregnancy related muscular discomfort
-- Physical tension associated with stress
-- General muscular relaxation
-- Ongoing mobility and physical maintenance
+#### Lower stress levels
 
-Musculoskeletal symptoms may be influenced by several factors, including physical activity, posture, injury, repetitive movement, sleep, and stress. Pain and restricted movement can also affect mood, sleep, and everyday functioning. A clinically informed intake helps place the area of discomfort within that broader context. Clients living with [chronic pain or illness](/concerns/chronic-pain-and-illness) or [stress and burnout](/concerns/stress-and-burnout) often use massage alongside therapy.
+#### Reduced muscle soreness
 
-## Massage services
+#### Less tension and pain
 
-### Medical massage
+#### Clearer headspace (less brain fog)
 
-Goal directed treatment focused on identified symptoms, areas of muscular tension, soft tissue restriction, or functional concern. May support: chronic tension, neck and back discomfort, repetitive strain, mobility concerns, and ongoing physical maintenance.
+#### Brightened and refreshed skin
 
-### Sports massage
+#### Better circulation
 
-Targeted massage for active individuals, adapted to training demands, muscular tension, movement patterns, and recovery goals. May support: exercise recovery, athletic training, repetitive movement, and recurring muscle tightness.
+#### More relaxation
 
-### Swedish massage
+#### Increased energy
 
-A full body massage using flowing techniques and adjustable pressure to address general muscular tension and promote relaxation. May support: general tension, physical stress, and muscular relaxation.
+#### Improved immune response
 
-### Pregnancy massage
+#### More restful sleep
 
-Massage adapted for the physiological and positional considerations of pregnancy. May support: back and hip discomfort, muscular tension, fatigue, and relaxation during pregnancy.
+## Become a member
 
-### Hot stone massage
+In addition to one-time and standing appointment massages, we offer massage memberships to our clients who want access to perma-relaxation. Our memberships grant you access to 60 minutes on the table with one of our elite massage therapists every month, as well as $25 toward any other service we offer.
 
-Heated stones may be incorporated when clinically appropriate to provide localized warmth and support muscular relaxation.
+There are perks to becoming a member like: being able to bank your monthly massages for up to 3 months, getting VIP access to our specials and deals, and a commitment to price stability at the time you sign up. Give us a shout if you’re interested in learning more about our membership offerings or to sign up today!
 
-### Massage based cupping
+## Massage Offerings
 
-Cupping may be incorporated by appropriately trained providers as one component of an individualized massage treatment plan. Learn more on our [cupping page](/wellness/cupping).
+#### Lymphatic Drainage Massage
 
-### Lymphatic drainage massage
+A lymphatic drainage massage is a type of gentle massage therapy that helps to stimulate the lymphatic system, which is responsible for removing waste and toxins from the body. Light pressure and rhythmic, circular movements help move lymph fluid through the lymphatic vessels and toward the lymph nodes.
 
-A gentle massage that uses light pressure and rhythmic, circular movements to help move lymph fluid through the lymphatic vessels and toward the lymph nodes. [NEEDS: confirm still offered]
+#### Swedish Massage
 
-### Reflexology
+This massage technique is the one you’re imagining in a standard massage setting. Gentle pressure is applied using rhythmic and intentional motion that help the muscles to move tension and release strain in tense areas of your body like lower back, shoulders and neck.
 
-Focused on the hands and feet, reflexology uses pressure points that are thought to correspond to other body systems. Clients often choose it for relaxation. [NEEDS: confirm still offered]
+#### Reflexology Massage
 
-## What to expect in your first session at Pathways Within
+Focused on the extremities, reflexology is the practice of using pressure points in the hands and feet to activate and soothe corresponding body systems. This coordinated massage technique is thought to reduce pain and increase relaxation. Some clients say it improves sleep and anxiety as well!
 
-Before treatment, your therapist may ask about areas of pain, tension, or restricted movement; relevant diagnoses, injuries, or medical history; medications or recent procedures that may affect care; physical activity and repetitive movement patterns; pressure and positioning preferences; and functional and treatment goals.
+#### Prenatal Massage
 
-During treatment, your therapist may use a combination of techniques based on the intake findings, your treatment goals, and your comfort. More pressure is not automatically more clinically appropriate or effective. Communication about pressure, positioning, and sensation is encouraged throughout the session.
+Similar to Swedish massage, modified techniques are used to accommodate a pregnant belly. With a combined focus on comfort and relaxation, prenatal massages use altered positioning and special training to relieve swollen joints and sore muscles for pregnant women in a spa like setting.
 
-After treatment, your therapist may review your response to treatment, the areas addressed, relevant self care considerations, and whether follow up care may be appropriate.
+#### Hot Stone Massage
 
-## How care works here
+Flat warm stones are heated to around 125 degrees and placed or moved along areas of your body to release tension, pain and symptoms of fatigue, nausea and insomnia. The heated stones may be moved by tapping, kneading or stroking the targeted areas, or simply allowing them to rest.
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. From there, the team connects you with an available Licensed Massage Therapist and, when it helps, adds support from other parts of the practice.
+#### Sport Massage
 
-At Pathways Within, massage is available as a stand alone service or as part of a multidisciplinary care plan that may also include [mental health therapy](/therapy), [acupuncture](/wellness/acupuncture), [medication management](/medication-management), and [performance coaching](/coaching). Patients are not required to receive multiple services. The collaborative setting simply allows care to be considered in relation to the whole person.
+For athletes who are aiming for an elite performance without risk of injury or strain, sports massage is a (literal) game changer. You can improve elasticity, fast track your healing and reduce tension and strain through sports massage that also releases tight spots and improves blood flow.
 
-With your permission and when clinically appropriate, massage therapy may complement care provided by other Pathways Within or outside healthcare professionals. Read the full process at [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
+### We accept NYSHIP insurance for all massages!
 
-## Where it is offered
+## True beauty starts from within.
 
-Massage therapy is offered in person at our Long Island offices. It is not available by telehealth.
+### Complement your wellness journey with expert therapy services that nurture your mind and soul.
 
-[LOCATION CARDS: rockville-centre, garden-city, smithtown]
+Discover the power of emotional healing today.
 
-[NEEDS: confirm which offices offer this service]
+### Frequently Asked Questions
 
-## Who provides it
+You’ve got questions, and we’ve got answers. Some of our most-asked questions are here but if there’s something else on your mind, we love to chat.
 
-Massage services are provided by New York State Licensed Massage Therapists.
+From magical massage to relaxing reflexology, we’ve got the spectacular spa experience you need. Call or email today to schedule your massage appointment.
 
-[PROVIDER CARDS: christine-cervo, danielle-ingenito]
+Does massage hurt?
 
-## Insurance and cost
+Some massages can be uncomfortable, but they should never be outright painful unless you are working with a known condition, sensitivity or sore spot that your massage therapist is aware of and you’ve given consent to release.
 
-Massage therapy is available to all patients. Pathways Within accepts [NYSHIP](/insurance/nyship) for eligible medical massage services when eligibility and applicable plan requirements are met. Coverage varies by provider, service, and plan, and the Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+What can I expect afterward?
 
-To get started with NYSHIP medical massage, call (631) 371-3825 and let us know you are interested. Our team reviews the information and applicable requirements needed to begin care, then connects you with an available Licensed Massage Therapist. Your therapist completes an intake, assesses your concerns within the scope of massage therapy, and tailors treatment to your clinical needs and goals.
+You may be tender, sore, sleepy or a little bit achy. Massage releases a lot of lymphatic build up which can cause flu-like symptoms in some people. Stay hydrated and plan to rest if you can for a couple of hours after your massage to maximize benefit and decrease discomfort as your body processes this gift you’ve given it.
 
-## Common questions
+What do I need to do to prepare?
 
-### Is massage therapy only available through NYSHIP?
+Please be sure to drink lots of water before your massage, and come dressed in light, comfortable clothing. We recommend that you shower the morning of and limit your use of heavily scented products or body treatments.
 
-No. Massage therapy at Pathways Within is available to all patients. NYSHIP is accepted for eligible medical massage services. If you have another plan or are paying out of pocket, the Welcome Team walks you through your options after your 360 intake.
+Is it safe to get a massage?
 
-### What is medical massage?
-
-Medical massage is goal directed care focused on identified symptoms, areas of muscular tension or restriction, and functional concerns. Treatment is selected according to the patient's presentation rather than a standard relaxation routine. Your therapist documents what was addressed and how you responded.
-
-### Does therapeutic massage hurt?
-
-Treatment may involve sensitive areas, but it should remain within your tolerance. Your therapist can modify pressure, technique, and positioning throughout the session. Tell your therapist right away if anything feels sharp or too intense, and they will adjust.
-
-### Do I need an injury to receive massage therapy?
-
-No. Patients may seek care for chronic tension, mobility concerns, repetitive strain, exercise recovery, stress related muscular tension, relaxation, or ongoing physical maintenance. The intake helps your therapist choose the right approach for your goals that day.
-
-### How often should I receive massage?
-
-Frequency depends on your symptoms, goals, response to treatment, and any applicable insurance requirements. Your therapist reviews this with you after your first session and adjusts the plan as your body responds.
-
-### Can massage and acupuncture be combined?
-
-Yes. Depending on your needs, the two services may complement one another. Massage primarily uses hands on techniques for muscles and soft tissue, while [acupuncture](/wellness/acupuncture) uses selected points based on an East Asian medicine assessment. Your treating providers coordinate with your permission.
-
-## Take the next step
-
-You do not need to determine which massage technique is appropriate before scheduling. Tell our Welcome Team what you are experiencing, and we will help identify the appropriate next step. All patients welcome. NYSHIP accepted for eligible services.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+Every body can benefit from expert massage, but not everyone will be able to safely receive the same type of treatments. During your initial consultation, your massage therapist will help you determine which massage style is best suited to your needs with safety at the center of our treatment planning, alongside relaxation.
 
 ```json
 {

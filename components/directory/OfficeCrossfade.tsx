@@ -21,7 +21,7 @@ export default function OfficeCrossfade({ photos }: { photos: OfficePhoto[] }) {
           key={photo.src}
           src={photo.src}
           srcSet={photo.srcSet}
-          sizes="(max-width: 800px) 100vw, 36rem"
+          sizes="(max-width: 720px) 100vw, 42rem"
           width={photo.width}
           height={photo.height}
           alt={index === 0 ? photo.alt : ""}

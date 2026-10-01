@@ -20,100 +20,69 @@ hero_image: "[NEEDS: image] Two partners sitting together on a couch in a Long I
 
 # Couples Therapy on Long Island
 
-Couples therapy is counseling for two partners who want to repair communication and rebuild connection, with a licensed therapist as a neutral guide. At Pathways Within, our couples therapists use the Gottman Method and offer sessions in person across Nassau and Suffolk County and by telehealth.
+### “Being the “best you can be” is really only possible when you are deeply connected to another. Splendid isolation is for planets, not people.”
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+— Dr. Sue Johnson
 
-[CTA] Contact Us -> /contact
+## Couples Therapy
 
-## What couples therapy is
+Relationships can be difficult to maintain, especially as the years go by and each person changes in unforeseen ways. A break in communication can often lead to other problems that plague modern marriages, and therapy can be a powerful way to tease out the underlying issues in order to build stronger connections with your partner.
 
-Relationships can be hard to maintain, especially as the years go by and each person changes in ways no one predicted. A break in communication often leads to other problems. Therapy is a powerful way to tease out the underlying issues and build a stronger connection with your partner.
+Let's Get Started
 
-In a long partnership, people tend to drift apart. That is the natural ebb and flow of relationships, and nothing is inherently wrong with you if you feel this way. The trick is pulling yourselves back together and rediscovering what drew you to each other in the first place.
+#### Do you find yourself wondering why you haven't found the love you want in your relationships? Or why it seems like love fades the longer you’ve been together?
 
-Some couples worry about airing their dirty laundry in front of another person. That is not how it feels from our side. Your therapist is there to help communication flow and to serve as a middle ground for each partner. The connection is already there. We are there to remind you what it is and how to reach it.
+#### Do you believe no matter what you say or do for your significant other, it's never the "right thing" or "good enough"? Do you find yourself in the aftermath of a betrayal in one way or another?
 
-### The Gottman Method
+These are common feelings to have when you have been in a long-term relationship but couples therapy can help.
 
-While couples therapy can take many forms, we specialize in the Gottman Method. Its main idea is to give priority to unresolved conflicts and talk through them using positive communication. Your therapist teaches you to spot and avoid criticism, contempt, defensiveness, and stonewalling, terms you will come to know well over the course of therapy.
+### Couples Therapy in a Nutshell
 
-In our experience, the Gottman Method has been effective at increasing respect, intimacy, and affection. By removing barriers to resolving conflict, couples who are open to this method can build a deeper sense of empathy and understanding that lasts.
+In a long partnership, people tend to drift apart. It’s the natural ebb and flow of relationships, and there’s nothing inherently wrong in your relationship if you feel this way. The trick is being able to pull yourself back together and rediscover what drew you to your partner in the first place.
 
-### Somatic couples therapy
+To some couples, it might feel uncomfortable to air out your “dirty laundry” in front of another person. We want you to know that’s not how it feels from our side. We are there simply to help communication flow easily, to serve as a middle ground for each partner. The connection is already there—we’re just there to remind you what it is and how to tap into it.
 
-We also offer a modified version of [somatic therapy](/therapy/somatic-therapy) for couples. It works with the mind body connection so each partner can notice what stress and conflict do in the body, and settle before responding.
+### Comfort is Key
 
-## Who it helps
+One of the most important parts of couples therapy is feeling comfortable, both with the idea of attending therapy and with the therapist as well. Usually, one partner is much more convinced about the wonders of therapy than the other, and in these cases, it’s important to show them how grateful you are that they are giving therapy a try.
 
-Couples therapy can help if you find yourselves wondering why love seems to fade the longer you are together. It can help if nothing you say or do for your partner ever feels like the right thing or good enough. It can help in the aftermath of a betrayal. These are common feelings in a long term relationship, and they are workable.
+It’s important to know that your therapist is not going to take sides regarding whatever conflict you may bring in, no matter their gender or personal history. The role of the therapist is not to claim one partner the victor over the other, but to help them hear and truly see one another.
 
-We see couples dealing with:
+#### We also want you to feel comfortable working with the specific therapist you’ve selected.
 
-- [Relationship issues](/concerns/relationship-issues) such as recurring arguments, distance, or trust
-- [Life transitions](/concerns/life-transitions) like a new baby, a move, retirement, or midlife
-- Deciding whether to stay together or separate with care
-- Building a strong footing for a newer relationship
-- Family conflict that spills into the partnership, sometimes alongside [family therapy](/therapy/family-therapy)
+Ideally, you and your partner will feel comfortable sharing with each other under the guidance of your therapist. But if there’s something that makes you uncomfortable, the best way to solve that problem is to talk to your therapist and see if the issue can be fixed. A good therapist welcomes any input, and we like to be flexible and open to our client’s needs.
 
-## What to expect in your first session at Pathways Within
+## Spotlight: The Gottman Method
 
-Comfort is key. One of the most important parts of couples therapy is feeling at ease, both with the idea of therapy and with the therapist. Usually one partner is more convinced than the other. If your partner is the reluctant one, show them you are grateful they are giving it a try.
+While couples therapy can take many forms, we specialize in using the Gottman Method. The main idea of this methodology is to give priority to unresolved conflicts and to try and talk through them through the use of positive communication. The goal is to promote communication by avoiding criticism, contempt, defensiveness, and stonewalling -all terms that you will become more familiar with over the course of therapy.
 
-In your first session, your therapist meets you both and hears each person's view of what is happening. They ask what you each want from the relationship. Your therapist does not take sides, no matter their gender or personal history. The role is not to declare a winner but to help you hear and truly see each other.
+The Gottman Method has been incredibly effective in our experience in increasing respect, intimacy, and affection in the couples we’ve worked with. By removing barriers toward conflict resolution, couples who are open to using this method can create a profound sense of empathy and understanding in their relationship, enough to sustain them for years to come.
 
-If something makes you uncomfortable as sessions go on, say so. A good therapist welcomes input, and we stay flexible to what our clients need.
+## Spotlight: Somatic Couples Therapy
 
-## How care works here
+We also provide a modified version of Somatic Therapy for couples, which essentially seeks to enhance the mind-body connection.
 
-Every new client starts with a 360 intake with our Welcome Team. For couples, that conversation covers what is happening between you and what each of you is carrying on your own. The team then matches you with an available couples therapist and builds a whole person care plan.
+Learn more about Somatic Therapy
 
-When it helps, one or both partners may add [individual therapy](/therapy/individual-therapy), [medication management](/medication-management) with our psychiatric nurse practitioner, or [massage](/wellness/massage) for the physical stress conflict leaves behind. Nothing is required, and everything is coordinated with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
+## FAQs About Couples Therapy on Long Island
 
-## Where it is offered
+What does a therapist know about my relationship?
 
-Couples therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. Partners can join a telehealth session from the same room or from two locations.
+This is actually a great point because the benefit of having a therapist for couples therapy is the fact that they’re unbiased strangers. They’re not involved in your lives, and can therefore take a non-judgmental approach to help you realize where particular patterns may be emerging. Many people in long-term relationships don’t even realize the things they may be doing that hurt their partner, but a trained third-party observer can find these moments and gently confront them.
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+What is the goal of couples therapy?
 
-## Who provides it
+Couples therapy is very much like individual therapy in that each couple is unique and the therapy will reflect that. Furthermore, the goal of therapy is to meet the needs and preferences of the client. In couples therapy, there are two people involved, which means two sets of preferences and needs. Your therapist will do their best to honor both partners and give them both the space they need to express their goals for the relationship, whether it’s to stay together, to separate gracefully, or even to establish solid footing for a younger relationship just starting out.
 
-[PROVIDER CARDS: paula-gonthier, kalovna-edmond, frank-tropeano, lindsay-laier]
+Why shouldn’t I just end the relationship and start fresh with someone new?
 
-## Insurance and cost
+Some couples feel that if they can’t solve their problems on their own, they aren’t right for each other. Breaking up seems like the only option. Unfortunately, this is often not the case.
 
-Some plans cover couples therapy and some do not. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+What we know is that people bring the same patterns and bad habits into new relationships, and continue the same cycle. Couples therapy is often more about learning about yourself so you can be a better partner in your relationship. Be aware that the goal of couples therapy is not to make a judgment about whether or not a couple should break up but rather help the people involved understand each other and their relationship from a different perspective.
 
-## Common questions
+What results can we expect from couples therapy?
 
-### What does a therapist know about my relationship?
-
-The benefit of a couples therapist is that they are an unbiased stranger. They are not involved in your lives, so they can take a nonjudgmental view and help you see where patterns are forming. Many people in long term relationships do not notice the things they do that hurt their partner. A trained observer can find those moments and gently point them out.
-
-### What is the goal of couples therapy?
-
-Each couple is unique, and therapy reflects that. With two people in the room there are two sets of needs and preferences. Your therapist honors both partners and gives each the space to name their goals. That might be to stay together, to separate with care, or to build solid footing for a newer relationship.
-
-### Why not just end the relationship and start fresh?
-
-Some couples feel that if they cannot solve their problems alone, they are not right for each other. Often that is not the case. People bring the same patterns into new relationships and repeat the cycle. Couples therapy is largely about learning about yourself so you can be a better partner. Your therapist does not judge whether you should break up.
-
-### What results can we expect?
-
-We cannot guarantee your relationship will continue the way you hope. We can say that by the end of therapy you will understand your relationship and yourself as a partner far better. If both of you are willing to work, you will have tools to manage conflict in more effective and positive ways.
-
-### Can we do couples therapy over telehealth?
-
-Yes. Many couples find video sessions easier to fit around work and childcare. Your therapist runs the session the same way and can see both of you at once. Telehealth is available in New York when a video visit is available.
-
-## Take the next step
-
-Tell the Welcome Team what has been happening between you. They will set up your 360 intake and match you with a couples therapist at the office closest to you or by telehealth.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+While we cannot guarantee your relationship will continue in the way you hope for, we can assure you that by the end of your therapeutic journey you will have a much better understanding of your relationship and yourself as a partner. If both partners are willing and open to working on themselves, you will be a source of comfort and support for each other with the tools at your disposal to manage conflict in much more effective and positive ways.
 
 ```json
 {

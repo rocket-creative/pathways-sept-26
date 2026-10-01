@@ -18,106 +18,17 @@ providers: "[PROVIDER CARDS: pillar=wisdom]"
 hero_image: "[NEEDS: image] A person on a laptop video call with a Pathways Within therapist from a quiet room at home"
 ---
 
-# Online Therapy and Medication Management by Telehealth
+# UPDATE!
 
-Telehealth at Pathways Within is therapy and psychiatric medication management by secure video for adults, teens, and families located in New York when a video visit is available. You meet the same licensed Long Island therapists and prescriber you would see in our offices, from wherever you are. You can use telehealth for every session or mix it with in person visits.
+May 28
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+Written By Guest User
 
-[CTA] Contact Us -> /contact
+Connect with us today to learn more about getting started with a therapist near you! Call us at (631) 371-3825 today!
 
-## What telehealth is
+Guest User
 
-Telehealth is a live video appointment with your therapist or prescriber through Jane, a private, HIPAA compliant platform. Before your first visit, the Welcome Team sends you a link and a short setup guide so you can test your camera and audio ahead of time. There is nothing to install beyond what the link asks for.
-
-Almost everything that happens in a therapy office works on video. Talk therapy, [EMDR](/therapy/emdr), [IFS](/therapy/ifs), [couples therapy](/therapy/couples-therapy), [family therapy](/therapy/family-therapy), and [coaching](/coaching) are all offered by telehealth. Medication management is available by video when the service and the license allow it. The Welcome Team confirms that during your intake.
-
-## Who it helps
-
-Telehealth suits people who:
-
-- Live or work far from our Nassau and Suffolk County offices
-- Travel for work or split time between New York and a place where video visits are not available
-- Care for children or a family member and cannot leave the house easily
-- Have limited mobility or a health condition that makes travel hard
-- Are managing [anxiety](/concerns/anxiety) or [depression](/concerns/depression) and find it easier to start from home
-- Want to keep seeing the same therapist after moving while you are still in New York
-
-It is a poor fit for a few situations. Someone in acute crisis, someone without a private place to talk, or someone whose provider judges that in person care is safer will be guided toward an office visit or a higher level of care.
-
-## What you need
-
-- A phone, tablet, or computer with a camera and microphone
-- A reliable internet connection
-- A private space where you will not be overheard, with headphones if others are nearby
-- To be physically located in New York when a video visit is available at the time of your session
-
-That last point is a licensing rule, not a preference. Your provider is licensed by state, and the law looks at where you are sitting when the session starts. If you are traveling outside New York, tell your provider ahead of time so you can reschedule.
-
-## What to expect in your first session at Pathways Within
-
-Your first video session follows the same shape as a first office visit. Your therapist confirms your location and an emergency contact, then asks what brought you in, what you have tried, and what you want to change. Together you set a starting plan and a schedule.
-
-Sessions run about 50 minutes. Join from a quiet room a few minutes early, close other apps, and keep your phone nearby in case the connection drops. If it does, your therapist calls you and you finish the session by phone or reconnect. Most people settle into the format within a session or two.
-
-## How care works here
-
-Every new client starts with a 360 intake with our Welcome Team, by phone or video. That conversation covers what you are experiencing across mind, body, and daily life. The team matches you with a provider who works by telehealth and, when it helps, adds [medication management](/medication-management) or other services.
-
-You are not locked into one format. Many clients start online and add office visits later, or keep therapy on video and come in person for [massage](/wellness/massage) or [acupuncture](/wellness/acupuncture). Read the full process at [Contact Us](/contact) or return to the [therapy hub](/therapy).
-
-## Where it is offered
-
-Telehealth is available to clients located in New York when a video visit is available. If you would rather meet in person, we have offices across Long Island. See [locations](/locations).
-
-## Who provides it
-
-Most of our therapists offer telehealth, and our psychiatric nurse practitioner sees clients by video as well.
-
-[PROVIDER CARDS: pillar=wisdom]
-
-## What cannot be done online
-
-Wellness services that involve hands on care, including massage, acupuncture, cupping, and in person energy work, happen only at our offices. Some evaluations, such as those required by a surgical program, may need to be in person. [NEEDS: confirm which evaluations require an office visit]
-
-## Insurance and cost
-
-Most plans that cover therapy and psychiatric visits cover the same services by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
-
-## Common questions
-
-### Is virtual therapy private?
-
-Yes. Sessions run on Jane, and your provider joins from a private space. Your side of the privacy is the room you choose. Headphones, a closed door, and a white noise app outside the door help when you share a home.
-
-### Can I switch between telehealth and in person visits?
-
-Yes. Whether you meet your therapist every time by video or alternate between telehealth and office visits, we work with you to fit your life. Tell your provider or the Welcome Team what you need, and they adjust your schedule.
-
-### I am not on Long Island. Can I still be seen?
-
-Video visits are for eligible services when you are in New York. The Welcome Team confirms whether a video visit is an option for you. If it is not, they will help you find an in person office.
-
-### Does telehealth work for kids and teens?
-
-Often, yes. Teens in particular tend to be comfortable on video. Younger children usually do better in person, and some approaches, such as [PCIT](/therapy/pcit), are built for the office. Your child's therapist recommends the format after the first visit.
-
-### What happens if I am in crisis during a video session?
-
-Your therapist confirms your location and an emergency contact at every first session so help can reach you. If a session becomes an emergency, your therapist stays on the line and contacts local emergency services. Between sessions, call or text 988 or call 911.
-
-### Can I get medication by telehealth?
-
-Yes, for many medications, when you are in New York and a video visit is available. Some prescriptions have additional rules for video visits, and your prescriber explains those if they apply. The Welcome Team confirms this before you book.
-
-## Take the next step
-
-Tell the Welcome Team which state you are in and what you are looking for. They will set up your 360 intake and match you with a provider who works by video.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+## A Podcast with Rachel Lessard
 
 ```json
 {

@@ -20,95 +20,49 @@ hero_image: "[NEEDS: image] Person seated with a hand resting on their chest dur
 
 # Somatic Therapy on Long Island
 
-Somatic therapy is a body based approach to trauma and stress for adults whose nervous system stays on alert long after the danger has passed. At Pathways Within, a Somatic Experiencing Practitioner and therapists trained in somatic work offer it in person on Long Island and by telehealth. Any touch is optional and happens only with your explicit consent.
+### “True wealth is having a healthy mind, body, and spirit. True wealth is having the knowledge to maneuver and navigate the mental obstacles that inhibit your ability to soar.”
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+— Ru Paul
 
-[CTA] Contact Us -> /contact
+## Somatic Therapy
 
-## What somatic therapy is
+Our bodies have eternal memories. Whether we remember our experiences or not, they live in our nervous system, our digestive system, our head, neck, shoulders. These are the places where trauma hides from plain view, and somatic therapy seeks to heal the body from the tension associated with trauma.
 
-Our bodies have long memories. Whether we remember our experiences or not, they live in our nervous system, our digestive system, our head, neck, and shoulders. These are the places where trauma hides from plain view. Somatic therapy works to release the tension the body holds from those experiences.
+Let's Get Started
 
-Soma is Greek for body, and that is the cornerstone of somatic psychotherapy. It focuses on how stress and trauma have settled into your physical being, in gestures, posture, pain, and other forms of body language. We may be good at rationalizing things, but our bodies do not lie.
+### Trauma Locked in the Body
 
-In biological terms, stress once kept us alive. If a mountain lion was chasing you, you needed to run. Today our concerns are rarely that urgent, but the body still reacts the same way. It does not know the difference between a mountain lion and a rude email. Somatic therapy helps the nervous system learn that the threat is over.
+Somatic Therapy is built on the idea that our bodies are affected by the traumas we may have experienced in the past. Everything we have experienced stays in the memory of our bodies, in gestures and facial expressions, in posture, pain, or other forms of body language. Somatic therapy seeks to address the underlying issues that manifest themselves in your body.
 
-## Who it helps
+If we think about our bodies in biological terms, we can better understand how stress affects our nervous system. In our past, stress was beneficial and necessary—if a mountain lion was chasing you, you needed to run away! Now, our concerns are not as urgent but our body still interprets them in similar ways. Our bodies don’t know the difference between being chased by a mountain lion and wondering how to respond to a rude email.
 
-Talk therapy is often enough to reveal the causes and symptoms of a mental health concern. After trauma, talking through it can feel harmful or simply not helpful. Somatic therapy is a good fit for:
+#### Sōma is Greek for body, and that’s the cornerstone of somatic psychotherapy. It focuses on the body and how trauma has embedded itself in your physical being. We may be great at convincing ourselves and rationalizing different things, but our bodies don’t lie.
 
-- [Post traumatic stress](/concerns/ptsd), including trauma from long ago
-- [Stress and burnout](/concerns/stress-and-burnout) that shows up as tension, headaches, or exhaustion
-- Anxiety and panic that you feel in your body first
-- Digestive issues, muscle tension, or pain with no clear medical cause
-- People who have tried talk therapy and still feel stuck
-- Anyone who wants to feel more at home in their body
+### How Somatic Therapy Works
 
-Somatic therapy pays attention to how the body is carrying trauma. Your therapist notices where you hold tension, where you go numb, and what happens in your body when a memory comes up.
+Talk therapy can often be enough to reveal causes and symptoms of mental health issues. However, when a person undergoes trauma, talking through it could be harmful or simply not beneficial. Somatic therapy looks at how the body is manifesting trauma by paying attention to any digestive issues, muscular tension, pain in certain areas of the body, sexual obstacles, etc.
 
-## What to expect in your first session at Pathways Within
+Throughout somatic therapy, you are guided to feel more attuned to your body’s messages. This type of therapy does involve light touching in order to determine what areas are especially sensitive. For instance, your therapist may encourage you to touch your shoulder and feel where the tension resides, or your therapist could use their hands to support your shoulder and help you find a position that offers less tension.
 
-Your first session is a conversation about what brought you in and what you notice in your body day to day. Your therapist explains how somatic work differs from talk therapy and asks what feels comfortable to you. You set the boundaries. Nothing happens to your body without your clear yes.
+The ultimate goal is to provide you with insight into your mind-body connection that will benefit you for the rest of your life. Somatic therapy has been known to reduce stress and provide opportunities to address physical and emotional problems. Knowing how to listen to your body will ensure you stay both healthy and aware of the underlying issues you may face.
 
-In later sessions, you are guided to tune in to your body's messages. Your therapist may ask you to notice your breath, track a sensation, or shift your posture. Some clients use their own hands, for example placing a hand on the shoulder to feel where tension sits. If touch by the therapist would help, your therapist asks first, explains what and why, and stops the moment you say so. Many clients never use touch at all.
+## FAQs
 
-The goal is insight into your mind and body connection that stays with you for life. Clients often report less stress, better sleep, and the ability to catch a stress response before it takes over. Sessions run about 50 minutes.
+#### What if I don’t like being touched?
 
-## How care works here
+Often people who have undergone trauma do not like being touched, and that is perfectly normal. However, it’s important to consider the benefits associated with somatic therapy. We try to set up a safe environment where you get to decide your comfort level, and any contact during a session is up to you. Sometimes, physical contact is replaced by self-touching or moving around a physical space. Our goal is to help you in whatever way works best for you.
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. The team then matches you with a therapist trained in somatic work.
+#### What’s the difference between stress and trauma?
 
-Somatic therapy pairs naturally with the rest of the practice. Your care plan may combine it with [trauma therapy](/therapy/trauma-therapy), [EMDR](/therapy/emdr), or [IFS](/therapy/ifs) to process specific memories. Our Wellness team offers [massage](/wellness/massage) as a coordinated option for the physical tension that somatic work uncovers, and [acupuncture](/wellness/acupuncture) for pain and sleep. Everything is coordinated with your permission. Read the full process at [Contact Us](/contact).
+Both stress and trauma are associated with events that impact you negatively. Stress is the immediate aftermath of the event, while trauma is caused when a person can’t let go of the impact caused by the event, or otherwise termed chronic stress. For this reason, trauma is deeper and thus manifests itself in our nervous system and other parts of the body.
 
-## Where it is offered
+#### I went through a traumatic experience, but it was a long time ago. How could somatic therapy help me?
 
-Somatic therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. On video, your therapist guides awareness, breath, movement, and self touch. Any therapist assisted touch happens in person only.
+Trauma is like a wine stain on a white shirt. It can be covered up, and you can forget about it, but in the end, it’s still there. We don’t often aim to “cure” trauma because it’s so deep-seated in our consciousness and our bodies that sometimes that task is impossible. What we aim for, rather, is to manage trauma and to provide you with coping skills in order to target symptoms of trauma in the body.
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+#### Do I have to talk about my trauma?
 
-## Who provides it
-
-[PROVIDER CARDS: lauren-hollander, colm-ashe]
-
-## Insurance and cost
-
-Somatic therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
-
-## Common questions
-
-### What if I do not like being touched?
-
-That is common after trauma, and it is perfectly normal. Touch is never required in somatic therapy. We set up a safe environment where you decide your comfort level, and any contact during a session is up to you. Self touch, movement, and breath work replace physical contact for many clients. Our goal is to help you in whatever way works best for you.
-
-### What is the difference between stress and trauma?
-
-Both come from events that affect you negatively. Stress is the immediate aftermath of the event. Trauma is what happens when a person cannot let go of the impact, sometimes called chronic stress. For this reason, trauma runs deeper and shows up in the nervous system and other parts of the body.
-
-### My trauma was a long time ago. How could somatic therapy help now?
-
-Trauma is like a wine stain on a white shirt. It can be covered up and forgotten, but it is still there. We do not aim to erase trauma, because it sits deep in the body and the mind. What we aim for is to manage it and give you skills that target the symptoms trauma leaves in the body.
-
-### Do I have to talk about my trauma?
-
-No. Talking helps your therapist know your story, but we will never push you to describe something you are not comfortable sharing. The focus of somatic therapy is the body. More often than not, the type of trauma matters less than the effect it is having on you physically.
-
-### Is somatic therapy the same as massage?
-
-No. Somatic therapy is psychotherapy led by a licensed therapist, and touch, when used at all, is minimal and consented to each time. [Massage](/wellness/massage) is a Wellness service from a licensed massage therapist. Some clients use both, and the Welcome Team can coordinate them.
-
-### Can somatic therapy be done by telehealth?
-
-Yes. Awareness, breath, movement, and self touch all work well on video, and many clients prefer the privacy of home. Telehealth is available in New York when a video visit is available.
-
-## Take the next step
-
-Tell the Welcome Team where you feel it in your body. They will set up your 360 intake and match you with a somatic therapist at the office closest to you or by telehealth.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+Of course not. While talking is beneficial to both yourself and your therapist because they get to know your story better, we understand that trauma is a serious situation and we would never want to make you talk about something you’re not comfortable doing so. Moreover, the focus of somatic therapy is the body, so more often than not, the type of trauma is not as important as the effect it’s having on your body.
 
 ```json
 {

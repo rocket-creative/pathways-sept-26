@@ -20,10 +20,6 @@ hero_image: "[NEEDS: image] The Welcome Team at a Pathways Within front desk"
 
 # Contact Us
 
-The way to reach the Welcome Team is the contact form.
-
-[CTA] Contact Us -> /contact
-
 ```json
 {
   "@context": "https://schema.org",

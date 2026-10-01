@@ -20,56 +20,7 @@ hero_image: "[NEEDS: image] Reception area at Pathways Within Smithtown on Smith
 
 # Pathways Within in Smithtown, NY
 
-Pathways Within Smithtown is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787, on Route 347. An elevator goes to the 2nd floor.
-
-[CTA] Contact Us -> /contact
-
-## Getting here
-
-The office is at 496 Smithtown Bypass, Suite 203, Smithtown, NY 11787. Parking is available and varies, from a lot to on-street parking.
-
-Accessibility: Elevator to the 2nd floor. This office is wheelchair accessible.
-
-Smithtown is an accessible office. [Rockville Centre](/locations/rockville-centre) and [Port Jefferson](/locations/port-jefferson) are step-free as well. [Contact Us](/contact).
-
-
-## Providers at this office
-
 [PROVIDER CARDS: location=smithtown]
-
-[NEEDS: assign providers to offices in the sheet]
-
-You do not need to choose a provider before you write. [Contact Us](/contact).
-
-## Nearby communities we serve
-
-The Smithtown office serves central Suffolk County, including Hauppauge, Commack, St. James, Nesconset, Kings Park, and Lake Grove. Clients also come from Islip, Brookhaven, and the North Shore because Route 347 and the Northern State Parkway are close.
-
-## Common questions
-
-### Is the Smithtown office wheelchair accessible?
-
-Yes. Smithtown is an accessible office. If you have specific access needs, tell the Welcome Team when you book.
-
-### Do you offer telehealth if I cannot get there?
-
-Yes. Most of our therapists and our psychiatric nurse practitioner see clients by video in New York when a video visit is available. Massage and acupuncture are in person only. Read more at [telehealth](/telehealth).
-
-### Which insurance plans do you accept in Smithtown?
-
-Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, so you know what to expect before your first visit. See [insurance and fees](/insurance-and-fees) for the full list of plans and self pay options.
-
-### How do I book an appointment?
-
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan, and matches you with a provider at Smithtown. Learn more at [Contact Us](/contact).
-
-## Take the next step
-
-Tell the Welcome Team what you are looking for and that Smithtown is your closest office. They will set up your 360 intake and match you with a provider on our Suffolk team.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
 
 
 ```json

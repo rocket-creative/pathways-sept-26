@@ -68,7 +68,15 @@ function collect(root: HTMLElement): Parts | null {
   const pin = root.querySelector<HTMLElement>("[data-hero-pin]");
   const track = root.querySelector<HTMLElement>(".hero-stage__track");
   const image1 = root.querySelector<HTMLImageElement>("[data-hero-image-1]");
-  const handoff = [...root.querySelectorAll<HTMLElement>("[data-hero-image-2]")];
+  /* The veil is parked on <body> (HeroStage) so it is not trapped in main's
+     stacking context. The footer is a later sibling of main at the same
+     z-index, and would otherwise paint over the fade and run into the nav. */
+  const handoff = [
+    ...root.querySelectorAll<HTMLElement>("[data-hero-image-2]"),
+    ...[...document.querySelectorAll<HTMLElement>("body > .hero-handoff--veil")].filter(
+      (el) => !root.contains(el),
+    ),
+  ];
   const image2 = handoff
     .map((el) => el.querySelector<HTMLImageElement>("img"))
     .filter((img): img is HTMLImageElement => img !== null);

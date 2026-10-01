@@ -44,59 +44,15 @@ Rachel Lessard and Tiffany Roberts have hand written pages at pages/providers/ra
 
 # {{first_name}} {{last_name}}, {{credentials}}
 
-**{{title_line}}** at Pathways Within on Long Island. {{role}}. Part of the {{pillars}} team.
+**{{title_line}}**
 
 [IMAGE: {{headshot_url}} Portrait of {{first_name}} {{last_name}}, {{credentials}}]
-
-{{first_name}} works with {{age_groups}} and sees clients {{formats}}. Every new client begins with a 360 intake with the Welcome Team, who then matches you with {{first_name}} or another provider who fits what you need.
-
-[CTA] Contact Us -> /contact
-
-## About {{first_name}}
 
 {{bio_p1}}
 
 {{bio_p2}}
 
-## Areas of focus
-
-- {{bullet_1}}
-- {{bullet_2}}
-- {{bullet_3}}
-
-{{first_name}}'s specialties include {{specialties}}.
-
-## Works with
-
-**Age groups:** {{age_groups}}
-
-**Formats:** {{formats}}
-
-Telehealth is available to clients in New York when a video visit is available. Wellness services such as massage and acupuncture are in person only.
-
-## Offices
-
-[LOCATION CARDS: {{locations}}]
-
-[NEEDS: assign {{first_name}} to offices in the sheet]
-
-See all [locations](/locations).
-
-## Services
-
-{{first_name}} offers {{modalities}}. Learn more about each approach:
-
-- {{modalities -> service URLs, one linked list item per modality with a page}}
-
-Read more about [how care works here](/contact), including the 360 intake and how the Welcome Team coordinates therapy, medication management, and wellness.
-
-## Book with {{first_name}}
-
-Tell the Welcome Team you would like to work with {{first_name}} {{last_name}}. They will schedule your 360 intake, confirm availability, and set up your first appointment. If {{first_name}} does not have openings, they will suggest another provider with a similar focus.
-
 [CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
 
 
 ```json

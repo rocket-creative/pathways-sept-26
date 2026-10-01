@@ -332,12 +332,12 @@
   }
 }
 
-/* Seven nav pills plus the phone and the intake button need about 1170px of
-   bar. Under 1280px the bar takes two deliberate rows (nav, then actions,
-   right aligned) instead of wrapping the actions into the breadcrumb pill
-   and the hero lockup. --header-h is what backdrop.css, photos.css, hero.css
-   and the scroll padding step down by, so it grows with the bar. */
-@media (min-width: 900px) and (max-width: 1279.98px) {
+/* Nine nav pills plus the phone and the intake button need about 1376px of
+   bar. Under that the bar takes two deliberate rows (nav, then actions,
+   right aligned) instead of wrapping one link under the rest. --header-h is
+   what backdrop.css, photos.css, hero.css and the scroll padding step down
+   by, so it grows with the bar. */
+@media (min-width: 900px) and (max-width: 1375.98px) {
   html:root {
     --header-h: 7rem;
   }
@@ -348,6 +348,14 @@
 
   .site-header__nav {
     flex: 1 0 100%;
+  }
+}
+
+/* Nine pills wrap onto a second nav line below about 1060px, so the bar
+   is a nav row, another nav row, then the actions. */
+@media (min-width: 900px) and (max-width: 1059.98px) {
+  html:root {
+    --header-h: 10rem;
   }
 }
 
@@ -488,13 +496,20 @@
 
 .site-footer__offices a {
   font-weight: 700;
+  /* Town names such as Rockville Centre and Port Jefferson stay on one line. */
+  white-space: nowrap;
 }
 
 .site-footer__offices address {
+  display: grid;
   font-size: 0.88rem;
   font-style: normal;
   line-height: 1.45;
   color: var(--chrome-ink-soft);
+}
+
+.site-footer__place {
+  white-space: nowrap;
 }
 
 .site-footer__social ul {

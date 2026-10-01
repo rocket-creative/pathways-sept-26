@@ -20,32 +20,19 @@ hero_image: "https://images.squarespace-cdn.com/content/v1/5f1c8357aeb2de46daf50
 
 # A Podcast with Rachel Lessard
 
-Published May 28, 2019 [NEEDS: confirm original publish date; the old site shows 5/28/19 on the index and "May 28" on the post]
+May 28
 
-Owner and founder of Pathways Within, Rachel Lessard, LCSW-R, joined Aynisa Leonardo from Wellbridge addiction treatment on A New Way Podcast to discuss the practice and share more about the many pathways to treatment offered at Pathways Within.
+Written By Rachel Lessard, LCSW
 
-[EMBED: podcast episode] [NEEDS: episode URL or embed code]
+Owner and founder of Pathways Within, Rachel Lessard, joined Aynisa Leonardo from Wellbridge addiction treatment to discuss the practice and share more about the many pathways to treatment offered here at Pathways Within.
 
-## What Rachel covers
+A New Way Podcast with Rachel Lessard
 
-[NEEDS: three to five bullet summary of the episode from the client, or a transcript excerpt]
+Connect with us today to learn more about anything that Rachel talked about on the show! Call us at (631) 371-3825 today!
 
-## Why it matters
+Rachel Lessard, LCSW
 
-Wellbridge is an addiction treatment center, and the conversation covered how a therapy practice and a treatment program can hand people to each other without losing them in between. It is a good introduction to how Pathways Within thinks about care across providers.
-
-## About Rachel
-
-Rachel founded Pathways Within as a small private therapy practice and grew it into a collaborative mental health and wellness organization across Long Island. She specializes in anxiety, depression, PTSD, couples, hypnotherapy, veterans and first responders, and bariatric surgery evaluations. [Meet Rachel](/providers/rachel-lessard).
-
-## Take the next step
-
-Want to talk about anything Rachel discussed on the show? Contact the Welcome Team.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+## UPDATE!
 
 ```json
 {

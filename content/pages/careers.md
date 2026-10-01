@@ -20,28 +20,6 @@ hero_image: "[NEEDS: image]"
 
 # Careers at Pathways Within
 
-Pathways Within is a growing mental health and wellness practice across Nassau and Suffolk County. We hire licensed clinicians (LCSW, LMHC, LMFT), limited permit clinicians working toward licensure with supervision, psychiatric prescribers, massage therapists, acupuncturists, and Welcome Team members. Open roles are posted on WizeHire.
-
-[CTA] See open roles on WizeHire -> https://wizehire.com/cmp/pathways-within
-
-## Why people stay
-
-- Supervision and development are built in. Two clinical directors, one for Nassau and one for Suffolk, plus supervisors who develop clinicians rather than just review notes.
-- One practice, three pillars. Your clients can get medication management and body based care from colleagues down the hall, with consent, instead of a referral into the void.
-- Five offices and telehealth, so caseloads can be built around where you live.
-- A culture set by a founder who is still a practicing therapist.
-
-[NEEDS: benefits summary, W2 or 1099 status, and any current openings the client wants named on the page]
-
-## How hiring works
-
-Apply through WizeHire. The clinical director for your region reviews applications, and the Welcome Team schedules interviews. [NEEDS: confirm hiring process and timeline]
-
-## Questions
-
-Email [NEEDS: careers bucket email] or call (631) 371-3825.
-
-
 ```json
 {
   "@context": "https://schema.org",

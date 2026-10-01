@@ -14,7 +14,7 @@ const STAGES: Record<string, { services: string; photos: Photo[] }> = {
   "garden-city": {
     services: "Therapy, medication management, and wellness",
     photos: [
-      { asset: "pr-ap-gc-group-sofas", alt: "Group seating room at the Garden City office" },
+      { asset: "pr-ap-gc-flower-wall", alt: "Waiting area at the Garden City office with a white flower wall" },
       { asset: "pr-ap-gc-waiting-doors", alt: "Waiting nook at the Garden City office" },
       { asset: "pr-ap-gc-wellness-reception", alt: "Wellness reception at the Garden City office" },
     ],
@@ -23,7 +23,7 @@ const STAGES: Record<string, { services: string; photos: Photo[] }> = {
     services: "Therapy and medication management",
     photos: [
       { asset: "pr-ap-mpq-sunflower", alt: "Sunflower seating at the Massapequa office" },
-      { asset: "pr-ap-mpq-hallway", alt: "Hallway at the Massapequa office" },
+      { asset: "pr-ap-mpq-underwater", alt: "Therapy room at the Massapequa office with an underwater mural" },
       { asset: "pr-ap-mpq-mandala-chair", alt: "Therapy room at the Massapequa office" },
     ],
   },
@@ -32,7 +32,7 @@ const STAGES: Record<string, { services: string; photos: Photo[] }> = {
     photos: [
       { asset: "pr-ap-smt-waiting", alt: "Waiting room at the Smithtown office" },
       { asset: "pr-ap-smt-plants-room", alt: "Therapy room with plants at the Smithtown office" },
-      { asset: "pr-ap-smt-wellness-table", alt: "Wellness treatment room at the Smithtown office" },
+      { asset: "pr-ap-smt-therapy-window", alt: "Therapy room at the Smithtown office with a window overlooking trees" },
     ],
   },
   "port-jefferson": {

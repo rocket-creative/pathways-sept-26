@@ -18,92 +18,65 @@ providers: [tia-baumohl]
 hero_image: "[NEEDS: image] Client resting fully clothed on a treatment table while a practitioner places a hand lightly on the shoulder during an IET session on Long Island"
 ---
 
-# Integrative Energy Therapy (IET) on Long Island
+WELLNESS SPA SERVICES ON LONG ISLAND
 
-Integrative Energy Therapy (IET) is a hands on energy practice that clients use for relaxation and emotional processing. At Pathways Within, a certified coach offers IET at our Long Island offices for adults who feel weighed down by old stress, a hard season, or a change they are still absorbing.
+# Integrative
 
-Energy work is not a substitute for medical or mental health treatment.
+# Energy Therapy (IET)
 
-[CTA] Contact Us -> /contact
+In the nooks and crannies of your body as much as your mind, the memories that make you up—even the forgotten ones—shape your being. Holding on to that stagnant energy causes chronic physical and emotional pain.
 
-## What IET is
+### Integrative Energy Therapy seeks out and breaks down the barriers holding you back from the inside out.
 
-IET is a gentle, hands on practice. The practitioner works with a set of specific points on the body that the IET tradition links to emotional themes, such as fear, guilt, anger, or grief. With light touch at those points, the practitioner invites the body to soften and lets whatever is present come forward.
+### Raising (Good) Vibrations
 
-The tradition describes this as working with energy that has become stuck. You do not need to accept that framing to benefit. What clients notice in practice is simple: a quiet room, a steady presence, and permission to feel what they have been holding. Some sessions are mostly restful. Others bring up a memory or an emotion that has been waiting for space.
+Everything that’s ever happened to you still lives inside you—good, bad, and in between. When you experience something, and it becomes covered up, erased, or denied by will or happenstance, it doesn’t just disappear. It stagnates, creating disruptions in the transfer of energy from one space to another. The parts of your whole can no longer communicate effectively with tumbling balls of energy rumbling between mind, body and spirit.
 
-IET is not a treatment for trauma or any other condition, and it does not replace therapy. Many clients use it alongside [trauma therapy](/therapy/trauma-therapy) or [somatic therapy](/therapy/somatic-therapy) as a body based way to settle between sessions.
+Integrative Energy Therapy (IET) is the next-generation development of targeted physical healing for emotional health, and can help you clear those blockages to restore the fluidity of healing and being. IET is a hands-on healing therapy that seeks out trapped energy in your body.
 
-## Who it helps
+Through the use of a Cellular Memory Map, we can release stored trauma and untapped emotion from the spaces your energy has become stuck beneath them. In the space of this release, we create a blank slate for positive emotions. By restoring that flow of energy, you can raise your physical and emotional vibration so you can rise to meet your most empowered self.
 
-There is no threshold of hurt you need to reach before IET makes sense. Clients come in for:
+### Every body healing
 
-- The residue of a stressful year that has not fully lifted ([stress and burnout](/concerns/stress-and-burnout))
-- A move, a breakup, a loss, a new role, or another change still being absorbed ([life transitions](/concerns/life-transitions))
-- Feeling emotionally full without clear words for it
-- Wanting a gentler complement to talk therapy on weeks when talking feels like too much
-- Simply feeling better when they give their body a quiet hour
+Trauma doesn’t need to stem from some profound harm. We all experience trauma as we move through the world. Even if you’re not sure what you’d talk about in therapy, you may find you just feel better when you give your energy a clear path to move through your physical and spiritual bodies. There is no threshold of hurting at which IET becomes beneficial—it’s a healing energetic therapy for everybody, at every level.
 
-IET may not be the right first step if you are in acute crisis or newly processing a serious event. In that case, the Welcome Team will connect you with a therapist first, and IET can come later if you want it.
+From regularly scheduled treatments to intermittent maintenance, the balance of benefit and time commitment to restoring the energy pathways of your body is as unique as the life you’ve lived.
 
-## What to expect in your first session at Pathways Within
+Our goal is to get you feeling your absolute best, with access to all the energy your body has to offer to lead an emotionally and physically fulfilling life.
 
-Your session begins with a short conversation. Tia asks what brought you in and whether there are areas of the body you prefer not to be touched. You then lie fully clothed on a comfortable table, usually with a blanket. Tia works through a series of hand positions, resting her hands lightly on or just above the body. You can ask for no touch at any point.
+### Spotlight: Cellular Memory
 
-Over the course of your hour long session, you may move through different stages of awareness. Most clients find the experience deeply relaxing. Some describe a dreamlike state. Some feel warmth or tingling. Some cry, and some simply sleep. Afterward, many report a lighter or more settled mood. [NEEDS: confirm IET session length and fee]
+Integrative Energy Therapy works by targeting areas of the body where your cells take on your trauma. In a very literal sense, these cells become little sponges, soaking up the experiences you have. What’s happened to you can become a visceral reaction to your body’s attempts to overcome it without opening up your emotions to heal from those events.
 
-You choose how much to talk. Some clients prefer to sink into the experience in silence. Others want to speak about what they are feeling as it comes up. Either way, Tia holds the space and checks in with you at the end. Drink water and give yourself a few quiet minutes before returning to your day.
+The practice of energy therapy is colloquially referred to as, “removing the issues from the tissues”. By initiating a hands-on release of those body spaces, IET seeks your blocked energy pathways and slowly works them toward release. Much like yoga or acupuncture, IET is a subtle and targeted approach that works by effectively engaging your cellular being to heal your emotional self.
 
-## How care works here
+## True beauty starts from within.
 
-IET can stand on its own, or sit alongside other care. See all three modalities on our [energy work page](/wellness/energy-work), or [Contact Us](/contact).
+### Complement your wellness journey with expert therapy services that nurture your mind and soul.
 
-## Where it is offered
+Discover the power of emotional healing today.
 
-IET is offered in person at our Long Island offices. [NEEDS: confirm whether Tia offers distance IET sessions by telehealth]
+### Frequently Asked Questions
 
-[LOCATION CARDS: rockville-centre, garden-city, smithtown]
+How is IET different from Reiki?
 
-[NEEDS: confirm which offices offer this service]
+While the healing practices sound similar in the way that they occur, the distinct difference between them lies in the system they seek to align. IET strives to release stored trauma getting in the way of energy flow, while chakra alignment and aura are central to the healing that takes place in Reiki.
 
-## Who provides it
+What does IET help with?
 
-[PROVIDER CARDS: tia-baumohl]
+Clearing the energy pathways in the body can help you to effectively manage stress, regulate mood, reduce chronic pain and increase your sense of overall well-being.
 
-## Insurance and cost
+The painless release of long-stored emotional blockages is a fantastic way to restore the balance of energy inside and out so you feel more ready to take on whatever life throws at you.
 
-Coverage varies by provider, service, and plan, and most plans treat IET as a self pay service. The Welcome Team verifies benefits after your 360 intake and explains current session fees. See [insurance and fees](/insurance-and-fees). [NEEDS: IET session fee and confirm self pay only]
+What does IET feel like?
 
-## Common questions
+Most of our clients find the sensations and overall experience of their session to be deeply relaxing. Over the course of your hour-long energy release, you may find yourself moving through different stages of awareness. You may experience a dreamlike state and afterward, your mood may be more joyful.
 
-### How is IET different from Reiki?
+Do we talk during IET?
 
-Both are gentle, hands on practices done fully clothed on a table, and both feel restful. The difference is the focus. [Reiki](/wellness/energy-work/reiki) works with the whole body in a general way. IET works with specific points that the tradition connects to particular emotional themes. Many clients try both and settle on the one that suits them.
+While undergoing your IET session, you can choose whether you’d like to just sink into the experience or integrate talk therapy into the moment to work through what you’re feeling.
 
-### What do clients use IET for?
-
-Clients most often use IET for relaxation, for processing emotions that are hard to put into words, and for support during a life transition. Many report feeling calmer, lighter, and more able to face the week. IET is not a treatment for any medical or mental health condition.
-
-### What does IET feel like?
-
-Most clients find the session deeply relaxing. You may notice warmth or tingling where Tia's hands rest, drift into a dreamlike state, or feel an emotion rise and pass. Afterward, your mood may feel lighter or more settled. Nothing about it should feel forceful or uncomfortable.
-
-### Do we talk during IET?
-
-That is up to you. You can choose to sink into the experience in silence or talk through what you are feeling as it comes up. Either way, Tia creates space to move through whatever surfaces, at your pace, in a supportive environment.
-
-### Can IET replace my therapy or medication?
-
-No. Energy work is not a substitute for medical or mental health treatment. Keep working with your therapist, prescriber, or physician. IET can sit alongside that care, and with your permission Tia can coordinate with your other Pathways Within providers.
-
-## Take the next step
-
-Tell the Welcome Team you would like to try IET. They will set up your 360 intake and schedule your first session with Tia at the office closest to you.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+Either way, we will always create the space to move through what your energy pathways reveal when you are ready in a supportive environment.
 
 ```json
 {

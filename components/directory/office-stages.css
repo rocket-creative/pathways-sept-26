@@ -1,35 +1,43 @@
-/* Offices live in the section card, the same way a provider or location grid
-   does: heading and note across the top, then a two-up grid. Each office is
-   a photograph beside a short address block, not a second glass card. */
+/* Offices live in the section card: heading and note across the top, then a
+   two-up grid. Each office is a full-width photograph with the address
+   underneath, not a thumbnail beside the copy. */
 
 .office-stages {
   display: grid;
-  gap: clamp(1.25rem, 2vw, 1.75rem);
+  gap: clamp(1.5rem, 2.4vw, 2.25rem);
   width: 100%;
-  margin-block-start: 1.25rem;
+  margin-block-start: 1.35rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 720px) {
   .office-stages {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
   }
 }
 
 .office-stage {
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  gap: 0.9rem 1.1rem;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
   min-width: 0;
   margin: 0;
 }
 
+/* An office with no current photograph takes the whole row, so it does not
+   leave an empty cell beside a picture. */
+.office-stage:not(:has(.office-fade)) {
+  grid-column: 1 / -1;
+}
+
 .office-fade {
   position: relative;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
+  width: 100%;
   min-width: 0;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: var(--glass-radius, 24px);
   background: rgb(191 192 193);
 }
 
@@ -43,10 +51,6 @@
   animation-name: office-fade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-}
-
-.office-fade img:first-child {
-  position: relative;
 }
 
 main.page--lanes > .prose .office-stage__name {
@@ -101,6 +105,5 @@ main.page--lanes > .prose .office-stage :is(p, address) {
 
   .office-fade img:first-child {
     opacity: 1;
-    position: relative;
   }
 }

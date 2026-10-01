@@ -18,104 +18,95 @@ providers: "[NEEDS: PCIT certified clinician]"
 hero_image: "[NEEDS: image] Parent and young child playing on the floor together during a PCIT session in Garden City, Long Island"
 ---
 
-# Parent Child Interaction Therapy on Long Island
+# Parent-Child Interaction Therapy on Long Island
 
-Parent Child Interaction Therapy (PCIT) is an evidence based treatment for young children with behavior challenges and the parents or caregivers who care for them, including families who have experienced trauma. At Pathways Within, a trained therapist coaches you live while you play with your child, so new skills take hold at home.
+### “Behind every young child who believes in himself is a parent who believed first.”
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+–Matthew Jacobson
 
-[CTA] Contact Us -> /contact
+## Parent-Child Interaction Therapy (PCIT)
 
-## What PCIT is
+For children and their caregivers who have experienced trauma or are having challenges with overcoming behaviors or habits in the home. Parent-Child Interaction Therapy is the evidence-based answer to the questions parents, caregivers, and guardians have been looking for to help their children.
 
-PCIT focuses on improving the relationship between parent and child. It gives parents the skills to encourage the positive behaviors their children need to learn while reducing dangerous or negative ones. Through play supported by a trained therapist, you find new ways to connect with your child and break old habits and patterns.
+Let's Get Started
 
-Unlike most therapy, PCIT works in the here and now. You and your child play together while your therapist watches and coaches you in the moment. What you learn happens in a natural way, with support on hand to guide each lesson. You practice skills in session until you can use them with confidence at home.
+### Finding positive growth for a brighter future
 
-PCIT is recognized as a trauma informed intervention with a research base that spans many types of families and children. [PCIT International](https://www.pcit.org/) describes the model, its training standards, and the research behind it. It was developed for children roughly ages 2 to 7 and their caregivers. [NEEDS: confirm the age range Pathways Within serves for PCIT]
+By helping parents to learn new skills and techniques, children are given a more stable foundation for monitoring their own behavior and relationships. PCIT is designed to support children who may experience difficulty with their feelings, behaviors, and attachments.
 
-## Who it helps
+PCIT is a type of treatment but it’s also a gift. PCIT focuses on improving the parent-child relationship by giving parents the skills to encourage the positive behaviors their children need to learn while extinguishing dangerous or negative behaviors. Through interaction supported by a trained therapist, you’ll find new ways to connect with your child and break old habits and patterns of behavior.
 
-All parent and child relationships can benefit from learning to communicate well. PCIT is designed for children who have difficulty with their feelings, behaviors, and attachments. It is a strong fit for:
+### Benefits of PCIT
 
-- Children with [ADHD](/concerns/adhd) or frequent acting out at home or school
-- Children with [anxiety](/concerns/anxiety) that shows up as clinginess, refusal, or meltdowns
-- Children on the autism spectrum or with mood concerns that make it hard to manage emotions
-- Children who have been through abuse or witnessed violence in the home
-- Parents who feel stuck in a cycle of yelling, threats, and giving in
+- Support positive behavioral interactions
 
-For families who have experienced abuse, PCIT is used to reduce the risk of repeated harm while helping children and parents heal together. Live, hands on support is there so everyone feels safe and confident at each step.
+- Regulate emotional responses in children
 
-Families report benefits that include more positive interactions, children who regulate their emotions better, more consistency in parenting, tools for both celebrations and hard days, and lower stress for everyone in the house.
+- More consistency in parenting style and responses
 
-## What to expect in your first session at Pathways Within
+- Gain tools for celebrations and challenges
 
-Your first session is with the parent or caregiver, without the child. Your therapist learns what is happening at home, what you have tried, and what you want to change. Together you set goals and talk through how coaching works.
+- Lower stress levels for everyone
 
-In later sessions, you and your child play together in the therapy room while your therapist observes and coaches you, either from the room or through an earpiece. Each session runs up to 55 minutes, with tasks and transitions adjusted to what your child needs that day.
+- Everyone will see success
 
-The first phase builds the relationship using the PRIDE skills:
+- Reduce the risk of harm or recurrence of abuse
 
-- **Praise** your child specifically for what they are doing at that moment
-- **Reflect** out loud what your child says or does, to show you are listening
-- **Imitate** their play to show approval and encourage them to join in
-- **Describe** what you see and do, giving your child the words to do the same
-- **Enthusiasm** for what your child is doing and for the chance to be together
+#### THE RESEARCH BEHIND PARENT CHILD INTERACTION THERAPY
 
-A child who feels heard and connected to a caregiver is more likely to reach for healthy connections later in life. Once that foundation is in place, the second phase teaches you a calm, consistent way to give directions and follow through. Parents have homework and skills to master between sessions. No one asks you to prove anything until you are ready.
+## Stronger relationships through Intention
 
-## How care works here
+Parent-Child Interaction Therapy works through responsive and in-the-moment solutions to support effective relationships. You will work with a therapist for as long as you need to extinguish dangerous or undesired behaviors (in both parent and child) to create harmony in the home. The skills you learn in PCIT will facilitate a more stable and positive environment for children with acting out behaviors or those that have experienced abuse.
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what is happening with your child, your family, and your own stress, not just the behavior that made you call. The team then matches you with a therapist trained in PCIT.
+Certified as a trauma-informed intervention, PCIT is developed from an evidence base that spans many types of families and children. A body of research spanning globally through the experiences of hundreds of families has universally found that PCIT improves outcomes for individuals, and relationship satisfaction and increases the positive growth of behavior for children.
 
-PCIT often sits inside a larger family plan. Your therapist may recommend [child therapy](/therapy/child-therapy) for the child alone, [family therapy](/therapy/family-therapy) for siblings and co parents, or [individual therapy](/therapy/individual-therapy) or [trauma therapy](/therapy/trauma-therapy) for a parent carrying their own history. Our Wellness team is available for the parent who needs to lower their own stress. Everything is coordinated with your permission. Read the full process at [Contact Us](/contact).
+## Invite PRIDE into your relationship!
 
-## Where it is offered
+The acronym PRIDE is an excellent resource for understanding the focus area of how we’ll work together to facilitate positive and effective interactions to support your child’s growth.
 
-PCIT is offered in person at our Garden City office, where live coaching with a child takes place in a dedicated room. [NEEDS: confirm PCIT location and certified clinician] [NEEDS: confirm whether PCIT is offered by telehealth]
+Praise specifically related to what your child is doing at that moment.
 
-[LOCATION CARDS: garden-city]
+Reflect (verbally) on what your child says or does to show you’re listening.
 
-## Who provides it
+Imitation is a great way to show approval and encourage children to participate in groups.
 
-[PROVIDER CARDS: NEEDS PCIT certified clinician]
+Describe what you do or see to give your child the vocabulary to do the same.
 
-[NEEDS: PCIT certified clinician; the providers sheet does not list PCIT as a modality for any clinician]
+Enthusiasm for what your child is doing and the chance to be together.
 
-## Insurance and cost
+These communication skills are the basis for time spent together during PCIT. A child who feels heard and connected to their caregiver is more likely to reach for healthy connections later in life. Building these satisfying and necessary foundational relationships is the necessary first step of PCIT that must occur to facilitate the compliance we are trying to encourage. Through these genuine and guided interactions, children and parents can benefit from consistent and positive regard for one another during play.
 
-PCIT is billed as psychotherapy for the child, so most plans that cover child therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+## Frequently Asked Questions
 
-## Common questions
+You’ve got questions, and we’ve got answers. Some of our most-asked questions are below but if there’s something else on your mind, we love to chat. Feel free to reach out and let us help you apply a laser focus to your wellness dreams.
 
-### How long does each session take?
+#### How long does it take?
 
-Each session runs up to 55 minutes. PCIT is built on play, bridged with live coaching from a therapist trained in communication. Tasks and transitions vary with the needs of the child, so some sessions are shorter or split into smaller pieces.
+Based on play therapy that’s bridged with the support and facilitation of an expert in communicating, sessions will be responsive to the needs of the child.
 
-### Who benefits most from PCIT?
+Each session will be up to 55 minutes long with varying tasks or transitions used as required to best support the learning and growth goals of the families we are supporting.
 
-All parent and child relationships benefit from better communication. PCIT is especially helpful for children with ADHD, autism, or mood concerns that make it hard to respond to their emotions. It is also used with children who have experienced abuse or violence at home, to reduce the risk of repeated harm while the family heals.
+#### Who benefits most from PCIT?
 
-### How many sessions will we need?
+All parent-child relationships can benefit from learning how to communicate effectively, but PCIT is ideal for children with a diagnosis of ADHD, autism, or mood disorders that disrupt their ability to respond to their emotions effectively.
 
-PCIT is a short term therapy with a heavy focus on skills that stay with you after treatment ends. The time commitment ranges from two to twelve months depending on the family. You will not always need your therapist in the room to use the tools you gain.
+For children who have been a victim of abuse or experienced violence in the home, PCIT is a proven way to reduce the risk of repeated harm while helping children and their parents to heal from the traumas they’ve been through. Live hands-on support will be available to ensure everyone feels safe and confident at every step of the process.
 
-### How is PCIT different from other child therapy?
+#### How many sessions will I need?
 
-Most therapy works on talking through problems or planning for the future. PCIT brings the focus to the here and now. Your therapist coaches you while you play with your child, so skills are practiced live rather than discussed. The parent is the one being coached, and the child benefits from a parent who responds differently.
+Good news! PCIT is a short-term therapy with a heavy focus on sustainable solutions that will stay with you even after treatment has concluded.
 
-### Do both parents need to attend?
+While there is a time commitment of 2-12 months depending on the family, you will not always require the assistance of your therapist to use the tools you gain in PCIT.
 
-Any caregiver who spends significant time with the child can take part, and consistency across caregivers helps. Your therapist will talk with you about who should attend and how to share what you learn with others at home.
+#### How is this different from other therapy?
 
-## Take the next step
+Instead of focusing on change-talk or solving future problems, PCIT brings the focus to the here and now. What you learn will happen in an organic way with the support of a therapist on hand to facilitate those lessons in an active way. You will have in-session practice for skills you can take with you with confidence from the coaching you’ve received.
 
-Tell the Welcome Team what is happening at home. They will set up your 360 intake and let you know whether PCIT is a fit for your child and family.
+Parents have homework and skills to master in order to support their children, and unlike other therapies, no one will ask you to prove anything until you’re good and ready.
 
-[CTA] Contact Us -> /contact
+#### We are proud to offer Parent-Child Interaction Training at our Garden City location. We specialize in packages focused on whole-self healing and an emphasis on wellness.
 
-Or call (631) 371-3825.
-
+#### Ready to start from the outside and work toward your Pathways Within? Call us today!
 
 ```json
 {

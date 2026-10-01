@@ -20,56 +20,7 @@ hero_image: "[NEEDS: image] Waiting area of the Pathways Within Rockville Centre
 
 # Pathways Within in Rockville Centre, NY
 
-Pathways Within Rockville Centre is at 53 N Park Ave, Suite 302, Rockville Centre, NY 11570. An elevator goes to the 3rd floor.
-
-[CTA] Contact Us -> /contact
-
-## Getting here
-
-The office is at 53 N Park Ave, Suite 302, Rockville Centre, NY 11570. Parking is available and varies, from a lot to on-street parking.
-
-Accessibility: Elevator to the 3rd floor. This office is wheelchair accessible.
-
-If stairs or distance are a concern, video visits are available in New York, and [Smithtown](/locations/smithtown) and [Port Jefferson](/locations/port-jefferson) are step-free. [Contact Us](/contact).
-
-
-## Providers at this office
-
 [PROVIDER CARDS: location=rockville-centre]
-
-[NEEDS: assign providers to offices in the sheet]
-
-You do not need to choose a provider before you write. [Contact Us](/contact).
-
-## Nearby communities we serve
-
-Clients come to the Rockville Centre office from across the South Shore of Nassau County, including Lynbrook, Oceanside, Baldwin, East Rockaway, Malverne, and Freeport. If you live farther east or in Suffolk County, our Massapequa and Smithtown offices may be closer.
-
-## Common questions
-
-### Is the Rockville Centre office wheelchair accessible?
-
-Rockville Centre is an accessible office. If you have a specific access need, tell the Welcome Team when you book.
-
-### Do you offer telehealth if I cannot get to the office?
-
-Yes. Most therapists and our prescriber see clients by video in New York when a video visit is available. Massage and acupuncture are in person only. Read more at [telehealth](/telehealth).
-
-### Which insurance plans do you accept at this office?
-
-Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake and before your first appointment. See [insurance and fees](/insurance-and-fees) for the plans we work with and self pay options.
-
-### How do I book an appointment in Rockville Centre?
-
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, builds a care plan, and matches you with a provider at this office. You do not need to pick a service or a clinician before you reach out.
-
-## Take the next step
-
-Tell the Welcome Team what you need and that Rockville Centre is your closest office. They will set up your 360 intake and match you with the right provider.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
 
 
 ```json

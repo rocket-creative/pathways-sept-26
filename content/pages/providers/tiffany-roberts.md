@@ -20,54 +20,11 @@ hero_image: "https://pathwayswithinwellness.com/images/providers/tiffany-roberts
 
 # Tiffany Roberts, PMHNP, MSN, BSN, RN-BC
 
-**Psychiatric Mental Health Nurse Practitioner** at Pathways Within. Tiffany is our prescriber. She provides [medication management](/medication-management) for adolescents ages 10 and up and adults, in person at our Long Island offices and by telehealth.
+I take the time to really understand each person - not just what they’re feeling, but what they need. Medication, when used, is always thoughtful and part of a bigger supportive plan.
 
-[IMAGE: Portrait of Tiffany Roberts, PMHNP, psychiatric nurse practitioner at Pathways Within]
-
-"I take the time to really understand each person, not just what they are feeling, but what they need. Medication, when used, is always thoughtful and part of a bigger supportive plan."
+Specializes in Anxiety, depression, mood disorders, ADHD and other mood disorders.
 
 [CTA] Contact Us -> /contact
-
-## About Tiffany
-
-Tiffany has spent more than 20 years caring for people in almost every kind of circumstance, from hospital patients and people in outpatient care to individuals in the correctional and shelter systems. Along the way, one thing has stayed with her: you cannot understand someone's mental health by looking only at their symptoms. The relationships they are in, the environment where they live, their culture, their habits, and the pressures they carry all matter. That perspective shapes the way Tiffany works with every patient who sits across from her.
-
-As a psychiatric nurse practitioner, Tiffany works with adolescents and adults who want more than a quick prescription and a return visit. She believes medication can be an important part of treatment, while also helping people build the changes, skills, and support that make lasting improvement possible. Coming from a cultural background where mental health was not always openly discussed, she is especially passionate about creating space for people to talk honestly without shame or judgment. Her goal is to help patients manage their symptoms, yes. Even more so, it is to help them feel healthier, more present, and able to truly enjoy their lives again.
-
-## Areas of focus
-
-- Over 20 years of nursing experience across hospital, outpatient, correctional, and psychiatric settings has taught Tiffany that every diagnosis comes with a person, a story, and a life beyond the exam room.
-- Psychiatric nurse practitioner serving adolescents (ages 10 and up) and adults, with a whole person approach that integrates medication management, lifestyle changes, coping skills, and emerging treatment modalities.
-- Born into a legacy of nurses and shaped by crisis, culture, and compassion, Tiffany is changing how mental health is understood, especially in communities where suffering was once endured in silence.
-
-Tiffany's specialties include [anxiety](/concerns/anxiety), [depression](/concerns/depression), mood disorders including [bipolar disorder](/concerns/bipolar-disorder), and [ADHD](/concerns/adhd).
-
-## Works with
-
-**Age groups:** adolescents ages 10 and up, and adults
-
-**Formats:** in person and telehealth. Video visits are for eligible services when the patient is in New York. The Welcome Team confirms whether video prescribing applies.
-
-## Offices
-
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown]
-
-[NEEDS: assign Tiffany to offices in the sheet and confirm her in person days]
-
-## Services
-
-Tiffany provides [medication management](/medication-management).
-
-Many of her patients also see a therapist at Pathways Within. With your permission, Tiffany coordinates with your therapist so medication and therapy work toward the same goals. Read more about the 360 intake and care coordination at [Contact Us](/contact).
-
-## Work with Tiffany
-
-Tell the Welcome Team you would like to work with Tiffany Roberts. They will schedule your 360 intake, verify your benefits, and set up your first appointment. You do not need a referral from a therapist to see her.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
 
 ```json
 {

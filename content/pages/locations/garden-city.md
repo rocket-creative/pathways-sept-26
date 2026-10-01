@@ -20,56 +20,7 @@ hero_image: "[NEEDS: image] Entrance to the Pathways Within Garden City office o
 
 # Pathways Within in Garden City, NY
 
-Pathways Within Garden City is at 647 Franklin Ave, Lower Level, Garden City, NY 11530. The office is reached by stairs. The older office at 520 Franklin Ave is closed.
-
-[CTA] Contact Us -> /contact
-
-## Getting here
-
-The office is at 647 Franklin Ave, Lower Level, Garden City, NY 11530. Parking is available and varies, from a lot to on-street parking.
-
-Accessibility: Lower level, reached by stairs. This office is not wheelchair accessible. Rockville Centre, Smithtown, and Port Jefferson are accessible alternatives, and New York telehealth is available when a video visit fits.
-
-If stairs are a barrier, [Rockville Centre](/locations/rockville-centre), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson) are step-free, and video visits are available in New York. [Contact Us](/contact).
-
-
-## Providers at this office
-
 [PROVIDER CARDS: location=garden-city]
-
-[NEEDS: assign providers to offices in the sheet]
-
-Therapists here work with children, teens, adults, couples, and families. You do not need to choose someone before you write. [Contact Us](/contact).
-
-## Nearby communities we serve
-
-The Garden City office is a short drive from Mineola, Hempstead, Westbury, New Hyde Park, Franklin Square, and Carle Place. Many clients also come from Queens and the North Shore because Franklin Avenue is easy to reach from the parkways.
-
-## Common questions
-
-### Is the Garden City office wheelchair accessible?
-
-No. The office is on a lower level reached by stairs, with no elevator. If you use a wheelchair or cannot manage stairs, the Welcome Team will book you at Rockville Centre, Smithtown, or Port Jefferson, or set up New York telehealth.
-
-### Do you offer telehealth if I cannot get there?
-
-Yes. Most of our therapists and our psychiatric nurse practitioner see clients by video in New York when a video visit is available. Massage and acupuncture are in person only. Read more at [telehealth](/telehealth).
-
-### Which insurance plans do you accept in Garden City?
-
-Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, so you know what to expect before your first visit. See [insurance and fees](/insurance-and-fees) for the full list of plans and self pay options.
-
-### How do I book an appointment?
-
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. From there, the team builds a care plan and matches you with a provider at Garden City.
-
-## Take the next step
-
-Tell the Welcome Team what you are looking for and that Garden City is your closest office. They will set up your 360 intake and match you with a provider who fits.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
 
 
 ```json

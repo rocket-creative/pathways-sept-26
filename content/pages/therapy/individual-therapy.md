@@ -20,96 +20,57 @@ hero_image: "[NEEDS: image] An adult talking with a therapist in a bright Long I
 
 # Individual Therapy on Long Island
 
-Individual therapy is one on one counseling with a licensed therapist for adults who want to understand their symptoms and change how they live with them. At Pathways Within, our therapists offer it in person at our Nassau and Suffolk County offices and by telehealth. You set the goals. Your therapist brings the training.
+### “The shoe that fits one person pinches another; there is no one recipe for living that suits all cases.”
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+— Carl Jung
 
-[CTA] Contact Us -> /contact
+## Individual Therapy
 
-## What individual therapy is
+Individual therapy is your classic one-on-one counseling. The beauty of individual therapy lies in two main foundations: first, that you are willing to challenge yourself and learn more about the roots of your symptoms and yourself in the process; and second, that you are having a dialogue with a trained professional. The goal of individual therapy is to find greater self-awareness and give you the tools to live a more meaningful life.
 
-Individual therapy is your classic one on one counseling. It rests on two foundations. First, you are willing to challenge yourself and learn more about where your symptoms come from. Second, you are having a dialogue with a trained professional who is not part of your daily life.
+Let's Get Started
 
-The goal is greater self awareness and practical tools for a more meaningful life. Having someone unbiased and nonjudgmental to talk to helps on its own. Add the skill of a licensed therapist and you have a working formula.
+### Self-Exploration
 
-Our therapists draw on several methods. One we use often is Cognitive Behavioral Therapy (CBT). CBT pays attention to how your thoughts, feelings, and behaviors connect. It often reveals the gap between what your brain predicts will happen and what actually happens. If you fear public speaking, your mind says avoiding it is easier. CBT shows how avoidance lets the fear grow. Your therapist helps you spot triggers and thought patterns, trace where they started, and practice new ways of responding.
+The Greek philosopher Aristotle said: “Knowing yourself is the beginning of all wisdom.” We believe that any form of therapy is a path to knowing yourself better with the final goal of managing any mental health issues you may experience. Some issues that may be coming up for you include anxiety, depression, grief, anger, and low self-esteem.
 
-Depending on what you bring in, your therapist may also use [EMDR](/therapy/emdr), [Internal Family Systems](/therapy/ifs), or [somatic therapy](/therapy/somatic-therapy).
+You might be asking yourself: Can therapy really help me? The answer is a resounding yes. Having someone to talk to who is unbiased and non-judgmental can be incredibly helpful on its own. On top of that, add the support and knowledge a skilled therapist brings to the table and you have yourself a winning formula.
 
-## Who it helps
+### Skilled Professionals
 
-Individual therapy is the starting point for most adults who come to Pathways Within. Common reasons people reach out include:
+Our therapists are trained, licensed, and experienced in different areas of counseling. Each clinician works with special populations based on their expertise and passions. We’ve been working for years with people of all kinds of backgrounds, and we’re confident we have someone in house who can help you with any issues you may be encountering.
 
-- [Anxiety](/concerns/anxiety), worry, and panic
-- [Depression](/concerns/depression) and low mood
-- [Grief and loss](/concerns/grief-and-loss)
-- Anger that feels bigger than the moment
-- Low [self esteem](/concerns/self-esteem)
-- [Stress and burnout](/concerns/stress-and-burnout) at work or at home
-- [Life transitions](/concerns/life-transitions) such as a move, a breakup, or a new role
+We look to create a journey for each individual that is as individual as they are. We focus on getting to know you, being with you along the way, and figuring out how best to be of service.
 
-Each of our clinicians works with particular populations based on their training and interests. We have worked for years with people from all kinds of backgrounds. The Welcome Team matches you with someone in house who fits what you are facing.
+## Spotlight: Cognitive Behavioral Therapy (CBT)
 
-## What to expect in your first session at Pathways Within
+One of the methods we use often is Cognitive Behavioral Therapy or CBT. This is a type of therapy that focuses on achieving one or more goals by “rewiring” the brain through paying attention to our thoughts, feelings, and behaviors and the ways that they are connected. In this practice, a therapist works to change the patterns of thinking that may lurk behind the negative symptoms that may have originally brought you in for services.
 
-Your first session is where you work out your specific concerns. Your therapist asks questions to get to know you and your situation. People are complicated, and the more time you spend talking together, the better your therapist can help you with what brought you in.
+Often, CBT reveals the stark difference between what your brain thinks will happen and what will actually happen. You may find that, for instance, you have a crippling fear of public speaking. Your mind will tell you that it is easier to avoid public speaking in order to avoid the stress and anxiety that comes with the phobia. CBT seeks to remind you however, that avoidance often allows the fear to grow and become unmanageable.
 
-Usually your therapist has a plan for each session, but there is room for whatever comes up. Think of your therapist as the conductor on a train. You decide which tunnel to explore, and your therapist drives. If you want to turn around and try a different one, you do that together.
+To rewire the brain, a therapist will help you identify triggers and problematic thought patterns, and by exploring where they originate, and learning coping skills you will be empowered to challenge those negative thoughts and develop a more positive way of thinking.
 
-Sessions run about 50 minutes. Some people prefer a lot of structure or a specific method. Tell the Welcome Team, and they will pair you with a therapist who works that way.
+## FAQs
 
-## How care works here
+Why would I want to talk to a therapist?
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. From there, the team matches you with an available therapist and builds a whole person care plan.
+Therapists are people too! The benefit of talking to a therapist is the training and experience we’ve collected over the years. Some people prefer to talk to friends about their problems, and we don’t discourage that because friends can be a great source of support in difficult times. However, friends are often unable to provide an unbiased and non-judgmental perspective and may not know how to support you in the ways you need it most. Many people thrive on both—friends who love and cherish you and a therapist who can help guide and support you through your mental health journey.
 
-When it helps, that plan can include [medication management](/medication-management) with our psychiatric nurse practitioner, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the tension stress leaves in the body. Nothing is required. Everything is coordinated, with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
+How long do I have to be in therapy?
 
-## Where it is offered
+Therapy is meant to work for you, so that means we accommodate any preferences you may have. The length and frequency of therapy will depend on your goals and the effort you put forth in following through. It’s difficult for us to predict how long therapy will be a part of your life, but the important part to focus on is that you get to decide and the process can be as flexible as you need. You can see us for a few months, stop, and start back up again. That’s part of the benefit of individual therapy—it’s all about you and what works for your life. Of course the more you view therapy as a priority and commit yourself to the process, the quicker you will likely see results.
 
-Individual therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available.
+How confidential is therapy?
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+Your privacy is a major ethical concern for us. We want you to feel comfortable and therefore we adhere to the guidelines set forth by the American Psychological Association (APA) and HIPAA. Still, there are some limitations. If you express the intent to hurt a child, an elderly person, or yourself, we are required to report some information to relevant authorities. However, aside from these stipulations, what you say within the confines of a therapy session are completely confidential and will remain entirely private.
 
-## Who provides it
+What happens in a counseling session?
 
-Every licensed therapist at Pathways Within offers individual therapy.
+Well, part of that is entirely up to you. We want your session to be yours. It’s a space for you to talk about whatever’s on your mind. That being said, each clinician may operate in different ways. If you think you’ll prefer someone who provides a good amount of structure or practices a specific method of therapeutic intervention, we will make sure to pair you up with the right therapist for you.
 
-[PROVIDER CARDS: pillar=wisdom]
+Once you’re paired with a therapist, your first session will be where you’ll have the opportunity to work out your specific concerns. In return, we will ask questions as well to get to know you and your situation a bit better. Humans are complicated, and the more time we can spend talking to you, the more we’ll be able to get to know you to best help you walk through the concerns that originally brought you in.
 
-## Insurance and cost
-
-Individual therapy is billed as psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
-
-## Common questions
-
-### Why would I want to talk to a therapist?
-
-Therapists are people too. The difference is the training and experience we have collected over the years. Friends can be a great source of support, and we do not discourage that. But friends often cannot give an unbiased view or know how to support you in the ways you need most. Many people thrive on both.
-
-### How long do I have to be in therapy?
-
-Therapy is meant to work for you. Length and frequency depend on your goals and the effort you put into following through. You can see us for a few months, stop, and start again. You decide, and the process stays as flexible as you need. The more you treat therapy as a priority, the sooner you are likely to see results.
-
-### How confidential is therapy?
-
-Your privacy matters to us, and we follow HIPAA and professional ethics guidelines. There are limits. If you express intent to hurt a child, an elderly person, or yourself, we are required to report some information to the relevant authorities. Aside from those situations, what you say in session stays private.
-
-### What happens in a counseling session?
-
-Part of that is up to you. Your session is yours, a space to talk about whatever is on your mind. Each clinician works a little differently. Some offer more structure or practice a specific method. If you have a preference, the Welcome Team will match you with the right therapist.
-
-### What if I do not click with my therapist?
-
-Tell us. A good fit matters more than almost anything else in therapy. The Welcome Team stays your point of contact and can help you switch to another clinician without starting over.
-
-## Take the next step
-
-Tell the Welcome Team what has been on your mind. They will set up your 360 intake and match you with a licensed therapist at the office closest to you or by telehealth.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+Usually, your therapist will have some game plan for the session, but we are also flexible to tackle anything that may come up organically in each session. You can think of the role of the therapist like a conductor on a train. Throughout treatment, you and your therapist are faced with several dark tunnels. You decide which tunnel you would like to explore and your therapist drives the train. At any point, if you decide you want to try a different tunnel, you can turn around together and try again.
 
 ```json
 {

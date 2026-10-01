@@ -20,52 +20,6 @@ hero_image: "[NEEDS: image] Welcome Team member speaking with a client at a Long
 
 # Magnacare and Therapy at Pathways Within on Long Island
 
-Pathways Within may participate with Magnacare. Coverage varies by provider, service, and plan. Send the contact form and the Welcome Team confirms your benefits. We do not decide coverage from the plan name alone.
-
-[CTA] Contact Us -> /contact
-
-## What Magnacare may cover here
-
-The Welcome Team confirms what your Magnacare plan covers after you send the contact form. Clients ask about [individual therapy](/therapy/individual-therapy), [medication management](/medication-management), and [couples therapy](/therapy/couples-therapy). Coverage depends on the provider, the service, and the plan. The practice wide picture is on our [insurance and fees](/insurance-and-fees) page.
-
-## How verification works
-
-1. You contact the Welcome Team by form, call, or text.
-2. A Welcome Team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change.
-3. The team builds a care plan and matches you with available providers.
-4. The Welcome Team checks your Magnacare benefits and explains what applies to you before you are scheduled.
-
-Your Welcome Team contact stays with you after that. The full process is described at [Contact Us](/contact).
-
-## If a visit is not covered
-
-If your plan does not cover a visit, or you prefer not to use insurance, the Welcome Team can explain coverage and cost before care begins. We accept cash, major credit cards, and HSA and FSA cards.
-
-## Locations and telehealth
-
-Our Long Island offices are listed on the [locations](/locations) page, with accessibility notes for each one.
-
-Telehealth is available to clients in New York when a video visit is available.
-
-## Common questions
-
-### Why is Magnacare on the contact form?
-
-So the Welcome Team can confirm your benefits. Listing a plan on the form is not a promise of coverage.
-
-### Will Magnacare cover my visits?
-
-That depends on your plan, the provider, and the service. Send the contact form and the Welcome Team confirms it. We do not decide coverage from the plan name alone.
-
-## Take the next step
-
-Tell the Welcome Team you have Magnacare and what you want to work on. They will schedule your 360 intake and confirm your benefits.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
-
 ```json
 {
   "@context": "https://schema.org",

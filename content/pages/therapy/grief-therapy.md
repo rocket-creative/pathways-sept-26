@@ -18,108 +18,67 @@ providers: "[NEEDS: confirm grief specialists; cards render all Wisdom clinician
 hero_image: "[NEEDS: image] Two people sitting close together on a couch during a grief therapy session on Long Island"
 ---
 
-# Grief Therapy on Long Island
+# Grief Therapy
 
-Grief therapy is counseling for adults and teens who have lost someone or something and cannot find their footing. People lose loved ones every day, but we are rarely prepared for the intensity of grief or its ability to take over our lives. Licensed therapists at Pathways Within give you the time and space to talk through your loss and build coping skills for the long term.
+on Long Island
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+### “Healing doesn't mean the damage never existed. It means the damage no longer controls your life.”
 
-[CTA] Contact Us -> /contact
+— Akshay Dubey
 
-## What grief therapy is
+## Grief Therapy
 
-Grief therapy offers the same dedication and space as [individual therapy](/therapy/individual-therapy), with more attention to the loss you have experienced. You and your therapist talk about whatever is bothering you, remember the good times, honor your loved one's memory, and learn skills to manage grief as it changes over time.
+People lose loved ones every day; death is a natural part of life. However, we are not always prepared to deal with losing a loved one, or with the intensity of grief and its ability to take over our lives. By engaging in grief therapy, you’ll have the time and space to talk through your loss and your therapist will help you develop coping skills to manage your grief in the long term.
 
-Most grief work draws on two models. Elisabeth Kubler Ross identified five stages of grief: denial, anger, bargaining, depression, and acceptance. These stages are not written in stone. Many people return to a stage they thought they had passed, or enter one out of order. The idea is not to follow them as a formula. It is to keep them in mind as you make sense of your own experience.
+Let's Get Started
 
-J. W. Worden described four tasks of mourning:
+### The Five Stages of Grief
 
-- Accept the reality of the loss
-- Work through the pain of grief
-- Adjust to life without the person who died
-- Keep a connection to them while moving on with life
+Most grief therapy is based on Elisabeth Kubler-Ross’ landmark identification of the five stages of grief:
 
-Here the goal is not to name the phase you are in. It is to point toward what a grieving person can work toward in order to reach a stable place. Your therapist uses both models as a guide, not a script.
+- Denial
 
-## Who it helps
+- Anger
 
-Loss shows up in many forms. The most common is the death of a loved one, but people also grieve when someone close to them develops dementia or another condition that changes who they are. Pets die. Adopted children may grieve the loss of their biological parents. Divorce, miscarriage, a job, or a home can carry grief as well.
+- Bargaining
 
-Grief therapy is a good fit if you are experiencing:
+- Depression
 
-- [Grief and loss](/concerns/grief-and-loss) that feels stuck or has not eased with time
-- [Depression](/concerns/depression) that began after a loss
-- Anxiety about your own health or the safety of people you love
-- Trouble sleeping, eating, or getting through the workday
-- Guilt, anger, or numbness you cannot explain
-- A sudden or traumatic loss, where [trauma therapy](/therapy/trauma-therapy) may be added
+- Acceptance
 
-Grief is a complicated emotion. We treat it with respect and seriousness because of how much it shapes a person's life.
+This model works to analyze the phases a person goes through when encountered with grief. It’s important to remember that these are not written in stone; some patients may discover that they return to certain phases at different times, or that they enter a phase out of order. Rather than to follow these stages as a one-way formula, the idea is simply to keep them in mind when talking about and understanding your own experience of grief.
 
-## What to expect in your first session at Pathways Within
+### The Four Tasks of Mourning
 
-Your first session is a conversation, not an assessment you have to pass. Your therapist asks about the person you lost, what the loss has changed, and what a good day looks like right now. You can cry, sit in silence, or talk the whole hour. All of that is normal.
+Another popular model when looking at grief through therapy is J. W. Worden’s “Four Tasks of Mourning”:
 
-In the weeks that follow, you and your therapist look at where grief is hitting hardest: sleep, work, relationships, faith, or your sense of who you are without this person. You practice ways to get through the hard hours, including anniversaries and holidays. Over time, sessions shift from surviving the loss to carrying it in a way that lets you live.
+- To accept the reality of the loss
 
-Sessions run about 50 minutes. Many clients start weekly and space out as they feel steadier.
+- To work through the pain of grief
 
-## How care works here
+- To adjust to life without the deceased
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the loss itself. The team then matches you with a therapist who works with grief.
+- To maintain a connection to the deceased while moving on with life
 
-Grief affects the body as well as the mind. Your care plan may include [medication management](/medication-management) with our psychiatric nurse practitioner if sleep or depression has become hard to manage, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the physical exhaustion grief brings. [Family therapy](/therapy/family-therapy) helps when a household is grieving together but in different ways. Nothing is required. Read the full process at [Contact Us](/contact).
+Here, the objective is not to identify the phases of grief a person may be going through, but rather to point toward the goals a person with grief should aim toward in order to reach a stable mental space.
 
-## Where it is offered
+## FAQs
 
-Grief therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available.
+#### Somebody close to me died. How can you help me?
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+We understand that therapy might not seem like a solution when you have lost someone you love. Many of us who have felt intense grief often feel as though nothing can change the way we feel. However, talking through a traumatic event like loss is incredibly beneficial, especially when you’re doing it with a professional.
 
-## Who provides it
+#### How long do I need to attend therapy?
 
-[PROVIDER CARDS: pillar=wisdom]
+Therapy is your journey—your therapist is there to help guide you through the grieving process, but ultimately the length and frequency of your therapy is up to you. Ideally, you’d be staying with your therapist until you’ve developed a trusting relationship and have experienced some improvement in your symptoms or feel confident in your learned coping skills.
 
-[NEEDS: confirm which clinicians specialize in grief and loss; the providers sheet does not tag grief as a specialty]
+#### What can I expect from grief counseling?
 
-## Insurance and cost
+You can expect the same dedication and space we offer in individual therapy but with more attention to the loss you have encountered. We will talk about anything that may be bothering you, remember the good times you had with your loved one, honor their memory, and create opportunities to learn coping skills that will help you manage your grief in the long run.
 
-Grief therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+#### What types of situations do you address in grief therapy?
 
-## Common questions
-
-### Somebody close to me died. How can therapy help?
-
-We understand that therapy might not seem like a solution when you have lost someone you love. Many people who have felt intense grief believe nothing can change how they feel. Talking through a loss with a professional gives you a place to say what you cannot say elsewhere, and a guide for the parts of grief that catch you off guard.
-
-### How long do I need to attend therapy?
-
-The length and frequency of your therapy are up to you. Your therapist is there to guide you through the grieving process, not to set a deadline. Ideally, you stay until you have built a trusting relationship, noticed some relief in your symptoms, and feel confident in the coping skills you have learned.
-
-### What can I expect from grief counseling?
-
-You can expect the same dedication and space we offer in individual therapy, with more attention to the loss you have encountered. We talk about anything that is bothering you, remember the good times, honor your loved one's memory, and build coping skills that help you manage grief in the long run.
-
-### What types of loss do you address in grief therapy?
-
-The most common is the death of a loved one. People also grieve when someone close to them develops dementia, when a pet dies, or when adopted children feel the loss of their biological parents. Divorce, infertility, and major life changes carry grief too. If it feels like loss to you, it belongs in the room.
-
-### Is it too soon, or too late, to start?
-
-Neither. Some people come in the week after a funeral. Others come years later when a new loss reopens an old one. Grief does not follow a calendar, and your therapist meets you wherever you are.
-
-### Can I bring a family member?
-
-Yes. Some clients start with individual sessions and add family sessions when the household is grieving in different ways. Your therapist can help you decide what fits, and the Welcome Team can arrange both.
-
-## Take the next step
-
-Tell the Welcome Team who you lost and what has been hardest since. They will set up your 360 intake and match you with a grief therapist at the office closest to you or by telehealth.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+Loss can manifest itself in many different situations. The most common is losing a loved one, but people often experience grief when someone close to them develops dementia or another mind-altering disorder. People may experience grief when a pet dies, or adopted children might feel a sense of grief for the “loss” of their biological parents. Grief is a complicated emotion, and we treat it with the utmost respect and seriousness in order to recognize its significance on someone’s life.
 
 ```json
 {

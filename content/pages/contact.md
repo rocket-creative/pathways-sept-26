@@ -18,26 +18,57 @@ providers: []
 hero_image: "[NEEDS: image] The Welcome Team at the Rockville Centre front desk"
 ---
 
-# Contact Us
+# Let’s Talk
 
-Tell us what is going on. You do not need to know which service you want before you write. If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+Fill out the form below and someone from our team will be in touch.
 
-## Send a message
+## Or Contact Us Directly.
 
-[FORM: therapy]
-
-## Call or text
+Welcome@pathwayswithin.com
 
 (631) 371-3825
 
-Email: [Welcome@pathwayswithin.com](mailto:Welcome@pathwayswithin.com)
+### Our Locations:
 
-## Our offices
+53 N Park Ave, Suite 302, Rockville Centre, NY 11570
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+647 Franklin Ave, Lower Level, Garden City, NY 11530
 
-Telehealth is available for therapy and medication management in New York when a video visit is available. [Telehealth](/telehealth).
+4160 Merrick Road, Suite 7, Massapequa, NY 11758
 
+1227 Main Street, Suite 101, Port Jefferson, NY 11777
+
+496 Smithtown Bypass, Suite 203, Smithtown, NY 11787
+
+[FORM: therapy]
+
+# Let’s Talk Wellness
+
+Fill out the form below and someone from our team will be in touch.
+
+## Or Contact Us Directly:
+
+admin@pathwayswithinwellness.com
+
+631-371-3825
+
+Our Locations:
+
+53 N Park Ave, Suite 302
+
+Rockville Centre, NY 11570
+
+647 Franklin Ave, Lower Level
+
+Garden City, NY 1530
+
+4160 Merrick Road, Suite 7
+
+Massapequa, NY 11758
+
+496 Smithtown Bypass, Suite 203
+
+Smithtown, NY 11787
 
 ```json
 {

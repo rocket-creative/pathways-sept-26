@@ -18,53 +18,31 @@ providers: []
 hero_image: "[NEEDS: image] A therapy office at Pathways Within with two rounded chairs and natural light"
 ---
 
-# Therapy on Long Island
+Wisdom: Counseling Services
 
-Therapy at Pathways Within is more than 25 licensed clinicians across Nassau and Suffolk County, in person and by telehealth. We see individuals, couples, children, teens, and families, and we specialize in trauma work. Every client starts with a 360 intake so the plan fits the person, not the other way around.
+## Individual Therapy.
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+## Couples Therapy.
 
-[CTA] Contact Us -> /contact
+## Family Therapy.
 
-## How therapy starts here
+## Somatic Therapy.
 
-Tell us what is going on. A 360 Intake looks at your mind, your body, and your daily life, then matches you with a therapist whose training fits, at an office near you or by video. [Contact Us](/contact).
+## Trauma Therapy.
 
-## Therapy for who you are
+## Weight Loss Surgery Support.
 
-- [Individual therapy](/therapy/individual-therapy): one on one counseling for adults, the foundation of most care plans.
-- [Couples therapy](/therapy/couples-therapy): Gottman Method and somatic approaches for partners at any stage.
-- [Child therapy](/therapy/child-therapy): play based therapy for ages 3 to 12, with parents involved.
-- [Teen therapy](/therapy/teen-therapy): for adolescents working out school, family, identity, and everything else.
-- [Family therapy](/therapy/family-therapy): biological, blended, and chosen families.
-- [Group therapy](/therapy/group-therapy): process groups led by a clinician.
-- [Veterans and first responders](/therapy/veterans-first-responders): clinicians trained for repeated exposure and the culture that comes with the job.
-- [Bariatric surgery support](/therapy/bariatric-surgery-support): pre op psychological evaluations and post op support.
+## Child Therapy
 
-People also come to therapy here for [anxiety](/concerns/anxiety), [depression](/concerns/depression), [trauma and PTSD](/concerns/ptsd), [ADHD](/concerns/adhd), [OCD](/concerns/ocd), [bipolar disorder](/concerns/bipolar-disorder), [grief](/concerns/grief-and-loss), [relationship issues](/concerns/relationship-issues), [postpartum and perinatal concerns](/concerns/postpartum-and-perinatal), [stress and burnout](/concerns/stress-and-burnout), [life transitions](/concerns/life-transitions), [self esteem](/concerns/self-esteem), [substance use](/concerns/substance-use), [chronic pain and illness](/concerns/chronic-pain-and-illness), and [LGBTQIA+ affirming care](/concerns/lgbtqia-affirming-therapy). See [all concerns](/concerns).
+## Teen Therapy
 
-Ways of working include [trauma therapy](/therapy/trauma-therapy), [EMDR](/therapy/emdr), [IFS](/therapy/ifs), [somatic therapy](/therapy/somatic-therapy), [grief therapy](/therapy/grief-therapy), [hypnotherapy](/therapy/hypnotherapy), and [PCIT](/therapy/pcit).
+## EMDR Therapy
 
-## Our clinicians
+## Veterans & First Responders
 
-Clinicians are licensed or practicing under supervision toward licensure in New York State. [Browse providers](/providers).
+## Light Therapy
 
-[PROVIDER CARDS: pillar=wisdom]
-
-## Where
-
-In person at [Rockville Centre](/locations/rockville-centre), [Garden City](/locations/garden-city), [Massapequa](/locations/massapequa), [Smithtown](/locations/smithtown), and [Port Jefferson](/locations/port-jefferson). By [telehealth](/telehealth) in New York when a video visit is available. [All offices](/locations).
-
-## Insurance
-
-Many of our therapists work with major plans, including Aetna, Cigna, Optum, UnitedHealthcare, Oxford, Oscar, 1199SEIU, Medicare, and Northwell Direct. What is covered depends on your plan and the service. We can help you understand your benefits before care begins. [Insurance and fees](/insurance-and-fees).
-
-## Take the next step
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+## IFS Therapy
 
 ```json
 {

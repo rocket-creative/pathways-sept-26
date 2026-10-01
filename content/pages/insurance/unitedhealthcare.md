@@ -20,62 +20,6 @@ hero_image: "[NEEDS: image] Waiting area at a Pathways Within office on Long Isl
 
 # Therapists Who Accept UnitedHealthcare on Long Island
 
-UnitedHealthcare is one of the most common plans we see at Pathways Within, and it is listed on our intake form. Our licensed therapists and our psychiatric nurse practitioner work with UnitedHealthcare clients in person at our Nassau and Suffolk County offices and by telehealth. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake so you know where you stand before your first session.
-
-[CTA] Contact Us -> /contact
-
-## What UnitedHealthcare may cover here
-
-Your UnitedHealthcare plan may cover [individual therapy](/therapy/individual-therapy), [medication management](/medication-management), and, depending on the plan, [couples therapy](/therapy/couples-therapy). The benefit that applies is your plan's outpatient mental health benefit, and how it works depends on the exact plan you carry. Employer plans, individual plans, and plans bought through an exchange can all look different even under the same name.
-
-Network status is per clinician. Some Pathways Within providers are in network with UnitedHealthcare and some are not. The Welcome Team matches you with one who is, then confirms the details. We leave copays, deductibles, and visit limits off this page because they are your plan's numbers, not ours. See [insurance and fees](/insurance-and-fees) for how billing works across the practice.
-
-## How verification works
-
-We do not put insurance in front of care. You talk to the Welcome Team first, and the benefits check happens in the background.
-
-1. You contact the Welcome Team by form, call, or text.
-2. A Welcome Team member schedules your 360 intake and asks what you are experiencing and what you want to change.
-3. The team builds a care plan across therapy, medication management, and wellness as needed, and matches you with providers who work with UnitedHealthcare.
-4. The Welcome Team verifies your benefits and confirms what applies before your first appointment.
-
-The same Welcome Team member stays your contact afterward. Read the whole process at [Contact Us](/contact).
-
-## Out of network and self pay options
-
-If your UnitedHealthcare plan is out of network for the clinician you want, or does not cover a particular service, you still have a path. Every service at Pathways Within is available on a self pay basis. We accept cash, major credit cards, and HSA and FSA cards. 
-
-If you would like to submit for out of network reimbursement, ask the Welcome Team whether a superbill is available for your situation.
-
-## Locations and telehealth
-
-UnitedHealthcare clients are seen at all five of our Long Island offices: Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Find addresses and accessibility notes on the [locations](/locations) page.
-
-Telehealth is available to clients in New York when a video visit is available. The Welcome Team confirms whether your plan treats video visits the same as office visits.
-
-## Common questions
-
-### The form says UHC. Is that the same as UnitedHealthcare?
-
-Yes. UHC is the short form our intake form uses. If your card says UnitedHealthcare, choose UHC on the form and the Welcome Team will take it from there.
-
-### Can I see a therapist and the prescriber under the same plan?
-
-Often, yes. Therapy and medication management are billed as separate services with separate providers, so the Welcome Team verifies each one before scheduling.
-
-### What if my plan requires prior authorization?
-
-Some plans do. If yours does, the Welcome Team handles the request with the provider and lets you know where it stands. You will not be scheduled and then surprised.
-
-## Take the next step
-
-Tell the Welcome Team you have UnitedHealthcare and what has been on your mind. They will schedule your 360 intake, match you with a provider, and verify your coverage.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
-
 ```json
 {
   "@context": "https://schema.org",

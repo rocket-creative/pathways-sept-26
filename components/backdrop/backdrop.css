@@ -107,7 +107,7 @@
    This is a second copy of the same photograph, fixed to the same box as
    the first so the two line up to the pixel, layered above the page and
    below the bar, and masked to a band: solid through the bar, dissolving
-   over the next 3rem. Anything scrolling up into the band appears to fade
+   over the next 8rem. Anything scrolling up into the band appears to fade
    into the background before it reaches the nav. Pointer events pass
    through, so the pills and the copy stay clickable. */
 .page-backdrop--veil {
@@ -122,14 +122,14 @@
     mask-image: linear-gradient(
       to bottom,
       #000 0,
-      #000 var(--header-h, 4.75rem),
-      transparent calc(var(--header-h, 4.75rem) + 3rem)
+      #000 calc(var(--header-h, 4.75rem) + 0.75rem),
+      transparent calc(var(--header-h, 4.75rem) + 8rem)
     );
     -webkit-mask-image: linear-gradient(
       to bottom,
       #000 0,
-      #000 var(--header-h, 4.75rem),
-      transparent calc(var(--header-h, 4.75rem) + 3rem)
+      #000 calc(var(--header-h, 4.75rem) + 0.75rem),
+      transparent calc(var(--header-h, 4.75rem) + 8rem)
     );
   }
 }

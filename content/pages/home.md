@@ -20,7 +20,7 @@ hero_image: "[NEEDS: hero render] The Pathways Within labyrinth path winding thr
 
 # Therapy, Medication Management, and Wellness on Long Island
 
-Pathways Within is a mental health and wellness practice on Long Island. Therapy, medication management, wellness, and coaching can live in one plan, built around you. Start with one conversation.
+Begin your journey to wellness, where our expert team of therapist’s wisdom guides the way
 
 [CTA] Contact Us -> /contact
 
@@ -52,52 +52,267 @@ Performance and wellness coaching for the changes you want to make now. It is no
 
 [/HERO]
 
-## The Pathways Within 360 experience
+## Welcome to
 
-You do not have to arrive knowing which door is yours. People come for therapy, medication management, wellness, coaching, or a mix. The 360 Intake is one conversation about your mind, your body, and your daily life. It helps decide where to start, and what can wait.
+## Pathways Within
 
-[CTA] Contact Us -> /contact
+# Mental Health & Therapy Services on Long Island
 
-## Your path is your own
+Begin your journey to wellness, where our expert team of therapist’s wisdom guides the way
 
-The labyrinth in our logo is not a maze. There is no wrong turn and no single route through care. You might start with a therapist, a prescriber, a massage, or a coach. What you need can change, and the plan can change with it. The right path is the one that fits you.
+## Have you ever experienced an event that completely changed your view of the world?
 
-## What we believe
+Do you have negative thoughts or overwhelming emotions that prevent you from living the life you want?
 
-People are not one thing, so care should not be either. Mental, physical, and emotional health overlap, and Pathways Within was built so they can be looked at together. Care here is personal. It can start small, and it can evolve.
+Are you holding onto scars from the past? Is your body manifesting physical or spiritual pain?
 
-"Pathways Within is the kind of place I wished existed when I was learning how to find my own path." Rachel Lessard, LCSW-R, founded the practice. [About Pathways Within](/about)
+Together we can explore your experiences in order to help you feel safe and secure again, and we can develop new styles of communication that can help you create the relationships you have always wanted. Whatever you may be dealing with, we can help.
 
-## Where to find us
+## The Pathways Within Collaborative Approach
 
-Five offices across Nassau and Suffolk County: Rockville Centre, Garden City, Massapequa, Smithtown, and Port Jefferson. Therapy and medication management are also available by video when you are in New York.
+We believe some of the most powerful tools we have as therapists are using the complementary tools we like to call Wisdom and Wellness to guide our clients in their healing journey.
 
-[CTA] Explore locations -> /locations
+This means we offer traditional therapy services like individual and couples therapy, along with holistic whole body services, such as massage and acupuncture through our sister practice, Pathways Within Wellness.
 
-## Not sure where to start?
+Wisdom: Counseling Services
 
-Take the quiz, send a message, or look through the team.
+## Individual Therapy.
 
-[QUIZ]
-The quiz below routes you to a starting point. Every path ends at the same place: Contact Us.
-[/QUIZ]
+## Couples Therapy.
 
-[CTA] Contact Us -> /contact
+## Family Therapy.
 
-[CTA] Find a Provider -> /providers
+## Somatic Therapy.
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+## Trauma Therapy.
 
-[SEO AND BUILD NOTES FOR THE HERO, for Cursor]
-1. All six stops are real HTML in the DOM at load, in this reading order, as <section> elements with <h2> and <p>. Nothing is injected on scroll. Googlebot renders the page once with a tall viewport and does not scroll, so anything that only exists after a scroll event does not exist to Google.
-2. Move cards with transform only (GSAP ScrollTrigger pin + x translate). Never opacity:0, visibility:hidden, or display:none as the resting state. Cards may start slightly offset and settle in, but must be fully visible without JavaScript and after the page load animation finishes. Add a `.no-js` fallback that lays the cards out vertically.
-3. The page blur after stop 6 applies to a background layer only (the branch/world render), never to text. Text under the blur is still readable and still selectable.
-4. No scroll hijacking: do not change scroll position on load, do not strip or rewrite the URL hash, do not wire wheel events to horizontal movement. Pinning via ScrollTrigger keeps native scroll, which is what Google's "read more" deep link rule requires. Each H2 keeps its id so /#wisdom-therapy lands on that card.
-5. `prefers-reduced-motion: reduce` disables the pin and shows the six stops as a vertical stack with the same markup. Mobile under 768px does the same; horizontal pinning is desktop only.
-6. Keyboard: the six links are in tab order left to right; focusing a card scrolls it into view. Screen readers read the section as six headings in a row, which is the vertical fallback anyway.
-7. LCP: the first paint is the H1 and the branch render. Preload the branch image, serve AVIF/WebP, set width and height. Load GSAP deferred; the hero must be readable before GSAP arrives.
-8. The H1 stays in normal document flow above the pinned section so it is the first heading Google sees, not a card.
+## Weight Loss Surgery Support.
 
+## Child Therapy
+
+## Teen Therapy
+
+## EMDR Therapy
+
+## Veterans & First Responders
+
+## Light Therapy
+
+## IFS Therapy
+
+## For all Wellness Services, visit our sister site, Pathways Within Wellness
+
+Discover Your Pathway to Wellness
+
+The Pathways Within team helped me find my way back to myself
+
+-K.F.
+
+The Pathways Within team helped me find my way back to myself
+
+-K.F.
+
+The Pathways Within team helped me find my way back to myself -K.F. 〰️
+
+## We are big believers in therapy tailored to your wants and needs.
+
+#### The journey within should be as personal and individual as you are.
+
+#### We look forward to meeting you and helping you have the experiences you have been craving!
+
+# Wellness Services on Long Island
+
+# Welcome to
+
+Your Wellness
+
+Let us help you build a beautiful outside that matches your inside.
+
+Call 631-371-3825 to Book
+
+## You deserve to love what you see when you look in the mirror.
+
+Loving yourself is not about the way you look, but it can make a difference to feel like what you see on the outside matches the aspirations you’re reaching for from within. Loving yourself matters above all else- above what you’re told you should be or want or need.
+
+But it doesn’t matter what we think. It’s what you think that matters.
+
+Your body, your confidence, and your image are yours to own. They’re yours to dictate.
+
+If you’re ready to change the skin that you’re in so you can feel your confidence from the top of your head to the depths of your soul, we want to invite you to follow that pathway to wellness within.
+
+#### At Pathways Within, we embrace the truth that taking care of yourself physically has major impacts on your mental and emotional health.
+
+Being well is an inside job, but often the way we feel about ourselves moves in reverse. From the outside in, we build ideas about who we are and what we should be.
+
+# All Services
+
+At Pathways Within Wellness, we provide personalized care to tend to your mind, body and spirit so that you can be your best self, inside and out.
+
+Contact Us to Book
+
+Massage
+
+✔ Relaxation Massage
+
+✔ Sports Massage
+
+✔ Pregnancy Massage
+
+✔ Swedish Massage
+
+✔ Hot Stone Massage
+
+Acupuncture
+
+✔ Relieves pain
+
+✔ Reduces stress
+
+✔ Promotes overall well-being
+
+Lutronic Accufit
+
+✔ Non-invasive sculpting treatment that tones the muscles, abdomen, thighs, buttocks & more
+
+✔ Helps with sports injuries and rehab
+
+IV Vitamin Infusion
+
+✔ Boost energy
+
+✔ Improve mental clarity
+
+✔ Strengthen immune system
+
+✔ Cure hangovers
+
+Energy Work
+
+✔ Reduce stress
+
+✔ Address energy blocks
+
+✔ Enhance your inner spirit
+
+✔ Complements talk therapy
+
+## About Our Team
+
+Our Mission at Pathways Within is to provide personalized care to tend to your mind, body and spirit so that you can be your best self, inside and out. We create a tranquil and serene atmosphere by combining beauty and wellness through the use of environmentally friendly and organic products and holistic services.
+
+We believe in the interconnectedness of body, spirit, mind, and earth. Pathways Within is for those of us who wish for peace, balance, and clarity, and opt to start within.
+
+The journey begins here!
+
+## Visit Us
+
+53 N Park Ave, Suite 302
+
+Rockville Centre, NY 11570
+
+647 Franklin Ave, Lower Level
+
+Garden City, NY 11530
+
+4160 Merrick Road, Suite 7
+
+Massapequa, NY 11758
+
+496 Smithtown Bypass, Suite 203
+
+Smithtown, NY 11787
+
+Learn more
+
+## Discover Your
+
+## Pathways Within
+
+# A 360º Approach to Healing & Transformation
+
+## Your Mind, Body & Spirit—In Harmony
+
+At Pathways Within, we believe true well-being is about more than just mental health or physical appearance—it’s about caring for yourself as whole person. Our unique 360º holistic approach blends clinical therapy and advanced medspa services to support emotional healing, physical renewal, and overall well-being.
+
+## Choose Your Personalized Path
+
+#### Pathway to Wisdom
+
+#### Mental Health & Therapy
+
+- Individual, Couples & Family Therapy
+
+- EMDR, IFS & DBT Therapy
+
+- CBT & Somatic Therapy
+
+- Support for Veterans & First Responders
+
+- Medication Management
+
+Explore Therapy Services
+
+#### Pathway to Wellness
+
+#### Holistic, Whole Body Care
+
+- Massage
+
+- Acupuncture
+
+- Energy Work
+
+Explore Holistic Care
+
+## Why Pathways Within?
+
+✔ Complete 360º Well-Being: Inner healing + outer rejuvenation in one place
+
+✔ Expert Practitioners: Licensed therapists, aestheticians & holistic providers
+
+✔ Tailored Care: Personalized treatments designed for your unique needs
+
+✔ A Holistic Experience: Mind-body wellness to help you feel whole
+
+Your journey to healing, confidence, and balance starts here.
+
+Wellness Services
+
+Wisdom Services
+
+(631) 371-3825
+
+Welcome@pathwayswithin.com
+
+LOCATIONS
+
+53 N Park Ave, Suite 302
+
+Rockville Centre, NY 11570
+
+647 Franklin Ave, Lower Level
+
+Garden City, NY 11530
+
+4160 Merrick Road, Suite 7
+
+Massapequa, NY 11758
+
+1227 Main Street, Suite 101
+
+Port Jefferson, NY 11777
+
+496 Smithtown Bypass, Suite 203
+
+Smithtown, NY 11787
+
+## WISDOM. WELLNESS.
+
+WHOLE PERSON SUPPORT.
+
+Discover Therapy Services
+
+Discover
 
 ```json
 {

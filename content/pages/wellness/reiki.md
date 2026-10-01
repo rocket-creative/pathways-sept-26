@@ -18,106 +18,63 @@ providers: [tia-baumohl]
 hero_image: "[NEEDS: image] Reiki practitioner's hands resting lightly above a client's shoulders in a quiet treatment room on Long Island"
 ---
 
-# Reiki on Long Island
+WELLNESS SERVICES ON LONG ISLAND
 
-Reiki is a gentle, hands on practice from Japan that clients use for deep relaxation and a sense of inner calm. At Pathways Within, a certified coach offers Usui Reiki at our Long Island offices for anyone seeking peace, a reset, or a quiet complement to talk therapy.
+# Usui Reiki
 
-Energy work is not a substitute for medical or mental health treatment.
+#### Achieve inner peace and get more acquainted with your inner spirit with Reiki.
 
-[CTA] Contact Us -> /contact
+If you’re looking for a powerful holistic treatment, look no further. Reiki offers the healing touch of an experienced practitioner and the relaxation of guided meditation. It’s almost like a massage for your mind, with health benefits that extend to your physical self.
 
-## What Reiki is
+## What is Reiki?
 
-Reiki is a technique developed in Japan to reduce stress and support relaxation. It is founded on the idea that our bodies carry a life energy, and that when that reserve runs low we are more likely to feel stressed or run down. When it is in good supply, people describe feeling better both physically and emotionally. That is the tradition's framing, and you do not have to adopt it to enjoy a session.
+Reiki is a technique developed in Japan to reduce stress and improve healing. It’s founded on the idea that our bodies contain our life energy, and if that energy reserve is low, you are more likely to feel stress or even get sick. However, if it is in ample supply, you’ll find that you feel better both physically and emotionally.
 
-Reiki pairs well with our therapy services because talk therapy often speaks to the thinking part of the mind, while Reiki speaks to the quieter, reflective side. It is not religious in nature. People of faith and people who are not religious both find it fits them, because it asks nothing of your belief system.
+Reiki perfectly complements our wisdom services because therapy often appeals to the intellectual part of our minds, while Reiki is more attuned to our spiritual side. It’s not religious in nature, which is great for both people of faith and those who are nonreligious because it enhances your inner spirit regardless of your belief system.
 
-Tia practices Usui Reiki, the most widely taught lineage. A session offers the steady presence of an experienced practitioner and the restfulness of a guided meditation. Many clients call it a massage for the mind.
+## The Five Principles of Reiki
 
-## The five principles of Reiki
+#### Just for today, do not worry
 
-Reiki practice is anchored by five short principles, often recited at the start of the day:
+#### Just for today, do not anger
 
-- Just for today, do not worry
-- Just for today, do not anger
-- Honor your parents, teachers, and elders
-- Earn your living honestly
-- Show gratitude for every living thing
+#### Honor your parents, teachers, and elders
 
-You do not need to memorize them. They simply describe the spirit of the practice: present, kind, and honest.
+#### Earn your living honestly
 
-## Who it helps
+#### Show gratitude for every living thing
 
-Clients book Reiki for many reasons. Common ones include:
+## A Typical Reiki Session
 
-- Ongoing stress and trouble switching off ([stress and burnout](/concerns/stress-and-burnout))
-- A racing or worried mind ([anxiety](/concerns/anxiety))
-- Feeling drained after a demanding season at work or at home
-- Wanting a body based, restful practice between therapy or [coaching](/coaching) sessions
-- Curiosity about a reflective practice that is not tied to religion
+Reiki is like a healing massage but can be done with or without touching. You would lay fully dressed on a comfortable table and your practitioner would either hover their hands around certain areas or if you’re comfortable, they may lightly touch those areas to improve healing.
 
-Reiki is not a treatment for any medical or mental health condition. If you are in therapy, taking medication, or following a plan from your doctor, keep doing so. Reiki sits alongside that care, not in place of it.
+People often report feeling heat or tingling where the practitioner is working, or sometimes even memories or colors pop into their imagination. Some people even fall asleep because the practice is so peaceful and relaxing. The best way to learn if Reiki is for you is to try it! You won’t know how it feels until you do it once, and we promise, after the first time, you’ll feel the benefits.
 
-## What to expect in your first session at Pathways Within
+## True beauty starts from within.
 
-Reiki can be done with or without touch. You lie fully dressed on a comfortable table. Tia either holds her hands just above certain areas of the body or, if you are comfortable, rests them lightly on those areas. She moves through a sequence of positions from head to feet. You can ask for no touch at any point.
+### Complement your wellness journey with expert therapy services that nurture your mind and soul.
 
-People often report feeling heat or tingling where Tia is working. Sometimes memories or colors come to mind. Some people fall asleep because the practice is so peaceful. Others simply feel their breathing slow down. There is no right way to experience it.
+Discover the power of emotional healing today.
 
-Before the session, Tia asks what brought you in and anything she should know about your body or comfort. Afterward, she checks in and you can share as much or as little as you like. Plan to drink water and take a few quiet minutes before you drive. [NEEDS: confirm Reiki session length and fee]
+### Frequently Asked Questions
 
-The best way to learn whether Reiki is for you is to try it once. Most people know after the first session whether it is something they want to return to.
+You’ve got questions, and we’ve got answers. Some of our most-asked questions are here but if there’s something else on your mind, we love to chat. Feel free to reach out and let us help you apply a laser focus to your wellness dreams.
 
-## How care works here
+How often do I have to do Reiki?
 
-Reiki can stand on its own, or sit alongside other care. See all three modalities on our [energy work page](/wellness/energy-work), or [Contact Us](/contact).
+As often as you like! Ideally, you would start with a few consecutive sessions if you’re dealing with a lot of pain. For more general cases, you can expect to do Reiki once a week or once every two weeks and expect good results.
 
-## Where it is offered
+Can Reiki replace my medical treatment?
 
-Reiki is offered in person at our Long Island offices. [NEEDS: confirm whether Tia offers distance Reiki by telehealth]
+Reiki is meant to work in conjunction with any treatments you are already doing. If you’re taking medication or following other procedures directed by a doctor, you should continue to do so. Reiki can be a complementary pursuit to help heal you faster and better.
 
-[LOCATION CARDS: rockville-centre, garden-city, smithtown]
+Can anyone practice Reiki?
 
-[NEEDS: confirm which offices offer this service]
+Of course! As long as you have a qualified practitioner who you trust, Reiki is a universal practice. The specific goals of Reiki change depending on the person and the pain they are experiencing, but generally, the principle is the same.
 
-## Who provides it
+What does Reiki target best?
 
-[PROVIDER CARDS: tia-baumohl]
-
-## Insurance and cost
-
-Coverage varies by provider, service, and plan, and most plans treat Reiki as a self pay service. The Welcome Team verifies benefits after your 360 intake and explains current session fees. See [insurance and fees](/insurance-and-fees). [NEEDS: Reiki session fee and confirm self pay only]
-
-## Common questions
-
-### How often should I come for Reiki?
-
-As often as you like. If you are going through a hard stretch, a few sessions close together can help you settle. For general upkeep, many clients come once a week or once every two weeks. Tia will share what she notices and let you set the pace.
-
-### Can Reiki replace my medical treatment?
-
-No. Reiki is meant to work alongside any treatment you are already receiving. If you are taking medication or following a plan from your doctor or therapist, continue to do so. Energy work is not a substitute for medical or mental health treatment.
-
-### Is Reiki for everyone?
-
-Reiki is a gentle practice that most people can receive comfortably. Tell Tia about any injuries, recent surgery, pregnancy, or areas where touch is uncomfortable. She adapts hand positions and can work entirely without touch.
-
-### What does Reiki target?
-
-Reiki is a whole body practice rather than a spot treatment. You may notice a shift in a specific area or just a general sense of ease and relaxation. Clients most often report feeling calmer, lighter, and more rested afterward.
-
-### Do I need to do anything to prepare?
-
-Wear comfortable clothing and eat something light beforehand. Arrive a few minutes early so you can settle. There is nothing to study or practice. Your only job during the session is to rest.
-
-## Take the next step
-
-Tell the Welcome Team you would like to try Reiki. They will set up your 360 intake and schedule your first session with Tia at the office closest to you.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+Reiki targets the entire body (and spirit), so it can work to heal any issue you may have. You may feel healing in a specific area or just a general sense of well-being and relaxation, which in turn will improve your health in the long run.
 
 ```json
 {

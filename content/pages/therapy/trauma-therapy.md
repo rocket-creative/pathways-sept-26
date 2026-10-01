@@ -20,95 +20,57 @@ hero_image: "[NEEDS: image] Person sitting quietly by a window during a trauma t
 
 # Trauma Therapy on Long Island
 
-Trauma therapy is counseling that targets the lasting effects of overwhelming experiences, for adults and teens who feel tired, jumpy, ashamed, or unable to trust. Licensed therapists at Pathways Within offer it in person at our Nassau and Suffolk County offices and by telehealth. We cannot undo what happened. We can help you manage it and reduce the symptoms.
+### “Trauma is hell on earth. Trauma resolved is a gift from the gods.”
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+— Peter A. Levine
 
-[CTA] Contact Us -> /contact
+## Trauma Therapy
 
-## What trauma therapy is
+Trauma has lasting physical and emotional effects that can leave you tired, jumpy, anxious, feeling ashamed, exposed, insecure, and wondering who you can trust. We can’t control everything that happens to us, or how we are affected by these events. However, we can help you become better at managing your trauma and reducing the symptoms associated with it.
 
-Trauma has physical and emotional effects that can last for years. It lives below the surface and shows up in your personality, your actions, and your thoughts. Many people say they do not remember the event clearly. In therapy, the memories often begin to drift back at a pace you can handle.
+Let's Get Started
 
-The goal of trauma therapy is to address the symptoms trauma leaves behind. The nature of the event is not always as important as the effect it has on your mind and body. Your therapist helps you understand how trauma works, identify your triggers, and build a sense of safety in daily life. From there, you learn coping skills that lower traumatic stress and let the brain process what happened.
+### The Nature of Trauma
 
-At Pathways Within, trauma therapy is the umbrella. Under it, your therapist may use cognitive processing, [EMDR](/therapy/emdr), [Internal Family Systems](/therapy/ifs), or [somatic therapy](/therapy/somatic-therapy), depending on what you need. The National Institute of Mental Health describes these effects and the treatments that help at [NIMH: Post Traumatic Stress Disorder](https://www.nimh.nih.gov/health/topics/post-traumatic-stress-disorder-ptsd).
+Many of us experience trauma after an intense experience that may affect our mental, behavioral, and emotional well-being. Trauma can live with you for your entire life, affecting you below the surface as well as manifesting itself through your personality, your actions, and your thoughts. Often, people report not remembering a traumatic experience, but through therapy the memories start to drift back.
 
-## Who it helps
+### The goal of trauma therapy is to address the underlying symptoms of trauma.
 
-Trauma once meant only large events like assault, combat, or a car accident. We now understand that smaller moments of feeling unsafe and unprotected add up to complex trauma. Our therapists work with:
+#### The nature of the traumatic experience isn’t always as important as the effect it has on your mind and body. We can’t undo what we have experienced, but we certainly can become better at managing our feelings around that experience in order to live a more peaceful existence.
 
-- [Post traumatic stress](/concerns/ptsd) after a single event or years of exposure
-- Complex and childhood trauma, including abuse and neglect
-- Sexual assault and intimate partner violence
-- [Anxiety](/concerns/anxiety), panic, and avoidance that started after something happened
-- Relationship trauma and attachment wounds
-- Veterans and first responders ([our program](/therapy/veterans-first-responders))
+### Benefits of Trauma Therapy
 
-Common signs include unwanted memories, avoiding people or places, trouble remembering the event, anger, and a negative view of yourself. If several of these sound familiar, trauma therapy is a good place to start.
+For anyone dealing with trauma, therapy that specifically targets that aspect of their mental health is incredibly beneficial. First and foremost, you can learn more about trauma itself and how it can affect people, no matter their background. When you understand how trauma manifests itself, you’ll be more equipped to identify your triggers and establish a sense of safety in your daily life.
 
-## What to expect in your first session at Pathways Within
+Furthermore, trauma therapy can help you develop the healthy coping skills you need in order to manage your symptoms. Knowing the cause and the methods behind the therapy helps decrease traumatic stress symptoms, and stimulates the processing of your trauma in positive ways.
 
-Your first session is about safety, not the story. Your therapist asks what brought you in, what you want to change, and what is already helping you cope. You set the pace. You do not have to describe what happened to begin.
+## Spotlight: Cognitive Processing & EMDR
 
-Over the next few sessions, you learn about trauma itself and how it affects the body and mind. You practice grounding skills you can use between sessions. When you feel ready, your therapist introduces the method that fits you best.
+We find that both cognitive processing and EMDR are especially helpful for patients who have experienced trauma.
 
-Cognitive processing helps you find the stuck points, the thoughts and feelings tied to the trauma, and change how your brain reacts to them. EMDR is more structured and uses bilateral stimulation so you can resolve a memory without talking through every detail. Somatic work settles the nervous system first. Many clients move between these over time.
+Cognitive processing aims to heal the harm caused by a traumatic experience. Your therapist will help you zero in on the thoughts and feelings associated with your trauma in an effort to “rewire” how your brain reacts to those thoughts. For many of our patients, cognitive processing has helped them move past their stuck points and move forward with a healthy set of skills to manage their existing and any future trauma.
 
-## How care works here
+EMDR, which stands for Eye Movement Desensitization and Reprocessing, is another tactic we use to combat trauma. EMDR is more structured and involves specific activities, like bilateral or tactile stimulation and right/left eye movement. It’s a form of neurophysiological therapy that helps clients resolve issues without having to talk about them.
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. The team then matches you with a therapist who specializes in trauma.
+## FAQs
 
-Trauma rarely stays in one place. Your care plan may add [medication management](/medication-management) with our psychiatric nurse practitioner for sleep or panic, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the tension the body holds. Nothing is required, and everything is coordinated with your permission. Read the full process at [Contact Us](/contact).
+#### How do I know if I have trauma?
 
-## Where it is offered
+Trauma is often followed by a series of symptoms, which may include unwanted memories, avoidance of people or situations, mental discomfort, and problems remembering the traumatic experience. People also report feeling anger and having a negative self-image. Although “trauma” once only referred to large-scale events like sexual assault, military combat, or car accidents, in recent years, we understand trauma to have a much more widespread effect than this. We now understand that the accumulation of smaller moments where we felt unsafe and unprotected creates another sense of complex trauma.
 
-Trauma therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available.
+#### EMDR sounds interesting but I’m afraid of losing control of myself. How do I know if EMDR is right for me?
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+If you feel any of the symptoms described above, then EMDR might be something worth trying. EMDR is definitely not your normal talk therapy, but that’s what’s so interesting about it. Of course, the goal is always to make you feel comfortable and safe, so we would have a conversation about what it would entail and then you would be able to make your decision.
 
-## Who provides it
+#### What can I do outside of therapy to help me with my trauma?
 
-[PROVIDER CARDS: carly-sandstrom, madeline-amzler, karen-hill, lauren-hollander, lee-wasser]
+Our two main tips are: stay active and don’t self-isolate. Working out, doing yoga, and even meditating can be effective at releasing endorphins and maintaining your physical health, not to mention reclaiming your felt sense of safety within your physical body. Going out and making new friends can always be helpful in fulfilling your emotional and social needs.
 
-## Insurance and cost
+#### Do I have to talk about my trauma?
 
-Trauma therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+Of course not. While talking is beneficial to both yourself and your therapist because they get to know your story better, we understand that trauma is a serious situation and we would never want to make you talk about something you’re not comfortable doing so.
 
-## Common questions
-
-### How do I know if I have trauma?
-
-Trauma is often followed by unwanted memories, avoidance of people or situations, mental discomfort, and trouble remembering the event. People also report anger and a negative self image. You do not need a diagnosis to reach out. If something from your past still shapes how you feel today, that is reason enough to talk to a therapist.
-
-### Do I have to talk about my trauma?
-
-No. Talking helps your therapist know your story, but we will never push you to describe something you are not ready to share. Methods like EMDR and somatic therapy work without a full retelling. Many clients find that when they do choose to speak, the trauma loses some of its power over them.
-
-### EMDR sounds interesting, but I am afraid of losing control.
-
-You stay awake and in charge the whole time. EMDR is not typical talk therapy, and that is what draws many people to it. Before anything starts, your therapist explains what a session involves and you decide whether to try it. Read more at [EMDR therapy](/therapy/emdr).
-
-### What can I do outside of therapy to help?
-
-Our two main tips are stay active and do not isolate. Exercise, yoga, and meditation release tension and help you reclaim a sense of safety in your body. Time with people you trust meets emotional and social needs that trauma tends to shut down. Your therapist will suggest specific practices for you.
-
-### How long does trauma therapy take?
-
-It depends on the type of trauma and the method used. A single event may resolve in a few months. Complex or childhood trauma usually takes longer, and your therapist reviews progress with you as you go. There is no set number of sessions, and you can slow down at any time.
-
-### Can I do trauma therapy by telehealth?
-
-Yes. Talk based methods, EMDR, and most somatic skills work well on video. Telehealth is available to clients in New York when a video visit is available. Some clients prefer to start in person and switch later, and that is fine too.
-
-## Take the next step
-
-Tell the Welcome Team what you have been carrying. They will set up your 360 intake and match you with a trauma therapist at the office closest to you or by telehealth.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+It is however incredibly empowering to own your story and to re-shape the narrative as you see fit. When you begin to talk about what happened to you, the trauma loses its power over you and you are able to resume control.
 
 ```json
 {

@@ -20,52 +20,6 @@ hero_image: "[NEEDS: image] Licensed massage therapist preparing a treatment roo
 
 # NYSHIP and Care at Pathways Within on Long Island
 
-Pathways Within may participate with NYSHIP. Coverage varies by provider, service, and plan. Send the contact form and the Welcome Team confirms your benefits. We do not decide coverage from the plan name alone.
-
-[CTA] Contact Us -> /contact
-
-## What NYSHIP may cover here
-
-Clients ask about [medical massage](/wellness/massage), [individual therapy](/therapy/individual-therapy), and [medication management](/medication-management). What your plan covers depends on the provider, the service, and the plan. The Welcome Team confirms that after the contact form. See [insurance and fees](/insurance-and-fees) for the practice wide picture.
-
-## How verification works
-
-1. You contact the Welcome Team by form, call, or text.
-2. A Welcome Team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change.
-3. The team builds a care plan and matches you with available providers.
-4. The Welcome Team verifies your NYSHIP benefits and explains what applies to you before you are scheduled.
-
-Your Welcome Team contact stays with you after that. The full process is described at [Contact Us](/contact).
-
-## If a visit is not covered
-
-If your plan does not cover a visit, or you prefer not to use insurance, the Welcome Team can explain coverage and cost before care begins. We accept cash, major credit cards, and HSA and FSA cards.
-
-## Locations and telehealth
-
-Our Long Island offices are listed on the [locations](/locations) page, with accessibility notes for each one.
-
-Telehealth is available to clients in New York when a video visit is available. Hands-on care is in person.
-
-## Common questions
-
-### How do I know what NYSHIP covers for me?
-
-Tell the Welcome Team what you are looking for. They confirm your benefits after the contact form, before you are scheduled.
-
-### Can I be seen here with NYSHIP?
-
-Yes. Send the contact form. The Welcome Team confirms what your plan covers and schedules your 360 intake.
-
-## Take the next step
-
-Tell the Welcome Team you have NYSHIP and what you want to work on. They will schedule your 360 intake and confirm your benefits.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
-
 ```json
 {
   "@context": "https://schema.org",

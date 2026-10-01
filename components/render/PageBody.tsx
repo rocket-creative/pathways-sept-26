@@ -315,7 +315,7 @@ export default function PageBody({ page }: { page: Page }) {
       })}
 
       {page.frontMatter.page_type === "provider" ? (
-        <ProviderPeers slug={page.frontMatter.url.replace(/^\/providers\//, "")} />
+        <ProviderPeers />
       ) : null}
 
       {bylines.map((block, position) => (

@@ -73,26 +73,26 @@ export function getAllAssetSources(): AssetSource[] {
   return [...assets().values()];
 }
 
-/** Front-desk card used for every Insurance / Insurance and cost section. */
+/** Gloria at the Smithtown desk, used for every Insurance / Insurance and cost section. */
 const INSURANCE_FIGURE: SectionPhoto = {
-  asset: "ha-ap26-desk-talk",
-  alt: "Welcome Team members talking with a visitor at the Pathways Within front desk",
+  asset: "ha-ap-front-desk-team",
+  alt: "Gloria Saladino at the Smithtown front desk with a colleague and a visitor",
   shape: "rounded",
   aspect: "landscape",
   side: "start",
   layout: "feature",
-  focal: "40% 45%",
+  focal: "center",
 };
 
-/** Waiting-room handshake used for every Take the next step section. */
+/** Gloria at the Smithtown desk, used for every Take the next step section. */
 const NEXT_STEP_FIGURE: SectionPhoto = {
-  asset: "th-ap-waiting-greeting",
-  alt: "A Pathways Within practitioner shaking hands with a client in the waiting room",
+  asset: "ha-ap-front-desk-welcome",
+  alt: "Gloria Saladino at the Smithtown front desk with a visitor",
   shape: "rounded",
   aspect: "landscape",
   side: "end",
   layout: "split",
-  focal: "46% 42%",
+  focal: "center",
 };
 
 /**

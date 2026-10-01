@@ -18,90 +18,55 @@ providers: [rachel-lessard]
 hero_image: "[NEEDS: image] A person talking with a therapist at a desk before weight loss surgery on Long Island"
 ---
 
-# Bariatric Surgery Psychological Evaluation on Long Island
+# Weight Loss Surgery Support on Long Island
 
-Bariatric surgery support at Pathways Within is a pre surgery psychological evaluation, counseling after the procedure, and a support group for adults considering or recovering from weight loss surgery. Rachel Lessard, LCSW-R, provides the evaluations most surgical programs require. The goal is to prepare you for the road ahead and improve your chances of lasting success.
+### “What we change inwardly will change outer reality.”
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+— Plutarch
 
-[CTA] Contact Us -> /contact
+## Weight Loss Surgery Support
 
-## What bariatric surgery support is
+Weight loss surgery comes with a lot of caveats, and an often overlooked part of the procedure is its psychological effects. By talking to a professional and others who have gone through similar experiences, you can better prepare yourself for the road ahead and increase your chances of success.
 
-Weight loss surgery comes with a lot of caveats, and an often overlooked part of the procedure is its psychological effect. The surgery changes how you eat, how you see yourself, and how the people around you respond. Talking to a professional and to others who have been through it helps you prepare.
+Let's Get Started
 
-The service has three parts. The pre surgery psychological evaluation is a structured interview and written report that your surgeon's office typically requires before scheduling. Post surgery counseling helps you build new habits and handle the emotional side of a changing body. The support group brings together people at every stage, from first thinking about surgery to years afterward.
+### Education & Validation
 
-## Who it helps
+Whether or not you have already made the decision to have weight loss surgery, it’s important to learn as much as you can about the surgery and its effects before going through with the procedure. You may not think that weight loss surgery has effects other than your physical recovery, but these kinds of procedures often affect your mental health as well.
 
-This service is for adults who are:
+Having some support before experiencing a potentially serious surgery can also help you validate the reasons behind your decision.
 
-- Preparing for gastric bypass, sleeve, band, or another bariatric procedure
-- Required by their surgeon or insurer to complete a psychological evaluation
-- Recovering from surgery and finding that old eating patterns or feelings resurface
-- Struggling with [self esteem](/concerns/self-esteem) or body image before or after surgery
-- Facing surgery as a major [life transition](/concerns/life-transitions) that affects relationships and routines
+### This is a big decision, and it makes sense that you have questions.
 
-Our clients often ask themselves whether they are going to be okay, whether they are doing the right thing, and whether the surgery is worth the risk. The answers are different for every person. Working them out with someone is better than carrying them alone.
+#### Our patients often ask themselves: Am I going to be okay? Am I doing the right thing? Is the surgery worth the risk?
 
-## What to expect in your first session at Pathways Within
+#### These questions change based on the individual, so in order to answer these questions for yourself we highly encourage you to reach out.
 
-For an evaluation, your first session is a conversation with Rachel Lessard, LCSW-R. She asks about your history with weight and eating, your mental health, past treatment, your support system, and your reasons for choosing surgery. She may use short written questionnaires. The visit is not meant to make you feel inadequate or judged. Its purpose is to understand your eating habits, notice any underlying mental health concerns, and identify the strengths and supports you will lean on after surgery.
+### Before & After
 
-After the session, Rachel writes the report your surgical program needs and sends it with your written consent. If she recommends extra support before surgery, she tells you directly and helps you set it up. [NEEDS: number of evaluation sessions and turnaround time for the report]
+There are many aspects to having weight loss surgery, and we like to take a comprehensive approach by preparing you beforehand and supporting you after the surgery.
 
-For counseling after surgery, the first session focuses on how recovery is going, what has changed, and what feels hard. From there you and your therapist set goals around habits, mood, and relationships.
+As a pre-op measure, we offer a weight loss surgery psychological evaluation. This puts you in a room with a professional who will help answer any questions and provide thoughtful feedback on your decision. This is not meant to make you feel inadequate or “crazy”—rather, the goal is to determine your eating habits and see if they’re tied to any underlying mental health issues. Nobody wants to have surgery only to regain the weight, so our evaluation is only a precautionary measure to help you during post-op.
 
-## How care works here
+After the surgery, it’s time to celebrate the successes and create new habits. Post-op support comes in the form of being able to share your experiences with your new body and also rededicating yourself to maintaining a healthy lifestyle.
 
-Every new client starts with a 360 intake with our Welcome Team. Tell them your surgeon's name and any deadline for the evaluation so the team can schedule you promptly. The team matches you with Rachel for the evaluation and, if you want ongoing support, with a therapist for [individual therapy](/therapy/individual-therapy) afterward.
+## Spotlight: Weight Loss Surgery Support Group
 
-Because Pathways Within offers care across therapy, medication management, and wellness, your plan can grow as you need it. Some clients add [medication management](/medication-management) for mood or anxiety around surgery. Others add [massage](/wellness/massage) during recovery. Read more at [Contact Us](/contact) or return to the [therapy hub](/therapy).
+For some patients, the most valuable resource we provide is the support group, where people going through similar weight-loss surgeries can speak freely about their experiences. The groups can be incredibly diverse, ranging from people who have only just started thinking about surgery to those who had surgeries years prior and are just looking to check-in. It’s a refreshing setting for anyone involved in having weight loss surgery, and you can hear advice from people who have gone through the same situation in which you may find yourself.
 
-## Where it is offered
+## FAQs
 
-Evaluations and counseling are available in person at our Long Island offices and by telehealth to clients in New York when a video visit is available. [NEEDS: confirm which offices Rachel sees bariatric clients at and whether surgical programs accept telehealth evaluations]
+#### My doctor has answered all my questions. Why should I go to therapy on top of getting the surgery?
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+More often than not, doctors require patients to have a psychological evaluation prior to their surgery. Everyone involved wants for this surgery to be a success for you, and part of that involves identifying your strengths, motivations, and potential areas where you may need extra support after your surgery. Beyond that, we recommend our weight loss surgery support group because it’s always nice to meet other people who can provide some insight into your experience.
 
-## Who provides it
+#### What are some other benefits of joining the support group?
 
-The Welcome Team matches you with a clinician for this service. [Browse providers](/providers).
+Other than making strong connections with others who are going or have gone through the same situations, we provide advice on recipes, exercises, and other activities you can do to maintain a healthy lifestyle. We want you to feel accomplished, and being a part of a support group is exactly that—to show you are appreciated and that you matter.
 
-## Insurance and cost
+#### Can I bring a relative to the support group?
 
-Many plans cover the psychological evaluation when a surgeon requires it, and counseling is billed as psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. [NEEDS: confirm the evaluation fee and whether it is billed to insurance or self pay] See [insurance and fees](/insurance-and-fees).
-
-## Common questions
-
-### My doctor has answered all my questions. Why do I also need a psychological evaluation?
-
-More often than not, surgical programs require a psychological evaluation before surgery. Everyone involved wants this to succeed for you, and part of that is identifying your strengths, your motivations, and the areas where you may need extra support afterward. The evaluation is a precaution that helps you during recovery, not a test you pass or fail.
-
-### What happens in the support group?
-
-People going through similar surgeries speak freely about their experiences. The group ranges from people who have only just started thinking about surgery to people who had it years ago and want to check in. Members share advice on recipes, exercise, and daily habits that keep a healthy lifestyle going. [NEEDS: confirm the support group is currently running, its schedule, format, and cost]
-
-### Can I bring a relative to the support group?
-
-Yes. Some people would rather not come alone, and we understand that. Bringing someone gives you support in the room and gives them context for what you are going through. [NEEDS: confirm guest policy with the group facilitator]
-
-### What if the evaluation raises a concern?
-
-Rachel tells you directly, in the session, and explains what she will write. A concern does not automatically stop surgery. It usually means adding support first, such as a few sessions of therapy or a conversation with your prescriber. The aim is a better outcome, not a closed door.
-
-### I had surgery years ago and I am regaining weight. Can I still come?
-
-Yes. Regain and the return of old eating patterns are common, and they carry a lot of shame. Counseling after surgery and the support group both welcome people at any point after their procedure. There is no cutoff.
-
-## Take the next step
-
-Tell the Welcome Team where you are in the process, whether that is a surgeon's deadline or a recovery that feels harder than expected. They will schedule your 360 intake and get you on Rachel's calendar.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+Of course! Our goal, as always, is for you to feel comfortable and safe. Sometimes people would rather not come to the group alone, and we understand and honor that. Bringing someone else has the advantage of having someone there for support and also providing them with the context for your surgery.
 
 ```json
 {

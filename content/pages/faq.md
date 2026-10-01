@@ -20,120 +20,137 @@ hero_image: "[NEEDS: image] The Pathways Within front desk with a welcome sign"
 
 # Frequently Asked Questions
 
-Pathways Within - Wisdom and Wellness Collaborative. Everything below is visible on the page, grouped by topic, so you can find an answer without clicking through. If your question is not here, call or text (631) 371-3825 or email Welcome@pathwayswithin.com.
+### We love answering questions!
 
-## Getting started
+Here are some of the most common questions we hear—if you’re curious about anything else, just reach out; we’re always happy to help.
 
-### How do I start?
+## Where are you located?
 
-Contact the Welcome Team by [form](/contact), call, or text. They schedule a 360 intake, a conversation about what you are experiencing across your mind, body, and daily life. From that, they build a care plan and match you with a provider. [Contact Us](/contact).
+We have four locations in the greater Long Island area! You can find us in Nassau or Smithtown for all of your wisdom and wellness needs. To minimize stress before and after your appointments, each location has dedicated parking for your convenience.
 
-### Do I need to know what kind of support I need?
+Port Jefferson Therapy Office
 
-No. Most people do not. You may know that something feels off, heavy, or stuck. The Welcome Team helps you sort through the options.
+1227 Main Street, Suite 101,
 
-### Do I have to use more than one service?
+Port Jefferson, NY 11777
 
-No. Some clients work with one provider. Others build a mix over time. Take what feels helpful and leave what does not.
+Garden City Therapy Office
 
-### Can my providers talk to each other?
+647 Franklin Ave, Lower Level
 
-Yes, when it helps and with your permission. Your privacy, comfort, and consent stay at the center.
+Garden City, NY 11530
 
-### Is Pathways Within only for people in crisis?
+Smithtown Therapy Office
 
-No. People come during hard seasons, and also for personal growth, stronger relationships, stress, physical well being, or performance goals. If you are in crisis right now, call or text 988 or call 911.
+496 Smithtown Bypass, Suite 203
 
-## Sessions
+Smithtown, NY 11787
 
-### How often will we meet?
+Rockville Centre Therapy Office
 
-Most people start weekly, more often when clinically needed, for as long as the work is useful. The schedule can change as you do.
+53 N Park Ave, Suite 302
 
-### How long is a session?
+Rockville Centre NY 11570
 
-Therapy sessions are one hour [NEEDS: confirm 45, 50, or 60 minutes]. Medication management follow ups are shorter. Wellness sessions vary by service.
+Massapequa Therapy Office
 
-### Do you have evening appointments?
+4160 Merrick Road, Suite 7
 
-Appointment times vary by clinician. Tell the Welcome Team what times work for you and they will look for a provider whose schedule fits.
+Massapequa, NY 11758
 
-### What is your cancellation policy?
+## Do you take insurance?
 
-Cancellation policies vary by service. The Welcome Team can explain the one that applies before care begins.
+We are in-network for most major insurance providers in New York. Once we’ve confirmed your benefits, we can create a therapeutic plan with respect to your benefits and limitations.
 
-### Is what I say confidential?
+If your insurance does not cover your treatment or you are otherwise self-pay, we may be able to offer a sliding scale plan. Please reach out to our admissions coordinator to confirm these options.
 
-Yes. We follow HIPAA and professional ethics rules. There are legal limits, for example when someone is in danger, and your clinician explains them at the first session. See our [Notice of Privacy Practices](/notice-of-privacy-practices).
+For your convenience, we accept cash, major credit cards and HSA or FSA funds.
 
-## Telehealth
+#### Aetna
 
-### Do you offer virtual visits?
+#### Cigna
 
-Yes, for therapy and medication management, to clients located in New York when a video visit is available at the time of the session. You can meet by video every time or mix video and in person. [Telehealth](/telehealth).
+#### Optum
 
-### Is virtual therapy private?
+#### UHC
 
-Yes. Sessions run on Jane. You need a private space and a stable connection.
+#### Oxford
 
-## Insurance and cost
+#### UMR
 
-### Do you take insurance?
+#### Oscar
 
-Yes, most major plans for therapy and medication management, and NYSHIP for eligible medical massage. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your intake. [Insurance and fees](/insurance-and-fees).
+#### 1199
 
-### How do I find out what a visit costs?
+#### Meritain
 
-The Welcome Team can explain coverage and cost before care begins.
+#### Magnacare*
 
-### How can I pay?
+#### Humana
 
-Cash, major credit cards, and HSA or FSA funds.
+#### Medicare
 
-## Offices
+#### NYSHIP*
 
-### Where are you located?
+#### Student Resource
 
-Rockville Centre, Garden City, and Massapequa in Nassau County; Smithtown and Port Jefferson in Suffolk County. Addresses, accessibility, and directions are on each [location page](/locations).
+#### Allied Benefit
 
-### Are the offices wheelchair accessible?
+#### ComPsych
 
-Rockville Centre and Smithtown are accessible [NEEDS: confirm]. Garden City (lower level) and Massapequa (upstairs) are reached by stairs and are not wheelchair accessible. Telehealth is available as an alternative.
+#### VA community Care benefits
 
-### Is there parking?
+#### MVP
 
-[NEEDS: confirm parking at each office]
+#### Northwell Brighton Health
 
-## Wellness
+*Out of Network
 
-### Do I need to be a therapy client to book massage or acupuncture?
+## Other FAQs
 
-No. Wellness services are open to everyone.
+How often we will meet?
 
-### Do I need to be in pain to book a massage?
+At the beginning, we will meet once a week, more often if it is deemed therapeutically necessary, for as long as our therapeutic relationship feels beneficial to you.
 
-No. People come for pain and recovery, and also for stress, mobility, or maintenance. Every session starts with a clinical intake.
+The work you’re doing may grow or change, and the schedule you need may vary, so we will remain flexible and responsive to the way your growth needs change throughout our relationship.
 
-### Can wellness services complement therapy?
+How long do sessions last?
 
-Yes. Stress, anxiety, and grief show up in the body. Massage, acupuncture, and energy work can support relaxation and regulation alongside a care plan. They do not replace mental health or medical treatment.
+Each session will be one full hour. This is your hour and we are committed to showing up wholly to support the work you’re so bravely doing.
 
-## Medication
+In exchange, we ask that you commit to your scheduled time each week, (it will always be the same day and time) to optimize the time spent with your clinician.
 
-### Will I be prescribed medication at my first appointment?
+What is your cancellation policy?
 
-Not always. The first appointment is about understanding your history, symptoms, and goals. If medication seems appropriate, our nurse practitioner explains options, benefits, and side effects, and you decide together. [Medication management](/medication-management).
+Appointments must be canceled 72 hours in advance. There will be a $75 no-show fee for appointments canceled within the 72-hour window prior.
 
-### Do I need to be in therapy to see the prescriber?
+All clients must have a credit card on file. Your information will be stored through IvyPay, a HIPAA compliant provider, and can be used for these fees or for co-pays.
 
-No, though many people combine the two. When you have a therapist here, the prescriber coordinates with them.
+What happens if I have to miss a session or I forget?
 
-## Take the next step
+We understand that life happens! If you need to cancel or reschedule your appointment, we kindly ask for at least 24 hours' notice. Sessions canceled with less than 24 hours’ notice—or missed without notice—may be subject to a cancellation fee. This policy helps us respect the time of both our therapists and clients. If you have questions or an emergency, please don’t hesitate to reach out directly to your clinician.
 
-[CTA] Contact Us -> /contact
+Do you have evening appointments?
 
-Or call (631) 371-3825.
+We do offer appointments outside regular business hours! With advance scheduling, we can accommodate schedules of every kind. Our appointments can be offered up to 11 pm with select clinicians.
 
+Do you offer virtual visits?
+
+We do offer virtual visits! Called telehealth, our therapy services can be offered in any format you feel most comfortable with. Whether that means you meet with your therapist every time through our virtual platform or you switch it up between telehealth and in-person visits, we are happy to work with you to meet all your needs.
+
+Before your first visit, we’ll send you a link to get you all set up. During this onboarding process, you’ll have the chance to get familiar with our platform, SimplePractice.
+
+Is virtual therapy private?
+
+Absolutely! SimplePractice is both HIPAA compliant as well as VeriSign security sealed. Your privacy is crucial to us, and we take every step to ensure confidentiality in every format.
+
+How do you incorporate Therapy and Wellness in a collaborative treatment plan?
+
+At Pathways Within, we believe true healing happens when the mind and body are supported together. Our therapy services focus on emotional insight, personal growth, and mental well-being—but we don’t stop there. Through our 360º approach to care, we partner with our sister site Pathways to Wellness, we provide a truly holistic experience. Together, we support your journey from the inside out, integrating therapeutic care with restorative wellness services to help you feel grounded, renewed, and whole.
+
+Do you offer discounts or sliding scale fees for self-pay without insurance coverage?
+
+Yes, we do offer a limited number of sliding scale spots based on financial need and availability. If you are paying out of pocket and have concerns about affordability, we encourage you to speak with us directly. Our goal is to make therapy as accessible as possible, and we’re happy to explore options that support your care.
 
 ```json
 {

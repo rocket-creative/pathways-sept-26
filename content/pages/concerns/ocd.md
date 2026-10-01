@@ -20,94 +20,10 @@ hero_image: "[NEEDS: image] Adult writing in a notebook during a therapy session
 
 # OCD Treatment on Long Island
 
-OCD treatment at Pathways Within is for adults and teens whose unwanted thoughts and repeated rituals have taken over time, energy, and peace of mind. Our licensed therapists in Nassau and Suffolk County use cognitive behavioral therapy and exposure based approaches to loosen the cycle, and our prescriber offers medication management when it helps. Care is in person at our Long Island offices or by telehealth.
-
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
-
-[CTA] Contact Us -> /contact
-
-## Signs it may be time to talk to someone
-
-Most people have an odd thought now and then or double check a lock. The National Institute of Mental Health describes OCD as a pattern of obsessions, which are unwanted and repeated thoughts or urges, and compulsions, which are behaviors a person feels driven to repeat in response ([NIMH, OCD](https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder-ocd)). Only a clinician can tell you what is going on. These are signs it is worth a conversation:
-
-- A thought or image shows up over and over, and it scares or disgusts you
-- You check, count, wash, arrange, or repeat things to make the thought go away
-- You ask others for reassurance and it never holds for long
-- You avoid places, objects, or people because of what they might trigger
-- Rituals take up an hour or more of your day
-- You know the fear does not make sense, and you cannot stop anyway
-- Your family has started adjusting their routines around your rituals
-- The relief after a ritual lasts less and less time
-
-## How we treat OCD at Pathways Within
-
-Treatment starts with [individual therapy](/therapy/individual-therapy). Your therapist helps you map the cycle: the trigger, the thought, the anxiety, the ritual, and the short relief that keeps the loop going. Cognitive behavioral therapy gives you a way to respond differently to the thought instead of trying to make it disappear.
-
-Exposure based approaches are the core of that work. With your therapist, you face triggers on purpose, in small steps you agree to, and practice not doing the ritual. Over time the anxiety drops on its own and the thought loses its grip. Our clinicians trained in exposure based approaches pace this carefully and never push you past what you have chosen. [NEEDS: confirm ERP trained clinicians]
-
-Teens can do this work too, and [teen therapy](/therapy/teen-therapy) has its own page. Parents learn how to stop accommodating rituals at home without turning every evening into a fight.
-
-Our prescriber offers [medication management](/medication-management) for adolescents ages 10 and up and adults. Your prescriber talks through options, benefits, and side effects and coordinates with your therapist when you give permission.
-
-## What your first weeks look like
-
-You contact the Welcome Team by form, call, or text. A team member schedules your 360 intake, a conversation about what you are experiencing and what you want to change. You do not have to describe every thought or ritual in that first conversation. The team matches you with a therapist who works with OCD.
-
-Your first session covers history, what the obsessions and compulsions look like day to day, and how much of your life they are taking. Your therapist explains how the cycle works and how treatment interrupts it. Over the next few weeks you build a list of triggers ranked from easiest to hardest and start at the bottom. Read the full process at [Contact Us](/contact).
-
-## Medication, therapy, or both
-
-NIMH notes that OCD is typically treated with medication, psychotherapy, or a combination ([NIMH](https://www.nimh.nih.gov/health/topics/obsessive-compulsive-disorder-ocd)). Therapy with exposure work is often the first choice. Some people find the anxiety so intense that they cannot start exposures, and medication can lower it enough to begin.
-
-At Pathways Within, your therapist can refer you to our prescriber at any point. If you already take medication for OCD, our prescriber can review it. Both providers work from the same care plan so nothing gets lost between them.
-
-## Where and how
-
-OCD treatment is offered in person at all of our Long Island offices and by telehealth for clients in New York when a video visit is available. Telehealth has a real advantage for exposure work, because many triggers live at home and your therapist can coach you through them where they happen.
-
 [LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
 
-## Who you might work with
-
-Several clinicians list OCD among their specialties and work with teens, adults, and families. Our prescriber provides medication management. The Welcome Team matches you based on your needs, your schedule, and your location.
 
 [PROVIDER CARDS: specialty=OCD]
-
-[NEEDS: confirm full list of clinicians who treat OCD]
-
-## Common questions
-
-### What is the difference between OCD and being a perfectionist?
-
-Liking things tidy is a preference. OCD is fear driven. The thought feels dangerous, the ritual feels necessary, and the relief fades fast. If your habits cost you time or peace and you cannot stop, it is worth a conversation with a therapist.
-
-### Will I have to face my worst fear right away?
-
-No. Exposure work starts with the easiest trigger on your list and moves up only when you are ready. You and your therapist decide every step together. Many clients are surprised at how manageable the early steps feel.
-
-### My thoughts are disturbing. Will my therapist judge me?
-
-No. Therapists who treat OCD know that intrusive thoughts are common and do not reflect who you are or what you want. Naming the thought out loud is often the first time it loses some power.
-
-### Does OCD treatment work over telehealth?
-
-Yes. Your therapist can guide exposures on video, and doing them in your own space often makes the practice more useful. Telehealth is available in New York when a video visit is available.
-
-### How long does it take?
-
-It depends on how long OCD has been present and how many triggers are on the list. Many clients see meaningful change within a few months of steady exposure work. Your therapist reviews progress with you regularly.
-
-### Does insurance cover OCD treatment?
-
-Most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
-
-## Take the next step
-
-Tell the Welcome Team how much of your day the rituals are taking. They will set up your 360 intake and match you with a therapist who treats OCD, in person or by telehealth.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
 
 
 ```json

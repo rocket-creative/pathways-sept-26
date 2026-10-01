@@ -20,104 +20,57 @@ hero_image: "[NEEDS: image] A child playing with toys on the floor of a therapy 
 
 # Therapy for Children on Long Island
 
-Child therapy at Pathways Within is counseling for children, most often ages 3 to 12, that uses play to work through big feelings and hard behaviors. Parents are partners in the process. Our child therapists see families in person across Nassau and Suffolk County and by telehealth where it fits the child.
+### Do you know your child needs support but you’re not sure where to begin?
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+There’s no singular way forward when someone small is experiencing something really big and we’re happy to help you navigate your next steps.
 
-[CTA] Contact Us -> /contact
+Children are not miniature adults, yet they often feel emotions as all-consuming as we do in our adult lives. With different developmental stages and expression cues, supporting your little ones through their difficult feelings and challenging behaviors can feel scary or even downright impossible.
 
-## What child therapy is
+With expert therapists across each age and stage, we are here to help you find the Pathways back to “possible”.
 
-Children are not miniature adults, yet they often feel emotions as all consuming as we do. Kids move through different developmental stages and express themselves differently. Supporting your little one through difficult feelings and challenging behaviors can feel scary or even impossible. There is no single way forward when someone small is experiencing something really big.
+CALL PATHWAYS WITHIN TODAY TO GET STARTED →
 
-No one got it wrong. No one missed a step. Recognizing that your child needs support is a powerful parenting moment. You may feel overwhelmed or as if you did something wrong. The need for therapy is not born from failure, not on your part or your child's. Sometimes we all need help working out what we are feeling and how to process it.
+### No one got it wrong. No one missed a step.
 
-### Play therapy
+Recognizing the need for additional support in your child is a powerful parental experience. You may be feeling overwhelmed or as if you’ve gotten something wrong, but the need for therapy is not borne from failure- not on your part, or the part of your child.
 
-Play therapy is used most often with children from about age 3 to around 12. It uses the way kids naturally communicate to help them process emotions through a less direct lens. It bridges the gap between how adults talk and how children do.
+Sometimes, we just all need a little help in navigating what we’re feeling and how to process that. Giving your children the ability to recognize that need, ask for that support and work through their roadblocks with effective coping skills, developmentally appropriate tools, and a qualified expert to support them is a powerful way to show them you’re listening.
 
-Our kids process the world through play. Good or bad, their toys and imaginations represent, literally or symbolically, the shape and feeling of the world around them. In play therapy, your child's therapist joins them in their world. As they play together at the child's level, the child often becomes less guarded and starts acting out inner emotions and experiences in real time.
+#### Celebrate your child’s ability to ask for help by responding to their needs.
 
-Each therapist has their own way of entering a child's world, and each child needs a different mix of those methods. Through observation and ongoing reassessment, the treatment plan stays a living document that responds to your child's needs. Progress may look slow, or grow by leaps and bounds, depending on the child.
+### Caring for the big feelings of our littlest loved ones
 
-## Who it helps
+## Play Therapy on Long Island
 
-Our child therapists work with kids facing:
+Most often used with children in middle developmental stages from ages 3 to around 12, play therapy capitalizes on the ability of abstract informational exchange to help your child engage in emotional processing through a less invasive lens.
 
-- [Anxiety](/concerns/anxiety), worry, and fears that get in the way of school or sleep
-- [ADHD](/concerns/adhd) and attention or behavior concerns
-- Big emotions, tantrums, and trouble calming down
-- [Grief and loss](/concerns/grief-and-loss), including a death, a divorce, or a move
-- Low [self esteem](/concerns/self-esteem) and social struggles
-- Trauma or a frightening event
-- Developmental delays and intellectual disabilities
+Play therapy works by bridging the gap between the way adults communicate and the way children do.
 
-For young children with frequent defiance or tantrums, [Parent Child Interaction Therapy](/therapy/pcit) coaches you live in session. When the whole household is affected, [family therapy](/therapy/family-therapy) brings everyone into the room. Older kids move to [teen therapy](/therapy/teen-therapy).
+By bringing play to the forefront of navigating complex emotional experiences, we can not only support but actively help children feel their feelings in a way that makes sense for them.
 
-## What to expect in your first session at Pathways Within
+#### How it works:
 
-The first session usually starts with you. Your child's therapist wants to hear what you have noticed at home and school, what has changed, and what you hope will be different. Depending on your child's age, that conversation may happen with your child present, with you alone, or split between the two.
+Our kids process the world through play. Good or bad, their toys and imaginations represent - either literally or symbolically- the shape and feeling of the world around them.
 
-Then the therapist meets your child on their terms. There is no pressure to talk. Toys, art, and games are the language of the room. Your therapist watches how your child plays and what themes show up, and starts building a plan from there. Sessions run about 50 minutes.
+Through play therapy, we join the child in their world through their play. As we play and engage with the world at their level, they may become less guarded and create space for us to bridge the gap in communication styles as they act out their inner emotions and experiences in real-time.
 
-## How care works here
+Each therapist has a unique way of engaging in a child’s world, and each child will require a different combination of those methods. Through observation and re-assessment, the therapeutic plan will be a living document that responds to your child’s needs.
 
-Every family starts with a 360 intake with our Welcome Team. That conversation covers what your child is experiencing at home, at school, and with friends, and what the rest of the family is carrying too. The team then matches you with an available child therapist and builds a whole person care plan.
+Play therapy will be tailored to the child, the experiences they’ve had, and the way they’re feeling in that moment. Healing and skill-building will take place with a treatment plan outlined from what the therapist learns and build upon how they can best help the child through any and all variables that may occur. Progress may look slow, or grow by leaps and bounds quite quickly, depending.
 
-When it helps, that plan can include parent sessions, [family therapy](/therapy/family-therapy), or a referral to [medication management](/medication-management) with our psychiatric nurse practitioner for children 10 and older. Nothing is required. Everything is coordinated, with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
+## Privacy & Parent Engagement in Child Therapy
 
-### Privacy and parent engagement
+At Pathways Within, we recognize that effective therapy for children involves both respecting their need for privacy and actively engaging parents in the therapeutic process.​
 
-Effective therapy for children respects their need for privacy and actively engages parents. Confidentiality is a cornerstone. Children open up more when they feel their privacy is respected. Your child's therapist keeps that trust, sharing information with you when needed, such as when there are concerns about your child's safety.
+### Child Privacy
 
-At the same time, you are part of the work. Parents are encouraged to take part, working with the therapist to support their child's progress. That partnership means strategies get reinforced at home and you know how to help. Balancing confidentiality with parent involvement is how we create a supportive environment for your child to heal and grow.
+Confidentiality is a cornerstone of effective therapy. Children are more likely to open up and engage in the therapeutic process when they feel their privacy is respected. Therapists are committed to maintaining this confidentiality, sharing information with parents only when necessary, such as when there are concerns about the child's safety.
 
-## Where it is offered
+### Parent Engagement
 
-Child therapy is available in person at all of our Long Island offices. Telehealth is available in New York when a video visit is available, and works best for older children and for parent sessions. Your therapist will tell you which format fits your child.
+While respecting a child's privacy, we also believe in the importance of parental involvement. Parents are encouraged to participate in the therapeutic process, collaborating with therapists to support their child's progress. This partnership ensures that therapeutic strategies are reinforced at home and that parents are equipped to assist their child effectively. ​
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
-
-## Who provides it
-
-[PROVIDER CARDS: samantha-juravich]
-
-[NEEDS: confirm the full list of clinicians who see children under 12]
-
-## Insurance and cost
-
-Child therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
-
-## Common questions
-
-### What age does child therapy start?
-
-Play therapy is used most often from about age 3 to around 12. For very young children with behavior concerns, [PCIT](/therapy/pcit) is often the better fit because it works through you, the parent. Tell the Welcome Team your child's age and what you are seeing, and they will match you with the right approach.
-
-### Will I be in the room?
-
-Sometimes. Younger children often do better with a parent nearby at first, and parent sessions are part of the plan. As your child settles in, the therapist may see them alone for part or all of the session. You will always know what the plan is and why.
-
-### What will the therapist tell me about sessions?
-
-Your child's therapist shares themes, progress, and ways you can help at home. They do not repeat every word your child says, because that trust is what makes therapy work. If there is any concern about your child's safety, you will hear about it right away.
-
-### How do I explain therapy to my child?
-
-Keep it simple and honest. You might say they will meet someone whose job is to help kids with big feelings, and that they get to play and talk. Celebrate your child's ability to ask for help by responding to it.
-
-### How long will my child need therapy?
-
-It depends on the child and what brought you in. Some children need a few months of support through a specific event. Others benefit from longer work. Your child's therapist reviews progress with you regularly and adjusts the plan.
-
-## Take the next step
-
-Tell the Welcome Team what you have been seeing in your child. They will set up your 360 intake and match you with a child therapist at the office closest to you.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+By balancing confidentiality with active parental involvement, we aim to create a supportive environment that fosters healing and growth for your child.
 
 ```json
 {

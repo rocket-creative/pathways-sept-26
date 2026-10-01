@@ -61,7 +61,7 @@ Over the past five years, she has expanded that work through energy medicine and
 
 - Leads Performance and Wellness Coaching
 - Trained in somatic awareness and IFS-informed practice
-- Energy medicine practitioner (Reiki and Integrative Energy Therapy)
+- Energy medicine practitioner (Integrative Energy Therapy)
 
 Energy work with Tia is on the [wellness](/wellness) page. This page is her coaching practice.
 

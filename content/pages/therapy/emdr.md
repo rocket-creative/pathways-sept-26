@@ -18,97 +18,105 @@ providers: [carly-sandstrom, madeline-amzler, rachel-lessard]
 hero_image: "[NEEDS: image] Close view of a person's eyes following a therapist's hand during an EMDR session on Long Island"
 ---
 
-# EMDR Therapy on Long Island
+# EMDR Therapy
 
-EMDR (Eye Movement Desensitization and Reprocessing) is a structured trauma therapy that helps your brain finish processing memories that stayed stuck. At Pathways Within, licensed therapists trained in EMDR offer it in person at our Nassau and Suffolk County offices and by telehealth. You do not have to retell every detail to get relief.
+on Long Island
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+## Are you ready to heal, but less prepared to revisit the details of traumatic or repressed memories?
 
-[CTA] Contact Us -> /contact
+What if we told you that with the support of a trained therapist, we can use your eyes to navigate the healing processes in your brain?
 
-## What EMDR is
+EMDR can help you heal without spending a lot of time rehashing the things that hurt you.
 
-EMDR is an eight phase therapy developed in the late 1980s and now recognized by major health organizations as an effective treatment for PTSD and trauma related conditions ([EMDR International Association](https://www.emdria.org/about-emdr-therapy/)). It works on a simple idea: when something overwhelming happens, the brain can store that memory in a raw, unfinished state. Reminders then trigger the same alarm the original event did.
+Sounds like something you’ve been looking for? Let’s talk →
 
-In an EMDR session, you briefly hold a target memory in mind while your therapist guides bilateral stimulation, most often side to side eye movements, and sometimes tapping or alternating tones. That pairing lets the brain reprocess the memory so it is stored as something that happened, rather than something still happening. The memory stays. The charge around it drops.
+### There is nothing wrong with you if you struggle to talk about what’s happened to you.
 
-## Who it helps
+Trauma can be difficult to process. In order to truly move past the things you’ve gone through, it requires re-living them. This is understandably difficult and can be an exhausting process.
 
-EMDR was built for post traumatic stress, and that remains its strongest use. Our therapists also use it for:
+If the thought of talking at length about old hurts and hard feelings makes you feel uncertain or overwhelmed with anxiety, EMDR therapy may be the tool you’ve been looking for.
 
-- Single incident trauma such as an accident, an assault, or a sudden loss
-- Complex or childhood trauma, often alongside [IFS therapy](/therapy/ifs)
-- [Anxiety](/concerns/anxiety), panic, and phobias
-- Grief that will not move
-- Performance anxiety and blocks
-- First responders and veterans carrying repeated exposure ([our program](/therapy/veterans-first-responders))
+### EMDR is internationally recognized as a beneficial treatment to heal the brain from the residual and lingering effects of trauma.
 
-EMDR is a good fit if talking through the details in traditional therapy feels impossible, or if you have done talk therapy and something still stays lit. It is not the right first step during active substance dependence or an unstable medical condition. Your therapist screens for that in phase one.
+With over 3 decades of research behind it, Eye Movement Desensitization And Reprocessing is often used to treat PTSD and other trigger-based trauma disorders but that’s not all it can do.
 
-## What to expect in your first session at Pathways Within
+EMDR can treat
 
-Your first EMDR appointment is history and preparation, not reprocessing. Your therapist learns what brought you in, what you want to change, and what supports you already have. Together you build a short list of target memories and practice a calming skill you can use in and out of session.
+- Anxiety
 
-Reprocessing starts once you both agree you are ready. A reprocessing session runs about 50 minutes. You choose the target, rate how disturbing it feels, and follow the bilateral stimulation in short sets while noticing what comes up. Your therapist checks in after each set. You are awake, in control, and can stop at any time.
+- Panic Attacks and Phobias
 
-Most people feel tired after a reprocessing session and lighter within a day or two. For a single memory, one to three reprocessing sessions is common. For long standing trauma, plan on six to twelve sessions, sometimes on consecutive days.
+- Dissociative disorders
 
-## How care works here
+- Sleep disturbances
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. From there, the team matches you with a therapist trained in EMDR and, when it helps, adds support from other parts of the practice.
+- Sexual Assault Recovery
 
-For trauma, that might mean [somatic therapy](/therapy/somatic-therapy) to settle the body, [medication management](/medication-management) with our psychiatric nurse practitioner for sleep or panic, or [massage](/wellness/massage) and [acupuncture](/wellness/acupuncture) for the physical tension trauma leaves behind. Nothing is required. Everything is coordinated, with your permission. Read the full process at [Contact Us](/contact).
+- Performance Anxiety
 
-## Where it is offered
+- Personality Disorders
 
-EMDR is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. Eye movements and tapping both work well on video.
+- Chronic Health conditions
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+- Depression
 
-## Who provides it
+- Grief and Loss
 
-[PROVIDER CARDS: carly-sandstrom, madeline-amzler]
+- Stress Management
 
-[NEEDS: confirm the full list of EMDR trained clinicians; the old site did not name them]
+- Substance Abuse
 
-## Insurance and cost
+- Eating Disorders
 
-EMDR is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+- Mood regulation
 
-## Common questions
+## What makes EMDR different?
 
-### Does EMDR really work, or is it a trend?
+When that conversation breaks down, so does your ability to heal from the things that happened in the places it stopped effectively communicating. You freeze- permanently trapped in the alarm state of those events instead of moving through the stages of processing we typically have in response to them.
 
-EMDR has more than three decades of research behind it and is listed as a recommended trauma treatment by the EMDR International Association and other major health bodies ([EMDRIA](https://www.emdria.org/about-emdr-therapy/)). It is not hypnosis and it is not a trick. It is a structured protocol with measurable outcomes.
+To effectively heal, your brain needs to have a conversation with itself. Three different parts of your brain are involved in that conversation. Respectively, they’re responsible for stress response (fight or flight), learning (both making memories and assessing danger) and behavior analysis (what you’ll do and what others are doing).
 
-### Do I have to describe what happened?
+#### EMDR works by using repetitive rhythmic stimulation to help push your brain through that freeze so it can organically resume the healing process it’s been trapped in.
 
-No. You need to be able to hold the memory in mind, but you do not have to narrate it out loud. Many clients say only a few words about the target. That is one reason people who avoided therapy for years choose EMDR.
+The stimulation we use is often a repetitive eye movement, but may also include things like tapping with your hands, or external cues like a tone or sound that’s repeated.
 
-### Will I lose control or feel worse?
+#### This bilateral stimulation is substituted for the time we often spend dwelling on experiences and emotions.
 
-You stay fully aware throughout. Some people feel stirred up for a day or two after a reprocessing session, which is a sign the brain is working. Your therapist gives you grounding tools before reprocessing begins and checks in at every step.
+Instead, you’ll briefly recall the trauma you experienced while also experiencing this repeated stimulation. This begins a process of reducing the vividness of your response by allowing your brain to do the work of healing without the need of prolonged emotional exposure to the memory.
 
-### Can EMDR be done over telehealth?
+## Wondering what to expect in EMDR Therapy?
 
-Yes. Your therapist guides eye movements on screen or uses self tapping. Outcomes on video are comparable to in person for most clients, and telehealth is available in New York when a video visit is available.
+While the therapeutic experience isn’t the same for everyone, EMDR Treatment is a structured process. Don’t worry, there’s no one standing over you expecting your response to be as uniform as the guidelines. There’s plenty of room to move at your own pace and comfort level.
 
-### How is EMDR different from trauma therapy?
+Phase 1
 
-[Trauma therapy](/therapy/trauma-therapy) is the umbrella. EMDR is one specific method under it, alongside cognitive processing, IFS, and somatic work. Your therapist may combine them depending on what you need.
+Introductions and history gathering so we’re familiar with one another before we begin.
 
-### How many sessions will I need?
+Phase 2
 
-For one memory, one to three reprocessing sessions. For long standing or repeated trauma, six to twelve sessions, sometimes weekly and sometimes on consecutive days. Your therapist reviews progress with you in phase eight.
+Getting you ready. It’s a priority for us to ensure you always know what to expect.
 
-## Take the next step
+Phase 3
 
-Tell the Welcome Team what you have been carrying. They will set up your 360 intake and match you with an EMDR trained therapist at the office closest to you or by telehealth.
+Assessing what it is you’d like to target. We’ll identify the memory, sticky spot or trigger to focus on.
 
-[CTA] Contact Us -> /contact
+Phase 4-7
 
-Or call (631) 371-3825.
+These are the active EMDR phases where we use repetitive exposures to create new pathways for your brain to heal. EMDR relies on Adaptive Information Processing, so during these phases, we’re focused on rewriting your memory storage.
 
+Phase 8
+
+Results and evaluation. We’ll review your treatment together and the results of our work. This gives you the space to determine how you feel now, and what comes next.
+
+## Powerfully to the point
+
+If you only have a fixed amount of time or are looking to do focused work on overcoming a single trigger, EMDR is a great choice for your therapeutic tool. While it can be used alongside or within many therapy modalities, you can begin to see improvement quite quickly without the intensive exposure to your triggers that may have held you back from seeking the support you deserve.
+
+When we are working through a single memory, you can expect to have 1-3 sessions with your therapist.
+
+For prolonged trauma healing, EMDR treatment often lasts for 6-12 sessions that can be done weekly, with some sessions occurring on consecutive days.
+
+EMDR what you’ve been looking for? Get started today →
 
 ```json
 {

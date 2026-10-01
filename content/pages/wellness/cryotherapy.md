@@ -18,100 +18,99 @@ providers: [NEEDS: cryotherapy provider]
 hero_image: "[NEEDS: image] Client in a whole body cryotherapy chamber wearing gloves and socks at a Pathways Within office on Long Island"
 ---
 
-# Cryotherapy on Long Island
+# Cryotherapy on
 
-Cryotherapy is brief, controlled exposure to very cold air, used for muscle recovery, soreness, and inflammation support. At Pathways Within, we offer whole body sessions in an enclosed chamber and localized sessions for a specific area, for active adults and people recovering from physical strain. Sessions are short, screened, and supervised.
+# Long Island
 
-[NEEDS: confirm cryotherapy is still offered and at which office; confirm provider]
+#### From burning off latent emotions to residual pain, cryotherapy is a precision tool with a wide breadth of therapeutic benefits.
 
-[CTA] Contact Us -> /contact
+The use of cold as a therapeutic tool is a timeless way to experience localized or whole-body healing. Using subzero immersion to freeze out the unwelcome trauma of your past for a brighter future is possible with Cryotherapy.
 
-## What cryotherapy is
+## Cold Therapy 101
 
-The use of cold as a recovery tool is not new. Ice packs and cold baths have been used for sore muscles for generations. Cryotherapy applies the same idea in a more controlled way. In a whole body session, you stand in an enclosed chamber cooled by liquid nitrogen for a brief period, under four minutes. In a localized session, a wand or device directs cold air at one area, such as a shoulder, a knee, or the lower back.
+A brief exposure to extreme cold sounds like a dare you take or an accidental experience you don’t want to repeat, but sometimes the most surprising things can create holistic healing at a cellular level.
 
-When skin temperature drops quickly, blood vessels near the surface narrow and blood moves toward the core. When you step out and warm up, blood flow returns to the skin and muscles. People use this cycle to take the edge off soreness after training, to ease stiffness, and to support the body's own recovery after physical strain.
+In an enclosed space, you’ll be plunged into temperatures of up to -300°F for a brief period of time to provoke a myriad of benefits to body, mind, and spirit. The cold is created by liquid nitrogen, designed to ultra chill your skin and all the blood running close to it to create a holistic response of regeneration.
 
-Cryotherapy is a wellness service, not a medical treatment. It does not treat or cure any condition, and it is not a mental health service. If you are dealing with an injury, illness, or ongoing pain, see your physician first.
+With benefits at every level of your being, this ancient therapy has incredible applications for pain of many kinds. From physical to physiological, the cold truly can sink straight into all elements of your being. The benefits of cryotherapy are so much more than skin-deep.
 
-## Who it helps
+Every facet of your human experience may find some space to heal with cryotherapy, especially if you experience:
 
-People book cryotherapy for:
+## Benefits of Cryotherapy
 
-- Muscle soreness after workouts, races, or physical work
-- Stiffness and tightness that slows down training
-- Recovery between sessions of [sports massage](/wellness/massage) or other bodywork
-- Localized soreness in one joint or muscle group
-- General support for the aches that come with an active life
+#### Pain from Injuries
 
-Some clients living with [chronic pain or illness](/concerns/chronic-pain-and-illness) ask about cryotherapy. It may be an option for some people, but only with your physician's approval, and never in place of medical care. The same applies if physical tension is part of [stress and burnout](/concerns/stress-and-burnout): cryotherapy can be one piece of a recovery routine, but it does not replace therapy.
+#### Anxiety
 
-## Who should not do cryotherapy
+#### Arthritis
 
-Cold exposure is not safe for everyone. Do not book cryotherapy if you have uncontrolled high blood pressure, a heart condition, cold sensitivity or a cold related condition, or if you are pregnant. If you have diabetes, you should avoid cryotherapy. For any other health condition, ask your physician before we begin.
+#### Inflammation
 
-Tell us about any medication you take, recent surgery, open wounds, numbness, or circulation problems. We screen for these before your first session and may ask for a note from your physician. [NEEDS: confirm full cryotherapy screening checklist and any age minimum]
+#### Nerve Pain
 
-## What to expect in your first session at Pathways Within
+#### Atopic Dermatitis
 
-Your first visit starts with a short screening. A staff member reviews your health history, the contraindications above, and what you are hoping to get from cryotherapy. If anything raises a concern, we pause and ask you to check with your physician.
+#### Migraines
 
-For whole body cryotherapy, you change into dry, loose clothing and put on socks and gloves, which protect your hands and feet from numbness or tingling. You step into the chamber for less than four minutes while a staff member stays with you the entire time. You can stop at any point. The whole appointment takes less than half an hour.
+#### Eczema
 
-For localized cryotherapy, you stay dressed and a staff member directs cold air at the area for a few minutes. Afterward, your skin may look red and feel tingly or numb for a short while. That fades as you warm up. Some people feel energized, and some feel pleasantly tired.
+#### Depression
 
-## How care works here
+#### Mood disorders
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If cryotherapy fits, the team schedules your screening and first session and, when it helps, pairs it with other wellness services.
+## Talking Bodies
 
-Many clients combine cryotherapy with [massage](/wellness/massage), [acupuncture](/wellness/acupuncture), or [cupping](/wellness/cupping) as part of a recovery routine. With your permission, our wellness providers coordinate with your therapist or prescriber if you also work with our therapy or [medication management](/medication-management) teams. Read the full process at [Contact Us](/contact), or see everything under our [wellness pillar](/wellness).
+The environments we exist in communicate constantly with our bodies. Both physical and emotional body conversations occur with what’s going on around you to manage the way your muscles and bones move as well as the way your emotions engage with whatever you are experiencing. Using Cryotherapy, we can slow the cellular response while heightening the oxygenation of your blood and tissues. When the temperature drops in such an extreme way, your whole body will respond.
 
-## Where it is offered
+This new and unexpected shift of environment can help to stop chronic conditions in their tracks. Because it is highly effective and minimally invasive, cryotherapy can be used to treat comprehensive and chronic conditions or applied in more localized manners for acute difficulties. From ice packs to immersive chambers, cryotherapy can help.
 
-Cryotherapy is offered in person only. It is not available by telehealth.
+## Spotlight:
 
-[LOCATION CARDS: rockville-centre, garden-city, smithtown]
+Inflammation
 
-[NEEDS: confirm which offices offer this service]
+## Management
 
-## Who provides it
+Inflammation is not just something that happens to our joints or in response to physical injury. Our whole bodies are subject to react with an inflammatory response to the things we experience.
 
-[NEEDS: cryotherapy provider name, credential, and training; add PROVIDER CARDS marker once confirmed]
+When our fight-or-flight reflex is engaged, it’s similar to an inflammatory response. Your body is flooded with hormones preparing you for action both mentally and physically. It can be helpful if you are in crisis or require immediate action.
 
-## Insurance and cost
+But what happens when you’re experiencing those floods of hormones chronically, and the inflammatory response becomes a constant contention?
 
-Coverage varies by provider, service, and plan, and most plans treat cryotherapy as a self pay service. The Welcome Team verifies benefits after your 360 intake and explains current session pricing. We accept cash, major credit cards, HSA, and FSA. See [insurance and fees](/insurance-and-fees). [NEEDS: cryotherapy pricing]
+Pain - Both emotional and physical pain are the result of those responses.
 
-## Common questions
+Cryotherapy is an age-old tool that can help you to manage not just the way your body responds to new pain, but how you flush out the hurt that lingers there as well.
 
-### Is cryotherapy dangerous?
+## True beauty starts from within.
 
-Cold exposure carries risk, which is why we screen every client and supervise every session. The chamber temperature and time are controlled, you wear protective gloves and socks, and a staff member is with you throughout. If you have diabetes, you should avoid cryotherapy. For other health conditions, ask your physician before we begin.
+### Complement your wellness journey with expert therapy services that nurture your mind and soul.
 
-### What should I wear?
+Discover the power of emotional healing today.
 
-Loose, dry clothing protects your skin from the cold. Socks and gloves help prevent numbness, redness, or tingling in your hands and feet, which can occur briefly after a session. We walk you through everything before your first visit so you feel prepared.
+### Frequently Asked Questions
 
-### How long is a session?
+You’ve got questions, and we’ve got answers. Some of our most-asked questions are here but if there’s something else on your mind, we love to chat. Feel free to reach out and let us help you apply a laser focus to your wellness dreams.
 
-Individual sessions are brief. For whole body cryotherapy, you are in the chamber for less than four minutes, and your whole appointment takes less than half an hour. Localized sessions vary by area. Some clients come as often as twice a week during heavy training. Your screening staff member helps you set a schedule.
+Is is dangerous?
 
-### Will cryotherapy help my mood, anxiety, or depression?
+While there are always risks to exposure therapies of any kind, the danger of extreme cold is well controlled in our therapy chambers. We keep you as safe as possible through careful consideration while making healing the central focus.
 
-Cryotherapy is not a mental health treatment, and we do not offer it for mood, anxiety, or depression. Some people feel alert or refreshed afterward, but that is not treatment. If you are struggling emotionally, our [therapy](/therapy) and medication management teams are the right place to start.
+If you have diabetes, you should avoid cryotherapy. For other health conditions, ask your physician before we begin.
 
-### Can I do cryotherapy if I am pregnant or have a heart condition?
+What should i wear?
 
-No. Pregnancy, heart conditions, uncontrolled high blood pressure, cold sensitivity, and diabetes are all reasons to skip cryotherapy. If you are unsure whether a condition applies to you, ask your physician first and bring their answer to your screening.
+We will ensure you feel well-prepared before undertaking your first session.
 
-## Take the next step
+Loose-fitting and dry clothing are key to protecting skin from the risk of extreme cold. Socks and gloves will also help to prevent your extremities from experiencing potentially uncomfortable side effects like numbness, redness, or tingling that can occur temporarily after cryotherapy.
 
-Tell the Welcome Team you are interested in cryotherapy and what you hope it will help with. They will set up your 360 intake, schedule your screening, and book your first session.
+How long do I go to Cryotherapy?
 
-[CTA] Contact Us -> /contact
+Individual sessions are brief. For whole-body cryotherapy, you’ll be in the chamber for less than 4 minutes and your whole appointment will be less than a half-hour. Localized therapy varies over time. You may see benefits from one treatment and follow up with visits as often as twice weekly as long as you are seeing results. Some athletes even do daily cryotherapy at home!
 
-Or call (631) 371-3825.
+How can the cold help my mood?
 
+While the body’s response to physical pain is not directly correlated to emotional pain, creating a shocking change to the physical systems can jar our emotional ones.
+
+By inducing vasoconstriction and sending the blood flow racing back toward your core, we can create higher levels of oxygenation and a wave of endorphins and enzymes that support your emotional wellbeing and, as a result, your mood.
 
 ```json
 {

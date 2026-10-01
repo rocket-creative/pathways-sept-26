@@ -18,33 +18,77 @@ providers: []
 hero_image: "[NEEDS: image] Map of Long Island showing the five Pathways Within offices"
 ---
 
-# Our Long Island Offices
+# Our Long Island Locations
 
-Pathways Within has five offices across Nassau and Suffolk County, plus video visits in New York for therapy and medication management. You do not have to choose an office before you write to us.
+## Where are you located?
 
-[CTA] Contact Us -> /contact
+We have four locations in the greater Long Island area! You can find us in Nassau or Smithtown for all of your wisdom and wellness needs. To minimize stress before and after your appointments, each location has dedicated parking for your convenience.
 
-## Our offices
+Port Jefferson Therapy Office
 
-Each office below is the current one. Older suites in Garden City and Massapequa are closed.
+1227 Main Street, Suite 101,
+
+Port Jefferson, NY 11777
+
+Garden City Therapy Office
+
+647 Franklin Ave, Lower Level
+
+Garden City, NY 11530
+
+Smithtown Therapy Office
+
+496 Smithtown Bypass, Suite 203
+
+Smithtown, NY 11787
+
+Rockville Centre Therapy Office
+
+53 N Park Ave, Suite 302
+
+Rockville Centre NY 11570
+
+Massapequa Therapy Office
+
+4160 Merrick Road, Suite 7
+
+Massapequa, NY 11758
+
+## More Questions?
+
+#### Visit our Frequently Asked Questions Page
+
+# Our Long Island Locations
+
+## Where are you located?
+
+We have four locations in the greater Long Island area! You can find us in Nassau or Smithtown for all of your wisdom and wellness needs. To minimize stress before and after your appointments, each location has dedicated parking for your convenience.
+
+Garden City Therapy Office
+
+647 Franklin Ave, Lower Level
+
+Garden City, NY 11530
+
+Smithtown Therapy Office
+
+496 Smithtown Bypass, Suite 203
+
+Smithtown, NY 11787
+
+Rockville Centre Therapy Office
+
+53 N Park Ave, Suite 302
+
+Rockville Centre NY 11570
+
+Massapequa Therapy Office
+
+4160 Merrick Road, Suite 7
+
+Massapequa, NY 11758
 
 [LOCATION STAGES: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
-
-If stairs are a barrier, Rockville Centre, Smithtown, and Port Jefferson are step-free, and video visits are available in New York for therapy and medication management.
-
-
-## Telehealth
-
-Most of our therapists and our prescriber see clients by video. Telehealth is available to clients in New York when a video visit is available. Hands-on wellness, including massage and acupuncture, is in person only. Learn more on our [telehealth](/telehealth) page.
-
-## Take the next step
-
-Tell the Welcome Team where you are and what you are looking for. They will set up your 360 intake and match you with a provider at the office closest to you, or by video.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
 
 ```json
 {

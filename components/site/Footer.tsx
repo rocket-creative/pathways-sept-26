@@ -85,7 +85,15 @@ export default function Footer() {
                   {/* The brand sits in the logo above, so the office reads by town. */}
                   {location.name.replace(/^Pathways Within\s+/, "")}
                 </Link>
-                <address>{location.addressLine}</address>
+                <address>
+                  <span>
+                    {location.street}
+                    {location.suite ? `, ${location.suite}` : ""}
+                  </span>
+                  <span className="site-footer__place">
+                    {location.city}, {location.state} {location.zip}
+                  </span>
+                </address>
               </li>
             ))}
           </ul>

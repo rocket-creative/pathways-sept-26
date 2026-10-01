@@ -20,113 +20,115 @@ hero_image: "[NEEDS: image] A teenager sitting across from a therapist in a rela
 
 # Therapy for Teens on Long Island
 
-Teen therapy at Pathways Within is counseling for adolescents who need a private, safe place to make sense of what they are feeling. It also supports parents who want to help without taking over. Our therapists see teens in person across Nassau and Suffolk County and by telehealth.
+### Do you or your child need someone to talk to but you’re not sure where or how to begin?
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+Teens reign supreme in the realm of “I don’t want to talk about it” and with good reason. The cognitive and emotional development that takes place in our teen years is profound—moving each of us along our own journey from voiceless to independent within a complicated world that’s changing around us.
 
-[CTA] Contact Us -> /contact
+It can be hard to know how to process what you’re feeling while you’re feeling it, much less putting it into words so someone else can understand.
 
-## What teen therapy is
+It’s not that teens don’t want to be understood or feel above relating to their loved ones. They’re trying to understand themselves first. We’re here to support that effort, not replace or undermine it.
 
-Teens reign supreme in the realm of "I don't want to talk about it," and with good reason. The cognitive and emotional development that happens in the teen years is profound. Each teen is moving from voiceless to independent inside a complicated world that keeps changing around them.
+We’re ready to listen →
 
-It is hard to process what you are feeling while you are feeling it, much less put it into words so someone else understands. It is not that teens do not want to be understood. They are trying to understand themselves first. We are here to support that effort, not replace or undermine it.
+### A comfortable and safe therapeutic relationship can help make sense of the kaleidoscope of experiences that can make teenhood feel tumultuous.
 
-A comfortable and safe therapeutic relationship helps make sense of the kaleidoscope of experiences that can make teenhood feel tumultuous. That includes social changes like independence, identity, influences, relationships, responsibility, and values. It includes emotional changes too: decision making, moods, peer response, sensitivity, and self consciousness.
+#### Social Changes
 
-## Who it helps
+- Exposure
 
-Our teen therapists work with adolescents facing:
+- Independence
 
-- [Anxiety](/concerns/anxiety), panic, and school refusal
-- [Depression](/concerns/depression), hopelessness, or feeling numb
-- Low [self esteem](/concerns/self-esteem) and self consciousness
-- School stress and the pressure of balancing academics with growing responsibility
-- Family changes and learning to love your family while claiming your independence
-- Social pressure, friend groups, and figuring out where you fit
-- Trauma, abuse, or something that happened that is sticking with you
-- Health concerns, physical or mental, that shape day to day life
-- Questions about identity, including [LGBTQIA+ affirming therapy](/concerns/lgbtqia-affirming-therapy)
+- Identity
 
-## For Teens
+- Influences
 
-Are you feeling hopeless, helpless, frustrated, or just overwhelmed? Going through something and not sure where to turn? We are here for you.
+- Relationships
 
-Growing up is complicated. No one here is going to tell you it is normal or that you are being too "emo" or "angsty." The truth is, you are not. You are going through a lot, and there is nothing wrong with asking for help so you can get through it safely. Your mental health matters. We respect your voice in advocating for it and your privacy in talking about the things that matter to you. Be clear, be confident, and do not overthink it.
+- Responsibility
 
-If you have been through something that sticks with you, you are not alone, and there are tools for many kinds of trauma. If you have experienced physical or sexual abuse and are ready to move on but not sure how, we want to help you take your life back.
+- Values
 
-In therapy, you might:
+#### Emotional Changes
 
-- Talk about what is bothering you, because feelings are easier one at a time than all kept inside
-- Learn new things about yourself or your situation so you feel more in charge of what is going on
-- Practice skills like mindfulness, self talk, and breathing tools no one can see you using
-- Find new strengths that help you feel confident in who you are, even when things feel hard
+- Decision making
 
-At home, you can practice the skills you are learning and lean on parents and teachers. Care for your body by staying hydrated, eating well, and moving. Keep an open dialogue with someone you trust about how you are feeling.
+- Feelings
 
-## For Parents
+- Moods
 
-Therapy helps teens find their way through the pressures of a social and emotional world that keeps shifting. Maybe your teen has experienced something beyond your expertise as a parent. Maybe they are having a hard time processing the changes they are going through. Either way, they deserve support.
+- Peer response
 
-Offering an empathetic, judgment free space is a wonderful way to engage your teen and open the door to hard conversations. But what happens when you are having those conversations and are not sure what to do with what you learn? Therapy for your teen is a tool to support those conversations, not a replacement for having them. It is as much a parenting tool for you as it is for them.
+- Perception
 
-Your teen's therapist keeps what is said in session private, with exceptions for safety. You will hear about progress and how you can help. When the whole household needs a reset, [family therapy](/therapy/family-therapy) brings everyone into the room.
+- Sensitivity
 
-## What to expect in your first session at Pathways Within
+- Self-consciousness
 
-The first session is about getting comfortable. Your therapist asks what is going on, what you want to be different, and what you already do that helps. There is no test and no lecture. Depending on age, the therapist may meet with the teen alone, with a parent for part of the session, or both. Sessions run about 50 minutes, usually weekly at first.
+## For Teens →
 
-## How care works here
+Are you feeling hopeless, helpless, frustrated, or just overwhelmed? Experiencing something and you’re just not sure where to turn or how to process it? We’re here for you.
 
-Every new client starts with a 360 intake with our Welcome Team. For teens, that conversation usually includes a parent and covers what is happening at school, at home, and with friends. The team then matches your teen with an available therapist who works with adolescents and builds a whole person care plan.
+Growing up is complicated and no one is going to tell you it’s normal or that you’re being too “emo” or “angsty”. The truth is, you’re not. You’re going through a lot and there is nothing wrong with asking for help to make sure you can do that safely. Your mental health is important and we value your autonomy in advocating for it and your privacy in talking about the things that matter to you. Be clear, be confident, and don’t overthink it. The beauty of your story is that it’s going to continue to evolve and your site can evolve with it. Your goal should be to make it feel right for right now. Later will take care of itself. It always does.
 
-When it helps, that plan can include [trauma therapy](/therapy/trauma-therapy), parent sessions, or [medication management](/medication-management) with our psychiatric nurse practitioner, who sees adolescents 10 and older. Nothing is required, and everything is coordinated with your permission. Read the full process at [Contact Us](/contact), or see all of our [therapy services](/therapy).
+If you’re feeling overwhelmed by the things you’re experiencing and fear you may be at risk of harm from yourself or anyone else, please don’t wait for an appointment. Call 911 and seek immediate care.
 
-## Where it is offered
+### The places we can help
 
-Teen therapy is available in person at all of our Long Island offices and by telehealth to clients in New York when a video visit is available. Many teens like the privacy of a video session from their own room.
+School
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+School stress is overwhelming. Balancing your academic needs with your independence and developing responsibilities outside of school can be a lot of pressure.
 
-## Who provides it
+Family
 
-[PROVIDER CARDS: joe-bush, anna-ostrow, mariah-simone, sofia-marinucci, juliette-squicciarini, lee-wasser]
+The shape of relationships at home will change and you may be looking to understand how to love your family while celebrating your growing independence.
 
-## Insurance and cost
+Social
 
-Teen therapy is billed as psychotherapy, so most plans that cover therapy cover it. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+Friends, peers, social groups, and clubs. It’s a lot to try to sort out in figuring out where you fit, where you want to fit, and how to prioritize the people around you.
 
-## Common questions
+### The experiences we can support
 
-### Will my therapist tell my parents what I say?
+Trauma
 
-Mostly, no. What you say in session stays between you and your therapist. The exceptions are about safety. If you are at risk of harm from yourself or someone else, your therapist has to involve a parent or other adult. Your therapist explains those limits in the first session so there are no surprises.
+If you’ve been through something that’s sticking with you and affecting your ability to process your healing, you are not alone. There are tools out there to support a variety of types of trauma.
 
-### My teen refuses to go. What can I do?
+Abuse
 
-Start with a low pressure ask. Frame it as one visit to see if it fits, not a commitment. Many teens who resist the idea relax once they meet a therapist who does not lecture. The Welcome Team can also talk with you about how to bring it up.
+Have you experienced physical or sexual abuse? After the initial shock of what you’ve been through, you may be ready to move on but you’re not sure how. We want to help you take your life back.
 
-### Does my teen need a diagnosis to start?
+Health
 
-No. Plenty of teens come in for stress, friend trouble, or a rough year without any diagnosis. If a diagnosis becomes relevant, your therapist will explain what it means and what it changes.
+Your whole-self health has an impact on how you experience your day-to-day life. Whether you are struggling with physical, mental, or a combination of health concerns, you deserve to feel empowered.
 
-### Can teens do therapy over telehealth?
+### In therapy, you might …
 
-Yes. Telehealth is available in New York when a video visit is available. Your teen needs a private space and a stable connection. Some teens open up more on video, and some prefer the office. Either works.
+- Talk about what’s bothering you because it’s easier to feel your feelings one at a time when you don’t have to keep them all inside
 
-### What if my teen needs medication?
+- Learn new things about yourself or the situations you’re in so you feel empowered in what’s going on and how it might impact you
 
-Your therapist can refer your teen to our psychiatric nurse practitioner for an evaluation. Therapy and medication management stay coordinated in one care plan, and the decision about medication is always yours and your prescriber's.
+- Practice skills to help you navigate the world around you like mindfulness, self-talk, and breathing tools no one can see you using- or stop you from accessing
 
-## Take the next step
+- Find new skills and strengths to help you feel confident in who you are and what you want to achieve even when things feel hard
 
-Tell the Welcome Team what your teen has been going through, or teens, tell them yourself. They will set up your 360 intake and match you with a therapist who works with adolescents, in person or by telehealth.
+### At home, you can …
 
-[CTA] Contact Us -> /contact
+- Begin preparing for the growth that will take place as you find a safe space to relax and get support
 
-Or call (631) 371-3825.
+- Practice the skills you’re learning with your therapist
 
+- Lean on parents and teachers for support
+
+- Care for yourself by staying hydrated, eating well, and moving your body
+
+- Care for your mind with empowering self-talk, and open dialogue with someone you trust about how you’re feeling
+
+## For Parents →
+
+Therapy can help find the pathways toward navigating the immense pressures of a constantly changing social and emotional sphere in this transitional time. Whether your teen has experienced something that is beyond your expertise as a parent or is having difficulty processing the changes they’re going through, they deserve support.
+
+Offering an empathetic, judgment-free space is a wonderful way to engage your teens and open the door for hard conversations. But what happens when we’re having those hard conversations and you’re not sure what to do with what you learn?
+
+Therapeutic support for your teens is a tool to support those conversations, not a replacement for having them. It’s just as much a parenting tool for you as it is for them.
 
 ```json
 {

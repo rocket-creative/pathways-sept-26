@@ -20,54 +20,7 @@ hero_image: "[NEEDS: image] Therapy office at Pathways Within Port Jefferson on 
 
 # Pathways Within in Port Jefferson, NY
 
-Pathways Within Port Jefferson is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777, on the North Shore of Suffolk County. It is on the first floor, with a ramp.
-
-[CTA] Contact Us -> /contact
-
-## Getting here
-
-The office is at 1227 Main Street, Suite 101, Port Jefferson, NY 11777. Parking is available and varies, from a lot to on-street parking.
-
-Accessibility: First floor, with a ramp. This office is wheelchair accessible.
-
-
-## Providers at this office
-
 [PROVIDER CARDS: location=port-jefferson]
-
-[NEEDS: assign providers to offices in the sheet]
-
-You do not need to choose a provider before you write. [Contact Us](/contact).
-
-## Nearby communities we serve
-
-The Port Jefferson office serves the North Shore of Suffolk County, including Port Jefferson Station, Setauket, Stony Brook, Mount Sinai, Miller Place, and Coram. Route 25A and Route 112 both lead to Main Street, and the office is a short drive from Stony Brook University.
-
-## Common questions
-
-### Is the Port Jefferson office wheelchair accessible?
-
-Yes. The office is on the first floor, with a ramp. If you have a specific access need, tell the Welcome Team when you book.
-
-### Do you offer telehealth if I cannot get there?
-
-Yes. Most of our therapists see clients by video in New York when a video visit is available. Many clients on the North Shore mix in person visits with video sessions. Read more at [telehealth](/telehealth).
-
-### Which insurance plans do you accept in Port Jefferson?
-
-Coverage varies by provider, service, and plan. The Welcome Team verifies benefits after your 360 intake, so you know what to expect before your first visit. See [insurance and fees](/insurance-and-fees) for the full list of plans and self pay options.
-
-### How do I book an appointment?
-
-Contact the Welcome Team by form, call, or text. A team member schedules your 360 intake and matches you with a provider at Port Jefferson. Learn more at [Contact Us](/contact).
-
-## Take the next step
-
-Tell the Welcome Team what you are looking for and that Port Jefferson is your closest office. They will set up your 360 intake and match you with a provider.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
 
 
 ```json

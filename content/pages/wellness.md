@@ -18,67 +18,85 @@ providers: [christine-cervo, danielle-ingenito, leonard-ma, tia-baumohl]
 hero_image: "[NEEDS: image] A treatment room at Pathways Within with a massage table and soft daylight"
 ---
 
-# Wellness Services on Long Island
+# All Services
 
-Wellness at Pathways Within is care for the body: New York State licensed massage therapists, a licensed acupuncturist, cupping, and energy work. You can book any of it on its own. You can also add it to a plan that includes therapy or medication management, because pain, stress, sleep, and mood affect one another.
+At Pathways Within Wellness, we provide personalized care to tend to your mind, body and spirit so that you can be your best self, inside and out.
 
-[CTA] Contact Us -> /contact
+Contact Us to Book
 
-## What we offer
+Massage
 
-- [Massage therapy](/wellness/massage): clinical, individualized massage for pain, tension, mobility, and recovery. Medical, sports, Swedish, pregnancy, and hot stone massage, plus massage based cupping.
-- [Acupuncture](/wellness/acupuncture): individualized care for musculoskeletal pain, headaches, stress related tension, and sleep.
-- [Cupping](/wellness/cupping): available with massage or acupuncture, depending on your goals.
-- [Energy work](/wellness/energy-work): [Reiki](/wellness/energy-work/reiki), Integrated Therapeutic Alignment, and [Integrative Energy Therapy](/wellness/energy-work/iet).
+✔ Relaxation Massage
 
-## Why wellness lives inside a mental health practice
+✔ Sports Massage
 
-Pathways Within began in therapy. Rachel Lessard saw that emotional healing does not happen separately from the body. Stress settles into the shoulders. Grief affects sleep. Pain changes mood. Wellness services grew from the belief that these should not be treated as unrelated.
+✔ Pregnancy Massage
 
-So your massage therapist and your therapist can, with your permission, know about each other. Your acupuncturist can coordinate with your prescriber. Nothing is required. The collaborative setting simply lets care be considered in relation to the whole person.
+✔ Swedish Massage
 
-## What to expect
+✔ Hot Stone Massage
 
-Every wellness visit begins with an intake. Your provider reviews your symptoms, relevant health history, areas of discomfort, and goals before care begins. Technique, pressure, and areas of focus follow that assessment rather than a set routine. Communication about pressure and comfort is encouraged throughout.
+Acupuncture
 
-## Who provides it
+✔ Relieves pain
 
-Christine Cervo and Danielle Ingenito are licensed massage therapists. Leonard Ma is a licensed acupuncturist. Tia Baumohl offers energy work, including Reiki and Integrative Energy Therapy. Coaching with Tia lives on its own page. [Coaching](/coaching).
+✔ Reduces stress
 
-[PROVIDER CARDS: christine-cervo, danielle-ingenito, leonard-ma, tia-baumohl]
+✔ Promotes overall well-being
 
-## Where
+Lutronic Accufit
 
-Massage, acupuncture, cupping, and energy work are in person at [Rockville Centre](/locations/rockville-centre), [Garden City](/locations/garden-city), and [Smithtown](/locations/smithtown).
+✔ Non-invasive sculpting treatment that tones the muscles, abdomen, thighs, buttocks & more
 
-## Insurance and cost
+✔ Helps with sports injuries and rehab
 
-The Welcome Team can help you understand whether your plan covers a wellness visit, and what you would pay, before care begins. [Insurance and fees](/insurance-and-fees).
+IV Vitamin Infusion
 
-## Common questions
+✔ Boost energy
 
-### Do I need to be a therapy client to book wellness services?
+✔ Improve mental clarity
 
-No. Wellness services are open to everyone. Some clients use both sides of the practice; many come only for massage, acupuncture, or energy work.
+✔ Strengthen immune system
 
-### Do I need to know which service I need?
+✔ Cure hangovers
 
-No. Tell the Welcome Team what you are experiencing. They will suggest a starting point, and your provider makes clinical recommendations from there.
+Energy Work
 
-### Can I combine services?
+✔ Reduce stress
 
-Yes. Massage and acupuncture often complement each other, and energy work can sit alongside either. Your providers coordinate with your permission.
+✔ Address energy blocks
 
-### Is this a spa?
+✔ Enhance your inner spirit
 
-No. Our providers are licensed healthcare practitioners, and every session starts with a clinical intake. It is still relaxing. It is also care.
+✔ Complements talk therapy
 
-## Take the next step
+## About Our Team
 
-[CTA] Contact Us -> /contact
+Our Mission at Pathways Within is to provide personalized care to tend to your mind, body and spirit so that you can be your best self, inside and out. We create a tranquil and serene atmosphere by combining beauty and wellness through the use of environmentally friendly and organic products and holistic services.
 
-Or call (631) 371-3825.
+We believe in the interconnectedness of body, spirit, mind, and earth. Pathways Within is for those of us who wish for peace, balance, and clarity, and opt to start within.
 
+The journey begins here!
+
+## Visit Us
+
+53 N Park Ave, Suite 302
+
+Rockville Centre, NY 11570
+
+647 Franklin Ave, Lower Level
+
+Garden City, NY 11530
+
+4160 Merrick Road, Suite 7
+
+Massapequa, NY 11758
+
+496 Smithtown Bypass, Suite 203
+
+Smithtown, NY 11787
+
+Learn more
 
 ```json
 {

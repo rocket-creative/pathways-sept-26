@@ -18,99 +18,87 @@ providers: [tiffany-roberts]
 hero_image: "[NEEDS: image] A quiet treatment room with a reclining chair and soft light at a Pathways Within office on Long Island"
 ---
 
-# Ketamine Assisted Psychotherapy on Long Island
+# Ketamine Assisted Therapy on Long Island
 
-Ketamine assisted psychotherapy combines a prescribed, monitored dose of ketamine with structured therapy sessions for adults whose depression or PTSD has not responded to other treatment. At Pathways Within, a psychiatric nurse practitioner screens every candidate and oversees the medical side. Therapy sessions before and after the medicine are where the change takes hold.
+### “To be truly visionary, we have to root our imagination in our concrete reality while simultaneously imagining possibilities beyond that reality.”
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+— bell hooks
 
-[CTA] Contact Us -> /contact
+## Ketamine-Assisted Therapy
 
-## What ketamine assisted psychotherapy is
+Life-altering change to your healing game, one hour at a time? It’s possible with ketamine-assisted therapy as a part of your clinical counseling experience.
 
-Ketamine is an anesthetic medication that has been used in hospitals for decades. At lower doses, and under medical supervision, it is being studied and used as a support for psychotherapy in people with treatment resistant depression and some trauma related conditions. [NEEDS: citation for ketamine evidence]
+Let's Get Started
 
-The word "assisted" matters. Ketamine is not the treatment on its own. The medicine can loosen rigid thought patterns for a short window. Your therapist uses that window, and the sessions around it, to help you work on what has stayed stuck. The therapy is the part that lasts.
+### Beyond what you thought possible
 
-This is not first line care. Most people try psychotherapy and standard medication first, and many get better with those. Ketamine assisted psychotherapy is considered when several well run trials of other treatment have not helped enough.
+You know what it’s like to live with stubborn depression, defeating ennui, or a sense of doom that you cannot escape. If you are one of the millions of people who have tried anti-depressants and antipsychotics to alleviate the symptoms of difficult-to-manage mental health disorders and found no relief, ketamine-assisted therapy may be the next step you’ve been waiting for.
 
-[NEEDS: prescribing provider, route of administration, and current protocol confirmed by clinical leadership]
+Ketamine offers you a glimpse beyond the spaces you’ve visited to access healing. Thought to offer a life-altering opportunity to re-grow the connections in your mind that allow you to heal and thrive, ketamine therapy immediately impacts your ability to function right here and now.
 
-## Who it helps
+Ketamine-assisted therapy may be the psychotherapy supercharger you’ve sought if you have treatment-resistent mental health disorders.
 
-Your prescriber considers ketamine assisted psychotherapy for adults with:
+### Benefits of Ketamine-assisted Therapy
 
-- [Depression](/concerns/depression) that has not responded to at least two other treatments
-- [PTSD](/concerns/ptsd) that continues after trauma focused therapy
-- Some anxiety presentations, reviewed case by case
-- Persistent low mood after other medication changes have been tried
+- See immediate improvement from the first treatment!
 
-It is not right for everyone. A history of psychosis, uncontrolled high blood pressure, certain heart conditions, active substance misuse, or pregnancy can rule it out. Your prescriber reviews your full medical and psychiatric history before anything is scheduled. If ketamine is not a fit, the team still helps you find the next step, often through [medication management](/medication-management) or [trauma therapy](/therapy/trauma-therapy).
+- Eases PTSD symptoms
 
-## What to expect in your first session at Pathways Within
+- Treats chronic neuropathic pain
 
-Your first appointment is a screening, not a dosing session. Our psychiatric nurse practitioner reviews your diagnosis, past treatments, current medications, and medical history. She checks your blood pressure and asks about your support at home. You get honest answers about whether this treatment makes sense for you.
+- Alleviate intrusive thoughts
 
-If you move forward, you meet with your therapist first to prepare. You talk through what you want to work on and how you will handle a difficult moment during a session. Then you attend a medicine session in a quiet room at one of our offices. Your prescriber or a trained clinician monitors you throughout, including blood pressure checks, and you stay until the effects have cleared. You do not drive yourself home that day.
+- Effective alternative to other long-term medications
 
-Within a day or two you meet your therapist again for an integration session. That is where you make sense of what came up and turn it into something usable. The pattern of preparation, medicine session, and integration repeats across a course of treatment set by your prescriber.
+- Reduces feeling of depression
 
-## How care works here
+- The only treatment to provide relief from suicidal ideation
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life. If you ask about ketamine, the team routes you to a screening with our psychiatric nurse practitioner rather than booking a medicine session straight away.
+#### SPOTLIGHT ON THE SCIENCE OF KETAMINE ASSISTED THERAPY
 
-Ketamine assisted psychotherapy always sits inside a wider plan. That plan usually includes ongoing individual therapy, and it may include [medication management](/medication-management) for the medications you already take. With your permission, your therapist and prescriber talk to each other. Read the full process at [Contact Us](/contact) or return to the [therapy hub](/therapy).
+## Surprising impacts for depression and OCD symptoms
 
-## Where it is offered
+While ketamine has become an established therapy for chronic pain management through decades of effective use, it’s still being explored as a treatment for psychotherapeutic support. These developments are exciting, particularly for clients who experience disruptions to their daily routines due to their diagnoses.
 
-Medicine sessions happen in person at a Pathways Within office on Long Island, because monitoring requires a clinician in the room. Preparation and integration sessions may be offered by telehealth. [NEEDS: confirm which offices host medicine sessions and whether integration sessions are offered by telehealth]
+In early studies, ketamine-assisted therapy has been found to provide immediate and effective relief for those suffering from many troubling symptoms, including suicidal ideation.
 
-[NEEDS: location cards for the offices that offer ketamine assisted therapy]
+When you’re stressed, scared, or under overwhelming pressure due to what you’re going through, your mind becomes rigid. It loses the ability to respond effectively to your experiences as it works hard to protect you from the impact of the trauma you’ve been through before. Ketamine-assisted therapy acts as a massage for these areas of your brain, relaxing the rigidity they’ve developed and allowing for more fluidity in how you respond to experiences, thoughts, and energy at a cellular level. Through increased neuroplasticity, the changes you experience can change how you experience things long-term!
 
-## Who provides it
+Ketamine-assisted therapy gives you the edge to perceive the things you experience in a new way, without long waits to see the results you need.
 
-[PROVIDER CARDS: tiffany-roberts]
+## Unprecedented possibility awaits you
 
-Screening and medical oversight come from our psychiatric nurse practitioner. Therapy sessions come from a licensed therapist trained in this work. [NEEDS: names of therapists trained in ketamine assisted psychotherapy]
+While the medications used to support your mental health are typically focused on interrupting the chemicals in your brain that cause your symptoms, ketamine is different. Acting as a mind-opening gateway to a new headspace, you’ll experience ketamine in a safe and fully supported environment.
 
-## Insurance and cost
+This life-changing treatment combines ketamine’s ability to relax and regulate the emotional response of the mind at a cellular level with the guidance and expertise of a therapist prepared to explore your experiences with you.
 
-Coverage varies by provider, service, and plan. Some plans cover the therapy portion of this treatment and not the medicine session. The Welcome Team verifies benefits after your 360 intake and explains any self pay portion before you commit. [NEEDS: confirm whether ketamine assisted therapy is billed to insurance or offered as self pay] See [insurance and fees](/insurance-and-fees).
+## Frequently Asked Questions
 
-## Common questions
+You’ve got questions, and we’ve got answers. Some of our most-asked questions are below, but if there’s something else on your mind, we love to chat. Feel free to reach out for the clarity you seek at any time.
 
-### Is ketamine assisted psychotherapy safe?
+#### How is ketamine given?
 
-Under medical screening and monitoring, most people tolerate it. Common effects during a session include dissociation, a floating or dreamlike feeling, nausea, dizziness, and a temporary rise in blood pressure. These pass as the medicine wears off. Ketamine can be misused and carries a risk of dependence outside supervised use, which is one reason it is only given in a monitored setting here.
+Under your therapist’s supervision, you’ll take your dose as an under-the-tongue (sublingual) tablet that will dissolve. This delivery system allows for the best balance between gentle and time-sensitive efficacy.
 
-### Will I feel better right away?
+#### Who is ketamine for?
 
-Some people notice a shift in mood within days of a session, and some do not. Any change from the medicine alone tends to fade without the therapy that goes with it. We do not promise a specific result. Your prescriber and therapist review your progress at every step and adjust the plan or stop treatment if it is not helping.
+Ketamine-assisted therapy is for people who have taken other psychotherapeutic medications and felt no relief. Notably, this treatment is ideal for people who have depression, anxiety, PTSD, suicidal ideation, or Obsessive Compulsive Disorder (OCD).
 
-### How many sessions will I need?
+Ketamine-assisted therapy is a short-acting, long-lasting treatment experience. You may feel immediate effects on your mental state that will be supported by the psychotherapy sessions you’ll have during your ketamine experience.
 
-That depends on your diagnosis, your response, and the protocol your prescriber sets. A course typically includes several medicine sessions spaced over weeks, each paired with preparation and integration therapy. [NEEDS: prescribing provider, route of administration, and current protocol confirmed by clinical leadership]
+#### How many sessions will I need?
 
-### Can I keep taking my current medications?
+After your first session, you’ll begin to feel new and exciting changes, but you may find additional change through infrequent but regular low-dose treatment across 1-3 months.
 
-Often, yes, but not always. Some medications reduce the effect of ketamine or raise the risk of side effects. Bring a full list of everything you take, including supplements, to your screening. Your prescriber tells you what to continue, pause, or adjust. Do not stop any medication on your own.
+What are the risks?
 
-### What if I have a bad experience during a session?
+You may feel a brief discomfort like dizziness, nausea, or disorientation when you take your dose.
 
-A frightening or unpleasant altered state can happen. That is why a clinician stays with you and why you prepare with your therapist first. You can ask for support at any point. Your prescriber can also lower the dose or end the course if sessions are not tolerable.
+The data on ketamine risks are low-level and related to chronic pain treatment. Due to the psychoactive nature of ketamine, the primary risk is a negative or scary altered state. This is temporary. Other potential risks of ketamine-assisted therapy are related to long-term use, like a (low) risk of addiction or development of lesions with overuse.
 
-### Is this the same as a ketamine clinic or infusion center?
+#### However you’re hoping to take your next steps to unlock the reality you’re dreaming of, we’re here to help. We specialize in packages focused on whole-self healing and an emphasis on wellness.
 
-No. Infusion clinics often give the medicine without therapy attached. Here, the medicine session is one part of a psychotherapy course, and screening, monitoring, and integration are built in. If you have received ketamine elsewhere, tell your prescriber so the plan accounts for it.
-
-## Take the next step
-
-If depression or PTSD has stayed put through other treatment, ask the Welcome Team about a ketamine screening. They will set up your 360 intake and book you with our psychiatric nurse practitioner.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+#### Ready to start from the outside and work toward your Pathways Within? Call us today!
 
 ```json
 {

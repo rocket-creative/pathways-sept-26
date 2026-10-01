@@ -20,93 +20,81 @@ hero_image: "[NEEDS: image] Client reclining with eyes closed during a hypnother
 
 # Hypnotherapy on Long Island
 
-Hypnotherapy is the intentional use of a gentle, relaxed state of focus to let your unconscious mind do some of the work, for adults who want to change a stubborn pattern or reach feelings that stay out of view. At Pathways Within, founder Rachel Lessard, LCSW-R, offers hypnotherapy as part of a larger treatment plan, not as a standalone trick.
+### “The easier you can make it inside your head, the easier it will make things outside your head.”
 
-If you are in crisis or thinking about harming yourself, call or text 988 (Veterans: press 1) or call 911.
+— Richard Bandler
 
-[CTA] Contact Us -> /contact
+## Hypnotherapy
 
-## What hypnotherapy is
+Do you ever wish you could mute the external noise of the world and turn inward to decipher the things you’re feeling?
 
-Hypnotherapy is the intentional induction of a gentle, trance like state that lets your unconscious mind spend some time in the driver's seat. By setting aside the obligation of conscious feeling for a while, it can help you loosen the grip of psychological, emotional, and physical experiences that have stayed with you.
+Hypnotherapy is the intentional induction of a gentle trance-like state to allow your unconscious mind some time in the driver’s seat. By releasing the obligation of conscious feeling, hypnotherapy can help you to release the lingering grasp of psychological, emotional, and somatic experiences.
 
-As part of your therapeutic treatment plan, hypnotherapy brings the focus back to you, the truest version of you beneath expectation and habit. Whether you want to stop a behavior like smoking or reach a place where you have struggled to feel the reality of your pain, a hypnotic state is a useful tool for hearing what your unconscious mind needs.
+Let's Get Started
 
-Hypnotherapy is not stage hypnosis. There is no motivation to deceive or control you. The aim is to give you some distance from the noise of the world so you can reach the healing already possible within you. You may experience it through guided relaxation, behavioral suggestion, gentle internal exploration, or as a coping skill you practice over time.
+### How Hypnosis Heals
 
-## Who it helps
+As a part of your therapeutic treatment plan, hypnotherapy brings the focus back to you- the truest version of you that lies beneath expectation and repressed response to the things you experience. Whether you’re looking to extinguish a stubborn behavior like smoking or move through spaces where you struggle to access the reality of your pain, a hypnosis state is a valuable tool to access the needs of your unconscious mind.
 
-Hypnotherapy is used as part of a treatment plan for people living with:
+Hypnotherapy is not the same thing as stage hypnosis. There is no motivation to deceive or manipulate you. The hope in accessing your unconscious mind is to offer you the freedom from the world around you to harness the healing already possible within you.
 
-- [Anxiety](/concerns/anxiety) or panic
-- [Chronic pain](/concerns/chronic-pain-and-illness) and long term illness
-- Persistent nausea or vomiting related to treatments like chemotherapy
-- Irritable bowel syndrome
-- Depression, acute or chronic
+### How Can Hypnotherapy Help?
+
+Hypnosis has proven benefits as a part of a myriad of treatment plans and can be practiced in several ways. You may experience hypnosis through visualized relaxation, behavioral suggestion, gentle internal exploration or as a developing coping skill. Each of these experiences is rooted in the way hypnotic trances engage the neurological pathways at the root of your emotional responses with a goal of moving you through the processes of healing toward recovery.
+
+You may benefit from hypnotherapy if you have:
+
+- Chronic Pain
+
+- Symptoms of Dementia
+
+- Persistent nausea or vomiting related to medication like chemo
+
+- Irritable Bowel Syndrome
+
+- Anxiety or Panic Disorder
+
+- Depression (Acute or Chronic)
+
 - Insomnia
-- Symptoms of dementia
-- Habits you want to end, such as smoking
 
-Hypnotherapy works best alongside talk therapy rather than in place of it. Your therapist decides with you whether it belongs in your plan, and it is never required. [NEEDS: citation for "hypnotherapy used as part of treatment plans for chronic pain, IBS, and chemotherapy related nausea"]
+## Spotlight: Expression
 
-## What to expect in your first session at Pathways Within
+One of the beautiful things about experiencing the world as a whole human being is that we have limitless possibilities in how we express ourselves. Through hypnotherapy, you can lean on the support of a trained professional to explore the expression of your unconscious without the expectation of action. Your expression of thought, feeling, and behavior is all uniquely yours, and your hypnotherapeutic trance will be uniquely yours as well.
 
-Your first session is a conversation. Rachel asks what you want to change, what you have already tried, and how you feel about the idea of hypnosis. If you decide to go ahead, she explains exactly what will happen and answers every question first.
+Giving yourself the permission to lean into that freedom with the guidance of your Pathways Within treatment plan and sense of purpose, we can go together toward the expression of yourself you most desire.
 
-A hypnotherapy session usually begins with guided relaxation. You sit or recline, close your eyes if you like, and follow her voice. Most people feel a sense of lightness or heaviness as the body lets go of tension. You remain aware of what you are doing and what is being asked of you the whole time.
+#### Hypnotherapy focuses on bringing the mind and body together to create impactful changes in thought and behavior.
 
-From there, the session may include suggestions related to your goal, imagery, or quiet exploration of a feeling you have not been able to reach. You return to your usual state of awareness at the end and should remember what you experienced. Sessions run about 50 minutes and are one part of your ongoing therapy.
+Are you ready to release the patterns that don’t serve you through guided hypnosis?
 
-## How care works here
+Create A New Pathway Within Today ⇢
 
-Every new client starts with a 360 intake with our Welcome Team. That conversation covers what you are experiencing across mind, body, and daily life, not just the one concern that made you call. If hypnotherapy fits, the team schedules you with Rachel and builds it into a whole person plan.
+## Frequently Asked Questions
 
-For chronic pain, nausea, or sleep, that plan may also include [acupuncture](/wellness/acupuncture) or [massage](/wellness/massage) from our Wellness team, or [medication management](/medication-management) with our psychiatric nurse practitioner. For trauma, hypnotherapy often pairs with [somatic therapy](/therapy/somatic-therapy) or [trauma therapy](/therapy/trauma-therapy). Everything is coordinated with your permission. Read the full process at [Contact Us](/contact).
+#### Will I be aware of what happens?
 
-## Where it is offered
+You will be aware of what you’re doing and what’s being asked of you, even while you are under hypnosis. You are not being controlled or having your power altered, in any way. If anything, you are simply returning the control of your body to the full awareness of your mind.
 
-Hypnotherapy is offered in person at our Long Island offices. [NEEDS: confirm which offices Rachel sees hypnotherapy clients at, and whether hypnotherapy is offered by telehealth]
+Your awareness will remain focused on the experiences you’re having and, when you return to your active state of awareness, you should remember everything you experience.
 
-[LOCATION CARDS: rockville-centre, garden-city, massapequa, smithtown, port-jefferson]
+#### What if I change my mind?
 
-## Who provides it
+If you want to try hypnotherapy but aren’t sure if it will be right for you, we can explore it gently. By taking it one session at a time, one breath at a time, we can explore the possibility of your untapped trance space with no expectation of returning there.
 
-The Welcome Team matches you with a clinician for this service. [Browse providers](/providers).
+If you decide that this isn’t the therapeutic path you were looking for, it is perfectly alright to check off that experience without repeating it.
 
-## Insurance and cost
+#### Does hypnosis hurt?
 
-When hypnotherapy is part of a psychotherapy session, it is billed as psychotherapy. Coverage varies by provider, service, and plan. The Welcome Team verifies your benefits after your 360 intake. See [insurance and fees](/insurance-and-fees).
+Hypnosis does not cause physical pain or involve any direct physical contact. You may feel a sense of lightness or weighed down as your body lets go of the tension it holds and you relax into the experience of just being, but it should not be painful.
 
-## Common questions
+We often enter hypnotic states during moments of daydreaming (like “checking out” when you’ve got too much on your mind), so it may feel familiar.
 
-### Will I be aware of what happens?
+#### Will I still be in control of my body?
 
-Yes. You are aware of what you are doing and what is being asked of you, even while you are in a hypnotic state. You are not being controlled and your will is not altered in any way. Your awareness stays focused on the experience, and when you return to your usual state you should remember everything.
+Absolutely. You are still aware of, and in charge of, the actions you take and your own will.
 
-### Will I still be in control of my body?
-
-Absolutely. You remain aware of, and in charge of, your actions and your own will. Hypnosis is not a release of your power or autonomy. It is permission to look more honestly at what is happening inside you instead of around you.
-
-### Does hypnosis hurt?
-
-No. Hypnosis does not cause physical pain and does not involve physical contact. You may feel lighter or heavier as your body releases the tension it holds, but it should not be uncomfortable. We enter similar states when we daydream or zone out with too much on our minds, so it may feel familiar.
-
-### What if I change my mind?
-
-That is fine. If you want to try hypnotherapy but are not sure it is right for you, we explore it gently, one session at a time. If you decide it is not the path you were looking for, you can set it aside without repeating it. Your therapy continues either way.
-
-### Is hypnotherapy a replacement for therapy or medication?
-
-No. At Pathways Within, hypnotherapy is one tool inside a treatment plan that may include talk therapy, medication management, and wellness services. It does not cure any condition on its own. Rachel reviews with you how it fits alongside the rest of your care.
-
-## Take the next step
-
-Tell the Welcome Team what pattern you want to change. They will set up your 360 intake and let you know whether hypnotherapy with Rachel is a fit.
-
-[CTA] Contact Us -> /contact
-
-Or call (631) 371-3825.
-
+Hypnosis is not a release of your power or autonomy. Instead, it’s the granting of permission to look more honestly at the things happening inside of you instead of around you.
 
 ```json
 {
